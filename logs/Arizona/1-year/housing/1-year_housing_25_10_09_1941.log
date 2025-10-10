@@ -805,3 +805,350 @@ Epoch 74/75
 [1m  1/107[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 11ms/step - loss: 0.2337 - mae: 0.2833 - mse: 0.2337[1m 50/107[0m [32m━━━━━━━━━[0m[37m━━━━━━━━━━━[0m [1m0s[0m 1ms/step - loss: 0.3573 - mae: 0.3290 - mse: 0.3573 [1m101/107[0m [32m━━━━━━━━━━━━━━━━━━[0m[37m━━[0m [1m0s[0m 1ms/step - loss: 0.3556 - mae: 0.3296 - mse: 0.3556[1m107/107[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 1ms/step - loss: 0.3509 - mae: 0.3297 - mse: 0.3509 - val_loss: 0.3388 - val_mae: 0.3225 - val_mse: 0.3388
 Epoch 75/75
 [1m  1/107[0m [37m━━━━━━━━━━━━━━━━━━━━[0m [1m1s[0m 10ms/step - loss: 0.2319 - mae: 0.2837 - mse: 0.2319[1m 55/107[0m [32m━━━━━━━━━━[0m[37m━━━━━━━━━━[0m [1m0s[0m 942us/step - loss: 0.3558 - mae: 0.3276 - mse: 0.3558[1m106/107[0m [32m━━━━━━━━━━━━━━━━━━━[0m[37m━[0m [1m0s[0m 964us/step - loss: 0.3549 - mae: 0.3285 - mse: 0.3549[1m107/107[0m [32m━━━━━━━━━━━━━━━━━━━━[0m[37m[0m [1m0s[0m 1ms/step - loss: 0.3517 - mae: 0.3294 - mse: 0.3517 - val_loss: 0.3395 - val_mae: 0.3249 - val_mse: 0.3395
+[DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.3296964764595032, 'mse': 0.3539692759513855, 'rmse': 0.5949531712255894, 'r2': 0.25313395261764526}
+[DL-VIZ] Creating visualizations for 4 tasks...
+[WARNING] DL visualization failed: Plot creation failed for comprehensive_dashboard: 'SubplotSpec' object is not subscriptable [plot_type=comprehensive_dashboard, reason='SubplotSpec' object is not subscriptable]
+[VERBOSE] Starting LLM analysis with fallback handler...
+[VERBOSE] Initializing LLM client and analyzer...
+[VERBOSE] Running LLM analysis for state: Arizona
+[VERBOSE] Starting LLM analysis suite...
+[VERBOSE] State context loaded: Arizona
+[VERBOSE]   → Running LLM analysis: Temporal Trends
+[PROMPT-VERBOSE] User prompt: 744 chars (~186 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~2121 tokens (system: ~1935, user: ~186)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 11248 chars
+[VERBOSE]   ✓ Temporal Trends analysis complete (11248 chars)
+[VERBOSE]   → Running LLM analysis: Data Quality
+[PROMPT-VERBOSE] User prompt: 1259 chars (~314 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~2249 tokens (system: ~1935, user: ~314)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 10755 chars
+[VERBOSE]   ✓ Data Quality analysis complete (10755 chars)
+[VERBOSE]   → Running LLM analysis: Research Recommendations
+[PROMPT-VERBOSE] User prompt: 1336 chars (~334 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~2269 tokens (system: ~1935, user: ~334)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 9359 chars
+[VERBOSE]   ✓ Research Recommendations analysis complete (9359 chars)
+[VERBOSE]   → Running LLM analysis: Economic Analysis
+[PROMPT-VERBOSE] User prompt: 1214 chars (~303 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~2238 tokens (system: ~1935, user: ~303)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 9980 chars
+[VERBOSE]   ✓ Economic Analysis analysis complete (9980 chars)
+[VERBOSE]   → Running LLM analysis: Correlation Analysis
+[PROMPT-VERBOSE] User prompt: 47 chars (~11 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~1946 tokens (system: ~1935, user: ~11)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 9514 chars
+[VERBOSE]   ✓ Correlation Analysis analysis complete (9514 chars)
+[VERBOSE]   → Running LLM analysis: Statistical Analysis
+[PROMPT-VERBOSE] User prompt: 10562 chars (~2640 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~4575 tokens (system: ~1935, user: ~2640)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 14744 chars
+[VERBOSE]   ✓ Statistical Analysis analysis complete (14744 chars)
+[VERBOSE]   → Running LLM analysis: Outlier Detection
+[PROMPT-VERBOSE] User prompt: 6265 chars (~1566 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~3501 tokens (system: ~1935, user: ~1566)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 11711 chars
+[VERBOSE]   ✓ Outlier Detection analysis complete (11711 chars)
+[VERBOSE]   → Running LLM analysis: Anomaly Detection
+[PROMPT-VERBOSE] User prompt: 610 chars (~152 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~2087 tokens (system: ~1935, user: ~152)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 10434 chars
+[VERBOSE]   ✓ Anomaly Detection analysis complete (10434 chars)
+[VERBOSE]   → Running LLM analysis: Trend Analysis
+[PROMPT-VERBOSE] User prompt: 6293 chars (~1573 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~3508 tokens (system: ~1935, user: ~1573)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 14628 chars
+[VERBOSE]   ✓ Trend Analysis analysis complete (14628 chars)
+[VERBOSE]   → Running LLM analysis: Deep Learning Analysis
+[PROMPT-VERBOSE] User prompt: 2123 chars (~530 tokens)
+[PROMPT-VERBOSE] Building system prompt...
+[PROMPT-VERBOSE] Injecting state context for: Arizona
+[CONTEXT-VERBOSE] Loading context for state: Arizona
+[CONTEXT-VERBOSE] Formatted context length: 2853 chars
+[CONTEXT-VERBOSE] Estimated tokens: ~713
+[CONTEXT-VERBOSE] Context preview (first 500 chars):
+----------------------------------------------------------------------
+
+STATE-SPECIFIC CONTEXT: Arizona
+
+ECONOMIC PROFILE:
+  Industries: Technology and semiconductors, Aerospace and defense, Tourism and hospitality, Healthcare and biosciences, Mining and minerals
+  Trends: Rapid growth 2011-2019 driven by tech, aerospace, retiree migration. Strong post-pandemic recovery with major semiconductor investments (TSMC). Housing boom and tech expansion continue
+  Income: Near national average median income ($74,568). Wide disparity between urban tech workers and rural/ser
+----------------------------------------------------------------------
+[CONTEXT-VERBOSE] ... (truncated, 2353 more chars)
+[CONTEXT-VERBOSE] Full context sections loaded:
+[CONTEXT-VERBOSE]   ✓ STATE-SPECIFIC CONTEXT: Arizona
+[CONTEXT-VERBOSE]   ✓ ECONOMIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ DEMOGRAPHIC PROFILE:
+[CONTEXT-VERBOSE]   ✓ HOUSING MARKET:
+[CONTEXT-VERBOSE]   ✓ POLITY:
+[CONTEXT-VERBOSE]   ✓ REGIONAL:
+[CONTEXT-VERBOSE]   ✓ HISTORICAL:
+[CONTEXT-VERBOSE]   ✓ COMPARATIVE:
+[PROMPT-VERBOSE] State context injected (2853 chars)
+[PROMPT-VERBOSE] Final system prompt: 7741 chars (~1935 tokens)
+[API-VERBOSE] Total request: ~2465 tokens (system: ~1935, user: ~530)
+[API-VERBOSE] Sending request to http://localhost:1234/v1/chat/completions
+[API-VERBOSE] Received response: 12662 chars
+[VERBOSE]   ✓ Deep Learning Analysis analysis complete (12662 chars)
+[VERBOSE] LLM analysis suite complete: 10/10 analyses succeeded
+[VERBOSE] LLM analysis completed successfully
+[REPORT] Generated: report_Arizona_housing_20251009_202507.txt
+[SUCCESS] HOUSING (1-year) pipeline complete for Arizona!
+
+======================================================================
+[COMPLETE] All processing finished!
+======================================================================
+
