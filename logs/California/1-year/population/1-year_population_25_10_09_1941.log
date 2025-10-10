@@ -1,0 +1,120 @@
+[DL-INFO] TensorFlow 2.18.1 configured for CPU-only mode
+[DL-INFO] Using 24 cores
+[CONFIG] States: 1, Surveys: ['population'], Scopes: ['1-year']
+
+======================================================================
+[POPULATION] Processing California (1-year)...
+======================================================================
+[VERBOSE] Searching for population files with scope 1-year...
+Pattern is:/data/temp/census/raw/acs/population/1-Year/06/*/*.csv
+[VERBOSE] Found 9 file(s) to load
+[VERBOSE] Loading file 1/9: psam_p06.csv
+[VERBOSE]   -> Loaded 377,575 rows
+[VERBOSE] Loading file 2/9: ss14pca.csv
+[VERBOSE]   -> Loaded 372,553 rows
+[VERBOSE] Loading file 3/9: psam_p06.csv
+[VERBOSE]   -> Loaded 378,817 rows
+[VERBOSE] Loading file 4/9: ss16pca.csv
+[VERBOSE]   -> Loaded 376,035 rows
+[VERBOSE] Loading file 5/9: psam_p06.csv
+[VERBOSE]   -> Loaded 380,091 rows
+[VERBOSE] Loading file 6/9: psam_p06.csv
+[VERBOSE]   -> Loaded 391,171 rows
+[VERBOSE] Loading file 7/9: psam_p06.csv
+[VERBOSE]   -> Loaded 392,318 rows
+[VERBOSE] Loading file 8/9: ss15pca.csv
+[VERBOSE]   -> Loaded 374,943 rows
+[VERBOSE] Loading file 9/9: ss11pca.csv
+[VERBOSE]   -> Loaded 368,809 rows
+[VERBOSE] Successfully loaded 9 dataframe(s)
+[VERBOSE] Combined into 3,412,312 total rows
+[INFO] Loaded 3,412,312 records
+[CENSUS_YEAR_TRACK] After schema application: 3412312 valid, 9 unique
+[VERBOSE] Feature engineering complete: (3412312, 239)
+[VERBOSE] Running comprehensive analysis suite...
+[VERBOSE] Computing comprehensive summary statistics...
+[VERBOSE] Analyzing 29 numeric variables
+[VERBOSE] Detecting outliers using IQR method...
+[VERBOSE] Detecting temporal anomalies...
+[VERBOSE] Analyzing trend strength and significance...
+
+[VISUALS] Creating comprehensive visualization suite for POPULATION...
+[VERBOSE] Creating temporal visualizations...
+[VIZ-VERBOSE] _plot_sample_counts: df.shape=(3412312, 239)
+[VIZ-VERBOSE] 'Census_Year' in columns: True
+[VIZ-VERBOSE] Census_Year counts: 9 unique years, total records: 3412312
+[VIZ-VERBOSE] Year range: 2011 to 2023
+[VIZ-VERBOSE] _year_distribution: df.shape=(3412312, 239)
+[VIZ-VERBOSE] Year distribution: {np.int64(2011): np.int64(368809), np.int64(2014): np.int64(372553), np.int64(2015): np.int64(374943), np.int64(2016): np.int64(376035), np.int64(2017): np.int64(377575), np.int64(2018): np.int64(378817), np.int64(2019): np.int64(380091), np.int64(2022): np.int64(391171), np.int64(2023): np.int64(392318)}
+[VIZ-VERBOSE] _temporal_comparison: df.shape=(3412312, 239)
+[VIZ-VERBOSE] _get_key_numeric_cols: 225 numeric columns total
+[VIZ-VERBOSE] Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+[VIZ-VERBOSE] Matched key columns: ['Income_Adjustment_Factor', 'Age', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income']
+[VIZ-VERBOSE] Key numeric columns found: ['Income_Adjustment_Factor', 'Age', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income']
+[VIZ-VERBOSE] _plot_metric_trend for column 'Income_Adjustment_Factor'
+[VIZ-VERBOSE] Column 'Income_Adjustment_Factor': 3412312 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 1001264.00 to 1042311.00
+[VIZ-VERBOSE] _plot_metric_trend for column 'Age'
+[VIZ-VERBOSE] Column 'Age': 3412312 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 0.00 to 94.00
+[VIZ-VERBOSE] _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+[VIZ-VERBOSE] Column 'Interest_Dividend_Rental_Income': 361539 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 1.00 to 434000.00
+[VIZ-VERBOSE] _plot_metric_trend for column 'Other_Income'
+[VIZ-VERBOSE] Column 'Other_Income': 150393 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 4.00 to 88000.00
+[VIZ-VERBOSE] _plot_metric_trend for column 'Public_Assistance_Income'
+[VIZ-VERBOSE] Column 'Public_Assistance_Income': 49222 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 4.00 to 30000.00
+[VIZ-VERBOSE] _plot_metric_trend for column 'Retirement_Income'
+[VIZ-VERBOSE] Column 'Retirement_Income': 307638 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 4.00 to 195000.00
+[VIZ-VERBOSE] _plot_metric_trend for column 'Self_Employment_Income'
+[VIZ-VERBOSE] Column 'Self_Employment_Income': 188513 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 1.00 to 445000.00
+[VIZ-VERBOSE] _plot_metric_trend for column 'Supplemental_Security_Income'
+[VIZ-VERBOSE] Column 'Supplemental_Security_Income': 100332 non-null values (zeros excluded if needed)
+[VIZ-VERBOSE] Value range: 20.00 to 30000.00
+[VERBOSE] Creating economic visualizations...
+[VERBOSE] Creating correlation visualizations...
+[VERBOSE] Creating correlation heatmap...
+[VERBOSE] Creating scatter matrix...
+[VERBOSE] Creating scatter matrix with columns: ['Income_Adjustment_Factor', 'Age', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income']
+[VERBOSE] Creating statistical distribution visualizations...
+[VIZ-VERBOSE] _box_plots: df.shape=(3412312, 239)
+[VIZ-VERBOSE] Key columns for box plots: ['Age', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Presence_And_Age_Own_Children', 'Total_Person_Earnings', 'Total_Person_Income', 'Income_Per_Hour', 'Income_Per_Week_Worked', 'Total_Annual_Hours']
+[VIZ-VERBOSE] Box plot for 'Age': 3412312 non-null values
+[VIZ-VERBOSE] Data range: 0.00 to 94.00
+[VIZ-VERBOSE] Box plot for 'Interest_Dividend_Rental_Income': 361539 non-null values
+[VIZ-VERBOSE] Data range: 1.00 to 434000.00
+[VIZ-VERBOSE] Box plot for 'Other_Income': 150393 non-null values
+[VIZ-VERBOSE] Data range: 4.00 to 88000.00
+[VIZ-VERBOSE] Box plot for 'Public_Assistance_Income': 49222 non-null values
+[VIZ-VERBOSE] Data range: 4.00 to 30000.00
+[VIZ-VERBOSE] Box plot for 'Retirement_Income': 307638 non-null values
+[VIZ-VERBOSE] Data range: 4.00 to 195000.00
+[VIZ-VERBOSE] Box plot for 'Self_Employment_Income': 188513 non-null values
+[VIZ-VERBOSE] Data range: 1.00 to 445000.00
+[VIZ-VERBOSE] Box plot for 'Supplemental_Security_Income': 100332 non-null values
+[VIZ-VERBOSE] Data range: 20.00 to 30000.00
+[VIZ-VERBOSE] Box plot for 'Social_Security_Income': 541602 non-null values
+[VIZ-VERBOSE] Data range: 4.00 to 50000.00
+[VIZ-VERBOSE] Box plot for 'Wage_Income': 1605186 non-null values
+[VIZ-VERBOSE] Data range: 4.00 to 687000.00
+[VIZ-VERBOSE] Box plot for 'Hours_Worked_Per_Week': 1737351 non-null values
+[VIZ-VERBOSE] Data range: 1.00 to 99.00
+[VIZ-VERBOSE] Box plot for 'Presence_And_Age_Own_Children': 1371619 non-null values
+[VIZ-VERBOSE] Data range: 1.00 to 4.00
+[VIZ-VERBOSE] Box plot for 'Total_Person_Earnings': 1734353 non-null values
+[VIZ-VERBOSE] Data range: 1.00 to 1132000.00
+[VIZ-VERBOSE] Box plot for 'Total_Person_Income': 2378790 non-null values
+[VIZ-VERBOSE] Data range: 1.00 to 1587000.00
+[VIZ-VERBOSE] Box plot for 'Income_Per_Hour': 1735659 non-null values
+[VIZ-VERBOSE] Data range: 0.00 to 17384.62
+[VIZ-VERBOSE] Box plot for 'Income_Per_Week_Worked': 1131683 non-null values
+[VIZ-VERBOSE] Data range: 0.17 to 1364000.00
+[VIZ-VERBOSE] Box plot for 'Total_Annual_Hours': 1132819 non-null values
+[VIZ-VERBOSE] Data range: 1.00 to 594.00
+[VERBOSE] Creating advanced visualizations (violin, ridge, radar)...
+[VERBOSE] Creating year-over-year change visualizations...
+[VERBOSE] Creating outlier and anomaly detection visualizations...
