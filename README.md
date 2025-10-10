@@ -1,24 +1,41 @@
 # Census ACS Exploratory Data Analysis (by State)
-**Educational Use Disclaimer**
-*EDUCATIONAL AND RESEARCH PURPOSES ONLY: This repository and its contents are provided solely for educational, academic research, and learning purposes. The data, scripts, analyses, and any outputs are intended to demonstrate data analysis techniques and Census data exploration methods. Users are responsible for ensuring their use of Census data complies with all applicable terms of service, usage restrictions, and legal requirements. This project is not affiliated with, endorsed by, or representative of the U.S. Census Bureau. Always refer to official Census Bureau sources for authoritative data and interpretations.*
-**Data Accuracy & No Warranty**
-*NO WARRANTY: This repository is provided "as is" without warranty of any kind, express or implied. The authors make no guarantees regarding the accuracy, completeness, or reliability of any data, scripts, or analyses. Users assume all responsibility for verifying data accuracy and appropriateness for their intended use. Census data contains sampling and non-sampling errors - always consult official documentation and use appropriate statistical methods.*
 
-This repository contains EDA for Census ACS organized by State/Survey-Type/Survey-Scope
-- **State**: US States/Territories
+**Educational Use Disclaimer**
+
+*EDUCATIONAL AND RESEARCH PURPOSES ONLY*: ***This repository and its contents are provided solely for educational, academic research, and learning purposes. The data, scripts, analyses, and any outputs are intended to demonstrate data analysis techniques and Census data exploration methods. Users are responsible for ensuring their use of Census data complies with all applicable terms of service, usage restrictions, and legal requirements. This project is not affiliated with, endorsed by, or representative of the U.S. Census Bureau. Always refer to official Census Bureau sources for authoritative data and interpretations.***
+
+
+**Data Accuracy & No Warranty**
+
+*NO WARRANTY*: ***This repository is provided "as is" without warranty of any kind, express or implied. The authors make no guarantees regarding the accuracy, completeness, or reliability of any data, scripts, or analyses. Users assume all responsibility for verifying data accuracy and appropriateness for their intended use. Census data contains sampling and non-sampling errors - always consult official documentation and use appropriate statistical methods.***
+This repository contains Exploratory Data Analysis (EDA) for Census ACS organized by State/Survey-Type/Survey-Scope
+- **State**: 50 US States + District of Columbia, Puerto Rico
 - **Survey-Type**: housing, population
 - **Survey-Scope**: 1-Year, 5-Year
-- *Data Availability Note*: Only 2007-2023 ACS data is evaluated
+
+***Data Availability Note***: Only 2007-2023 ACS data is evaluated
+
+
+## Hardware Quickstart 
+Base Recommendation for local LLM Hardware: 
+
+1) **OS**        : $     0.00 :Debian 13 Trixie ☮︎☮︎☮︎ 
+2) **Framework** : $ 1,699.00 : (Framework Desktop Mainboard Amd Ryzen AI MAX 300 128 GB LPDDR5x-8000 memory)[https://frame.work/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAFMK0002]
+
+@TODO:FINISH OFF
+
 
 ##  So What? 
-@TODO: UPDATE >>>
-Nationwide Coverage: Automated analysis pipeline for all 50 states, DC, and Puerto Rico—covering both population and housing surveys across 1-year and 5-year ACS scopes
-AI-Augmented Intelligence: Uses LLMs (phi-4-mini-reasoning) to transform 300K+ records and 234 variables per state into human-readable insights on affordability crises, inequality trends, and demographic shifts
-Context-Aware Analysis: Each state's report integrates local economic drivers (tech booms, manufacturing decline, migration patterns) and policy environments—not generic statistics
-Weeks of Work in Hours: Generates comprehensive reports with statistical analysis, ML models, trend detection, and policy recommendations that would require manual analyst review for weeks
-Open-Source Blueprint: Reproducible framework for applying AI to civic data analysis—democratizing sophisticated demographic research for researchers, policymakers, and civic organizations
-<<<
-
+**Test of LLM usage during EDA Stages**
+1) Ability to interpret and provide recommendations for employed statistical methods/models 
+2) Interpretation, based on combinding provided context - *and whatever else model has been trainied on prior*, to help inform "What we are seeing" as well as "What is expected" 
+3) Missing Data handling- how does an LLM react when told to analyze Anomalies when none have been provided? *Preliminary Investigation has yieled fascinating results wherein Model 'reasons' where they would have expected anomalies and why and how it potentially relates to data quality/normalization/etc
+**Designed Limitations**
+1) *Brute full spectrum*: Designed to be 'full spectrum', this EDA creates various models (unsupervised, supervised) for various configurations (some non-sense, limited in scope, not adhering to best statistical/economic practices)
+2) *CPU Training for Deep Learning*: While not signficant for end viewer, this limitation is a result of limited machine  
+**Next Run**
+1) *Improving Model Context*: provided LLM Context should have been more in depth into data source (PUMA microdata) and illict/reference in reasoning 
+2) *Personal Oversight*: Full disclosure, I definitely overlooked 'Currency' (Nominal, Real, +++) and as such any currency values should be treated as nominal
 
 ## Highlights
 ### LLM Powered Analysis
