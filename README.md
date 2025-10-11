@@ -44,16 +44,16 @@ Base Recommendation for local LLM Hardware:
 1. **OS**                   : $    0.00 : Debian 13 Trixie
 2. **Framework**            : $ 1699.00 : [Framework Desktop Mainboard AMD Ryzen AI MAX 300 128 GB LPDDR5x-8000 memory](https://frame.work/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAFMK0002)
 3. **Case**                 : $  109.99 : [Fractal Design Node 304](https://www.newegg.com/fractal-design-mini-itx-tower-node-304-aluminum-steel-computer-case-black-fd-ca-node-304-bl/p/N82E16811352027)
-4. **Power Supply**         : $  124.99 : [CORSAIR RMe Series RM1200e ATX Power Supply – Fully Modular – ATX 3.1 – 80 PLUS Gold – Cybenetics Platinum – Low-Noise – 1200 Watts](https://www.newegg.com/rme-atx-3-0-compatible-atx-3-1-compatible-1200-w-80-plus-gold-certified-power-supplies-corsair-rm1200e/p/N82E16817139315?Item=N82E16817139315&cm_sp=product-_-from-price-options)
-5. **CPU Fan**              : $   31.90 : [Noctua NF-A12x25 HS-PWM 120mm](https://frame.work/products/desktop-noctua-cpu-fan?v=FRAMBX0002)
-6. **NVMe (Slot 1)**        : $  399.99 : [WD_BLACK 8TB SN850X NVMe Internal Gaming Solid State Drive with Heatsink](https://www.amazon.com/WD_BLACK-SN850X-Internal-Gaming-Heatsink/dp/B0D9WTM2TH/ref=sr_1_2_sspa?crid=19538HBDFKJJ5&dib=eyJ2IjoiMSJ9.ydUUsp-J3DcI7tj41OTg3ZicITCffXsMBWPfPriDGbgqvPtvar_0grj_sR3Ial8AKyyK-nXsqpbH0msDXVFSbedIExEgIDSxt9Z8SckCDCCSM1I3eOoPY_k818Y6L8GB6RER1xPkA5NWtBe8YKEgMzhG6Ga6hVJp9kxgedN9uhKRdSF5cubi8CFF8NPNI03Xu6nbmVrz9Jv4F6r251C3a-plHcGt2IXM0-5W-Dv0cRU.Xrlr7sovlGh7-NKRwLutup86O4HpC961jGkrsHjcVdE&dib_tag=se&keywords=SAMSUNG%2B9100%2BPRO%2B4TB&qid=1760139413&sprefix=samsung%2B9100%2Bpro%2B4tb%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)  
-7. **NVMe (Slot 2)**        : $  399.99 : [WD_BLACK 8TB SN850X NVMe Internal Gaming Solid State Drive with Heatsink](https://www.amazon.com/WD_BLACK-SN850X-Internal-Gaming-Heatsink/dp/B0D9WTM2TH/ref=sr_1_2_sspa?crid=19538HBDFKJJ5&dib=eyJ2IjoiMSJ9.ydUUsp-J3DcI7tj41OTg3ZicITCffXsMBWPfPriDGbgqvPtvar_0grj_sR3Ial8AKyyK-nXsqpbH0msDXVFSbedIExEgIDSxt9Z8SckCDCCSM1I3eOoPY_k818Y6L8GB6RER1xPkA5NWtBe8YKEgMzhG6Ga6hVJp9kxgedN9uhKRdSF5cubi8CFF8NPNI03Xu6nbmVrz9Jv4F6r251C3a-plHcGt2IXM0-5W-Dv0cRU.Xrlr7sovlGh7-NKRwLutup86O4HpC961jGkrsHjcVdE&dib_tag=se&keywords=SAMSUNG%2B9100%2BPRO%2B4TB&qid=1760139413&sprefix=samsung%2B9100%2Bpro%2B4tb%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)  
+4. **Power Supply**         : $  199.99 : [CORSAIR RMe Series RM1200e ATX Power Supply – Fully Modular – ATX 3.1 – 80 PLUS Gold – Cybenetics Platinum – Low-Noise – 1200 Watts](https://www.newegg.com/rme-atx-3-0-compatible-atx-3-1-compatible-1200-w-80-plus-gold-certified-power-supplies-corsair-rm1200e/p/N82E16817139315?Item=N82E16817139315&cm_sp=product-_-from-price-options)
+5. **CPU Fan**              : $   39.00 : [Noctua NF-A12x25 HS-PWM 120mm](https://frame.work/products/desktop-noctua-cpu-fan?v=FRAMBX0002)
+6. **NVMe (Slot 1)**        : $  639.99 : [WD_BLACK 8TB SN850X NVMe Internal Gaming Solid State Drive with Heatsink](https://www.amazon.com/WD_BLACK-SN850X-Internal-Gaming-Heatsink/dp/B0D9WTM2TH/ref=sr_1_2_sspa?crid=19538HBDFKJJ5&dib=eyJ2IjoiMSJ9.ydUUsp-J3DcI7tj41OTg3ZicITCffXsMBWPfPriDGbgqvPtvar_0grj_sR3Ial8AKyyK-nXsqpbH0msDXVFSbedIExEgIDSxt9Z8SckCDCCSM1I3eOoPY_k818Y6L8GB6RER1xPkA5NWtBe8YKEgMzhG6Ga6hVJp9kxgedN9uhKRdSF5cubi8CFF8NPNI03Xu6nbmVrz9Jv4F6r251C3a-plHcGt2IXM0-5W-Dv0cRU.Xrlr7sovlGh7-NKRwLutup86O4HpC961jGkrsHjcVdE&dib_tag=se&keywords=SAMSUNG%2B9100%2BPRO%2B4TB&qid=1760139413&sprefix=samsung%2B9100%2Bpro%2B4tb%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)  
+7. **NVMe (Slot 2)**        : $  639.99 : [WD_BLACK 8TB SN850X NVMe Internal Gaming Solid State Drive with Heatsink](https://www.amazon.com/WD_BLACK-SN850X-Internal-Gaming-Heatsink/dp/B0D9WTM2TH/ref=sr_1_2_sspa?crid=19538HBDFKJJ5&dib=eyJ2IjoiMSJ9.ydUUsp-J3DcI7tj41OTg3ZicITCffXsMBWPfPriDGbgqvPtvar_0grj_sR3Ial8AKyyK-nXsqpbH0msDXVFSbedIExEgIDSxt9Z8SckCDCCSM1I3eOoPY_k818Y6L8GB6RER1xPkA5NWtBe8YKEgMzhG6Ga6hVJp9kxgedN9uhKRdSF5cubi8CFF8NPNI03Xu6nbmVrz9Jv4F6r251C3a-plHcGt2IXM0-5W-Dv0cRU.Xrlr7sovlGh7-NKRwLutup86O4HpC961jGkrsHjcVdE&dib_tag=se&keywords=SAMSUNG%2B9100%2BPRO%2B4TB&qid=1760139413&sprefix=samsung%2B9100%2Bpro%2B4tb%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)  
 8. **NVMe Heatsink**        : $   29.99 : M.2 2280 Heatsink / Thermal Pad — recommended for sustained loads
 9. **NVMe Mount / Screws**  : $    6.50 : M.2 standoff & screw kit
 10. **Cables / Adapters**   : $   24.99 : 24-pin ATX extension, SATA cables, USB adapters
 11. **UPS**                 : $  119.99 : 600–900 VA UPS, pure sine wave
 #### ADDITIONAL STORAGE
-12. **PCIe SATA Controller**            : $   45.99 : [RIITOP 6-Port PCIe 3.0 x4 SATA Controller](https://www.amazon.com/RIITOP-Controller-Expansion-Desktop-Support/dp/B0BYN3XVP3) — ASM1166 chipset
+12. **PCIe SATA Controller**            : $   41.59 : [RIITOP 6-Port PCIe 3.0 x4 SATA Controller](https://www.amazon.com/Ports-RIITOP-Expansion-Controller-Adapter/dp/B09C4G57PW/ref=sr_1_3?dib=eyJ2IjoiMSJ9.jRI1W7UIRHS1PfwpKHZ1LgwXhLbW9gJcNZni4uJLahw5mWggxrOT3jvrRkaKBWS4LwSP2kbbn4Ki9PUi7nZhoOrtsN9JHbrjymjPt-b73hi7gDU5bwe0Wziex82pHxiCdXI0vyqBAGqHN2-qW7csCmSp1JhIqd2iyPEgr_g5UiAx7fs5hEPqLLtZo4Kf5O-Iy79s6-ySSlJVGd3Rtfp4h3MLoIdc0iUqrDxCfjaBq3k.zTFVDteZP4k2eUGQt25eA9jJG-37eSS2YJNDu4TagC4&dib_tag=se&keywords=RIITOP+6-Port+PCIe+3.0+x4+SATA+Controller&qid=1760143101&sr=8-3)
 13. **6x Seagate IronWolf Pro 28TB**    : $ 2879.94 : [Seagate IronWolf Pro 28TB Enterprise NAS](https://www.amazon.com/Seagate-IronWolf-Internal-Hard-Drive/dp/B0FFBPK8T7/) — 6 drives @ $479.99 each
 14. **SATA Cables (6-pack)**            : $   14.99 : 18-24" right-angle SATA III cables
 15. **SATA Power Splitters**            : $   12.99 : SATA power Y-splitters for PSU
@@ -86,7 +86,11 @@ Base Recommendation for local LLM Hardware:
 **Operating System**: Debian 13 Trixie  
 
 **Grand Total Storage**: **184TB**  
-### Estimated Total Cost: **$6,501.24**
+
+### Estimated Total Cost Basic: **$3579.01** 
+- This Option does not include the additional 192 TB of HDD storage
+### Estimated Total Cost      : **$6458.95**
+- This Option does include the additional 192 TB of HDD storage
 
 ### Key Features
 - 16TB ultra-fast NVMe for OS, applications, and hot data
