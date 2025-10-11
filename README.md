@@ -14,17 +14,6 @@ This repository contains Exploratory Data Analysis (EDA) for Census ACS organize
 - **Survey-Scope**: 1-Year, 5-Year
 
 ***Data Availability Note***: Only 2007-2023 ACS data is evaluated
-
-
-## Hardware Quickstart 
-Base Recommendation for local LLM Hardware: 
-
-1) **OS**        : $     0.00 :Debian 13 Trixie ☮︎☮︎☮︎ 
-2) **Framework** : $ 1,699.00 : (Framework Desktop Mainboard Amd Ryzen AI MAX 300 128 GB LPDDR5x-8000 memory)[https://frame.work/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAFMK0002]
-
-@TODO:FINISH OFF
-
-
 ##  So What? 
 **Test of LLM usage during EDA Stages**
 1) Ability to interpret and provide recommendations for employed statistical methods/models 
@@ -45,6 +34,81 @@ Large Languge Model Integration (LLM) to assist with large scale data analytics 
 Large quantity of repeated analysis,processing, visualization, and modeling patterns across a plethora of states/survey-types/survey-scopes.
 ### Next Steps
 Blueprints for next steps generated for distinct topics/subjects; this comes as a result of diverse  analysis,processing, visualization, and modeling patterns, in tandem with LLM intepretation.
+
+
+
+## Hardware Quickstart 
+Base Recommendation for local LLM Hardware: 
+
+
+1. **OS**                   : $    0.00 : Debian 13 Trixie
+2. **Framework**            : $ 1699.00 : [Framework Desktop Mainboard AMD Ryzen AI MAX 300 128 GB LPDDR5x-8000 memory](https://frame.work/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAFMK0002)
+3. **Case**                 : $  109.99 : [Fractal Design Node 304](https://www.newegg.com/fractal-design-mini-itx-tower-node-304-aluminum-steel-computer-case-black-fd-ca-node-304-bl/p/N82E16811352027)
+4. **Power Supply**         : $  124.99 : [CORSAIR RMe Series RM1200e ATX Power Supply – Fully Modular – ATX 3.1 – 80 PLUS Gold – Cybenetics Platinum – Low-Noise – 1200 Watts](https://www.newegg.com/rme-atx-3-0-compatible-atx-3-1-compatible-1200-w-80-plus-gold-certified-power-supplies-corsair-rm1200e/p/N82E16817139315?Item=N82E16817139315&cm_sp=product-_-from-price-options)
+5. **CPU Fan**              : $   31.90 : [Noctua NF-A12x25 HS-PWM 120mm](https://frame.work/products/desktop-noctua-cpu-fan?v=FRAMBX0002)
+6. **NVMe (Slot 1)**        : $  399.99 : [WD_BLACK 8TB SN850X NVMe Internal Gaming Solid State Drive with Heatsink](https://www.amazon.com/WD_BLACK-SN850X-Internal-Gaming-Heatsink/dp/B0D9WTM2TH/ref=sr_1_2_sspa?crid=19538HBDFKJJ5&dib=eyJ2IjoiMSJ9.ydUUsp-J3DcI7tj41OTg3ZicITCffXsMBWPfPriDGbgqvPtvar_0grj_sR3Ial8AKyyK-nXsqpbH0msDXVFSbedIExEgIDSxt9Z8SckCDCCSM1I3eOoPY_k818Y6L8GB6RER1xPkA5NWtBe8YKEgMzhG6Ga6hVJp9kxgedN9uhKRdSF5cubi8CFF8NPNI03Xu6nbmVrz9Jv4F6r251C3a-plHcGt2IXM0-5W-Dv0cRU.Xrlr7sovlGh7-NKRwLutup86O4HpC961jGkrsHjcVdE&dib_tag=se&keywords=SAMSUNG%2B9100%2BPRO%2B4TB&qid=1760139413&sprefix=samsung%2B9100%2Bpro%2B4tb%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)  
+7. **NVMe (Slot 2)**        : $  399.99 : [WD_BLACK 8TB SN850X NVMe Internal Gaming Solid State Drive with Heatsink](https://www.amazon.com/WD_BLACK-SN850X-Internal-Gaming-Heatsink/dp/B0D9WTM2TH/ref=sr_1_2_sspa?crid=19538HBDFKJJ5&dib=eyJ2IjoiMSJ9.ydUUsp-J3DcI7tj41OTg3ZicITCffXsMBWPfPriDGbgqvPtvar_0grj_sR3Ial8AKyyK-nXsqpbH0msDXVFSbedIExEgIDSxt9Z8SckCDCCSM1I3eOoPY_k818Y6L8GB6RER1xPkA5NWtBe8YKEgMzhG6Ga6hVJp9kxgedN9uhKRdSF5cubi8CFF8NPNI03Xu6nbmVrz9Jv4F6r251C3a-plHcGt2IXM0-5W-Dv0cRU.Xrlr7sovlGh7-NKRwLutup86O4HpC961jGkrsHjcVdE&dib_tag=se&keywords=SAMSUNG%2B9100%2BPRO%2B4TB&qid=1760139413&sprefix=samsung%2B9100%2Bpro%2B4tb%2Caps%2C166&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1)  
+8. **NVMe Heatsink**        : $   29.99 : M.2 2280 Heatsink / Thermal Pad — recommended for sustained loads
+9. **NVMe Mount / Screws**  : $    6.50 : M.2 standoff & screw kit
+10. **Cables / Adapters**   : $   24.99 : 24-pin ATX extension, SATA cables, USB adapters
+11. **UPS**                 : $  119.99 : 600–900 VA UPS, pure sine wave
+#### ADDITIONAL STORAGE
+12. **PCIe SATA Controller**            : $   45.99 : [RIITOP 6-Port PCIe 3.0 x4 SATA Controller](https://www.amazon.com/RIITOP-Controller-Expansion-Desktop-Support/dp/B0BYN3XVP3) — ASM1166 chipset
+13. **6x Seagate IronWolf Pro 28TB**    : $ 2879.94 : [Seagate IronWolf Pro 28TB Enterprise NAS](https://www.amazon.com/Seagate-IronWolf-Internal-Hard-Drive/dp/B0FFBPK8T7/) — 6 drives @ $479.99 each
+14. **SATA Cables (6-pack)**            : $   14.99 : 18-24" right-angle SATA III cables
+15. **SATA Power Splitters**            : $   12.99 : SATA power Y-splitters for PSU
+### HARDWARE SUMMARY
+
+**CPU/APU**: AMD Ryzen AI MAX 300 Series (Framework Desktop Mainboard)  
+
+**CPU Main**: 16-core/32-thread + 3.0GHz base clock (*Up to 5.1GHz max boost*)
+
+**Additional CPU**: 64MB L3 Cache , Processor power level: 120W sustained, 140W boost power
+
+**NPU**: 32 Tiles, Up to 50 TOPS
+
+**Integrated Graphics**: Radeon™ 8060S (*Up to 2.9GHz, 40 Compute Units, 32MB MALL Cache*)
+
+**Total LPDDR5x Memory**: 128GB @ 8000 MT/s  
+
+**Total NVMe Storage**: 16TB (2× 8TB M.2 slots maxed)  
+
+**Total HDD Storage**: 168TB (6× 28TB Seagate IronWolf Pro)  
+
+**Power Supply**: 1200W Corsair RM1200e (80 PLUS Gold, ATX 3.1, Fully Modular)  
+
+**Case**: Fractal Design Node 304 (Mini-ITX, High Airflow)  
+
+**Storage Controller**: RIITOP 6-Port PCIe 3.0 x4 SATA (ASM1166 chipset)  
+
+**Backup Power**: 600-900VA UPS (Pure Sine Wave)  
+
+**Operating System**: Debian 13 Trixie  
+
+**Grand Total Storage**: **184TB**  
+### Estimated Total Cost: **$6,501.24**
+
+### Key Features
+- 16TB ultra-fast NVMe for OS, applications, and hot data
+- 168TB high-capacity HDD array for bulk storage  
+- Fully modular 1200W PSU for future expansion  
+- Mini-ITX compact form factor with high airflow design  
+- UPS included for power protection  
+- Expandable SATA storage with dedicated PCIe controller  
+- 128GB unified memory for AI/compute workloads
+
+
+### IMPORTANT COMPATIBILITY NOTES
+* **Framework Desktop mainboard I/O**: 2× M.2 2280 NVMe slots (PCIe 4.0 x4 each), 1× PCIe 4.0 x4 expansion slot, **ZERO SATA ports**. No support for 2.5" or 3.5" SATA/HDD drives on the mainboard itself.
+* **PCIe Gen5 limitation**: The Framework Desktop M.2 slots operate at PCIe Gen4 speeds max. The Samsung 9100 PRO (Gen5 drive) will work but fall back to Gen4 bandwidth (~7,500 MB/s real-world vs advertised 14,800 MB/s).
+* **Power connectors**: Framework Desktop mainboard expects standard 24-pin ATX + 8-pin EPS when used in a conventional Mini-ITX case with ATX PSU.
+* **Case compatibility**: Framework Desktop uses standard Mini-ITX form factor; compatible with any Mini-ITX case and ATX PSU.
+* **SATA expansion option**: To add SATA support, you would need a PCIe 4.0 x4 SATA controller card in the single expansion slot (sacrifices the PCIe slot for SATA ports).
+
+### OTHER AWESOME HARDWARE:
+**Fast New Generation NVMe** : $  999.99 : [SAMSUNG 9100 PRO 8TB PCIe 5.0 x4 M.2 2280, up to 14,800 MB/s — MZ-VAP8T0B/AM](https://www.samsung.com/us/memory-storage/nvme-ssd/9100-pro-nvme-ssd-sku-mz-vap8t0b-am/)
+- Compatible with motherboard but runs at PCIe 4.0 speeds
+
 ## Appendix
 ### Privacy & Confidentiality
 **PROTECT PRIVACY**: While ACS PUMS data is anonymized and disclosure-protected by the Census Bureau, users must:
@@ -52,6 +116,7 @@ Blueprints for next steps generated for distinct topics/subjects; this comes as 
 - Handle data responsibly and ethically
 - Comply with all data use agreements and privacy regulations
 - Be aware that combining datasets may create re-identification risks
+
 
 ### Ethical Server Use
 **RESPECTFUL DATA COLLECTION**: When using the download scripts:
