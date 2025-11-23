@@ -1,4 +1,6 @@
 # Census ACS Exploratory Data Analysis (by State)
+Early exploration using Context Aware Generation (CAG) to bridge the gap between statistical metrics and lived reality
+
 
 **Educational Use Disclaimer**
 
@@ -15,32 +17,37 @@ This repository contains Exploratory Data Analysis (EDA) for Census ACS organize
 
 ***Data Availability Note***: Only 2007-2023 ACS data is evaluated
 ##  So What? 
-**Test of LLM usage during EDA Stages**
-1) Ability to interpret and provide recommendations for employed statistical methods/models 
-2) Interpretation, based on combinding provided context - *and whatever else model has been trainied on prior*, to help inform "What we are seeing" as well as "What is expected" 
-3) Missing Data handling- how does an LLM react when told to analyze Anomalies when none have been provided? *Preliminary Investigation has yieled fascinating results wherein Model 'reasons' where they would have expected anomalies and why and how it potentially relates to data quality/normalization/etc
-**Designed Limitations**
-1) *Brute full spectrum*: Designed to be 'full spectrum', this EDA creates various models (unsupervised, supervised) for various configurations (some non-sense, limited in scope, not adhering to best statistical/economic practices)
-2) *CPU Training for Deep Learning*: While not signficant for end viewer, this limitation is a result of limited machine  
-**Next Run**
-1) *Improving Model Context*: provided LLM Context should have been more in depth into data source (PUMA microdata) and illict/reference in reasoning 
-2) *Personal Oversight*: Full disclosure, I definitely overlooked 'Currency' (Nominal, Real, +++) and as such any currency values should be treated as nominal
+### REVISITING UPDATE  
+AI is fascinating as it provides the unique ability as it provide I/O for combinations of structured, unstructured and multidimensional data into a shared output- an output that only possible with a Large Language model. What does this mean? In most econometric models, you get amazing insights, understanding and ability to quantify XYZ. Integration of LLM's adds elements of sentiment analysis, 'emotion', and intrepretation that does not exists in traditional economicetric models. With this, new insights are provided that can potentially bridge the infamous 'Economic Model' from 'Reality' gap. Traditional econometrics gives us the skeleton; LLMs add the nervous system. Now, we finally see the full organism.
 
-## Highlights
-### LLM Powered Analysis
-Large Languge Model Integration (LLM) to assist with large scale data analytics (Exploratory Data Analysis, Data Visualization, Data Modeling, etc.)
-**Optimized Responses**: Generating at runtime an extended unique context providing additional instructions, background knowledge, and contextual information.
-### Deep Exploration Patterns
-Large quantity of repeated analysis,processing, visualization, and modeling patterns across a plethora of states/survey-types/survey-scopes.
-### Next Steps
-Blueprints for next steps generated for distinct topics/subjects; this comes as a result of diverse  analysis,processing, visualization, and modeling patterns, in tandem with LLM intepretation.
+**The Result**: We can finally explain why GDP says "growth" while people feel "recession"
+**The Vision**: Democratizing economic analysis so policymakers see what people feel, not just what models measure.
+ 
+#### Example Insight
+
+Ohio 2023: Traditional metrics show +55% income growth.
+LLM analysis reveals: Underlying anxiety about gig economy instability.
+Result: Policy recommendations that address actual, not statistical, problems.
+
+```bash
+This isn't just about better economic analysis.
+It's about who controls the tools to understand our world.
+
+Today: You need millions to analyze economies at scale.
+Tomorrow: You need $400 and this framework.
+
+Today: "Truth" comes from centralized models you can't inspect.
+Tomorrow: Truth comes from local models you control.
+
+This is computational democracy in action.
+The revolution will be locally computed.
+```
+
 
 
 
 ## Hardware Quickstart 
 Base Recommendation for local LLM Hardware: 
-
-
 1. **OS**                   : $    0.00 : Debian 13 Trixie
 2. **Framework**            : $ 1699.00 : [Framework Desktop Mainboard AMD Ryzen AI MAX 300 128 GB LPDDR5x-8000 memory](https://frame.work/products/framework-desktop-mainboard-amd-ryzen-ai-max-300-series?v=FRAFMK0002)
 3. **Case**                 : $  109.99 : [Fractal Design Node 304](https://www.newegg.com/fractal-design-mini-itx-tower-node-304-aluminum-steel-computer-case-black-fd-ca-node-304-bl/p/N82E16811352027)
@@ -120,6 +127,31 @@ Base Recommendation for local LLM Hardware:
 - Handle data responsibly and ethically
 - Comply with all data use agreements and privacy regulations
 - Be aware that combining datasets may create re-identification risks
+
+  
+<details>
+### Original So What
+** Test of LLM usage during EDA Stages**
+1) Ability to interpret and provide recommendations for employed statistical methods/models 
+2) Interpretation, based on combinding provided context - *and whatever else model has been trainied on prior*, to help inform "What we are seeing" as well as "What is expected" 
+3) Missing Data handling- how does an LLM react when told to analyze Anomalies when none have been provided? *Preliminary Investigation has yieled fascinating results wherein Model 'reasons' where they would have expected anomalies and why and how it potentially relates to data quality/normalization/etc
+**Designed Limitations**
+1) *Brute full spectrum*: Designed to be 'full spectrum', this EDA creates various models (unsupervised, supervised) for various configurations (some non-sense, limited in scope, not adhering to best statistical/economic practices)
+2) *CPU Training for Deep Learning*: While not signficant for end viewer, this limitation is a result of limited machine  
+**Next Run**
+1) *Improving Model Context*: provided LLM Context should have been more in depth into data source (PUMA microdata) and illict/reference in reasoning 
+2) *Personal Oversight*: Full disclosure, I definitely overlooked 'Currency' (Nominal, Real, +++) and as such any currency values should be treated as nominal
+
+## Highlights
+### LLM Powered Analysis
+Large Languge Model Integration (LLM) to assist with large scale data analytics (Exploratory Data Analysis, Data Visualization, Data Modeling, etc.)
+**Optimized Responses**: Generating at runtime an extended unique context providing additional instructions, background knowledge, and contextual information.
+### Deep Exploration Patterns
+Large quantity of repeated analysis,processing, visualization, and modeling patterns across a plethora of states/survey-types/survey-scopes.
+### Next Steps
+Blueprints for next steps generated for distinct topics/subjects; this comes as a result of diverse  analysis,processing, visualization, and modeling patterns, in tandem with LLM intepretation.
+<\details>
+
 
 
 ### Ethical Server Use
