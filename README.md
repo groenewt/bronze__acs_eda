@@ -65,7 +65,7 @@ Large quantity of repeated analysis, processing, visualization, and modeling pat
 
 ## Appendix
 ### Privacy & Confidentiality
-**PROTECT PRIVACY**: While ACS PUMAS data is anonymized and disclosure-protected by the Census Bureau, users must:
+**PROTECT PRIVACY**: While ACS PUMS data is anonymized and disclosure-protected by the Census Bureau, users must:
 - Never attempt to re-identify individuals or households in the data
 - Handle data responsibly and ethically
 - Comply with all data use agreements and privacy regulations
