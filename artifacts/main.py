@@ -850,11 +850,11 @@ def setup_parser(parser):
     parser.add_argument('--all-scopes', action='store_true',
                        help='Run analysis for all scopes (1-Year and 5-Year)')
     parser.add_argument('--states', type=str,
-                       help='Comma-separated list of states')
+                       help='Comma-separated list of states (Ex. Kansas, Missouri, South Carolina')
     parser.add_argument('--surveys', type=str,
-                       help='Comma-separated list of surveys')
+                       help='Comma-separated list of surveys (Housing, Population)')
     parser.add_argument('--scopes', type=str,
-                       help='Comma-separated list of scopes')
+                       help='Comma-separated list of scopes (1-Year, 5-Year)')
 
 
 def parse_arguments():
