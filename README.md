@@ -11,14 +11,14 @@ Early exploration using Context Augmented Generation (CAG) to bridge the gap bet
 
 *NO WARRANTY*: ***This repository is provided "as is" without warranty of any kind, express or implied. The authors make no guarantees regarding the accuracy, completeness, or reliability of any data, scripts, or analyses. Users assume all responsibility for verifying data accuracy and appropriateness for their intended use. Census data contains sampling and non-sampling errors - always consult official documentation and use appropriate statistical methods.***
 This repository contains Exploratory Data Analysis (EDA) for Census ACS organized by State/Survey-Type/Survey-Scope
-- **State**: 50 US States + District of Columbia, Puerto Rico
+- **State**: 50 US States plus District of Columbia, Puerto Rico
 - **Survey-Type**: housing, population
 - **Survey-Scope**: 1-Year, 5-Year
 
-***Data Availability Note***: Only 2007-2023 ACS data is evaluated
+***Data Availability Note***: Only 2007–2024 ACS data is evaluated
 ##  So What? 
 ### REVISITING UPDATE  
-AI is fascinating as it provides the unique ability as it provide I/O for combinations of structured, unstructured, and multidimensional data into a shared output- an output that only possible with a Large Language model. What does this mean? In most econometric models, you get amazing insights, understanding, and ability to quantify XYZ. Integration of LLM's adds elements of sentiment analysis, 'emotion', and intrepretation that does not exists in traditional economicetric models. With this, new insights are provided that can potentially bridge the infamous 'Economic Model' from 'Reality' gap. Traditional econometrics gives us the skeleton; LLMs add the nervous system. Now, we finally see the full organism.
+AI is fascinating as it provides the unique ability as it provides I/O for combinations of structured, unstructured, and multidimensional data into a shared output — an output that is only possible with a Large Language model. What does this mean? In most econometric models, you get amazing insights, understanding, and ability to quantify XYZ. Integration of LLM's adds elements of sentiment analysis, 'emotion', and interpretation that do not exist in traditional econometric models. With this, new insights are provided that can potentially bridge the infamous 'Economic Model' from the 'Reality' gap. Traditional econometrics give us the skeleton; LLMs add the nervous system. Now, we finally see the full organism.
 
 **The Result**: We can finally explain why GDP says "growth" while people feel "recession"
 **The Vision**: Democratizing economic analysis so policymakers see what people feel, not just what models measure.
@@ -65,7 +65,7 @@ Large quantity of repeated analysis, processing, visualization, and modeling pat
 
 ## Appendix
 ### Privacy & Confidentiality
-**PROTECT PRIVACY**: While ACS PUMS data is anonymized and disclosure-protected by the Census Bureau, users must:
+**PROTECT PRIVACY**: While ACS PUMAS data is anonymized and disclosure-protected by the Census Bureau, users must:
 - Never attempt to re-identify individuals or households in the data
 - Handle data responsibly and ethically
 - Comply with all data use agreements and privacy regulations

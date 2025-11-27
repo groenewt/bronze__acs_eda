@@ -207,7 +207,7 @@ BASE_REPO_NAME="bronze__acs_eda"
 BASE_GIT_URL="https://github.com/groenewt/${BASE_REPO_NAME}.git"
 git clone --filter=blob:none --sparse $BASE_GIT_URL
 cd $BASE_REPO_NAME
-#This way we only get the code in artifacts, not the 'unecessary parts'  
+#This way we only get the code in artifacts, not the 'unnecessary parts'  
 git sparse-checkout set artifacts
 ```
 

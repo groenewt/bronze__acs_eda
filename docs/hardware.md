@@ -50,7 +50,7 @@ The "Base Recommendation" above is optimized for running large local LLMs (70B+ 
 
 
 ##  A Built Out Machine  
-This details a custom build that captures 'how I wish I would've built my machine'. This seeks to facilitate big data operations while offering sufficent memomory/capabilities for said operations/Local LLamas
+This details a custom build that captures 'how I wish I would've built my machine'. This seeks to facilitate big data operations while offering sufficient memory/capabilities for said operations/Local LLMs
 
 Base Recommendation for local LLM Hardware: 
 1. **OS**                   : $    0.00 : Debian 13 Trixie

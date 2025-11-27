@@ -788,7 +788,7 @@ def run_visualizations_and_ml(df, config, survey):
     create_visuals(df, config, survey)
     # HOUSING: Sample df before ML/DL to prevent memory explosion
     if survey.lower() == 'housing':
-        target_cells = 10_000_000
+        target_cells = config.target_rows
         sample_rows = min(len(df), int(target_cells / len(df.columns)))
         if len(df) > sample_rows:
             print(f"[ML-SAMPLE] Housing: {len(df):,} → {sample_rows:,} rows ({target_cells:,} cells / {len(df.columns)} cols)")

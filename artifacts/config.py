@@ -46,7 +46,7 @@ class Config:
     figure_dpi: int = 150
     survey_type: str = ""
     survey_scope: str = ""
-
+    target_cells: int= 10_000_000     # HOUSING: Sample df before ML/DL to prevent memory explosion
     def set_state(self, state_fips: str):
         """Update state FIPS code and output directories"""
         if state_fips not in FIPS_MAP:
