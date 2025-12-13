@@ -560,11 +560,13 @@ class DLVisualizer:
 
     def _add_dashboard_comparisons(self, fig, grid_spec, results):
         """Add comparison plots to dashboard (≤10 lines)"""
-        ax1 = fig.add_subplot(grid_spec[0, 0])
-        ax2 = fig.add_subplot(grid_spec[0, 1])
-        ax3 = fig.add_subplot(grid_spec[0, 2])
-        ax4 = fig.add_subplot(grid_spec[1, 0:2])
-        ax5 = fig.add_subplot(grid_spec[1, 2])
+        from matplotlib.gridspec import GridSpecFromSubplotSpec
+        inner_gs = GridSpecFromSubplotSpec(2, 3, subplot_spec=grid_spec)
+        ax1 = fig.add_subplot(inner_gs[0, 0])
+        ax2 = fig.add_subplot(inner_gs[0, 1])
+        ax3 = fig.add_subplot(inner_gs[0, 2])
+        ax4 = fig.add_subplot(inner_gs[1, 0:2])
+        ax5 = fig.add_subplot(inner_gs[1, 2])
         self._plot_metric_comparison_bar(ax1, results)
         self._plot_loss_comparison_bar(ax2, results)
         self._dashboard_task_metrics(ax3, results)

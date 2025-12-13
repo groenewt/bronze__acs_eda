@@ -247,23 +247,30 @@ class PopulationDLModel(BaseDeepLearningModel):
     """Specialized deep learning for Population surveys"""
 
     def get_target_columns(self, survey_type: str = 'population') -> Dict[str, List[str]]:
-        """Get target configurations from schema (≤10 lines)"""
+        """Get target configurations from schema - 5 tasks to match housing parity"""
         # Extracted from PopulationSurvey schema: _income_cols() and _person_income_recodes()
         return {
             'income_prediction': ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings'],
             'employment_analysis': ['Hours_Worked_Per_Week', 'Employment_Status_Recode', 'Weeks_Worked_Past_Year'],
-            'demographic_profile': ['Educational_Attainment', 'Age', 'Sex', 'Marital_Status']
+            'demographic_profile': ['Educational_Attainment', 'Age', 'Sex', 'Marital_Status'],
+            # NEW: Parity tasks to match housing's 5 tasks
+            'wealth_analysis': ['Total_Person_Income', 'Interest_Dividend_Rental_Income', 'Retirement_Income'],
+            'mobility_prediction': ['Travel_Time_To_Work_Minutes', 'Transportation_To_Work']
         }
 
     def build_architecture(self, input_shape: tuple, output_shape: int,
                           config: TrainingConfig, task_name: str = 'default') -> Model:
-        """Build specialized architecture (≤10 lines)"""
+        """Build specialized architecture"""
         if task_name == 'income_prediction':
             return self._build_income_model(input_shape, output_shape, config)
         elif task_name == 'employment_analysis':
             return self._build_employment_model(input_shape, output_shape, config)
         elif task_name == 'demographic_profile':
             return self._build_demographic_model(input_shape, output_shape, config)
+        elif task_name == 'wealth_analysis':
+            return self._build_wealth_model(input_shape, output_shape, config)
+        elif task_name == 'mobility_prediction':
+            return self._build_mobility_model(input_shape, output_shape, config)
         return self._build_default_model(input_shape, output_shape, config)
 
     def _build_income_model(self, input_shape: tuple, output_shape: int,
@@ -304,9 +311,37 @@ class PopulationDLModel(BaseDeepLearningModel):
         outputs = Dense(output_shape, activation='softmax', name='demo_output')(x)
         return Model(inputs=inputs, outputs=outputs, name='PopulationDemographicModel')
 
+    def _build_wealth_model(self, input_shape: tuple, output_shape: int,
+                            config: TrainingConfig) -> Model:
+        """Deep model for wealth/income source analysis"""
+        inputs = Input(shape=(input_shape[1],))
+        x = Dense(256, activation='relu',
+                 kernel_regularizer=regularizers.l2(config.l2_reg))(inputs)
+        x = BatchNormalization()(x)
+        x = Dropout(config.dropout_rate)(x)
+        x = Dense(128, activation='relu')(x)
+        x = BatchNormalization()(x)
+        x = Dropout(config.dropout_rate / 2)(x)
+        x = Dense(64, activation='relu')(x)
+        outputs = Dense(output_shape, activation='linear', name='wealth_output')(x)
+        return Model(inputs=inputs, outputs=outputs, name='PopulationWealthModel')
+
+    def _build_mobility_model(self, input_shape: tuple, output_shape: int,
+                              config: TrainingConfig) -> Model:
+        """Deep model for mobility/transportation analysis"""
+        inputs = Input(shape=(input_shape[1],))
+        x = Dense(128, activation='relu',
+                 kernel_regularizer=regularizers.l1_l2(config.l1_reg, config.l2_reg))(inputs)
+        x = BatchNormalization()(x)
+        x = Dropout(config.dropout_rate)(x)
+        x = Dense(64, activation='relu')(x)
+        x = Dropout(config.dropout_rate / 2)(x)
+        outputs = Dense(output_shape, activation='linear', name='mobility_output')(x)
+        return Model(inputs=inputs, outputs=outputs, name='PopulationMobilityModel')
+
     def _build_default_model(self, input_shape: tuple, output_shape: int,
                             config: TrainingConfig) -> Model:
-        """Default deep architecture (≤10 lines)"""
+        """Default deep architecture"""
         inputs = Input(shape=(input_shape[1],))
         x = Dense(128, activation='relu')(inputs)
         x = BatchNormalization()(x)
@@ -516,18 +551,142 @@ def train_housing_dl(df: pd.DataFrame, task_name: str = 'property_valuation',
     return trainer.train_model(df, 'housing', task_name, features, config)
 
 
-def _get_default_population_features(df: pd.DataFrame) -> List[str]:
-    """Get default features for population (≤10 lines)"""
-    candidate_features = ['Age', 'Sex', 'Educational_Attainment', 'Hours_Worked_Per_Week',
-                          'Weeks_Worked_Past_Year', 'Travel_Time_To_Work_Minutes',
-                          'Citizenship_Status', 'Marital_Status', 'Race_Recode',
-                          'Hispanic_Origin', 'Employment_Status_Recode']
-    return [f for f in candidate_features if f in df.columns]
+def _smart_feature_selection(df: pd.DataFrame, exclude_cols: List[str] = None,
+                              min_variance: float = 0.01, max_corr: float = 0.95,
+                              max_features: int = 20) -> List[str]:
+    """
+    Smart feature selection using variance and correlation thresholds.
+
+    Args:
+        df: DataFrame with features
+        exclude_cols: Columns to exclude (typically targets)
+        min_variance: Minimum variance threshold (normalized)
+        max_corr: Maximum correlation threshold for removing redundant features
+        max_features: Maximum number of features to return
+
+    Returns:
+        List of selected feature names
+    """
+    exclude_cols = exclude_cols or []
+
+    # Get numeric columns only, excluding specified columns
+    numeric_df = df.select_dtypes(include=[np.number])
+    feature_cols = [c for c in numeric_df.columns if c not in exclude_cols]
+
+    if len(feature_cols) == 0:
+        return []
+
+    # Step 1: Filter by variance threshold
+    variances = numeric_df[feature_cols].var()
+    # Normalize variance by mean^2 to make threshold scale-invariant
+    means = numeric_df[feature_cols].mean().abs().replace(0, 1)
+    normalized_var = variances / (means ** 2)
+    high_var_cols = normalized_var[normalized_var >= min_variance].index.tolist()
+
+    if len(high_var_cols) == 0:
+        # Fall back to top features by raw variance
+        high_var_cols = variances.nlargest(max_features).index.tolist()
+
+    # Step 2: Remove highly correlated features
+    if len(high_var_cols) > 1:
+        corr_matrix = numeric_df[high_var_cols].corr().abs()
+        # Track columns to keep
+        cols_to_keep = []
+        cols_to_drop = set()
+
+        for col in high_var_cols:
+            if col in cols_to_drop:
+                continue
+            cols_to_keep.append(col)
+            # Find highly correlated columns
+            correlated = corr_matrix.index[corr_matrix[col] > max_corr].tolist()
+            for corr_col in correlated:
+                if corr_col != col and corr_col not in cols_to_keep:
+                    cols_to_drop.add(corr_col)
+
+        high_var_cols = cols_to_keep
+
+    # Step 3: Limit to max_features
+    if len(high_var_cols) > max_features:
+        # Sort by variance and take top
+        feature_var = variances[high_var_cols].sort_values(ascending=False)
+        high_var_cols = feature_var.head(max_features).index.tolist()
+
+    return high_var_cols
 
 
-def _get_default_housing_features(df: pd.DataFrame) -> List[str]:
-    """Get default features for housing (≤10 lines)"""
-    candidate_features = ['Number_of_Bedrooms', 'Number_of_Rooms', 'Year_Structure_Built',
-                          'Building_Type', 'Number_of_Persons', 'Tenure', 'Vehicles_Available',
-                          'Electricity_Cost_Monthly', 'Gas_Cost_Monthly', 'Property_Taxes_Yearly']
-    return [f for f in candidate_features if f in df.columns]
+def _get_default_population_features(df: pd.DataFrame, min_variance: float = 0.01,
+                                      max_corr: float = 0.95) -> List[str]:
+    """
+    Get default features for population using smart selection.
+
+    Combines priority candidates with dynamic selection for robustness.
+    """
+    # Priority candidates (domain knowledge) - check these first
+    # Expanded based on verified CSV column availability
+    priority_features = ['Age', 'Sex', 'Educational_Attainment', 'Hours_Worked_Per_Week',
+                         'Weeks_Worked_Past_Year', 'Travel_Time_To_Work_Minutes',
+                         'Citizenship_Status', 'Marital_Status', 'Race_Recode',
+                         'Hispanic_Origin', 'Employment_Status_Recode',
+                         # Additional verified features from CSV data
+                         'Nativity', 'Poverty_Status', 'Place_Of_Birth',
+                         'Ancestry_Recode', 'Class_of_Worker', 'Mobility_Status']
+
+    # Target columns to exclude from features
+    target_cols = ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings',
+                   'Interest_Dividend_Rental_Income', 'Retirement_Income',
+                   'Transportation_To_Work']
+
+    # Start with available priority features
+    available_priority = [f for f in priority_features if f in df.columns]
+
+    # Use smart selection to find additional features
+    smart_features = _smart_feature_selection(
+        df, exclude_cols=target_cols + available_priority,
+        min_variance=min_variance, max_corr=max_corr, max_features=15
+    )
+
+    # Combine: priority features first, then smart-selected
+    combined = available_priority + [f for f in smart_features if f not in available_priority]
+
+    # Limit to reasonable size
+    return combined[:20] if len(combined) > 20 else combined
+
+
+def _get_default_housing_features(df: pd.DataFrame, min_variance: float = 0.01,
+                                   max_corr: float = 0.95) -> List[str]:
+    """
+    Get default features for housing using smart selection.
+
+    Combines priority candidates with dynamic selection for robustness.
+    """
+    # Priority candidates (domain knowledge) - check these first
+    # Expanded based on verified CSV column availability
+    priority_features = ['Number_of_Bedrooms', 'Number_of_Rooms', 'Year_Structure_Built',
+                         'Building_Type', 'Number_of_Persons', 'Tenure', 'Vehicles_Available',
+                         'Electricity_Cost_Monthly', 'Gas_Cost_Monthly', 'Property_Taxes_Yearly',
+                         'Water_Cost_Yearly', 'Household_Income',
+                         # Additional verified features from CSV data
+                         'Food_Stamp_SNAP', 'Complete_Kitchen_Facilities',
+                         'Complete_Plumbing_Facilities', 'Multigenerational_Household',
+                         'Family_Income', 'Lot_Acreage']
+
+    # Target columns to exclude from features (housing targets)
+    target_cols = ['Property_Value', 'Gross_Rent', 'Owner_Costs_Percentage_Income',
+                   'Gross_Rent_Percentage_Income', 'Insurance_Cost_Yearly',
+                   'Vacancy_Status']
+
+    # Start with available priority features
+    available_priority = [f for f in priority_features if f in df.columns]
+
+    # Use smart selection to find additional features
+    smart_features = _smart_feature_selection(
+        df, exclude_cols=target_cols + available_priority,
+        min_variance=min_variance, max_corr=max_corr, max_features=15
+    )
+
+    # Combine: priority features first, then smart-selected
+    combined = available_priority + [f for f in smart_features if f not in available_priority]
+
+    # Limit to reasonable size
+    return combined[:20] if len(combined) > 20 else combined

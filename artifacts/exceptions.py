@@ -171,6 +171,38 @@ class OutlierDetectionError(AnalysisError):
         )
 
 
+class MultivariateOutlierError(OutlierDetectionError):
+    """Raised when multivariate outlier detection fails"""
+    def __init__(self, method: str, n_features: int, reason: str):
+        super().__init__(
+            variable=f"{n_features} features",
+            method=method,
+            reason=reason
+        )
+        self.details['n_features'] = n_features
+
+
+class PartialCorrelationError(CorrelationAnalysisError):
+    """Raised when partial correlation analysis fails"""
+    def __init__(self, var1: str, var2: str, control_vars: list, reason: str):
+        super().__init__(
+            variables=[var1, var2],
+            reason=f"controlling for {control_vars}: {reason}"
+        )
+        self.details['control_variables'] = control_vars
+
+
+class HypothesisTestError(StatisticalAnalysisError):
+    """Raised when hypothesis testing fails"""
+    def __init__(self, test_name: str, variables: list, reason: str):
+        super().__init__(
+            variable=', '.join(variables) if isinstance(variables, list) else str(variables),
+            statistic=test_name,
+            reason=reason
+        )
+        self.details['test_name'] = test_name
+
+
 # ============================================================================
 # FEATURE ENGINEERING EXCEPTIONS
 # ============================================================================
@@ -204,6 +236,15 @@ class FeatureSelectionError(FeatureEngineeringError):
         super().__init__(
             f"Feature selection ({method}) failed: {reason}",
             {'method': method, 'reason': reason}
+        )
+
+
+class ImputationError(FeatureEngineeringError):
+    """Raised when data imputation fails"""
+    def __init__(self, method: str, columns: list, reason: str):
+        super().__init__(
+            f"Imputation ({method}) failed for {len(columns)} columns: {reason}",
+            {'method': method, 'columns': columns, 'reason': reason}
         )
 
 

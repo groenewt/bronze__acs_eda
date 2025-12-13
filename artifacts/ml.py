@@ -390,7 +390,8 @@ class LLMAnalyzer:
                      economic: Dict = None, correlations: Dict = None,
                      statistics: Dict = None, outliers: Dict = None,
                      anomalies: Dict = None, trends: Dict = None,
-                     deep_learning: Dict = None) -> Dict[str, str]:
+                     deep_learning: Dict = None,
+                     feature_engineering: Dict = None) -> Dict[str, str]:
         print("[VERBOSE] Starting LLM analysis suite...")
 
         # Set state context
@@ -403,7 +404,7 @@ class LLMAnalyzer:
         # Core analyses (always run)
         results['temporal_insights'] = self._temporal_prompt(temporal)
         results['data_quality'] = self._quality_prompt(df)
-        results['recommendations'] = self._recommendations_prompt(df, temporal)
+        results['recommendations'] = self._recommendations_prompt(df, temporal, feature_engineering)
 
         # Optional analyses (run if data available)
         if economic:
@@ -420,6 +421,8 @@ class LLMAnalyzer:
             results['trend_analysis'] = self._trend_prompt(trends)
         if deep_learning:
             results['deep_learning_insights'] = self._deep_learning_prompt(deep_learning)
+        if feature_engineering and feature_engineering.get('features_created'):
+            results['feature_engineering_insights'] = self._feature_engineering_prompt(feature_engineering)
 
         completed = sum(1 for v in results.values() if v)
         print(f"[VERBOSE] LLM analysis suite complete: {completed}/{len(results)} analyses succeeded")
@@ -496,7 +499,8 @@ class LLMAnalyzer:
         prompt = "\n".join(sections)
         return self.client.analyze(prompt, "Data Quality")
 
-    def _recommendations_prompt(self, df: pd.DataFrame, temporal: Dict) -> str:
+    def _recommendations_prompt(self, df: pd.DataFrame, temporal: Dict,
+                                 feature_engineering: Dict = None) -> str:
         """Generate comprehensive research recommendations prompt"""
         patterns = temporal.get('temporal_patterns', {})
 
@@ -521,6 +525,12 @@ class LLMAnalyzer:
             sections.append(f"Housing: {', '.join(housing_vars)}")
         if demographic_vars:
             sections.append(f"Demographics: {', '.join(demographic_vars)}")
+
+        # Include engineered features if available
+        if feature_engineering:
+            features = feature_engineering.get('features_created', [])
+            if features:
+                sections.append(f"Engineered Features: {', '.join(features)}")
         sections.append("")
 
         sections.append("PROVIDE STRATEGIC RESEARCH RECOMMENDATIONS:")
@@ -536,6 +546,47 @@ class LLMAnalyzer:
 
         prompt = "\n".join(sections)
         return self.client.analyze(prompt, "Research Recommendations")
+
+    def _feature_engineering_prompt(self, feature_engineering: Dict) -> str:
+        """Generate feature engineering analysis prompt"""
+        features = feature_engineering.get('features_created', [])
+        transforms = feature_engineering.get('transformations', [])
+        cleaning = feature_engineering.get('cleaning', {})
+
+        sections = ["Analyze the feature engineering applied to this ACS census dataset:\n"]
+
+        sections.append("ENGINEERED FEATURES:")
+        if features:
+            for feat in features:
+                sections.append(f"  - {feat}")
+        else:
+            sections.append("  No derived features were created.")
+        sections.append("")
+
+        sections.append("TRANSFORMATIONS APPLIED:")
+        if transforms:
+            for trans in transforms:
+                sections.append(f"  - {trans}")
+        else:
+            sections.append("  No transformations were applied.")
+        sections.append("")
+
+        if cleaning:
+            rows_before = cleaning.get('rows_before', 0)
+            rows_after = cleaning.get('rows_after', 0)
+            sections.append("DATA CLEANING IMPACT:")
+            sections.append(f"  Records processed: {rows_before:,} → {rows_after:,}")
+            sections.append("")
+
+        sections.append("PROVIDE FEATURE ENGINEERING ANALYSIS:")
+        sections.append("1. Evaluate the appropriateness of each engineered feature")
+        sections.append("2. How do these features enhance analytical capability?")
+        sections.append("3. What additional features could be derived from the raw data?")
+        sections.append("4. Are there any potential issues with the transformations applied?")
+        sections.append("5. Recommend feature engineering improvements for future analyses")
+
+        prompt = "\n".join(sections)
+        return self.client.analyze(prompt, "Feature Engineering")
 
     def _economic_prompt(self, economic: Dict) -> str:
         """Generate comprehensive economic analysis prompt"""

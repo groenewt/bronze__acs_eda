@@ -1,3 +1,4 @@
+
 from dataclasses import dataclass, field
 from typing import Dict, Optional
 import warnings
@@ -35,18 +36,36 @@ FIPS_MAP: Dict[str, str] = {
 @dataclass
 class Config:
     """Centralized configuration"""
+    # Data paths
     folder_base: str = "/data/temp/census/raw/acs"
     state_fips: str = "20"  # Default Kansas, can be overridden
-    llm_url: str = "http://localhost:1234"
-    llm_model: str = "local-model"
-    llm_temp: float = 0.7
-    llm_max_tokens: int = 24000  # High limit for comprehensive responses
     output_dir: str = "./output"
     figure_dir: str = "./output/figures"
     figure_dpi: int = 150
+
+    # LLM settings
+    llm_url: str = "http://localhost:1234"
+    llm_model: str = "local-model"
+    #llm_url: str = "http://localhost:11434" << FOR OLLAMA!
+   # llm_model: str = "granite3.1-moe:3b-instruct-fp16"
+    llm_temp: float = 0.7
+    llm_max_tokens: int = 24000  # High limit for comprehensive responses
+    llm_engine: str = "ROCm llama.cpp"
+    llm_gpu: str = "AMD RX 9060 XT"
+
+    # Survey settings
     survey_type: str = ""
     survey_scope: str = ""
-    target_cells: int= 10_000_000     # HOUSING: Sample df before ML/DL to prevent memory explosion
+    target_cells: int = 10_000_000  # HOUSING: Sample df before ML/DL to prevent memory explosion
+
+    # Logging settings
+    log_base_dir: str = "./logs"
+    console_logging: bool = True
+    log_level: str = "DEBUG"  # DEBUG, VERBOSE, INFO, WARNING, ERROR
+
+    # Memory settings
+    memory_threshold_mb: float = 500  # Log when memory changes by this amount
+    max_memory_mb: float = 8000  # Warning threshold for memory usage
     def set_state(self, state_fips: str):
         """Update state FIPS code and output directories"""
         if state_fips not in FIPS_MAP:

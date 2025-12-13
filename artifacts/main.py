@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 import sys
+import gc
 import argparse
 import pandas as pd
 import traceback
@@ -11,15 +12,23 @@ from processing import (FileLoader, SchemaFactory, SchemaApplier, TemporalAnalyz
                         HousingEconomicAnalyzer, PopulationEconomicAnalyzer,
                         CorrelationAnalyzer, StatisticalAnalyzer, OutlierAnalyzer,
                         AnomalyAnalyzer, TrendAnalyzer, CrossVariableAnalyzer,
-                        RegionalComparisonAnalyzer)
-from visualizer import Visualizer, MLVisualizer
-from ml_models import RegressionModeler, ClusteringModeler, TimeSeriesForecaster, ModelComparator
+                        RegionalComparisonAnalyzer, get_weight_column)
+from visualizations import Visualizer
+from visualizations.ml import MLVisualizer
+from ml_models import (RegressionModeler, ClusteringModeler, TimeSeriesForecaster,
+                       ModelComparator, ModelExplainer, SHAP_AVAILABLE)
 from report import ReportGenerator
 from feature_engineering import SmartDataCleaner, FeatureCreator
 from ml import LLMAnalyzer, LLMClient
 from visual_registry import get_registry
+from logging_config import get_logger, get_log_context, log_success, log_complete
+from memory_utils import (get_memory_monitor, clear_all_caches, memory_phase,
+                          adaptive_sample, log_dataframe_memory)
 import warnings
 warnings.filterwarnings('ignore')
+
+# Module-level logger
+logger = get_logger("main")
 
 # Deep Learning imports (with fallback)
 try:
@@ -29,7 +38,7 @@ try:
     DL_AVAILABLE = True
 except ImportError:
     DL_AVAILABLE = False
-    print("[WARNING] Deep learning modules not available")
+    logger.warning("Deep learning modules not available")
 
 
 # ============================================================================
@@ -75,40 +84,45 @@ def apply_schema(df: pd.DataFrame, schema):
     return applier.apply(df)
 
 
-def clean_economic_zeros(df: pd.DataFrame) -> pd.DataFrame:
+def clean_economic_zeros(df: pd.DataFrame) -> tuple:
+    """Clean economic zeros and return metadata."""
     econ_cols = ['Total_Person_Income', 'Wage_Income', 'Property_Value', 'Gross_Rent']
     existing = [c for c in econ_cols if c in df.columns]
     if existing:
         return SmartDataCleaner.handle_economic_zeros(df, existing, strategy='flag')
-    return df.copy()
+    return df.copy(), {'features': [], 'transform': ''}
 
 
 # ============================================================================
 # FEATURE ENGINEERING (All <= 10 lines)
 # ============================================================================
 
-def create_income_features(df: pd.DataFrame) -> pd.DataFrame:
+def create_income_features(df: pd.DataFrame) -> tuple:
+    """Create income features and return metadata."""
     if 'Total_Person_Income' in df.columns:
         return FeatureCreator.create_income_features(df)
-    return df
+    return df, {'features': [], 'transform': ''}
 
 
-def create_housing_features(df: pd.DataFrame) -> pd.DataFrame:
+def create_housing_features(df: pd.DataFrame) -> tuple:
+    """Create housing features and return metadata."""
     if 'Property_Value' in df.columns or 'Gross_Rent' in df.columns:
         return FeatureCreator.create_housing_features(df)
-    return df
+    return df, {'features': [], 'transform': ''}
 
 
-def create_age_groups(df: pd.DataFrame) -> pd.DataFrame:
+def create_age_groups(df: pd.DataFrame) -> tuple:
+    """Create age groups and return metadata."""
     if 'Age' in df.columns:
         return FeatureCreator.create_age_groups(df)
-    return df
+    return df, {'features': [], 'transform': ''}
 
 
-def create_temporal_features(df: pd.DataFrame) -> pd.DataFrame:
+def create_temporal_features(df: pd.DataFrame) -> tuple:
+    """Create temporal features and return metadata."""
     if 'Census_Year' in df.columns:
         return FeatureCreator.create_temporal_features(df)
-    return df
+    return df, {'features': [], 'transform': ''}
 
 
 def log_census_year(stage: str, df: pd.DataFrame):
@@ -116,27 +130,57 @@ def log_census_year(stage: str, df: pd.DataFrame):
     if 'Census_Year' in df.columns:
         valid = df['Census_Year'].notna().sum()
         unique = df['Census_Year'].nunique()
-        print(f"[CENSUS_YEAR_TRACK] {stage}: {valid} valid, {unique} unique")
+        logger.debug(f"CENSUS_YEAR_TRACK {stage}: {valid} valid, {unique} unique")
     else:
-        print(f"[CENSUS_YEAR_TRACK] {stage}: Column not found")
+        logger.debug(f"CENSUS_YEAR_TRACK {stage}: Column not found")
 
 
-def apply_features_pipeline(df: pd.DataFrame) -> pd.DataFrame:
-    """Apply feature engineering pipeline"""
-    df = clean_economic_zeros(df)
-    df = create_income_features(df)
-    df = create_housing_features(df)
-    df = create_age_groups(df)
-    df = create_temporal_features(df)
-    return df
+def apply_features_pipeline(df: pd.DataFrame) -> tuple:
+    """Apply feature engineering pipeline with metadata tracking."""
+    all_features = []
+    all_transforms = []
+
+    df, meta = clean_economic_zeros(df)
+    all_features.extend(meta.get('features', []))
+    if meta.get('transform'):
+        all_transforms.append(meta['transform'])
+
+    df, meta = create_income_features(df)
+    all_features.extend(meta.get('features', []))
+    if meta.get('transform'):
+        all_transforms.append(meta['transform'])
+
+    df, meta = create_housing_features(df)
+    all_features.extend(meta.get('features', []))
+    if meta.get('transform'):
+        all_transforms.append(meta['transform'])
+
+    df, meta = create_age_groups(df)
+    all_features.extend(meta.get('features', []))
+    if meta.get('transform'):
+        all_transforms.append(meta['transform'])
+
+    df, meta = create_temporal_features(df)
+    all_features.extend(meta.get('features', []))
+    if meta.get('transform'):
+        all_transforms.append(meta['transform'])
+
+    return df, {
+        'features_created': all_features,
+        'transformations': all_transforms
+    }
 
 
 def apply_feature_engineering(df: pd.DataFrame) -> tuple:
-    """Apply feature engineering with tracking"""
+    """Apply feature engineering with tracking."""
     rows_before = len(df)
-    df = apply_features_pipeline(df)
-    results = {'cleaning': {'rows_before': rows_before, 'rows_after': len(df)},
-               'final_shape': df.shape}
+    df, pipeline_results = apply_features_pipeline(df)
+    results = {
+        'cleaning': {'rows_before': rows_before, 'rows_after': len(df)},
+        'final_shape': df.shape,
+        'features_created': pipeline_results.get('features_created', []),
+        'transformations': pipeline_results.get('transformations', [])
+    }
     return df, results
 
 
@@ -148,7 +192,7 @@ def run_temporal_analysis(df: pd.DataFrame) -> dict:
     try:
         return TemporalAnalyzer(df).analyze()
     except Exception as e:
-        print(f"[WARNING] Temporal analysis skipped: {e}")
+        logger.warning(f" Temporal analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
@@ -160,25 +204,27 @@ def run_economic_analysis(df: pd.DataFrame, survey: str) -> dict:
             return {'population': PopulationEconomicAnalyzer(df).analyze()}
         return {}
     except Exception as e:
-        print(f"[WARNING] Economic analysis skipped: {e}")
+        logger.warning(f" Economic analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
-def run_correlation_analysis(df: pd.DataFrame) -> dict:
+def run_correlation_analysis(df: pd.DataFrame, survey: str = None) -> dict:
     try:
-        focus = ['Age', 'Total_Person_Income', 'Wage_Income', 
+        focus = ['Age', 'Total_Person_Income', 'Wage_Income',
                  'Property_Value', 'Gross_Rent', 'Hours_Worked_Per_Week']
-        return CorrelationAnalyzer(df).analyze(focus)
+        weight_col = get_weight_column(survey) if survey else None
+        return CorrelationAnalyzer(df, weight_col=weight_col).analyze(focus)
     except Exception as e:
-        print(f"[WARNING] Correlation analysis skipped: {e}")
+        logger.warning(f" Correlation analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
-def run_statistical_analysis(df: pd.DataFrame) -> dict:
+def run_statistical_analysis(df: pd.DataFrame, survey: str = None) -> dict:
     try:
-        return StatisticalAnalyzer(df).analyze(None)
+        weight_col = get_weight_column(survey) if survey else None
+        return StatisticalAnalyzer(df, weight_col=weight_col).analyze(None)
     except Exception as e:
-        print(f"[WARNING] Statistical analysis skipped: {e}")
+        logger.warning(f" Statistical analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
@@ -186,7 +232,7 @@ def run_outlier_analysis(df: pd.DataFrame) -> dict:
     try:
         return OutlierAnalyzer(df).analyze(None)
     except Exception as e:
-        print(f"[WARNING] Outlier analysis skipped: {e}")
+        logger.warning(f" Outlier analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
@@ -194,7 +240,7 @@ def run_anomaly_analysis(df: pd.DataFrame) -> dict:
     try:
         return AnomalyAnalyzer(df).analyze(None)
     except Exception as e:
-        print(f"[WARNING] Anomaly analysis skipped: {e}")
+        logger.warning(f" Anomaly analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
@@ -202,7 +248,7 @@ def run_trend_analysis(df: pd.DataFrame) -> dict:
     try:
         return TrendAnalyzer(df).analyze(None)
     except Exception as e:
-        print(f"[WARNING] Trend analysis skipped: {e}")
+        logger.warning(f" Trend analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
@@ -210,20 +256,20 @@ def run_cross_variable_analysis(df: pd.DataFrame) -> dict:
     try:
         return CrossVariableAnalyzer(df).analyze(None)
     except Exception as e:
-        print(f"[WARNING] Cross-variable analysis skipped: {e}")
+        logger.warning(f" Cross-variable analysis skipped: {e}")
         return {'skipped': True, 'reason': str(e)}
 
 
-def run_llm_analysis(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl=None):
-    print("[VERBOSE] Initializing LLM client and analyzer...")
+def run_llm_analysis(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl=None, feat_eng=None):
+    logger.debug("Initializing LLM client and analyzer...")
     client = LLMClient(config)
     analyzer = LLMAnalyzer(client)
     state = config.get_state_name()
-    print(f"[VERBOSE] Running LLM analysis for state: {state}")
+    logger.debug(f" Running LLM analysis for state: {state}")
     return analyzer.run_analysis(df, temporal, state=state, economic=economic,
                                   correlations=corr, statistics=stats,
                                   outliers=outliers, anomalies=anom, trends=trends,
-                                  deep_learning=dl)
+                                  deep_learning=dl, feature_engineering=feat_eng)
 
 
 # ============================================================================
@@ -232,12 +278,12 @@ def run_llm_analysis(df, config, temporal, economic, corr, stats, outliers, anom
 
 def create_visuals(df: pd.DataFrame, config: Config, survey: str):
     try:
-        print(f"\n[VISUALS] Creating comprehensive visualization suite for {survey.upper()}...")
+        logger.info(f"[VISUALS] Creating comprehensive visualization suite for {survey.upper()}...")
         viz = Visualizer(df, config, survey_type=survey)
         viz.create_all()
-        print(f"[SUCCESS] Visualizations saved to {config.figure_dir}")
+        logger.info(f"SUCCESS: Visualizations saved to {config.figure_dir}")
     except Exception as e:
-        print(f"[WARNING] Visualization creation failed: {e}")
+        logger.warning(f" Visualization creation failed: {e}")
 
 
 # ============================================================================
@@ -246,7 +292,7 @@ def create_visuals(df: pd.DataFrame, config: Config, survey: str):
 
 def is_income_column(col_name: str) -> bool:
     """Check if column name contains income-related terms"""
-    income_terms = ['income', 'wage', 'earnings', 'salary', 'pay', 'hours']
+    income_terms = ['income', 'wage', 'earnings', 'salary', 'pay']
     col_lower = col_name.lower()
     return any(term in col_lower for term in income_terms)
 
@@ -284,41 +330,123 @@ def prepare_regression_data(df, target, features, min_samples):
         return None, None
     X, y = df[existing_features].dropna(), df[target].dropna()
     idx = X.index.intersection(y.index)
+    initial_count = len(idx)
 
-    # Filter zeros for income-related target
-    if is_income_column(target):
+    # Filter zeros for income-related target OR housing cost targets
+    # Housing targets have many zeros (non-renters, vacant units) that would contaminate models
+    housing_targets = ['Gross_Rent', 'Property_Value', 'Monthly_Mortgage_Payment',
+                       'Monthly_Rent_Payment', 'Property_Tax_Annual']
+    should_filter_zeros = is_income_column(target) or target in housing_targets
+    if should_filter_zeros:
         y = y[y > 0]
         idx = idx.intersection(y.index)
+        logger.debug(f"[REGRESSION] {target}: After zero-filter on target: {len(idx)} samples (was {initial_count})")
 
     # Filter zeros for income-related features
     for feat in existing_features:
         if is_income_column(feat):
+            before = len(idx)
             X_feat = X[feat]
             valid_idx = X_feat[X_feat > 0].index
             idx = idx.intersection(valid_idx)
+            logger.debug(f"[REGRESSION] {target}: After zero-filter on {feat}: {len(idx)} samples (was {before})")
 
     if len(idx) < min_samples:
+        logger.warning(f"[REGRESSION] {target}: Insufficient samples after filtering: {len(idx)} < {min_samples}")
         return None, None
     return X.loc[idx], y.loc[idx]
 
 
-def build_regression_result(target, X, best_name, best_result, models):
-    """Build regression result dictionary"""
-    return {'target': target, 'features': list(X.columns), 'best_model': best_name,
-            'best_r2_score': best_result.test_score, 'sample_size': len(X), 
-            'result_obj': best_result, 'all_models': models, 'all_model_objects': models}
+def build_regression_result(target, X, y, best_name, best_result, models, shap_results=None, sample_weighted=False):
+    """Build regression result dictionary with all fields for report.py"""
+    result = {
+        'target': target,
+        'features': list(X.columns),
+        'best_model': best_name,
+        'best_r2_score': best_result.test_score,
+        'test_score': best_result.test_score,  # Alias for report.py
+        'rmse': best_result.metadata.get('rmse') if best_result.metadata else None,
+        'mae': best_result.metadata.get('mae') if best_result.metadata else None,
+        'feature_importance': best_result.feature_importance,
+        'sample_weighted': sample_weighted,
+        'sample_size': len(X),
+        'result_obj': best_result,
+        'all_models': models,
+        'all_model_objects': models,
+        'X': X, 'y': y
+    }
+    if shap_results:
+        result['shap'] = shap_results
+    return result
 
 
-def train_regression_model(df, target, features, min_samples=100):
+def generate_shap_explanation(best_result, X, y, best_name):
+    """Generate SHAP explanation for best model"""
+    if not SHAP_AVAILABLE:
+        return None
+    try:
+        explainer = ModelExplainer()
+        # Split data same way as training
+        from sklearn.model_selection import train_test_split
+        X_train, X_test, _, _ = train_test_split(X, y, test_size=0.2, random_state=42)
+        # Get the fitted model from result
+        model = best_result.metadata.get('model') if hasattr(best_result, 'metadata') else None
+        if model is None and hasattr(best_result, 'result_obj'):
+            model = best_result
+        # Use the modeler's model directly
+        modeler = RegressionModeler()
+        modeler.model = modeler.models.get(best_name)
+        modeler.model.fit(X_train, y.loc[X_train.index])
+        shap_result = explainer.explain_model(modeler.model, X_train, X_test, best_name)
+        if 'error' not in shap_result:
+            logger.info(f"[SHAP] Generated explanation for {best_name}")
+            return shap_result
+    except Exception as e:
+        logger.warning(f"[SHAP] Failed to generate explanation: {e}")
+    return None
+
+
+def train_regression_model(df, target, features, min_samples=100, tune=False, survey=None):
+    """
+    Train regression models with optional hyperparameter tuning and SHAP.
+
+    Args:
+        df: Input DataFrame
+        target: Target column name
+        features: List of feature column names
+        min_samples: Minimum samples required
+        tune: If True, run hyperparameter tuning (slower but better results)
+        survey: Survey type ('population' or 'housing') for sample weights
+    """
     try:
         X, y = prepare_regression_data(df, target, features, min_samples)
         if X is None:
             return None
-        models = ModelComparator.compare_regression_models(X, y)
+
+        # Get sample weights if survey specified
+        sample_weight = None
+        weight_col = get_weight_column(survey) if survey else None
+        if weight_col and weight_col in df.columns:
+            sample_weight = df.loc[X.index, weight_col]
+            logger.debug(f"[ML] Using sample weights from '{weight_col}'")
+
+        models = ModelComparator.compare_regression_models(X, y, tune=tune, sample_weight=sample_weight)
         best_name, best_result = ModelComparator.select_best_model(models)
-        return build_regression_result(target, X, best_name, best_result, models)
+
+        # Check if all models failed
+        if best_result is None:
+            logger.warning(f"All regression models failed for target: {target}")
+            return None
+
+        # Generate SHAP explanation for best model
+        shap_results = None
+        if SHAP_AVAILABLE and best_name in {'random_forest', 'gradient_boosting'}:
+            shap_results = generate_shap_explanation(best_result, X, y, best_name)
+
+        sample_weighted = sample_weight is not None and len(sample_weight) > 0
+        return build_regression_result(target, X, y, best_name, best_result, models, shap_results, sample_weighted)
     except Exception as e:
-        print(f"[WARNING] Regression model training failed for {target}: {str(e)}")
+        logger.warning(f" Regression model training failed for {target}: {str(e)}")
         return None
 
 
@@ -332,12 +460,23 @@ def prepare_clustering_data(df, features, min_samples):
     return X
 
 
-def build_clustering_result(X, best_result, all_results):
-    """Build clustering result dictionary"""
-    return {'features': list(X.columns), 'n_clusters': 5, 
-            'silhouette_score': best_result.silhouette_score,
-            'sample_size': len(X), 'result_obj': best_result,
-            'all_clustering_models': all_results}
+def build_clustering_result(X, best_result, all_results, best_name='kmeans'):
+    """Build clustering result dictionary with all fields for report.py"""
+    # Convert cluster_sizes dict to list if needed
+    cluster_sizes_dict = best_result.cluster_sizes if hasattr(best_result, 'cluster_sizes') else {}
+    cluster_sizes_list = list(cluster_sizes_dict.values()) if isinstance(cluster_sizes_dict, dict) else cluster_sizes_dict
+
+    return {
+        'features': list(X.columns),
+        'method': best_name.title(),  # e.g., 'Kmeans' -> 'KMeans'
+        'n_clusters': best_result.n_clusters if hasattr(best_result, 'n_clusters') else 5,
+        'silhouette_score': best_result.silhouette_score,
+        'silhouette': best_result.silhouette_score,  # Alias for report.py
+        'cluster_sizes': cluster_sizes_list,
+        'sample_size': len(X),
+        'result_obj': best_result,
+        'all_clustering_models': all_results
+    }
 
 
 def train_all_clustering_algorithms(clusterer, X):
@@ -371,9 +510,9 @@ def train_clustering_model(df, features, min_samples=100):
             return None
         all_results = train_all_clustering_algorithms(ClusteringModeler(), X)
         best_name, best_result = select_best_clustering_model(all_results)
-        return build_clustering_result(X, best_result, all_results) if best_result else None
+        return build_clustering_result(X, best_result, all_results, best_name) if best_result else None
     except Exception as e:
-        print(f"[WARNING] Clustering model training failed: {str(e)}")
+        logger.warning(f" Clustering model training failed: {str(e)}")
         return None
 
 
@@ -396,7 +535,7 @@ def build_timeseries_result(target, forecast):
     all_ts_models = forecast.get('all_models', {})
 
     # DEBUG: Print forecast structure
-    print(f"[DEBUG-TS] Target: {target}, Forecasts: {forecasts}, Values: {forecast_values}")
+    logger.debug(f"[DEBUG-TS] Target: {target}, Forecasts: {forecasts}, Values: {forecast_values}")
 
     return {'target': target, 'forecast_periods': 3,
             'forecast_values': forecast_values,
@@ -420,7 +559,7 @@ def train_timeseries_model(df, target, min_samples=50):
         forecast = run_forecaster(df_ts, target)
         return build_timeseries_result(target, forecast) if forecast else None
     except Exception as e:
-        print(f"[WARNING] Time series forecasting failed for {target}: {str(e)}")
+        logger.warning(f" Time series forecasting failed for {target}: {str(e)}")
         return None
 
 
@@ -451,19 +590,25 @@ def viz_each_regression_model(ml_viz, all_models, X, y, target):
         try:
             ml_viz.viz_regression(result_obj, X, y, target_name=target)
         except Exception as e:
-            print(f"[WARNING] Viz failed for {model_name}: {str(e)}")
+            logger.warning(f" Viz failed for {model_name}: {str(e)}")
 
 
 def viz_regression_results(ml_viz, ml_results, df, key):
-    """Visualize all regression models, not just the best one"""
+    """Visualize all regression models including SHAP explanations"""
     try:
         if key not in ml_results or not ml_results[key]:
             return
         X, y, target = prepare_regression_viz_data(ml_results, df, key)
         all_models = ml_results[key].get('all_model_objects', {})
         viz_each_regression_model(ml_viz, all_models, X, y, target)
+
+        # Visualize SHAP if available
+        shap_results = ml_results[key].get('shap')
+        if shap_results and 'error' not in shap_results:
+            logger.info(f"[SHAP-VIZ] Creating SHAP visualizations for {target}")
+            ml_viz.viz_shap(shap_results, target_name=target)
     except Exception as e:
-        print(f"[WARNING] Regression visualization failed for {key}: {str(e)}")
+        logger.warning(f" Regression visualization failed for {key}: {str(e)}")
 
 
 def viz_each_clustering_model(ml_viz, all_models, X):
@@ -474,7 +619,7 @@ def viz_each_clustering_model(ml_viz, all_models, X):
         try:
             ml_viz.viz_clustering(result_obj, X)
         except Exception as e:
-            print(f"[WARNING] Clustering viz failed for {model_name}: {str(e)}")
+            logger.warning(f" Clustering viz failed for {model_name}: {str(e)}")
 
 
 def viz_clustering_results(ml_viz, ml_results, df):
@@ -487,7 +632,7 @@ def viz_clustering_results(ml_viz, ml_results, df):
         all_models = ml_results['clustering'].get('all_clustering_models', {})
         viz_each_clustering_model(ml_viz, all_models, X)
     except Exception as e:
-        print(f"[WARNING] Clustering visualization failed: {str(e)}")
+        logger.warning(f" Clustering visualization failed: {str(e)}")
 
 
 def prepare_ts_model_result(target, model_name, model_data):
@@ -500,7 +645,7 @@ def prepare_ts_model_result(target, model_name, model_data):
     ci_lower = model_data.get('ci_lower', [])
     ci_upper = model_data.get('ci_upper', [])
 
-    print(f"[DEBUG-TS-MODEL] {model_name}: forecasts={forecasts}, values={forecast_values}, CI_lower={ci_lower}, CI_upper={ci_upper}")
+    logger.debug(f"[DEBUG-TS-MODEL] {model_name}: forecasts={forecasts}, values={forecast_values}, CI_lower={ci_lower}, CI_upper={ci_upper}")
 
     return {
         'target': target,
@@ -520,7 +665,7 @@ def viz_each_timeseries_model(ml_viz, all_models, df_ts, target):
             model_result = prepare_ts_model_result(target, model_name, model_data)
             ml_viz.viz_timeseries(model_result, df_ts, target)
         except Exception as e:
-            print(f"[WARNING] Time series viz failed for {model_name}: {str(e)}")
+            logger.warning(f" Time series viz failed for {model_name}: {str(e)}")
 
 
 def viz_timeseries_results(ml_viz, ml_results, df):
@@ -528,20 +673,20 @@ def viz_timeseries_results(ml_viz, ml_results, df):
     try:
         # Find all timeseries keys (ending with _timeseries)
         ts_keys = [k for k in ml_results.keys() if k.endswith('_timeseries')]
-        print(f"[VIZ-TIMESERIES] Found {len(ts_keys)} time series results: {ts_keys}")
+        logger.debug(f"[VIZ-TIMESERIES] Found {len(ts_keys)} time series results: {ts_keys}")
 
         for ts_key in ts_keys:
             ts_result = ml_results[ts_key]
             target = ts_result.get('target')
             if not target or 'Census_Year' not in df.columns or target not in df.columns:
-                print(f"[VIZ-TIMESERIES] Skipping {ts_key}: missing target or Census_Year")
+                logger.debug(f"[VIZ-TIMESERIES] Skipping {ts_key}: missing target or Census_Year")
                 continue
 
-            print(f"[VIZ-TIMESERIES] Visualizing time series for target: {target}")
+            logger.debug(f"[VIZ-TIMESERIES] Visualizing time series for target: {target}")
             df_ts = df[['Census_Year', target]].dropna()
             viz_each_timeseries_model(ml_viz, ts_result.get('all_timeseries_models', {}), df_ts, target)
     except Exception as e:
-        print(f"[WARNING] Time series visualization failed: {str(e)}")
+        logger.warning(f" Time series visualization failed: {str(e)}")
 
 
 def viz_model_comparison_results(ml_viz, ml_results, key):
@@ -552,7 +697,7 @@ def viz_model_comparison_results(ml_viz, ml_results, key):
             if all_models and target:
                 ml_viz.viz_model_comparison(all_models, target_name=target)
     except Exception as e:
-        print(f"[WARNING] Model comparison visualization failed for {key}: {str(e)}")
+        logger.warning(f" Model comparison visualization failed for {key}: {str(e)}")
 
 
 def create_ml_visualizations(ml_results, df, config, survey):
@@ -572,15 +717,15 @@ def create_ml_visualizations(ml_results, df, config, survey):
     viz_timeseries_results(ml_viz, ml_results, df)
 
 
-def train_regression_for_survey(df, survey, features):
-    """Train regression models for all available target columns"""
+def train_regression_for_survey(df, survey, features, tune=False):
+    """Train regression models for all available target columns with sample weights"""
     targets = get_all_target_cols(df, survey)
     if not targets:
         return None
     results = {}
     for target in targets:
-        print(f"[ML] Training regression models for target: {target}")
-        reg = train_regression_model(df, target, features)
+        logger.info(f"[ML] Training regression models for target: {target}")
+        reg = train_regression_model(df, target, features, tune=tune, survey=survey)
         if reg:
             # Use target name as key for clarity
             key = f'{target}_regression'
@@ -597,10 +742,10 @@ def add_clustering_to_results(results, df, features):
 def add_timeseries_to_results(results, df, survey):
     """Train time series models for ALL available target columns"""
     targets = get_all_target_cols(df, survey)
-    print(f"[ML-TIMESERIES] Training time series for {len(targets)} targets: {targets}")
+    logger.info(f"[ML-TIMESERIES] Training time series for {len(targets)} targets: {targets}")
     ts_results = {}
     for target in targets:
-        print(f"[ML-TIMESERIES] Training time series for target: {target}")
+        logger.info(f"[ML-TIMESERIES] Training time series for target: {target}")
         ts = train_timeseries_model(df, target)
         if ts:
             # Store each target's time series separately
@@ -609,9 +754,9 @@ def add_timeseries_to_results(results, df, survey):
         results.update(ts_results)
 
 
-def train_all_ml_models(df, survey, features):
+def train_all_ml_models(df, survey, features, tune=False):
     results = {}
-    reg_results = train_regression_for_survey(df, survey, features)
+    reg_results = train_regression_for_survey(df, survey, features, tune=tune)
     if reg_results:
         results.update(reg_results)
     add_clustering_to_results(results, df, features)
@@ -619,16 +764,18 @@ def train_all_ml_models(df, survey, features):
     return results
 
 
-def run_ml_pipeline(df: pd.DataFrame, config: Config, survey: str):
+def run_ml_pipeline(df: pd.DataFrame, config: Config, survey: str, tune: bool = False):
     try:
-        print(f"\n[ML] Running ML pipeline for {survey.upper()}...")
+        logger.info(f"[ML] Running ML pipeline for {survey.upper()}...")
+        if tune:
+            logger.info("[ML] Hyperparameter tuning ENABLED (this may take longer)")
         features = get_ml_features(df)
-        results = train_all_ml_models(df, survey, features)
+        results = train_all_ml_models(df, survey, features, tune=tune)
         if results:
             create_ml_visualizations(results, df, config, survey)
         return results
     except Exception as e:
-        print(f"[WARNING] ML pipeline failed: {e}")
+        logger.warning(f" ML pipeline failed: {e}")
         return {}
 
 
@@ -651,15 +798,15 @@ def train_dl_task(df: pd.DataFrame, survey: str, task_name: str,
     """Train single deep learning task (≤10 lines)"""
     try:
         import gc
-        print(f"[DL] Training {task_name}...")
+        logger.info(f"[DL] Training {task_name}...")
         trainer = DeepLearningTrainer()
         result = trainer.train_model(df, survey, task_name, features, config)
-        print(f"[DL] ✓ {task_name} complete: {result.task_type}, "
+        logger.info(f"[DL] ✓ {task_name} complete: {result.task_type}, "
               f"Test metrics: {result.test_metrics}")
         gc.collect()  # Free memory after each task
         return result
     except Exception as e:
-        print(f"[WARNING] DL task {task_name} failed: {e}")
+        logger.warning(f" DL task {task_name} failed: {e}")
         return None
 
 
@@ -681,30 +828,30 @@ def create_dl_visualizations(results: Dict[str, DLResults], df: pd.DataFrame,
                              config: Config, survey: str):
     """Create deep learning visualizations (≤10 lines)"""
     try:
-        print(f"[DL-VIZ] Creating visualizations for {len(results)} tasks...")
+        logger.info(f"[DL-VIZ] Creating visualizations for {len(results)} tasks...")
         viz = DLVisualizer(config, survey)
         # Each task uses its own test data (stored in DLResults)
         viz.visualize_all(results)
         viz.plot_comprehensive_dashboard(results)
-        print(f"[DL-VIZ] ✓ All visualizations saved to {viz.fig_dir}")
+        logger.info(f"[DL-VIZ] All visualizations saved to {viz.fig_dir}")
     except Exception as e:
-        print(f"[WARNING] DL visualization failed: {e}")
+        logger.warning(f" DL visualization failed: {e}")
 
 
 def run_dl_pipeline(df: pd.DataFrame, config: Config, survey: str) -> Dict[str, DLResults]:
     """Run complete deep learning pipeline (≤10 lines)"""
     if not DL_AVAILABLE:
-        print("[INFO] Deep learning not available, skipping DL pipeline")
+        logger.info(" Deep learning not available, skipping DL pipeline")
         return {}
     try:
-        print(f"\n[DL] Running deep learning pipeline for {survey.upper()}...")
+        logger.info(f"[DL] Running deep learning pipeline for {survey.upper()}...")
         features = get_ml_features(df)
         results = train_all_dl_tasks(df, survey, features)
         if results:
             create_dl_visualizations(results, df, config, survey)
         return results
     except Exception as e:
-        print(f"[WARNING] DL pipeline failed: {e}")
+        logger.warning(f" DL pipeline failed: {e}")
         return {}
 
 
@@ -734,7 +881,7 @@ def generate_report(config, loader, temporal, economic, corr, stats,
     gen.generate(loader.stats, temporal, llm, economic, corr, stats,
                  outliers, anom, trends, feat_eng, ml, cross_var, dl)
     rename_latest_report(config, report_name)
-    print(f"[REPORT] Generated: {report_name}")
+    logger.info(f"[REPORT] Generated: {report_name}")
 
 
 # ============================================================================
@@ -749,56 +896,60 @@ def load_and_prepare_data(state, survey, config, scope):
     # Update loader.stats with post-schema dimensions
     loader.stats.total_rows = len(df)
     loader.stats.columns_found = len(df.columns)
-    print(f"[INFO] Loaded {len(df):,} records")
+    logger.info(f"Loaded {len(df):,} records")
     log_census_year("After schema application", df)
     df, feat_eng = apply_feature_engineering(df)
-    print(f"[VERBOSE] Feature engineering complete: {feat_eng['final_shape']}")
+    logger.debug(f"Feature engineering complete: {feat_eng['final_shape']}")
+    gc.collect()  # Clear loading intermediates
     return df, loader, feat_eng
 
 
 def run_all_analyses(df, survey):
-    print("[VERBOSE] Running comprehensive analysis suite...")
+    logger.debug("Running comprehensive analysis suite...")
+    logger.debug(f"Using sample weights from '{get_weight_column(survey)}' column")
     temporal = run_temporal_analysis(df)
+    gc.collect()
     economic = run_economic_analysis(df, survey)
-    corr = run_correlation_analysis(df)
-    stats = run_statistical_analysis(df)
+    gc.collect()
+    corr = run_correlation_analysis(df, survey)  # Pass survey for weighted correlations
+    gc.collect()
+    stats = run_statistical_analysis(df, survey)  # Pass survey for weighted statistics
     outliers = run_outlier_analysis(df)
     anom = run_anomaly_analysis(df)
     trends = run_trend_analysis(df)
     cross_var = run_cross_variable_analysis(df)
+    gc.collect()
     return temporal, economic, corr, stats, outliers, anom, trends, cross_var
 
 
-def run_llm_with_fallback(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl=None):
+def run_llm_with_fallback(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl=None, feat_eng=None):
     try:
-        print("[VERBOSE] Starting LLM analysis with fallback handler...")
-        result = run_llm_analysis(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl)
-        print("[VERBOSE] LLM analysis completed successfully")
+        logger.debug("Starting LLM analysis with fallback handler...")
+        result = run_llm_analysis(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl, feat_eng)
+        logger.debug("LLM analysis completed successfully")
         return result
     except Exception as e:
-        print(f"[WARNING] LLM analysis skipped: {e}")
-        print("[VERBOSE] Full traceback:")
-        traceback.print_exc()
+        logger.warning(f"LLM analysis skipped: {e}")
+        logger.debug(f"Full traceback: {traceback.format_exc()}")
         return {'interpretation': 'LLM analysis not available',
                 'analysis': 'Please ensure LM Studio is running on localhost:1234',
                 'suggestions': 'N/A', 'policy_recommendations': 'N/A'}
 
 
-def run_visualizations_and_ml(df, config, survey):
+def run_visualizations_and_ml(df, config, survey, tune=False):
     create_visuals(df, config, survey)
-    # HOUSING: Sample df before ML/DL to prevent memory explosion
+    gc.collect()  # Clear visualization memory
+
+    # HOUSING: Adaptive sampling before ML/DL to prevent memory explosion
     if survey.lower() == 'housing':
-        target_cells = config.target_rows
-        sample_rows = min(len(df), int(target_cells / len(df.columns)))
-        if len(df) > sample_rows:
-            print(f"[ML-SAMPLE] Housing: {len(df):,} → {sample_rows:,} rows ({target_cells:,} cells / {len(df.columns)} cols)")
-            df_ml = df.sample(n=sample_rows, random_state=42)
-        else:
-            df_ml = df
+        df_ml = adaptive_sample(df, survey_type='housing')
     else:
-        df_ml = df
-    ml = run_ml_pipeline(df_ml, config, survey)
+        df_ml = adaptive_sample(df, survey_type='population')
+
+    ml = run_ml_pipeline(df_ml, config, survey, tune=tune)
+    gc.collect()  # Clear ML intermediates
     dl = run_dl_pipeline(df_ml, config, survey)
+    gc.collect()  # Clear DL model objects
     return {'ml': ml, 'dl': dl}
 
 
@@ -807,40 +958,54 @@ def generate_full_report(config, loader, df, survey, state, temporal, economic,
     # Extract ML and DL results from combined structure
     ml_results = ml_dl_results.get('ml', {}) if isinstance(ml_dl_results, dict) else ml_dl_results
     dl_results = ml_dl_results.get('dl', {}) if isinstance(ml_dl_results, dict) else {}
-    llm = run_llm_with_fallback(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl_results)
+    llm = run_llm_with_fallback(df, config, temporal, economic, corr, stats, outliers, anom, trends, dl_results, feat_eng)
     generate_report(config, loader, temporal, economic, corr, stats,
                    outliers, anom, trends, llm, feat_eng, ml_results, survey, state, cross_var, dl_results)
 
 
-def run_analysis_and_reporting(df, loader, feat_eng, config, survey, state):
+def run_analysis_and_reporting(df, loader, feat_eng, config, survey, state, tune=False):
     temporal, economic, corr, stats, outliers, anom, trends, cross_var = run_all_analyses(df, survey)
-    ml = run_visualizations_and_ml(df, config, survey)
-    generate_full_report(config, loader, df, survey, state, temporal, economic, 
+    ml = run_visualizations_and_ml(df, config, survey, tune=tune)
+    generate_full_report(config, loader, df, survey, state, temporal, economic,
                         corr, stats, outliers, anom, trends, ml, feat_eng, cross_var)
 
 
-def process_survey(state: str, survey: str, config: Config, scope: str):
-    print(f"\n{'='*70}\n[{survey.upper()}] Processing {state} ({scope})...\n{'='*70}")
-    config.set_survey(survey, scope)
-    df, loader, feat_eng = load_and_prepare_data(state, survey, config, scope)
-    if df is None:
-        print(f"[WARNING] No data for {state} - {survey} ({scope})")
-        return None
-    run_analysis_and_reporting(df, loader, feat_eng, config, survey, state)
-    print(f"[SUCCESS] {survey.upper()} ({scope}) pipeline complete for {state}!")
-    return df
+def process_survey(state: str, survey: str, config: Config, scope: str, tune: bool = False):
+    logger.info(f"{'='*70}")
+    logger.info(f"[{survey.upper()}] Processing {state} ({scope})...")
+    logger.info(f"{'='*70}")
+
+    with memory_phase(f"process_{state}_{survey}_{scope}"):
+        config.set_survey(survey, scope)
+        df, loader, feat_eng = load_and_prepare_data(state, survey, config, scope)
+        if df is None:
+            logger.warning(f"No data for {state} - {survey} ({scope})")
+            return None
+        run_analysis_and_reporting(df, loader, feat_eng, config, survey, state, tune=tune)
+        log_success(f"{survey.upper()} ({scope}) pipeline complete for {state}!")
+        return df
 
 
-def process_state_surveys(state, surveys, scopes):
+def process_state_surveys(state, surveys, scopes, tune=False):
     state = state.strip()
     config = create_config(state)
+    log_ctx = get_log_context(config.log_base_dir)
+
     for survey in surveys:
         survey = survey.strip().lower()
         for scope in scopes:
             scope = scope.strip()
             config.set_survey(survey, scope)
             create_dirs(config, survey)
-            process_survey(state, survey, config, scope)
+
+            # Set logging context for this state/survey/scope
+            log_ctx.set_context(state=config.get_state_name(), survey=survey, scope=scope)
+
+            process_survey(state, survey, config, scope, tune=tune)
+
+            # Clear caches between surveys
+            clear_all_caches()
+            gc.collect()
 
 
 def setup_parser(parser):
@@ -855,6 +1020,8 @@ def setup_parser(parser):
                        help='Comma-separated list of surveys (Housing, Population)')
     parser.add_argument('--scopes', type=str,
                        help='Comma-separated list of scopes (1-Year, 5-Year)')
+    parser.add_argument('--tune', action='store_true',
+                       help='Enable hyperparameter tuning for ML models (slower but better results)')
 
 
 def parse_arguments():
@@ -866,7 +1033,7 @@ def parse_arguments():
 def get_states_list(args):
     if args.all_states:
         all_states = list(FIPS_MAP.values())
-        print(f"[INFO] Running for ALL {len(all_states)} states/territories")
+        logger.info(f" Running for ALL {len(all_states)} states/territories")
         return all_states
     elif args.states:
         return args.states.split(',')
@@ -877,7 +1044,7 @@ def get_states_list(args):
 def get_scopes_list(args):
     if args.all_scopes:
         all_scopes = ['1-Year', '5-Year']
-        print(f"[INFO] Running for ALL scopes: {all_scopes}")
+        logger.info(f" Running for ALL scopes: {all_scopes}")
         return all_scopes
     elif args.scopes:
         return args.scopes.split(',')
@@ -890,11 +1057,30 @@ def main():
     states = get_states_list(args)
     surveys = args.surveys.split(',') if args.surveys else os.getenv('CENSUS_SURVEYS', 'population,housing').split(',')
     scopes = get_scopes_list(args)
-    
-    print(f"[CONFIG] States: {len(states)}, Surveys: {surveys}, Scopes: {scopes}")
-    for state in states:
-        process_state_surveys(state, surveys, scopes)
-    print(f"\n{'='*70}\n[COMPLETE] All processing finished!\n{'='*70}\n")
+
+    # Initialize logging with console output
+    log_ctx = get_log_context()
+    log_ctx.enable_console(True)
+
+    # Initialize memory monitor
+    monitor = get_memory_monitor()
+    monitor.log_memory("STARTUP", force=True)
+
+    logger.info(f"CONFIG: States: {len(states)}, Surveys: {surveys}, Scopes: {scopes}")
+    if args.tune:
+        logger.info("CONFIG: Hyperparameter tuning ENABLED")
+
+    try:
+        for state in states:
+            process_state_surveys(state, surveys, scopes, tune=args.tune)
+            # Clear caches between states
+            clear_all_caches()
+            gc.collect()
+        log_complete("All processing finished!")
+        monitor.log_memory("SHUTDOWN", force=True)
+    finally:
+        # Cleanup logging handlers
+        log_ctx.close()
 
 
 if __name__ == '__main__':

@@ -163,15 +163,12 @@ find "${BASE_DOWNLOAD_DIR}" -name "*.zip" -type f | wc -l | \
 du -sh "${BASE_DOWNLOAD_DIR}" | \
     awk '{print "Total size: " $1}'
 ### EXTRACTION
-echo "=== unzipping data (zip -> raw) ==="
 # Find all zip files and unzip them to processed directory
+echo "=== unzipping data (zip -> raw) ==="
 find "${BASE_ZIP_DIR}" -name "*.zip" -type f | while read zipfile; do
-    # Replace /zips with /processed in the path
     extractpath=$(dirname "$zipfile" | sed 's/\/zips/\/raw/')
-    # Create directory if it doesn't exist
     mkdir -p "$extractpath"
-    # Unzip the file
-    unzip -q "$zipfile" -d "$extractpath"
+    unzip -q -o "$zipfile" -d "$extractpath"
     echo "Extracted: $(basename "$zipfile")"
 done
 echo "=== Finished unzipping data (raw ready for Sparky!) ==="
@@ -240,14 +237,12 @@ class Config:
 #For just one state
 #This Example will showcase the running for Kansas (State FIPS 20), for the housing survey
 STATES_TO_RUN="Kansas" 
-LOG_NAME="kansas_housing.log"
-# I WOULD HIGHLY RECOMMEND Redirect for logs 
-uv run main.py --states $STATES_TO_RUN --surveys housing --scopes 5-Year 2>&1 | tee $LOG_NAME
+uv run main.py --states $STATES_TO_RUN --surveys housing --scopes 5-Year
 ```
 ```shell
 #Full Blast (ALL STATES, ALL SCOPES, ALL YEARS, ALL SURVEYS)
 # No need for --survey housing,population  bc by default runs both unless specific is stated
-uv run main.py --all-states --all-scopes | tee full_blast.log
+uv run main.py --all-states --all-scopes
 ```
 ```shell
 #Obligatory call --help for full overview of cli options

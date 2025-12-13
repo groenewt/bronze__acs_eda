@@ -273,38 +273,192 @@ class TemporalAnalyzer:
 # ECONOMIC ANALYZER BASE
 # ============================================================================
 
-# Columns where zero is meaningless and should be excluded
-_EXCLUDE_ZERO_RAW = [
-    # POPULATION SURVEY - Income Columns (schema.py lines 142-148, 198-199)
+# Survey-specific zero-exclusion columns (zeros are meaningless for economic analysis)
+
+# Population survey columns where zero should be excluded
+_POP_ZERO_EXCLUDE = [
+    # Income columns (schema.py _income_cols)
     'Wage_Income', 'Total_Person_Earnings', 'Total_Person_Income',
     'Self_Employment_Income', 'Interest_Dividend_Rental_Income',
     'Retirement_Income', 'Social_Security_Income', 'Supplemental_Security_Income',
     'Public_Assistance_Income', 'Other_Income',
-    # POPULATION SURVEY - Work/Hours Columns (schema.py lines 112, 158, 160)
+    # Work/Hours columns (schema.py _work_travel_demographics, _education_work_cols)
     'Travel_Time_To_Work_Minutes', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year',
-    # HOUSING SURVEY - Property Values (schema.py line 346)
+    # Derived population features
+    'Income_Per_Hour', 'Income_Per_Week_Worked', 'Total_Annual_Hours',
+]
+
+# Housing survey columns where zero should be excluded
+_HOUSING_ZERO_EXCLUDE = [
+    # Property values (schema.py _unit_status_cols)
     'Property_Value',
-    # HOUSING SURVEY - Utility Costs (schema.py lines 355-361)
+    # Utility costs (schema.py _utility_costs)
     'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly',
     'Gas_Cost_Monthly', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly',
-    # HOUSING SURVEY - Mortgage Costs (schema.py lines 366, 368, 371, 373)
+    # Mortgage costs (schema.py _mortgage_costs)
     'Mobile_Home_Costs_Monthly', 'First_Mortgage_Payment_Monthly',
     'Second_Mortgage_Payment_Monthly', 'Property_Taxes_Yearly',
-    # HOUSING SURVEY - Rental Costs (schema.py lines 379-382)
+    # Rental costs (schema.py _rental_costs)
     'Rent_Amount_Monthly', 'Gross_Rent', 'Selected_Monthly_Owner_Costs',
-    # HOUSING SURVEY - Household Income (schema.py lines 400, 403)
+    # Household income (schema.py _household_family_cols)
     'Family_Income', 'Household_Income',
-    # DERIVED FEATURES (from feature_engineering.py FeatureCreator methods)
-    'Income_Per_Hour', 'Income_Per_Week_Worked', 'Total_Annual_Hours',
-    'Total_Monthly_Utility_Cost', 'Property_Tax_Rate', 'Annual_Rent_to_Value_Ratio'
+    # Derived housing features
+    'Total_Monthly_Utility_Cost', 'Property_Tax_Rate', 'Annual_Rent_to_Value_Ratio',
 ]
+
+# Combined list for backward compatibility
+_EXCLUDE_ZERO_RAW = _POP_ZERO_EXCLUDE + _HOUSING_ZERO_EXCLUDE
 
 # NORMALIZE TO UPPERCASE for robust case-insensitive matching
 EXCLUDE_ZERO_COLUMNS = {col.upper().strip() for col in _EXCLUDE_ZERO_RAW}
+_POP_ZERO_EXCLUDE_SET = {col.upper().strip() for col in _POP_ZERO_EXCLUDE}
+_HOUSING_ZERO_EXCLUDE_SET = {col.upper().strip() for col in _HOUSING_ZERO_EXCLUDE}
 
-def should_exclude_zeros(col: str) -> bool:
-    """Check if zeros should be excluded for this column - CASE INSENSITIVE"""
-    return col.upper().strip() in EXCLUDE_ZERO_COLUMNS
+
+def get_zero_exclusion_columns(survey_type: str) -> List[str]:
+    """Get appropriate zero-exclusion columns for survey type."""
+    if survey_type == 'population':
+        return _POP_ZERO_EXCLUDE.copy()
+    elif survey_type == 'housing':
+        return _HOUSING_ZERO_EXCLUDE.copy()
+    return _EXCLUDE_ZERO_RAW.copy()
+
+
+def should_exclude_zeros(col: str, survey_type: str = None) -> bool:
+    """
+    Check if zeros should be excluded for this column - CASE INSENSITIVE.
+
+    Args:
+        col: Column name to check
+        survey_type: Optional survey type ('population' or 'housing') for targeted check
+    """
+    col_upper = col.upper().strip()
+    if survey_type == 'population':
+        return col_upper in _POP_ZERO_EXCLUDE_SET
+    elif survey_type == 'housing':
+        return col_upper in _HOUSING_ZERO_EXCLUDE_SET
+    return col_upper in EXCLUDE_ZERO_COLUMNS
+
+
+# ============================================================================
+# WEIGHTED STATISTICS HELPERS (ACS Sample Weights)
+# ============================================================================
+
+def get_weight_column(survey_type: str) -> str:
+    """Get appropriate weight column name for survey type."""
+    if survey_type == 'population':
+        return 'Person_Weight'
+    elif survey_type == 'housing':
+        return 'Housing_Unit_Weight'
+    return 'Person_Weight'  # Default
+
+
+def weighted_mean(values: np.ndarray, weights: np.ndarray) -> float:
+    """Calculate weighted mean."""
+    mask = ~(np.isnan(values) | np.isnan(weights) | (weights <= 0))
+    if mask.sum() == 0:
+        return np.nan
+    return float(np.average(values[mask], weights=weights[mask]))
+
+
+def weighted_std(values: np.ndarray, weights: np.ndarray) -> float:
+    """Calculate weighted standard deviation."""
+    mask = ~(np.isnan(values) | np.isnan(weights) | (weights <= 0))
+    if mask.sum() == 0:
+        return np.nan
+    v, w = values[mask], weights[mask]
+    avg = np.average(v, weights=w)
+    variance = np.average((v - avg) ** 2, weights=w)
+    return float(np.sqrt(variance))
+
+
+def weighted_median(values: np.ndarray, weights: np.ndarray) -> float:
+    """Calculate weighted median (50th percentile)."""
+    mask = ~(np.isnan(values) | np.isnan(weights) | (weights <= 0))
+    if mask.sum() == 0:
+        return np.nan
+    v, w = values[mask], weights[mask]
+    sorted_idx = np.argsort(v)
+    v_sorted, w_sorted = v[sorted_idx], w[sorted_idx]
+    cumsum = np.cumsum(w_sorted)
+    cutoff = cumsum[-1] / 2.0
+    return float(v_sorted[np.searchsorted(cumsum, cutoff)])
+
+
+def weighted_quantile(values: np.ndarray, weights: np.ndarray, q: float) -> float:
+    """Calculate weighted quantile."""
+    mask = ~(np.isnan(values) | np.isnan(weights) | (weights <= 0))
+    if mask.sum() == 0:
+        return np.nan
+    v, w = values[mask], weights[mask]
+    sorted_idx = np.argsort(v)
+    v_sorted, w_sorted = v[sorted_idx], w[sorted_idx]
+    cumsum = np.cumsum(w_sorted)
+    cutoff = cumsum[-1] * q
+    return float(v_sorted[np.searchsorted(cumsum, cutoff)])
+
+
+def weighted_correlation(x: np.ndarray, y: np.ndarray, weights: np.ndarray) -> float:
+    """Calculate weighted Pearson correlation coefficient."""
+    mask = ~(np.isnan(x) | np.isnan(y) | np.isnan(weights) | (weights <= 0))
+    if mask.sum() < 3:
+        return np.nan
+    x_m, y_m, w = x[mask], y[mask], weights[mask]
+    x_mean = np.average(x_m, weights=w)
+    y_mean = np.average(y_m, weights=w)
+    cov = np.average((x_m - x_mean) * (y_m - y_mean), weights=w)
+    x_std = np.sqrt(np.average((x_m - x_mean) ** 2, weights=w))
+    y_std = np.sqrt(np.average((y_m - y_mean) ** 2, weights=w))
+    if x_std == 0 or y_std == 0:
+        return np.nan
+    return float(cov / (x_std * y_std))
+
+
+def calc_weighted_stats_by_year(df: pd.DataFrame, col: str, weight_col: str) -> Dict[int, Dict]:
+    """
+    Calculate weighted statistics PER YEAR.
+
+    ACS weights are calibrated to each survey year's population totals,
+    so weights must be applied within each year, not across years.
+    """
+    if col not in df.columns or weight_col not in df.columns:
+        return {}
+    if 'Census_Year' not in df.columns:
+        return {}
+
+    results = {}
+    numeric_col = pd.to_numeric(df[col], errors='coerce')
+    numeric_weight = pd.to_numeric(df[weight_col], errors='coerce')
+
+    # Filter zeros for economic columns
+    if should_exclude_zeros(col):
+        valid_mask = (numeric_col > 0) & numeric_col.notna() & numeric_weight.notna() & (numeric_weight > 0)
+    else:
+        valid_mask = numeric_col.notna() & numeric_weight.notna() & (numeric_weight > 0)
+
+    df_valid = df[valid_mask].copy()
+    df_valid['_val'] = numeric_col[valid_mask].values
+    df_valid['_wgt'] = numeric_weight[valid_mask].values
+
+    for year, group in df_valid.groupby('Census_Year'):
+        v = group['_val'].values
+        w = group['_wgt'].values
+        if len(v) < 10:
+            continue
+        results[int(year)] = {
+            'weighted_mean': weighted_mean(v, w),
+            'weighted_median': weighted_median(v, w),
+            'weighted_std': weighted_std(v, w),
+            'weighted_q25': weighted_quantile(v, w, 0.25),
+            'weighted_q75': weighted_quantile(v, w, 0.75),
+            'unweighted_mean': float(np.mean(v)),
+            'unweighted_median': float(np.median(v)),
+            'n_obs': len(v),
+            'sum_weights': float(np.sum(w))
+        }
+
+    return results
+
 
 class EconomicAnalyzer(ABC):
     """Base class for economic analysis"""
@@ -441,8 +595,10 @@ class PopulationEconomicAnalyzer(EconomicAnalyzer):
 class CorrelationAnalyzer:
     """Analyzes correlations in census data"""
 
-    def __init__(self, df: pd.DataFrame):
+    def __init__(self, df: pd.DataFrame, weight_col: Optional[str] = None):
         self.df = df
+        self.weight_col = weight_col
+        self.has_weights = weight_col is not None and weight_col in df.columns
 
     def analyze(self, focus_vars: List[str]) -> Dict[str, Any]:
         if len(self.df) < 100:
@@ -450,10 +606,17 @@ class CorrelationAnalyzer:
         numeric_df = self._get_numeric_subset(focus_vars)
         if numeric_df.shape[1] < 2:
             raise CorrelationAnalysisError(focus_vars, 'Insufficient numeric variables')
-        return {
+
+        result = {
             'correlation_matrix': self._calc_correlations(numeric_df),
             'strong_correlations': self._find_strong_corr(numeric_df)
         }
+
+        # Add weighted correlations if weights available
+        if self.has_weights:
+            result['weighted_correlations'] = self._calc_weighted_correlations(focus_vars)
+
+        return result
 
     def _get_numeric_subset(self, focus_vars: List[str]) -> pd.DataFrame:
         available = [v for v in focus_vars if v in self.df.columns]
@@ -489,6 +652,485 @@ class CorrelationAnalyzer:
                                    corr_matrix.columns[j], val))
         return strong
 
+    def _calc_weighted_correlations(self, focus_vars: List[str]) -> Dict[str, Any]:
+        """Calculate weighted correlations PER YEAR then aggregate."""
+        if not self.has_weights or 'Census_Year' not in self.df.columns:
+            return {}
+
+        available = [v for v in focus_vars if v in self.df.columns]
+        numeric_cols = [c for c in available if pd.api.types.is_numeric_dtype(self.df[c])]
+
+        if len(numeric_cols) < 2:
+            return {}
+
+        # Calculate weighted correlations per year
+        yearly_corrs = {}
+        for year in self.df['Census_Year'].unique():
+            year_df = self.df[self.df['Census_Year'] == year]
+            weights = pd.to_numeric(year_df[self.weight_col], errors='coerce').values
+
+            year_corrs = {}
+            for i, col1 in enumerate(numeric_cols):
+                for col2 in numeric_cols[i+1:]:
+                    x = pd.to_numeric(year_df[col1], errors='coerce').values
+                    y = pd.to_numeric(year_df[col2], errors='coerce').values
+
+                    # Filter zeros for economic columns
+                    mask = ~(np.isnan(x) | np.isnan(y) | np.isnan(weights) | (weights <= 0))
+                    if should_exclude_zeros(col1):
+                        mask &= (x > 0)
+                    if should_exclude_zeros(col2):
+                        mask &= (y > 0)
+
+                    if mask.sum() >= 10:
+                        wcorr = weighted_correlation(x[mask], y[mask], weights[mask])
+                        if not np.isnan(wcorr):
+                            key = f"{col1}__{col2}"
+                            year_corrs[key] = wcorr
+
+            if year_corrs:
+                yearly_corrs[int(year)] = year_corrs
+
+        # Aggregate across years (average weighted correlation)
+        all_pairs = set()
+        for yc in yearly_corrs.values():
+            all_pairs.update(yc.keys())
+
+        aggregated = {}
+        for pair in all_pairs:
+            vals = [yc[pair] for yc in yearly_corrs.values() if pair in yc]
+            if vals:
+                aggregated[pair] = {
+                    'avg_weighted_corr': float(np.mean(vals)),
+                    'std_across_years': float(np.std(vals)) if len(vals) > 1 else 0,
+                    'n_years': len(vals)
+                }
+
+        return {
+            'by_year': yearly_corrs,
+            'aggregated': aggregated
+        }
+
+
+# ============================================================================
+# ADVANCED CORRELATION ANALYZER
+# ============================================================================
+
+class AdvancedCorrelationAnalyzer:
+    """Enhanced correlation analysis with multiple methods and partial correlations"""
+
+    def __init__(self, df: pd.DataFrame):
+        self.df = df
+        from logging_config import get_logger
+        self.logger = get_logger("processing.advanced_correlation")
+
+    def analyze(self, focus_vars: List[str],
+                methods: List[str] = ['pearson', 'spearman', 'kendall']) -> Dict[str, Any]:
+        """Compute correlations using multiple methods"""
+        self.logger.debug(f"Computing correlations with methods: {methods}")
+        numeric_df = self._get_numeric_subset(focus_vars)
+        if numeric_df.shape[1] < 2:
+            return {'error': 'Insufficient numeric variables'}
+
+        results = {}
+        if 'pearson' in methods:
+            results['pearson'] = self._calc_correlation(numeric_df, method='pearson')
+        if 'spearman' in methods:
+            results['spearman'] = self._calc_correlation(numeric_df, method='spearman')
+        if 'kendall' in methods:
+            results['kendall'] = self._calc_correlation(numeric_df, method='kendall')
+
+        # Find correlations that differ significantly between methods
+        results['method_comparison'] = self._compare_methods(results)
+        return results
+
+    def _get_numeric_subset(self, focus_vars: List[str]) -> pd.DataFrame:
+        available = [v for v in focus_vars if v in self.df.columns]
+        df = self.df[available].select_dtypes(include=[np.number])
+        # Filter zeros for economic columns
+        for col in df.columns:
+            if should_exclude_zeros(col):
+                df = df[df[col] > 0]
+        return df
+
+    def _calc_correlation(self, df: pd.DataFrame, method: str = 'pearson') -> Dict:
+        """Calculate correlation matrix using specified method"""
+        if df.empty:
+            return {}
+        try:
+            corr_matrix = df.corr(method=method)
+            return corr_matrix.to_dict()
+        except Exception as e:
+            self.logger.warning(f"Correlation calculation failed ({method}): {e}")
+            return {}
+
+    def _compare_methods(self, results: Dict[str, Dict]) -> List[Dict]:
+        """Find correlations that differ significantly between methods"""
+        differences = []
+        if 'pearson' not in results or 'spearman' not in results:
+            return differences
+
+        pearson = results.get('pearson', {})
+        spearman = results.get('spearman', {})
+
+        for col1 in pearson:
+            for col2 in pearson.get(col1, {}):
+                p_val = pearson.get(col1, {}).get(col2, 0)
+                s_val = spearman.get(col1, {}).get(col2, 0)
+                if p_val and s_val:
+                    diff = abs(p_val - s_val)
+                    if diff > 0.2:  # Significant difference threshold
+                        differences.append({
+                            'var1': col1, 'var2': col2,
+                            'pearson': p_val, 'spearman': s_val,
+                            'difference': diff,
+                            'interpretation': 'Non-linear relationship likely' if s_val > p_val else 'Outliers affecting Pearson'
+                        })
+        return differences
+
+    def calc_partial_correlation(self, var1: str, var2: str,
+                                  control_vars: List[str]) -> Optional[float]:
+        """Calculate partial correlation controlling for other variables"""
+        try:
+            from scipy import stats
+            import numpy as np
+
+            # Get relevant columns
+            all_vars = [var1, var2] + control_vars
+            df = self.df[all_vars].dropna()
+
+            if len(df) < 10:
+                return None
+
+            # Regress var1 on control variables
+            X = df[control_vars].values
+            y1 = df[var1].values
+            y2 = df[var2].values
+
+            # Add constant for regression
+            X_with_const = np.column_stack([np.ones(len(X)), X])
+
+            # Get residuals for var1
+            beta1, _, _, _ = np.linalg.lstsq(X_with_const, y1, rcond=None)
+            resid1 = y1 - X_with_const @ beta1
+
+            # Get residuals for var2
+            beta2, _, _, _ = np.linalg.lstsq(X_with_const, y2, rcond=None)
+            resid2 = y2 - X_with_const @ beta2
+
+            # Correlation of residuals is partial correlation
+            partial_corr, _ = stats.pearsonr(resid1, resid2)
+            return float(partial_corr)
+        except Exception as e:
+            self.logger.warning(f"Partial correlation failed: {e}")
+            return None
+
+
+# ============================================================================
+# MULTIVARIATE OUTLIER DETECTOR
+# ============================================================================
+
+class MultivariateOutlierDetector:
+    """Multivariate outlier detection using multiple algorithms"""
+
+    def __init__(self, df: pd.DataFrame):
+        self.df = df
+        from logging_config import get_logger
+        self.logger = get_logger("processing.outlier_detector")
+
+    def analyze(self, focus_vars: Optional[List[str]] = None,
+                methods: List[str] = ['isolation_forest', 'mahalanobis']) -> Dict[str, Any]:
+        """Detect outliers using multiple multivariate methods"""
+        self.logger.debug(f"Detecting outliers with methods: {methods}")
+
+        # Prepare data
+        if focus_vars:
+            available = [v for v in focus_vars if v in self.df.columns]
+            df = self.df[available].select_dtypes(include=[np.number]).dropna()
+        else:
+            df = self.df.select_dtypes(include=[np.number]).dropna()
+
+        if len(df) < 10 or df.shape[1] < 2:
+            return {'error': 'Insufficient data for multivariate outlier detection'}
+
+        results = {}
+
+        if 'isolation_forest' in methods:
+            results['isolation_forest'] = self._isolation_forest(df)
+
+        if 'mahalanobis' in methods:
+            results['mahalanobis'] = self._mahalanobis_distance(df)
+
+        if 'lof' in methods:
+            results['lof'] = self._local_outlier_factor(df)
+
+        # Ensemble results
+        results['ensemble'] = self._ensemble_outliers(results, len(df))
+        return results
+
+    def _isolation_forest(self, df: pd.DataFrame, contamination: float = 0.1) -> Dict:
+        """Isolation Forest outlier detection"""
+        try:
+            from sklearn.ensemble import IsolationForest
+
+            X = df.values
+            clf = IsolationForest(contamination=contamination, random_state=42, n_jobs=-1)
+            predictions = clf.fit_predict(X)
+
+            outlier_mask = predictions == -1
+            outlier_indices = df.index[outlier_mask].tolist()
+
+            return {
+                'n_outliers': int(sum(outlier_mask)),
+                'outlier_percentage': float(sum(outlier_mask) / len(df) * 100),
+                'outlier_indices': outlier_indices[:100],  # Limit for memory
+                'method': 'Isolation Forest',
+                'contamination': contamination
+            }
+        except ImportError:
+            return {'error': 'sklearn not available'}
+        except Exception as e:
+            self.logger.warning(f"Isolation Forest failed: {e}")
+            return {'error': str(e)}
+
+    def _mahalanobis_distance(self, df: pd.DataFrame, threshold: float = 3.0) -> Dict:
+        """Mahalanobis distance outlier detection"""
+        try:
+            from scipy.spatial.distance import mahalanobis
+            from scipy import stats
+
+            X = df.values
+            mean = np.mean(X, axis=0)
+            cov = np.cov(X.T)
+
+            # Handle singular covariance matrix
+            try:
+                cov_inv = np.linalg.inv(cov)
+            except np.linalg.LinAlgError:
+                cov_inv = np.linalg.pinv(cov)
+
+            # Calculate Mahalanobis distance for each point
+            distances = []
+            for i in range(len(X)):
+                d = mahalanobis(X[i], mean, cov_inv)
+                distances.append(d)
+
+            distances = np.array(distances)
+
+            # Chi-squared threshold for multivariate outliers
+            chi2_threshold = stats.chi2.ppf(0.975, df=X.shape[1])
+            outlier_mask = distances > chi2_threshold
+
+            outlier_indices = df.index[outlier_mask].tolist()
+
+            return {
+                'n_outliers': int(sum(outlier_mask)),
+                'outlier_percentage': float(sum(outlier_mask) / len(df) * 100),
+                'outlier_indices': outlier_indices[:100],
+                'method': 'Mahalanobis Distance',
+                'threshold': float(chi2_threshold),
+                'mean_distance': float(np.mean(distances)),
+                'max_distance': float(np.max(distances))
+            }
+        except Exception as e:
+            self.logger.warning(f"Mahalanobis distance failed: {e}")
+            return {'error': str(e)}
+
+    def _local_outlier_factor(self, df: pd.DataFrame, n_neighbors: int = 20) -> Dict:
+        """Local Outlier Factor detection"""
+        try:
+            from sklearn.neighbors import LocalOutlierFactor
+
+            X = df.values
+            clf = LocalOutlierFactor(n_neighbors=min(n_neighbors, len(X) - 1))
+            predictions = clf.fit_predict(X)
+
+            outlier_mask = predictions == -1
+            outlier_indices = df.index[outlier_mask].tolist()
+
+            return {
+                'n_outliers': int(sum(outlier_mask)),
+                'outlier_percentage': float(sum(outlier_mask) / len(df) * 100),
+                'outlier_indices': outlier_indices[:100],
+                'method': 'Local Outlier Factor',
+                'n_neighbors': n_neighbors
+            }
+        except ImportError:
+            return {'error': 'sklearn not available'}
+        except Exception as e:
+            self.logger.warning(f"LOF failed: {e}")
+            return {'error': str(e)}
+
+    def _ensemble_outliers(self, results: Dict, n_samples: int) -> Dict:
+        """Combine multiple methods for robust outlier identification"""
+        all_indices = set()
+        method_counts = {}
+
+        for method, result in results.items():
+            if method == 'ensemble' or 'error' in result:
+                continue
+            indices = result.get('outlier_indices', [])
+            for idx in indices:
+                all_indices.add(idx)
+                method_counts[idx] = method_counts.get(idx, 0) + 1
+
+        # Points flagged by multiple methods are more likely outliers
+        consensus_outliers = [idx for idx, count in method_counts.items() if count >= 2]
+
+        return {
+            'all_flagged': len(all_indices),
+            'consensus_outliers': len(consensus_outliers),
+            'consensus_percentage': float(len(consensus_outliers) / n_samples * 100) if n_samples > 0 else 0,
+            'consensus_indices': consensus_outliers[:100]
+        }
+
+
+# ============================================================================
+# HYPOTHESIS TESTING ANALYZER
+# ============================================================================
+
+class HypothesisTestingAnalyzer:
+    """Statistical hypothesis testing with multiple comparison corrections"""
+
+    def __init__(self, df: pd.DataFrame):
+        self.df = df
+        from logging_config import get_logger
+        self.logger = get_logger("processing.hypothesis_testing")
+
+    def test_group_differences(self, value_col: str, group_col: str,
+                               correction: str = 'bonferroni') -> Dict[str, Any]:
+        """Test differences between groups with correction for multiple comparisons"""
+        self.logger.debug(f"Testing group differences: {value_col} by {group_col}")
+
+        if value_col not in self.df.columns or group_col not in self.df.columns:
+            return {'error': 'Columns not found'}
+
+        try:
+            from scipy import stats
+
+            # Get groups
+            groups = self.df.groupby(group_col)[value_col].apply(
+                lambda x: x.dropna().tolist()
+            ).to_dict()
+
+            if len(groups) < 2:
+                return {'error': 'Need at least 2 groups for comparison'}
+
+            # Perform pairwise tests
+            group_names = list(groups.keys())
+            p_values = []
+            comparisons = []
+
+            for i in range(len(group_names)):
+                for j in range(i + 1, len(group_names)):
+                    g1, g2 = groups[group_names[i]], groups[group_names[j]]
+                    if len(g1) > 1 and len(g2) > 1:
+                        _, p_val = stats.mannwhitneyu(g1, g2, alternative='two-sided')
+                        p_values.append(p_val)
+                        comparisons.append((group_names[i], group_names[j]))
+
+            # Apply correction
+            if correction == 'bonferroni':
+                corrected = self._bonferroni_correction(p_values)
+            elif correction == 'fdr' or correction == 'bh':
+                corrected = self._fdr_correction(p_values)
+            elif correction == 'holm':
+                corrected = self._holm_bonferroni(p_values)
+            else:
+                corrected = [(p, p < 0.05) for p in p_values]
+
+            results = []
+            for (g1, g2), (adj_p, significant) in zip(comparisons, corrected):
+                results.append({
+                    'group1': str(g1), 'group2': str(g2),
+                    'adjusted_p': float(adj_p),
+                    'significant': bool(significant)
+                })
+
+            return {
+                'comparisons': results,
+                'correction_method': correction,
+                'n_comparisons': len(comparisons),
+                'n_significant': sum(1 for _, sig in corrected if sig)
+            }
+        except Exception as e:
+            self.logger.warning(f"Group difference test failed: {e}")
+            return {'error': str(e)}
+
+    def _bonferroni_correction(self, p_values: List[float],
+                                alpha: float = 0.05) -> List[Tuple[float, bool]]:
+        """Bonferroni correction - conservative"""
+        n = len(p_values)
+        return [(min(p * n, 1.0), p * n < alpha) for p in p_values]
+
+    def _holm_bonferroni(self, p_values: List[float],
+                         alpha: float = 0.05) -> List[Tuple[float, bool]]:
+        """Holm-Bonferroni step-down procedure"""
+        n = len(p_values)
+        sorted_indices = np.argsort(p_values)
+        adjusted = [0.0] * n
+        significant = [False] * n
+
+        for rank, idx in enumerate(sorted_indices):
+            adj_p = min(p_values[idx] * (n - rank), 1.0)
+            adjusted[idx] = adj_p
+            significant[idx] = adj_p < alpha
+
+        return list(zip(adjusted, significant))
+
+    def _fdr_correction(self, p_values: List[float],
+                        alpha: float = 0.05) -> List[Tuple[float, bool]]:
+        """Benjamini-Hochberg FDR correction"""
+        n = len(p_values)
+        sorted_indices = np.argsort(p_values)
+        adjusted = [0.0] * n
+
+        # Calculate adjusted p-values
+        prev_adj = 1.0
+        for rank in range(n - 1, -1, -1):
+            idx = sorted_indices[rank]
+            adj_p = min(p_values[idx] * n / (rank + 1), prev_adj)
+            adjusted[idx] = adj_p
+            prev_adj = adj_p
+
+        return [(adj, adj < alpha) for adj in adjusted]
+
+    def normality_tests(self, cols: List[str]) -> Dict[str, Dict]:
+        """Test normality with Shapiro-Wilk and other tests"""
+        results = {}
+        try:
+            from scipy import stats
+
+            for col in cols:
+                if col not in self.df.columns:
+                    continue
+
+                series = pd.to_numeric(self.df[col], errors='coerce').dropna()
+                if should_exclude_zeros(col):
+                    series = series[series > 0]
+
+                if len(series) < 8:
+                    results[col] = {'error': 'Insufficient data'}
+                    continue
+
+                # Limit sample size for Shapiro-Wilk
+                sample = series.sample(n=min(5000, len(series)), random_state=42)
+
+                try:
+                    shapiro_stat, shapiro_p = stats.shapiro(sample)
+                    results[col] = {
+                        'shapiro_statistic': float(shapiro_stat),
+                        'shapiro_p_value': float(shapiro_p),
+                        'is_normal': shapiro_p > 0.05,
+                        'n_samples': len(sample)
+                    }
+                except Exception:
+                    results[col] = {'error': 'Test failed'}
+
+            return results
+        except ImportError:
+            return {'error': 'scipy not available'}
+
 
 # ============================================================================
 # STATISTICAL ANALYZER
@@ -496,13 +1138,17 @@ class CorrelationAnalyzer:
 
 class StatisticalAnalyzer:
     """Computes comprehensive summary statistics for census data"""
-    
-    def __init__(self, df: pd.DataFrame):
+
+    def __init__(self, df: pd.DataFrame, weight_col: Optional[str] = None):
         self.df = df
-    
+        self.weight_col = weight_col
+        self.has_weights = weight_col is not None and weight_col in df.columns
+
     def analyze(self, focus_vars: Optional[List[str]] = None) -> Dict[str, Any]:
         """Compute comprehensive statistics for key variables"""
         print("[VERBOSE] Computing comprehensive summary statistics...")
+        if self.has_weights:
+            print(f"[VERBOSE] Using sample weights from '{self.weight_col}' column")
         
         # Get numeric columns to analyze
         if focus_vars:
@@ -553,11 +1199,11 @@ class StatisticalAnalyzer:
 
         if len(series) == 0:
             return {'error': 'No valid numeric data'}
-        
+
         try:
             from scipy import stats as scipy_stats
-            
-            return {
+
+            result = {
                 'count': int(len(series)),
                 'mean': float(series.mean()),
                 'median': float(series.median()),
@@ -572,6 +1218,19 @@ class StatisticalAnalyzer:
                 'range': float(series.max() - series.min()),
                 'cv': float(series.std() / series.mean() * 100) if series.mean() != 0 else 0
             }
+
+            # Add weighted statistics if weights available
+            if self.has_weights:
+                weighted_by_year = calc_weighted_stats_by_year(self.df, col, self.weight_col)
+                if weighted_by_year:
+                    # Aggregate weighted stats across years
+                    all_wmeans = [y['weighted_mean'] for y in weighted_by_year.values() if not np.isnan(y['weighted_mean'])]
+                    all_wmedians = [y['weighted_median'] for y in weighted_by_year.values() if not np.isnan(y['weighted_median'])]
+                    result['weighted_mean_avg'] = float(np.mean(all_wmeans)) if all_wmeans else None
+                    result['weighted_median_avg'] = float(np.mean(all_wmedians)) if all_wmedians else None
+                    result['weighted_by_year'] = weighted_by_year
+
+            return result
         except ImportError:
             # Fallback if scipy not available
             return {

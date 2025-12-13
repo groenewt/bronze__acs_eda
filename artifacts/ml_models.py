@@ -11,14 +11,16 @@ from exceptions import (ModelTrainingError, ModelPredictionError, ModelEvaluatio
                         InvalidModelParametersError, InsufficientDataError,
                         TimeSeriesForecastError, ConfidenceIntervalError)
 warnings.filterwarnings('ignore')
+# Suppress sklearn parallel.delayed warning in Python 3.13
+warnings.filterwarnings('ignore', message='.*sklearn.utils.parallel.delayed.*')
 
 try:
     from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
     from sklearn.preprocessing import StandardScaler, RobustScaler, MinMaxScaler
     from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet, LogisticRegression
-    from sklearn.ensemble import (RandomForestRegressor, RandomForestClassifier, 
+    from sklearn.ensemble import (RandomForestRegressor, RandomForestClassifier,
                                   GradientBoostingRegressor, GradientBoostingClassifier,
-                                  AdaBoostRegressor, AdaBoostClassifier, 
+                                  AdaBoostRegressor, AdaBoostClassifier,
                                   ExtraTreesRegressor, ExtraTreesClassifier,
                                   BaggingClassifier, VotingClassifier, StackingClassifier)
     from sklearn.tree import DecisionTreeClassifier, DecisionTreeRegressor
@@ -35,6 +37,14 @@ try:
 except ImportError:
     SKLEARN_AVAILABLE = False
     print("[WARNING] scikit-learn not available. ML models will be disabled.")
+
+# SHAP for model explainability
+try:
+    import shap
+    SHAP_AVAILABLE = True
+except ImportError:
+    SHAP_AVAILABLE = False
+    print("[WARNING] SHAP not available. Model explainability will be disabled.")
 
 
 # ============================================================================
@@ -137,49 +147,92 @@ class RegressionModeler(BaseMLModel):
             'decision_tree': DecisionTreeRegressor(random_state=random_state)
         }
         
-    def train_model(self, X: pd.DataFrame, y: pd.Series, 
+    # Models that support sample_weight parameter
+    SUPPORTS_SAMPLE_WEIGHT = {'linear', 'ridge', 'lasso', 'elasticnet',
+                              'random_forest', 'gradient_boosting', 'adaboost',
+                              'extratrees', 'decision_tree'}
+
+    def train_model(self, X: pd.DataFrame, y: pd.Series,
                    model_type: str = 'random_forest',
                    test_size: float = 0.2,
-                   cv_folds: int = 5) -> ModelResults:
-        """Train a regression model with evaluation"""
+                   cv_folds: int = 5,
+                   sample_weight: Optional[pd.Series] = None) -> ModelResults:
+        """
+        Train a regression model with evaluation.
+
+        Args:
+            X: Feature DataFrame
+            y: Target Series
+            model_type: Type of model to train
+            test_size: Fraction of data to use for testing
+            cv_folds: Number of cross-validation folds
+            sample_weight: Optional sample weights (e.g., ACS survey weights).
+                          Weights are normalized before training.
+        """
         try:
             if not SKLEARN_AVAILABLE:
                 raise ModelTrainingError(model_type, "scikit-learn not available")
-            
+
             if len(X) < 10:
                 raise InsufficientDataError('regression', 10, len(X))
-            
+
             # Prepare data - scale for linear models and distance-based models
             scale_models = {'svr', 'knn', 'linear', 'ridge', 'lasso', 'elasticnet'}
             X_clean, y_clean = self._prepare_data(X, y, scale=(model_type in scale_models))
-            
+
+            # Align sample weights with cleaned data
+            weights_train = None
+            weights_test = None
+            weights_clean = None
+            use_weights = (sample_weight is not None and
+                          model_type in self.SUPPORTS_SAMPLE_WEIGHT)
+
+            if use_weights:
+                # Align weights with cleaned indices (handle index misalignment)
+                try:
+                    weights_clean = sample_weight.loc[X_clean.index].values
+                except KeyError:
+                    # Fallback: reindex sample_weight to match
+                    weights_clean = sample_weight.reindex(X_clean.index).fillna(1.0).values
+                # Normalize weights for numerical stability
+                weights_clean = weights_clean / weights_clean.sum() * len(weights_clean)
+
             # Split data
-            X_train, X_test, y_train, y_test = train_test_split(
-                X_clean, y_clean, test_size=test_size, random_state=self.random_state
-            )
-            
+            if use_weights:
+                X_train, X_test, y_train, y_test, weights_train, weights_test = train_test_split(
+                    X_clean, y_clean, weights_clean, test_size=test_size, random_state=self.random_state
+                )
+            else:
+                X_train, X_test, y_train, y_test = train_test_split(
+                    X_clean, y_clean, test_size=test_size, random_state=self.random_state
+                )
+
             # Train model
             self.model = self.models.get(model_type, self.models['random_forest'])
-            self.model.fit(X_train, y_train)
+            if use_weights:
+                self.model.fit(X_train, y_train, sample_weight=weights_train)
+            else:
+                self.model.fit(X_train, y_train)
             self.is_fitted = True
-            
+
             # Evaluate
             train_score = r2_score(y_train, self.model.predict(X_train))
             test_score = r2_score(y_test, self.model.predict(X_test))
             y_pred = self.model.predict(X_test)
-            
-            # Cross-validation
-            cv_scores = cross_val_score(self.model, X_clean, y_clean, 
-                                        cv=cv_folds, scoring='r2')
-            
+
+            # Cross-validation (skip weighted CV - fit_params deprecated in sklearn 1.4+)
+            # Model was already trained with weights, CV is just for validation
+            cv_scores = cross_val_score(self.model, X_clean, y_clean,
+                                       cv=cv_folds, scoring='r2')
+
             # Feature importance
             feat_imp = self._get_feature_importance(X_clean.columns.tolist())
-            
+
             # Additional metrics
             mse = mean_squared_error(y_test, y_pred)
             mae = mean_absolute_error(y_test, y_pred)
             rmse = np.sqrt(mse)
-            
+
             return ModelResults(
                 model_type='regression',
                 model_name=model_type,
@@ -196,7 +249,8 @@ class RegressionModeler(BaseMLModel):
                     'n_samples': len(X_clean),
                     'cv_mean': cv_scores.mean(),
                     'cv_std': cv_scores.std(),
-                    'y_test': y_test.values if hasattr(y_test, 'values') else y_test
+                    'y_test': y_test.values if hasattr(y_test, 'values') else y_test,
+                    'used_sample_weights': use_weights
                 }
             )
         except (InsufficientDataError, ModelTrainingError):
@@ -588,7 +642,49 @@ class TimeSeriesForecaster:
             'historical_fit': dict(zip(X.flatten().tolist(), fitted.tolist())),
             'ci_lower': ci_lower.tolist(), 'ci_upper': ci_upper.tolist()
         }
-    
+
+    def _fit_arima(self, y, X, periods_ahead):
+        """Fit ARIMA model using statsmodels"""
+        try:
+            from statsmodels.tsa.arima.model import ARIMA
+            # Use simple ARIMA(1,1,1) - can be enhanced with auto-order selection
+            model = ARIMA(y, order=(1, 1, 1))
+            fit = model.fit()
+            forecasts = fit.forecast(steps=periods_ahead)
+            fitted = fit.fittedvalues
+            # ARIMA drops first observation(s) during differencing
+            if len(fitted) < len(y):
+                fitted = np.concatenate([[y[0]], fitted])
+            r2 = r2_score(y, fitted[:len(y)])
+            ci_lower, ci_upper, _ = self._calc_confidence_intervals(y, fitted[:len(y)], forecasts)
+            return self._build_model_result('arima', fitted[:len(y)], forecasts, r2, X, ci_lower, ci_upper)
+        except Exception as e:
+            return {'error': f'ARIMA failed: {str(e)}'}
+
+    def _fit_holt_winters(self, y, X, periods_ahead):
+        """Fit Holt-Winters exponential smoothing using statsmodels"""
+        try:
+            from statsmodels.tsa.holtwinters import ExponentialSmoothing
+            # Use additive trend, no seasonality (annual data typically doesn't have seasonality)
+            model = ExponentialSmoothing(y, trend='add', seasonal=None)
+            fit = model.fit()
+            fitted = fit.fittedvalues
+            forecasts = fit.forecast(periods_ahead)
+            r2 = r2_score(y, fitted)
+            ci_lower, ci_upper, _ = self._calc_confidence_intervals(y, fitted, forecasts)
+            return self._build_model_result('holt_winters', fitted, forecasts, r2, X, ci_lower, ci_upper)
+        except Exception as e:
+            return {'error': f'Holt-Winters failed: {str(e)}'}
+
+    def _train_advanced_models(self, y, X, periods_ahead):
+        """Train advanced time series models (ARIMA, Holt-Winters)"""
+        results = {}
+        for name, method in [('arima', self._fit_arima), ('holt_winters', self._fit_holt_winters)]:
+            result = method(y, X, periods_ahead)
+            if 'error' not in result:
+                results[name] = result
+        return results
+
     def _train_all_models(self, X, y, periods_ahead):
         """Train all forecasting models (≤10 lines)"""
         results = {}
@@ -628,13 +724,14 @@ class TimeSeriesForecaster:
     def forecast_trend(self, df: pd.DataFrame, target_col: str,
                       time_col: str = 'Census_Year',
                       periods_ahead: int = 3) -> Dict[str, Any]:
-        """Forecast future values using multiple models (≤10 lines)"""
+        """Forecast future values using multiple models including ARIMA, Holt-Winters"""
         try:
             if not SKLEARN_AVAILABLE:
                 raise ModelTrainingError('timeseries', "scikit-learn not available")
             X, y, ts_data = self._prepare_ts_data(df, target_col, time_col)
-            results = {**self._train_all_models(X, y, periods_ahead), 
-                      **self._train_moving_avg_models(y, X, periods_ahead)}
+            results = {**self._train_all_models(X, y, periods_ahead),
+                      **self._train_moving_avg_models(y, X, periods_ahead),
+                      **self._train_advanced_models(y, X, periods_ahead)}
             best_name, best_result = self._select_best_model(results)
             return self._build_forecast_result(best_name, best_result, results)
         except (InsufficientDataError, ModelTrainingError, TimeSeriesForecastError):
@@ -649,23 +746,45 @@ class TimeSeriesForecaster:
 
 class ModelComparator:
     """Compare multiple models and select the best"""
-    
+
     @staticmethod
-    def compare_regression_models(X: pd.DataFrame, y: pd.Series) -> Dict[str, ModelResults]:
-        """Compare multiple regression models"""
+    def compare_regression_models(X: pd.DataFrame, y: pd.Series,
+                                  tune: bool = False,
+                                  sample_weight: Optional[pd.Series] = None) -> Dict[str, ModelResults]:
+        """
+        Compare multiple regression models.
+
+        Args:
+            X: Feature DataFrame
+            y: Target Series
+            tune: If True, run hyperparameter tuning before final training
+            sample_weight: Optional sample weights for training
+        """
         if not SKLEARN_AVAILABLE:
             return {'error': 'scikit-learn not available'}
-            
+
         modeler = RegressionModeler()
         results = {}
-        
+
         for model_type in ['linear', 'ridge', 'lasso', 'random_forest', 'gradient_boosting']:
             try:
-                result = modeler.train_model(X, y, model_type=model_type)
+                # Optionally tune hyperparameters first
+                if tune and model_type in ['ridge', 'lasso', 'random_forest', 'gradient_boosting']:
+                    print(f"[TUNE] Tuning hyperparameters for {model_type}...")
+                    tune_result = modeler.tune_hyperparameters(X, y, model_type)
+                    if 'best_params' in tune_result:
+                        # Apply best params to model before training
+                        best_params = tune_result['best_params']
+                        modeler.models[model_type].set_params(**best_params)
+                        print(f"[TUNE] Best params for {model_type}: {best_params}")
+
+                result = modeler.train_model(X, y, model_type=model_type,
+                                            sample_weight=sample_weight)
                 results[model_type] = result
             except Exception as e:
+                print(f"[ML-ERROR] Model {model_type} training failed: {e}")
                 results[model_type] = {'error': str(e)}
-        
+
         return results
     
     @staticmethod
@@ -697,7 +816,7 @@ class ModelComparator:
         best_name = None
         best_result = None
         best_score = -float('inf')
-        
+
         for name, result in results.items():
             if isinstance(result, dict) and 'error' in result:
                 continue
@@ -706,5 +825,119 @@ class ModelComparator:
                 best_score = score
                 best_name = name
                 best_result = result
-        
+
         return best_name, best_result
+
+
+# ============================================================================
+# MODEL EXPLAINABILITY (SHAP)
+# ============================================================================
+
+class ModelExplainer:
+    """
+    Model explainability using SHAP (SHapley Additive exPlanations).
+
+    Provides feature importance explanations for tree-based and linear models.
+    """
+
+    # Models that work well with TreeExplainer
+    TREE_MODELS = {'random_forest', 'gradient_boosting', 'adaboost', 'extratrees', 'decision_tree'}
+
+    # Models that work with LinearExplainer
+    LINEAR_MODELS = {'linear', 'ridge', 'lasso', 'elasticnet'}
+
+    def __init__(self):
+        if not SHAP_AVAILABLE:
+            raise ImportError("SHAP library not available. Install with: pip install shap")
+
+    def explain_model(self, model, X_train: pd.DataFrame, X_test: pd.DataFrame,
+                      model_type: str = 'random_forest') -> Dict[str, Any]:
+        """
+        Generate SHAP explanations for a fitted model.
+
+        Args:
+            model: Fitted sklearn model
+            X_train: Training features (for background data)
+            X_test: Test features to explain
+            model_type: Type of model ('random_forest', 'gradient_boosting', 'linear', etc.)
+
+        Returns:
+            Dict with shap_values, feature_importance, and explanation data
+        """
+        try:
+            if model_type in self.TREE_MODELS:
+                return self._explain_tree_model(model, X_train, X_test)
+            elif model_type in self.LINEAR_MODELS:
+                return self._explain_linear_model(model, X_train, X_test)
+            else:
+                # Fall back to KernelExplainer for other models
+                return self._explain_kernel(model, X_train, X_test)
+        except Exception as e:
+            return {'error': f'SHAP explanation failed: {str(e)}'}
+
+    def _explain_tree_model(self, model, X_train: pd.DataFrame, X_test: pd.DataFrame) -> Dict[str, Any]:
+        """Use TreeExplainer for tree-based models (fast)"""
+        explainer = shap.TreeExplainer(model)
+        shap_values = explainer.shap_values(X_test)
+
+        # Handle multi-output (some models return list)
+        if isinstance(shap_values, list):
+            shap_values = shap_values[0] if len(shap_values) == 1 else shap_values[-1]
+
+        # Calculate mean absolute SHAP value per feature
+        mean_abs_shap = np.abs(shap_values).mean(axis=0)
+        feature_importance = dict(zip(X_test.columns, mean_abs_shap))
+
+        return {
+            'shap_values': shap_values,
+            'expected_value': explainer.expected_value,
+            'feature_importance': feature_importance,
+            'feature_names': list(X_test.columns),
+            'X_test': X_test.values,
+            'explainer_type': 'tree'
+        }
+
+    def _explain_linear_model(self, model, X_train: pd.DataFrame, X_test: pd.DataFrame) -> Dict[str, Any]:
+        """Use LinearExplainer for linear models"""
+        explainer = shap.LinearExplainer(model, X_train)
+        shap_values = explainer.shap_values(X_test)
+
+        mean_abs_shap = np.abs(shap_values).mean(axis=0)
+        feature_importance = dict(zip(X_test.columns, mean_abs_shap))
+
+        return {
+            'shap_values': shap_values,
+            'expected_value': explainer.expected_value,
+            'feature_importance': feature_importance,
+            'feature_names': list(X_test.columns),
+            'X_test': X_test.values,
+            'explainer_type': 'linear'
+        }
+
+    def _explain_kernel(self, model, X_train: pd.DataFrame, X_test: pd.DataFrame) -> Dict[str, Any]:
+        """Use KernelExplainer as fallback (slower but model-agnostic)"""
+        # Sample background data to speed up KernelExplainer
+        background = shap.sample(X_train, min(100, len(X_train)))
+        explainer = shap.KernelExplainer(model.predict, background)
+
+        # Limit test samples to avoid long computation
+        X_test_sample = X_test.iloc[:min(50, len(X_test))]
+        shap_values = explainer.shap_values(X_test_sample)
+
+        mean_abs_shap = np.abs(shap_values).mean(axis=0)
+        feature_importance = dict(zip(X_test.columns, mean_abs_shap))
+
+        return {
+            'shap_values': shap_values,
+            'expected_value': explainer.expected_value,
+            'feature_importance': feature_importance,
+            'feature_names': list(X_test.columns),
+            'X_test': X_test_sample.values,
+            'explainer_type': 'kernel'
+        }
+
+    @staticmethod
+    def get_top_features(feature_importance: Dict[str, float], top_n: int = 10) -> List[Tuple[str, float]]:
+        """Get top N most important features sorted by importance"""
+        sorted_features = sorted(feature_importance.items(), key=lambda x: x[1], reverse=True)
+        return sorted_features[:top_n]

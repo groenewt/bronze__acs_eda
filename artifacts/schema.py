@@ -49,6 +49,13 @@ class SchemaDefinition(ABC):
         """Check if a specific column should exclude zero values"""
         return self.get_zero_exclusion_map().get(column_name, False)
 
+    def get_column_availability(self, year: int) -> Dict[str, bool]:
+        """
+        Return which columns are available for a given data year.
+        Subclasses should override for survey-specific year-based differences.
+        """
+        return {col[0]: True for col in self.get_all_columns()}
+
 
 # ============================================================================
 # PARENT SURVEY CLASSES (WORK WITH STANDARDIZED NAMES ONLY)
@@ -120,10 +127,19 @@ class PopulationSurvey(SchemaDefinition):
         ]
 
     def _military_service_periods(self) -> List[Tuple[str, str, str]]:
-        return [
+        # 2012 format: Individual period columns (1-11)
+        periods = [
             (f'Military_Service_Period_{i}', 'INT', f'Military_Service_Period_{i}')
             for i in range(1, 12)
         ]
+        # 2017+ format: Combined period columns
+        periods.extend([
+            ('Military_Service_Period_CD', 'INT', 'Military_Service_Period_CD'),
+            ('Military_Service_Period_FG', 'INT', 'Military_Service_Period_FG'),
+            ('Military_Service_Period_HI', 'INT', 'Military_Service_Period_HI'),
+            ('Military_Service_Period_JK', 'INT', 'Military_Service_Period_JK'),
+        ])
+        return periods
 
     def _work_income(self) -> List[Tuple[str, str, str]]:
         return self._work_status_cols() + self._income_cols() + self._education_work_cols()
@@ -263,6 +279,23 @@ class PopulationSurvey(SchemaDefinition):
         return [(f'Person_Weight_Replicate_{i}', 'INT', f'Person_Weight_Replicate_{i}')
                 for i in range(1, 81)]
 
+    def get_column_availability(self, year: int) -> Dict[str, bool]:
+        """Return which columns are available for a given data year."""
+        availability = {col[0]: True for col in self.get_all_columns()}
+        # DIVISION/REGION not in population data before 2017
+        if year < 2017:
+            availability['Census_Division'] = False
+            availability['Census_Region'] = False
+            # Combined military codes only in 2017+
+            for code in ['Military_Service_Period_CD', 'Military_Service_Period_FG',
+                         'Military_Service_Period_HI', 'Military_Service_Period_JK']:
+                availability[code] = False
+        else:
+            # Individual military codes only in 2012 format
+            for i in range(1, 12):
+                availability[f'Military_Service_Period_{i}'] = False
+        return availability
+
     def _industry_occupation_codes(self) -> List[Tuple[str, str, str]]:
         return [
             ('Industry_Code_2002', 'INT', 'Industry_Code_2002'),
@@ -388,6 +421,15 @@ class HousingSurvey(SchemaDefinition):
             ('Satellite_Internet', 'INT', 'Satellite_Internet'),
             ('Smartphone', 'INT', 'Smartphone'),
             ('Tablet_Computer', 'INT', 'Tablet_Computer'),
+            # 2017+ technology columns
+            ('Internet_Access_Type', 'INT', 'Internet_Access_Type'),
+            ('Broadband_Internet', 'INT', 'Broadband_Internet'),
+            ('Dialup_Internet', 'INT', 'Dialup_Internet'),
+            ('High_Speed_Internet', 'INT', 'High_Speed_Internet'),
+            ('Laptop_Desktop_Computer', 'INT', 'Laptop_Desktop_Computer'),
+            ('Hot_Water_Heater_Fuel', 'INT', 'Hot_Water_Heater_Fuel'),
+            ('Other_Internet_Service', 'INT', 'Other_Internet_Service'),
+            ('Computer_Other', 'INT', 'Computer_Other'),
         ]
 
     def _household(self) -> List[Tuple[str, str, str]]:
@@ -479,6 +521,18 @@ class HousingSurvey(SchemaDefinition):
         return [(f'Weight_Replicate_{i}', 'INT', f'Weight_Replicate_{i}')
                 for i in range(1, 81)]
 
+    def get_column_availability(self, year: int) -> Dict[str, bool]:
+        """Return which columns are available for a given data year."""
+        availability = {col[0]: True for col in self.get_all_columns()}
+        # Technology columns only available in 2017+ data
+        if year < 2017:
+            tech_2017_cols = ['Internet_Access_Type', 'Broadband_Internet', 'Dialup_Internet',
+                              'High_Speed_Internet', 'Laptop_Desktop_Computer', 'Hot_Water_Heater_Fuel',
+                              'Other_Internet_Service', 'Computer_Other']
+            for col in tech_2017_cols:
+                availability[col] = False
+        return availability
+
 
 # ============================================================================
 # 1-YEAR SURVEY SCHEMAS
@@ -512,8 +566,12 @@ class Population1Year(PopulationSurvey):
                 'JWMNP': 'Travel_Time_To_Work_Minutes', 'JWRIP': 'Vehicle_Occupancy', 'JWTR': 'Transportation_To_Work'}
         base.update({'LANX': 'Language_Other_Than_English', 'MAR': 'Marital_Status', 'MIG': 'Mobility_Status',
                      'MIL': 'Military_Service'})
+        # 2012 format: individual military service period codes (MLPA through MLPK)
         for i, c in enumerate('ABCDEFGHIJK', 1):
             base[f'MLP{c}'] = f'Military_Service_Period_{i}'
+        # 2017+ format: combined military service period codes
+        base.update({'MLPCD': 'Military_Service_Period_CD', 'MLPFG': 'Military_Service_Period_FG',
+                     'MLPHI': 'Military_Service_Period_HI', 'MLPJK': 'Military_Service_Period_JK'})
         return base
 
     def _pop_work_income_mapping(self) -> Dict[str, str]:
@@ -607,6 +665,12 @@ class Housing1Year(HousingSurvey):
                       'SMX': 'Second_Mortgage_Status', 'TAXP': 'Property_Taxes_Yearly',
                       'OCPIP': 'Owner_Costs_Percentage_Income', 'SATELLITE': 'Satellite_Internet',
                       'SMARTPHONE': 'Smartphone', 'TABLET': 'Tablet_Computer'})
+        # 2017+ housing technology columns (not present in 2012 data)
+        tech_2017 = {'ACCESS': 'Internet_Access_Type', 'BROADBND': 'Broadband_Internet',
+                     'DIALUP': 'Dialup_Internet', 'HISPEED': 'High_Speed_Internet',
+                     'LAPTOP': 'Laptop_Desktop_Computer', 'HOTWAT': 'Hot_Water_Heater_Fuel',
+                     'OTHSVCEX': 'Other_Internet_Service', 'COMPOTHX': 'Computer_Other'}
+        costs.update(tech_2017)
         return costs
 
     def _h1y_household_mapping(self) -> Dict[str, str]:
