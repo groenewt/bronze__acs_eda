@@ -44,10 +44,10 @@ class Config:
     figure_dpi: int = 150
 
     # LLM settings
-    llm_url: str = "http://localhost:1234"
-    llm_model: str = "local-model"
-    #llm_url: str = "http://localhost:11434" << FOR OLLAMA!
-   # llm_model: str = "granite3.1-moe:3b-instruct-fp16"
+    #llm_url: str = "http://localhost:1234"
+    #llm_model: str = "local-model"
+    llm_url: str = "http://localhost:11434" #<< FOR OLLAMA!
+    llm_model: str = "granite3.1-moe:3b-instruct-fp16"
     llm_temp: float = 0.7
     llm_max_tokens: int = 24000  # High limit for comprehensive responses
     llm_engine: str = "ROCm llama.cpp"
@@ -56,6 +56,7 @@ class Config:
     # Survey settings
     survey_type: str = ""
     survey_scope: str = ""
+    #@TODO: REMOVE (LOGIC MIGRTING TO memory utils)
     target_cells: int = 10_000_000  # HOUSING: Sample df before ML/DL to prevent memory explosion
 
     # Logging settings

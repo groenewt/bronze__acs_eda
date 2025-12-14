@@ -6,6 +6,9 @@ from typing import List
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe
+from logging_config import get_logger
+
+logger = get_logger("visualization.demographics")
 
 
 class DemographicsVisualizer(BaseVisualizer):
@@ -13,6 +16,7 @@ class DemographicsVisualizer(BaseVisualizer):
 
     def create_all(self):
         self._apply_housing_sampling()
+        logger.verbose("Creating demographics visualizations...")
         self._age_pyramid()
         self._education_distribution()
         self._marital_status_trends()
@@ -20,7 +24,9 @@ class DemographicsVisualizer(BaseVisualizer):
 
     def _age_pyramid(self):
         if 'Age' not in self.df.columns or 'Sex' not in self.df.columns:
+            logger.verbose("Skipping age pyramid: missing Age or Sex columns")
             return
+        logger.verbose("Creating age pyramid visualization...")
         # Get 3 most recent years if Census_Year available
         if 'Census_Year' in self.df.columns:
             recent_years = sorted(self.df['Census_Year'].dropna().unique())[-3:]
@@ -66,7 +72,9 @@ class DemographicsVisualizer(BaseVisualizer):
 
     def _education_distribution(self):
         if 'Educational_Attainment' not in self.df.columns:
+            logger.verbose("Skipping education distribution: missing Educational_Attainment column")
             return
+        logger.verbose("Creating education distribution visualization...")
         plt.figure(figsize=(12, 6))
         edu_counts = self.df['Educational_Attainment'].value_counts().sort_index()
         plt.bar(edu_counts.index, edu_counts.values, color='teal', edgecolor='black')
@@ -80,7 +88,9 @@ class DemographicsVisualizer(BaseVisualizer):
 
     def _marital_status_trends(self):
         if 'Marital_Status' not in self.df.columns or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping marital status trends: missing Marital_Status or Census_Year columns")
             return
+        logger.verbose("Creating marital status trends visualization...")
         fig, ax = plt.subplots(figsize=(12, 6))
         pivot = pd.crosstab(self.df['Census_Year'], self.df['Marital_Status'], normalize='index') * 100
         pivot.plot(kind='line', marker='o', ax=ax, linewidth=2)
@@ -94,7 +104,9 @@ class DemographicsVisualizer(BaseVisualizer):
 
     def _citizenship_patterns(self):
         if 'Citizenship_Status' not in self.df.columns:
+            logger.verbose("Skipping citizenship patterns: missing Citizenship_Status column")
             return
+        logger.verbose("Creating citizenship patterns visualization...")
         plt.figure(figsize=(10, 6))
         cit_counts = self.df['Citizenship_Status'].value_counts()
         plt.pie(cit_counts.values, labels=cit_counts.index, autopct='%1.1f%%', startangle=90)
@@ -108,6 +120,7 @@ class RaceEthnicityVisualizer(BaseVisualizer):
 
     def create_all(self):
         self._apply_housing_sampling()
+        logger.verbose("Creating race/ethnicity visualizations...")
         self._race_distribution()
         self._hispanic_origin_trends()
         self._diversity_trends()
@@ -117,7 +130,9 @@ class RaceEthnicityVisualizer(BaseVisualizer):
                     'Race_American_Indian_Alaska_Native', 'Race_Native_Hawaiian_Pacific_Islander']
         available = [c for c in race_cols if c in self.df.columns]
         if not available:
+            logger.verbose("Skipping race distribution: no race columns available")
             return
+        logger.verbose("Creating race distribution visualization...")
         fig, ax = plt.subplots(figsize=(10, 6))
         race_counts = {col.replace('Race_', ''): self.df[col].sum() for col in available}
         ax.bar(race_counts.keys(), race_counts.values(), color='skyblue', edgecolor='black')
@@ -131,7 +146,9 @@ class RaceEthnicityVisualizer(BaseVisualizer):
 
     def _hispanic_origin_trends(self):
         if 'Hispanic_Origin' not in self.df.columns or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping Hispanic origin trends: missing Hispanic_Origin or Census_Year columns")
             return
+        logger.verbose("Creating Hispanic origin trends visualization...")
         fig, ax = plt.subplots(figsize=(12, 6))
         yearly = self.df.groupby('Census_Year')['Hispanic_Origin'].apply(lambda x: (x > 1).sum())
         ax.plot(yearly.index, yearly.values, marker='o', linewidth=2, color='orange')
@@ -144,7 +161,9 @@ class RaceEthnicityVisualizer(BaseVisualizer):
 
     def _diversity_trends(self):
         if 'Number_Of_Races' not in self.df.columns or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping diversity trends: missing Number_Of_Races or Census_Year columns")
             return
+        logger.verbose("Creating diversity trends visualization...")
         fig, ax = plt.subplots(figsize=(12, 6))
         yearly = self.df.groupby('Census_Year')['Number_Of_Races'].mean()
         ax.plot(yearly.index, yearly.values, marker='o', linewidth=2, color='purple')

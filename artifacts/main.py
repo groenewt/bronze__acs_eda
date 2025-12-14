@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 import os
+import warnings
+# Suppress warnings BEFORE any sklearn/ML imports
+os.environ['PYTHONWARNINGS'] = 'ignore::UserWarning'
+warnings.filterwarnings('ignore')
+warnings.filterwarnings('ignore', category=UserWarning, module='sklearn')
+warnings.filterwarnings('ignore', message='.*sklearn.utils.parallel.delayed.*')
+warnings.filterwarnings('ignore', category=UserWarning, module='sklearn.utils.parallel')
+warnings.filterwarnings('ignore', category=UserWarning, module='joblib')
+
 import sys
 import gc
 import argparse
@@ -8,7 +17,7 @@ import traceback
 from typing import List, Dict, Optional, Any
 from datetime import datetime
 from config import Config, FIPS_MAP
-from processing import (FileLoader, SchemaFactory, SchemaApplier, TemporalAnalyzer,
+from processing import (FileLoader, TemporalAnalyzer,
                         HousingEconomicAnalyzer, PopulationEconomicAnalyzer,
                         CorrelationAnalyzer, StatisticalAnalyzer, OutlierAnalyzer,
                         AnomalyAnalyzer, TrendAnalyzer, CrossVariableAnalyzer,
@@ -24,8 +33,6 @@ from visual_registry import get_registry
 from logging_config import get_logger, get_log_context, log_success, log_complete
 from memory_utils import (get_memory_monitor, clear_all_caches, memory_phase,
                           adaptive_sample, log_dataframe_memory)
-import warnings
-warnings.filterwarnings('ignore')
 
 # Module-level logger
 logger = get_logger("main")
@@ -73,15 +80,10 @@ def create_dirs(config: Config, survey: str):
 # ============================================================================
 
 def load_data(state: str, survey: str, config: Config, scope: str):
-    schema = SchemaFactory.create(survey, scope)
+    """Load data with era-specific schema applied per-file in loader."""
     loader = FileLoader(config)
     df = loader.load(survey, scope)
-    return df, schema, loader
-
-
-def apply_schema(df: pd.DataFrame, schema):
-    applier = SchemaApplier(schema)
-    return applier.apply(df)
+    return df, loader
 
 
 def clean_economic_zeros(df: pd.DataFrame) -> tuple:
@@ -135,46 +137,21 @@ def log_census_year(stage: str, df: pd.DataFrame):
         logger.debug(f"CENSUS_YEAR_TRACK {stage}: Column not found")
 
 
-def apply_features_pipeline(df: pd.DataFrame) -> tuple:
-    """Apply feature engineering pipeline with metadata tracking."""
-    all_features = []
-    all_transforms = []
-
-    df, meta = clean_economic_zeros(df)
-    all_features.extend(meta.get('features', []))
-    if meta.get('transform'):
-        all_transforms.append(meta['transform'])
-
-    df, meta = create_income_features(df)
-    all_features.extend(meta.get('features', []))
-    if meta.get('transform'):
-        all_transforms.append(meta['transform'])
-
-    df, meta = create_housing_features(df)
-    all_features.extend(meta.get('features', []))
-    if meta.get('transform'):
-        all_transforms.append(meta['transform'])
-
-    df, meta = create_age_groups(df)
-    all_features.extend(meta.get('features', []))
-    if meta.get('transform'):
-        all_transforms.append(meta['transform'])
-
-    df, meta = create_temporal_features(df)
-    all_features.extend(meta.get('features', []))
-    if meta.get('transform'):
-        all_transforms.append(meta['transform'])
-
+def apply_features_pipeline(df: pd.DataFrame, survey_type: str = "") -> tuple:
+    """Apply feature engineering pipeline using FeatureEngineer orchestrator."""
+    from feature_engineering import FeatureEngineer
+    engineer = FeatureEngineer(df, survey_type=survey_type)
+    df, metadata = engineer.create_all_features()
     return df, {
-        'features_created': all_features,
-        'transformations': all_transforms
+        'features_created': metadata.get('created_features', []),
+        'transformations': metadata.get('transforms_applied', [])
     }
 
 
-def apply_feature_engineering(df: pd.DataFrame) -> tuple:
+def apply_feature_engineering(df: pd.DataFrame, survey_type: str = "") -> tuple:
     """Apply feature engineering with tracking."""
     rows_before = len(df)
-    df, pipeline_results = apply_features_pipeline(df)
+    df, pipeline_results = apply_features_pipeline(df, survey_type)
     results = {
         'cleaning': {'rows_before': rows_before, 'rows_after': len(df)},
         'final_shape': df.shape,
@@ -480,16 +457,29 @@ def build_clustering_result(X, best_result, all_results, best_name='kmeans'):
 
 
 def train_all_clustering_algorithms(clusterer, X):
-    """Train all clustering algorithms"""
+    """Train all clustering algorithms with smart memory handling"""
     all_results = {}
+
+    # KMeans - O(nkd) memory, safe for large datasets
     try:
+        logger.info(f"[CLUSTERING] KMeans on {len(X):,} samples...")
+        flush_logs()
         all_results['kmeans'] = clusterer.kmeans_clustering(X, n_clusters=5)
+        logger.info("[CLUSTERING] KMeans complete.")
     except Exception as e:
+        logger.warning(f"[CLUSTERING] KMeans failed: {e}")
         all_results['kmeans'] = {'error': str(e)}
+
+    # Hierarchical - O(n²) memory, uses internal sampling for safety
     try:
+        logger.info(f"[CLUSTERING] Hierarchical on {len(X):,} samples (will sample if needed)...")
+        flush_logs()
         all_results['hierarchical'] = clusterer.hierarchical_clustering(X, n_clusters=5)
+        logger.info("[CLUSTERING] Hierarchical complete.")
     except Exception as e:
+        logger.warning(f"[CLUSTERING] Hierarchical failed: {e}")
         all_results['hierarchical'] = {'error': str(e)}
+
     return all_results
 
 
@@ -733,10 +723,29 @@ def train_regression_for_survey(df, survey, features, tune=False):
     return results if results else None
 
 
+def flush_logs():
+    """Force flush all log handlers to ensure logs are written before potential crash"""
+    sys.stdout.flush()
+    sys.stderr.flush()
+    for handler in logger.handlers:
+        handler.flush()
+
+
 def add_clustering_to_results(results, df, features):
-    cluster = train_clustering_model(df, features)
-    if cluster:
-        results['clustering'] = cluster
+    """Train clustering models with explicit error handling and logging"""
+    try:
+        logger.info("[CLUSTERING] Starting clustering model training...")
+        flush_logs()
+        cluster = train_clustering_model(df, features)
+        if cluster:
+            results['clustering'] = cluster
+            logger.info("[CLUSTERING] Clustering complete.")
+        else:
+            logger.info("[CLUSTERING] No clustering results returned (likely insufficient data).")
+    except Exception as e:
+        logger.error(f"[CLUSTERING] Failed with exception: {e}")
+        logger.error(traceback.format_exc())
+        flush_logs()
 
 
 def add_timeseries_to_results(results, df, survey):
@@ -755,12 +764,30 @@ def add_timeseries_to_results(results, df, survey):
 
 
 def train_all_ml_models(df, survey, features, tune=False):
+    """Train all ML models with diagnostic logging"""
     results = {}
+
+    # Memory check before ML training
+    monitor = get_memory_monitor()
+    monitor.log_memory("[ML-START]", force=True)
+
+    logger.info("[ML] Starting regression training...")
+    flush_logs()
     reg_results = train_regression_for_survey(df, survey, features, tune=tune)
     if reg_results:
         results.update(reg_results)
+    logger.info(f"[ML] Regression complete. {len(results)} models trained.")
+
+    # Memory and log flush before clustering (potential crash point)
+    monitor.log_memory("[PRE-CLUSTERING]", force=True)
+    flush_logs()
     add_clustering_to_results(results, df, features)
+
+    logger.info("[ML] Starting time series training...")
+    flush_logs()
     add_timeseries_to_results(results, df, survey)
+
+    logger.info(f"[ML] All ML models complete. Total: {len(results)} result keys.")
     return results
 
 
@@ -889,16 +916,13 @@ def generate_report(config, loader, temporal, economic, corr, stats,
 # ============================================================================
 
 def load_and_prepare_data(state, survey, config, scope):
-    df, schema, loader = load_data(state, survey, config, scope)
+    df, loader = load_data(state, survey, config, scope)
     if df.empty:
         return None, None, None
-    df = apply_schema(df, schema)
-    # Update loader.stats with post-schema dimensions
-    loader.stats.total_rows = len(df)
-    loader.stats.columns_found = len(df.columns)
+    # Schema already applied per-file in loader
     logger.info(f"Loaded {len(df):,} records")
     log_census_year("After schema application", df)
-    df, feat_eng = apply_feature_engineering(df)
+    df, feat_eng = apply_feature_engineering(df, survey)
     logger.debug(f"Feature engineering complete: {feat_eng['final_shape']}")
     gc.collect()  # Clear loading intermediates
     return df, loader, feat_eng

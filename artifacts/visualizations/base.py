@@ -14,7 +14,10 @@ from config import Config
 from exceptions import (VisualizationError, PlotCreationError,
                         InvalidVisualizationDataError)
 from visual_registry import get_registry, register_visual
+from logging_config import get_logger
 warnings.filterwarnings('ignore')
+
+logger = get_logger("visualization.base")
 
 # ============================================================================
 # SHARED CONFIGURATION (Module-level singleton for memory efficiency)
@@ -60,9 +63,9 @@ def enable_debug_logging(enable: bool = True):
     global _DEBUG_LOGGING
     _DEBUG_LOGGING = enable
     if enable:
-        print("[VIZ-CONFIG] Debug logging ENABLED")
+        logger.info("Debug logging ENABLED")
     else:
-        print("[VIZ-CONFIG] Debug logging DISABLED (production mode)")
+        logger.info("Debug logging DISABLED (production mode)")
 
 def clear_viz_cache():
     """Clear the visualization cache to free memory"""
@@ -70,7 +73,7 @@ def clear_viz_cache():
     cache_size = len(_EXCLUDE_ZEROS_CACHE)
     _EXCLUDE_ZEROS_CACHE.clear()
     if _DEBUG_LOGGING:
-        print(f"[VIZ-CACHE] Cleared {cache_size} cached entries")
+        logger.debug(f"Cleared {cache_size} cached entries")
 
 # ============================================================================
 # KEY COLUMN KEYWORDS (for _get_key_numeric_cols methods)
@@ -87,7 +90,7 @@ _KEY_COLUMN_KEYWORDS = {
         # Other costs
         'Insurance', 'Fee', 'Payment',
         # Physical characteristics
-        'Bedroom', 'Room', 'Vehicle', 'Person',
+        'Bedroom', 'Room', 'Vehicle',
     ],
     'population': [
         # Core income/work
@@ -97,7 +100,7 @@ _KEY_COLUMN_KEYWORDS = {
         # Income types (specific)
         'Security', 'Retirement', 'Employment', 'Dividend', 'Assistance',
         # Demographics
-        'Person', 'Poverty',
+        'Poverty',
     ]
 }
 
@@ -133,13 +136,13 @@ class BaseVisualizer(ABC):
         # Use shared module-level set (no per-instance duplication)
         self.exclude_zero_columns = _EXCLUDE_ZERO_COLUMNS
 
-        # Only print initialization debug info once per visualizer type
+        # Only log initialization debug info once per visualizer type
         if _DEBUG_LOGGING:
             viz_type = self.__class__.__name__
             if not hasattr(BaseVisualizer, '_init_logged'):
                 BaseVisualizer._init_logged = set()
             if viz_type not in BaseVisualizer._init_logged:
-                print(f"[INIT-DEBUG] {viz_type} initialized with {len(self.exclude_zero_columns)} exclude cols")
+                logger.debug(f"{viz_type} initialized with {len(self.exclude_zero_columns)} exclude cols")
                 BaseVisualizer._init_logged.add(viz_type)
 
     def _apply_housing_sampling(self):
@@ -162,7 +165,7 @@ class BaseVisualizer(ABC):
 
         if len(self.df) > target:
             viz_name = self.__class__.__name__
-            print(f"[HOUSING-SAMPLE] {viz_name}: {len(self.df):,} → {target} rows (RAM: {available_gb:.1f}GB)")
+            logger.info(f"{viz_name}: sampling {len(self.df):,} → {target} rows (RAM: {available_gb:.1f}GB)")
             self.df = self.df.sample(n=target, random_state=42)
 
     def _should_exclude_zeros(self, col: str) -> bool:
@@ -174,7 +177,7 @@ class BaseVisualizer(ABC):
         _EXCLUDE_ZEROS_CACHE[col] = result
         if _DEBUG_LOGGING:
             if not col.startswith('Flag_') and not col.startswith('Weight'):
-                print(f"[DEBUG] _should_exclude_zeros(col='{col}') = {result}")
+                logger.debug(f"_should_exclude_zeros(col='{col}') = {result}")
         return result
 
     @abstractmethod
@@ -211,3 +214,117 @@ class BaseVisualizer(ABC):
             del fig, axes
             plt.clf()  # Clear current figure state
             gc.collect()  # Force immediate garbage collection
+
+    # =========================================================================
+    # NA-SAFE HELPER METHODS (Use these for consistent NA handling)
+    # =========================================================================
+
+    def _calc_binary_rate(self, df: pd.DataFrame, col: str, true_value=1) -> float:
+        """
+        Calculate percentage where col equals true_value, NA-safe.
+
+        Args:
+            df: DataFrame to analyze
+            col: Column name to check
+            true_value: Value to count as "true" (default: 1)
+
+        Returns:
+            Percentage (0-100) of valid values that equal true_value
+        """
+        valid = df[col].dropna()
+        if len(valid) == 0:
+            return 0.0
+        return (valid == true_value).mean() * 100
+
+    def _calc_rate_by_group(self, df: pd.DataFrame, group_col: str,
+                            rate_col: str, true_value=1) -> pd.Series:
+        """
+        Calculate rate where rate_col equals true_value, grouped by group_col, NA-safe.
+
+        Args:
+            df: DataFrame to analyze
+            group_col: Column to group by
+            rate_col: Column to calculate rate on
+            true_value: Value to count as "true" (default: 1)
+
+        Returns:
+            Series with rate per group (0-100)
+        """
+        def _rate(x):
+            valid = x[rate_col].dropna()
+            return (valid == true_value).mean() * 100 if len(valid) > 0 else 0.0
+        return df.groupby(group_col, dropna=True).apply(_rate)
+
+    def _to_binary(self, series: pd.Series, true_value=1) -> pd.Series:
+        """
+        Convert series to binary int (0/1), NA-safe.
+        NA values become 0.
+
+        Args:
+            series: Series to convert
+            true_value: Value that maps to 1 (default: 1)
+
+        Returns:
+            Series of 0s and 1s (int type)
+        """
+        return (series == true_value).fillna(False).astype(int)
+
+    def _safe_value_counts(self, series: pd.Series, dropna: bool = True) -> pd.Series:
+        """
+        Value counts with guaranteed no NA in index (by default).
+
+        Args:
+            series: Series to count
+            dropna: If True (default), exclude NA from counts
+
+        Returns:
+            Value counts Series
+        """
+        if dropna:
+            return series.dropna().value_counts()
+        return series.value_counts(dropna=False)
+
+    def _iter_codes_safe(self, values):
+        """
+        Iterate over values, yielding only non-NA values.
+        Use this when iterating over index/values from value_counts or similar.
+
+        Args:
+            values: Iterable of values (e.g., Series.index, list)
+
+        Yields:
+            Non-NA values only
+        """
+        for val in values:
+            if pd.notna(val):
+                yield val
+
+    def _safe_int(self, value, default: int = 0) -> int:
+        """
+        Safely convert value to int, returning default if NA.
+
+        Args:
+            value: Value to convert
+            default: Default if value is NA (default: 0)
+
+        Returns:
+            int value
+        """
+        if pd.isna(value):
+            return default
+        return int(value)
+
+    def _safe_float(self, value, default: float = 0.0) -> float:
+        """
+        Safely convert value to float, returning default if NA.
+
+        Args:
+            value: Value to convert
+            default: Default if value is NA (default: 0.0)
+
+        Returns:
+            float value
+        """
+        if pd.isna(value):
+            return default
+        return float(value)

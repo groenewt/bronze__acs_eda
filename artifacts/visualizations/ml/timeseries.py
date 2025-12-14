@@ -2,6 +2,9 @@
 import matplotlib.pyplot as plt
 from .base import BaseMLVisualizer
 from exceptions import PlotCreationError
+from logging_config import get_logger
+
+logger = get_logger("visualizations.ml.timeseries")
 
 
 class TimeSeriesVisualizer(BaseMLVisualizer):
@@ -41,7 +44,7 @@ class TimeSeriesVisualizer(BaseMLVisualizer):
         # Plot historical data line (EXPLICIT BLUE)
         plt.plot(df_agg['Census_Year'], df_agg[col], marker='o', label='Historical Data',
                 linewidth=2.5, color='#1f77b4', markersize=6, markerfacecolor='#1f77b4', markeredgecolor='darkblue')
-        print(f"[DEBUG-VIZ] Forecast values: {forecast_vals}, CI_lower: {ci_lower}, CI_upper: {ci_upper}")
+        logger.debug(f"[VIZ] Forecast values: {forecast_vals}, CI_lower: {ci_lower}, CI_upper: {ci_upper}")
 
         if forecast_vals and len(forecast_vals) > 0:
             # Get last historical point for seamless connection
@@ -64,9 +67,9 @@ class TimeSeriesVisualizer(BaseMLVisualizer):
                 ci_upper_connected = [last_val] + list(ci_upper)
                 plt.fill_between(forecast_yrs_connected, ci_lower_connected, ci_upper_connected,
                                 alpha=0.25, color='#ff7f0e', label='Forecast 95% CI')
-                print(f"[DEBUG-VIZ] Plotted CI bands: lower={ci_lower_connected}, upper={ci_upper_connected}")
+                logger.debug(f"[VIZ] Plotted CI bands: lower={ci_lower_connected}, upper={ci_upper_connected}")
             else:
-                print(f"[DEBUG-VIZ] CI not plotted - ci_lower len: {len(ci_lower) if ci_lower else 0}, ci_upper len: {len(ci_upper) if ci_upper else 0}, forecast len: {len(forecast_vals)}")
+                logger.debug(f"[VIZ] CI not plotted - ci_lower len: {len(ci_lower) if ci_lower else 0}, ci_upper len: {len(ci_upper) if ci_upper else 0}, forecast len: {len(forecast_vals)}")
 
     def _finalize_forecast_plot(self, col, model_name=''):
         """Finalize forecast plot (≤10 lines)"""
@@ -96,7 +99,7 @@ class TimeSeriesVisualizer(BaseMLVisualizer):
             self._finalize_forecast_plot(col, model_name)
             self._save('forecast.png', 'time_series', self.ts_method)
         except Exception as e:
-            print(f"[WARNING] Time series forecast visualization failed: {e}")
+            logger.warning(f"[VIZ] Time series forecast visualization failed: {e}")
 
     def _calc_ts_residuals(self, df_sorted, col):
         """Calculate time series residuals (≤10 lines)"""
@@ -264,4 +267,4 @@ class TimeSeriesVisualizer(BaseMLVisualizer):
             self._finalize_ci_plot(col)
             self._save('confidence_intervals.png', 'time_series', self.ts_method)
         except Exception as e:
-            print(f"[WARNING] Confidence interval visualization failed: {e}")
+            logger.warning(f"[VIZ] Confidence interval visualization failed: {e}")

@@ -1,8 +1,13 @@
 """Base ML Visualizer"""
 import os
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend - must be before pyplot import
 import matplotlib.pyplot as plt
 from config import Config
 from visual_registry import register_visual
+from logging_config import get_logger
+
+logger = get_logger("visualizations.ml.base")
 
 
 class BaseMLVisualizer:
@@ -34,4 +39,4 @@ class BaseMLVisualizer:
             register_visual(path=path, visual_type=model_type, title=filename.replace('_', ' ').replace('.png', ''),
                           category='ml', model_name=model_name, targets=[self.current_target] if self.current_target else [])
         except Exception as e:
-            print(f"[WARNING] Failed to register: {e}")
+            logger.warning(f"[VIZ] Failed to register: {e}")

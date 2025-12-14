@@ -301,6 +301,11 @@ def adaptive_sample(df: pd.DataFrame, survey_type: str = "population",
     monitor = get_memory_monitor()
     available_mb = monitor.get_available_memory_mb()
 
+    # Skip sampling entirely if 16GB+ available
+    if available_mb >= 16000:
+        logger.debug(f"Skipping sampling: {available_mb:.0f}MB available (>16GB)")
+        return df
+
     # Determine target based on available memory and survey type
     if survey_type.lower() == "housing":
         # Housing surveys tend to have more columns and need more aggressive sampling
@@ -371,3 +376,36 @@ class MemoryGuard:
                 logger.warning(msg)
                 return False
         return True
+
+
+def get_safe_sample_size_quadratic(n_samples: int, n_features: int = 10,
+                                    max_memory_gb: float = 4.0) -> int:
+    """
+    Calculate safe sample size for O(n²) algorithms like hierarchical clustering.
+
+    Memory needed: n² * 8 bytes (float64 distance matrix)
+
+    Following pattern from processing/analyzers/multivariate.py:311 which samples
+    before expensive operations.
+
+    Args:
+        n_samples: Current number of samples
+        n_features: Number of features (unused but kept for API consistency)
+        max_memory_gb: Maximum memory to use for distance matrix (default 4GB)
+
+    Returns:
+        Safe sample size that won't exceed memory limit
+    """
+    # Distance matrix is n x n x 8 bytes (float64)
+    max_bytes = max_memory_gb * 1024 * 1024 * 1024
+    max_n = int(np.sqrt(max_bytes / 8))
+
+    # Cap at reasonable limit: 15k samples = ~1.8GB distance matrix
+    safe_n = min(n_samples, max_n, 15000)
+
+    if safe_n < n_samples:
+        original_memory_gb = (n_samples ** 2 * 8) / (1024 ** 3)
+        logger.info(f"[MEMORY] O(n²) safe sample: {n_samples:,} -> {safe_n:,} "
+                   f"(distance matrix would be {original_memory_gb:.1f}GB)")
+
+    return safe_n

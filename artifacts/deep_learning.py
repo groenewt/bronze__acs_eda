@@ -13,6 +13,9 @@ warnings.filterwarnings('ignore')
 from exceptions import (DeepLearningError, NeuralNetworkArchitectureError,
                         ModelCompilationError, GPUMemoryError, TensorShapeError,
                         EarlyStoppingError, InsufficientDataError, ModelTrainingError)
+from logging_config import get_logger
+
+logger = get_logger("deep_learning")
 
 # Try importing TensorFlow/Keras (support both TF 2.x and standalone Keras)
 try:
@@ -39,8 +42,8 @@ try:
     from tensorflow.keras.callbacks import (EarlyStopping, ReduceLROnPlateau,
                                              ModelCheckpoint, TensorBoard)
     TF_AVAILABLE = True
-    print(f"[DL-INFO] TensorFlow {tf.__version__} configured for CPU-only mode")
-    print(f"[DL-INFO] Using {tf.config.threading.get_intra_op_parallelism_threads()} cores")
+    logger.info(f"[DL] TensorFlow {tf.__version__} configured for CPU-only mode")
+    logger.info(f"[DL] Using {tf.config.threading.get_intra_op_parallelism_threads()} cores")
 except ImportError:
     try:
         import keras
@@ -53,10 +56,10 @@ except ImportError:
         from keras.callbacks import (EarlyStopping, ReduceLROnPlateau,
                                      ModelCheckpoint, TensorBoard)
         TF_AVAILABLE = True
-        print("[DL-INFO] Standalone Keras configured")
+        logger.info("[DL] Standalone Keras configured")
     except ImportError:
         TF_AVAILABLE = False
-        print("[WARNING] TensorFlow/Keras not available. Deep learning disabled.")
+        logger.warning("[DL] TensorFlow/Keras not available. Deep learning disabled.")
 
 # Scikit-learn for preprocessing
 try:
@@ -170,7 +173,7 @@ class BaseDeepLearningModel(ABC):
             return y_encoded
         else:  # regression or multi_output
             # Ensure numeric dtype for regression targets
-            y = y.apply(pd.to_numeric, errors='coerce')
+            y = y.apply(pd.to_numeric, errors='coerce').astype('float64')
             y = y.fillna(y.median())
             return y.values.astype(np.float32)
 

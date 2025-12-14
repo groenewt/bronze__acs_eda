@@ -7,6 +7,9 @@ import json
 from pathlib import Path
 from exceptions import (LLMConnectionError, LLMTimeoutError, LLMResponseError,
                         LLMParsingError, InsufficientDataError)
+from logging_config import get_logger
+
+logger = get_logger("ml")
 
 warnings.filterwarnings('ignore')
 
@@ -59,10 +62,10 @@ class StateContextLoader:
         """Format state context for prompt injection - FULL integration"""
         context = self.get_state_context(state)
         if not context:
-            print(f"[CONTEXT-WARN] No context available for state: {state}")
+            logger.warning(f"[CONTEXT] No context available for state: {state}")
             return f"STATE: {state} (No additional context available)"
 
-        print(f"[CONTEXT-VERBOSE] Loading context for state: {state}")
+        logger.debug(f"[CONTEXT] Loading context for state: {state}")
         sections = [f"\nSTATE-SPECIFIC CONTEXT: {state}"]
         sections.append(self._format_economic(context))
         sections.append(self._format_demographic(context))
@@ -77,18 +80,16 @@ class StateContextLoader:
 
     def _log_formatted_context(self, formatted: str):
         """Log the formatted context for validation"""
-        print(f"[CONTEXT-VERBOSE] Formatted context length: {len(formatted)} chars")
-        print(f"[CONTEXT-VERBOSE] Estimated tokens: ~{len(formatted) // 4}")
-        print("[CONTEXT-VERBOSE] Context preview (first 500 chars):")
-        print("-" * 70)
-        print(formatted[:500])
-        print("-" * 70)
-        if len(formatted) > 500:
-            print(f"[CONTEXT-VERBOSE] ... (truncated, {len(formatted) - 500} more chars)")
-        print("[CONTEXT-VERBOSE] Full context sections loaded:")
+        logger.debug(f"[CONTEXT] Formatted context length: {len(formatted)} chars")
+        logger.debug(f"[CONTEXT] Estimated tokens: ~{len(formatted) // 4}")
+        logger.debug("[CONTEXT] Context preview:")
+        logger.debug("-" * 70)
+        logger.debug(formatted)
+        logger.debug("-" * 70)
+        logger.debug("[CONTEXT] Full context sections loaded:")
         for line in formatted.split('\n'):
             if line.strip() and ':' in line and not line.startswith('  '):
-                print(f"[CONTEXT-VERBOSE]   ✓ {line.strip()}")
+                logger.debug(f"[CONTEXT]   ✓ {line.strip()}")
 
     def _format_economic(self, context: Dict) -> str:
         econ = context.get('economic_profile', {})
@@ -205,23 +206,23 @@ class LLMClient:
         self.current_state = state
 
     def analyze(self, prompt: str, analysis_type: str = "general") -> Optional[str]:
-        print(f"[VERBOSE]   → Running LLM analysis: {analysis_type}")
+        logger.info(f"[LLM] Running analysis: {analysis_type}")
 
         # Log user prompt details
         user_tokens = self._estimate_tokens(prompt)
-        print(f"[PROMPT-VERBOSE] User prompt: {len(prompt)} chars (~{user_tokens} tokens)")
+        logger.debug(f"[LLM] User prompt: {len(prompt)} chars (~{user_tokens} tokens)")
 
         # Check if prompt needs chunking
         if user_tokens > self.chunk_size:
-            print(f"[VERBOSE]   ⚠ Large prompt detected, using chunked approach")
+            logger.warning(f"[LLM] Large prompt detected, using chunked approach")
             response = self._analyze_chunked(prompt, analysis_type)
         else:
             response = self._call_api(prompt)
 
         if response:
-            print(f"[VERBOSE]   ✓ {analysis_type} analysis complete ({len(response)} chars)")
+            logger.info(f"[LLM] {analysis_type} analysis complete ({len(response)} chars)")
             return response
-        print(f"[VERBOSE]   ✗ {analysis_type} analysis failed (LLM unavailable or timed out)")
+        logger.warning(f"[LLM] {analysis_type} analysis failed (LLM unavailable or timed out)")
         return None
 
     def _estimate_tokens(self, text: str) -> int:
@@ -243,12 +244,12 @@ class LLMClient:
             system_tokens = self._estimate_tokens(payload['messages'][0]['content'])
             user_tokens = self._estimate_tokens(payload['messages'][1]['content'])
             total_tokens = system_tokens + user_tokens
-            print(f"[API-VERBOSE] Total request: ~{total_tokens} tokens (system: ~{system_tokens}, user: ~{user_tokens})")
+            logger.debug(f"[API] Total request: ~{total_tokens} tokens (system: ~{system_tokens}, user: ~{user_tokens})")
 
             if total_tokens > self.max_context:
-                print(f"[API-WARN] Request exceeds max context ({total_tokens} > {self.max_context})")
+                logger.warning(f"[API] Request exceeds max context ({total_tokens} > {self.max_context})")
 
-            print(f"[API-VERBOSE] Sending request to {self.config.llm_url}/v1/chat/completions")
+            logger.debug(f"[API] Sending request to {self.config.llm_url}/v1/chat/completions")
             response = requests.post(
                 f"{self.config.llm_url}/v1/chat/completions",  # Explicit endpoint
                 json=payload,
@@ -256,22 +257,22 @@ class LLMClient:
             )
             response.raise_for_status()
             result = response.json()["choices"][0]["message"]["content"]
-            print(f"[API-VERBOSE] Received response: {len(result)} chars")
+            logger.debug(f"[API] Received response: {len(result)} chars")
             return result
         except requests.exceptions.ConnectionError as e:
-            print(f"[API-ERROR] Connection failed: LM Studio not running on {self.config.llm_url}")
+            logger.error(f"[API] Connection failed: LM Studio not running on {self.config.llm_url}")
             return None
         except requests.exceptions.Timeout:
-            print(f"[API-ERROR] Request timeout (>1200s)")
+            logger.error(f"[API] Request timeout (>1200s)")
             return None
         except requests.exceptions.HTTPError as e:
-            print(f"[API-ERROR] HTTP error: {e}")
+            logger.error(f"[API] HTTP error: {e}")
             return None
         except (KeyError, IndexError) as e:
-            print(f"[API-ERROR] Malformed response: {e}")
+            logger.error(f"[API] Malformed response: {e}")
             return None
         except Exception as e:
-            print(f"[API-ERROR] Unexpected error: {e}")
+            logger.error(f"[API] Unexpected error: {e}")
             return None
 
     def _build_payload(self, prompt: str) -> Dict:
@@ -298,7 +299,7 @@ class LLMClient:
 
     def _build_system_prompt(self) -> str:
         """Build comprehensive system prompt with state context"""
-        print("[PROMPT-VERBOSE] Building system prompt...")
+        logger.debug("[PROMPT] Building system prompt...")
 
         base_prompt = """You are an expert census data analyst with deep expertise in socioeconomic research, policy analysis, and state-level comparative economics. You have access to comprehensive state-specific context and must use it extensively in your analysis.
 
@@ -328,12 +329,12 @@ You are a reasoning model. For each analysis:
 
         # Inject state-specific context if available
         if self.current_state and self.state_context_loader:
-            print(f"[PROMPT-VERBOSE] Injecting state context for: {self.current_state}")
+            logger.debug(f"[PROMPT] Injecting state context for: {self.current_state}")
             state_context = self.state_context_loader.format_state_context(self.current_state)
             base_prompt += f"\n\n{state_context}"
-            print(f"[PROMPT-VERBOSE] State context injected ({len(state_context)} chars)")
+            logger.debug(f"[PROMPT] State context injected ({len(state_context)} chars)")
         else:
-            print("[PROMPT-VERBOSE] No state context to inject")
+            logger.debug("[PROMPT] No state context to inject")
 
         base_prompt += """
 
@@ -368,9 +369,9 @@ CRITICAL: Generic analysis without state context citations is UNACCEPTABLE. Ever
 
         prompt_len = len(base_prompt)
         token_estimate = prompt_len // 4
-        print(f"[PROMPT-VERBOSE] Final system prompt: {prompt_len} chars (~{token_estimate} tokens)")
+        logger.debug(f"[PROMPT] Final system prompt: {prompt_len} chars (~{token_estimate} tokens)")
         if token_estimate > 3000:
-            print(f"[PROMPT-WARN] System prompt is large ({token_estimate} tokens), may reduce user prompt space")
+            logger.warning(f"[PROMPT] System prompt is large ({token_estimate} tokens), may reduce user prompt space")
 
         return base_prompt
 
@@ -391,13 +392,17 @@ class LLMAnalyzer:
                      statistics: Dict = None, outliers: Dict = None,
                      anomalies: Dict = None, trends: Dict = None,
                      deep_learning: Dict = None,
-                     feature_engineering: Dict = None) -> Dict[str, str]:
-        print("[VERBOSE] Starting LLM analysis suite...")
+                     feature_engineering: Dict = None,
+                     disability: Dict = None,
+                     health_insurance: Dict = None,
+                     occupation_industry: Dict = None,
+                     education_field: Dict = None) -> Dict[str, str]:
+        logger.info("[LLM] Starting LLM analysis suite...")
 
         # Set state context
         if state:
             self.client.set_state(state)
-            print(f"[VERBOSE] State context loaded: {state}")
+            logger.info(f"[LLM] State context loaded: {state}")
 
         results = {}
 
@@ -424,8 +429,18 @@ class LLMAnalyzer:
         if feature_engineering and feature_engineering.get('features_created'):
             results['feature_engineering_insights'] = self._feature_engineering_prompt(feature_engineering)
 
+        # New domain-specific analyses
+        if disability:
+            results['disability_analysis'] = self._disability_prompt(disability)
+        if health_insurance:
+            results['health_insurance_analysis'] = self._health_insurance_prompt(health_insurance)
+        if occupation_industry:
+            results['occupation_industry_analysis'] = self._occupation_industry_prompt(occupation_industry)
+        if education_field:
+            results['education_field_analysis'] = self._education_field_prompt(education_field)
+
         completed = sum(1 for v in results.values() if v)
-        print(f"[VERBOSE] LLM analysis suite complete: {completed}/{len(results)} analyses succeeded")
+        logger.info(f"[LLM] LLM analysis suite complete: {completed}/{len(results)} analyses succeeded")
         return results
 
     def _temporal_prompt(self, temporal: Dict) -> str:
@@ -911,9 +926,9 @@ class LLMAnalyzer:
         """Format deep learning task summary with architecture (≤10 lines)"""
         lines = []
         for task_name, result in dl_results.items():
-            targets = ", ".join(result.targets[:3])
-            if len(result.targets) > 3:
-                targets += f" (+{len(result.targets)-3} more)"
+            targets = ", ".join(result.targets)
+            #if len(result.targets) > 3:
+            #    targets += f" (+{len(result.targets)-3} more)"
             lines.append(f"  - {task_name}: {result.model_type} ({result.task_type})")
             lines.append(f"    Targets: {targets}")
             lines.append(f"    Architecture: {result.architecture.get('layers', 'N/A')} layers, "
@@ -937,3 +952,258 @@ class LLMAnalyzer:
             epochs_trained = len(result.history.get('loss', []))
             lines.append(f"  Epochs Trained: {epochs_trained}")
         return "\n".join(lines)
+
+    def _disability_prompt(self, disability: Dict) -> str:
+        """Generate comprehensive disability analysis prompt"""
+        prevalence = disability.get('prevalence', {})
+        types = disability.get('disability_types', {})
+        employment = disability.get('employment_gap', {})
+        income = disability.get('income_gap', {})
+        trends = disability.get('trends', {})
+
+        sections = ["Analyze disability patterns and socioeconomic impacts in this census data:\n"]
+
+        # Overall prevalence
+        sections.append("DISABILITY PREVALENCE:")
+        sections.append(f"Overall Disability Rate: {prevalence.get('overall_rate', 'N/A')}%")
+        sections.append(f"Population with Disability: {prevalence.get('count', 'N/A'):,}")
+        sections.append("")
+
+        # Disability types
+        if types:
+            sections.append("DISABILITY TYPE BREAKDOWN:")
+            for dis_type, rate in types.items():
+                sections.append(f"  - {dis_type}: {rate:.2f}%")
+            sections.append("")
+
+        # Employment gaps
+        if employment:
+            sections.append("EMPLOYMENT GAP ANALYSIS:")
+            sections.append(f"Employment Rate (Disabled): {employment.get('disabled_employment_rate', 'N/A')}%")
+            sections.append(f"Employment Rate (Non-Disabled): {employment.get('non_disabled_employment_rate', 'N/A')}%")
+            sections.append(f"Employment Gap: {employment.get('employment_gap', 'N/A')} percentage points")
+            sections.append("")
+
+        # Income gaps
+        if income:
+            sections.append("INCOME DISPARITY:")
+            sections.append(f"Median Income (Disabled): ${income.get('disabled_median_income', 0):,.0f}")
+            sections.append(f"Median Income (Non-Disabled): ${income.get('non_disabled_median_income', 0):,.0f}")
+            sections.append(f"Income Gap: {income.get('income_gap_percent', 0):.1f}%")
+            sections.append("")
+
+        # Trends
+        if trends:
+            sections.append("TEMPORAL TRENDS:")
+            for year, rate in list(trends.items())[:5]:
+                sections.append(f"  - {year}: {rate:.2f}%")
+            sections.append("")
+
+        sections.append("PROVIDE COMPREHENSIVE DISABILITY ANALYSIS:")
+        sections.append("1. Analyze disability prevalence patterns - are rates consistent with national averages?")
+        sections.append("2. Identify which disability types are most prevalent and potential underlying causes")
+        sections.append("3. Assess employment barriers for disabled individuals - what factors contribute to the gap?")
+        sections.append("4. Evaluate income disparities - how does disability impact economic well-being?")
+        sections.append("5. Connect disability patterns to state-specific factors (industries, healthcare access, policies)")
+        sections.append("6. Identify vulnerable subpopulations (e.g., disabled elderly, working-age disabled)")
+        sections.append("7. Recommend 3-5 policy interventions to improve disability employment and income outcomes")
+        sections.append("8. Discuss accessibility, accommodation, and support service implications")
+
+        prompt = "\n".join(sections)
+        return self.client.analyze(prompt, "Disability Analysis")
+
+    def _health_insurance_prompt(self, health_insurance: Dict) -> str:
+        """Generate comprehensive health insurance analysis prompt"""
+        coverage = health_insurance.get('coverage', {})
+        insurance_types = health_insurance.get('insurance_types', {})
+        uninsured = health_insurance.get('uninsured', {})
+        demographics = health_insurance.get('demographic_breakdown', {})
+        trends = health_insurance.get('trends', {})
+
+        sections = ["Analyze health insurance coverage patterns in this census data:\n"]
+
+        # Overall coverage
+        sections.append("OVERALL COVERAGE:")
+        sections.append(f"Insured Rate: {coverage.get('insured_rate', 'N/A')}%")
+        sections.append(f"Uninsured Rate: {coverage.get('uninsured_rate', 'N/A')}%")
+        sections.append(f"Uninsured Count: {coverage.get('uninsured_count', 'N/A'):,}")
+        sections.append("")
+
+        # Insurance types
+        if insurance_types:
+            sections.append("INSURANCE TYPE BREAKDOWN:")
+            sections.append(f"  - Employer-Sponsored: {insurance_types.get('employer', 'N/A')}%")
+            sections.append(f"  - Direct Purchase: {insurance_types.get('direct', 'N/A')}%")
+            sections.append(f"  - Medicare: {insurance_types.get('medicare', 'N/A')}%")
+            sections.append(f"  - Medicaid: {insurance_types.get('medicaid', 'N/A')}%")
+            sections.append(f"  - VA/Military: {insurance_types.get('military', 'N/A')}%")
+            sections.append("")
+
+        # Uninsured demographics
+        if demographics:
+            sections.append("UNINSURED BY DEMOGRAPHICS:")
+            if demographics.get('by_age'):
+                sections.append("  By Age Group:")
+                for age_group, rate in demographics['by_age'].items():
+                    sections.append(f"    - {age_group}: {rate:.1f}% uninsured")
+            if demographics.get('by_income'):
+                sections.append("  By Income Level:")
+                for income_level, rate in demographics['by_income'].items():
+                    sections.append(f"    - {income_level}: {rate:.1f}% uninsured")
+            if demographics.get('by_employment'):
+                sections.append("  By Employment Status:")
+                for emp_status, rate in demographics['by_employment'].items():
+                    sections.append(f"    - {emp_status}: {rate:.1f}% uninsured")
+            sections.append("")
+
+        # Trends
+        if trends:
+            sections.append("COVERAGE TRENDS:")
+            for year, rate in list(trends.items()):
+                sections.append(f"  - {year}: {rate:.1f}% uninsured")
+            sections.append("")
+
+        sections.append("PROVIDE COMPREHENSIVE HEALTH INSURANCE ANALYSIS:")
+        sections.append("1. Evaluate overall coverage adequacy - how does this compare to national/state benchmarks?")
+        sections.append("2. Analyze the insurance type mix - is there over-reliance on particular coverage sources?")
+        sections.append("3. Identify the most vulnerable uninsured populations and contributing factors")
+        sections.append("4. Assess geographic and demographic disparities in coverage")
+        sections.append("5. Connect coverage patterns to state policies (Medicaid expansion, ACA marketplace, etc.)")
+        sections.append("6. Analyze public vs. private insurance trends and implications")
+        sections.append("7. Recommend 3-5 policy interventions to expand coverage and reduce disparities")
+        sections.append("8. Discuss healthcare access implications for uninsured populations")
+
+        prompt = "\n".join(sections)
+        return self.client.analyze(prompt, "Health Insurance Analysis")
+
+    def _occupation_industry_prompt(self, occupation_industry: Dict) -> str:
+        """Generate comprehensive occupation and industry analysis prompt"""
+        industries = occupation_industry.get('top_industries', {})
+        occupations = occupation_industry.get('top_occupations', {})
+        wage_premium = occupation_industry.get('wage_premium', {})
+        trends = occupation_industry.get('industry_trends', {})
+        demographics = occupation_industry.get('demographic_patterns', {})
+
+        sections = ["Analyze occupation and industry patterns in this census data:\n"]
+
+        # Top industries
+        if industries:
+            sections.append("TOP INDUSTRIES BY EMPLOYMENT:")
+            for industry, data in list(industries.items()):
+                pct = data.get('percentage', 0) if isinstance(data, dict) else data
+                sections.append(f"  - {industry}: {pct:.1f}%")
+            sections.append("")
+
+        # Top occupations
+        if occupations:
+            sections.append("TOP OCCUPATIONS BY COUNT:")
+            for occupation, data in list(occupations.items()):
+                pct = data.get('percentage', 0) if isinstance(data, dict) else data
+                sections.append(f"  - {occupation}: {pct:.1f}%")
+            sections.append("")
+
+        # Wage premiums
+        if wage_premium:
+            sections.append("WAGE PREMIUM/DISCOUNT BY INDUSTRY:")
+            for industry, premium in sorted(wage_premium.items(), key=lambda x: x[1], reverse=True)[:10]:
+                sign = "+" if premium > 0 else ""
+                sections.append(f"  - {industry}: {sign}{premium:.1f}%")
+            sections.append("")
+
+        # Industry trends
+        if trends:
+            sections.append("INDUSTRY EMPLOYMENT TRENDS:")
+            for industry, trend_data in list(trends.items()):
+                if isinstance(trend_data, dict):
+                    direction = trend_data.get('direction', 'stable')
+                    change = trend_data.get('change', 0)
+                    sections.append(f"  - {industry}: {direction.upper()} ({change:+.1f}%)")
+            sections.append("")
+
+        # Demographics
+        if demographics:
+            if demographics.get('by_sex'):
+                sections.append("OCCUPATIONAL SEX DISTRIBUTION:")
+                for occ, sex_data in list(demographics['by_sex'].items()):
+                    male_pct = sex_data.get('male', 50)
+                    sections.append(f"  - {occ}: {male_pct:.0f}% male / {100-male_pct:.0f}% female")
+                sections.append("")
+
+        sections.append("PROVIDE COMPREHENSIVE OCCUPATION/INDUSTRY ANALYSIS:")
+        sections.append("1. Characterize the economic base - what industries drive employment?")
+        sections.append("2. Identify high-wage vs. low-wage industry patterns and implications")
+        sections.append("3. Analyze occupational segregation by sex/demographics - what patterns emerge?")
+        sections.append("4. Assess industry diversification - is the economy vulnerable to sector-specific shocks?")
+        sections.append("5. Connect industry patterns to state-specific factors (resources, location, policies)")
+        sections.append("6. Evaluate emerging vs. declining industries and workforce implications")
+        sections.append("7. Analyze skill requirements and education-occupation alignment")
+        sections.append("8. Recommend 3-5 workforce development and economic policy priorities")
+
+        prompt = "\n".join(sections)
+        return self.client.analyze(prompt, "Occupation/Industry Analysis")
+
+    def _education_field_prompt(self, education_field: Dict) -> str:
+        """Generate comprehensive education field analysis prompt"""
+        stem = education_field.get('stem_analysis', {})
+        top_fields = education_field.get('top_fields', {})
+        income_by_field = education_field.get('income_by_field', {})
+        trends = education_field.get('field_trends', {})
+        demographics = education_field.get('demographic_patterns', {})
+
+        sections = ["Analyze field of degree patterns in this census data:\n"]
+
+        # STEM analysis
+        if stem:
+            sections.append("STEM DEGREE ANALYSIS:")
+            sections.append(f"STEM Degree Rate: {stem.get('stem_rate', 'N/A')}%")
+            sections.append(f"STEM-Related Rate: {stem.get('stem_related_rate', 'N/A')}%")
+            sections.append(f"Non-STEM Rate: {stem.get('non_stem_rate', 'N/A')}%")
+            sections.append(f"STEM Income Premium: {stem.get('income_premium', 'N/A')}%")
+            sections.append("")
+
+        # Top fields
+        if top_fields:
+            sections.append("TOP FIELDS OF DEGREE:")
+            for field, data in list(top_fields.items()):
+                pct = data.get('percentage', 0) if isinstance(data, dict) else data
+                sections.append(f"  - {field}: {pct:.1f}%")
+            sections.append("")
+
+        # Income by field
+        if income_by_field:
+            sections.append("MEDIAN INCOME BY FIELD:")
+            sorted_fields = sorted(income_by_field.items(), key=lambda x: x[1], reverse=True)
+            for field, income in sorted_fields:
+                sections.append(f"  - {field}: ${income:,.0f}")
+            sections.append("")
+
+        # Field trends
+        if trends:
+            sections.append("FIELD OF DEGREE TRENDS:")
+            for field, trend_data in list(trends.items()):
+                if isinstance(trend_data, dict):
+                    direction = trend_data.get('direction', 'stable')
+                    sections.append(f"  - {field}: {direction.upper()}")
+            sections.append("")
+
+        # Demographics
+        if demographics:
+            if demographics.get('stem_by_sex'):
+                sections.append("STEM BY SEX:")
+                male_stem = demographics['stem_by_sex'].get('male', 50)
+                sections.append(f"  - Male STEM rate: {male_stem:.1f}%")
+                sections.append(f"  - Female STEM rate: {100-male_stem:.1f}%")
+                sections.append("")
+
+        sections.append("PROVIDE COMPREHENSIVE EDUCATION FIELD ANALYSIS:")
+        sections.append("1. Evaluate STEM representation - how does this compare to state/national workforce needs?")
+        sections.append("2. Analyze the STEM income premium - is it justified by productivity/demand differences?")
+        sections.append("3. Identify gender disparities in field selection and their economic implications")
+        sections.append("4. Assess alignment between degree fields and local industry demands")
+        sections.append("5. Connect education patterns to state economic development strategies")
+        sections.append("6. Evaluate trends in field selection - which fields are growing/declining?")
+        sections.append("7. Analyze the role of higher education in workforce development")
+        sections.append("8. Recommend 3-5 education and workforce policy interventions")
+
+        prompt = "\n".join(sections)
+        return self.client.analyze(prompt, "Education Field Analysis")

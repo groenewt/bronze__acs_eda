@@ -55,6 +55,30 @@ try:
 except ImportError:
     _has_inequality = False
 
+try:
+    from .occupation_industry import OccupationIndustryVisualizer
+    _has_occupation = True
+except ImportError:
+    _has_occupation = False
+
+try:
+    from .health_insurance import HealthInsuranceVisualizer
+    _has_health_insurance = True
+except ImportError:
+    _has_health_insurance = False
+
+try:
+    from .disability import DisabilityVisualizer
+    _has_disability = True
+except ImportError:
+    _has_disability = False
+
+try:
+    from .education_field import EducationFieldVisualizer
+    _has_education_field = True
+except ImportError:
+    _has_education_field = False
+
 __all__ = [
     # Main orchestrator
     'Visualizer',
@@ -121,3 +145,15 @@ __all__ = [
 # Conditionally add new visualizers to __all__
 if _has_inequality:
     __all__.append('InequalityVisualizer')
+
+if _has_occupation:
+    __all__.append('OccupationIndustryVisualizer')
+
+if _has_health_insurance:
+    __all__.append('HealthInsuranceVisualizer')
+
+if _has_disability:
+    __all__.append('DisabilityVisualizer')
+
+if _has_education_field:
+    __all__.append('EducationFieldVisualizer')

@@ -6,6 +6,9 @@ from typing import List
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe
+from logging_config import get_logger
+
+logger = get_logger("visualization.income")
 
 
 class IncomeCompositionVisualizer(BaseVisualizer):
@@ -13,6 +16,7 @@ class IncomeCompositionVisualizer(BaseVisualizer):
 
     def create_all(self):
         self._apply_housing_sampling()
+        logger.verbose("Creating income visualizations...")
         self._income_sources_stacked()
         self._income_by_source()
 
@@ -21,7 +25,9 @@ class IncomeCompositionVisualizer(BaseVisualizer):
                       'Social_Security_Income', 'Retirement_Income', 'Public_Assistance_Income', 'Other_Income']
         available = [c for c in income_cols if c in self.df.columns]
         if not available or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping income sources stacked: missing required columns")
             return
+        logger.verbose("Creating income sources stacked area chart...")
         fig, ax = plt.subplots(figsize=(14, 7))
         # Filter zeros for each income column
         df_filtered = self.df.copy()
@@ -44,7 +50,9 @@ class IncomeCompositionVisualizer(BaseVisualizer):
                       'Retirement_Income', 'Public_Assistance_Income']
         available = [c for c in income_cols if c in self.df.columns]
         if not available:
+            logger.verbose("Skipping income by source: no income columns available")
             return
+        logger.verbose(f"Creating income by source histograms for {len(available)} sources...")
         fig, axes = plt.subplots(2, 3, figsize=(15, 10))
         axes = axes.flatten()
         for idx, col in enumerate(available[:6]):

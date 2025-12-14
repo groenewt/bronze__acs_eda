@@ -6,6 +6,9 @@ from typing import List
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe, auto_log_scale
+from logging_config import get_logger
+
+logger = get_logger("visualization.housing")
 
 
 class HousingCharacteristicsVisualizer(BaseVisualizer):
@@ -13,6 +16,7 @@ class HousingCharacteristicsVisualizer(BaseVisualizer):
 
     def create_all(self):
         self._apply_housing_sampling()
+        logger.verbose("Creating housing characteristics visualizations...")
         self._bedrooms_rooms_distribution()
         self._building_type_trends()
         self._year_built_distribution()
@@ -22,7 +26,9 @@ class HousingCharacteristicsVisualizer(BaseVisualizer):
         has_bed = 'Number_of_Bedrooms' in self.df.columns
         has_rooms = 'Number_of_Rooms' in self.df.columns
         if not (has_bed or has_rooms):
+            logger.verbose("Skipping bedrooms/rooms distribution: missing Number_of_Bedrooms and Number_of_Rooms columns")
             return
+        logger.verbose("Creating bedrooms/rooms distribution visualization...")
         fig, axes = plt.subplots(1, 2, figsize=(14, 6))
         if has_bed:
             bed_counts = self.df['Number_of_Bedrooms'].value_counts().sort_index()
@@ -43,7 +49,9 @@ class HousingCharacteristicsVisualizer(BaseVisualizer):
 
     def _building_type_trends(self):
         if 'Building_Type' not in self.df.columns or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping building type trends: missing Building_Type or Census_Year columns")
             return
+        logger.verbose("Creating building type trends visualization...")
         fig, ax = plt.subplots(figsize=(12, 6))
         pivot = pd.crosstab(self.df['Census_Year'], self.df['Building_Type'], normalize='index') * 100
         pivot.plot(kind='line', marker='o', ax=ax, linewidth=2)
@@ -57,7 +65,9 @@ class HousingCharacteristicsVisualizer(BaseVisualizer):
 
     def _year_built_distribution(self):
         if 'Year_Structure_Built' not in self.df.columns:
+            logger.verbose("Skipping year built distribution: missing Year_Structure_Built column")
             return
+        logger.verbose("Creating year built distribution visualization...")
         plt.figure(figsize=(12, 6))
         years = self.df['Year_Structure_Built'].dropna()
         plt.hist(years, bins=30, color='steelblue', edgecolor='black')
@@ -70,7 +80,9 @@ class HousingCharacteristicsVisualizer(BaseVisualizer):
 
     def _vehicles_available(self):
         if 'Vehicles_Available' not in self.df.columns:
+            logger.verbose("Skipping vehicles available: missing Vehicles_Available column")
             return
+        logger.verbose("Creating vehicles available visualization...")
         plt.figure(figsize=(10, 6))
         veh_counts = self.df['Vehicles_Available'].value_counts().sort_index()
         plt.bar(veh_counts.index, veh_counts.values, color='darkgreen', edgecolor='black')
@@ -87,14 +99,21 @@ class HouseholdCompositionVisualizer(BaseVisualizer):
 
     def create_all(self):
         self._apply_housing_sampling()
+        logger.verbose("Creating household composition visualizations...")
         self._family_type_distribution()
         self._household_size()
         self._children_presence()
         self._multigenerational_trends()
+        self._age_composition()
+        self._snap_participation()
+        self._workers_distribution()
+        self._household_diversity()
 
     def _family_type_distribution(self):
         if 'Household_Family_Type' not in self.df.columns:
+            logger.verbose("Skipping family type distribution: missing Household_Family_Type column")
             return
+        logger.verbose("Creating family type distribution visualization...")
         plt.figure(figsize=(10, 6))
         fam_counts = self.df['Household_Family_Type'].value_counts()
         plt.pie(fam_counts.values, labels=fam_counts.index, autopct='%1.1f%%', startangle=90)
@@ -104,7 +123,9 @@ class HouseholdCompositionVisualizer(BaseVisualizer):
 
     def _household_size(self):
         if 'Number_of_Persons' not in self.df.columns:
+            logger.verbose("Skipping household size: missing Number_of_Persons column")
             return
+        logger.verbose("Creating household size visualization...")
         plt.figure(figsize=(10, 6))
         size_counts = self.df['Number_of_Persons'].value_counts().sort_index()
         plt.bar(size_counts.index, size_counts.values, color='purple', edgecolor='black')
@@ -119,7 +140,9 @@ class HouseholdCompositionVisualizer(BaseVisualizer):
         child_cols = ['Household_Own_Children_Present', 'Household_Related_Children_Present']
         available = [c for c in child_cols if c in self.df.columns]
         if not available or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping children presence: missing child columns or Census_Year column")
             return
+        logger.verbose("Creating children presence visualization...")
         fig, ax = plt.subplots(figsize=(12, 6))
         for col in available:
             yearly = self.df.groupby('Census_Year')[col].mean() * 100
@@ -134,7 +157,9 @@ class HouseholdCompositionVisualizer(BaseVisualizer):
 
     def _multigenerational_trends(self):
         if 'Multigenerational_Household' not in self.df.columns or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping multigenerational trends: missing Multigenerational_Household or Census_Year columns")
             return
+        logger.verbose("Creating multigenerational trends visualization...")
         fig, ax = plt.subplots(figsize=(12, 6))
         yearly = self.df.groupby('Census_Year')['Multigenerational_Household'].mean() * 100
         ax.plot(yearly.index, yearly.values, marker='o', linewidth=2, color='darkred')
@@ -145,12 +170,112 @@ class HouseholdCompositionVisualizer(BaseVisualizer):
         tight_layout_safe()
         self._save_fig('multigenerational_trends.png')
 
+    def _age_composition(self):
+        """Household age composition - persons under 18, 60+, 65+"""
+        age_cols = [
+            ('Persons_Under_18', 'Under 18'),
+            ('Persons_60_And_Over', '60 and Over'),
+            ('Persons_65_And_Over', '65 and Over'),
+        ]
+        available = [(col, label) for col, label in age_cols if col in self.df.columns]
+        if not available:
+            logger.verbose("Skipping age composition: no age composition columns available")
+            return
+        logger.verbose("Creating household age composition visualization...")
+
+        fig, axes = plt.subplots(1, len(available), figsize=(5 * len(available), 6))
+        if len(available) == 1:
+            axes = [axes]
+
+        for idx, (col, label) in enumerate(available):
+            ax = axes[idx]
+            counts = self.df[col].value_counts().sort_index()
+            ax.bar(counts.index, counts.values, color='steelblue', edgecolor='black')
+            ax.set_title(f'Persons {label} in Household', fontweight='bold', fontsize=12)
+            ax.set_xlabel('Count per Household')
+            ax.set_ylabel('Number of Households')
+            ax.grid(alpha=0.3, axis='y')
+
+        tight_layout_safe()
+        self._save_fig('household_age_composition.png')
+
+    def _snap_participation(self):
+        """Food Stamp/SNAP participation trends"""
+        col = 'Food_Stamp_SNAP'
+        if col not in self.df.columns or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping SNAP participation: missing Food_Stamp_SNAP or Census_Year columns")
+            return
+        logger.verbose("Creating SNAP participation visualization...")
+
+        fig, ax = plt.subplots(figsize=(12, 6))
+        # FS: 1 = received SNAP, 2 = did not receive
+        yearly = self.df.groupby('Census_Year').apply(
+            lambda x: (x[col] == 1).sum() / len(x) * 100 if len(x) > 0 else 0
+        )
+        ax.plot(yearly.index, yearly.values, marker='o', linewidth=2, color='#e67e22', markersize=8)
+        ax.fill_between(yearly.index, yearly.values, alpha=0.3, color='#e67e22')
+        ax.set_title('SNAP/Food Stamp Participation Rate Over Time', fontweight='bold', fontsize=14)
+        ax.set_xlabel('Year')
+        ax.set_ylabel('Participation Rate (%)')
+        ax.grid(alpha=0.3)
+        tight_layout_safe()
+        self._save_fig('snap_participation.png')
+
+    def _workers_distribution(self):
+        """Workers in family distribution"""
+        col = 'Workers_In_Family'
+        if col not in self.df.columns:
+            logger.verbose("Skipping workers distribution: missing Workers_In_Family column")
+            return
+        logger.verbose("Creating workers distribution visualization...")
+
+        plt.figure(figsize=(10, 6))
+        worker_counts = self.df[col].value_counts().sort_index()
+        colors = plt.cm.Blues(np.linspace(0.3, 0.9, len(worker_counts)))
+        plt.bar(worker_counts.index, worker_counts.values, color=colors, edgecolor='black')
+        plt.title('Number of Workers in Family', fontweight='bold', fontsize=14)
+        plt.xlabel('Number of Workers')
+        plt.ylabel('Count of Households')
+        plt.grid(alpha=0.3, axis='y')
+        tight_layout_safe()
+        self._save_fig('workers_in_family.png')
+
+    def _household_diversity(self):
+        """Same-sex couples and unmarried partners trends"""
+        cols_map = [
+            ('Same_Sex_Married_Couple', 'Same-Sex Married'),
+            ('Unmarried_Partner_Household', 'Unmarried Partners'),
+        ]
+        available = [(col, label) for col, label in cols_map if col in self.df.columns]
+        if not available or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping household diversity: missing diversity columns or Census_Year column")
+            return
+        logger.verbose("Creating household diversity visualization...")
+
+        fig, ax = plt.subplots(figsize=(12, 6))
+        colors = ['#9b59b6', '#3498db']
+        for idx, (col, label) in enumerate(available):
+            yearly = self.df.groupby('Census_Year').apply(
+                lambda x: (x[col] == 1).sum() / len(x) * 100 if len(x) > 0 else 0
+            )
+            ax.plot(yearly.index, yearly.values, marker='o', linewidth=2,
+                    color=colors[idx % len(colors)], label=label, markersize=8)
+
+        ax.set_title('Household Diversity Trends', fontweight='bold', fontsize=14)
+        ax.set_xlabel('Year')
+        ax.set_ylabel('Percentage of Households (%)')
+        ax.legend()
+        ax.grid(alpha=0.3)
+        tight_layout_safe()
+        self._save_fig('household_diversity_trends.png')
+
 
 class CostBurdenVisualizer(BaseVisualizer):
     """Visualizes housing cost burden and affordability"""
 
     def create_all(self):
         self._apply_housing_sampling()
+        logger.verbose("Creating cost burden visualizations...")
         self._rent_burden()
         self._owner_cost_burden()
         self._utility_costs_comparison()
@@ -160,7 +285,9 @@ class CostBurdenVisualizer(BaseVisualizer):
 
     def _rent_burden(self):
         if 'Gross_Rent_Percentage_Income' not in self.df.columns:
+            logger.verbose("Skipping rent burden: missing Gross_Rent_Percentage_Income column")
             return
+        logger.verbose("Creating rent burden visualization...")
         plt.figure(figsize=(12, 6))
         burden = self.df['Gross_Rent_Percentage_Income'].dropna()
         plt.hist(burden[burden < 100], bins=30, color='coral', edgecolor='black')
@@ -175,7 +302,9 @@ class CostBurdenVisualizer(BaseVisualizer):
 
     def _owner_cost_burden(self):
         if 'Owner_Costs_Percentage_Income' not in self.df.columns:
+            logger.verbose("Skipping owner cost burden: missing Owner_Costs_Percentage_Income column")
             return
+        logger.verbose("Creating owner cost burden visualization...")
         plt.figure(figsize=(12, 6))
         burden = self.df['Owner_Costs_Percentage_Income'].dropna()
         plt.hist(burden[burden < 100], bins=30, color='steelblue', edgecolor='black')
@@ -192,7 +321,9 @@ class CostBurdenVisualizer(BaseVisualizer):
         util_cols = ['Electricity_Cost_Monthly', 'Gas_Cost_Monthly', 'Fuel_Cost_Monthly', 'Water_Cost_Yearly']
         available = [c for c in util_cols if c in self.df.columns]
         if not available:
+            logger.verbose("Skipping utility costs comparison: no utility cost columns available")
             return
+        logger.verbose("Creating utility costs comparison visualization...")
         fig, axes = plt.subplots(2, 2, figsize=(14, 10))
         axes = axes.flatten()
         for idx, col in enumerate(available[:8]):
@@ -217,10 +348,13 @@ class CostBurdenVisualizer(BaseVisualizer):
         """Empirical Cumulative Distribution Function of rent-to-income ratio"""
         col = 'Gross_Rent_Percentage_Income'
         if col not in self.df.columns:
+            logger.verbose("Skipping affordability ECDF: missing Gross_Rent_Percentage_Income column")
             return
+        logger.verbose("Creating affordability ECDF visualization...")
         data = self.df[col].dropna()
         data = data[(data > 0) & (data < 100)]  # Valid range
         if len(data) < 100:
+            logger.verbose("Skipping affordability ECDF: insufficient data points")
             return
 
         # Calculate ECDF
@@ -245,7 +379,9 @@ class CostBurdenVisualizer(BaseVisualizer):
         income_col = 'Total_Person_Income' if 'Total_Person_Income' in self.df.columns else 'Household_Income'
 
         if col not in self.df.columns or income_col not in self.df.columns:
+            logger.verbose("Skipping burden concentration: missing Gross_Rent_Percentage_Income or income column")
             return
+        logger.verbose("Creating burden concentration visualization...")
 
         # Filter valid data
         df_valid = self.df[[income_col, col]].dropna()
@@ -253,6 +389,7 @@ class CostBurdenVisualizer(BaseVisualizer):
         df_valid = df_valid[df_valid[income_col] > 0]
 
         if len(df_valid) < 100:
+            logger.verbose("Skipping burden concentration: insufficient data points")
             return
 
         # Create income quintiles
@@ -278,7 +415,9 @@ class CostBurdenVisualizer(BaseVisualizer):
         """Show % cost-burdened by demographic group"""
         col = 'Gross_Rent_Percentage_Income'
         if col not in self.df.columns:
+            logger.verbose("Skipping burden by demographic: missing Gross_Rent_Percentage_Income column")
             return
+        logger.verbose("Creating burden by demographic visualization...")
 
         # Create cost burden indicator (>30%)
         df_analysis = self.df.copy()
@@ -302,6 +441,7 @@ class CostBurdenVisualizer(BaseVisualizer):
             demographic_cols.append('Tenure')
 
         if not demographic_cols:
+            logger.verbose("Skipping burden by demographic: no demographic columns available")
             return
 
         # Calculate burden rates by demographic

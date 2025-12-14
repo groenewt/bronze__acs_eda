@@ -188,3 +188,71 @@ class LLMDeepLearningInsightsSection(BaseLLMSection):
         content.append(insights)
 
         return "\n".join(content) + "\n"
+
+
+class LLMDisabilityInsightsSection(BaseLLMSection):
+    """LLM Disability Analysis Insights section."""
+
+    def get_filename(self) -> str:
+        return "22_llm_disability_insights.md"
+
+    def generate(self, data: Dict) -> str:
+        analysis = data.get('disability_analysis', '')
+        if not analysis or analysis == 'N/A':
+            return None
+
+        content = [self._format_llm_header("Disability Analysis")]
+        content.append(analysis)
+
+        return "\n".join(content) + "\n"
+
+
+class LLMHealthInsuranceInsightsSection(BaseLLMSection):
+    """LLM Health Insurance Analysis Insights section."""
+
+    def get_filename(self) -> str:
+        return "23_llm_health_insurance_insights.md"
+
+    def generate(self, data: Dict) -> str:
+        analysis = data.get('health_insurance_analysis', '')
+        if not analysis or analysis == 'N/A':
+            return None
+
+        content = [self._format_llm_header("Health Insurance Analysis")]
+        content.append(analysis)
+
+        return "\n".join(content) + "\n"
+
+
+class LLMOccupationIndustryInsightsSection(BaseLLMSection):
+    """LLM Occupation/Industry Analysis Insights section."""
+
+    def get_filename(self) -> str:
+        return "24_llm_occupation_industry_insights.md"
+
+    def generate(self, data: Dict) -> str:
+        analysis = data.get('occupation_industry_analysis', '')
+        if not analysis or analysis == 'N/A':
+            return None
+
+        content = [self._format_llm_header("Occupation & Industry Analysis")]
+        content.append(analysis)
+
+        return "\n".join(content) + "\n"
+
+
+class LLMEducationFieldInsightsSection(BaseLLMSection):
+    """LLM Education Field Analysis Insights section."""
+
+    def get_filename(self) -> str:
+        return "25_llm_education_field_insights.md"
+
+    def generate(self, data: Dict) -> str:
+        analysis = data.get('education_field_analysis', '')
+        if not analysis or analysis == 'N/A':
+            return None
+
+        content = [self._format_llm_header("Education Field Analysis")]
+        content.append(analysis)
+
+        return "\n".join(content) + "\n"

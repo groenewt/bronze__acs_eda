@@ -7,17 +7,18 @@ from exceptions import PlotCreationError
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe
+from memory_utils import adaptive_sample
+from logging_config import get_logger
+
+logger = get_logger("visualization.interactions")
 
 
 class MultiVariableVisualizer(BaseVisualizer):
     """Visualizations for multi-variable interactions"""
 
     def create_all(self):
-        self._apply_housing_sampling()
-        # Sample large datasets for performance
-      #  if len(self.df) > 50000:
-      #      print(f"[VERBOSE] Sampling {len(self.df)} records to 50,000 for multi-variable viz")
-      #      self.df = self.df.sample(n=50000, random_state=42)
+        # Memory-aware sampling for both HOUSING and POPULATION
+        self.df = adaptive_sample(self.df, survey_type=self.survey_type)
         self._pairwise_interactions()
         self._three_way_interactions()
 
@@ -55,7 +56,7 @@ class MultiVariableVisualizer(BaseVisualizer):
             tight_layout_safe()
             self._save_fig('pairwise_interactions')
         except Exception as e:
-            print(f"[WARNING] Pairwise interactions failed: {e}")
+            logger.warning(f"Pairwise interactions failed: {e}")
 
     def _three_way_interactions(self):
         try:
@@ -83,7 +84,7 @@ class MultiVariableVisualizer(BaseVisualizer):
         # Expanded keywords for comprehensive coverage
         keywords = ['Income', 'Wage', 'Value', 'Rent', 'Age', 'Hours', 'Earnings', 'Cost',
                     'Tax', 'Security', 'Retirement', 'Travel', 'Week',
-                    'Electricity', 'Gas', 'Water', 'Person', 'Poverty']
+                    'Electricity', 'Gas', 'Water', 'Poverty']
         matched = [c for c in valuable if any(k in c for k in keywords)]
         return matched[:15] if matched else valuable[:15]
 
@@ -92,11 +93,8 @@ class EnhancedFeatureInteractionVisualizer(BaseVisualizer):
     """Enhanced feature interactions and ratio analysis"""
 
     def create_all(self):
-        self._apply_housing_sampling()
-        # Sample large datasets for performance
-        if len(self.df) > 50000:
-            print(f"[VERBOSE] Sampling {len(self.df)} records to 50,000 for feature interaction viz")
-            self.df = self.df.sample(n=50000, random_state=42)
+        # Memory-aware sampling for both HOUSING and POPULATION
+        self.df = adaptive_sample(self.df, survey_type=self.survey_type)
         self._feature_ratios()
         self._quadrant_analysis()
         self._quintile_analysis()
@@ -129,6 +127,11 @@ class EnhancedFeatureInteractionVisualizer(BaseVisualizer):
             for x_col, y_col in pairs:
                 if x_col in self.df.columns and y_col in self.df.columns:
                     data = self.df[[x_col, y_col]].dropna()
+                    # Apply zero filtering like distributions.py
+                    if self._should_exclude_zeros(x_col):
+                        data = data[data[x_col] > 0]
+                    if self._should_exclude_zeros(y_col):
+                        data = data[data[y_col] > 0]
                     if len(data) > 10:
                         x_med = data[x_col].median()
                         y_med = data[y_col].median()

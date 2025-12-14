@@ -15,6 +15,10 @@ from .trend import TrendSection
 from .feature_eng import FeatureEngineeringSection
 from .ml_models import MLModelsSection
 from .deep_learning import DeepLearningSection
+from .disability import DisabilitySection
+from .health_insurance import HealthInsuranceSection
+from .occupation_industry import OccupationIndustrySection
+from .education_field import EducationFieldSection
 from .llm_insights import (
     LLMDataQualitySection,
     LLMPolicyRecommendationsSection,
@@ -25,7 +29,11 @@ from .llm_insights import (
     LLMOutlierInsightsSection,
     LLMAnomalyInsightsSection,
     LLMTrendInsightsSection,
-    LLMDeepLearningInsightsSection
+    LLMDeepLearningInsightsSection,
+    LLMDisabilityInsightsSection,
+    LLMHealthInsuranceInsightsSection,
+    LLMOccupationIndustryInsightsSection,
+    LLMEducationFieldInsightsSection
 )
 
 __all__ = [
@@ -41,6 +49,10 @@ __all__ = [
     'FeatureEngineeringSection',
     'MLModelsSection',
     'DeepLearningSection',
+    'DisabilitySection',
+    'HealthInsuranceSection',
+    'OccupationIndustrySection',
+    'EducationFieldSection',
     'LLMDataQualitySection',
     'LLMPolicyRecommendationsSection',
     'LLMTemporalInsightsSection',
@@ -50,5 +62,9 @@ __all__ = [
     'LLMOutlierInsightsSection',
     'LLMAnomalyInsightsSection',
     'LLMTrendInsightsSection',
-    'LLMDeepLearningInsightsSection'
+    'LLMDeepLearningInsightsSection',
+    'LLMDisabilityInsightsSection',
+    'LLMHealthInsuranceInsightsSection',
+    'LLMOccupationIndustryInsightsSection',
+    'LLMEducationFieldInsightsSection'
 ]

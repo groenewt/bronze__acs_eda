@@ -6,17 +6,18 @@ from typing import List
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe
+from memory_utils import adaptive_sample
+from logging_config import get_logger
+
+logger = get_logger("visualization.distributions")
 
 
 class DistributionComparisonVisualizer(BaseVisualizer):
     """Compare distributions across different dimensions"""
 
     def create_all(self):
-        self._apply_housing_sampling()
-        # Sample large datasets for performance
-        if len(self.df) > 50000:
-            print(f"[VERBOSE] Sampling {len(self.df)} records to 50,000 for distribution viz")
-            self.df = self.df.sample(n=50000, random_state=42)
+        # Memory-aware sampling for both HOUSING and POPULATION
+        self.df = adaptive_sample(self.df, survey_type=self.survey_type)
         self._temporal_distributions()
         self._density_overlays()
         self._bivariate_kde_plots()
@@ -57,7 +58,7 @@ class DistributionComparisonVisualizer(BaseVisualizer):
             tight_layout_safe()
             self._save_fig('temporal_distributions')
         except Exception as e:
-            print(f"[WARNING] Temporal distributions failed: {e}")
+            logger.warning(f"Temporal distributions failed: {e}")
 
     def _density_overlays(self):
         try:
@@ -89,7 +90,7 @@ class DistributionComparisonVisualizer(BaseVisualizer):
             else:
                 plt.close()
         except Exception as e:
-            print(f"[WARNING] Density overlays failed: {e}")
+            logger.warning(f"Density overlays failed: {e}")
 
     def _get_key_numeric_cols(self):
         numeric = self.df.select_dtypes(include=[np.number]).columns
@@ -137,7 +138,7 @@ class DistributionComparisonVisualizer(BaseVisualizer):
                 data = data[data[col2] > 0]
 
             if len(data) < 100:
-                print(f"[WARNING] Not enough data for bivariate KDE: {col1} vs {col2} ({len(data)} points)")
+                logger.warning(f"Not enough data for bivariate KDE: {col1} vs {col2} ({len(data)} points)")
                 return
 
             # Sample for performance if needed
@@ -171,4 +172,4 @@ class DistributionComparisonVisualizer(BaseVisualizer):
             self._save_fig(filename)
 
         except Exception as e:
-            print(f"[WARNING] Bivariate KDE failed for {col1} vs {col2}: {e}")
+            logger.warning(f"Bivariate KDE failed for {col1} vs {col2}: {e}")

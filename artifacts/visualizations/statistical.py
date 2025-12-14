@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from typing import List
+from logging_config import get_logger
+
+logger = get_logger("visualization.statistical")
 
 from .base import BaseVisualizer, _DEBUG_LOGGING
 from .formatting import configure_axes, tight_layout_safe
@@ -18,11 +21,11 @@ class StatisticalVisualizer(BaseVisualizer):
 
     def _box_plots(self):
         """Create box plots for key variables showing quartiles and outliers"""
-        print(f"[VIZ-VERBOSE] _box_plots: df.shape={self.df.shape}")
+        logger.verbose(f"_box_plots: df.shape={self.df.shape}")
         key_cols = self._get_key_numeric_cols()
-        print(f"[VIZ-VERBOSE] Key columns for box plots: {key_cols}")
+        logger.verbose(f"Key columns for box plots: {key_cols}")
         if not key_cols:
-            print("[VIZ-WARNING] No key columns found - skipping box plots")
+            logger.warning("No key columns found - skipping box plots")
             return
         self._chunk_plot(key_cols, self._plot_box, 'box_plots')
 
@@ -30,9 +33,9 @@ class StatisticalVisualizer(BaseVisualizer):
         data = pd.to_numeric(self.df[col], errors='coerce').dropna()
         if self._should_exclude_zeros(col):
             data = data[data > 0]
-        print(f"[VIZ-VERBOSE] Box plot for '{col}': {len(data)} non-null values")
+        logger.verbose(f"Box plot for '{col}': {len(data)} non-null values")
         if len(data) > 0:
-            print(f"[VIZ-VERBOSE] Data range: {data.min():.2f} to {data.max():.2f}")
+            logger.verbose(f"Data range: {data.min():.2f} to {data.max():.2f}")
             ax.boxplot(data, vert=True)
             ax.set_title(f'Distribution of {col}', fontweight='bold')
             ax.set_ylabel(col)
@@ -43,7 +46,7 @@ class StatisticalVisualizer(BaseVisualizer):
                    horizontalalignment='right', bbox=dict(boxstyle='round',
                    facecolor='wheat', alpha=0.5), fontsize=9)
         else:
-            print(f"[VIZ-WARNING] No data for column '{col}' - skipping")
+            logger.warning(f"No data for column '{col}' - skipping")
 
     def _distribution_with_stats(self):
         """Create histograms with mean, median, and std dev overlay"""
@@ -56,11 +59,11 @@ class StatisticalVisualizer(BaseVisualizer):
         """Plot histogram with stats overlay (memory optimized, ≤10 lines)"""
         data = self.df[col].dropna()  # Avoid pd.to_numeric copy for numeric cols
         if _DEBUG_LOGGING:
-            print(f"[DEBUG] _plot_dist_stats: col='{col}', before_filter={len(data)}")
+            logger.debug(f"_plot_dist_stats: col='{col}', before_filter={len(data)}")
         if self._should_exclude_zeros(col):
             data = data[data > 0]
             if _DEBUG_LOGGING:
-                print(f"[DEBUG]   -> After filter: {len(data)} rows")
+                logger.debug(f"  -> After filter: {len(data)} rows")
         if len(data) > 0:
             ax.hist(data, bins=50, edgecolor='black', alpha=0.7, color='steelblue')
             mean_val, median_val = data.mean(), data.median()
@@ -91,7 +94,7 @@ class StatisticalVisualizer(BaseVisualizer):
                         'Electricity', 'Gas', 'Water', 'Fuel', 'Insurance', 'Fee', 'Payment',
                         'Bedroom', 'Room', 'Vehicle', 'Person']
             selected = [c for c in valuable if any(k in c for k in keywords)][:16]
-            print(f"[MEMORY] Housing: {len(selected)}/{len(numeric)} columns (excluded flags/binary)")
+            logger.info(f"[MEMORY] Housing: {len(selected)}/{len(numeric)} columns (excluded flags/binary)")
             return selected
         # Expanded population keywords for comprehensive coverage
         keywords = ['Income', 'Wage', 'Age', 'Hours', 'Earnings', 'Week', 'Travel',

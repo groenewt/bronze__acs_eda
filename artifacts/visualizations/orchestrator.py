@@ -7,6 +7,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 from config import Config
 from exceptions import VisualizationError, PlotCreationError
+from logging_config import get_logger
+
+logger = get_logger("visualization.orchestrator")
 
 from .base import BaseVisualizer, clear_viz_cache
 from .formatting import tight_layout_safe
@@ -30,6 +33,31 @@ try:
 except ImportError:
     HAS_INEQUALITY = False
 
+# New visualizers for extended column coverage
+try:
+    from .occupation_industry import OccupationIndustryVisualizer
+    HAS_OCCUPATION = True
+except ImportError:
+    HAS_OCCUPATION = False
+
+try:
+    from .health_insurance import HealthInsuranceVisualizer
+    HAS_HEALTH_INSURANCE = True
+except ImportError:
+    HAS_HEALTH_INSURANCE = False
+
+try:
+    from .disability import DisabilityVisualizer
+    HAS_DISABILITY = True
+except ImportError:
+    HAS_DISABILITY = False
+
+try:
+    from .education_field import EducationFieldVisualizer
+    HAS_EDUCATION_FIELD = True
+except ImportError:
+    HAS_EDUCATION_FIELD = False
+
 
 class Visualizer:
     """Orchestrates all visualization types"""
@@ -50,7 +78,7 @@ class Visualizer:
                 target_cells = 5_000_000 if available_gb > 8 else 1_000_000
                 sample_rows = min(len(df), int(target_cells / len(df.columns)))
                 if len(df) > sample_rows:
-                    print(f"[MEMORY-ORCHESTRATOR] Sampling {len(df):,} → {sample_rows:,} rows (RAM: {available_gb:.1f}GB)")
+                    logger.info(f"[MEMORY-ORCHESTRATOR] Sampling {len(df):,} → {sample_rows:,} rows (RAM: {available_gb:.1f}GB)")
                     self.df = df.sample(n=sample_rows, random_state=42)
                 else:
                     self.df = df
@@ -73,180 +101,236 @@ class Visualizer:
             clear_viz_cache()
 
     def create_all(self):
-        print("[VERBOSE] Creating temporal visualizations...")
+        logger.verbose("Creating temporal visualizations...")
         try:
             TemporalVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Temporal visualizations failed: {e}")
+            logger.warning(f"Temporal visualizations failed: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating economic visualizations...")
+        logger.verbose("Creating economic visualizations...")
         try:
             EconomicVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Economic visualizations failed: {e}")
+            logger.warning(f"Economic visualizations failed: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating correlation visualizations...")
+        logger.verbose("Creating correlation visualizations...")
         try:
             CorrelationVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Correlation visualizations failed: {e}")
+            logger.warning(f"Correlation visualizations failed: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating statistical distribution visualizations...")
+        logger.verbose("Creating statistical distribution visualizations...")
         try:
             StatisticalVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Statistical visualizations failed: {e}")
+            logger.warning(f"Statistical visualizations failed: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating advanced visualizations (violin, ridge, radar)...")
+        logger.verbose("Creating advanced visualizations (violin, ridge, radar)...")
         try:
             AdvancedVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Advanced visualizations failed: {e}")
+            logger.warning(f"Advanced visualizations failed: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating year-over-year change visualizations...")
+        logger.verbose("Creating year-over-year change visualizations...")
         try:
             YoYChangeVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Year-over-year visualizations failed: {e}")
+            logger.warning(f"Year-over-year visualizations failed: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating outlier and anomaly detection visualizations...")
+        logger.verbose("Creating outlier and anomaly detection visualizations...")
         try:
             OutlierVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Outlier visualizations failed: {e}")
+            logger.warning(f"Outlier visualizations failed: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating demographics visualizations...")
-        try:
-            DemographicsVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Demographics visualizations failed: {e}")
-            self._cleanup_memory()
+        # Population-specific visualizers (only for POPULATION survey)
+        if self.survey_type == "POPULATION":
+            logger.verbose("Creating demographics visualizations...")
+            try:
+                DemographicsVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Demographics visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating transportation visualizations...")
-        try:
-            TransportationVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Transportation visualizations failed: {e}")
-            self._cleanup_memory()
+            logger.verbose("Creating transportation visualizations...")
+            try:
+                TransportationVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Transportation visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating income composition visualizations...")
-        try:
-            IncomeCompositionVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Income composition visualizations failed: {e}")
-            self._cleanup_memory()
+            logger.verbose("Creating income composition visualizations...")
+            try:
+                IncomeCompositionVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Income composition visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating housing characteristics visualizations...")
-        try:
-            HousingCharacteristicsVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Housing characteristics visualizations failed: {e}")
-            self._cleanup_memory()
+        # Housing-specific visualizers (only for HOUSING survey)
+        if self.survey_type == "HOUSING":
+            logger.verbose("Creating housing characteristics visualizations...")
+            try:
+                HousingCharacteristicsVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Housing characteristics visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating household composition visualizations...")
-        try:
-            HouseholdCompositionVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Household composition visualizations failed: {e}")
-            self._cleanup_memory()
+            logger.verbose("Creating household composition visualizations...")
+            try:
+                HouseholdCompositionVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Household composition visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating technology adoption visualizations...")
-        try:
-            TechnologyAdoptionVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Technology adoption visualizations failed: {e}")
-            self._cleanup_memory()
+            logger.verbose("Creating cost burden visualizations...")
+            try:
+                CostBurdenVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Cost burden visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating cost burden visualizations...")
-        try:
-            CostBurdenVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Cost burden visualizations failed: {e}")
-            self._cleanup_memory()
+            logger.verbose("Creating technology adoption visualizations...")
+            try:
+                TechnologyAdoptionVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Technology adoption visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating race & ethnicity visualizations...")
-        try:
-            RaceEthnicityVisualizer(self.df, self.config, self.survey_type).create_all()
-            self._cleanup_memory()
-        except Exception as e:
-            print(f"[WARNING] Race & ethnicity visualizations failed: {e}")
-            self._cleanup_memory()
+        # Population-specific: Race & Ethnicity
+        if self.survey_type == "POPULATION":
+            logger.verbose("Creating race & ethnicity visualizations...")
+            try:
+                RaceEthnicityVisualizer(self.df, self.config, self.survey_type).create_all()
+                self._cleanup_memory()
+            except Exception as e:
+                logger.warning(f"Race & ethnicity visualizations failed: {e}")
+                self._cleanup_memory()
 
-        print("[VERBOSE] Creating multi-variable interaction visualizations...")
+        logger.verbose("Creating multi-variable interaction visualizations...")
         try:
             MultiVariableVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except (VisualizationError, PlotCreationError) as e:
-            print(f"[WARNING] Multi-variable visualizations failed: {e}")
+            logger.warning(f"Multi-variable visualizations failed: {e}")
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Multi-variable visualizations failed unexpectedly: {e}")
+            logger.warning(f"Multi-variable visualizations failed unexpectedly: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating distribution comparison visualizations...")
+        logger.verbose("Creating distribution comparison visualizations...")
         try:
             DistributionComparisonVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except (VisualizationError, PlotCreationError) as e:
-            print(f"[WARNING] Distribution comparison visualizations failed: {e}")
+            logger.warning(f"Distribution comparison visualizations failed: {e}")
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Distribution comparison visualizations failed unexpectedly: {e}")
+            logger.warning(f"Distribution comparison visualizations failed unexpectedly: {e}")
             self._cleanup_memory()
 
-        print("[VERBOSE] Creating enhanced feature interaction visualizations...")
+        logger.verbose("Creating enhanced feature interaction visualizations...")
         try:
             EnhancedFeatureInteractionVisualizer(self.df, self.config, self.survey_type).create_all()
             self._cleanup_memory()
         except (VisualizationError, PlotCreationError) as e:
-            print(f"[WARNING] Enhanced feature interaction visualizations failed: {e}")
+            logger.warning(f"Enhanced feature interaction visualizations failed: {e}")
             self._cleanup_memory()
         except Exception as e:
-            print(f"[WARNING] Enhanced feature interaction visualizations failed unexpectedly: {e}")
+            logger.warning(f"Enhanced feature interaction visualizations failed unexpectedly: {e}")
             self._cleanup_memory()
 
         # New inequality visualizations
         if HAS_INEQUALITY:
-            print("[VERBOSE] Creating inequality visualizations...")
+            logger.verbose("Creating inequality visualizations...")
             try:
                 InequalityVisualizer(self.df, self.config, self.survey_type).create_all()
                 self._cleanup_memory()
             except (VisualizationError, PlotCreationError) as e:
-                print(f"[VIZ-WARNING] InequalityVisualizer failed: {e}")
+                logger.warning(f"InequalityVisualizer failed: {e}")
                 self._cleanup_memory()
             except Exception as e:
-                print(f"[VIZ-WARNING] InequalityVisualizer failed unexpectedly: {e}")
+                logger.warning(f"InequalityVisualizer failed unexpectedly: {e}")
                 self._cleanup_memory()
 
-        print("[VERBOSE] All visualizations complete!")
+        # Population-specific extended column visualizers
+        if self.survey_type == "POPULATION":
+            if HAS_OCCUPATION:
+                logger.verbose("Creating occupation/industry visualizations...")
+                try:
+                    OccupationIndustryVisualizer(self.df, self.config, self.survey_type).create_all()
+                    self._cleanup_memory()
+                except (VisualizationError, PlotCreationError) as e:
+                    logger.warning(f"OccupationIndustryVisualizer failed: {e}")
+                    self._cleanup_memory()
+                except Exception as e:
+                    logger.warning(f"OccupationIndustryVisualizer failed unexpectedly: {e}")
+                    self._cleanup_memory()
+
+            if HAS_HEALTH_INSURANCE:
+                logger.verbose("Creating health insurance visualizations...")
+                try:
+                    HealthInsuranceVisualizer(self.df, self.config, self.survey_type).create_all()
+                    self._cleanup_memory()
+                except (VisualizationError, PlotCreationError) as e:
+                    logger.warning(f"HealthInsuranceVisualizer failed: {e}")
+                    self._cleanup_memory()
+                except Exception as e:
+                    logger.warning(f"HealthInsuranceVisualizer failed unexpectedly: {e}")
+                    self._cleanup_memory()
+
+            if HAS_DISABILITY:
+                logger.verbose("Creating disability visualizations...")
+                try:
+                    DisabilityVisualizer(self.df, self.config, self.survey_type).create_all()
+                    self._cleanup_memory()
+                except (VisualizationError, PlotCreationError) as e:
+                    logger.warning(f"DisabilityVisualizer failed: {e}")
+                    self._cleanup_memory()
+                except Exception as e:
+                    logger.warning(f"DisabilityVisualizer failed unexpectedly: {e}")
+                    self._cleanup_memory()
+
+            if HAS_EDUCATION_FIELD:
+                logger.verbose("Creating education field visualizations...")
+                try:
+                    EducationFieldVisualizer(self.df, self.config, self.survey_type).create_all()
+                    self._cleanup_memory()
+                except (VisualizationError, PlotCreationError) as e:
+                    logger.warning(f"EducationFieldVisualizer failed: {e}")
+                    self._cleanup_memory()
+                except Exception as e:
+                    logger.warning(f"EducationFieldVisualizer failed unexpectedly: {e}")
+                    self._cleanup_memory()
+
+        logger.verbose("All visualizations complete!")
         self._cleanup_memory()  # Final cleanup
 
-        print("[VERBOSE] Creating missing data analysis...")
+        logger.verbose("Creating missing data analysis...")
         try:
             self._missing_data_analysis()
         except Exception as e:
-            print(f"[WARNING] Missing data analysis failed: {e}")
+            logger.warning(f"Missing data analysis failed: {e}")
 
         # Force cleanup to prevent memory leaks
         plt.close('all')

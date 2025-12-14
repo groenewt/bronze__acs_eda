@@ -7,6 +7,9 @@ from typing import Optional, List
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe, auto_log_scale
+from logging_config import get_logger
+
+logger = get_logger("visualization.inequality")
 
 
 class InequalityVisualizer(BaseVisualizer):
@@ -24,38 +27,38 @@ class InequalityVisualizer(BaseVisualizer):
             if income_col:
                 self._lorenz_curve(income_col)
         except Exception as e:
-            print(f"[VIZ-WARNING] Lorenz curve (income) failed: {e}")
+            logger.warning(f"Lorenz curve (income) failed: {e}")
 
         try:
             if property_col:
                 self._lorenz_curve(property_col)
         except Exception as e:
-            print(f"[VIZ-WARNING] Lorenz curve (property) failed: {e}")
+            logger.warning(f"Lorenz curve (property) failed: {e}")
 
         try:
             self._gini_trends()
         except Exception as e:
-            print(f"[VIZ-WARNING] Gini trends failed: {e}")
+            logger.warning(f"Gini trends failed: {e}")
 
         try:
             self._gini_by_demographics()
         except Exception as e:
-            print(f"[VIZ-WARNING] Gini by demographics failed: {e}")
+            logger.warning(f"Gini by demographics failed: {e}")
 
         try:
             self._inequality_heatmaps()
         except Exception as e:
-            print(f"[VIZ-WARNING] Inequality heatmaps failed: {e}")
+            logger.warning(f"Inequality heatmaps failed: {e}")
 
         try:
             self._percentile_divergence()
         except Exception as e:
-            print(f"[VIZ-WARNING] Percentile divergence failed: {e}")
+            logger.warning(f"Percentile divergence failed: {e}")
 
         try:
             self._percentile_gap()
         except Exception as e:
-            print(f"[VIZ-WARNING] Percentile gap analysis failed: {e}")
+            logger.warning(f"Percentile gap analysis failed: {e}")
 
     def _calculate_gini(self, values: np.ndarray) -> float:
         """Calculate Gini coefficient from array of values.
@@ -100,7 +103,7 @@ class InequalityVisualizer(BaseVisualizer):
         data = data.dropna()
 
         if len(data) < 10:
-            print(f"[VIZ-WARNING] Insufficient data for Lorenz curve: {col}")
+            logger.warning(f"Insufficient data for Lorenz curve: {col}")
             return
 
         # Sort values and calculate cumulative proportions

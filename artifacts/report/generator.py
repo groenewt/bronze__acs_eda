@@ -19,6 +19,10 @@ from report.sections import (
     FeatureEngineeringSection,
     MLModelsSection,
     DeepLearningSection,
+    DisabilitySection,
+    HealthInsuranceSection,
+    OccupationIndustrySection,
+    EducationFieldSection,
     LLMDataQualitySection,
     LLMPolicyRecommendationsSection,
     LLMTemporalInsightsSection,
@@ -28,7 +32,11 @@ from report.sections import (
     LLMOutlierInsightsSection,
     LLMAnomalyInsightsSection,
     LLMTrendInsightsSection,
-    LLMDeepLearningInsightsSection
+    LLMDeepLearningInsightsSection,
+    LLMDisabilityInsightsSection,
+    LLMHealthInsuranceInsightsSection,
+    LLMOccupationIndustryInsightsSection,
+    LLMEducationFieldInsightsSection
 )
 
 
@@ -55,6 +63,10 @@ class ReportGenerator:
             'feature_eng': FeatureEngineeringSection(self.config),
             'ml': MLModelsSection(self.config),
             'dl': DeepLearningSection(self.config),
+            'disability': DisabilitySection(self.config),
+            'health_insurance': HealthInsuranceSection(self.config),
+            'occupation_industry': OccupationIndustrySection(self.config),
+            'education_field': EducationFieldSection(self.config),
             'llm_data_quality': LLMDataQualitySection(self.config),
             'llm_policy': LLMPolicyRecommendationsSection(self.config),
             'llm_temporal': LLMTemporalInsightsSection(self.config),
@@ -64,7 +76,11 @@ class ReportGenerator:
             'llm_outlier': LLMOutlierInsightsSection(self.config),
             'llm_anomaly': LLMAnomalyInsightsSection(self.config),
             'llm_trend': LLMTrendInsightsSection(self.config),
-            'llm_deep_learning': LLMDeepLearningInsightsSection(self.config)
+            'llm_deep_learning': LLMDeepLearningInsightsSection(self.config),
+            'llm_disability': LLMDisabilityInsightsSection(self.config),
+            'llm_health_insurance': LLMHealthInsuranceInsightsSection(self.config),
+            'llm_occupation_industry': LLMOccupationIndustryInsightsSection(self.config),
+            'llm_education_field': LLMEducationFieldInsightsSection(self.config)
         }
 
     def generate(self, stats: ProcessingStats, temporal: Dict,
@@ -291,7 +307,11 @@ class ReportGenerator:
             ('llm_outlier', 'LLM: Outlier Insights'),
             ('llm_anomaly', 'LLM: Anomaly Insights'),
             ('llm_trend', 'LLM: Trend Insights'),
-            ('llm_deep_learning', 'LLM: Deep Learning Insights')
+            ('llm_deep_learning', 'LLM: Deep Learning Insights'),
+            ('llm_disability', 'LLM: Disability Insights'),
+            ('llm_health_insurance', 'LLM: Health Insurance Insights'),
+            ('llm_occupation_industry', 'LLM: Occupation/Industry Insights'),
+            ('llm_education_field', 'LLM: Education Field Insights')
         ]
 
         for section_key, display_name in llm_subsections:

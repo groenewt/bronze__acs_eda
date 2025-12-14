@@ -6,6 +6,9 @@ from typing import List
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe
+from logging_config import get_logger
+
+logger = get_logger("visualization.transport")
 
 
 class TransportationVisualizer(BaseVisualizer):
@@ -13,13 +16,16 @@ class TransportationVisualizer(BaseVisualizer):
 
     def create_all(self):
         self._apply_housing_sampling()
+        logger.verbose("Creating transportation visualizations...")
         self._travel_time_distribution()
         self._transportation_mode()
         self._commute_trends()
 
     def _travel_time_distribution(self):
         if 'Travel_Time_To_Work_Minutes' not in self.df.columns:
+            logger.verbose("Skipping travel time distribution: missing Travel_Time_To_Work_Minutes column")
             return
+        logger.verbose("Creating travel time distribution histogram...")
         plt.figure(figsize=(12, 6))
         travel = self.df['Travel_Time_To_Work_Minutes'].dropna()
         if self._should_exclude_zeros('Travel_Time_To_Work_Minutes'):
@@ -36,7 +42,9 @@ class TransportationVisualizer(BaseVisualizer):
 
     def _transportation_mode(self):
         if 'Transportation_To_Work' not in self.df.columns:
+            logger.verbose("Skipping transportation mode: missing Transportation_To_Work column")
             return
+        logger.verbose("Creating transportation mode bar chart...")
         plt.figure(figsize=(10, 8))
         mode_counts = self.df['Transportation_To_Work'].value_counts()
         plt.barh(range(len(mode_counts)), mode_counts.values, color='teal')
@@ -49,7 +57,9 @@ class TransportationVisualizer(BaseVisualizer):
 
     def _commute_trends(self):
         if 'Travel_Time_To_Work_Minutes' not in self.df.columns or 'Census_Year' not in self.df.columns:
+            logger.verbose("Skipping commute trends: missing required columns")
             return
+        logger.verbose("Creating commute trends over time...")
         fig, ax = plt.subplots(figsize=(12, 6))
         col = 'Travel_Time_To_Work_Minutes'
         numeric_col = pd.to_numeric(self.df[col], errors='coerce')

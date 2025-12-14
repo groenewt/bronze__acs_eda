@@ -6,6 +6,9 @@ from typing import List
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe, auto_log_scale
+from logging_config import get_logger
+
+logger = get_logger("visualization.economic")
 
 
 class EconomicVisualizer(BaseVisualizer):
@@ -16,23 +19,23 @@ class EconomicVisualizer(BaseVisualizer):
         try:
             self._income_distribution()
         except Exception as e:
-            print(f"[VIZ-WARNING] Income distribution plot failed: {e}")
+            logger.warning(f"Income distribution plot failed: {e}")
         try:
             self._economic_trends()
         except Exception as e:
-            print(f"[VIZ-WARNING] Economic trends plot failed: {e}")
+            logger.warning(f"Economic trends plot failed: {e}")
         try:
             self._cost_analysis()
         except Exception as e:
-            print(f"[VIZ-WARNING] Cost analysis plot failed: {e}")
+            logger.warning(f"Cost analysis plot failed: {e}")
         try:
             self._price_to_income_trends()
         except Exception as e:
-            print(f"[VIZ-WARNING] Price-to-income trends plot failed: {e}")
+            logger.warning(f"Price-to-income trends plot failed: {e}")
         try:
             self._affordability_index()
         except Exception as e:
-            print(f"[VIZ-WARNING] Affordability index plot failed: {e}")
+            logger.warning(f"Affordability index plot failed: {e}")
 
     def _income_distribution(self):
         income_cols = self._find_income_cols()

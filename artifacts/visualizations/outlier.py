@@ -4,6 +4,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from typing import List
+from logging_config import get_logger
+
+logger = get_logger("visualization.outlier")
 
 from .base import BaseVisualizer
 from .formatting import configure_axes, tight_layout_safe
@@ -76,7 +79,7 @@ class YoYChangeVisualizer(BaseVisualizer):
 
             # Check if dataframe has valid data before plotting
             if growth_df.empty or growth_df.shape[0] == 0 or growth_df.shape[1] == 0:
-                print("[VERBOSE] Skipping growth rate heatmap: no valid data")
+                logger.verbose("Skipping growth rate heatmap: no valid data")
                 return
 
             plt.figure(figsize=(12, 8))
