@@ -1,0 +1,164 @@
+# Temporal Analysis
+
+> Analysis of data patterns and trends over time, including year-over-year changes and growth rate calculations.
+
+## Year Distribution
+
+### Summary
+
+- **Total Years**: 16
+
+- **Year Range**: 2007 - 2023
+
+- **Total Records**: 237,770
+
+- **Average Records/Year**: 14,861
+
+
+### Records by Year
+
+| Year | Records | % of Total | Deviation from Avg |
+| :--- | :--- | :--- | :--- |
+| 2007 | 13,676 | 5.8% | -8.0% |
+| 2008 | 13,788 | 5.8% | -7.2% |
+| 2009 | 13,935 | 5.9% | -6.2% |
+| 2010 | 13,969 | 5.9% | -6.0% |
+| 2011 | 14,800 | 6.2% | -0.4% |
+| 2012 | 14,727 | 6.2% | -0.9% |
+| 2013 | 14,809 | 6.2% | -0.3% |
+| 2014 | 14,909 | 6.3% | +0.3% |
+| 2015 | 15,001 | 6.3% | +0.9% |
+| 2016 | 15,112 | 6.4% | +1.7% |
+| 2017 | 15,239 | 6.4% | +2.5% |
+| 2018 | 15,337 | 6.5% | +3.2% |
+| 2019 | 15,424 | 6.5% | +3.8% |
+| 2021 | 15,208 | 6.4% | +2.3% |
+| 2022 | 15,896 | 6.7% | +7.0% |
+| 2023 | 15,940 | 6.7% | +7.3% |
+
+
+> *Sample size increased by 16.6% from 2007 to 2023.*
+
+
+## Sample Size Consistency
+
+- **Standard Deviation**: 678 records
+
+- **Coefficient of Variation**: 4.6 %
+
+- **Consistency Rating**: highly consistent
+
+
+
+> *Sample sizes are stable across years.*
+
+
+## Temporal Trends
+
+### Trend Summary
+
+| Direction | Count | Percentage |
+| :--- | :--- | :--- |
+| Increasing | 0 | 0.0% |
+| Decreasing | 0 | 0.0% |
+| Stable/Other | 250 | 100.0% |
+
+
+## Growth Rates
+
+### Growth Rate Summary
+
+- **Average Growth Rate**: 1,655.45 %
+
+- **Variables with Positive Growth**: 1
+
+- **Variables with Negative Growth**: 0
+
+
+### Top Growth Rates
+
+| Variable | Growth Rate | Direction |
+| :--- | :--- | :--- |
+| sample_growth | 1655.45% | Increasing |
+
+## Visualizations
+
+![figures - building type trends HOUSING](figures/building_type_trends_HOUSING.png)
+
+![figures - economic trends HOUSING](figures/economic_trends_HOUSING.png)
+
+![figures - gini trends HOUSING](figures/gini_trends_HOUSING.png)
+
+![figures - growth rate heatmap HOUSING](figures/growth_rate_heatmap_HOUSING.png)
+
+![figures - household diversity trends HOUSING](figures/household_diversity_trends_HOUSING.png)
+
+![cost_prediction - Insurance Cost Yearly detailed analysis housing](figures/ml/deep_learning/cost_prediction/Insurance_Cost_Yearly_detailed_analysis_housing.png)
+
+![cost_prediction - Property Taxes Yearly detailed analysis housing](figures/ml/deep_learning/cost_prediction/Property_Taxes_Yearly_detailed_analysis_housing.png)
+
+![housing_quality - Year Structure Built detailed analysis housing](figures/ml/deep_learning/housing_quality/Year_Structure_Built_detailed_analysis_housing.png)
+
+![arima - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/arima/trend_decomposition_HOUSING.png)
+
+![ewma - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/ewma/trend_decomposition_HOUSING.png)
+
+![holt_winters - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/holt_winters/trend_decomposition_HOUSING.png)
+
+![polynomial_degree_1 - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/polynomial_degree_1/trend_decomposition_HOUSING.png)
+
+![polynomial_degree_2 - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/polynomial_degree_2/trend_decomposition_HOUSING.png)
+
+![polynomial_degree_3 - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/polynomial_degree_3/trend_decomposition_HOUSING.png)
+
+![sma - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/sma/trend_decomposition_HOUSING.png)
+
+![wma - trend decomposition HOUSING](figures/ml/time_series/Gross_Rent/wma/trend_decomposition_HOUSING.png)
+
+![arima - trend decomposition HOUSING](figures/ml/time_series/Property_Value/arima/trend_decomposition_HOUSING.png)
+
+![ewma - trend decomposition HOUSING](figures/ml/time_series/Property_Value/ewma/trend_decomposition_HOUSING.png)
+
+![holt_winters - trend decomposition HOUSING](figures/ml/time_series/Property_Value/holt_winters/trend_decomposition_HOUSING.png)
+
+![polynomial_degree_1 - trend decomposition HOUSING](figures/ml/time_series/Property_Value/polynomial_degree_1/trend_decomposition_HOUSING.png)
+
+![polynomial_degree_2 - trend decomposition HOUSING](figures/ml/time_series/Property_Value/polynomial_degree_2/trend_decomposition_HOUSING.png)
+
+![polynomial_degree_3 - trend decomposition HOUSING](figures/ml/time_series/Property_Value/polynomial_degree_3/trend_decomposition_HOUSING.png)
+
+![sma - trend decomposition HOUSING](figures/ml/time_series/Property_Value/sma/trend_decomposition_HOUSING.png)
+
+![wma - trend decomposition HOUSING](figures/ml/time_series/Property_Value/wma/trend_decomposition_HOUSING.png)
+
+![figures - multigenerational trends HOUSING](figures/multigenerational_trends_HOUSING.png)
+
+![figures - price to income trends HOUSING](figures/price_to_income_trends_HOUSING.png)
+
+![figures - sample size trend HOUSING](figures/sample_size_trend_HOUSING.png)
+
+![figures - technology adoption trends HOUSING](figures/technology_adoption_trends_HOUSING.png)
+
+![figures - temporal anomalies 1 HOUSING](figures/temporal_anomalies_1_HOUSING.png)
+
+![figures - temporal anomalies 2 HOUSING](figures/temporal_anomalies_2_HOUSING.png)
+
+![figures - temporal anomalies 3 HOUSING](figures/temporal_anomalies_3_HOUSING.png)
+
+![figures - temporal comparison 1 HOUSING](figures/temporal_comparison_1_HOUSING.png)
+
+![figures - temporal comparison 2 HOUSING](figures/temporal_comparison_2_HOUSING.png)
+
+![figures - temporal comparison 3 HOUSING](figures/temporal_comparison_3_HOUSING.png)
+
+![figures - temporal distributions HOUSING](figures/temporal_distributions_HOUSING.png)
+
+![figures - year built distribution HOUSING](figures/year_built_distribution_HOUSING.png)
+
+![figures - year distribution HOUSING](figures/year_distribution_HOUSING.png)
+
+![figures - yoy change 1 HOUSING](figures/yoy_change_1_HOUSING.png)
+
+![figures - yoy change 2 HOUSING](figures/yoy_change_2_HOUSING.png)
+
+![figures - yoy change 3 HOUSING](figures/yoy_change_3_HOUSING.png)
