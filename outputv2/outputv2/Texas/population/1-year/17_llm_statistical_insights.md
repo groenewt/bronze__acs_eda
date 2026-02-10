@@ -1,0 +1,16 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. **MEAN vs MEDIAN**: The mean provides a measure of central tendency, while the median gives an indication of where half of the observations fall on the distribution. For instance, in Total_Annual_Hours (Mean: 359.52, Median: 48), the median suggests that approximately half of individuals work between 48 and 49 hours per week, while the mean indicates an average of around 360 hours. This difference highlights the influence of outliers in calculating means, which can skew results if extreme values are present (as seen with Total_Annual_Hours).
+
+2. **SKEWNESS**: Skewness is a measure of asymmetry or departure from normality in data distributions. Values close to zero indicate symmetrical distributions, while positive and negative values suggest that the tails extend towards higher or lower values respectively (positive skew indicates right-tailed distribution; negative skew suggests left-tailed). For instance, Income_Per_Hour (-61.04) shows a very high degree of negatively skewed data with many individuals earning significantly less than $16 per hour, which is far from the mean.
+
+3. **KURTOSIS**: Kurtosis measures the "tailedness" or the frequency of extreme values in a distribution. High kurtosis indicates peaked distributions (leptokurtic) where outliers play a significant role in determining the shape of the curve, while low kurtosis corresponds to platykurtic distributions with fewer and less severe outliers. The Income_Per_Hour (-61.04), for example, has very high negative kurtosis indicating that many individuals earn significantly less than expected by a normal distribution (which would have a mean of zero and standard deviation of one).
+
+4. **VARIANCE/STD DEV**: High variance or standard deviation indicates large dispersion in data values around the mean, which suggests that there is significant variation across observations. Variables with high variability include Income_Per_Hour (-61.04), Total_Annual_Hours (747.30), and Flag_Wage_Income (34). These large disparities suggest a diverse set of incomes, working hours, or wages in the population under study, which is not uncommon due to varying economic circumstances across individuals.
+
+5. **Key insights**:
+    - The high skewness and kurtosis values indicate that many variables exhibit heavy-tailed distributions with a significant number of extreme outliers, suggesting potential vulnerabilities or disparities in the income distribution for Total_Annual_Hours and Income_Per_Hour respectively.
+    - High variability across most variables implies considerable diversity in earnings, working hours, and other economic indicators within this population, which is reflective of various socioeconomic situations.
+    - Despite the mean income per hour being higher than the median (61 vs 38), both statistics indicate a significant portion of individuals earn significantly less than an average wage ($16/hour). This suggests that while some high-income professions may be present, there's also substantial underemployment or lack of job opportunities for many. 
+
+Overall, these data characteristics highlight the need to consider potential disparities and outliers when interpreting economic indicators in this population.
