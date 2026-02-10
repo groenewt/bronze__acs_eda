@@ -296,10 +296,25 @@ def get_optimal_sample_size(df: pd.DataFrame, target_memory_mb: float = 1000,
 
 
 def adaptive_sample(df: pd.DataFrame, survey_type: str = "population",
-                    random_state: int = 42) -> pd.DataFrame:
-    """Adaptively sample DataFrame based on available memory and survey type"""
+                    random_state: int = 42,
+                    force_max_rows: Optional[int] = None) -> pd.DataFrame:
+    """
+    Adaptively sample DataFrame based on available memory and survey type.
+
+    Args:
+        df: Input DataFrame
+        survey_type: "population" or "housing"
+        random_state: Random seed for reproducibility
+        force_max_rows: If set, forces sampling to this size regardless of memory
+                       (use for ML tuning where parallel workers multiply memory)
+    """
     monitor = get_memory_monitor()
     available_mb = monitor.get_available_memory_mb()
+
+    # Force sampling if explicitly requested (e.g., for GridSearchCV)
+    if force_max_rows is not None and len(df) > force_max_rows:
+        logger.info(f"[FORCED] Sampling: {len(df):,} -> {force_max_rows:,} rows")
+        return df.sample(n=force_max_rows, random_state=random_state)
 
     # Skip sampling entirely if 16GB+ available
     if available_mb >= 16000:
@@ -409,3 +424,78 @@ def get_safe_sample_size_quadratic(n_samples: int, n_features: int = 10,
                    f"(distance matrix would be {original_memory_gb:.1f}GB)")
 
     return safe_n
+
+
+def get_safe_shap_sample_size(n_samples: int, n_features: int = 10,
+                               n_estimators: int = 100,
+                               max_memory_gb: float = 2.0,
+                               balanced: bool = True) -> int:
+    """
+    Calculate safe sample size for SHAP TreeExplainer.
+
+    SHAP TreeExplainer memory: O(n_samples * n_features * n_estimators)
+    For balanced mode, caps at 1000 samples for good statistical properties.
+
+    Args:
+        n_samples: Current number of samples
+        n_features: Number of features
+        n_estimators: Number of trees in ensemble
+        max_memory_gb: Maximum memory budget for SHAP computation
+        balanced: If True, use balanced defaults (1000 samples)
+
+    Returns:
+        Safe sample size for SHAP computation
+    """
+    if balanced:
+        # Balanced mode: 1000 samples gives good feature importance estimates
+        safe_n = min(n_samples, 1000)
+    else:
+        # Memory-based calculation
+        # Each SHAP value is float64 (8 bytes), need n_samples * n_features
+        max_bytes = max_memory_gb * 1024 * 1024 * 1024
+        bytes_per_sample = n_features * 8 * 2  # SHAP values + computation overhead
+        safe_n = min(n_samples, int(max_bytes / bytes_per_sample), 2000)
+
+    if safe_n < n_samples:
+        logger.info(f"[SHAP] Safe sample size: {n_samples:,} -> {safe_n:,}")
+
+    return max(safe_n, 100)  # Minimum 100 for statistical validity
+
+
+def get_ml_tuning_sample_limit(n_samples: int, n_combinations: int = 24,
+                                n_cv_folds: int = 5,
+                                n_jobs: int = -1) -> int:
+    """
+    Calculate safe sample size for GridSearchCV hyperparameter tuning.
+
+    GridSearchCV with n_jobs=-1 spawns parallel workers, each holding data copies.
+    This causes OOM even when available memory appears sufficient.
+
+    Pattern follows get_safe_sample_size_quadratic() and get_safe_shap_sample_size().
+
+    Args:
+        n_samples: Current number of samples
+        n_combinations: Number of parameter combinations in grid
+        n_cv_folds: Number of cross-validation folds
+        n_jobs: Number of parallel jobs (-1 = all cores)
+
+    Returns:
+        Safe maximum sample size for tuning
+    """
+    total_fits = n_combinations * n_cv_folds
+
+    # Adaptive limits based on grid complexity
+    if total_fits > 100:
+        safe_n = 25_000   # Very complex grid
+    elif total_fits > 50:
+        safe_n = 50_000   # Complex grid (RF/GB with 24 combos × 5 folds)
+    elif total_fits > 20:
+        safe_n = 100_000  # Medium grid
+    else:
+        safe_n = 200_000  # Simple grid (ridge/lasso)
+
+    if safe_n < n_samples:
+        logger.info(f"[ML-TUNE] Limiting samples: {n_samples:,} -> {safe_n:,} "
+                   f"({total_fits} total fits from {n_combinations} combos × {n_cv_folds} folds)")
+
+    return min(n_samples, safe_n)
