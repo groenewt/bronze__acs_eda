@@ -1,0 +1,1092 @@
+2025-12-17 20:15:11 [INFO] census_eda: Logging context set: state=Maryland, survey=housing, scope=1-year
+2025-12-17 20:15:11 [INFO] census_eda: Log file: ./logs/Maryland/1-year/housing/1-year_housing_25_12_17_2015.log
+2025-12-17 20:15:11 [INFO] census_eda.main: ======================================================================
+2025-12-17 20:15:11 [INFO] census_eda.main: [HOUSING] Processing Maryland (1-year)...
+2025-12-17 20:15:11 [INFO] census_eda.main: ======================================================================
+2025-12-17 20:15:11 [INFO] census_eda.memory: process_Maryland_housing_1-year:ENTER: 6781.7MB (delta: +0.0MB)
+2025-12-17 20:15:11 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-17 20:15:11 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/24/*/*.csv
+2025-12-17 20:15:11 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-17 20:15:11 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hmd.csv
+2025-12-17 20:15:12 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-17 20:15:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,887 rows, 235 columns
+2025-12-17 20:15:12 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h24.csv
+2025-12-17 20:15:12 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-17 20:15:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,203 rows, 235 columns
+2025-12-17 20:15:12 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hmd.csv
+2025-12-17 20:15:13 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-17 20:15:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,777 rows, 235 columns
+2025-12-17 20:15:13 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hmd.csv
+2025-12-17 20:15:13 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-17 20:15:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,704 rows, 235 columns
+2025-12-17 20:15:13 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hmd.csv
+2025-12-17 20:15:14 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-17 20:15:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 24,613 rows, 235 columns
+2025-12-17 20:15:14 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hmd.csv
+2025-12-17 20:15:14 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-17 20:15:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 24,852 rows, 235 columns
+2025-12-17 20:15:14 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h24.csv
+2025-12-17 20:15:15 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-17 20:15:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,390 rows, 235 columns
+2025-12-17 20:15:15 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hmd.csv
+2025-12-17 20:15:15 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-17 20:15:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 24,760 rows, 235 columns
+2025-12-17 20:15:15 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hmd.csv
+2025-12-17 20:15:16 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-17 20:15:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,169 rows, 235 columns
+2025-12-17 20:15:16 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h24.csv
+2025-12-17 20:15:16 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-17 20:15:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,570 rows, 235 columns
+2025-12-17 20:15:16 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h24.csv
+2025-12-17 20:15:17 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-17 20:15:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,361 rows, 235 columns
+2025-12-17 20:15:17 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h24.csv
+2025-12-17 20:15:17 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-17 20:15:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,847 rows, 235 columns
+2025-12-17 20:15:17 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h24.csv
+2025-12-17 20:15:18 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-17 20:15:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,314 rows, 235 columns
+2025-12-17 20:15:18 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hmd.csv
+2025-12-17 20:15:18 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-17 20:15:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,051 rows, 235 columns
+2025-12-17 20:15:18 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hmd.csv
+2025-12-17 20:15:19 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-17 20:15:19 [VERBOSE] census_eda.processing.loader:   -> Loaded 25,189 rows, 235 columns
+2025-12-17 20:15:19 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hmd.csv
+2025-12-17 20:15:20 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-17 20:15:20 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,631 rows, 235 columns
+2025-12-17 20:15:20 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-17 20:15:23 [VERBOSE] census_eda.processing.loader: Combined into 428,318 total rows, 235 columns
+2025-12-17 20:15:23 [INFO] census_eda.main: Loaded 428,318 records
+2025-12-17 20:15:23 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 428318 valid, 16 unique
+2025-12-17 20:15:23 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-17 20:15:23 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-17 20:15:23 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-17 20:15:23 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-17 20:15:24 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-17 20:15:24 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-17 20:15:24 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-17 20:15:24 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-17 20:15:24 [DEBUG] census_eda.main: Feature engineering complete: (428318, 254)
+2025-12-17 20:15:24 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-17 20:15:24 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-17 20:16:10 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-17 20:16:10 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-17 20:16:10 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(428318, 254)
+2025-12-17 20:16:10 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-17 20:16:10 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 428318
+2025-12-17 20:16:10 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(428318, 254)
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(24613), np.int64(2008): np.int64(24760), np.int64(2009): np.int64(24852), np.int64(2010): np.int64(25189), np.int64(2011): np.int64(26631), np.int64(2012): np.int64(26887), np.int64(2013): np.int64(26704), np.int64(2014): np.int64(26777), np.int64(2015): np.int64(27051), np.int64(2016): np.int64(27169), np.int64(2017): np.int64(27203), np.int64(2018): np.int64(27390), np.int64(2019): np.int64(27570), np.int64(2021): np.int64(28847), np.int64(2022): np.int64(28361), np.int64(2023): np.int64(28314)}
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(428318, 254)
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 428318 non-null values (zeros excluded if needed)
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 20.00
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 366061 non-null values (zeros excluded if needed)
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-17 20:16:11 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-17 20:16:12 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 247643 non-null values (zeros excluded if needed)
+2025-12-17 20:16:12 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-17 20:16:12 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-17 20:16:12 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 206490 non-null values (zeros excluded if needed)
+2025-12-17 20:16:12 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 4396000.00
+2025-12-17 20:16:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-17 20:16:13 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 359384 non-null values (zeros excluded if needed)
+2025-12-17 20:16:13 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2800.00
+2025-12-17 20:16:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-17 20:16:13 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 261100 non-null values (zeros excluded if needed)
+2025-12-17 20:16:13 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 6400.00
+2025-12-17 20:16:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-17 20:16:14 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 297934 non-null values (zeros excluded if needed)
+2025-12-17 20:16:14 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1600.00
+2025-12-17 20:16:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-17 20:16:14 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 365640 non-null values (zeros excluded if needed)
+2025-12-17 20:16:14 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 249581 non-null values (zeros excluded if needed)
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 9900.00
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 328430 non-null values (zeros excluded if needed)
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 4400.00
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 2896 non-null values (zeros excluded if needed)
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 45300.00
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 191810 non-null values (zeros excluded if needed)
+2025-12-17 20:16:15 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-17 20:16:17 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-17 20:16:29 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-17 20:16:29 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-17 20:16:29 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-17 20:16:30 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-17 20:16:30 [DEBUG] census_eda.memory: Skipping sampling: 40720MB available (>16GB)
+2025-12-17 20:16:30 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 428318 rows
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(428318, 254)
+2025-12-17 20:17:26 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 428318 non-null values
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 20.00
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 294784 non-null values
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 8.00
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 294784 non-null values
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 24.00
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 366061 non-null values
+2025-12-17 20:17:26 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 247643 non-null values
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 206490 non-null values
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 4396000.00
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 365640 non-null values
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 21881 non-null values
+2025-12-17 20:17:27 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 2400.00
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 359384 non-null values
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2800.00
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 261100 non-null values
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6400.00
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 297934 non-null values
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1600.00
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 365640 non-null values
+2025-12-17 20:17:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 249581 non-null values
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 9900.00
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 328430 non-null values
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 4400.00
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 2896 non-null values
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 45300.00
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 191810 non-null values
+2025-12-17 20:17:30 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-17 20:17:31 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-17 20:17:36 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-17 20:17:42 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-17 20:17:50 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-17 20:18:06 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-17 20:18:06 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-17 20:18:06 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-17 20:18:07 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-17 20:18:07 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-17 20:18:08 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-17 20:18:09 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-17 20:18:09 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-17 20:18:09 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-17 20:18:09 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-17 20:18:10 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-17 20:18:10 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-17 20:18:11 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-17 20:18:11 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-17 20:18:12 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-17 20:18:12 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-17 20:18:14 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-17 20:18:14 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-17 20:18:14 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-17 20:18:14 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-17 20:18:15 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-17 20:18:15 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-17 20:18:16 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-17 20:18:17 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-17 20:18:17 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-17 20:18:17 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-17 20:18:17 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-17 20:18:18 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-17 20:18:19 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-17 20:18:19 [DEBUG] census_eda.memory: Skipping sampling: 40290MB available (>16GB)
+2025-12-17 20:18:25 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-17 20:18:25 [DEBUG] census_eda.memory: Skipping sampling: 40319MB available (>16GB)
+2025-12-17 20:18:40 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-17 20:18:40 [DEBUG] census_eda.memory: Skipping sampling: 40289MB available (>16GB)
+2025-12-17 20:18:42 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-17 20:18:46 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-17 20:18:46 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-17 20:18:47 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Maryland/housing/1-year/figures
+2025-12-17 20:18:47 [DEBUG] census_eda.memory: Skipping sampling: 40220MB available (>16GB)
+2025-12-17 20:18:47 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-17 20:18:47 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-17 20:18:47 [INFO] census_eda.memory: [ML-START]: 8655.4MB (delta: +1873.7MB)
+2025-12-17 20:18:47 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-17 20:18:47 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-17 20:18:47 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 153093 samples (was 153093)
+2025-12-17 20:18:47 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-17 20:18:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 20:18:47 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 153,093 -> 100,000 (25 total fits from 5 combos × 5 folds)
+2025-12-17 20:18:47 [INFO] census_eda.ml.regression: [TUNE] Data: 100,000 samples, 10 features
+2025-12-17 20:18:47 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 20:18:47 [INFO] census_eda.memory: tune_ridge:ENTER: 8655.4MB (delta: +0.0MB)
+2025-12-17 20:18:49 [INFO] census_eda.memory: tune_ridge:EXIT: 8658.5MB (delta: +3.1MB)
+2025-12-17 20:18:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 20:18:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1767
+2025-12-17 20:18:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 20:18:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 20:18:49 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 153,093 -> 100,000 (25 total fits from 5 combos × 5 folds)
+2025-12-17 20:18:49 [INFO] census_eda.ml.regression: [TUNE] Data: 100,000 samples, 10 features
+2025-12-17 20:18:49 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 20:18:49 [INFO] census_eda.memory: tune_lasso:ENTER: 8658.5MB (delta: +0.0MB)
+2025-12-17 20:18:49 [INFO] census_eda.memory: tune_lasso:EXIT: 8658.5MB (delta: +0.0MB)
+2025-12-17 20:18:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-17 20:18:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1759
+2025-12-17 20:18:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 20:18:50 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 20:18:50 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 153,093 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 20:18:50 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 20:18:50 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 20:18:50 [INFO] census_eda.memory: tune_random_forest:ENTER: 8658.5MB (delta: +0.0MB)
+2025-12-17 20:19:16 [INFO] census_eda.memory: tune_random_forest:EXIT: 8672.4MB (delta: +14.0MB)
+2025-12-17 20:19:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 20:19:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1705
+2025-12-17 20:19:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 20:19:25 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 20:19:25 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 153,093 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 20:19:25 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 20:19:25 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 20:19:25 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 9037.6MB (delta: +365.2MB)
+2025-12-17 20:19:39 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 9037.6MB (delta: +0.0MB)
+2025-12-17 20:19:39 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 20:19:39 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2210
+2025-12-17 20:19:39 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 20:20:14 [INFO] census_eda.memory: [SHAP] Safe sample size: 30,619 -> 1,000
+2025-12-17 20:20:14 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 30,619 -> 1,000
+2025-12-17 20:20:14 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 8975.4MB (delta: -62.3MB)
+2025-12-17 20:20:14 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 20:20:14 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 8975.4MB (delta: +0.0MB)
+2025-12-17 20:20:14 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Number_of_Rooms
+2025-12-17 20:20:14 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 20:20:14 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-17 20:20:14 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 52839 samples (was 52839)
+2025-12-17 20:20:14 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-17 20:20:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 20:20:14 [INFO] census_eda.ml.regression: [TUNE] Data: 52,839 samples, 10 features
+2025-12-17 20:20:14 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 20:20:14 [INFO] census_eda.memory: tune_ridge:ENTER: 8975.4MB (delta: +0.0MB)
+2025-12-17 20:20:16 [INFO] census_eda.memory: tune_ridge:EXIT: 8975.3MB (delta: -0.1MB)
+2025-12-17 20:20:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 20:20:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1767
+2025-12-17 20:20:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 20:20:16 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 20:20:16 [INFO] census_eda.ml.regression: [TUNE] Data: 52,839 samples, 10 features
+2025-12-17 20:20:16 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 20:20:16 [INFO] census_eda.memory: tune_lasso:ENTER: 8975.3MB (delta: +0.0MB)
+2025-12-17 20:20:17 [INFO] census_eda.memory: tune_lasso:EXIT: 8975.3MB (delta: +0.0MB)
+2025-12-17 20:20:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 1.0}
+2025-12-17 20:20:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1767
+2025-12-17 20:20:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 20:20:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 20:20:17 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 52,839 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 20:20:17 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 20:20:17 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 20:20:17 [INFO] census_eda.memory: tune_random_forest:ENTER: 8975.3MB (delta: +0.0MB)
+2025-12-17 20:20:43 [INFO] census_eda.memory: tune_random_forest:EXIT: 8985.1MB (delta: +9.9MB)
+2025-12-17 20:20:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 20:20:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2606
+2025-12-17 20:20:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 20:20:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 20:20:47 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 52,839 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 20:20:47 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 20:20:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 20:20:47 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 9001.8MB (delta: +16.7MB)
+2025-12-17 20:21:02 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 9001.8MB (delta: +0.0MB)
+2025-12-17 20:21:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-17 20:21:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.3235
+2025-12-17 20:21:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 20:21:14 [INFO] census_eda.memory: [SHAP] Safe sample size: 10,568 -> 1,000
+2025-12-17 20:21:14 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 10,568 -> 1,000
+2025-12-17 20:21:14 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 9001.8MB (delta: +0.0MB)
+2025-12-17 20:21:14 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 20:21:15 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 9001.8MB (delta: +0.0MB)
+2025-12-17 20:21:15 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-17 20:21:15 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 20:21:15 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-17 20:21:15 [INFO] census_eda.memory: [PRE-CLUSTERING]: 9001.8MB (delta: +0.0MB)
+2025-12-17 20:21:15 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-17 20:21:15 [INFO] census_eda.main: [CLUSTERING] KMeans on 220,543 samples...
+2025-12-17 20:25:17 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-17 20:25:17 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 220,543 samples (will sample if needed)...
+2025-12-17 20:25:17 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 220,543 -> 15,000 (distance matrix would be 362.4GB)
+2025-12-17 20:25:17 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 220,543 -> 15,000 for O(n²) distance matrix
+2025-12-17 20:25:22 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-17 20:25:22 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-17 20:25:22 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-17 20:25:22 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-17 20:25:22 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-17 20:25:22 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 588584.3588867188, 2025: 669535.0288085938, 2026: 770522.5424804688}, Values: [588584.3588867188, 669535.0288085938, 770522.5424804688]
+2025-12-17 20:25:22 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-17 20:25:22 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 1846.7801463603973, 2025: 1966.6629436016083, 2026: 2103.7792460918427}, Values: [1846.7801463603973, 1966.6629436016083, 2103.7792460918427]
+2025-12-17 20:25:22 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-17 20:25:31 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-17 20:25:37 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-17 20:25:42 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 220543.
+2025-12-17 20:25:42 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-17 20:25:42 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-17 20:25:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 557613.4139348194, 2025: 582558.1657264531, 2026: 607502.9175180867}, values=[557613.4139348194, 582558.1657264531, 607502.9175180867], CI_lower=[449859.04360310076, 474803.7953947344, 499748.5471863681], CI_upper=[665367.784266538, 690312.5360581717, 715257.2878498053]
+2025-12-17 20:25:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [557613.4139348194, 582558.1657264531, 607502.9175180867], CI_lower: [449859.04360310076, 474803.7953947344, 499748.5471863681], CI_upper: [665367.784266538, 690312.5360581717, 715257.2878498053]
+2025-12-17 20:25:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 449859.04360310076, 474803.7953947344, 499748.5471863681], upper=[np.float64(509637.0545298411), 665367.784266538, 690312.5360581717, 715257.2878498053]
+2025-12-17 20:25:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 468070.85525512695, 2025: 461702.57916641235, 2026: 451833.36652088165}, values=[468070.85525512695, 461702.57916641235, 451833.36652088165], CI_lower=[396051.56831335597, 389683.29222464137, 379814.07957911066], CI_upper=[540090.1421968979, 533721.8661081833, 523852.65346265264]
+2025-12-17 20:25:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [468070.85525512695, 461702.57916641235, 451833.36652088165], CI_lower: [396051.56831335597, 389683.29222464137, 379814.07957911066], CI_upper: [540090.1421968979, 533721.8661081833, 523852.65346265264]
+2025-12-17 20:25:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 396051.56831335597, 389683.29222464137, 379814.07957911066], upper=[np.float64(509637.0545298411), 540090.1421968979, 533721.8661081833, 523852.65346265264]
+2025-12-17 20:25:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 588584.3588867188, 2025: 669535.0288085938, 2026: 770522.5424804688}, values=[588584.3588867188, 669535.0288085938, 770522.5424804688], CI_lower=[569269.6839640837, 650220.3538859587, 751207.8675578337], CI_upper=[607899.0338093538, 688849.7037312288, 789837.2174031038]
+2025-12-17 20:25:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [588584.3588867188, 669535.0288085938, 770522.5424804688], CI_lower: [569269.6839640837, 650220.3538859587, 751207.8675578337], CI_upper: [607899.0338093538, 688849.7037312288, 789837.2174031038]
+2025-12-17 20:25:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 569269.6839640837, 650220.3538859587, 751207.8675578337], upper=[np.float64(509637.0545298411), 607899.0338093538, 688849.7037312288, 789837.2174031038]
+2025-12-17 20:25:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 484078.01144926116, 2025: 484078.01144926116, 2026: 484078.01144926116}, values=[484078.01144926116, 484078.01144926116, 484078.01144926116], CI_lower=[321893.92081758927, 321893.92081758927, 321893.92081758927], CI_upper=[646262.102080933, 646262.102080933, 646262.102080933]
+2025-12-17 20:25:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [484078.01144926116, 484078.01144926116, 484078.01144926116], CI_lower: [321893.92081758927, 321893.92081758927, 321893.92081758927], CI_upper: [646262.102080933, 646262.102080933, 646262.102080933]
+2025-12-17 20:25:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 321893.92081758927, 321893.92081758927, 321893.92081758927], upper=[np.float64(509637.0545298411), 646262.102080933, 646262.102080933, 646262.102080933]
+2025-12-17 20:25:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 447190.2848753901, 2025: 447190.2848753901, 2026: 447190.2848753901}, values=[447190.2848753901, 447190.2848753901, 447190.2848753901], CI_lower=[325080.50287917745, 325080.50287917745, 325080.50287917745], CI_upper=[569300.0668716028, 569300.0668716028, 569300.0668716028]
+2025-12-17 20:25:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [447190.2848753901, 447190.2848753901, 447190.2848753901], CI_lower: [325080.50287917745, 325080.50287917745, 325080.50287917745], CI_upper: [569300.0668716028, 569300.0668716028, 569300.0668716028]
+2025-12-17 20:25:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 325080.50287917745, 325080.50287917745, 325080.50287917745], upper=[np.float64(509637.0545298411), 569300.0668716028, 569300.0668716028, 569300.0668716028]
+2025-12-17 20:25:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 494427.55659636034, 2025: 494427.55659636034, 2026: 494427.55659636034}, values=[494427.55659636034, 494427.55659636034, 494427.55659636034], CI_lower=[323314.61113249924, 323314.61113249924, 323314.61113249924], CI_upper=[665540.5020602215, 665540.5020602215, 665540.5020602215]
+2025-12-17 20:25:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [494427.55659636034, 494427.55659636034, 494427.55659636034], CI_lower: [323314.61113249924, 323314.61113249924, 323314.61113249924], CI_upper: [665540.5020602215, 665540.5020602215, 665540.5020602215]
+2025-12-17 20:25:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 323314.61113249924, 323314.61113249924, 323314.61113249924], upper=[np.float64(509637.0545298411), 665540.5020602215, 665540.5020602215, 665540.5020602215]
+2025-12-17 20:25:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 523119.6961661585, 2025: 536602.3377955684, 2026: 550084.9794180708}, values=[523119.6961661585, 536602.3377955684, 550084.9794180708], CI_lower=[336386.06189015263, 349868.70351956255, 363351.3451420649], CI_upper=[709853.3304421643, 723335.9720715743, 736818.6136940767]
+2025-12-17 20:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [523119.6961661585, 536602.3377955684, 550084.9794180708], CI_lower: [336386.06189015263, 349868.70351956255, 363351.3451420649], CI_upper: [709853.3304421643, 723335.9720715743, 736818.6136940767]
+2025-12-17 20:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 336386.06189015263, 349868.70351956255, 363351.3451420649], upper=[np.float64(509637.0545298411), 709853.3304421643, 723335.9720715743, 736818.6136940767]
+2025-12-17 20:25:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 551964.4348816654, 2025: 580325.0504504154, 2026: 608685.6660191654}, values=[551964.4348816654, 580325.0504504154, 608685.6660191654], CI_lower=[402339.8694561524, 430700.48502490233, 459061.1005936524], CI_upper=[701589.0003071784, 729949.6158759284, 758310.2314446785]
+2025-12-17 20:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [551964.4348816654, 580325.0504504154, 608685.6660191654], CI_lower: [402339.8694561524, 430700.48502490233, 459061.1005936524], CI_upper: [701589.0003071784, 729949.6158759284, 758310.2314446785]
+2025-12-17 20:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(509637.0545298411), 402339.8694561524, 430700.48502490233, 459061.1005936524], upper=[np.float64(509637.0545298411), 701589.0003071784, 729949.6158759284, 758310.2314446785]
+2025-12-17 20:25:48 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-17 20:25:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 1684.2429594139685, 2025: 1721.8833490927063, 2026: 1759.5237387714587}, values=[1684.2429594139685, 1721.8833490927063, 1759.5237387714587], CI_lower=[1602.1876241684045, 1639.8280138471423, 1677.4684035258947], CI_upper=[1766.2982946595325, 1803.9386843382704, 1841.5790740170228]
+2025-12-17 20:25:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1684.2429594139685, 1721.8833490927063, 1759.5237387714587], CI_lower: [1602.1876241684045, 1639.8280138471423, 1677.4684035258947], CI_upper: [1766.2982946595325, 1803.9386843382704, 1841.5790740170228]
+2025-12-17 20:25:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1602.1876241684045, 1639.8280138471423, 1677.4684035258947], upper=[np.float64(1757.0964197093228), 1766.2982946595325, 1803.9386843382704, 1841.5790740170228]
+2025-12-17 20:25:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 1769.8686923785135, 2025: 1835.975926656276, 2026: 1905.0774759696797}, values=[1769.8686923785135, 1835.975926656276, 1905.0774759696797], CI_lower=[1719.2552337217217, 1785.3624679994841, 1854.4640173128878], CI_upper=[1820.4821510353054, 1886.5893853130679, 1955.6909346264715]
+2025-12-17 20:25:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1769.8686923785135, 1835.975926656276, 1905.0774759696797], CI_lower: [1719.2552337217217, 1785.3624679994841, 1854.4640173128878], CI_upper: [1820.4821510353054, 1886.5893853130679, 1955.6909346264715]
+2025-12-17 20:25:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1719.2552337217217, 1785.3624679994841, 1854.4640173128878], upper=[np.float64(1757.0964197093228), 1820.4821510353054, 1886.5893853130679, 1955.6909346264715]
+2025-12-17 20:25:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 1846.7801463603973, 2025: 1966.6629436016083, 2026: 2103.7792460918427}, values=[1846.7801463603973, 1966.6629436016083, 2103.7792460918427], CI_lower=[1818.536106447176, 1938.418903688387, 2075.535206178621], CI_upper=[1875.0241862736186, 1994.9069835148296, 2132.023286005064]
+2025-12-17 20:25:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1846.7801463603973, 1966.6629436016083, 2103.7792460918427], CI_lower: [1818.536106447176, 1938.418903688387, 2075.535206178621], CI_upper: [1875.0241862736186, 1994.9069835148296, 2132.023286005064]
+2025-12-17 20:25:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1818.536106447176, 1938.418903688387, 2075.535206178621], upper=[np.float64(1757.0964197093228), 1875.0241862736186, 1994.9069835148296, 2132.023286005064]
+2025-12-17 20:25:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 1652.5759527077078, 2025: 1652.5759527077078, 2026: 1652.5759527077078}, values=[1652.5759527077078, 1652.5759527077078, 1652.5759527077078], CI_lower=[1579.6113434100494, 1579.6113434100494, 1579.6113434100494], CI_upper=[1725.5405620053662, 1725.5405620053662, 1725.5405620053662]
+2025-12-17 20:25:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1652.5759527077078, 1652.5759527077078, 1652.5759527077078], CI_lower: [1579.6113434100494, 1579.6113434100494, 1579.6113434100494], CI_upper: [1725.5405620053662, 1725.5405620053662, 1725.5405620053662]
+2025-12-17 20:25:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1579.6113434100494, 1579.6113434100494, 1579.6113434100494], upper=[np.float64(1757.0964197093228), 1725.5405620053662, 1725.5405620053662, 1725.5405620053662]
+2025-12-17 20:25:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 1573.1451002262754, 2025: 1573.1451002262754, 2026: 1573.1451002262754}, values=[1573.1451002262754, 1573.1451002262754, 1573.1451002262754], CI_lower=[1488.369711270833, 1488.369711270833, 1488.369711270833], CI_upper=[1657.9204891817178, 1657.9204891817178, 1657.9204891817178]
+2025-12-17 20:25:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1573.1451002262754, 1573.1451002262754, 1573.1451002262754], CI_lower: [1488.369711270833, 1488.369711270833, 1488.369711270833], CI_upper: [1657.9204891817178, 1657.9204891817178, 1657.9204891817178]
+2025-12-17 20:25:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1488.369711270833, 1488.369711270833, 1488.369711270833], upper=[np.float64(1757.0964197093228), 1657.9204891817178, 1657.9204891817178, 1657.9204891817178]
+2025-12-17 20:25:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 1686.943090182261, 2025: 1686.943090182261, 2026: 1686.943090182261}, values=[1686.943090182261, 1686.943090182261, 1686.943090182261], CI_lower=[1622.916960661784, 1622.916960661784, 1622.916960661784], CI_upper=[1750.9692197027377, 1750.9692197027377, 1750.9692197027377]
+2025-12-17 20:25:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1686.943090182261, 1686.943090182261, 1686.943090182261], CI_lower: [1622.916960661784, 1622.916960661784, 1622.916960661784], CI_upper: [1750.9692197027377, 1750.9692197027377, 1750.9692197027377]
+2025-12-17 20:25:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1622.916960661784, 1622.916960661784, 1622.916960661784], upper=[np.float64(1757.0964197093228), 1750.9692197027377, 1750.9692197027377, 1750.9692197027377]
+2025-12-17 20:25:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 1861.311700400376, 2025: 1958.429917743369, 2026: 2048.934381938422}, values=[1861.311700400376, 1958.429917743369, 2048.934381938422], CI_lower=[1363.0470719592288, 1460.165289302222, 1550.669753497275], CI_upper=[2359.576328841523, 2456.694546184516, 2547.1990103795692]
+2025-12-17 20:25:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1861.311700400376, 1958.429917743369, 2048.934381938422], CI_lower: [1363.0470719592288, 1460.165289302222, 1550.669753497275], CI_upper: [2359.576328841523, 2456.694546184516, 2547.1990103795692]
+2025-12-17 20:25:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1363.0470719592288, 1460.165289302222, 1550.669753497275], upper=[np.float64(1757.0964197093228), 2359.576328841523, 2456.694546184516, 2547.1990103795692]
+2025-12-17 20:25:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 1864.4549955668408, 2025: 1971.8135715512321, 2026: 2079.1721475356235}, values=[1864.4549955668408, 1971.8135715512321, 2079.1721475356235], CI_lower=[1822.123906824081, 1929.4824828084722, 2036.8410587928636], CI_upper=[1906.7860843096007, 2014.144660293992, 2121.503236278383]
+2025-12-17 20:25:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1864.4549955668408, 1971.8135715512321, 2079.1721475356235], CI_lower: [1822.123906824081, 1929.4824828084722, 2036.8410587928636], CI_upper: [1906.7860843096007, 2014.144660293992, 2121.503236278383]
+2025-12-17 20:25:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1757.0964197093228), 1822.123906824081, 1929.4824828084722, 2036.8410587928636], upper=[np.float64(1757.0964197093228), 1906.7860843096007, 2014.144660293992, 2121.503236278383]
+2025-12-17 20:25:55 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-17 20:25:55 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-17 20:27:57 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 52378.0078125, 'mse': 30892611584.0, 'rmse': 175762.94144102163, 'r2': -0.12084710597991943}
+2025-12-17 20:27:58 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-17 20:29:23 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 7.345737457275391, 'mse': 218.67434692382812, 'rmse': 14.787641695815736, 'r2': 0.04994934797286987}
+2025-12-17 20:29:24 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-17 20:30:48 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 1.439199447631836, 'mse': 12.742884635925293, 'rmse': 3.5697177249644394, 'r2': 0.8359019160270691}
+2025-12-17 20:30:49 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-17 20:32:12 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 245.58438110351562, 'mse': 560812.5625, 'rmse': 748.8741967113034, 'r2': 0.3488604426383972}
+2025-12-17 20:32:12 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-17 20:33:36 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.3017774522304535, 'mse': 0.3342606723308563, 'rmse': 0.578152810536156, 'r2': 0.2720434069633484}
+2025-12-17 20:33:37 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-17 20:34:05 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Maryland/housing/1-year/figures/ml/deep_learning
+2025-12-17 20:34:06 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-17 20:34:06 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-17 20:34:06 [DEBUG] census_eda.main:  Running LLM analysis for state: Maryland
+2025-12-17 20:34:06 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-17 20:34:06 [INFO] census_eda.ml: [LLM] State context loaded: Maryland
+2025-12-17 20:34:06 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [API] Total request: ~2331 tokens (system: ~2149, user: ~182)
+2025-12-17 20:34:06 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [API] Received response: 3733 chars
+2025-12-17 20:34:22 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3733 chars)
+2025-12-17 20:34:22 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [LLM] User prompt: 1259 chars (~314 tokens)
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [API] Total request: ~2463 tokens (system: ~2149, user: ~314)
+2025-12-17 20:34:22 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [API] Received response: 3429 chars
+2025-12-17 20:34:31 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3429 chars)
+2025-12-17 20:34:31 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [LLM] User prompt: 1690 chars (~422 tokens)
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [API] Total request: ~2571 tokens (system: ~2149, user: ~422)
+2025-12-17 20:34:31 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [API] Received response: 3571 chars
+2025-12-17 20:34:42 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3571 chars)
+2025-12-17 20:34:42 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [LLM] User prompt: 1479 chars (~369 tokens)
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [API] Total request: ~2518 tokens (system: ~2149, user: ~369)
+2025-12-17 20:34:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [API] Received response: 3748 chars
+2025-12-17 20:34:54 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3748 chars)
+2025-12-17 20:34:54 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [API] Total request: ~2160 tokens (system: ~2149, user: ~11)
+2025-12-17 20:34:54 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [API] Received response: 4741 chars
+2025-12-17 20:35:09 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4741 chars)
+2025-12-17 20:35:09 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [LLM] User prompt: 11090 chars (~2772 tokens)
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [API] Total request: ~4921 tokens (system: ~2149, user: ~2772)
+2025-12-17 20:35:09 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [API] Received response: 3592 chars
+2025-12-17 20:35:22 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3592 chars)
+2025-12-17 20:35:22 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [LLM] User prompt: 6823 chars (~1705 tokens)
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [API] Total request: ~3854 tokens (system: ~2149, user: ~1705)
+2025-12-17 20:35:22 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [API] Received response: 3257 chars
+2025-12-17 20:35:32 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3257 chars)
+2025-12-17 20:35:32 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [LLM] User prompt: 758 chars (~189 tokens)
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [API] Total request: ~2338 tokens (system: ~2149, user: ~189)
+2025-12-17 20:35:32 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [API] Received response: 3358 chars
+2025-12-17 20:35:43 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3358 chars)
+2025-12-17 20:35:43 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [LLM] User prompt: 6300 chars (~1575 tokens)
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [API] Total request: ~3724 tokens (system: ~2149, user: ~1575)
+2025-12-17 20:35:43 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [API] Received response: 3801 chars
+2025-12-17 20:35:55 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3801 chars)
+2025-12-17 20:35:55 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [LLM] User prompt: 2517 chars (~629 tokens)
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [API] Total request: ~2778 tokens (system: ~2149, user: ~629)
+2025-12-17 20:35:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [API] Received response: 4200 chars
+2025-12-17 20:36:08 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4200 chars)
+2025-12-17 20:36:08 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [LLM] User prompt: 1048 chars (~262 tokens)
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Maryland
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Maryland
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3711 chars
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~927
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Maryland
+
+ECONOMIC PROFILE:
+  Industries: Federal government and defense, Biotechnology and life sciences, Cybersecurity and information technology, Professional and business services, Healthcare
+  Trends: Slow growth 2011-2019 with economic stagnation 2017-2023. Federal government employment major anchor. Professional services and biotech grew strongly. Post-pandemic recovery slower than national average
+  Income: 2nd highest median household income nationally (~$101k in 2023). Proximity to DC drives high wages. Significant income inequality between DC suburbs and rural areas
+  Dominant Sector: Government and government enterprises
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 0.3-0.5% annually 2011-2019, minimal growth 2020-2023. Population essentially flat 2020-2023 (+3,000 total)
+  Migration: Net domestic outmigration to Virginia, Pennsylvania, Delaware, and Southern states. 99,579 net domestic loss 2020-2023 offset by international migration (+66,062). High housing costs driving exodus
+  Education: High educational attainment - 2nd nationally in bachelor's degree holders. Strong university system (Johns Hopkins, UMD). Significant gap between urban/suburban and rural counties
+
+HOUSING MARKET:
+  Market: High-cost near DC (Montgomery County median >$600k), moderate in Baltimore region, affordable in rural areas. Proximity to DC drives prices
+  Affordability: Steady price increases 2011-2019, pandemic spike 2020-2022. Among least affordable states. Median home ~$380k statewide (2023)
+  Challenges: Affordability crisis in DC suburbs, Baltimore vacancy and abandonment, Sprawl pressuring farmland, Limited transit-oriented development
+
+POLITY:
+  Policy: Progressive Democratic governance. Pro-business in biotech/tech sectors. High taxes to fund extensive public services and education
+  Housing: Limited state intervention. Local control over zoning. Some inclusionary zoning requirements. Rent control debates in progressive jurisdictions
+  Labor: $15 minimum wage (phased to 2025), strong worker protections, paid family leave expanding, prevailing wage laws
+
+REGIONAL:
+  Geography: Diverse: Chesapeake Bay, coastal plains (Eastern Shore), Piedmont plateau, Appalachian mountains (west). Tidewater access
+  Urban/Rural: 87% urban in Baltimore-DC corridor, 13% rural (Eastern Shore, Western Maryland). Growing suburban ring around DC
+  Infrastructure: Excellent near DC (WMATA metro). BWI airport. Port of Baltimore major shipping hub. I-95 corridor congestion. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, budget challenges, progressive legislation (marriage equality, death penalty repeal); 2014-2016: Economic stagnation begins, Baltimore unrest (2015), minimum wage increase; 2017-2019: Economic growth slows, federal employment stable, housing costs rise; 2021-2023: Slow pandemic recovery, domestic outmigration accelerates, federal employment grows, recreational marijuana legalization
+  Shocks: 2015 Baltimore unrest impact on city. Federal government shutdowns. COVID-19 impact on services sector
+  Transitions: Manufacturing decline continues. Retail consolidation. Healthcare and professional services growth. Cybersecurity sector expansion
+
+COMPARATIVE:
+  Benchmarks: 2nd highest median income. Among highest cost of living. Educational attainment 2nd nationally. Slow GDP growth (49th 2017-2023) concerning
+  Peer States: Virginia (DC suburbs, federal employment), Massachusetts (high income, education), Delaware (mid-Atlantic corridor)
+  Unique: Federal government employment unique concentration. Proximity to DC dominates economy. Chesapeake Bay environmental focus. High diversity. Extreme urban/rural divide
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Maryland
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [PROMPT] State context injected (3711 chars)
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8599 chars (~2149 tokens)
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [API] Total request: ~2411 tokens (system: ~2149, user: ~262)
+2025-12-17 20:36:08 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 20:36:19 [DEBUG] census_eda.ml: [API] Received response: 3765 chars
+2025-12-17 20:36:19 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (3765 chars)
+2025-12-17 20:36:19 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-17 20:36:19 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-17 20:36:19 [INFO] census_eda.main: [REPORT] Generated: report_Maryland_housing_20251217_203619.txt
+2025-12-17 20:36:19 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for Maryland!
+2025-12-17 20:36:19 [INFO] census_eda.memory: process_Maryland_housing_1-year:EXIT: 7819.3MB (delta: -1182.5MB)
+2025-12-17 20:36:20 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-17 20:36:20 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-17 20:36:21 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-17 20:36:21 [INFO] census_eda.memory: Cleared all caches

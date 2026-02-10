@@ -1,0 +1,1345 @@
+2025-12-18 22:11:20 [INFO] census_eda: Logging context set: state=Virginia, survey=population, scope=1-year
+2025-12-18 22:11:20 [INFO] census_eda: Log file: ./logs/Virginia/1-year/population/1-year_population_25_12_18_2211.log
+2025-12-18 22:11:20 [INFO] census_eda.main: ======================================================================
+2025-12-18 22:11:20 [INFO] census_eda.main: [POPULATION] Processing Virginia (1-year)...
+2025-12-18 22:11:20 [INFO] census_eda.main: ======================================================================
+2025-12-18 22:11:20 [INFO] census_eda.memory: process_Virginia_population_1-year:ENTER: 13221.5MB (delta: +0.0MB)
+2025-12-18 22:11:20 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 22:11:20 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/51/*/*.csv
+2025-12-18 22:11:20 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 22:11:20 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pva.csv
+2025-12-18 22:11:22 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 22:11:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 82,824 rows, 260 columns
+2025-12-18 22:11:22 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p51.csv
+2025-12-18 22:11:24 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 22:11:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 84,422 rows, 260 columns
+2025-12-18 22:11:24 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pva.csv
+2025-12-18 22:11:26 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 22:11:26 [VERBOSE] census_eda.processing.loader:   -> Loaded 83,393 rows, 260 columns
+2025-12-18 22:11:26 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pva.csv
+2025-12-18 22:11:28 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 22:11:28 [VERBOSE] census_eda.processing.loader:   -> Loaded 83,044 rows, 260 columns
+2025-12-18 22:11:28 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pva.csv
+2025-12-18 22:11:29 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 22:11:29 [VERBOSE] census_eda.processing.loader:   -> Loaded 77,525 rows, 260 columns
+2025-12-18 22:11:29 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pva.csv
+2025-12-18 22:11:31 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 22:11:31 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,548 rows, 260 columns
+2025-12-18 22:11:31 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p51.csv
+2025-12-18 22:11:32 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 22:11:32 [VERBOSE] census_eda.processing.loader:   -> Loaded 84,755 rows, 260 columns
+2025-12-18 22:11:32 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pva.csv
+2025-12-18 22:11:34 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 22:11:34 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,690 rows, 260 columns
+2025-12-18 22:11:34 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pva.csv
+2025-12-18 22:11:35 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 22:11:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 83,546 rows, 260 columns
+2025-12-18 22:11:35 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p51.csv
+2025-12-18 22:11:37 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 22:11:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 84,938 rows, 260 columns
+2025-12-18 22:11:37 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p51.csv
+2025-12-18 22:11:39 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 22:11:39 [VERBOSE] census_eda.processing.loader:   -> Loaded 88,761 rows, 260 columns
+2025-12-18 22:11:39 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p51.csv
+2025-12-18 22:11:40 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 22:11:40 [VERBOSE] census_eda.processing.loader:   -> Loaded 87,093 rows, 260 columns
+2025-12-18 22:11:40 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p51.csv
+2025-12-18 22:11:42 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 22:11:42 [VERBOSE] census_eda.processing.loader:   -> Loaded 88,928 rows, 260 columns
+2025-12-18 22:11:42 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pva.csv
+2025-12-18 22:11:44 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 22:11:44 [VERBOSE] census_eda.processing.loader:   -> Loaded 83,472 rows, 260 columns
+2025-12-18 22:11:44 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pva.csv
+2025-12-18 22:11:46 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 22:11:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 79,455 rows, 260 columns
+2025-12-18 22:11:46 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pva.csv
+2025-12-18 22:11:47 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 22:11:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 81,365 rows, 260 columns
+2025-12-18 22:11:47 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 22:11:56 [VERBOSE] census_eda.processing.loader: Combined into 1,330,759 total rows, 260 columns
+2025-12-18 22:11:57 [INFO] census_eda.main: Loaded 1,330,759 records
+2025-12-18 22:11:57 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 1330759 valid, 16 unique
+2025-12-18 22:11:57 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 22:11:59 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 22:11:59 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 22:12:00 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 22:12:01 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 22:12:01 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 22:12:02 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 22:12:02 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 22:12:03 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 22:12:03 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 22:12:04 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 22:12:04 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 22:12:04 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 22:12:05 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 22:12:06 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 22:12:06 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 22:12:06 [DEBUG] census_eda.main: Feature engineering complete: (1330759, 292)
+2025-12-18 22:12:07 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 22:12:07 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 22:15:41 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 22:15:41 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 22:15:41 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(1330759, 292)
+2025-12-18 22:15:41 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 22:15:41 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 1330759
+2025-12-18 22:15:41 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 22:15:43 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(1330759, 292)
+2025-12-18 22:15:43 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(77525), np.int64(2008): np.int64(78690), np.int64(2009): np.int64(78548), np.int64(2010): np.int64(79455), np.int64(2011): np.int64(81365), np.int64(2012): np.int64(82824), np.int64(2013): np.int64(83044), np.int64(2014): np.int64(83393), np.int64(2015): np.int64(83472), np.int64(2016): np.int64(83546), np.int64(2017): np.int64(84422), np.int64(2018): np.int64(84755), np.int64(2019): np.int64(84938), np.int64(2021): np.int64(87093), np.int64(2022): np.int64(88761), np.int64(2023): np.int64(88928)}
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(1330759, 292)
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 1330759 non-null values (zeros excluded if needed)
+2025-12-18 22:15:45 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 22:15:46 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 22:15:46 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 1330759 non-null values (zeros excluded if needed)
+2025-12-18 22:15:46 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2068.00
+2025-12-18 22:15:46 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 22:15:47 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 1330759 non-null values (zeros excluded if needed)
+2025-12-18 22:15:47 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 94.00
+2025-12-18 22:15:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 22:15:48 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 586415 non-null values (zeros excluded if needed)
+2025-12-18 22:15:48 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 185.00
+2025-12-18 22:15:51 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 179212 non-null values (zeros excluded if needed)
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 326000.00
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 70528 non-null values (zeros excluded if needed)
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 77000.00
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 11113 non-null values (zeros excluded if needed)
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 161518 non-null values (zeros excluded if needed)
+2025-12-18 22:15:52 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 181000.00
+2025-12-18 22:15:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 22:15:56 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 58555 non-null values (zeros excluded if needed)
+2025-12-18 22:15:56 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 447000.00
+2025-12-18 22:15:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 22:15:56 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 25695 non-null values (zeros excluded if needed)
+2025-12-18 22:15:56 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 22:15:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 22:15:57 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 237129 non-null values (zeros excluded if needed)
+2025-12-18 22:15:57 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 22:15:57 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 22:15:58 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 690836 non-null values (zeros excluded if needed)
+2025-12-18 22:15:58 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 606000.00
+2025-12-18 22:16:03 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 22:16:32 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 22:16:32 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 22:16:32 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 22:16:34 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 22:16:34 [DEBUG] census_eda.memory: Skipping sampling: 25555MB available (>16GB)
+2025-12-18 22:16:34 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 1330759 rows
+2025-12-18 22:20:37 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 22:20:37 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(1330759, 292)
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 1330759 non-null values
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 1330759 non-null values
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2068.00
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 1330759 non-null values
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 94.00
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 586415 non-null values
+2025-12-18 22:20:38 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 185.00
+2025-12-18 22:20:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 179212 non-null values
+2025-12-18 22:20:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 326000.00
+2025-12-18 22:20:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 70528 non-null values
+2025-12-18 22:20:41 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 77000.00
+2025-12-18 22:20:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 11113 non-null values
+2025-12-18 22:20:41 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 22:20:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 161518 non-null values
+2025-12-18 22:20:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 181000.00
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 58555 non-null values
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 447000.00
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 25695 non-null values
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 237129 non-null values
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 690836 non-null values
+2025-12-18 22:20:45 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 606000.00
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 725490 non-null values
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 585257 non-null values
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 261502 non-null values
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 1088298 non-null values
+2025-12-18 22:20:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 22:21:08 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 22:21:33 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 22:21:57 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 22:22:41 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 22:22:41 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 22:22:41 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 22:22:43 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 22:22:44 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 22:22:46 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 22:22:49 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 22:22:49 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 22:22:49 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 22:22:51 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 22:22:52 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 22:22:56 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 22:22:56 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 22:22:56 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 22:22:59 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 22:23:02 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 22:23:02 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 22:23:02 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 22:23:04 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 22:23:05 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 22:23:09 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 22:23:09 [DEBUG] census_eda.memory: Skipping sampling: 26176MB available (>16GB)
+2025-12-18 22:23:32 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 22:23:32 [DEBUG] census_eda.memory: Skipping sampling: 26471MB available (>16GB)
+2025-12-18 22:24:11 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 22:24:11 [DEBUG] census_eda.memory: Skipping sampling: 26364MB available (>16GB)
+2025-12-18 22:24:20 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 22:24:44 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 22:24:44 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 22:24:44 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 22:24:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 22:24:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 22:24:49 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 22:24:51 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 22:24:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 22:24:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 22:24:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 22:24:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 22:24:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 22:24:55 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 22:24:57 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 22:24:57 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 22:24:57 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 22:24:59 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 22:25:00 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 22:25:03 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 22:25:06 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 22:25:10 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 22:25:13 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 22:25:18 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 22:25:18 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 22:25:18 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 22:25:19 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 22:25:21 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 22:25:25 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 22:25:28 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 22:25:30 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 22:25:32 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 22:25:34 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 22:25:40 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 22:25:47 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 22:25:49 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 22:25:51 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Virginia/population/1-year/figures
+2025-12-18 22:25:52 [DEBUG] census_eda.memory: Skipping sampling: 26412MB available (>16GB)
+2025-12-18 22:25:52 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 22:25:52 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 22:25:53 [INFO] census_eda.memory: [ML-START]: 22839.5MB (delta: +9618.0MB)
+2025-12-18 22:25:53 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 22:25:53 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 22:25:53 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 25573 samples (was 25591)
+2025-12-18 22:25:53 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 22:25:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 22:25:53 [INFO] census_eda.ml.regression: [TUNE] Data: 25,573 samples, 10 features
+2025-12-18 22:25:53 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:25:53 [INFO] census_eda.memory: tune_ridge:ENTER: 22839.5MB (delta: +0.0MB)
+2025-12-18 22:25:54 [WARNING] census_eda.memory: Memory usage (22839.8MB) exceeded threshold (16000MB)
+2025-12-18 22:25:56 [INFO] census_eda.memory: tune_ridge:EXIT: 22839.8MB (delta: +0.3MB)
+2025-12-18 22:25:56 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 22:25:56 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1209
+2025-12-18 22:25:56 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:25:56 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 22:25:56 [INFO] census_eda.ml.regression: [TUNE] Data: 25,573 samples, 10 features
+2025-12-18 22:25:56 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:25:56 [INFO] census_eda.memory: tune_lasso:ENTER: 22839.8MB (delta: +0.0MB)
+2025-12-18 22:25:56 [WARNING] census_eda.memory: Memory usage (22839.9MB) exceeded threshold (16000MB)
+2025-12-18 22:25:58 [INFO] census_eda.memory: tune_lasso:EXIT: 22839.9MB (delta: +0.0MB)
+2025-12-18 22:25:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-18 22:25:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1208
+2025-12-18 22:25:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:26:00 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 22:26:00 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,573 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:26:00 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:26:00 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:26:00 [INFO] census_eda.memory: tune_random_forest:ENTER: 22839.9MB (delta: +0.0MB)
+2025-12-18 22:26:26 [WARNING] census_eda.memory: Memory usage (22845.2MB) exceeded threshold (16000MB)
+2025-12-18 22:26:28 [INFO] census_eda.memory: tune_random_forest:EXIT: 22845.2MB (delta: +5.4MB)
+2025-12-18 22:26:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 22:26:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1067
+2025-12-18 22:26:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:26:32 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 22:26:32 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,573 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:26:32 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:26:32 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:26:32 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 22848.6MB (delta: +3.3MB)
+2025-12-18 22:26:48 [WARNING] census_eda.memory: Memory usage (22848.6MB) exceeded threshold (16000MB)
+2025-12-18 22:26:49 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:26:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 22:26:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1825
+2025-12-18 22:26:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:26:55 [INFO] census_eda.memory: [SHAP] Safe sample size: 5,115 -> 1,000
+2025-12-18 22:26:55 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 5,115 -> 1,000
+2025-12-18 22:26:55 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:26:55 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 22:26:57 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:26:57 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 22:26:57 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 22:26:57 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 22:26:57 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 24623 samples (was 25591)
+2025-12-18 22:26:57 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 22:26:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 22:26:57 [INFO] census_eda.ml.regression: [TUNE] Data: 24,623 samples, 10 features
+2025-12-18 22:26:57 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:26:57 [INFO] census_eda.memory: tune_ridge:ENTER: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:26:57 [WARNING] census_eda.memory: Memory usage (22848.6MB) exceeded threshold (16000MB)
+2025-12-18 22:26:59 [INFO] census_eda.memory: tune_ridge:EXIT: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:26:59 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 22:26:59 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1281
+2025-12-18 22:26:59 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:26:59 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 22:26:59 [INFO] census_eda.ml.regression: [TUNE] Data: 24,623 samples, 10 features
+2025-12-18 22:26:59 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:26:59 [INFO] census_eda.memory: tune_lasso:ENTER: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:27:00 [WARNING] census_eda.memory: Memory usage (22848.6MB) exceeded threshold (16000MB)
+2025-12-18 22:27:02 [INFO] census_eda.memory: tune_lasso:EXIT: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:27:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-18 22:27:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1280
+2025-12-18 22:27:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:27:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 22:27:12 [INFO] census_eda.ml.regression: [TUNE] Data: 24,623 samples, 10 features
+2025-12-18 22:27:12 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:27:12 [INFO] census_eda.memory: tune_random_forest:ENTER: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:27:40 [WARNING] census_eda.memory: Memory usage (22848.6MB) exceeded threshold (16000MB)
+2025-12-18 22:27:42 [INFO] census_eda.memory: tune_random_forest:EXIT: 22848.6MB (delta: +0.0MB)
+2025-12-18 22:27:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 22:27:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1104
+2025-12-18 22:27:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:27:44 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 22:27:44 [INFO] census_eda.ml.regression: [TUNE] Data: 24,623 samples, 10 features
+2025-12-18 22:27:44 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:27:44 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 22851.9MB (delta: +3.3MB)
+2025-12-18 22:27:59 [WARNING] census_eda.memory: Memory usage (22851.9MB) exceeded threshold (16000MB)
+2025-12-18 22:28:01 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 22:28:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1799
+2025-12-18 22:28:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:28:06 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,925 -> 1,000
+2025-12-18 22:28:06 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,925 -> 1,000
+2025-12-18 22:28:06 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:06 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 22:28:08 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:08 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 22:28:08 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 22:28:08 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 22:28:08 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 25574 samples (was 25591)
+2025-12-18 22:28:08 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 22:28:08 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 22:28:08 [INFO] census_eda.ml.regression: [TUNE] Data: 25,574 samples, 10 features
+2025-12-18 22:28:08 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:28:08 [INFO] census_eda.memory: tune_ridge:ENTER: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:08 [WARNING] census_eda.memory: Memory usage (22851.9MB) exceeded threshold (16000MB)
+2025-12-18 22:28:10 [INFO] census_eda.memory: tune_ridge:EXIT: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 22:28:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1182
+2025-12-18 22:28:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:28:10 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 22:28:10 [INFO] census_eda.ml.regression: [TUNE] Data: 25,574 samples, 10 features
+2025-12-18 22:28:10 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:28:10 [INFO] census_eda.memory: tune_lasso:ENTER: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:11 [WARNING] census_eda.memory: Memory usage (22851.9MB) exceeded threshold (16000MB)
+2025-12-18 22:28:13 [INFO] census_eda.memory: tune_lasso:EXIT: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:13 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-18 22:28:13 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1181
+2025-12-18 22:28:13 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:28:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 22:28:18 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,574 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:28:18 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:28:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:28:18 [INFO] census_eda.memory: tune_random_forest:ENTER: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:46 [WARNING] census_eda.memory: Memory usage (22851.9MB) exceeded threshold (16000MB)
+2025-12-18 22:28:47 [INFO] census_eda.memory: tune_random_forest:EXIT: 22851.9MB (delta: +0.0MB)
+2025-12-18 22:28:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 22:28:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1085
+2025-12-18 22:28:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:28:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 22:28:49 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,574 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:28:49 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:28:49 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:28:49 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 22854.3MB (delta: +2.4MB)
+2025-12-18 22:29:04 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:29:06 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 22:29:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1791
+2025-12-18 22:29:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:29:11 [INFO] census_eda.memory: [SHAP] Safe sample size: 5,115 -> 1,000
+2025-12-18 22:29:11 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 5,115 -> 1,000
+2025-12-18 22:29:11 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:11 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 22:29:13 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:13 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 22:29:13 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 22:29:13 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 22:29:13 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 22:29:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 22:29:13 [INFO] census_eda.ml.regression: [TUNE] Data: 25,591 samples, 10 features
+2025-12-18 22:29:13 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:29:13 [INFO] census_eda.memory: tune_ridge:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:13 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:29:15 [INFO] census_eda.memory: tune_ridge:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 22:29:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 22:29:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:29:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 22:29:15 [INFO] census_eda.ml.regression: [TUNE] Data: 25,591 samples, 10 features
+2025-12-18 22:29:15 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:29:15 [INFO] census_eda.memory: tune_lasso:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:15 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:29:17 [INFO] census_eda.memory: tune_lasso:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 22:29:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 22:29:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:29:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 22:29:18 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,591 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:29:18 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:29:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:29:18 [INFO] census_eda.memory: tune_random_forest:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:27 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:29:28 [INFO] census_eda.memory: tune_random_forest:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 22:29:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 22:29:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:29:29 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 22:29:29 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,591 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:29:29 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:29:29 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:29:29 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:39 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:29:41 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 22:29:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 22:29:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:29:50 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 22:29:50 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 22:29:50 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 22:29:50 [INFO] census_eda.ml.regression: [TUNE] Data: 25,591 samples, 10 features
+2025-12-18 22:29:50 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:29:50 [INFO] census_eda.memory: tune_ridge:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:50 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:29:52 [INFO] census_eda.memory: tune_ridge:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 22:29:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0462
+2025-12-18 22:29:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:29:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 22:29:52 [INFO] census_eda.ml.regression: [TUNE] Data: 25,591 samples, 10 features
+2025-12-18 22:29:52 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 22:29:52 [INFO] census_eda.memory: tune_lasso:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:53 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:29:54 [INFO] census_eda.memory: tune_lasso:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:29:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 22:29:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0461
+2025-12-18 22:29:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 22:29:55 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 22:29:55 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,591 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:29:55 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:29:55 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:29:55 [INFO] census_eda.memory: tune_random_forest:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:30:23 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:30:24 [INFO] census_eda.memory: tune_random_forest:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:30:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 22:30:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0872
+2025-12-18 22:30:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:30:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 22:30:27 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,591 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 22:30:27 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 22:30:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 22:30:27 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:30:41 [WARNING] census_eda.memory: Memory usage (22854.3MB) exceeded threshold (16000MB)
+2025-12-18 22:30:43 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:30:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 22:30:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1316
+2025-12-18 22:30:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 22:30:49 [INFO] census_eda.memory: [SHAP] Safe sample size: 5,119 -> 1,000
+2025-12-18 22:30:49 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 5,119 -> 1,000
+2025-12-18 22:30:49 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:30:49 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 22:30:50 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:30:50 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 22:30:50 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 22:30:50 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 22:30:50 [INFO] census_eda.memory: [PRE-CLUSTERING]: 22854.3MB (delta: +0.0MB)
+2025-12-18 22:30:50 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 22:30:50 [INFO] census_eda.main: [CLUSTERING] KMeans on 25,591 samples...
+2025-12-18 22:30:55 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 22:30:55 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 25,591 samples (will sample if needed)...
+2025-12-18 22:30:55 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 25,591 -> 15,000 (distance matrix would be 4.9GB)
+2025-12-18 22:30:55 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 25,591 -> 15,000 for O(n²) distance matrix
+2025-12-18 22:31:00 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 22:31:00 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 22:31:00 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 69363.68688964844, 2025: 71583.44354248047, 2026: 73783.66731262207}, Values: [69363.68688964844, 71583.44354248047, 73783.66731262207]
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 22:31:00 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 74082.59576034546, 2025: 77391.89016342163, 2026: 80953.7296257019}, Values: [74082.59576034546, 77391.89016342163, 80953.7296257019]
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 22:31:00 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 74579.83255672455, 2025: 77856.92328548431, 2026: 81353.42959499359}, Values: [74579.83255672455, 77856.92328548431, 81353.42959499359]
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 22:31:00 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 43.204056633636355, 2025: 43.57035477273166, 2026: 43.97046152129769}, Values: [43.204056633636355, 43.57035477273166, 43.97046152129769]
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 22:31:00 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.552727829664946, 2025: 37.15121142938733, 2026: 36.64401700720191}, Values: [37.552727829664946, 37.15121142938733, 36.64401700720191]
+2025-12-18 22:31:00 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 22:31:06 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-18 22:31:12 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-18 22:31:19 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-18 22:31:31 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 22:31:33 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 25591.
+2025-12-18 22:31:33 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 22:31:33 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 22:31:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 66017.08726486936, 2025: 67457.71793335304, 2026: 68898.34860183671}, values=[66017.08726486936, 67457.71793335304, 68898.34860183671], CI_lower=[62353.77615276286, 63794.406821246535, 65235.03748973021], CI_upper=[69680.39837697586, 71121.02904545954, 72561.65971394321]
+2025-12-18 22:31:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66017.08726486936, 67457.71793335304, 68898.34860183671], CI_lower: [62353.77615276286, 63794.406821246535, 65235.03748973021], CI_upper: [69680.39837697586, 71121.02904545954, 72561.65971394321]
+2025-12-18 22:31:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 62353.77615276286, 63794.406821246535, 65235.03748973021], upper=[np.float64(60408.216200745475), 69680.39837697586, 71121.02904545954, 72561.65971394321]
+2025-12-18 22:31:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 70273.38127303123, 2025: 73129.0452016592, 2026: 76133.55089443922}, values=[70273.38127303123, 73129.0452016592, 76133.55089443922], CI_lower=[68509.0519861548, 71364.71591478276, 74369.22160756278], CI_upper=[72037.71055990767, 74893.37448853564, 77897.88018131566]
+2025-12-18 22:31:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [70273.38127303123, 73129.0452016592, 76133.55089443922], CI_lower: [68509.0519861548, 71364.71591478276, 74369.22160756278], CI_upper: [72037.71055990767, 74893.37448853564, 77897.88018131566]
+2025-12-18 22:31:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 68509.0519861548, 71364.71591478276, 74369.22160756278], upper=[np.float64(60408.216200745475), 72037.71055990767, 74893.37448853564, 77897.88018131566]
+2025-12-18 22:31:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 69363.68688964844, 2025: 71583.44354248047, 2026: 73783.66731262207}, values=[69363.68688964844, 71583.44354248047, 73783.66731262207], CI_lower=[67670.70639894989, 69890.46305178192, 72090.68682192352], CI_upper=[71056.66738034699, 73276.42403317902, 75476.64780332062]
+2025-12-18 22:31:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69363.68688964844, 71583.44354248047, 73783.66731262207], CI_lower: [67670.70639894989, 69890.46305178192, 72090.68682192352], CI_upper: [71056.66738034699, 73276.42403317902, 75476.64780332062]
+2025-12-18 22:31:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 67670.70639894989, 69890.46305178192, 72090.68682192352], upper=[np.float64(60408.216200745475), 71056.66738034699, 73276.42403317902, 75476.64780332062]
+2025-12-18 22:31:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 64589.26918790804, 2025: 64589.26918790804, 2026: 64589.26918790804}, values=[64589.26918790804, 64589.26918790804, 64589.26918790804], CI_lower=[62117.63923937947, 62117.63923937947, 62117.63923937947], CI_upper=[67060.89913643661, 67060.89913643661, 67060.89913643661]
+2025-12-18 22:31:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64589.26918790804, 64589.26918790804, 64589.26918790804], CI_lower: [62117.63923937947, 62117.63923937947, 62117.63923937947], CI_upper: [67060.89913643661, 67060.89913643661, 67060.89913643661]
+2025-12-18 22:31:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 62117.63923937947, 62117.63923937947, 62117.63923937947], upper=[np.float64(60408.216200745475), 67060.89913643661, 67060.89913643661, 67060.89913643661]
+2025-12-18 22:31:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 61808.887854194014, 2025: 61808.887854194014, 2026: 61808.887854194014}, values=[61808.887854194014, 61808.887854194014, 61808.887854194014], CI_lower=[58062.29798743407, 58062.29798743407, 58062.29798743407], CI_upper=[65555.47772095396, 65555.47772095396, 65555.47772095396]
+2025-12-18 22:31:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61808.887854194014, 61808.887854194014, 61808.887854194014], CI_lower: [58062.29798743407, 58062.29798743407, 58062.29798743407], CI_upper: [65555.47772095396, 65555.47772095396, 65555.47772095396]
+2025-12-18 22:31:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 58062.29798743407, 58062.29798743407, 58062.29798743407], upper=[np.float64(60408.216200745475), 65555.47772095396, 65555.47772095396, 65555.47772095396]
+2025-12-18 22:31:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 65686.48875245595, 2025: 65686.48875245595, 2026: 65686.48875245595}, values=[65686.48875245595, 65686.48875245595, 65686.48875245595], CI_lower=[63798.21572184687, 63798.21572184687, 63798.21572184687], CI_upper=[67574.76178306503, 67574.76178306503, 67574.76178306503]
+2025-12-18 22:31:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65686.48875245595, 65686.48875245595, 65686.48875245595], CI_lower: [63798.21572184687, 63798.21572184687, 63798.21572184687], CI_upper: [67574.76178306503, 67574.76178306503, 67574.76178306503]
+2025-12-18 22:31:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 63798.21572184687, 63798.21572184687, 63798.21572184687], upper=[np.float64(60408.216200745475), 67574.76178306503, 67574.76178306503, 67574.76178306503]
+2025-12-18 22:31:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 69715.53255507833, 2025: 71278.23362827113, 2026: 72840.88413941166}, values=[69715.53255507833, 71278.23362827113, 72840.88413941166], CI_lower=[48633.08154977742, 50195.78262297022, 51758.433134110746], CI_upper=[90797.98356037925, 92360.68463357205, 93923.33514471258]
+2025-12-18 22:31:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69715.53255507833, 71278.23362827113, 72840.88413941166], CI_lower: [48633.08154977742, 50195.78262297022, 51758.433134110746], CI_upper: [90797.98356037925, 92360.68463357205, 93923.33514471258]
+2025-12-18 22:31:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 48633.08154977742, 50195.78262297022, 51758.433134110746], upper=[np.float64(60408.216200745475), 90797.98356037925, 92360.68463357205, 93923.33514471258]
+2025-12-18 22:31:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 70788.49392379145, 2025: 73555.51180465716, 2026: 76322.52968552287}, values=[70788.49392379145, 73555.51180465716, 76322.52968552287], CI_lower=[68314.61968227319, 71081.6375631389, 73848.6554440046], CI_upper=[73262.36816530972, 76029.38604617542, 78796.40392704113]
+2025-12-18 22:31:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [70788.49392379145, 73555.51180465716, 76322.52968552287], CI_lower: [68314.61968227319, 71081.6375631389, 73848.6554440046], CI_upper: [73262.36816530972, 76029.38604617542, 78796.40392704113]
+2025-12-18 22:31:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(60408.216200745475), 68314.61968227319, 71081.6375631389, 73848.6554440046], upper=[np.float64(60408.216200745475), 73262.36816530972, 76029.38604617542, 78796.40392704113]
+2025-12-18 22:31:40 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 22:31:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 69357.50716455467, 2025: 70882.686950034, 2026: 72407.86673551332}, values=[69357.50716455467, 70882.686950034, 72407.86673551332], CI_lower=[65891.05224381387, 67416.2320292932, 68941.41181477252], CI_upper=[72823.96208529547, 74349.1418707748, 75874.32165625412]
+2025-12-18 22:31:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69357.50716455467, 70882.686950034, 72407.86673551332], CI_lower: [65891.05224381387, 67416.2320292932, 68941.41181477252], CI_upper: [72823.96208529547, 74349.1418707748, 75874.32165625412]
+2025-12-18 22:31:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 65891.05224381387, 67416.2320292932, 68941.41181477252], upper=[np.float64(43910.47068690096), 72823.96208529547, 74349.1418707748, 75874.32165625412]
+2025-12-18 22:31:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 73501.2219440937, 2025: 76404.00727647543, 2026: 79451.69749939442}, values=[73501.2219440937, 76404.00727647543, 79451.69749939442], CI_lower=[72002.10572772245, 74904.89106010417, 77952.58128302316], CI_upper=[75000.33816046496, 77903.12349284669, 80950.81371576567]
+2025-12-18 22:31:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73501.2219440937, 76404.00727647543, 79451.69749939442], CI_lower: [72002.10572772245, 74904.89106010417, 77952.58128302316], CI_upper: [75000.33816046496, 77903.12349284669, 80950.81371576567]
+2025-12-18 22:31:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 72002.10572772245, 74904.89106010417, 77952.58128302316], upper=[np.float64(43910.47068690096), 75000.33816046496, 77903.12349284669, 80950.81371576567]
+2025-12-18 22:31:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 74082.59576034546, 2025: 77391.89016342163, 2026: 80953.7296257019}, values=[74082.59576034546, 77391.89016342163, 80953.7296257019], CI_lower=[72617.48444998031, 75926.77885305649, 79488.61831533676], CI_upper=[75547.7070707106, 78857.00147378678, 82418.84093606705]
+2025-12-18 22:31:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74082.59576034546, 77391.89016342163, 80953.7296257019], CI_lower: [72617.48444998031, 75926.77885305649, 79488.61831533676], CI_upper: [75547.7070707106, 78857.00147378678, 82418.84093606705]
+2025-12-18 22:31:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 72617.48444998031, 75926.77885305649, 79488.61831533676], upper=[np.float64(43910.47068690096), 75547.7070707106, 78857.00147378678, 82418.84093606705]
+2025-12-18 22:31:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 67994.36892061283, 2025: 67994.36892061283, 2026: 67994.36892061283}, values=[67994.36892061283, 67994.36892061283, 67994.36892061283], CI_lower=[65404.48314903426, 65404.48314903426, 65404.48314903426], CI_upper=[70584.2546921914, 70584.2546921914, 70584.2546921914]
+2025-12-18 22:31:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [67994.36892061283, 67994.36892061283, 67994.36892061283], CI_lower: [65404.48314903426, 65404.48314903426, 65404.48314903426], CI_upper: [70584.2546921914, 70584.2546921914, 70584.2546921914]
+2025-12-18 22:31:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 65404.48314903426, 65404.48314903426, 65404.48314903426], upper=[np.float64(43910.47068690096), 70584.2546921914, 70584.2546921914, 70584.2546921914]
+2025-12-18 22:31:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 64887.62366901456, 2025: 64887.62366901456, 2026: 64887.62366901456}, values=[64887.62366901456, 64887.62366901456, 64887.62366901456], CI_lower=[61137.28477183995, 61137.28477183995, 61137.28477183995], CI_upper=[68637.96256618918, 68637.96256618918, 68637.96256618918]
+2025-12-18 22:31:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64887.62366901456, 64887.62366901456, 64887.62366901456], CI_lower: [61137.28477183995, 61137.28477183995, 61137.28477183995], CI_upper: [68637.96256618918, 68637.96256618918, 68637.96256618918]
+2025-12-18 22:31:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 61137.28477183995, 61137.28477183995, 61137.28477183995], upper=[np.float64(43910.47068690096), 68637.96256618918, 68637.96256618918, 68637.96256618918]
+2025-12-18 22:31:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 69213.68989848137, 2025: 69213.68989848137, 2026: 69213.68989848137}, values=[69213.68989848137, 69213.68989848137, 69213.68989848137], CI_lower=[67158.10857066124, 67158.10857066124, 67158.10857066124], CI_upper=[71269.27122630151, 71269.27122630151, 71269.27122630151]
+2025-12-18 22:31:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69213.68989848137, 69213.68989848137, 69213.68989848137], CI_lower: [67158.10857066124, 67158.10857066124, 67158.10857066124], CI_upper: [71269.27122630151, 71269.27122630151, 71269.27122630151]
+2025-12-18 22:31:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 67158.10857066124, 67158.10857066124, 67158.10857066124], upper=[np.float64(43910.47068690096), 71269.27122630151, 71269.27122630151, 71269.27122630151]
+2025-12-18 22:31:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 73631.12479619758, 2025: 75357.50230065676, 2026: 77083.79655366568}, values=[73631.12479619758, 75357.50230065676, 77083.79655366568], CI_lower=[51875.585983295794, 53601.96348775498, 55328.257740763904], CI_upper=[95386.66360909936, 97113.04111355855, 98839.33536656747]
+2025-12-18 22:31:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73631.12479619758, 75357.50230065676, 77083.79655366568], CI_lower: [51875.585983295794, 53601.96348775498, 55328.257740763904], CI_upper: [95386.66360909936, 97113.04111355855, 98839.33536656747]
+2025-12-18 22:31:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 51875.585983295794, 53601.96348775498, 55328.257740763904], upper=[np.float64(43910.47068690096), 95386.66360909936, 97113.04111355855, 98839.33536656747]
+2025-12-18 22:31:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 74636.96830389266, 2025: 78187.31993835082, 2026: 81737.67157280899}, values=[74636.96830389266, 78187.31993835082, 81737.67157280899], CI_lower=[72304.909597292, 75855.26123175016, 79405.61286620834], CI_upper=[76969.02701049332, 80519.37864495147, 84069.73027940965]
+2025-12-18 22:31:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74636.96830389266, 78187.31993835082, 81737.67157280899], CI_lower: [72304.909597292, 75855.26123175016, 79405.61286620834], CI_upper: [76969.02701049332, 80519.37864495147, 84069.73027940965]
+2025-12-18 22:31:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43910.47068690096), 72304.909597292, 75855.26123175016, 79405.61286620834], upper=[np.float64(43910.47068690096), 76969.02701049332, 80519.37864495147, 84069.73027940965]
+2025-12-18 22:31:47 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 22:31:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 69703.4964067312, 2025: 71240.0187799558, 2026: 72776.54115318088}, values=[69703.4964067312, 71240.0187799558, 72776.54115318088], CI_lower=[65949.88196039453, 67486.40433361914, 69022.92670684421], CI_upper=[73457.11085306786, 74993.63322629247, 76530.15559951754]
+2025-12-18 22:31:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69703.4964067312, 71240.0187799558, 72776.54115318088], CI_lower: [65949.88196039453, 67486.40433361914, 69022.92670684421], CI_upper: [73457.11085306786, 74993.63322629247, 76530.15559951754]
+2025-12-18 22:31:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 65949.88196039453, 67486.40433361914, 69022.92670684421], upper=[np.float64(46871.89336716788), 73457.11085306786, 74993.63322629247, 76530.15559951754]
+2025-12-18 22:31:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 74254.24607151747, 2025: 77303.69544738531, 2026: 80512.28364360332}, values=[74254.24607151747, 77303.69544738531, 80512.28364360332], CI_lower=[72735.2988476485, 75784.74822351635, 78993.33641973436], CI_upper=[75773.19329538643, 78822.64267125427, 82031.23086747229]
+2025-12-18 22:31:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74254.24607151747, 77303.69544738531, 80512.28364360332], CI_lower: [72735.2988476485, 75784.74822351635, 78993.33641973436], CI_upper: [75773.19329538643, 78822.64267125427, 82031.23086747229]
+2025-12-18 22:31:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 72735.2988476485, 75784.74822351635, 78993.33641973436], upper=[np.float64(46871.89336716788), 75773.19329538643, 78822.64267125427, 82031.23086747229]
+2025-12-18 22:31:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 74579.83255672455, 2025: 77856.92328548431, 2026: 81353.42959499359}, values=[74579.83255672455, 77856.92328548431, 81353.42959499359], CI_lower=[73071.32537773805, 76348.41610649781, 79844.92241600709], CI_upper=[76088.33973571105, 79365.43046447082, 82861.9367739801]
+2025-12-18 22:31:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74579.83255672455, 77856.92328548431, 81353.42959499359], CI_lower: [73071.32537773805, 76348.41610649781, 79844.92241600709], CI_upper: [76088.33973571105, 79365.43046447082, 82861.9367739801]
+2025-12-18 22:31:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 73071.32537773805, 76348.41610649781, 79844.92241600709], upper=[np.float64(46871.89336716788), 76088.33973571105, 79365.43046447082, 82861.9367739801]
+2025-12-18 22:31:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 68433.93196383168, 2025: 68433.93196383168, 2026: 68433.93196383168}, values=[68433.93196383168, 68433.93196383168, 68433.93196383168], CI_lower=[65817.56592709692, 65817.56592709692, 65817.56592709692], CI_upper=[71050.29800056644, 71050.29800056644, 71050.29800056644]
+2025-12-18 22:31:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [68433.93196383168, 68433.93196383168, 68433.93196383168], CI_lower: [65817.56592709692, 65817.56592709692, 65817.56592709692], CI_upper: [71050.29800056644, 71050.29800056644, 71050.29800056644]
+2025-12-18 22:31:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 65817.56592709692, 65817.56592709692, 65817.56592709692], upper=[np.float64(46871.89336716788), 71050.29800056644, 71050.29800056644, 71050.29800056644]
+2025-12-18 22:31:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 65283.05642694284, 2025: 65283.05642694284, 2026: 65283.05642694284}, values=[65283.05642694284, 65283.05642694284, 65283.05642694284], CI_lower=[61335.90484009617, 61335.90484009617, 61335.90484009617], CI_upper=[69230.20801378951, 69230.20801378951, 69230.20801378951]
+2025-12-18 22:31:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65283.05642694284, 65283.05642694284, 65283.05642694284], CI_lower: [61335.90484009617, 61335.90484009617, 61335.90484009617], CI_upper: [69230.20801378951, 69230.20801378951, 69230.20801378951]
+2025-12-18 22:31:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 61335.90484009617, 61335.90484009617, 61335.90484009617], upper=[np.float64(46871.89336716788), 69230.20801378951, 69230.20801378951, 69230.20801378951]
+2025-12-18 22:31:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 69682.5124095439, 2025: 69682.5124095439, 2026: 69682.5124095439}, values=[69682.5124095439, 69682.5124095439, 69682.5124095439], CI_lower=[67664.11097426571, 67664.11097426571, 67664.11097426571], CI_upper=[71700.91384482208, 71700.91384482208, 71700.91384482208]
+2025-12-18 22:31:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69682.5124095439, 69682.5124095439, 69682.5124095439], CI_lower: [67664.11097426571, 67664.11097426571, 67664.11097426571], CI_upper: [71700.91384482208, 71700.91384482208, 71700.91384482208]
+2025-12-18 22:31:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 67664.11097426571, 67664.11097426571, 67664.11097426571], upper=[np.float64(46871.89336716788), 71700.91384482208, 71700.91384482208, 71700.91384482208]
+2025-12-18 22:31:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 74130.94140219086, 2025: 75855.4804831206, 2026: 77579.9668200993}, values=[74130.94140219086, 75855.4804831206, 77579.9668200993], CI_lower=[52106.57977379572, 53831.11885472546, 55555.60519170416], CI_upper=[96155.303030586, 97879.84211151574, 99604.32844849445]
+2025-12-18 22:31:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74130.94140219086, 75855.4804831206, 77579.9668200993], CI_lower: [52106.57977379572, 53831.11885472546, 55555.60519170416], CI_upper: [96155.303030586, 97879.84211151574, 99604.32844849445]
+2025-12-18 22:31:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 52106.57977379572, 53831.11885472546, 55555.60519170416], upper=[np.float64(46871.89336716788), 96155.303030586, 97879.84211151574, 99604.32844849445]
+2025-12-18 22:31:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 75262.08810369828, 2025: 78871.78644202591, 2026: 82481.48478035355}, values=[75262.08810369828, 78871.78644202591, 82481.48478035355], CI_lower=[72932.94822648527, 76542.64656481291, 80152.34490314055], CI_upper=[77591.22798091128, 81200.92631923892, 84810.62465756656]
+2025-12-18 22:31:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [75262.08810369828, 78871.78644202591, 82481.48478035355], CI_lower: [72932.94822648527, 76542.64656481291, 80152.34490314055], CI_upper: [77591.22798091128, 81200.92631923892, 84810.62465756656]
+2025-12-18 22:31:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46871.89336716788), 72932.94822648527, 76542.64656481291, 80152.34490314055], upper=[np.float64(46871.89336716788), 77591.22798091128, 81200.92631923892, 84810.62465756656]
+2025-12-18 22:31:54 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 22:31:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 42.959108678396944, 2025: 43.1823195060619, 2026: 43.40553033372686}, values=[42.959108678396944, 43.1823195060619, 43.40553033372686], CI_lower=[42.706937184893675, 42.93014801255863, 43.15335884022359], CI_upper=[43.21128017190021, 43.43449099956517, 43.65770182723013]
+2025-12-18 22:31:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.959108678396944, 43.1823195060619, 43.40553033372686], CI_lower: [42.706937184893675, 42.93014801255863, 43.15335884022359], CI_upper: [43.21128017190021, 43.43449099956517, 43.65770182723013]
+2025-12-18 22:31:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 42.706937184893675, 42.93014801255863, 43.15335884022359], upper=[np.float64(42.38546914357683), 43.21128017190021, 43.43449099956517, 43.65770182723013]
+2025-12-18 22:31:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 43.03601268374041, 2025: 43.284790759632415, 2026: 43.53625815345731}, values=[43.03601268374041, 43.284790759632415, 43.53625815345731], CI_lower=[42.79060362607645, 43.03938170196845, 43.29084909579335], CI_upper=[43.28142174140437, 43.53019981729638, 43.781667211121274]
+2025-12-18 22:31:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.03601268374041, 43.284790759632415, 43.53625815345731], CI_lower: [42.79060362607645, 43.03938170196845, 43.29084909579335], CI_upper: [43.28142174140437, 43.53019981729638, 43.781667211121274]
+2025-12-18 22:31:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 42.79060362607645, 43.03938170196845, 43.29084909579335], upper=[np.float64(42.38546914357683), 43.28142174140437, 43.53019981729638, 43.781667211121274]
+2025-12-18 22:31:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 43.204056633636355, 2025: 43.57035477273166, 2026: 43.97046152129769}, values=[43.204056633636355, 43.57035477273166, 43.97046152129769], CI_lower=[42.97645982395254, 43.342757963047845, 43.742864711613876], CI_upper=[43.43165344332017, 43.79795158241548, 44.19805833098151]
+2025-12-18 22:31:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.204056633636355, 43.57035477273166, 43.97046152129769], CI_lower: [42.97645982395254, 43.342757963047845, 43.742864711613876], CI_upper: [43.43165344332017, 43.79795158241548, 44.19805833098151]
+2025-12-18 22:31:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 42.97645982395254, 43.342757963047845, 43.742864711613876], upper=[np.float64(42.38546914357683), 43.43165344332017, 43.79795158241548, 44.19805833098151]
+2025-12-18 22:31:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 42.5798972850061, 2025: 42.5798972850061, 2026: 42.5798972850061}, values=[42.5798972850061, 42.5798972850061, 42.5798972850061], CI_lower=[42.21690233472671, 42.21690233472671, 42.21690233472671], CI_upper=[42.942892235285484, 42.942892235285484, 42.942892235285484]
+2025-12-18 22:31:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.5798972850061, 42.5798972850061, 42.5798972850061], CI_lower: [42.21690233472671, 42.21690233472671, 42.21690233472671], CI_upper: [42.942892235285484, 42.942892235285484, 42.942892235285484]
+2025-12-18 22:31:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 42.21690233472671, 42.21690233472671, 42.21690233472671], upper=[np.float64(42.38546914357683), 42.942892235285484, 42.942892235285484, 42.942892235285484]
+2025-12-18 22:31:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42.165769670117804, 2025: 42.165769670117804, 2026: 42.165769670117804}, values=[42.165769670117804, 42.165769670117804, 42.165769670117804], CI_lower=[41.78620455920448, 41.78620455920448, 41.78620455920448], CI_upper=[42.54533478103113, 42.54533478103113, 42.54533478103113]
+2025-12-18 22:31:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.165769670117804, 42.165769670117804, 42.165769670117804], CI_lower: [41.78620455920448, 41.78620455920448, 41.78620455920448], CI_upper: [42.54533478103113, 42.54533478103113, 42.54533478103113]
+2025-12-18 22:31:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 41.78620455920448, 41.78620455920448, 41.78620455920448], upper=[np.float64(42.38546914357683), 42.54533478103113, 42.54533478103113, 42.54533478103113]
+2025-12-18 22:31:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 42.64968991249708, 2025: 42.64968991249708, 2026: 42.64968991249708}, values=[42.64968991249708, 42.64968991249708, 42.64968991249708], CI_lower=[42.3169572024178, 42.3169572024178, 42.3169572024178], CI_upper=[42.982422622576365, 42.982422622576365, 42.982422622576365]
+2025-12-18 22:31:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.64968991249708, 42.64968991249708, 42.64968991249708], CI_lower: [42.3169572024178, 42.3169572024178, 42.3169572024178], CI_upper: [42.982422622576365, 42.982422622576365, 42.982422622576365]
+2025-12-18 22:31:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 42.3169572024178, 42.3169572024178, 42.3169572024178], upper=[np.float64(42.38546914357683), 42.982422622576365, 42.982422622576365, 42.982422622576365]
+2025-12-18 22:31:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 43.00372252948537, 2025: 43.23817500801938, 2026: 43.47261875443402}, values=[43.00372252948537, 43.23817500801938, 43.47261875443402], CI_lower=[24.46913302153808, 24.70358550007209, 24.93802924648673], CI_upper=[61.53831203743266, 61.77276451596667, 62.00720826238131]
+2025-12-18 22:31:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.00372252948537, 43.23817500801938, 43.47261875443402], CI_lower: [24.46913302153808, 24.70358550007209, 24.93802924648673], CI_upper: [61.53831203743266, 61.77276451596667, 62.00720826238131]
+2025-12-18 22:31:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 24.46913302153808, 24.70358550007209, 24.93802924648673], upper=[np.float64(42.38546914357683), 61.53831203743266, 61.77276451596667, 62.00720826238131]
+2025-12-18 22:32:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 42.881524145864695, 2025: 43.116943715189386, 2026: 43.35236328451408}, values=[42.881524145864695, 43.116943715189386, 43.35236328451408], CI_lower=[42.561847434074295, 42.797267003398986, 43.03268657272368], CI_upper=[43.201200857655095, 43.436620426979786, 43.67203999630448]
+2025-12-18 22:32:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.881524145864695, 43.116943715189386, 43.35236328451408], CI_lower: [42.561847434074295, 42.797267003398986, 43.03268657272368], CI_upper: [43.201200857655095, 43.436620426979786, 43.67203999630448]
+2025-12-18 22:32:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.38546914357683), 42.561847434074295, 42.797267003398986, 43.03268657272368], upper=[np.float64(42.38546914357683), 43.201200857655095, 43.436620426979786, 43.67203999630448]
+2025-12-18 22:32:00 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 22:32:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.89261781299935, 2025: 37.83314786215749, 2026: 37.773677911315644}, values=[37.89261781299935, 37.83314786215749, 37.773677911315644], CI_lower=[37.446796976119145, 37.38732702527729, 37.32785707443544], CI_upper=[38.33843864987955, 38.27896869903769, 38.219498748195846]
+2025-12-18 22:32:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.89261781299935, 37.83314786215749, 37.773677911315644], CI_lower: [37.446796976119145, 37.38732702527729, 37.32785707443544], CI_upper: [38.33843864987955, 38.27896869903769, 38.219498748195846]
+2025-12-18 22:32:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 37.446796976119145, 37.38732702527729, 37.32785707443544], upper=[np.float64(37.93480524890648), 38.33843864987955, 38.27896869903769, 38.219498748195846]
+2025-12-18 22:32:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.177366937608895, 2025: 38.212563727673114, 2026: 38.25771813858955}, values=[38.177366937608895, 38.212563727673114, 38.25771813858955], CI_lower=[37.786694237010074, 37.821891027074294, 37.86704543799073], CI_upper=[38.568039638207715, 38.603236428271934, 38.64839083918837]
+2025-12-18 22:32:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.177366937608895, 38.212563727673114, 38.25771813858955], CI_lower: [37.786694237010074, 37.821891027074294, 37.86704543799073], CI_upper: [38.568039638207715, 38.603236428271934, 38.64839083918837]
+2025-12-18 22:32:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 37.786694237010074, 37.821891027074294, 37.86704543799073], upper=[np.float64(37.93480524890648), 38.568039638207715, 38.603236428271934, 38.64839083918837]
+2025-12-18 22:32:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 37.552727829664946, 2025: 37.15121142938733, 2026: 36.64401700720191}, values=[37.552727829664946, 37.15121142938733, 36.64401700720191], CI_lower=[37.36223036014283, 36.96071395986522, 36.453519537679796], CI_upper=[37.74322529918706, 37.341708898909445, 36.834514476724024]
+2025-12-18 22:32:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.552727829664946, 37.15121142938733, 36.64401700720191], CI_lower: [37.36223036014283, 36.96071395986522, 36.453519537679796], CI_upper: [37.74322529918706, 37.341708898909445, 36.834514476724024]
+2025-12-18 22:32:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 37.36223036014283, 36.96071395986522, 36.453519537679796], upper=[np.float64(37.93480524890648), 37.74322529918706, 37.341708898909445, 36.834514476724024]
+2025-12-18 22:32:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 38.04160132113591, 2025: 38.04160132113591, 2026: 38.04160132113591}, values=[38.04160132113591, 38.04160132113591, 38.04160132113591], CI_lower=[37.70149485282983, 37.70149485282983, 37.70149485282983], CI_upper=[38.38170778944198, 38.38170778944198, 38.38170778944198]
+2025-12-18 22:32:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.04160132113591, 38.04160132113591, 38.04160132113591], CI_lower: [37.70149485282983, 37.70149485282983, 37.70149485282983], CI_upper: [38.38170778944198, 38.38170778944198, 38.38170778944198]
+2025-12-18 22:32:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 37.70149485282983, 37.70149485282983, 37.70149485282983], upper=[np.float64(37.93480524890648), 38.38170778944198, 38.38170778944198, 38.38170778944198]
+2025-12-18 22:32:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 38.1511391951777, 2025: 38.1511391951777, 2026: 38.1511391951777}, values=[38.1511391951777, 38.1511391951777, 38.1511391951777], CI_lower=[37.829529998386185, 37.829529998386185, 37.829529998386185], CI_upper=[38.47274839196921, 38.47274839196921, 38.47274839196921]
+2025-12-18 22:32:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.1511391951777, 38.1511391951777, 38.1511391951777], CI_lower: [37.829529998386185, 37.829529998386185, 37.829529998386185], CI_upper: [38.47274839196921, 38.47274839196921, 38.47274839196921]
+2025-12-18 22:32:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 37.829529998386185, 37.829529998386185, 37.829529998386185], upper=[np.float64(37.93480524890648), 38.47274839196921, 38.47274839196921, 38.47274839196921]
+2025-12-18 22:32:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 38.02674775510504, 2025: 38.02674775510504, 2026: 38.02674775510504}, values=[38.02674775510504, 38.02674775510504, 38.02674775510504], CI_lower=[37.692363982779966, 37.692363982779966, 37.692363982779966], CI_upper=[38.36113152743012, 38.36113152743012, 38.36113152743012]
+2025-12-18 22:32:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.02674775510504, 38.02674775510504, 38.02674775510504], CI_lower: [37.692363982779966, 37.692363982779966, 37.692363982779966], CI_upper: [38.36113152743012, 38.36113152743012, 38.36113152743012]
+2025-12-18 22:32:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 37.692363982779966, 37.692363982779966, 37.692363982779966], upper=[np.float64(37.93480524890648), 38.36113152743012, 38.36113152743012, 38.36113152743012]
+2025-12-18 22:32:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.8517192445755, 2025: 37.780467444697265, 2026: 37.71936426687231}, values=[37.8517192445755, 37.780467444697265, 37.71936426687231], CI_lower=[19.10390699037035, 19.032655190492118, 18.971552012667164], CI_upper=[56.59953149878065, 56.52827969890241, 56.46717652107746]
+2025-12-18 22:32:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.8517192445755, 37.780467444697265, 37.71936426687231], CI_lower: [19.10390699037035, 19.032655190492118, 18.971552012667164], CI_upper: [56.59953149878065, 56.52827969890241, 56.46717652107746]
+2025-12-18 22:32:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 19.10390699037035, 19.032655190492118, 18.971552012667164], upper=[np.float64(37.93480524890648), 56.59953149878065, 56.52827969890241, 56.46717652107746]
+2025-12-18 22:32:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.83205122033875, 2025: 37.72929718985602, 2026: 37.6265431593733}, values=[37.83205122033875, 37.72929718985602, 37.6265431593733], CI_lower=[37.48850850156351, 37.38575447108078, 37.28300044059806], CI_upper=[38.17559393911399, 38.07283990863126, 37.97008587814854]
+2025-12-18 22:32:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.83205122033875, 37.72929718985602, 37.6265431593733], CI_lower: [37.48850850156351, 37.38575447108078, 37.28300044059806], CI_upper: [38.17559393911399, 38.07283990863126, 37.97008587814854]
+2025-12-18 22:32:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.93480524890648), 37.48850850156351, 37.38575447108078, 37.28300044059806], upper=[np.float64(37.93480524890648), 38.17559393911399, 38.07283990863126, 37.97008587814854]
+2025-12-18 22:32:09 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 22:32:09 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 22:39:30 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 24027.669921875, 'mse': 2449675008.0, 'rmse': 49494.191659224016, 'r2': 0.2400655895471573}
+2025-12-18 22:39:32 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 22:44:12 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.7249391078948975, 'mse': 69.80990600585938, 'rmse': 8.3552322532566, 'r2': 0.3118669092655182}
+2025-12-18 22:44:14 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 22:49:48 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 14.987744331359863, 'mse': 600.3284301757812, 'rmse': 24.501600563550564, 'r2': -5.5364909172058105}
+2025-12-18 22:49:49 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 22:50:27 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 22:50:29 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 22:50:29 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 22:50:29 [DEBUG] census_eda.main:  Running LLM analysis for state: Virginia
+2025-12-18 22:50:29 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 22:50:29 [INFO] census_eda.ml: [LLM] State context loaded: Virginia
+2025-12-18 22:50:29 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [API] Total request: ~2423 tokens (system: ~2242, user: ~181)
+2025-12-18 22:50:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:50:50 [DEBUG] census_eda.ml: [API] Received response: 4511 chars
+2025-12-18 22:50:50 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4511 chars)
+2025-12-18 22:50:53 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [LLM] User prompt: 1286 chars (~321 tokens)
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [API] Total request: ~2563 tokens (system: ~2242, user: ~321)
+2025-12-18 22:50:53 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:51:01 [DEBUG] census_eda.ml: [API] Received response: 3146 chars
+2025-12-18 22:51:01 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3146 chars)
+2025-12-18 22:51:02 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [LLM] User prompt: 2194 chars (~548 tokens)
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [API] Total request: ~2790 tokens (system: ~2242, user: ~548)
+2025-12-18 22:51:02 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [API] Received response: 4407 chars
+2025-12-18 22:51:15 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4407 chars)
+2025-12-18 22:51:15 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [API] Total request: ~2582 tokens (system: ~2242, user: ~340)
+2025-12-18 22:51:15 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [API] Received response: 4256 chars
+2025-12-18 22:51:31 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4256 chars)
+2025-12-18 22:51:31 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [API] Total request: ~2432 tokens (system: ~2242, user: ~190)
+2025-12-18 22:51:31 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [API] Received response: 4012 chars
+2025-12-18 22:51:42 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4012 chars)
+2025-12-18 22:51:42 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [LLM] User prompt: 8755 chars (~2188 tokens)
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [API] Total request: ~4430 tokens (system: ~2242, user: ~2188)
+2025-12-18 22:51:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [API] Received response: 3157 chars
+2025-12-18 22:51:54 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3157 chars)
+2025-12-18 22:51:54 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [LLM] User prompt: 5415 chars (~1353 tokens)
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [API] Total request: ~3595 tokens (system: ~2242, user: ~1353)
+2025-12-18 22:51:54 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [API] Received response: 3261 chars
+2025-12-18 22:52:03 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3261 chars)
+2025-12-18 22:52:03 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [LLM] User prompt: 753 chars (~188 tokens)
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [API] Total request: ~2430 tokens (system: ~2242, user: ~188)
+2025-12-18 22:52:03 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [API] Received response: 3525 chars
+2025-12-18 22:52:15 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3525 chars)
+2025-12-18 22:52:15 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [LLM] User prompt: 5665 chars (~1416 tokens)
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [API] Total request: ~3658 tokens (system: ~2242, user: ~1416)
+2025-12-18 22:52:15 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [API] Received response: 4316 chars
+2025-12-18 22:52:28 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4316 chars)
+2025-12-18 22:52:28 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [LLM] User prompt: 1829 chars (~457 tokens)
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [API] Total request: ~2699 tokens (system: ~2242, user: ~457)
+2025-12-18 22:52:28 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [API] Received response: 3859 chars
+2025-12-18 22:52:40 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3859 chars)
+2025-12-18 22:52:40 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [LLM] User prompt: 1642 chars (~410 tokens)
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Virginia
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Virginia
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4080 chars
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1020
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Virginia
+
+ECONOMIC PROFILE:
+  Industries: Federal government and contracting (Northern Virginia), Military and defense (Hampton Roads), Technology and data centers (Northern Virginia), Agriculture (poultry, tobacco, soybeans), Port operations and logistics
+  Trends: Strong growth 2011-2023, especially Northern Virginia. Federal government stabilizing force. Tech boom (data centers, Amazon HQ2). Port expansion. 2023 concerns about over-reliance on government
+  Income: Above national median, driven by Northern Virginia (highest in nation). Hampton Roads near median. Rural areas below. Extreme inequality between regions
+  Dominant Sector: Professional and business services (government contracting)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually. Concentrated in Northern Virginia and Hampton Roads. Rural areas declining. Slowing growth post-2020
+  Migration: Northern Virginia gains from international immigration and domestic (government workers). Rural to urban migration. Southwest Virginia declining
+  Education: High bachelor's attainment, especially Northern Virginia. University of Virginia, Virginia Tech, William & Mary strong. Sharp urban-rural education divide
+
+HOUSING MARKET:
+  Market: Northern Virginia extremely expensive (Loudoun and Fairfax highest median income counties in US). Hampton Roads moderate. Richmond appreciating. Rural affordable
+  Affordability: Northern Virginia expensive throughout 2011-2023, accelerating. Hampton Roads moderate appreciation. Richmond surge 2020-2023. Now regional crisis
+  Challenges: Northern Virginia severe crisis, Geographic inequality, Data centers consuming land, Historic preservation limits development (Richmond), Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly, right-to-work. Moderate regulations. Recent Democratic shift brings progressive policies. Pro-military. Federal government focus
+  Housing: Local control traditionally strong. Northern Virginia addressing affordability. Richmond reforms. State intervention increasing for housing supply
+  Labor: Right-to-work state, $12 minimum wage (rising to $15 by 2026), increasingly progressive under Democratic control
+
+REGIONAL:
+  Geography: Northern Virginia (D.C. suburbs, tech), Tidewater/Hampton Roads (military, ports), Richmond (capital, finance), Shenandoah Valley, Southwest Virginia (Appalachia, coal)
+  Urban/Rural: 76% urban in major metros, 24% rural. Extreme concentration in Northern Virginia, Hampton Roads, Richmond corridor
+  Infrastructure: Excellent infrastructure in Northern Virginia. Dulles and Reagan airports. Port of Virginia (Hampton Roads) major East Coast port. I-95 corridor critical
+
+HISTORICAL:
+  Events: 2011-2013: Federal sequestration fears, Pentagon budget cuts, defense contractor layoffs, slow growth; 2014-2016: Economic recovery, Amazon HQ2 search begins, data center boom accelerates in Northern Virginia; 2017-2019: Amazon HQ2 announced (Arlington, 25,000 jobs, $2.5B), Democratic gains in state government, Medicaid expansion, data center investments surge; 2021-2023: Amazon HQ2 construction, Republican governor (Youngkin) elected 2021, data center industry $31.4B impact, federal workforce changes 2025
+  Shocks: 2013 federal sequestration. 2020 pandemic (limited impact due to federal government). 2025 federal workforce reductions concerns
+  Transitions: Coal decline in Southwest Virginia devastating. Data center industry explosive growth. Defense contracting evolving. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income (driven by Northern Virginia). High educational attainment. Low unemployment. Extreme regional inequality. Housing unaffordable in Northern Virginia
+  Peer States: Maryland (government, diverse), North Carolina (growth, tech), Colorado (educated, high income metros)
+  Unique: Pentagon and federal government concentration unique. Data center capital of world (Loudoun County). Amazon HQ2 major investment. Highest median income counties in US (Northern Virginia). Extreme urban-rural divide
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Virginia
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [PROMPT] State context injected (4080 chars)
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8968 chars (~2242 tokens)
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [API] Total request: ~2652 tokens (system: ~2242, user: ~410)
+2025-12-18 22:52:40 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 22:52:53 [DEBUG] census_eda.ml: [API] Received response: 4893 chars
+2025-12-18 22:52:53 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4893 chars)
+2025-12-18 22:52:53 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 22:52:53 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 22:52:53 [INFO] census_eda.main: [REPORT] Generated: report_Virginia_population_20251218_225253.txt
+2025-12-18 22:52:53 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Virginia!
+2025-12-18 22:52:55 [INFO] census_eda.memory: process_Virginia_population_1-year:EXIT: 17969.7MB (delta: -4884.6MB)
+2025-12-18 22:52:56 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 22:52:58 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 22:53:01 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 22:53:03 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 22:53:06 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 22:53:08 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 22:53:11 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 22:53:12 [INFO] census_eda.memory: Cleared all caches

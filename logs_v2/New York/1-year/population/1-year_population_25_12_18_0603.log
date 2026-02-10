@@ -1,0 +1,1347 @@
+2025-12-18 06:03:36 [INFO] census_eda: Logging context set: state=New York, survey=population, scope=1-year
+2025-12-18 06:03:36 [INFO] census_eda: Log file: ./logs/New York/1-year/population/1-year_population_25_12_18_0603.log
+2025-12-18 06:03:36 [INFO] census_eda.main: ======================================================================
+2025-12-18 06:03:36 [INFO] census_eda.main: [POPULATION] Processing New York (1-year)...
+2025-12-18 06:03:36 [INFO] census_eda.main: ======================================================================
+2025-12-18 06:03:36 [INFO] census_eda.memory: process_New York_population_1-year:ENTER: 16027.8MB (delta: -101.2MB)
+2025-12-18 06:03:36 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 06:03:36 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/36/*/*.csv
+2025-12-18 06:03:36 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 06:03:36 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pny.csv
+2025-12-18 06:03:40 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 06:03:40 [VERBOSE] census_eda.processing.loader:   -> Loaded 196,314 rows, 260 columns
+2025-12-18 06:03:40 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p36.csv
+2025-12-18 06:03:44 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 06:03:44 [VERBOSE] census_eda.processing.loader:   -> Loaded 196,585 rows, 260 columns
+2025-12-18 06:03:44 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pny.csv
+2025-12-18 06:03:48 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 06:03:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 196,276 rows, 260 columns
+2025-12-18 06:03:48 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pny.csv
+2025-12-18 06:03:52 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 06:03:52 [VERBOSE] census_eda.processing.loader:   -> Loaded 196,165 rows, 260 columns
+2025-12-18 06:03:52 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pny.csv
+2025-12-18 06:03:56 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 06:03:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 187,057 rows, 260 columns
+2025-12-18 06:03:56 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pny.csv
+2025-12-18 06:04:00 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 06:04:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 188,767 rows, 260 columns
+2025-12-18 06:04:00 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p36.csv
+2025-12-18 06:04:04 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 06:04:04 [VERBOSE] census_eda.processing.loader:   -> Loaded 196,967 rows, 260 columns
+2025-12-18 06:04:04 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pny.csv
+2025-12-18 06:04:08 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 06:04:08 [VERBOSE] census_eda.processing.loader:   -> Loaded 186,803 rows, 260 columns
+2025-12-18 06:04:08 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pny.csv
+2025-12-18 06:04:12 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 06:04:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 196,104 rows, 260 columns
+2025-12-18 06:04:12 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p36.csv
+2025-12-18 06:04:16 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 06:04:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 198,788 rows, 260 columns
+2025-12-18 06:04:16 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p36.csv
+2025-12-18 06:04:21 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 06:04:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 203,891 rows, 260 columns
+2025-12-18 06:04:21 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p36.csv
+2025-12-18 06:04:25 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 06:04:25 [VERBOSE] census_eda.processing.loader:   -> Loaded 200,067 rows, 260 columns
+2025-12-18 06:04:25 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p36.csv
+2025-12-18 06:04:29 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 06:04:29 [VERBOSE] census_eda.processing.loader:   -> Loaded 206,408 rows, 260 columns
+2025-12-18 06:04:29 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pny.csv
+2025-12-18 06:04:33 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 06:04:33 [VERBOSE] census_eda.processing.loader:   -> Loaded 195,742 rows, 260 columns
+2025-12-18 06:04:33 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pny.csv
+2025-12-18 06:04:37 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 06:04:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 190,154 rows, 260 columns
+2025-12-18 06:04:37 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pny.csv
+2025-12-18 06:04:42 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 06:04:42 [VERBOSE] census_eda.processing.loader:   -> Loaded 197,174 rows, 260 columns
+2025-12-18 06:04:42 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 06:05:04 [VERBOSE] census_eda.processing.loader: Combined into 3,133,262 total rows, 260 columns
+2025-12-18 06:05:04 [INFO] census_eda.main: Loaded 3,133,262 records
+2025-12-18 06:05:04 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 3133262 valid, 16 unique
+2025-12-18 06:05:05 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 06:05:17 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 06:05:18 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 06:05:18 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 06:05:29 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 06:05:30 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 06:05:39 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 06:05:40 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 06:05:41 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 06:05:41 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 06:05:43 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 06:05:44 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 06:05:45 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 06:05:46 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 06:05:48 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 06:05:48 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 06:05:48 [DEBUG] census_eda.main: Feature engineering complete: (3133262, 292)
+2025-12-18 06:05:49 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 06:05:49 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 06:13:00 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 06:13:00 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 06:13:00 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(3133262, 292)
+2025-12-18 06:13:00 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 06:13:00 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 3133262
+2025-12-18 06:13:00 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 06:13:01 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(3133262, 292)
+2025-12-18 06:13:01 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(187057), np.int64(2008): np.int64(186803), np.int64(2009): np.int64(188767), np.int64(2010): np.int64(190154), np.int64(2011): np.int64(197174), np.int64(2012): np.int64(196314), np.int64(2013): np.int64(196165), np.int64(2014): np.int64(196276), np.int64(2015): np.int64(195742), np.int64(2016): np.int64(196104), np.int64(2017): np.int64(196585), np.int64(2018): np.int64(196967), np.int64(2019): np.int64(198788), np.int64(2021): np.int64(200067), np.int64(2022): np.int64(203891), np.int64(2023): np.int64(206408)}
+2025-12-18 06:13:02 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(3133262, 292)
+2025-12-18 06:13:03 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 06:13:03 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 06:13:03 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 06:13:03 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 06:13:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 06:13:04 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 3133262 non-null values (zeros excluded if needed)
+2025-12-18 06:13:04 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 06:13:04 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 06:13:05 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 3133262 non-null values (zeros excluded if needed)
+2025-12-18 06:13:05 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2112.00
+2025-12-18 06:13:05 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 06:13:06 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 3133262 non-null values (zeros excluded if needed)
+2025-12-18 06:13:06 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-18 06:13:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 06:13:08 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 1327711 non-null values (zeros excluded if needed)
+2025-12-18 06:13:08 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 195.00
+2025-12-18 06:13:10 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 06:13:11 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 376203 non-null values (zeros excluded if needed)
+2025-12-18 06:13:11 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 401000.00
+2025-12-18 06:13:11 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 06:13:11 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 148579 non-null values (zeros excluded if needed)
+2025-12-18 06:13:11 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 84000.00
+2025-12-18 06:13:11 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 06:13:12 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 48612 non-null values (zeros excluded if needed)
+2025-12-18 06:13:12 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 06:13:12 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 06:13:12 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 346682 non-null values (zeros excluded if needed)
+2025-12-18 06:13:12 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 182000.00
+2025-12-18 06:13:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 06:13:15 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 141241 non-null values (zeros excluded if needed)
+2025-12-18 06:13:15 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 478000.00
+2025-12-18 06:13:15 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 06:13:15 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 94251 non-null values (zeros excluded if needed)
+2025-12-18 06:13:15 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 06:13:15 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 06:13:16 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 598553 non-null values (zeros excluded if needed)
+2025-12-18 06:13:16 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 06:13:16 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 06:13:18 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 1530593 non-null values (zeros excluded if needed)
+2025-12-18 06:13:18 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 770000.00
+2025-12-18 06:13:21 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 06:13:52 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 06:13:52 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 06:13:53 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 06:13:54 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 06:13:55 [DEBUG] census_eda.memory: Skipping sampling: 21573MB available (>16GB)
+2025-12-18 06:13:55 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 3133262 rows
+2025-12-18 06:23:18 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 06:23:18 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(3133262, 292)
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 3133262 non-null values
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 3133262 non-null values
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2112.00
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 3133262 non-null values
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 1327711 non-null values
+2025-12-18 06:23:19 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 195.00
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 376203 non-null values
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 401000.00
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 148579 non-null values
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 84000.00
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 48612 non-null values
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 346682 non-null values
+2025-12-18 06:23:22 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 182000.00
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 141241 non-null values
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 478000.00
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 94251 non-null values
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 598553 non-null values
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 1530593 non-null values
+2025-12-18 06:23:24 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 770000.00
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 1623252 non-null values
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 1311737 non-null values
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 590359 non-null values
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 2589251 non-null values
+2025-12-18 06:23:27 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 06:23:41 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 06:24:06 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 06:24:38 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 06:25:41 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 06:25:41 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 06:25:41 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 06:25:43 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 06:25:44 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 06:25:45 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 06:25:47 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 06:25:47 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 06:25:47 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 06:25:48 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 06:25:49 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 06:25:53 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 06:25:53 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 06:25:53 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 06:25:56 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 06:25:58 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 06:25:58 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 06:25:58 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 06:25:59 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 06:26:00 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 06:26:02 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 06:26:02 [DEBUG] census_eda.memory: Skipping sampling: 21633MB available (>16GB)
+2025-12-18 06:26:46 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 06:26:46 [DEBUG] census_eda.memory: Skipping sampling: 21632MB available (>16GB)
+2025-12-18 06:28:03 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 06:28:03 [DEBUG] census_eda.memory: Skipping sampling: 21625MB available (>16GB)
+2025-12-18 06:28:13 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 06:28:45 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 06:28:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 06:28:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 06:28:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 06:28:48 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 06:28:49 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 06:28:50 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 06:28:51 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 06:28:53 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 06:28:53 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 06:28:53 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 06:28:53 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 06:28:55 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 06:28:56 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 06:28:56 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 06:28:56 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 06:28:57 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 06:28:58 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 06:29:01 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 06:29:08 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 06:29:14 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 06:29:18 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 06:29:25 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 06:29:25 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 06:29:25 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 06:29:26 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 06:29:27 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 06:29:34 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 06:29:37 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 06:29:38 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 06:29:41 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 06:29:44 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 06:29:50 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 06:29:59 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 06:30:00 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 06:30:03 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/New_York/population/1-year/figures
+2025-12-18 06:30:04 [DEBUG] census_eda.memory: Skipping sampling: 21626MB available (>16GB)
+2025-12-18 06:30:04 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 06:30:04 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 06:30:04 [INFO] census_eda.memory: [ML-START]: 31516.9MB (delta: +15489.2MB)
+2025-12-18 06:30:04 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 06:30:04 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 06:30:04 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 47547 samples (was 47572)
+2025-12-18 06:30:04 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 06:30:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 06:30:04 [INFO] census_eda.ml.regression: [TUNE] Data: 47,547 samples, 10 features
+2025-12-18 06:30:04 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:30:04 [INFO] census_eda.memory: tune_ridge:ENTER: 31517.0MB (delta: +0.0MB)
+2025-12-18 06:30:06 [WARNING] census_eda.memory: Memory usage (31517.6MB) exceeded threshold (16000MB)
+2025-12-18 06:30:06 [INFO] census_eda.memory: tune_ridge:EXIT: 31517.6MB (delta: +0.6MB)
+2025-12-18 06:30:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 06:30:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0962
+2025-12-18 06:30:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:30:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 06:30:07 [INFO] census_eda.ml.regression: [TUNE] Data: 47,547 samples, 10 features
+2025-12-18 06:30:07 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:30:07 [INFO] census_eda.memory: tune_lasso:ENTER: 31517.6MB (delta: +0.0MB)
+2025-12-18 06:30:07 [WARNING] census_eda.memory: Memory usage (31517.6MB) exceeded threshold (16000MB)
+2025-12-18 06:30:08 [INFO] census_eda.memory: tune_lasso:EXIT: 31517.6MB (delta: +0.0MB)
+2025-12-18 06:30:08 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 06:30:08 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0962
+2025-12-18 06:30:08 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:30:08 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 06:30:08 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,547 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:30:08 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:30:08 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:30:08 [INFO] census_eda.memory: tune_random_forest:ENTER: 31517.6MB (delta: +0.0MB)
+2025-12-18 06:30:31 [WARNING] census_eda.memory: Memory usage (31517.8MB) exceeded threshold (16000MB)
+2025-12-18 06:30:32 [INFO] census_eda.memory: tune_random_forest:EXIT: 31517.8MB (delta: +0.2MB)
+2025-12-18 06:30:32 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 06:30:32 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0594
+2025-12-18 06:30:32 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:30:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 06:30:36 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,547 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:30:36 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:30:36 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:30:36 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:30:49 [WARNING] census_eda.memory: Memory usage (31517.8MB) exceeded threshold (16000MB)
+2025-12-18 06:30:50 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:30:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 06:30:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1196
+2025-12-18 06:30:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:31:00 [INFO] census_eda.memory: [SHAP] Safe sample size: 9,510 -> 1,000
+2025-12-18 06:31:00 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 9,510 -> 1,000
+2025-12-18 06:31:00 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:00 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 06:31:01 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:01 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 06:31:01 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 06:31:01 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 06:31:01 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 45836 samples (was 47572)
+2025-12-18 06:31:01 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 06:31:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 06:31:01 [INFO] census_eda.ml.regression: [TUNE] Data: 45,836 samples, 10 features
+2025-12-18 06:31:01 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:31:01 [INFO] census_eda.memory: tune_ridge:ENTER: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:01 [WARNING] census_eda.memory: Memory usage (31517.8MB) exceeded threshold (16000MB)
+2025-12-18 06:31:02 [INFO] census_eda.memory: tune_ridge:EXIT: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 06:31:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1017
+2025-12-18 06:31:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:31:02 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 06:31:02 [INFO] census_eda.ml.regression: [TUNE] Data: 45,836 samples, 10 features
+2025-12-18 06:31:02 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:31:02 [INFO] census_eda.memory: tune_lasso:ENTER: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:02 [WARNING] census_eda.memory: Memory usage (31517.8MB) exceeded threshold (16000MB)
+2025-12-18 06:31:03 [INFO] census_eda.memory: tune_lasso:EXIT: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-18 06:31:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1017
+2025-12-18 06:31:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:31:03 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 06:31:03 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 45,836 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:31:03 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:31:03 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:31:03 [INFO] census_eda.memory: tune_random_forest:ENTER: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:27 [WARNING] census_eda.memory: Memory usage (31517.8MB) exceeded threshold (16000MB)
+2025-12-18 06:31:28 [INFO] census_eda.memory: tune_random_forest:EXIT: 31517.8MB (delta: +0.0MB)
+2025-12-18 06:31:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 06:31:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0695
+2025-12-18 06:31:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:31:31 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 06:31:31 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 45,836 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:31:31 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:31:31 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:31:31 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:45 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:31:45 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 06:31:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1313
+2025-12-18 06:31:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:31:55 [INFO] census_eda.memory: [SHAP] Safe sample size: 9,168 -> 1,000
+2025-12-18 06:31:55 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 9,168 -> 1,000
+2025-12-18 06:31:55 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:55 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 06:31:56 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:56 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 06:31:56 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 06:31:56 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 06:31:56 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 47546 samples (was 47572)
+2025-12-18 06:31:56 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 06:31:56 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 06:31:56 [INFO] census_eda.ml.regression: [TUNE] Data: 47,546 samples, 10 features
+2025-12-18 06:31:56 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:31:56 [INFO] census_eda.memory: tune_ridge:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:57 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:31:58 [INFO] census_eda.memory: tune_ridge:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 06:31:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0956
+2025-12-18 06:31:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:31:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 06:31:58 [INFO] census_eda.ml.regression: [TUNE] Data: 47,546 samples, 10 features
+2025-12-18 06:31:58 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:31:58 [INFO] census_eda.memory: tune_lasso:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:58 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:31:59 [INFO] census_eda.memory: tune_lasso:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:31:59 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 06:31:59 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0956
+2025-12-18 06:31:59 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:31:59 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 06:31:59 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,546 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:31:59 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:31:59 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:31:59 [INFO] census_eda.memory: tune_random_forest:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:23 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:32:24 [INFO] census_eda.memory: tune_random_forest:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 06:32:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0501
+2025-12-18 06:32:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:32:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 06:32:27 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,546 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:32:27 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:32:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:32:27 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:41 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:32:41 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 06:32:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1223
+2025-12-18 06:32:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:32:52 [INFO] census_eda.memory: [SHAP] Safe sample size: 9,510 -> 1,000
+2025-12-18 06:32:52 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 9,510 -> 1,000
+2025-12-18 06:32:52 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:52 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 06:32:53 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:53 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 06:32:53 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 06:32:53 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 06:32:53 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 06:32:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 06:32:53 [INFO] census_eda.ml.regression: [TUNE] Data: 47,572 samples, 10 features
+2025-12-18 06:32:53 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:32:53 [INFO] census_eda.memory: tune_ridge:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:53 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:32:54 [INFO] census_eda.memory: tune_ridge:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 06:32:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 06:32:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:32:54 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 06:32:54 [INFO] census_eda.ml.regression: [TUNE] Data: 47,572 samples, 10 features
+2025-12-18 06:32:54 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:32:54 [INFO] census_eda.memory: tune_lasso:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:54 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:32:55 [INFO] census_eda.memory: tune_lasso:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:32:55 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 06:32:55 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 06:32:55 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:32:55 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 06:32:55 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,572 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:32:55 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:32:55 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:32:55 [INFO] census_eda.memory: tune_random_forest:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:03 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:33:04 [INFO] census_eda.memory: tune_random_forest:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 06:33:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 06:33:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:33:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 06:33:05 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,572 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:33:05 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:33:05 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:33:05 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:14 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:33:15 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 06:33:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 06:33:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:33:31 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 06:33:31 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 06:33:31 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 06:33:31 [INFO] census_eda.ml.regression: [TUNE] Data: 47,572 samples, 10 features
+2025-12-18 06:33:31 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:33:31 [INFO] census_eda.memory: tune_ridge:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:31 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:33:32 [INFO] census_eda.memory: tune_ridge:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:32 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 06:33:32 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0468
+2025-12-18 06:33:32 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:33:32 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 06:33:32 [INFO] census_eda.ml.regression: [TUNE] Data: 47,572 samples, 10 features
+2025-12-18 06:33:32 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 06:33:32 [INFO] census_eda.memory: tune_lasso:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:32 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:33:33 [INFO] census_eda.memory: tune_lasso:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 06:33:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0469
+2025-12-18 06:33:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 06:33:33 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 06:33:33 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,572 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:33:33 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:33:33 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:33:33 [INFO] census_eda.memory: tune_random_forest:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:33:59 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:34:00 [INFO] census_eda.memory: tune_random_forest:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:34:00 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 06:34:00 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0594
+2025-12-18 06:34:00 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:34:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 06:34:04 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 47,572 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 06:34:04 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 06:34:04 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 06:34:04 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:34:17 [WARNING] census_eda.memory: Memory usage (31517.9MB) exceeded threshold (16000MB)
+2025-12-18 06:34:18 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:34:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 06:34:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1151
+2025-12-18 06:34:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 06:34:28 [INFO] census_eda.memory: [SHAP] Safe sample size: 9,515 -> 1,000
+2025-12-18 06:34:28 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 9,515 -> 1,000
+2025-12-18 06:34:28 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:34:28 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 06:34:29 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:34:29 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 06:34:29 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 06:34:29 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 06:34:29 [INFO] census_eda.memory: [PRE-CLUSTERING]: 31517.9MB (delta: +0.0MB)
+2025-12-18 06:34:29 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 06:34:29 [INFO] census_eda.main: [CLUSTERING] KMeans on 47,572 samples...
+2025-12-18 06:34:41 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 06:34:41 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 47,572 samples (will sample if needed)...
+2025-12-18 06:34:41 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 47,572 -> 15,000 (distance matrix would be 16.9GB)
+2025-12-18 06:34:41 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 47,572 -> 15,000 for O(n²) distance matrix
+2025-12-18 06:34:46 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 06:34:46 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 06:34:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 65014.65476226807, 2025: 66477.86808013916, 2026: 67734.31211090088}, Values: [65014.65476226807, 66477.86808013916, 67734.31211090088]
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 06:34:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 73401.7026348114, 2025: 76219.53833580017, 2026: 79099.45635795593}, Values: [73401.7026348114, 76219.53833580017, 79099.45635795593]
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 06:34:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 73378.71718215942, 2025: 75982.0643196106, 2026: 78586.10335159302}, Values: [73378.71718215942, 75982.0643196106, 78586.10335159302]
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 06:34:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 44.354112408240326, 2025: 44.75984937988687, 2026: 45.1872535959119}, Values: [44.354112408240326, 44.75984937988687, 45.1872535959119]
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 06:34:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.41593114286661, 2025: 35.9272353798151, 2026: 35.318695925176144}, Values: [36.41593114286661, 35.9272353798151, 35.318695925176144]
+2025-12-18 06:34:46 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 06:34:52 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-18 06:34:59 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-18 06:35:05 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-18 06:35:18 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 06:35:20 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 47572.
+2025-12-18 06:35:20 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 06:35:20 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 06:35:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 62441.25466931239, 2025: 63773.61816414073, 2026: 65105.98165896954}, values=[62441.25466931239, 63773.61816414073, 65105.98165896954], CI_lower=[58378.1299350543, 59710.49342988264, 61042.85692471145], CI_upper=[66504.37940357048, 67836.74289839882, 69169.10639322763]
+2025-12-18 06:35:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62441.25466931239, 63773.61816414073, 65105.98165896954], CI_lower: [58378.1299350543, 59710.49342988264, 61042.85692471145], CI_upper: [66504.37940357048, 67836.74289839882, 69169.10639322763]
+2025-12-18 06:35:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 58378.1299350543, 59710.49342988264, 61042.85692471145], upper=[np.float64(55865.90413848731), 66504.37940357048, 67836.74289839882, 69169.10639322763]
+2025-12-18 06:35:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 66991.19167417288, 2025: 69836.2119974494, 2026: 72840.34272259474}, values=[66991.19167417288, 69836.2119974494, 72840.34272259474], CI_lower=[64816.158425908776, 67661.17874918529, 70665.30947433063], CI_upper=[69166.22492243699, 72011.24524571351, 75015.37597085885]
+2025-12-18 06:35:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66991.19167417288, 69836.2119974494, 72840.34272259474], CI_lower: [64816.158425908776, 67661.17874918529, 70665.30947433063], CI_upper: [69166.22492243699, 72011.24524571351, 75015.37597085885]
+2025-12-18 06:35:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 64816.158425908776, 67661.17874918529, 70665.30947433063], upper=[np.float64(55865.90413848731), 69166.22492243699, 72011.24524571351, 75015.37597085885]
+2025-12-18 06:35:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 65014.65476226807, 2025: 66477.86808013916, 2026: 67734.31211090088}, values=[65014.65476226807, 66477.86808013916, 67734.31211090088], CI_lower=[63126.26869434254, 64589.48201221364, 65845.92604297536], CI_upper=[66903.04083019358, 68366.25414806468, 69622.6981788264]
+2025-12-18 06:35:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65014.65476226807, 66477.86808013916, 67734.31211090088], CI_lower: [63126.26869434254, 64589.48201221364, 65845.92604297536], CI_upper: [66903.04083019358, 68366.25414806468, 69622.6981788264]
+2025-12-18 06:35:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 63126.26869434254, 64589.48201221364, 65845.92604297536], upper=[np.float64(55865.90413848731), 66903.04083019358, 68366.25414806468, 69622.6981788264]
+2025-12-18 06:35:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 61148.40716636571, 2025: 61148.40716636571, 2026: 61148.40716636571}, values=[61148.40716636571, 61148.40716636571, 61148.40716636571], CI_lower=[58730.31457115434, 58730.31457115434, 58730.31457115434], CI_upper=[63566.49976157708, 63566.49976157708, 63566.49976157708]
+2025-12-18 06:35:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61148.40716636571, 61148.40716636571, 61148.40716636571], CI_lower: [58730.31457115434, 58730.31457115434, 58730.31457115434], CI_upper: [63566.49976157708, 63566.49976157708, 63566.49976157708]
+2025-12-18 06:35:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 58730.31457115434, 58730.31457115434, 58730.31457115434], upper=[np.float64(55865.90413848731), 63566.49976157708, 63566.49976157708, 63566.49976157708]
+2025-12-18 06:35:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 58635.04512472171, 2025: 58635.04512472171, 2026: 58635.04512472171}, values=[58635.04512472171, 58635.04512472171, 58635.04512472171], CI_lower=[54859.0238081077, 54859.0238081077, 54859.0238081077], CI_upper=[62411.06644133573, 62411.06644133573, 62411.06644133573]
+2025-12-18 06:35:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58635.04512472171, 58635.04512472171, 58635.04512472171], CI_lower: [54859.0238081077, 54859.0238081077, 54859.0238081077], CI_upper: [62411.06644133573, 62411.06644133573, 62411.06644133573]
+2025-12-18 06:35:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 54859.0238081077, 54859.0238081077, 54859.0238081077], upper=[np.float64(55865.90413848731), 62411.06644133573, 62411.06644133573, 62411.06644133573]
+2025-12-18 06:35:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 62135.005827187146, 2025: 62135.005827187146, 2026: 62135.005827187146}, values=[62135.005827187146, 62135.005827187146, 62135.005827187146], CI_lower=[60295.876775681136, 60295.876775681136, 60295.876775681136], CI_upper=[63974.134878693156, 63974.134878693156, 63974.134878693156]
+2025-12-18 06:35:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62135.005827187146, 62135.005827187146, 62135.005827187146], CI_lower: [60295.876775681136, 60295.876775681136, 60295.876775681136], CI_upper: [63974.134878693156, 63974.134878693156, 63974.134878693156]
+2025-12-18 06:35:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 60295.876775681136, 60295.876775681136, 60295.876775681136], upper=[np.float64(55865.90413848731), 63974.134878693156, 63974.134878693156, 63974.134878693156]
+2025-12-18 06:35:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 65352.54377942184, 2025: 66742.41702125904, 2026: 68132.28513724354}, values=[65352.54377942184, 66742.41702125904, 68132.28513724354], CI_lower=[44935.18943739199, 46325.06267922919, 47714.93079521369], CI_upper=[85769.89812145168, 87159.77136328889, 88549.63947927339]
+2025-12-18 06:35:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65352.54377942184, 66742.41702125904, 68132.28513724354], CI_lower: [44935.18943739199, 46325.06267922919, 47714.93079521369], CI_upper: [85769.89812145168, 87159.77136328889, 88549.63947927339]
+2025-12-18 06:35:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 44935.18943739199, 46325.06267922919, 47714.93079521369], upper=[np.float64(55865.90413848731), 85769.89812145168, 87159.77136328889, 88549.63947927339]
+2025-12-18 06:35:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 66312.4735894731, 2025: 68741.54013824037, 2026: 71170.60668700765}, values=[66312.4735894731, 68741.54013824037, 71170.60668700765], CI_lower=[63789.94937357945, 66219.01592234672, 68648.082471114], CI_upper=[68834.99780536674, 71264.06435413401, 73693.13090290129]
+2025-12-18 06:35:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66312.4735894731, 68741.54013824037, 71170.60668700765], CI_lower: [63789.94937357945, 66219.01592234672, 68648.082471114], CI_upper: [68834.99780536674, 71264.06435413401, 73693.13090290129]
+2025-12-18 06:35:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(55865.90413848731), 63789.94937357945, 66219.01592234672, 68648.082471114], upper=[np.float64(55865.90413848731), 68834.99780536674, 71264.06435413401, 73693.13090290129]
+2025-12-18 06:35:27 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 06:35:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 68824.20689370902, 2025: 70359.49739255011, 2026: 71894.7878913912}, values=[68824.20689370902, 70359.49739255011, 71894.7878913912], CI_lower=[64529.11540187694, 66064.40590071802, 67599.6963995591], CI_upper=[73119.29838554111, 74654.5888843822, 76189.87938322329]
+2025-12-18 06:35:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [68824.20689370902, 70359.49739255011, 71894.7878913912], CI_lower: [64529.11540187694, 66064.40590071802, 67599.6963995591], CI_upper: [73119.29838554111, 74654.5888843822, 76189.87938322329]
+2025-12-18 06:35:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 64529.11540187694, 66064.40590071802, 67599.6963995591], upper=[np.float64(40731.178766632635), 73119.29838554111, 74654.5888843822, 76189.87938322329]
+2025-12-18 06:35:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 74054.57586842775, 2025: 77328.73733067513, 2026: 80785.80376684666}, values=[74054.57586842775, 77328.73733067513, 80785.80376684666], CI_lower=[72356.52449856655, 75630.68596081392, 79087.75239698545], CI_upper=[75752.62723828896, 79026.78870053633, 82483.85513670786]
+2025-12-18 06:35:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74054.57586842775, 77328.73733067513, 80785.80376684666], CI_lower: [72356.52449856655, 75630.68596081392, 79087.75239698545], CI_upper: [75752.62723828896, 79026.78870053633, 82483.85513670786]
+2025-12-18 06:35:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 72356.52449856655, 75630.68596081392, 79087.75239698545], upper=[np.float64(40731.178766632635), 75752.62723828896, 79026.78870053633, 82483.85513670786]
+2025-12-18 06:35:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 73401.7026348114, 2025: 76219.53833580017, 2026: 79099.45635795593}, values=[73401.7026348114, 76219.53833580017, 79099.45635795593], CI_lower=[71741.47796274284, 74559.3136637316, 77439.23168588737], CI_upper=[75061.92730687997, 77879.76300786874, 80759.6810300245]
+2025-12-18 06:35:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73401.7026348114, 76219.53833580017, 79099.45635795593], CI_lower: [71741.47796274284, 74559.3136637316, 77439.23168588737], CI_upper: [75061.92730687997, 77879.76300786874, 80759.6810300245]
+2025-12-18 06:35:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 71741.47796274284, 74559.3136637316, 77439.23168588737], upper=[np.float64(40731.178766632635), 75061.92730687997, 77879.76300786874, 80759.6810300245]
+2025-12-18 06:35:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 67700.79290011896, 2025: 67700.79290011896, 2026: 67700.79290011896}, values=[67700.79290011896, 67700.79290011896, 67700.79290011896], CI_lower=[64997.14986542264, 64997.14986542264, 64997.14986542264], CI_upper=[70404.43593481528, 70404.43593481528, 70404.43593481528]
+2025-12-18 06:35:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [67700.79290011896, 67700.79290011896, 67700.79290011896], CI_lower: [64997.14986542264, 64997.14986542264, 64997.14986542264], CI_upper: [70404.43593481528, 70404.43593481528, 70404.43593481528]
+2025-12-18 06:35:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 64997.14986542264, 64997.14986542264, 64997.14986542264], upper=[np.float64(40731.178766632635), 70404.43593481528, 70404.43593481528, 70404.43593481528]
+2025-12-18 06:35:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 64503.594283635466, 2025: 64503.594283635466, 2026: 64503.594283635466}, values=[64503.594283635466, 64503.594283635466, 64503.594283635466], CI_lower=[60406.48717248052, 60406.48717248052, 60406.48717248052], CI_upper=[68600.70139479042, 68600.70139479042, 68600.70139479042]
+2025-12-18 06:35:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64503.594283635466, 64503.594283635466, 64503.594283635466], CI_lower: [60406.48717248052, 60406.48717248052, 60406.48717248052], CI_upper: [68600.70139479042, 68600.70139479042, 68600.70139479042]
+2025-12-18 06:35:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 60406.48717248052, 60406.48717248052, 60406.48717248052], upper=[np.float64(40731.178766632635), 68600.70139479042, 68600.70139479042, 68600.70139479042]
+2025-12-18 06:35:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 68836.99806163002, 2025: 68836.99806163002, 2026: 68836.99806163002}, values=[68836.99806163002, 68836.99806163002, 68836.99806163002], CI_lower=[66685.66215317309, 66685.66215317309, 66685.66215317309], CI_upper=[70988.33397008694, 70988.33397008694, 70988.33397008694]
+2025-12-18 06:35:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [68836.99806163002, 68836.99806163002, 68836.99806163002], CI_lower: [66685.66215317309, 66685.66215317309, 66685.66215317309], CI_upper: [70988.33397008694, 70988.33397008694, 70988.33397008694]
+2025-12-18 06:35:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 66685.66215317309, 66685.66215317309, 66685.66215317309], upper=[np.float64(40731.178766632635), 70988.33397008694, 70988.33397008694, 70988.33397008694]
+2025-12-18 06:35:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 72756.57435864335, 2025: 74440.62013867903, 2026: 76124.64073608603}, values=[72756.57435864335, 74440.62013867903, 76124.64073608603], CI_lower=[51079.97302841174, 52764.01880844742, 54448.03940585442], CI_upper=[94433.17568887497, 96117.22146891065, 97801.24206631765]
+2025-12-18 06:35:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72756.57435864335, 74440.62013867903, 76124.64073608603], CI_lower: [51079.97302841174, 52764.01880844742, 54448.03940585442], CI_upper: [94433.17568887497, 96117.22146891065, 97801.24206631765]
+2025-12-18 06:35:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 51079.97302841174, 52764.01880844742, 54448.03940585442], upper=[np.float64(40731.178766632635), 94433.17568887497, 96117.22146891065, 97801.24206631765]
+2025-12-18 06:35:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 74216.79941415717, 2025: 77361.09543728815, 2026: 80505.39146041914}, values=[74216.79941415717, 77361.09543728815, 80505.39146041914], CI_lower=[72183.41412459318, 75327.71014772417, 78472.00617085515], CI_upper=[76250.18470372116, 79394.48072685214, 82538.77674998312]
+2025-12-18 06:35:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74216.79941415717, 77361.09543728815, 80505.39146041914], CI_lower: [72183.41412459318, 75327.71014772417, 78472.00617085515], CI_upper: [76250.18470372116, 79394.48072685214, 82538.77674998312]
+2025-12-18 06:35:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40731.178766632635), 72183.41412459318, 75327.71014772417, 78472.00617085515], upper=[np.float64(40731.178766632635), 76250.18470372116, 79394.48072685214, 82538.77674998312]
+2025-12-18 06:35:35 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 06:35:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 69010.74723873334, 2025: 70533.27902563289, 2026: 72055.81081253244}, values=[69010.74723873334, 70533.27902563289, 72055.81081253244], CI_lower=[64575.16415869172, 66097.69594559126, 67620.2277324908], CI_upper=[73446.33031877497, 74968.86210567452, 76491.39389257407]
+2025-12-18 06:35:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69010.74723873334, 70533.27902563289, 72055.81081253244], CI_lower: [64575.16415869172, 66097.69594559126, 67620.2277324908], CI_upper: [73446.33031877497, 74968.86210567452, 76491.39389257407]
+2025-12-18 06:35:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 64575.16415869172, 66097.69594559126, 67620.2277324908], upper=[np.float64(43555.82026517316), 73446.33031877497, 74968.86210567452, 76491.39389257407]
+2025-12-18 06:35:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 74391.24612849951, 2025: 77702.56056815386, 2026: 81202.02999514341}, values=[74391.24612849951, 77702.56056815386, 81202.02999514341], CI_lower=[72601.37632821423, 75912.69076786858, 79412.16019485814], CI_upper=[76181.11592878478, 79492.43036843913, 82991.89979542869]
+2025-12-18 06:35:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74391.24612849951, 77702.56056815386, 81202.02999514341], CI_lower: [72601.37632821423, 75912.69076786858, 79412.16019485814], CI_upper: [76181.11592878478, 79492.43036843913, 82991.89979542869]
+2025-12-18 06:35:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 72601.37632821423, 75912.69076786858, 79412.16019485814], upper=[np.float64(43555.82026517316), 76181.11592878478, 79492.43036843913, 82991.89979542869]
+2025-12-18 06:35:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 73378.71718215942, 2025: 75982.0643196106, 2026: 78586.10335159302}, values=[73378.71718215942, 75982.0643196106, 78586.10335159302], CI_lower=[71676.40991836313, 74279.7570558143, 76883.79608779673], CI_upper=[75081.02444595571, 77684.37158340689, 80288.41061538931]
+2025-12-18 06:35:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73378.71718215942, 75982.0643196106, 78586.10335159302], CI_lower: [71676.40991836313, 74279.7570558143, 76883.79608779673], CI_upper: [75081.02444595571, 77684.37158340689, 80288.41061538931]
+2025-12-18 06:35:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 71676.40991836313, 74279.7570558143, 76883.79608779673], upper=[np.float64(43555.82026517316), 75081.02444595571, 77684.37158340689, 80288.41061538931]
+2025-12-18 06:35:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 67887.36695148064, 2025: 67887.36695148064, 2026: 67887.36695148064}, values=[67887.36695148064, 67887.36695148064, 67887.36695148064], CI_lower=[65224.81267405908, 65224.81267405908, 65224.81267405908], CI_upper=[70549.9212289022, 70549.9212289022, 70549.9212289022]
+2025-12-18 06:35:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [67887.36695148064, 67887.36695148064, 67887.36695148064], CI_lower: [65224.81267405908, 65224.81267405908, 65224.81267405908], CI_upper: [70549.9212289022, 70549.9212289022, 70549.9212289022]
+2025-12-18 06:35:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 65224.81267405908, 65224.81267405908, 65224.81267405908], upper=[np.float64(43555.82026517316), 70549.9212289022, 70549.9212289022, 70549.9212289022]
+2025-12-18 06:35:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 64763.19380485728, 2025: 64763.19380485728, 2026: 64763.19380485728}, values=[64763.19380485728, 64763.19380485728, 64763.19380485728], CI_lower=[60547.87056555488, 60547.87056555488, 60547.87056555488], CI_upper=[68978.51704415967, 68978.51704415967, 68978.51704415967]
+2025-12-18 06:35:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64763.19380485728, 64763.19380485728, 64763.19380485728], CI_lower: [60547.87056555488, 60547.87056555488, 60547.87056555488], CI_upper: [68978.51704415967, 68978.51704415967, 68978.51704415967]
+2025-12-18 06:35:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 60547.87056555488, 60547.87056555488, 60547.87056555488], upper=[np.float64(43555.82026517316), 68978.51704415967, 68978.51704415967, 68978.51704415967]
+2025-12-18 06:35:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 69048.12463010334, 2025: 69048.12463010334, 2026: 69048.12463010334}, values=[69048.12463010334, 69048.12463010334, 69048.12463010334], CI_lower=[66995.29072322368, 66995.29072322368, 66995.29072322368], CI_upper=[71100.958536983, 71100.958536983, 71100.958536983]
+2025-12-18 06:35:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69048.12463010334, 69048.12463010334, 69048.12463010334], CI_lower: [66995.29072322368, 66995.29072322368, 66995.29072322368], CI_upper: [71100.958536983, 71100.958536983, 71100.958536983]
+2025-12-18 06:35:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 66995.29072322368, 66995.29072322368, 66995.29072322368], upper=[np.float64(43555.82026517316), 71100.958536983, 71100.958536983, 71100.958536983]
+2025-12-18 06:35:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 72919.47166857317, 2025: 74562.10262283585, 2026: 76204.72047618672}, values=[72919.47166857317, 74562.10262283585, 76204.72047618672], CI_lower=[50848.76204114614, 52491.39299540882, 54134.01084875969], CI_upper=[94990.1812960002, 96632.81225026288, 98275.43010361375]
+2025-12-18 06:35:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72919.47166857317, 74562.10262283585, 76204.72047618672], CI_lower: [50848.76204114614, 52491.39299540882, 54134.01084875969], CI_upper: [94990.1812960002, 96632.81225026288, 98275.43010361375]
+2025-12-18 06:35:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 50848.76204114614, 52491.39299540882, 54134.01084875969], upper=[np.float64(43555.82026517316), 94990.1812960002, 96632.81225026288, 98275.43010361375]
+2025-12-18 06:35:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 74357.07293204231, 2025: 77464.88457613283, 2026: 80572.69622022336}, values=[74357.07293204231, 77464.88457613283, 80572.69622022336], CI_lower=[72153.62394719, 75261.43559128052, 78369.24723537105], CI_upper=[76560.52191689462, 79668.33356098513, 82776.14520507566]
+2025-12-18 06:35:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74357.07293204231, 77464.88457613283, 80572.69622022336], CI_lower: [72153.62394719, 75261.43559128052, 78369.24723537105], CI_upper: [76560.52191689462, 79668.33356098513, 82776.14520507566]
+2025-12-18 06:35:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43555.82026517316), 72153.62394719, 75261.43559128052, 78369.24723537105], upper=[np.float64(43555.82026517316), 76560.52191689462, 79668.33356098513, 82776.14520507566]
+2025-12-18 06:35:42 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 06:35:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 43.89211769436173, 2025: 44.13080113986831, 2026: 44.36948458537489}, values=[43.89211769436173, 44.13080113986831, 44.36948458537489], CI_lower=[43.51349093309506, 43.752174378601644, 43.990857824108225], CI_upper=[44.270744455628396, 44.50942790113498, 44.74811134664156]
+2025-12-18 06:35:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.89211769436173, 44.13080113986831, 44.36948458537489], CI_lower: [43.51349093309506, 43.752174378601644, 43.990857824108225], CI_upper: [44.270744455628396, 44.50942790113498, 44.74811134664156]
+2025-12-18 06:35:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 43.51349093309506, 43.752174378601644, 43.990857824108225], upper=[np.float64(43.50869152358436), 44.270744455628396, 44.50942790113498, 44.74811134664156]
+2025-12-18 06:35:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44.31741728873021, 2025: 44.69749441391468, 2026: 45.09244418223898}, values=[44.31741728873021, 44.69749441391468, 45.09244418223898], CI_lower=[44.11630043516056, 44.49637756034503, 44.89132732866933], CI_upper=[44.51853414229986, 44.898611267484334, 45.29356103580863]
+2025-12-18 06:35:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.31741728873021, 44.69749441391468, 45.09244418223898], CI_lower: [44.11630043516056, 44.49637756034503, 44.89132732866933], CI_upper: [44.51853414229986, 44.898611267484334, 45.29356103580863]
+2025-12-18 06:35:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 44.11630043516056, 44.49637756034503, 44.89132732866933], upper=[np.float64(43.50869152358436), 44.51853414229986, 44.898611267484334, 45.29356103580863]
+2025-12-18 06:35:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 44.354112408240326, 2025: 44.75984937988687, 2026: 45.1872535959119}, values=[44.354112408240326, 44.75984937988687, 45.1872535959119], CI_lower=[44.15399620817185, 44.559733179818394, 44.98713739584342], CI_upper=[44.554228608308804, 44.95996557995535, 45.387369795980376]
+2025-12-18 06:35:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.354112408240326, 44.75984937988687, 45.1872535959119], CI_lower: [44.15399620817185, 44.559733179818394, 44.98713739584342], CI_upper: [44.554228608308804, 44.95996557995535, 45.387369795980376]
+2025-12-18 06:35:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 44.15399620817185, 44.559733179818394, 44.98713739584342], upper=[np.float64(43.50869152358436), 44.554228608308804, 44.95996557995535, 45.387369795980376]
+2025-12-18 06:35:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43.637450580369, 2025: 43.637450580369, 2026: 43.637450580369}, values=[43.637450580369, 43.637450580369, 43.637450580369], CI_lower=[43.26693947631237, 43.26693947631237, 43.26693947631237], CI_upper=[44.007961684425624, 44.007961684425624, 44.007961684425624]
+2025-12-18 06:35:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.637450580369, 43.637450580369, 43.637450580369], CI_lower: [43.26693947631237, 43.26693947631237, 43.26693947631237], CI_upper: [44.007961684425624, 44.007961684425624, 44.007961684425624]
+2025-12-18 06:35:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 43.26693947631237, 43.26693947631237, 43.26693947631237], upper=[np.float64(43.50869152358436), 44.007961684425624, 44.007961684425624, 44.007961684425624]
+2025-12-18 06:35:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43.11799846948163, 2025: 43.11799846948163, 2026: 43.11799846948163}, values=[43.11799846948163, 43.11799846948163, 43.11799846948163], CI_lower=[42.64055857578093, 42.64055857578093, 42.64055857578093], CI_upper=[43.595438363182325, 43.595438363182325, 43.595438363182325]
+2025-12-18 06:35:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.11799846948163, 43.11799846948163, 43.11799846948163], CI_lower: [42.64055857578093, 42.64055857578093, 42.64055857578093], CI_upper: [43.595438363182325, 43.595438363182325, 43.595438363182325]
+2025-12-18 06:35:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 42.64055857578093, 42.64055857578093, 42.64055857578093], upper=[np.float64(43.50869152358436), 43.595438363182325, 43.595438363182325, 43.595438363182325]
+2025-12-18 06:35:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 43.701512666122255, 2025: 43.701512666122255, 2026: 43.701512666122255}, values=[43.701512666122255, 43.701512666122255, 43.701512666122255], CI_lower=[43.38230143329922, 43.38230143329922, 43.38230143329922], CI_upper=[44.02072389894529, 44.02072389894529, 44.02072389894529]
+2025-12-18 06:35:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.701512666122255, 43.701512666122255, 43.701512666122255], CI_lower: [43.38230143329922, 43.38230143329922, 43.38230143329922], CI_upper: [44.02072389894529, 44.02072389894529, 44.02072389894529]
+2025-12-18 06:35:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 43.38230143329922, 43.38230143329922, 43.38230143329922], upper=[np.float64(43.50869152358436), 44.02072389894529, 44.02072389894529, 44.02072389894529]
+2025-12-18 06:35:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 44.16118243601209, 2025: 44.44645783633157, 2026: 44.72949732205413}, values=[44.16118243601209, 44.44645783633157, 44.72949732205413], CI_lower=[25.22179155650139, 25.507066956820868, 25.79010644254343], CI_upper=[63.100573315522794, 63.38584871584227, 63.668888201564826]
+2025-12-18 06:35:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.16118243601209, 44.44645783633157, 44.72949732205413], CI_lower: [25.22179155650139, 25.507066956820868, 25.79010644254343], CI_upper: [63.100573315522794, 63.38584871584227, 63.668888201564826]
+2025-12-18 06:35:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 25.22179155650139, 25.507066956820868, 25.79010644254343], upper=[np.float64(43.50869152358436), 63.100573315522794, 63.38584871584227, 63.668888201564826]
+2025-12-18 06:35:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 44.1336189579091, 2025: 44.39358445863655, 2026: 44.653549959364014}, values=[44.1336189579091, 44.39358445863655, 44.653549959364014], CI_lower=[43.78998876801917, 44.049954268746625, 44.309919769474085], CI_upper=[44.47724914779903, 44.73721464852648, 44.99718014925394]
+2025-12-18 06:35:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.1336189579091, 44.39358445863655, 44.653549959364014], CI_lower: [43.78998876801917, 44.049954268746625, 44.309919769474085], CI_upper: [44.47724914779903, 44.73721464852648, 44.99718014925394]
+2025-12-18 06:35:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.50869152358436), 43.78998876801917, 44.049954268746625, 44.309919769474085], upper=[np.float64(43.50869152358436), 44.47724914779903, 44.73721464852648, 44.99718014925394]
+2025-12-18 06:35:49 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 06:35:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 36.945203773308776, 2025: 36.87989274241227, 2026: 36.81458171151576}, values=[36.945203773308776, 36.87989274241227, 36.81458171151576], CI_lower=[36.4943676824398, 36.42905665154329, 36.36374562064678], CI_upper=[37.39603986417775, 37.33072883328124, 37.26541780238473]
+2025-12-18 06:35:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.945203773308776, 36.87989274241227, 36.81458171151576], CI_lower: [36.4943676824398, 36.42905665154329, 36.36374562064678], CI_upper: [37.39603986417775, 37.33072883328124, 37.26541780238473]
+2025-12-18 06:35:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 36.4943676824398, 36.42905665154329, 36.36374562064678], upper=[np.float64(36.88980754857997), 37.39603986417775, 37.33072883328124, 37.26541780238473]
+2025-12-18 06:35:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.091193287607894, 2025: 37.074417442017875, 2026: 37.06274682101139}, values=[37.091193287607894, 37.074417442017875, 37.06274682101139], CI_lower=[36.65401216127107, 36.63723631568105, 36.62556569467456], CI_upper=[37.52837441394472, 37.5115985683547, 37.49992794734821]
+2025-12-18 06:35:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.091193287607894, 37.074417442017875, 37.06274682101139], CI_lower: [36.65401216127107, 36.63723631568105, 36.62556569467456], CI_upper: [37.52837441394472, 37.5115985683547, 37.49992794734821]
+2025-12-18 06:35:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 36.65401216127107, 36.63723631568105, 36.62556569467456], upper=[np.float64(36.88980754857997), 37.52837441394472, 37.5115985683547, 37.49992794734821]
+2025-12-18 06:35:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.41593114286661, 2025: 35.9272353798151, 2026: 35.318695925176144}, values=[36.41593114286661, 35.9272353798151, 35.318695925176144], CI_lower=[36.180778642722316, 35.69208287967081, 35.08354342503185], CI_upper=[36.65108364301091, 36.1623878799594, 35.55384842532044]
+2025-12-18 06:35:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.41593114286661, 35.9272353798151, 35.318695925176144], CI_lower: [36.180778642722316, 35.69208287967081, 35.08354342503185], CI_upper: [36.65108364301091, 36.1623878799594, 35.55384842532044]
+2025-12-18 06:35:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 36.180778642722316, 35.69208287967081, 35.08354342503185], upper=[np.float64(36.88980754857997), 36.65108364301091, 36.1623878799594, 35.55384842532044]
+2025-12-18 06:35:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.01771020803755, 2025: 37.01771020803755, 2026: 37.01771020803755}, values=[37.01771020803755, 37.01771020803755, 37.01771020803755], CI_lower=[36.68128920145872, 36.68128920145872, 36.68128920145872], CI_upper=[37.35413121461638, 37.35413121461638, 37.35413121461638]
+2025-12-18 06:35:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.01771020803755, 37.01771020803755, 37.01771020803755], CI_lower: [36.68128920145872, 36.68128920145872, 36.68128920145872], CI_upper: [37.35413121461638, 37.35413121461638, 37.35413121461638]
+2025-12-18 06:35:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 36.68128920145872, 36.68128920145872, 36.68128920145872], upper=[np.float64(36.88980754857997), 37.35413121461638, 37.35413121461638, 37.35413121461638]
+2025-12-18 06:35:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.189826767272734, 2025: 37.189826767272734, 2026: 37.189826767272734}, values=[37.189826767272734, 37.189826767272734, 37.189826767272734], CI_lower=[36.858450572593014, 36.858450572593014, 36.858450572593014], CI_upper=[37.521202961952454, 37.521202961952454, 37.521202961952454]
+2025-12-18 06:35:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.189826767272734, 37.189826767272734, 37.189826767272734], CI_lower: [36.858450572593014, 36.858450572593014, 36.858450572593014], CI_upper: [37.521202961952454, 37.521202961952454, 37.521202961952454]
+2025-12-18 06:35:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 36.858450572593014, 36.858450572593014, 36.858450572593014], upper=[np.float64(36.88980754857997), 37.521202961952454, 37.521202961952454, 37.521202961952454]
+2025-12-18 06:35:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.00453591022664, 2025: 37.00453591022664, 2026: 37.00453591022664}, values=[37.00453591022664, 37.00453591022664, 37.00453591022664], CI_lower=[36.68910096252928, 36.68910096252928, 36.68910096252928], CI_upper=[37.319970857924005, 37.319970857924005, 37.319970857924005]
+2025-12-18 06:35:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.00453591022664, 37.00453591022664, 37.00453591022664], CI_lower: [36.68910096252928, 36.68910096252928, 36.68910096252928], CI_upper: [37.319970857924005, 37.319970857924005, 37.319970857924005]
+2025-12-18 06:35:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 36.68910096252928, 36.68910096252928, 36.68910096252928], upper=[np.float64(36.88980754857997), 37.319970857924005, 37.319970857924005, 37.319970857924005]
+2025-12-18 06:35:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 36.810017242788774, 2025: 36.730280105824775, 2026: 36.65059610225855}, values=[36.810017242788774, 36.730280105824775, 36.65059610225855], CI_lower=[18.514765322019308, 18.43502818505531, 18.35534418148908], CI_upper=[55.10526916355824, 55.02553202659424, 54.94584802302801]
+2025-12-18 06:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.810017242788774, 36.730280105824775, 36.65059610225855], CI_lower: [18.514765322019308, 18.43502818505531, 18.35534418148908], CI_upper: [55.10526916355824, 55.02553202659424, 54.94584802302801]
+2025-12-18 06:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 18.514765322019308, 18.43502818505531, 18.35534418148908], upper=[np.float64(36.88980754857997), 55.10526916355824, 55.02553202659424, 54.94584802302801]
+2025-12-18 06:35:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 36.797607098347456, 2025: 36.69147380047807, 2026: 36.58534050260869}, values=[36.797607098347456, 36.69147380047807, 36.58534050260869], CI_lower=[36.406160398725625, 36.30002710085624, 36.19389380298686], CI_upper=[37.18905379796929, 37.0829205000999, 36.97678720223052]
+2025-12-18 06:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.797607098347456, 36.69147380047807, 36.58534050260869], CI_lower: [36.406160398725625, 36.30002710085624, 36.19389380298686], CI_upper: [37.18905379796929, 37.0829205000999, 36.97678720223052]
+2025-12-18 06:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.88980754857997), 36.406160398725625, 36.30002710085624, 36.19389380298686], upper=[np.float64(36.88980754857997), 37.18905379796929, 37.0829205000999, 36.97678720223052]
+2025-12-18 06:35:56 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 06:35:57 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 06:50:36 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 23030.712890625, 'mse': 3016951040.0, 'rmse': 54926.77889700069, 'r2': 0.22077517211437225}
+2025-12-18 06:50:37 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 07:00:36 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.4487762451171875, 'mse': 67.40071868896484, 'rmse': 8.209794071044952, 'r2': 0.3379632532596588}
+2025-12-18 07:00:37 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 07:11:17 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.169769287109375, 'mse': 618.8233642578125, 'rmse': 24.87616056102333, 'r2': -5.580137252807617}
+2025-12-18 07:11:18 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 07:12:43 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 07:12:44 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 07:12:44 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 07:12:44 [DEBUG] census_eda.main:  Running LLM analysis for state: New York
+2025-12-18 07:12:44 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 07:12:44 [INFO] census_eda.ml: [LLM] State context loaded: New York
+2025-12-18 07:12:44 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [API] Total request: ~2451 tokens (system: ~2269, user: ~182)
+2025-12-18 07:12:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:13:04 [DEBUG] census_eda.ml: [API] Received response: 5182 chars
+2025-12-18 07:13:04 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (5182 chars)
+2025-12-18 07:13:07 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [LLM] User prompt: 1286 chars (~321 tokens)
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [API] Total request: ~2590 tokens (system: ~2269, user: ~321)
+2025-12-18 07:13:07 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [API] Received response: 3650 chars
+2025-12-18 07:13:17 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3650 chars)
+2025-12-18 07:13:17 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [LLM] User prompt: 2194 chars (~548 tokens)
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [API] Total request: ~2817 tokens (system: ~2269, user: ~548)
+2025-12-18 07:13:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [API] Received response: 4012 chars
+2025-12-18 07:13:29 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4012 chars)
+2025-12-18 07:13:29 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [API] Total request: ~2609 tokens (system: ~2269, user: ~340)
+2025-12-18 07:13:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [API] Received response: 3616 chars
+2025-12-18 07:13:40 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3616 chars)
+2025-12-18 07:13:40 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [API] Total request: ~2459 tokens (system: ~2269, user: ~190)
+2025-12-18 07:13:40 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [API] Received response: 3556 chars
+2025-12-18 07:13:51 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3556 chars)
+2025-12-18 07:13:51 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [LLM] User prompt: 8687 chars (~2171 tokens)
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [API] Total request: ~4440 tokens (system: ~2269, user: ~2171)
+2025-12-18 07:13:51 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [API] Received response: 3544 chars
+2025-12-18 07:14:02 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3544 chars)
+2025-12-18 07:14:02 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [LLM] User prompt: 5482 chars (~1370 tokens)
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [API] Total request: ~3639 tokens (system: ~2269, user: ~1370)
+2025-12-18 07:14:02 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [API] Received response: 3090 chars
+2025-12-18 07:14:12 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3090 chars)
+2025-12-18 07:14:12 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [LLM] User prompt: 686 chars (~171 tokens)
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [API] Total request: ~2440 tokens (system: ~2269, user: ~171)
+2025-12-18 07:14:12 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [API] Received response: 3872 chars
+2025-12-18 07:14:25 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3872 chars)
+2025-12-18 07:14:25 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [LLM] User prompt: 5621 chars (~1405 tokens)
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [API] Total request: ~3674 tokens (system: ~2269, user: ~1405)
+2025-12-18 07:14:25 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [API] Received response: 4258 chars
+2025-12-18 07:14:37 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4258 chars)
+2025-12-18 07:14:37 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [LLM] User prompt: 1828 chars (~457 tokens)
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [API] Total request: ~2726 tokens (system: ~2269, user: ~457)
+2025-12-18 07:14:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [API] Received response: 4978 chars
+2025-12-18 07:14:51 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4978 chars)
+2025-12-18 07:14:51 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [LLM] User prompt: 1642 chars (~410 tokens)
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New York
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New York
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4189 chars
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1047
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New York
+
+ECONOMIC PROFILE:
+  Industries: Financial services (Wall Street), Information and media, Professional and business services, Healthcare and life sciences, Tourism and hospitality
+  Trends: Moderate growth 2011-2019 driven by NYC finance boom, tech (Silicon Alley). Upstate struggles with manufacturing decline. Pandemic severe hit (NYC lockdown), strong recovery 2021-2023 in finance, slower in hospitality
+  Income: Highest income inequality nationally. NYC metro median income >$80k, upstate significantly lower. Top 1% capture disproportionate income. High wages in finance/tech, low in service sectors
+  Dominant Sector: Financial activities (29% of GDP)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019, decline 2020-2022 (first in decades), resuming growth 2023. Net domestic outmigration offset by international immigration. NYC growth, upstate decline
+  Migration: Significant outmigration to Florida, North Carolina, Texas driven by high costs and taxes. Strong international immigration to NYC. Internal migration from NYC to suburbs post-pandemic
+  Education: High educational attainment in metro areas (NYC, Albany). World-class universities (Columbia, NYU, Cornell). 37% bachelor's or higher. Upstate-NYC education gap
+
+HOUSING MARKET:
+  Market: Extreme dichotomy: NYC extremely expensive (median >$700k Manhattan, >$600k Brooklyn), affordable upstate (Buffalo ~$200k). Strong rental market NYC (66% renters Manhattan)
+  Affordability: NYC housing crisis intensified 2011-2023. Costs far outpaced income growth. Pandemic spike 2020-2022 in suburbs. NYC rents softened 2020-2021, then rebounded. Upstate affordable but declining population
+  Challenges: Severe NYC affordability crisis, Upstate population decline, Highest property taxes in many counties, NIMBY resistance in suburbs, Aging housing stock, Homelessness epidemic
+
+POLITY:
+  Policy: Progressive in NYC and metros, moderate upstate. High taxes to fund extensive social programs. Pro-labor, environmental regulation. NYC dominates state politics
+  Housing: Strong rent control/stabilization in NYC. Housing production incentives (421-a). Affordable housing mandates. Extensive tenant protections. Upstate more market-driven
+  Labor: Strong worker protections, $15-$16 minimum wage (higher in NYC), paid family leave, strong union presence, prevailing wage requirements
+
+REGIONAL:
+  Geography: Diverse: Atlantic coast (Long Island), Hudson Valley, Adirondacks, Finger Lakes, Niagara Falls, Great Lakes. Major river corridors (Hudson, Mohawk)
+  Urban/Rural: 88% urban (NYC metro dominates with 60% of state population). Upstate metros declining. Rural areas in Adirondacks, Southern Tier, western NY
+  Infrastructure: Extensive NYC metro transit (subway, commuter rail). Aging infrastructure elsewhere. Major airports (JFK, LaGuardia, Newark). Port of NY/NJ. Aging upstate infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Occupy Wall Street, Hurricane Sandy (2012), marriage equality, manufacturing decline upstate continues; 2014-2016: Amazon NYC expansion, tech boom (Silicon Alley), fracking ban, de Blasio affordable housing plan; 2017-2019: Amazon HQ2 cancelled, MTA funding crisis, criminal justice reforms, rent regulation battles; 2020-2023: COVID-19 epicenter early 2020, economic shutdown, exodus to suburbs, gradual recovery, remote work transformation, homelessness crisis
+  Shocks: Hurricane Sandy 2012, COVID-19 2020 (severe NYC impact), Amazon HQ2 cancellation 2019
+  Transitions: Continued upstate manufacturing decline. Tech sector boom in NYC (Silicon Alley). Media industry transformation. Tourism recovered post-pandemic
+
+COMPARATIVE:
+  Benchmarks: #3 GDP. Median income above national average in NYC metro, below in upstate. Highest income inequality. Extreme housing costs in NYC. High poverty rate when adjusted for cost of living
+  Peer States: California (size, diversity, finance/tech), Texas (population), Illinois (Chicago parallel)
+  Unique: NYC financial capital dominance. Extreme economic divergence between NYC metro and upstate. Highest income inequality. Major immigration gateway. Cultural/media capital influence. Upstate economic struggles
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New York
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [PROMPT] State context injected (4189 chars)
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9077 chars (~2269 tokens)
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [API] Total request: ~2679 tokens (system: ~2269, user: ~410)
+2025-12-18 07:14:51 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 07:15:08 [DEBUG] census_eda.ml: [API] Received response: 5907 chars
+2025-12-18 07:15:08 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5907 chars)
+2025-12-18 07:15:08 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 07:15:08 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 07:15:08 [INFO] census_eda.main: [REPORT] Generated: report_New_York_population_20251218_071508.txt
+2025-12-18 07:15:08 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for New York!
+2025-12-18 07:15:09 [INFO] census_eda.memory: process_New York_population_1-year:EXIT: 25711.4MB (delta: -5806.5MB)
+2025-12-18 07:15:10 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 07:15:11 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 07:15:13 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 07:15:14 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 07:15:15 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 07:15:16 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 07:15:18 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 07:15:19 [INFO] census_eda.memory: Cleared all caches

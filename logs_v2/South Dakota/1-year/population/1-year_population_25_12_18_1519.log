@@ -1,0 +1,1288 @@
+2025-12-18 15:19:21 [INFO] census_eda: Logging context set: state=South Dakota, survey=population, scope=1-year
+2025-12-18 15:19:21 [INFO] census_eda: Log file: ./logs/South Dakota/1-year/population/1-year_population_25_12_18_1519.log
+2025-12-18 15:19:21 [INFO] census_eda.main: ======================================================================
+2025-12-18 15:19:21 [INFO] census_eda.main: [POPULATION] Processing South Dakota (1-year)...
+2025-12-18 15:19:21 [INFO] census_eda.main: ======================================================================
+2025-12-18 15:19:21 [INFO] census_eda.memory: process_South Dakota_population_1-year:ENTER: 11720.8MB (delta: +0.0MB)
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/46/*/*.csv
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12psd.csv
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,380 rows, 260 columns
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p46.csv
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,881 rows, 260 columns
+2025-12-18 15:19:21 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14psd.csv
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,626 rows, 260 columns
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13psd.csv
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,740 rows, 260 columns
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07psd.csv
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,968 rows, 260 columns
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09psd.csv
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,280 rows, 260 columns
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p46.csv
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,986 rows, 260 columns
+2025-12-18 15:19:22 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08psd.csv
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,056 rows, 260 columns
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16psd.csv
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,725 rows, 260 columns
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p46.csv
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,128 rows, 260 columns
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p46.csv
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,296 rows, 260 columns
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p46.csv
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,823 rows, 260 columns
+2025-12-18 15:19:23 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p46.csv
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,477 rows, 260 columns
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15psd.csv
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,742 rows, 260 columns
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10psd.csv
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,231 rows, 260 columns
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11psd.csv
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,416 rows, 260 columns
+2025-12-18 15:19:24 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 15:19:25 [VERBOSE] census_eda.processing.loader: Combined into 138,755 total rows, 260 columns
+2025-12-18 15:19:25 [INFO] census_eda.main: Loaded 138,755 records
+2025-12-18 15:19:25 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 138755 valid, 16 unique
+2025-12-18 15:19:25 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 15:19:26 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 15:19:26 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 15:19:26 [DEBUG] census_eda.main: Feature engineering complete: (138755, 292)
+2025-12-18 15:19:28 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 15:19:28 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 15:19:58 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 15:19:58 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 15:19:58 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(138755, 292)
+2025-12-18 15:19:58 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 15:19:58 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 138755
+2025-12-18 15:19:58 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 15:20:00 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(138755, 292)
+2025-12-18 15:20:00 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(7968), np.int64(2008): np.int64(8056), np.int64(2009): np.int64(8280), np.int64(2010): np.int64(8231), np.int64(2011): np.int64(8416), np.int64(2012): np.int64(8380), np.int64(2013): np.int64(8740), np.int64(2014): np.int64(8626), np.int64(2015): np.int64(8742), np.int64(2016): np.int64(8725), np.int64(2017): np.int64(8881), np.int64(2018): np.int64(8986), np.int64(2019): np.int64(9128), np.int64(2021): np.int64(8823), np.int64(2022): np.int64(9296), np.int64(2023): np.int64(9477)}
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(138755, 292)
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 138755 non-null values (zeros excluded if needed)
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 138755 non-null values (zeros excluded if needed)
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1916.00
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 138755 non-null values (zeros excluded if needed)
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-18 15:20:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 15:20:02 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 61868 non-null values (zeros excluded if needed)
+2025-12-18 15:20:02 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 175.00
+2025-12-18 15:20:04 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 17680 non-null values (zeros excluded if needed)
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 329000.00
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 8010 non-null values (zeros excluded if needed)
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 85000.00
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 1582 non-null values (zeros excluded if needed)
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Value range: 10.00 to 30000.00
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 12060 non-null values (zeros excluded if needed)
+2025-12-18 15:20:05 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 144000.00
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 11599 non-null values (zeros excluded if needed)
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 454000.00
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 2620 non-null values (zeros excluded if needed)
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Value range: 500.00 to 30000.00
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 28754 non-null values (zeros excluded if needed)
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 69626 non-null values (zeros excluded if needed)
+2025-12-18 15:20:08 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 628000.00
+2025-12-18 15:20:12 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 15:20:29 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 15:20:30 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 15:20:30 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 15:20:31 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 15:20:31 [DEBUG] census_eda.memory: Skipping sampling: 37488MB available (>16GB)
+2025-12-18 15:20:31 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 138755 rows
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(138755, 292)
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 138755 non-null values
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 138755 non-null values
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1916.00
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 138755 non-null values
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 61868 non-null values
+2025-12-18 15:20:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 175.00
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 17680 non-null values
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 329000.00
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 8010 non-null values
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 85000.00
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 1582 non-null values
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 30000.00
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 12060 non-null values
+2025-12-18 15:21:02 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 144000.00
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 11599 non-null values
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 454000.00
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 2620 non-null values
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Data range: 500.00 to 30000.00
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 28754 non-null values
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 69626 non-null values
+2025-12-18 15:21:05 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 628000.00
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 77179 non-null values
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 62370 non-null values
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 30426 non-null values
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 109988 non-null values
+2025-12-18 15:21:08 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 15:21:25 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 15:21:39 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 15:21:53 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 15:22:16 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 15:22:16 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 15:22:16 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 15:22:18 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 15:22:19 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 15:22:20 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 15:22:23 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 15:22:23 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 15:22:23 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 15:22:24 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 15:22:26 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 15:22:29 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 15:22:29 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 15:22:29 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 15:22:30 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 15:22:33 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 15:22:33 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 15:22:33 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 15:22:35 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 15:22:36 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 15:22:39 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 15:22:39 [DEBUG] census_eda.memory: Skipping sampling: 37129MB available (>16GB)
+2025-12-18 15:22:47 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 15:22:47 [DEBUG] census_eda.memory: Skipping sampling: 37146MB available (>16GB)
+2025-12-18 15:23:00 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 15:23:00 [DEBUG] census_eda.memory: Skipping sampling: 36957MB available (>16GB)
+2025-12-18 15:23:06 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 15:23:18 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 15:23:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 15:23:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 15:23:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 15:23:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 15:23:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 15:23:24 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 15:23:26 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 15:23:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 15:23:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 15:23:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 15:23:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 15:23:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 15:23:29 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 15:23:29 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 15:23:29 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 15:23:30 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 15:23:31 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 15:23:33 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 15:23:35 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 15:23:36 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 15:23:38 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 15:23:41 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 15:23:41 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 15:23:41 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 15:23:42 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 15:23:43 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 15:23:45 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 15:23:46 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 15:23:48 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 15:23:49 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 15:23:51 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 15:23:54 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 15:23:58 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 15:24:00 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 15:24:01 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/South_Dakota/population/1-year/figures
+2025-12-18 15:24:03 [DEBUG] census_eda.memory: Skipping sampling: 37595MB available (>16GB)
+2025-12-18 15:24:03 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 15:24:03 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 15:24:03 [INFO] census_eda.memory: [ML-START]: 12364.8MB (delta: +644.0MB)
+2025-12-18 15:24:03 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 15:24:03 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 15:24:03 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 904 samples (was 905)
+2025-12-18 15:24:03 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 15:24:03 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 15:24:03 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:03 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:03 [INFO] census_eda.memory: tune_ridge:ENTER: 12364.8MB (delta: +0.0MB)
+2025-12-18 15:24:05 [INFO] census_eda.memory: tune_ridge:EXIT: 12365.3MB (delta: +0.5MB)
+2025-12-18 15:24:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 15:24:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0596
+2025-12-18 15:24:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 15:24:05 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:05 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:05 [INFO] census_eda.memory: tune_lasso:ENTER: 12365.3MB (delta: +0.0MB)
+2025-12-18 15:24:07 [INFO] census_eda.memory: tune_lasso:EXIT: 12365.3MB (delta: +0.0MB)
+2025-12-18 15:24:07 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 15:24:07 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0564
+2025-12-18 15:24:07 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 15:24:07 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:07 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:07 [INFO] census_eda.memory: tune_random_forest:ENTER: 12365.3MB (delta: +0.0MB)
+2025-12-18 15:24:11 [INFO] census_eda.memory: tune_random_forest:EXIT: 12366.2MB (delta: +0.9MB)
+2025-12-18 15:24:11 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 15:24:11 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1406
+2025-12-18 15:24:11 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 15:24:12 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:12 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:12 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12367.0MB (delta: +0.7MB)
+2025-12-18 15:24:14 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 15:24:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.3619
+2025-12-18 15:24:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:15 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 15:24:15 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 886 samples (was 905)
+2025-12-18 15:24:15 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 15:24:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 15:24:15 [INFO] census_eda.ml.regression: [TUNE] Data: 886 samples, 10 features
+2025-12-18 15:24:15 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:15 [INFO] census_eda.memory: tune_ridge:ENTER: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:16 [INFO] census_eda.memory: tune_ridge:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 15:24:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0502
+2025-12-18 15:24:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:16 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 15:24:16 [INFO] census_eda.ml.regression: [TUNE] Data: 886 samples, 10 features
+2025-12-18 15:24:16 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:16 [INFO] census_eda.memory: tune_lasso:ENTER: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:18 [INFO] census_eda.memory: tune_lasso:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 15:24:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0435
+2025-12-18 15:24:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 15:24:18 [INFO] census_eda.ml.regression: [TUNE] Data: 886 samples, 10 features
+2025-12-18 15:24:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:18 [INFO] census_eda.memory: tune_random_forest:ENTER: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:21 [INFO] census_eda.memory: tune_random_forest:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 15:24:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1569
+2025-12-18 15:24:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:22 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 15:24:22 [INFO] census_eda.ml.regression: [TUNE] Data: 886 samples, 10 features
+2025-12-18 15:24:22 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:22 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:24 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 15:24:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.6370
+2025-12-18 15:24:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:25 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 15:24:25 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 904 samples (was 905)
+2025-12-18 15:24:25 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 15:24:25 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 15:24:25 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:25 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:25 [INFO] census_eda.memory: tune_ridge:ENTER: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:26 [INFO] census_eda.memory: tune_ridge:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 15:24:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0415
+2025-12-18 15:24:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 15:24:26 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:26 [INFO] census_eda.memory: tune_lasso:ENTER: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:27 [INFO] census_eda.memory: tune_lasso:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 15:24:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0341
+2025-12-18 15:24:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 15:24:27 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:27 [INFO] census_eda.memory: tune_random_forest:ENTER: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:31 [INFO] census_eda.memory: tune_random_forest:EXIT: 12367.0MB (delta: +0.0MB)
+2025-12-18 15:24:31 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 15:24:31 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1894
+2025-12-18 15:24:31 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:33 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 15:24:33 [INFO] census_eda.ml.regression: [TUNE] Data: 904 samples, 10 features
+2025-12-18 15:24:33 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:33 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12368.0MB (delta: +1.0MB)
+2025-12-18 15:24:35 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:35 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 15:24:35 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.6472
+2025-12-18 15:24:35 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:35 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 15:24:35 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 15:24:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 15:24:35 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:35 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:35 [INFO] census_eda.memory: tune_ridge:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:37 [INFO] census_eda.memory: tune_ridge:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 15:24:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 15:24:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 15:24:37 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:37 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:37 [INFO] census_eda.memory: tune_lasso:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:38 [INFO] census_eda.memory: tune_lasso:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 15:24:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 15:24:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 15:24:38 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:38 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:38 [INFO] census_eda.memory: tune_random_forest:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:41 [INFO] census_eda.memory: tune_random_forest:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-12-18 15:24:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 15:24:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 15:24:43 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:43 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:43 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:45 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 15:24:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 15:24:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:46 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 15:24:46 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 15:24:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 15:24:46 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:46 [INFO] census_eda.memory: tune_ridge:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:47 [INFO] census_eda.memory: tune_ridge:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 15:24:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0294
+2025-12-18 15:24:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 15:24:47 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:47 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 15:24:47 [INFO] census_eda.memory: tune_lasso:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:48 [INFO] census_eda.memory: tune_lasso:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 15:24:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0281
+2025-12-18 15:24:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 15:24:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 15:24:48 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:48 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:48 [INFO] census_eda.memory: tune_random_forest:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:52 [INFO] census_eda.memory: tune_random_forest:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 15:24:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0399
+2025-12-18 15:24:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 15:24:53 [INFO] census_eda.ml.regression: [TUNE] Data: 905 samples, 10 features
+2025-12-18 15:24:53 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 15:24:53 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:56 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:56 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 15:24:56 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0598
+2025-12-18 15:24:56 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 15:24:56 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:56 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 181 samples...
+2025-12-18 15:24:58 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:58 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 15:24:58 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-18 15:24:58 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 15:24:58 [INFO] census_eda.memory: [PRE-CLUSTERING]: 12368.0MB (delta: +0.0MB)
+2025-12-18 15:24:58 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 15:24:58 [INFO] census_eda.main: [CLUSTERING] KMeans on 905 samples...
+2025-12-18 15:24:58 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 15:24:58 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 905 samples (will sample if needed)...
+2025-12-18 15:24:58 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 15:24:58 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 15:24:58 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 15:24:58 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 15:24:58 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 15:24:58 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 52080.422382354736, 2025: 54815.71530532837, 2026: 57809.56786727905}, Values: [52080.422382354736, 54815.71530532837, 57809.56786727905]
+2025-12-18 15:24:58 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 15:24:58 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 51416.164697647095, 2025: 54195.89453315735, 2026: 57201.38919258118}, Values: [51416.164697647095, 54195.89453315735, 57201.38919258118]
+2025-12-18 15:24:58 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 15:24:58 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 53673.14767074585, 2025: 56750.8133354187, 2026: 60166.28556442261}, Values: [53673.14767074585, 56750.8133354187, 60166.28556442261]
+2025-12-18 15:24:58 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 15:24:59 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 42.56602017948098, 2025: 42.56602017948098, 2026: 42.56602017948098}, Values: [42.56602017948098, 42.56602017948098, 42.56602017948098]
+2025-12-18 15:24:59 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 15:24:59 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 38.33747302368283, 2025: 37.866285260766745, 2026: 37.272918459028006}, Values: [38.33747302368283, 37.866285260766745, 37.272918459028006]
+2025-12-18 15:24:59 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 15:25:25 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 15:25:27 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 15:25:27 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 15:25:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 48352.85407158686, 2025: 49535.77346456051, 2026: 50718.692857534625}, values=[48352.85407158686, 49535.77346456051, 50718.692857534625], CI_lower=[45522.031228005326, 46704.950620978976, 47887.87001395309], CI_upper=[51183.67691516839, 52366.59630814204, 53549.51570111616]
+2025-12-18 15:25:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48352.85407158686, 49535.77346456051, 50718.692857534625], CI_lower: [45522.031228005326, 46704.950620978976, 47887.87001395309], CI_upper: [51183.67691516839, 52366.59630814204, 53549.51570111616]
+2025-12-18 15:25:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 45522.031228005326, 46704.950620978976, 47887.87001395309], upper=[np.float64(46320.22889547622), 51183.67691516839, 52366.59630814204, 53549.51570111616]
+2025-12-18 15:25:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 51226.817805439234, 2025: 53365.20556232333, 2026: 55604.09526541829}, values=[51226.817805439234, 53365.20556232333, 55604.09526541829], CI_lower=[49406.3015947052, 51544.689351589295, 53783.579054684255], CI_upper=[53047.33401617327, 55185.72177305737, 57424.61147615233]
+2025-12-18 15:25:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51226.817805439234, 53365.20556232333, 55604.09526541829], CI_lower: [49406.3015947052, 51544.689351589295, 53783.579054684255], CI_upper: [53047.33401617327, 55185.72177305737, 57424.61147615233]
+2025-12-18 15:25:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 49406.3015947052, 51544.689351589295, 53783.579054684255], upper=[np.float64(46320.22889547622), 53047.33401617327, 55185.72177305737, 57424.61147615233]
+2025-12-18 15:25:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 52080.422382354736, 2025: 54815.71530532837, 2026: 57809.56786727905}, values=[52080.422382354736, 54815.71530532837, 57809.56786727905], CI_lower=[50320.60510021375, 53055.89802318738, 56049.75058513806], CI_upper=[53840.239664495726, 56575.53258746936, 59569.38514942004]
+2025-12-18 15:25:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52080.422382354736, 54815.71530532837, 57809.56786727905], CI_lower: [50320.60510021375, 53055.89802318738, 56049.75058513806], CI_upper: [53840.239664495726, 56575.53258746936, 59569.38514942004]
+2025-12-18 15:25:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 50320.60510021375, 53055.89802318738, 56049.75058513806], upper=[np.float64(46320.22889547622), 53840.239664495726, 56575.53258746936, 59569.38514942004]
+2025-12-18 15:25:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 47235.304815073665, 2025: 47235.304815073665, 2026: 47235.304815073665}, values=[47235.304815073665, 47235.304815073665, 47235.304815073665], CI_lower=[44811.04968375582, 44811.04968375582, 44811.04968375582], CI_upper=[49659.55994639151, 49659.55994639151, 49659.55994639151]
+2025-12-18 15:25:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47235.304815073665, 47235.304815073665, 47235.304815073665], CI_lower: [44811.04968375582, 44811.04968375582, 44811.04968375582], CI_upper: [49659.55994639151, 49659.55994639151, 49659.55994639151]
+2025-12-18 15:25:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 44811.04968375582, 44811.04968375582, 44811.04968375582], upper=[np.float64(46320.22889547622), 49659.55994639151, 49659.55994639151, 49659.55994639151]
+2025-12-18 15:25:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 44814.74356155122, 2025: 44814.74356155122, 2026: 44814.74356155122}, values=[44814.74356155122, 44814.74356155122, 44814.74356155122], CI_lower=[42043.444564999525, 42043.444564999525, 42043.444564999525], CI_upper=[47586.04255810292, 47586.04255810292, 47586.04255810292]
+2025-12-18 15:25:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44814.74356155122, 44814.74356155122, 44814.74356155122], CI_lower: [42043.444564999525, 42043.444564999525, 42043.444564999525], CI_upper: [47586.04255810292, 47586.04255810292, 47586.04255810292]
+2025-12-18 15:25:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 42043.444564999525, 42043.444564999525, 42043.444564999525], upper=[np.float64(46320.22889547622), 47586.04255810292, 47586.04255810292, 47586.04255810292]
+2025-12-18 15:25:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 48213.32503667782, 2025: 48213.32503667782, 2026: 48213.32503667782}, values=[48213.32503667782, 48213.32503667782, 48213.32503667782], CI_lower=[46151.74642718562, 46151.74642718562, 46151.74642718562], CI_upper=[50274.90364617002, 50274.90364617002, 50274.90364617002]
+2025-12-18 15:25:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48213.32503667782, 48213.32503667782, 48213.32503667782], CI_lower: [46151.74642718562, 46151.74642718562, 46151.74642718562], CI_upper: [50274.90364617002, 50274.90364617002, 50274.90364617002]
+2025-12-18 15:25:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 46151.74642718562, 46151.74642718562, 46151.74642718562], upper=[np.float64(46320.22889547622), 50274.90364617002, 50274.90364617002, 50274.90364617002]
+2025-12-18 15:25:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 51573.55756840963, 2025: 52981.28325170081, 2026: 54389.00482378644}, values=[51573.55756840963, 52981.28325170081, 54389.00482378644], CI_lower=[37779.808267106346, 39187.53395039752, 40595.25552248315], CI_upper=[65367.30686971292, 66775.03255300409, 68182.75412508972]
+2025-12-18 15:25:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51573.55756840963, 52981.28325170081, 54389.00482378644], CI_lower: [37779.808267106346, 39187.53395039752, 40595.25552248315], CI_upper: [65367.30686971292, 66775.03255300409, 68182.75412508972]
+2025-12-18 15:25:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 37779.808267106346, 39187.53395039752, 40595.25552248315], upper=[np.float64(46320.22889547622), 65367.30686971292, 66775.03255300409, 68182.75412508972]
+2025-12-18 15:25:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 51594.489805765304, 2025: 53023.151859903744, 2026: 54451.813914042184}, values=[51594.489805765304, 53023.151859903744, 54451.813914042184], CI_lower=[49159.51545773172, 50588.17751187016, 52016.8395660086], CI_upper=[54029.46415379889, 55458.12620793733, 56886.78826207577]
+2025-12-18 15:25:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51594.489805765304, 53023.151859903744, 54451.813914042184], CI_lower: [49159.51545773172, 50588.17751187016, 52016.8395660086], CI_upper: [54029.46415379889, 55458.12620793733, 56886.78826207577]
+2025-12-18 15:25:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46320.22889547622), 49159.51545773172, 50588.17751187016, 52016.8395660086], upper=[np.float64(46320.22889547622), 54029.46415379889, 55458.12620793733, 56886.78826207577]
+2025-12-18 15:25:34 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 15:25:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 47363.802507254295, 2025: 48591.0533770225, 2026: 49818.30424679071}, values=[47363.802507254295, 48591.0533770225, 49818.30424679071], CI_lower=[44382.628997230255, 45609.87986699846, 46837.13073676667], CI_upper=[50344.976017278335, 51572.22688704654, 52799.47775681475]
+2025-12-18 15:25:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47363.802507254295, 48591.0533770225, 49818.30424679071], CI_lower: [44382.628997230255, 45609.87986699846, 46837.13073676667], CI_upper: [50344.976017278335, 51572.22688704654, 52799.47775681475]
+2025-12-18 15:25:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 44382.628997230255, 45609.87986699846, 46837.13073676667], upper=[np.float64(30199.484985178504), 50344.976017278335, 51572.22688704654, 52799.47775681475]
+2025-12-18 15:25:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 50856.16890576482, 2025: 53244.48021966219, 2026: 55754.91889932752}, values=[50856.16890576482, 53244.48021966219, 55754.91889932752], CI_lower=[49460.38448510689, 51848.695799004265, 54359.13447866959], CI_upper=[52251.95332642274, 54640.264640320114, 57150.70331998544]
+2025-12-18 15:25:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50856.16890576482, 53244.48021966219, 55754.91889932752], CI_lower: [49460.38448510689, 51848.695799004265, 54359.13447866959], CI_upper: [52251.95332642274, 54640.264640320114, 57150.70331998544]
+2025-12-18 15:25:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 49460.38448510689, 51848.695799004265, 54359.13447866959], upper=[np.float64(30199.484985178504), 52251.95332642274, 54640.264640320114, 57150.70331998544]
+2025-12-18 15:25:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 51416.164697647095, 2025: 54195.89453315735, 2026: 57201.38919258118}, values=[51416.164697647095, 54195.89453315735, 57201.38919258118], CI_lower=[50054.25977082578, 52833.989606336036, 55839.484265759864], CI_upper=[52778.06962446841, 55557.79945997866, 58563.29411940249]
+2025-12-18 15:25:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51416.164697647095, 54195.89453315735, 57201.38919258118], CI_lower: [50054.25977082578, 52833.989606336036, 55839.484265759864], CI_upper: [52778.06962446841, 55557.79945997866, 58563.29411940249]
+2025-12-18 15:25:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 50054.25977082578, 52833.989606336036, 55839.484265759864], upper=[np.float64(30199.484985178504), 52778.06962446841, 55557.79945997866, 58563.29411940249]
+2025-12-18 15:25:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 46459.65625906821, 2025: 46459.65625906821, 2026: 46459.65625906821}, values=[46459.65625906821, 46459.65625906821, 46459.65625906821], CI_lower=[44172.9526184683, 44172.9526184683, 44172.9526184683], CI_upper=[48746.35989966812, 48746.35989966812, 48746.35989966812]
+2025-12-18 15:25:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46459.65625906821, 46459.65625906821, 46459.65625906821], CI_lower: [44172.9526184683, 44172.9526184683, 44172.9526184683], CI_upper: [48746.35989966812, 48746.35989966812, 48746.35989966812]
+2025-12-18 15:25:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 44172.9526184683, 44172.9526184683, 44172.9526184683], upper=[np.float64(30199.484985178504), 48746.35989966812, 48746.35989966812, 48746.35989966812]
+2025-12-18 15:25:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43783.43751944388, 2025: 43783.43751944388, 2026: 43783.43751944388}, values=[43783.43751944388, 43783.43751944388, 43783.43751944388], CI_lower=[40822.88797310029, 40822.88797310029, 40822.88797310029], CI_upper=[46743.98706578748, 46743.98706578748, 46743.98706578748]
+2025-12-18 15:25:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43783.43751944388, 43783.43751944388, 43783.43751944388], CI_lower: [40822.88797310029, 40822.88797310029, 40822.88797310029], CI_upper: [46743.98706578748, 46743.98706578748, 46743.98706578748]
+2025-12-18 15:25:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 40822.88797310029, 40822.88797310029, 40822.88797310029], upper=[np.float64(30199.484985178504), 46743.98706578748, 46743.98706578748, 46743.98706578748]
+2025-12-18 15:25:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 47332.014909069985, 2025: 47332.014909069985, 2026: 47332.014909069985}, values=[47332.014909069985, 47332.014909069985, 47332.014909069985], CI_lower=[45411.385244590565, 45411.385244590565, 45411.385244590565], CI_upper=[49252.644573549405, 49252.644573549405, 49252.644573549405]
+2025-12-18 15:25:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47332.014909069985, 47332.014909069985, 47332.014909069985], CI_lower: [45411.385244590565, 45411.385244590565, 45411.385244590565], CI_upper: [49252.644573549405, 49252.644573549405, 49252.644573549405]
+2025-12-18 15:25:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 45411.385244590565, 45411.385244590565, 45411.385244590565], upper=[np.float64(30199.484985178504), 49252.644573549405, 49252.644573549405, 49252.644573549405]
+2025-12-18 15:25:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 50555.70019751235, 2025: 51967.54153770262, 2026: 53379.3587525267}, values=[50555.70019751235, 51967.54153770262, 53379.3587525267], CI_lower=[37315.10074512418, 38726.942085314455, 40138.75930013853], CI_upper=[63796.29964990052, 65208.14099009079, 66619.95820491487]
+2025-12-18 15:25:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50555.70019751235, 51967.54153770262, 53379.3587525267], CI_lower: [37315.10074512418, 38726.942085314455, 40138.75930013853], CI_upper: [63796.29964990052, 65208.14099009079, 66619.95820491487]
+2025-12-18 15:25:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 37315.10074512418, 38726.942085314455, 40138.75930013853], upper=[np.float64(30199.484985178504), 63796.29964990052, 65208.14099009079, 66619.95820491487]
+2025-12-18 15:25:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 51456.4952695636, 2025: 53772.46887296746, 2026: 56088.44247637131}, values=[51456.4952695636, 53772.46887296746, 56088.44247637131], CI_lower=[49307.36706933868, 51623.34067274254, 53939.31427614639], CI_upper=[53605.62346978852, 55921.59707319238, 58237.57067659623]
+2025-12-18 15:25:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51456.4952695636, 53772.46887296746, 56088.44247637131], CI_lower: [49307.36706933868, 51623.34067274254, 53939.31427614639], CI_upper: [53605.62346978852, 55921.59707319238, 58237.57067659623]
+2025-12-18 15:25:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30199.484985178504), 49307.36706933868, 51623.34067274254, 53939.31427614639], upper=[np.float64(30199.484985178504), 53605.62346978852, 55921.59707319238, 58237.57067659623]
+2025-12-18 15:25:40 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 15:25:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 49492.6938621006, 2025: 50712.53891336592, 2026: 51932.38396463124}, values=[49492.6938621006, 50712.53891336592, 51932.38396463124], CI_lower=[46533.84893108566, 47753.69398235098, 48973.539033616304], CI_upper=[52451.538793115535, 53671.383844380856, 54891.22889564618]
+2025-12-18 15:25:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49492.6938621006, 50712.53891336592, 51932.38396463124], CI_lower: [46533.84893108566, 47753.69398235098, 48973.539033616304], CI_upper: [52451.538793115535, 53671.383844380856, 54891.22889564618]
+2025-12-18 15:25:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 46533.84893108566, 47753.69398235098, 48973.539033616304], upper=[np.float64(34927.91413942497), 52451.538793115535, 53671.383844380856, 54891.22889564618]
+2025-12-18 15:25:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 52397.51983991265, 2025: 54583.09361359477, 2026: 56870.24858021736}, values=[52397.51983991265, 54583.09361359477, 56870.24858021736], CI_lower=[50409.04914431712, 52594.62291799924, 54881.77788462183], CI_upper=[54385.99053550819, 56571.564309190304, 58858.719275812895]
+2025-12-18 15:25:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52397.51983991265, 54583.09361359477, 56870.24858021736], CI_lower: [50409.04914431712, 52594.62291799924, 54881.77788462183], CI_upper: [54385.99053550819, 56571.564309190304, 58858.719275812895]
+2025-12-18 15:25:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 50409.04914431712, 52594.62291799924, 54881.77788462183], upper=[np.float64(34927.91413942497), 54385.99053550819, 56571.564309190304, 58858.719275812895]
+2025-12-18 15:25:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 53673.14767074585, 2025: 56750.8133354187, 2026: 60166.28556442261}, values=[53673.14767074585, 56750.8133354187, 60166.28556442261], CI_lower=[51810.742024795916, 54888.40768946877, 58303.879918472674], CI_upper=[55535.55331669578, 58613.218981368635, 62028.69121037254]
+2025-12-18 15:25:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53673.14767074585, 56750.8133354187, 60166.28556442261], CI_lower: [51810.742024795916, 54888.40768946877, 58303.879918472674], CI_upper: [55535.55331669578, 58613.218981368635, 62028.69121037254]
+2025-12-18 15:25:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 51810.742024795916, 54888.40768946877, 58303.879918472674], upper=[np.float64(34927.91413942497), 55535.55331669578, 58613.218981368635, 62028.69121037254]
+2025-12-18 15:25:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 48536.35149707235, 2025: 48536.35149707235, 2026: 48536.35149707235}, values=[48536.35149707235, 48536.35149707235, 48536.35149707235], CI_lower=[45927.36180795361, 45927.36180795361, 45927.36180795361], CI_upper=[51145.341186191086, 51145.341186191086, 51145.341186191086]
+2025-12-18 15:25:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48536.35149707235, 48536.35149707235, 48536.35149707235], CI_lower: [45927.36180795361, 45927.36180795361, 45927.36180795361], CI_upper: [51145.341186191086, 51145.341186191086, 51145.341186191086]
+2025-12-18 15:25:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 45927.36180795361, 45927.36180795361, 45927.36180795361], upper=[np.float64(34927.91413942497), 51145.341186191086, 51145.341186191086, 51145.341186191086]
+2025-12-18 15:25:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 45827.6959106752, 2025: 45827.6959106752, 2026: 45827.6959106752}, values=[45827.6959106752, 45827.6959106752, 45827.6959106752], CI_lower=[42877.43018863805, 42877.43018863805, 42877.43018863805], CI_upper=[48777.961632712344, 48777.961632712344, 48777.961632712344]
+2025-12-18 15:25:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45827.6959106752, 45827.6959106752, 45827.6959106752], CI_lower: [42877.43018863805, 42877.43018863805, 42877.43018863805], CI_upper: [48777.961632712344, 48777.961632712344, 48777.961632712344]
+2025-12-18 15:25:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 42877.43018863805, 42877.43018863805, 42877.43018863805], upper=[np.float64(34927.91413942497), 48777.961632712344, 48777.961632712344, 48777.961632712344]
+2025-12-18 15:25:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 49449.65345562998, 2025: 49449.65345562998, 2026: 49449.65345562998}, values=[49449.65345562998, 49449.65345562998, 49449.65345562998], CI_lower=[47292.01656281962, 47292.01656281962, 47292.01656281962], CI_upper=[51607.29034844034, 51607.29034844034, 51607.29034844034]
+2025-12-18 15:25:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49449.65345562998, 49449.65345562998, 49449.65345562998], CI_lower: [47292.01656281962, 47292.01656281962, 47292.01656281962], CI_upper: [51607.29034844034, 51607.29034844034, 51607.29034844034]
+2025-12-18 15:25:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 47292.01656281962, 47292.01656281962, 47292.01656281962], upper=[np.float64(34927.91413942497), 51607.29034844034, 51607.29034844034, 51607.29034844034]
+2025-12-18 15:25:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 51339.18489095587, 2025: 51321.113645059064, 2026: 51322.22029200128}, values=[51339.18489095587, 51321.113645059064, 51322.22029200128], CI_lower=[37693.67472706592, 37675.60348116911, 37676.71012811133], CI_upper=[64984.69505484582, 64966.623808949014, 64967.73045589123]
+2025-12-18 15:25:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51339.18489095587, 51321.113645059064, 51322.22029200128], CI_lower: [37693.67472706592, 37675.60348116911, 37676.71012811133], CI_upper: [64984.69505484582, 64966.623808949014, 64967.73045589123]
+2025-12-18 15:25:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 37693.67472706592, 37675.60348116911, 37676.71012811133], upper=[np.float64(34927.91413942497), 64984.69505484582, 64966.623808949014, 64967.73045589123]
+2025-12-18 15:25:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 52497.07325546606, 2025: 53950.06019707494, 2026: 55403.047138683825}, values=[52497.07325546606, 53950.06019707494, 55403.047138683825], CI_lower=[49768.06509144314, 51221.05203305202, 52674.03897466091], CI_upper=[55226.081419488975, 56679.06836109786, 58132.05530270674]
+2025-12-18 15:25:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52497.07325546606, 53950.06019707494, 55403.047138683825], CI_lower: [49768.06509144314, 51221.05203305202, 52674.03897466091], CI_upper: [55226.081419488975, 56679.06836109786, 58132.05530270674]
+2025-12-18 15:25:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34927.91413942497), 49768.06509144314, 51221.05203305202, 52674.03897466091], upper=[np.float64(34927.91413942497), 55226.081419488975, 56679.06836109786, 58132.05530270674]
+2025-12-18 15:25:47 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 15:25:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 42.096522679412516, 2025: 42.18179583881465, 2026: 42.26706899821676}, values=[42.096522679412516, 42.18179583881465, 42.26706899821676], CI_lower=[40.94117385122987, 41.026447010632005, 41.11172017003411], CI_upper=[43.25187150759516, 43.3371446669973, 43.4224178263994]
+2025-12-18 15:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.096522679412516, 42.18179583881465, 42.26706899821676], CI_lower: [40.94117385122987, 41.026447010632005, 41.11172017003411], CI_upper: [43.25187150759516, 43.3371446669973, 43.4224178263994]
+2025-12-18 15:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 40.94117385122987, 41.026447010632005, 41.11172017003411], upper=[np.float64(42.22264429671837), 43.25187150759516, 43.3371446669973, 43.4224178263994]
+2025-12-18 15:25:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 43.16910076282511, 2025: 43.61095964197011, 2026: 44.09032636563643}, values=[43.16910076282511, 43.61095964197011, 44.09032636563643], CI_lower=[42.34429438335174, 42.78615326249674, 43.265519986163056], CI_upper=[43.99390714229848, 44.435766021443484, 44.9151327451098]
+2025-12-18 15:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.16910076282511, 43.61095964197011, 44.09032636563643], CI_lower: [42.34429438335174, 42.78615326249674, 43.265519986163056], CI_upper: [43.99390714229848, 44.435766021443484, 44.9151327451098]
+2025-12-18 15:25:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 42.34429438335174, 42.78615326249674, 43.265519986163056], upper=[np.float64(42.22264429671837), 43.99390714229848, 44.435766021443484, 44.9151327451098]
+2025-12-18 15:25:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 43.5622546505183, 2025: 44.27894008345902, 2026: 45.105901496484876}, values=[43.5622546505183, 44.27894008345902, 45.105901496484876], CI_lower=[42.76586690131208, 43.4825523342528, 44.30951374727866], CI_upper=[44.358642399724516, 45.07532783266524, 45.902289245691094]
+2025-12-18 15:25:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.5622546505183, 44.27894008345902, 45.105901496484876], CI_lower: [42.76586690131208, 43.4825523342528, 44.30951374727866], CI_upper: [44.358642399724516, 45.07532783266524, 45.902289245691094]
+2025-12-18 15:25:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 42.76586690131208, 43.4825523342528, 44.30951374727866], upper=[np.float64(42.22264429671837), 44.358642399724516, 45.07532783266524, 45.902289245691094]
+2025-12-18 15:25:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 42.48325267331808, 2025: 42.48325267331808, 2026: 42.48325267331808}, values=[42.48325267331808, 42.48325267331808, 42.48325267331808], CI_lower=[41.67003758002649, 41.67003758002649, 41.67003758002649], CI_upper=[43.296467766609666, 43.296467766609666, 43.296467766609666]
+2025-12-18 15:25:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.48325267331808, 42.48325267331808, 42.48325267331808], CI_lower: [41.67003758002649, 41.67003758002649, 41.67003758002649], CI_upper: [43.296467766609666, 43.296467766609666, 43.296467766609666]
+2025-12-18 15:25:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 41.67003758002649, 41.67003758002649, 41.67003758002649], upper=[np.float64(42.22264429671837), 43.296467766609666, 43.296467766609666, 43.296467766609666]
+2025-12-18 15:25:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42.067576245164005, 2025: 42.067576245164005, 2026: 42.067576245164005}, values=[42.067576245164005, 42.067576245164005, 42.067576245164005], CI_lower=[41.17478618117288, 41.17478618117288, 41.17478618117288], CI_upper=[42.960366309155134, 42.960366309155134, 42.960366309155134]
+2025-12-18 15:25:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.067576245164005, 42.067576245164005, 42.067576245164005], CI_lower: [41.17478618117288, 41.17478618117288, 41.17478618117288], CI_upper: [42.960366309155134, 42.960366309155134, 42.960366309155134]
+2025-12-18 15:25:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 41.17478618117288, 41.17478618117288, 41.17478618117288], upper=[np.float64(42.22264429671837), 42.960366309155134, 42.960366309155134, 42.960366309155134]
+2025-12-18 15:25:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 42.56602017948098, 2025: 42.56602017948098, 2026: 42.56602017948098}, values=[42.56602017948098, 42.56602017948098, 42.56602017948098], CI_lower=[41.946899690550474, 41.946899690550474, 41.946899690550474], CI_upper=[43.185140668411485, 43.185140668411485, 43.185140668411485]
+2025-12-18 15:25:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.56602017948098, 42.56602017948098, 42.56602017948098], CI_lower: [41.946899690550474, 41.946899690550474, 41.946899690550474], CI_upper: [43.185140668411485, 43.185140668411485, 43.185140668411485]
+2025-12-18 15:25:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 41.946899690550474, 41.946899690550474, 41.946899690550474], upper=[np.float64(42.22264429671837), 43.185140668411485, 43.185140668411485, 43.185140668411485]
+2025-12-18 15:25:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 42.56521007004701, 2025: 42.63923662738575, 2026: 42.59042387394533}, values=[42.56521007004701, 42.63923662738575, 42.59042387394533], CI_lower=[22.938533960273112, 23.012560517611853, 22.963747764171437], CI_upper=[62.191886179820905, 62.265912737159645, 62.21709998371923]
+2025-12-18 15:25:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.56521007004701, 42.63923662738575, 42.59042387394533], CI_lower: [22.938533960273112, 23.012560517611853, 22.963747764171437], CI_upper: [62.191886179820905, 62.265912737159645, 62.21709998371923]
+2025-12-18 15:25:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 22.938533960273112, 23.012560517611853, 22.963747764171437], upper=[np.float64(42.22264429671837), 62.191886179820905, 62.265912737159645, 62.21709998371923]
+2025-12-18 15:25:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 42.739287958853716, 2025: 42.834325995162814, 2026: 42.92936403147191}, values=[42.739287958853716, 42.834325995162814, 42.92936403147191], CI_lower=[41.615812652203715, 41.710850688512814, 41.80588872482191], CI_upper=[43.862763265503716, 43.957801301812815, 44.05283933812191]
+2025-12-18 15:25:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.739287958853716, 42.834325995162814, 42.92936403147191], CI_lower: [41.615812652203715, 41.710850688512814, 41.80588872482191], CI_upper: [43.862763265503716, 43.957801301812815, 44.05283933812191]
+2025-12-18 15:25:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.22264429671837), 41.615812652203715, 41.710850688512814, 41.80588872482191], upper=[np.float64(42.22264429671837), 43.862763265503716, 43.957801301812815, 44.05283933812191]
+2025-12-18 15:25:53 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 15:25:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 38.842496410314325, 2025: 38.7944025973886, 2026: 38.74630878446288}, values=[38.842496410314325, 38.7944025973886, 38.74630878446288], CI_lower=[38.15847024810054, 38.110376435174814, 38.0622826222491], CI_upper=[39.52652257252811, 39.47842875960238, 39.430334946676666]
+2025-12-18 15:25:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.842496410314325, 38.7944025973886, 38.74630878446288], CI_lower: [38.15847024810054, 38.110376435174814, 38.0622826222491], CI_upper: [39.52652257252811, 39.47842875960238, 39.430334946676666]
+2025-12-18 15:25:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 38.15847024810054, 38.110376435174814, 38.0622826222491], upper=[np.float64(38.569460390355914), 39.52652257252811, 39.47842875960238, 39.430334946676666]
+2025-12-18 15:25:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 39.03396044308283, 2025: 39.04952012167632, 2026: 39.07177525982297}, values=[39.03396044308283, 39.04952012167632, 39.07177525982297], CI_lower=[38.365353523224066, 38.380913201817556, 38.4031683399642], CI_upper=[39.7025673629416, 39.71812704153509, 39.74038217968174]
+2025-12-18 15:25:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.03396044308283, 39.04952012167632, 39.07177525982297], CI_lower: [38.365353523224066, 38.380913201817556, 38.4031683399642], CI_upper: [39.7025673629416, 39.71812704153509, 39.74038217968174]
+2025-12-18 15:25:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 38.365353523224066, 38.380913201817556, 38.4031683399642], upper=[np.float64(38.569460390355914), 39.7025673629416, 39.71812704153509, 39.74038217968174]
+2025-12-18 15:25:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 38.33747302368283, 2025: 37.866285260766745, 2026: 37.272918459028006}, values=[38.33747302368283, 37.866285260766745, 37.272918459028006], CI_lower=[37.78743694186054, 37.31624917894445, 36.722882377205714], CI_upper=[38.887509105505124, 38.416321342589036, 37.8229545408503]
+2025-12-18 15:25:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.33747302368283, 37.866285260766745, 37.272918459028006], CI_lower: [37.78743694186054, 37.31624917894445, 36.722882377205714], CI_upper: [38.887509105505124, 38.416321342589036, 37.8229545408503]
+2025-12-18 15:25:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 37.78743694186054, 37.31624917894445, 36.722882377205714], upper=[np.float64(38.569460390355914), 38.887509105505124, 38.416321342589036, 37.8229545408503]
+2025-12-18 15:25:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 38.92782578921023, 2025: 38.92782578921023, 2026: 38.92782578921023}, values=[38.92782578921023, 38.92782578921023, 38.92782578921023], CI_lower=[38.27894953238647, 38.27894953238647, 38.27894953238647], CI_upper=[39.576702046033994, 39.576702046033994, 39.576702046033994]
+2025-12-18 15:25:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.92782578921023, 38.92782578921023, 38.92782578921023], CI_lower: [38.27894953238647, 38.27894953238647, 38.27894953238647], CI_upper: [39.576702046033994, 39.576702046033994, 39.576702046033994]
+2025-12-18 15:25:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 38.27894953238647, 38.27894953238647, 38.27894953238647], upper=[np.float64(38.569460390355914), 39.576702046033994, 39.576702046033994, 39.576702046033994]
+2025-12-18 15:25:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 39.0304856489721, 2025: 39.0304856489721, 2026: 39.0304856489721}, values=[39.0304856489721, 39.0304856489721, 39.0304856489721], CI_lower=[38.480845129243065, 38.480845129243065, 38.480845129243065], CI_upper=[39.58012616870114, 39.58012616870114, 39.58012616870114]
+2025-12-18 15:25:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.0304856489721, 39.0304856489721, 39.0304856489721], CI_lower: [38.480845129243065, 38.480845129243065, 38.480845129243065], CI_upper: [39.58012616870114, 39.58012616870114, 39.58012616870114]
+2025-12-18 15:25:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 38.480845129243065, 38.480845129243065, 38.480845129243065], upper=[np.float64(38.569460390355914), 39.58012616870114, 39.58012616870114, 39.58012616870114]
+2025-12-18 15:25:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 38.89928163723467, 2025: 38.89928163723467, 2026: 38.89928163723467}, values=[38.89928163723467, 38.89928163723467, 38.89928163723467], CI_lower=[38.293642234536264, 38.293642234536264, 38.293642234536264], CI_upper=[39.50492103993308, 39.50492103993308, 39.50492103993308]
+2025-12-18 15:25:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.89928163723467, 38.89928163723467, 38.89928163723467], CI_lower: [38.293642234536264, 38.293642234536264, 38.293642234536264], CI_upper: [39.50492103993308, 39.50492103993308, 39.50492103993308]
+2025-12-18 15:25:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 38.293642234536264, 38.293642234536264, 38.293642234536264], upper=[np.float64(38.569460390355914), 39.50492103993308, 39.50492103993308, 39.50492103993308]
+2025-12-18 15:25:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 38.97517369030407, 2025: 38.993284473389366, 2026: 38.994092927201464}, values=[38.97517369030407, 38.993284473389366, 38.994092927201464], CI_lower=[19.71697176330507, 19.73508254639037, 19.735891000202468], CI_upper=[58.23337561730307, 58.25148640038836, 58.25229485420046]
+2025-12-18 15:25:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.97517369030407, 38.993284473389366, 38.994092927201464], CI_lower: [19.71697176330507, 19.73508254639037, 19.735891000202468], CI_upper: [58.23337561730307, 58.25148640038836, 58.25229485420046]
+2025-12-18 15:25:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 19.71697176330507, 19.73508254639037, 19.735891000202468], upper=[np.float64(38.569460390355914), 58.23337561730307, 58.25148640038836, 58.25229485420046]
+2025-12-18 15:25:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 38.85894060235164, 2025: 38.808184168643244, 2026: 38.75742773493486}, values=[38.85894060235164, 38.808184168643244, 38.75742773493486], CI_lower=[38.173798955970646, 38.12304252226225, 38.07228608855387], CI_upper=[39.54408224873263, 39.493325815024235, 39.44256938131585]
+2025-12-18 15:25:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.85894060235164, 38.808184168643244, 38.75742773493486], CI_lower: [38.173798955970646, 38.12304252226225, 38.07228608855387], CI_upper: [39.54408224873263, 39.493325815024235, 39.44256938131585]
+2025-12-18 15:25:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.569460390355914), 38.173798955970646, 38.12304252226225, 38.07228608855387], upper=[np.float64(38.569460390355914), 39.54408224873263, 39.493325815024235, 39.44256938131585]
+2025-12-18 15:26:03 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 15:26:03 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 15:26:53 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 17323.6171875, 'mse': 1331583488.0, 'rmse': 36490.86855639367, 'r2': 0.15437792241573334}
+2025-12-18 15:26:55 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 15:27:31 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 4.038829803466797, 'mse': 78.44732666015625, 'rmse': 8.857049545991952, 'r2': 0.301835834980011}
+2025-12-18 15:27:32 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 15:28:09 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 14.88691234588623, 'mse': 619.6888427734375, 'rmse': 24.893550224374135, 'r2': -5.315134525299072}
+2025-12-18 15:28:10 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 15:28:26 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/South_Dakota/population/1-year/figures/ml/deep_learning
+2025-12-18 15:28:27 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 15:28:27 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 15:28:27 [DEBUG] census_eda.main:  Running LLM analysis for state: South Dakota
+2025-12-18 15:28:27 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 15:28:27 [INFO] census_eda.ml: [LLM] State context loaded: South Dakota
+2025-12-18 15:28:27 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [API] Total request: ~2311 tokens (system: ~2129, user: ~182)
+2025-12-18 15:28:27 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [API] Received response: 4060 chars
+2025-12-18 15:28:40 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4060 chars)
+2025-12-18 15:28:40 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [API] Total request: ~2450 tokens (system: ~2129, user: ~321)
+2025-12-18 15:28:40 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [API] Received response: 3149 chars
+2025-12-18 15:28:49 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3149 chars)
+2025-12-18 15:28:49 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [API] Total request: ~2677 tokens (system: ~2129, user: ~548)
+2025-12-18 15:28:49 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [API] Received response: 4108 chars
+2025-12-18 15:29:02 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4108 chars)
+2025-12-18 15:29:02 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [API] Total request: ~2469 tokens (system: ~2129, user: ~340)
+2025-12-18 15:29:02 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [API] Received response: 3980 chars
+2025-12-18 15:29:14 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3980 chars)
+2025-12-18 15:29:14 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [API] Total request: ~2319 tokens (system: ~2129, user: ~190)
+2025-12-18 15:29:14 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [API] Received response: 3724 chars
+2025-12-18 15:29:24 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3724 chars)
+2025-12-18 15:29:24 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [LLM] User prompt: 8764 chars (~2191 tokens)
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [API] Total request: ~4320 tokens (system: ~2129, user: ~2191)
+2025-12-18 15:29:24 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [API] Received response: 3180 chars
+2025-12-18 15:29:37 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3180 chars)
+2025-12-18 15:29:37 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [LLM] User prompt: 5180 chars (~1295 tokens)
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [API] Total request: ~3424 tokens (system: ~2129, user: ~1295)
+2025-12-18 15:29:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [API] Received response: 3496 chars
+2025-12-18 15:29:48 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3496 chars)
+2025-12-18 15:29:48 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [LLM] User prompt: 695 chars (~173 tokens)
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [API] Total request: ~2302 tokens (system: ~2129, user: ~173)
+2025-12-18 15:29:48 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [API] Received response: 3474 chars
+2025-12-18 15:29:59 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3474 chars)
+2025-12-18 15:29:59 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [LLM] User prompt: 5484 chars (~1371 tokens)
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [API] Total request: ~3500 tokens (system: ~2129, user: ~1371)
+2025-12-18 15:29:59 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [API] Received response: 3964 chars
+2025-12-18 15:30:11 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3964 chars)
+2025-12-18 15:30:11 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [LLM] User prompt: 1837 chars (~459 tokens)
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [API] Total request: ~2588 tokens (system: ~2129, user: ~459)
+2025-12-18 15:30:11 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [API] Received response: 4213 chars
+2025-12-18 15:30:24 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4213 chars)
+2025-12-18 15:30:24 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Dakota
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Dakota
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3629 chars
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~907
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Dakota
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, cattle), Tourism (Mount Rushmore, Black Hills), Financial services (credit cards, banking), Healthcare, Food processing and ethanol
+  Trends: Diversification from agriculture dominance. Financial services boom post-1980s continues. Strong 2011-2019 growth. Commodity price boom 2020-2022, then softening. Tourism steady growth
+  Income: Near national median. Low cost of living improves purchasing power. Sioux Falls area above state average. Rural areas lower income
+  Dominant Sector: Services (particularly financial services)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady modest growth ~0.7% annually. Concentrated in Sioux Falls and Rapid City. Rural population stable to declining
+  Migration: Modest in-migration to urban areas (Sioux Falls economy). Out-migration from rural counties. Limited international immigration
+  Education: Near national average in bachelor's attainment. Strong K-12 performance. Public university system serves state well
+
+HOUSING MARKET:
+  Market: Very affordable by national standards. Sioux Falls market tightening. Rural areas with surplus aging housing stock
+  Affordability: Affordable throughout 2011-2023. Sioux Falls appreciation 2020-2023 but still reasonable. Rural areas stable/declining prices
+  Challenges: Aging rural housing stock, Sioux Falls growth management, Reservation housing quality, Seasonal tourism housing bubbles
+
+POLITY:
+  Policy: Very business-friendly: no state income tax, no corporate income tax, minimal regulation. Conservative on social issues. Libertarian streaks on economic policy
+  Housing: Minimal state intervention. Local control. Market-driven. Affordable housing not major issue except Sioux Falls growth areas
+  Labor: Right-to-work state, $11.20 minimum wage (indexed to inflation since 2015), business-friendly environment
+
+REGIONAL:
+  Geography: Eastern SD (agriculture, Sioux Falls), Missouri River divides state, West River (ranching, Black Hills, Badlands, tourism)
+  Urban/Rural: 57% urban (primarily Sioux Falls, Rapid City), 43% rural. Most geographic area rural/agricultural
+  Infrastructure: Adequate highway system. Small airports serve tourist areas. I-90 corridor critical. Limited public transit. Improving broadband
+
+HISTORICAL:
+  Events: 2011-2013: Agricultural recovery, financial services steady, tourism growth, Homestake Mine closing (2001) effects lingering; 2014-2016: Commodity price boom benefits agriculture, Sioux Falls growth accelerates, EB-5 visa scandal; 2017-2019: Strong agricultural economy, record tourism, Sioux Falls becomes state's fastest growing city, wind energy expansion; 2021-2023: Agricultural commodity price spike 2021-2022 then decline, tourism records broken, Medicaid expansion passed (2022), Sioux Falls housing appreciation
+  Shocks: 2012-2016 drought cycles. 2020 pandemic tourism dip (brief). Agricultural commodity price swings
+  Transitions: Homestake gold mine closed 2001, becoming Deep Underground Science Lab. Shift from small family farms to large agricultural operations. Tourism professionalization
+
+COMPARATIVE:
+  Benchmarks: Small population, low GDP. Near median income, very low cost of living. Low unemployment. High home ownership. Below average diversity
+  Peer States: North Dakota (agriculture, small population), Nebraska (agriculture, plains), Wyoming (small population, conservative)
+  Unique: No state income tax rare for non-resource states. Major credit card industry hub (Citibank). Trust fund haven. Mount Rushmore iconic tourism. Sturgis Motorcycle Rally massive annual event
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Dakota
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [PROMPT] State context injected (3629 chars)
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8517 chars (~2129 tokens)
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [API] Total request: ~2538 tokens (system: ~2129, user: ~409)
+2025-12-18 15:30:24 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:30:35 [DEBUG] census_eda.ml: [API] Received response: 3706 chars
+2025-12-18 15:30:35 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (3706 chars)
+2025-12-18 15:30:35 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 15:30:35 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 15:30:35 [INFO] census_eda.main: [REPORT] Generated: report_South_Dakota_population_20251218_153035.txt
+2025-12-18 15:30:35 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for South Dakota!
+2025-12-18 15:30:36 [INFO] census_eda.memory: process_South Dakota_population_1-year:EXIT: 12084.1MB (delta: -283.9MB)
+2025-12-18 15:30:37 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 15:30:39 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 15:30:41 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 15:30:43 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 15:30:45 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 15:30:47 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 15:30:49 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 15:30:51 [INFO] census_eda.memory: Cleared all caches

@@ -1,0 +1,1244 @@
+2025-12-15 23:16:22 [INFO] census_eda: Logging context set: state=District of Columbia, survey=population, scope=1-year
+2025-12-15 23:16:22 [INFO] census_eda: Log file: ./logs/District of Columbia/1-year/population/1-year_population_25_12_15_2316.log
+2025-12-15 23:16:22 [INFO] census_eda.main: ======================================================================
+2025-12-15 23:16:22 [INFO] census_eda.main: [POPULATION] Processing District of Columbia (1-year)...
+2025-12-15 23:16:22 [INFO] census_eda.main: ======================================================================
+2025-12-15 23:16:22 [INFO] census_eda.memory: process_District of Columbia_population_1-year:ENTER: 7868.8MB (delta: +0.0MB)
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/11/*/*.csv
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pdc.csv
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,303 rows, 260 columns
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p11.csv
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,565 rows, 260 columns
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pdc.csv
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,517 rows, 260 columns
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pdc.csv
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,572 rows, 260 columns
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pdc.csv
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,476 rows, 260 columns
+2025-12-15 23:16:22 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pdc.csv
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,580 rows, 260 columns
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p11.csv
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,549 rows, 260 columns
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pdc.csv
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,531 rows, 260 columns
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pdc.csv
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,646 rows, 260 columns
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p11.csv
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,647 rows, 260 columns
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p11.csv
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,718 rows, 260 columns
+2025-12-15 23:16:23 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p11.csv
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,162 rows, 260 columns
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p11.csv
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,735 rows, 260 columns
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pdc.csv
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,610 rows, 260 columns
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pdc.csv
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,842 rows, 260 columns
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pdc.csv
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,262 rows, 260 columns
+2025-12-15 23:16:24 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-15 23:16:25 [VERBOSE] census_eda.processing.loader: Combined into 101,715 total rows, 260 columns
+2025-12-15 23:16:25 [INFO] census_eda.main: Loaded 101,715 records
+2025-12-15 23:16:25 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 101715 valid, 16 unique
+2025-12-15 23:16:25 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-15 23:16:25 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-15 23:16:25 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-15 23:16:25 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-15 23:16:25 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-15 23:16:25 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-15 23:16:26 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-15 23:16:26 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-15 23:16:26 [DEBUG] census_eda.main: Feature engineering complete: (101715, 292)
+2025-12-15 23:16:26 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-15 23:16:26 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-15 23:16:46 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-15 23:16:46 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-15 23:16:46 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(101715, 292)
+2025-12-15 23:16:46 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-15 23:16:46 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 101715
+2025-12-15 23:16:46 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(101715, 292)
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(5476), np.int64(2008): np.int64(5531), np.int64(2009): np.int64(5580), np.int64(2010): np.int64(5842), np.int64(2011): np.int64(6262), np.int64(2012): np.int64(6303), np.int64(2013): np.int64(6572), np.int64(2014): np.int64(6517), np.int64(2015): np.int64(6610), np.int64(2016): np.int64(6646), np.int64(2017): np.int64(6565), np.int64(2018): np.int64(6549), np.int64(2019): np.int64(6647), np.int64(2021): np.int64(7162), np.int64(2022): np.int64(6718), np.int64(2023): np.int64(6735)}
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(101715, 292)
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 101715 non-null values (zeros excluded if needed)
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 15.00
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 101715 non-null values (zeros excluded if needed)
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1870.00
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 101715 non-null values (zeros excluded if needed)
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-15 23:16:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-15 23:16:48 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 47653 non-null values (zeros excluded if needed)
+2025-12-15 23:16:48 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 177.00
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 16051 non-null values (zeros excluded if needed)
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 522000.00
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 4485 non-null values (zeros excluded if needed)
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 93000.00
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 1689 non-null values (zeros excluded if needed)
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Value range: 10.00 to 30000.00
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 9730 non-null values (zeros excluded if needed)
+2025-12-15 23:16:49 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 369000.00
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 5389 non-null values (zeros excluded if needed)
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 727000.00
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 2943 non-null values (zeros excluded if needed)
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Value range: 1000.00 to 30000.00
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 12516 non-null values (zeros excluded if needed)
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 60159 non-null values (zeros excluded if needed)
+2025-12-15 23:16:50 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 870000.00
+2025-12-15 23:16:52 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-15 23:16:59 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-15 23:16:59 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-15 23:16:59 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-15 23:17:00 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-15 23:17:00 [DEBUG] census_eda.memory: Skipping sampling: 42245MB available (>16GB)
+2025-12-15 23:17:00 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 101715 rows
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(101715, 292)
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 101715 non-null values
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 15.00
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 101715 non-null values
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1870.00
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 101715 non-null values
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 47653 non-null values
+2025-12-15 23:17:21 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 177.00
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 16051 non-null values
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 522000.00
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 4485 non-null values
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 93000.00
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 1689 non-null values
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 30000.00
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 9730 non-null values
+2025-12-15 23:17:22 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 369000.00
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 5389 non-null values
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 727000.00
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 2943 non-null values
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Data range: 1000.00 to 30000.00
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 12516 non-null values
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 60159 non-null values
+2025-12-15 23:17:23 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 870000.00
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 62839 non-null values
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 49634 non-null values
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 13894 non-null values
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 88249 non-null values
+2025-12-15 23:17:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-15 23:17:31 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-15 23:17:38 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-15 23:17:43 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-15 23:17:53 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-15 23:17:53 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-15 23:17:53 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-15 23:17:54 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-15 23:17:54 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-15 23:17:55 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-15 23:17:56 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-15 23:17:56 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-15 23:17:56 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-15 23:17:56 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-15 23:17:57 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-15 23:17:58 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-15 23:17:58 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-15 23:17:58 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-15 23:17:59 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-15 23:18:00 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-15 23:18:00 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-15 23:18:00 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-15 23:18:00 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-15 23:18:01 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-15 23:18:02 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-15 23:18:02 [DEBUG] census_eda.memory: Skipping sampling: 42475MB available (>16GB)
+2025-12-15 23:18:05 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-15 23:18:05 [DEBUG] census_eda.memory: Skipping sampling: 42478MB available (>16GB)
+2025-12-15 23:18:12 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-15 23:18:12 [DEBUG] census_eda.memory: Skipping sampling: 42482MB available (>16GB)
+2025-12-15 23:18:14 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-15 23:18:19 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-15 23:18:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-15 23:18:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-15 23:18:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-15 23:18:20 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-15 23:18:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-15 23:18:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-15 23:18:22 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-15 23:18:22 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-15 23:18:22 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-15 23:18:22 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-15 23:18:22 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-15 23:18:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-15 23:18:23 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-15 23:18:23 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-15 23:18:23 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-15 23:18:23 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-15 23:18:24 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-15 23:18:25 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-15 23:18:25 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-15 23:18:26 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-15 23:18:27 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-15 23:18:28 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-15 23:18:28 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-15 23:18:28 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-15 23:18:28 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-15 23:18:29 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-15 23:18:29 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-15 23:18:30 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-15 23:18:31 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-15 23:18:31 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-15 23:18:32 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-15 23:18:33 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-15 23:18:35 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-15 23:18:35 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-15 23:18:36 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/District_of_Columbia/population/1-year/figures
+2025-12-15 23:18:36 [DEBUG] census_eda.memory: Skipping sampling: 42189MB available (>16GB)
+2025-12-15 23:18:36 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-15 23:18:36 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-15 23:18:36 [INFO] census_eda.memory: [ML-START]: 7918.5MB (delta: +49.7MB)
+2025-12-15 23:18:36 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-15 23:18:36 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-15 23:18:36 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 1144 samples (was 1144)
+2025-12-15 23:18:36 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 23:18:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 23:18:36 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:36 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 23:18:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1094
+2025-12-15 23:18:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 23:18:38 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:38 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-15 23:18:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1060
+2025-12-15 23:18:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 23:18:38 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:38 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:40 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 23:18:40 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0823
+2025-12-15 23:18:40 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 23:18:41 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:41 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-15 23:18:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1237
+2025-12-15 23:18:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:43 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-15 23:18:43 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 1103 samples (was 1144)
+2025-12-15 23:18:43 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 23:18:43 [INFO] census_eda.ml.regression: [TUNE] Data: 1,103 samples, 10 features
+2025-12-15 23:18:43 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1067
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 23:18:43 [INFO] census_eda.ml.regression: [TUNE] Data: 1,103 samples, 10 features
+2025-12-15 23:18:43 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1026
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 23:18:43 [INFO] census_eda.ml.regression: [TUNE] Data: 1,103 samples, 10 features
+2025-12-15 23:18:43 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 23:18:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0778
+2025-12-15 23:18:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 23:18:47 [INFO] census_eda.ml.regression: [TUNE] Data: 1,103 samples, 10 features
+2025-12-15 23:18:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1047
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:48 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-15 23:18:48 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 1144 samples (was 1144)
+2025-12-15 23:18:48 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 23:18:48 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:48 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1061
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 23:18:48 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:48 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1029
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 23:18:48 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:48 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 23:18:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0912
+2025-12-15 23:18:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 23:18:52 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:52 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0636
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:53 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-15 23:18:53 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 23:18:53 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:53 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 23:18:53 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:53 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-15 23:18:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 23:18:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:54 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 23:18:54 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:54 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:55 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-15 23:18:55 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 23:18:55 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:56 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 23:18:56 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:56 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.3, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:18:57 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-15 23:18:57 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 23:18:57 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:57 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 10.0}
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0290
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 23:18:57 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:57 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0298
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 23:18:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 23:18:57 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:18:57 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:19:00 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 23:19:00 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0891
+2025-12-15 23:19:00 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:19:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 23:19:01 [INFO] census_eda.ml.regression: [TUNE] Data: 1,144 samples, 10 features
+2025-12-15 23:19:01 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 23:19:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-15 23:19:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0088
+2025-12-15 23:19:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 23:19:03 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 7920.5MB (delta: +2.0MB)
+2025-12-15 23:19:03 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 229 samples...
+2025-12-15 23:19:04 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 7920.5MB (delta: +0.0MB)
+2025-12-15 23:19:04 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-15 23:19:04 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-15 23:19:04 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-15 23:19:04 [INFO] census_eda.memory: [PRE-CLUSTERING]: 7920.5MB (delta: +0.0MB)
+2025-12-15 23:19:04 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-15 23:19:04 [INFO] census_eda.main: [CLUSTERING] KMeans on 1,144 samples...
+2025-12-15 23:19:05 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-15 23:19:05 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 1,144 samples (will sample if needed)...
+2025-12-15 23:19:05 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-15 23:19:05 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-15 23:19:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 111712.88201332092, 2025: 119130.14242362976, 2026: 127064.01901435852}, Values: [111712.88201332092, 119130.14242362976, 127064.01901435852]
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-15 23:19:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 116234.24054718018, 2025: 124930.18363189697, 2026: 134530.08011627197}, Values: [116234.24054718018, 124930.18363189697, 134530.08011627197]
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-15 23:19:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 117418.35369873047, 2025: 126397.53079223633, 2026: 136351.86489868164}, Values: [117418.35369873047, 126397.53079223633, 136351.86489868164]
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-15 23:19:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 39.96061929878814, 2025: 39.96061929878814, 2026: 39.96061929878814}, Values: [39.96061929878814, 39.96061929878814, 39.96061929878814]
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-15 23:19:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 39.224403871504705, 2025: 39.224403871504705, 2026: 39.224403871504705}, Values: [39.224403871504705, 39.224403871504705, 39.224403871504705]
+2025-12-15 23:19:05 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-15 23:19:30 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-15 23:19:33 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-15 23:19:33 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-15 23:19:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 98022.35788739007, 2025: 100795.6385512827, 2026: 103568.91921517532}, values=[98022.35788739007, 100795.6385512827, 103568.91921517532], CI_lower=[87409.55677352301, 90182.83743741564, 92956.11810130827], CI_upper=[108635.15900125713, 111408.43966514975, 114181.72032904238]
+2025-12-15 23:19:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [98022.35788739007, 100795.6385512827, 103568.91921517532], CI_lower: [87409.55677352301, 90182.83743741564, 92956.11810130827], CI_upper: [108635.15900125713, 111408.43966514975, 114181.72032904238]
+2025-12-15 23:19:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 87409.55677352301, 90182.83743741564, 92956.11810130827], upper=[np.float64(97193.81833417127), 108635.15900125713, 111408.43966514975, 114181.72032904238]
+2025-12-15 23:19:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 111460.85553085804, 2025: 118701.85414206982, 2026: 126412.7943713665}, values=[111460.85553085804, 118701.85414206982, 126412.7943713665], CI_lower=[108316.92026485974, 115557.91887607152, 123268.8591053682], CI_upper=[114604.79079685634, 121845.78940806811, 129556.7296373648]
+2025-12-15 23:19:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [111460.85553085804, 118701.85414206982, 126412.7943713665], CI_lower: [108316.92026485974, 115557.91887607152, 123268.8591053682], CI_upper: [114604.79079685634, 121845.78940806811, 129556.7296373648]
+2025-12-15 23:19:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 108316.92026485974, 115557.91887607152, 123268.8591053682], upper=[np.float64(97193.81833417127), 114604.79079685634, 121845.78940806811, 129556.7296373648]
+2025-12-15 23:19:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 111712.88201332092, 2025: 119130.14242362976, 2026: 127064.01901435852}, values=[111712.88201332092, 119130.14242362976, 127064.01901435852], CI_lower=[108571.96077107536, 115989.2211813842, 123923.09777211296], CI_upper=[114853.80325556648, 122271.06366587532, 130204.94025660408]
+2025-12-15 23:19:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [111712.88201332092, 119130.14242362976, 127064.01901435852], CI_lower: [108571.96077107536, 115989.2211813842, 123923.09777211296], CI_upper: [114853.80325556648, 122271.06366587532, 130204.94025660408]
+2025-12-15 23:19:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 108571.96077107536, 115989.2211813842, 123923.09777211296], upper=[np.float64(97193.81833417127), 114853.80325556648, 122271.06366587532, 130204.94025660408]
+2025-12-15 23:19:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 97951.34234714207, 2025: 97951.34234714207, 2026: 97951.34234714207}, values=[97951.34234714207, 97951.34234714207, 97951.34234714207], CI_lower=[92244.59164057896, 92244.59164057896, 92244.59164057896], CI_upper=[103658.09305370518, 103658.09305370518, 103658.09305370518]
+2025-12-15 23:19:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [97951.34234714207, 97951.34234714207, 97951.34234714207], CI_lower: [92244.59164057896, 92244.59164057896, 92244.59164057896], CI_upper: [103658.09305370518, 103658.09305370518, 103658.09305370518]
+2025-12-15 23:19:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 92244.59164057896, 92244.59164057896, 92244.59164057896], upper=[np.float64(97193.81833417127), 103658.09305370518, 103658.09305370518, 103658.09305370518]
+2025-12-15 23:19:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 91336.82221500255, 2025: 91336.82221500255, 2026: 91336.82221500255}, values=[91336.82221500255, 91336.82221500255, 91336.82221500255], CI_lower=[81979.56027694108, 81979.56027694108, 81979.56027694108], CI_upper=[100694.08415306403, 100694.08415306403, 100694.08415306403]
+2025-12-15 23:19:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [91336.82221500255, 91336.82221500255, 91336.82221500255], CI_lower: [81979.56027694108, 81979.56027694108, 81979.56027694108], CI_upper: [100694.08415306403, 100694.08415306403, 100694.08415306403]
+2025-12-15 23:19:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 81979.56027694108, 81979.56027694108, 81979.56027694108], upper=[np.float64(97193.81833417127), 100694.08415306403, 100694.08415306403, 100694.08415306403]
+2025-12-15 23:19:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 100644.1692757787, 2025: 100644.1692757787, 2026: 100644.1692757787}, values=[100644.1692757787, 100644.1692757787, 100644.1692757787], CI_lower=[96619.49918485724, 96619.49918485724, 96619.49918485724], CI_upper=[104668.83936670015, 104668.83936670015, 104668.83936670015]
+2025-12-15 23:19:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [100644.1692757787, 100644.1692757787, 100644.1692757787], CI_lower: [96619.49918485724, 96619.49918485724, 96619.49918485724], CI_upper: [104668.83936670015, 104668.83936670015, 104668.83936670015]
+2025-12-15 23:19:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 96619.49918485724, 96619.49918485724, 96619.49918485724], upper=[np.float64(97193.81833417127), 104668.83936670015, 104668.83936670015, 104668.83936670015]
+2025-12-15 23:19:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 109490.66092320433, 2025: 112603.58241926119, 2026: 115716.49999808015}, values=[109490.66092320433, 112603.58241926119, 115716.49999808015], CI_lower=[81070.65940946732, 84183.58090552418, 87296.49848434314], CI_upper=[137910.66243694135, 141023.5839329982, 144136.50151181716]
+2025-12-15 23:19:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [109490.66092320433, 112603.58241926119, 115716.49999808015], CI_lower: [81070.65940946732, 84183.58090552418, 87296.49848434314], CI_upper: [137910.66243694135, 141023.5839329982, 144136.50151181716]
+2025-12-15 23:19:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 81070.65940946732, 84183.58090552418, 87296.49848434314], upper=[np.float64(97193.81833417127), 137910.66243694135, 141023.5839329982, 144136.50151181716]
+2025-12-15 23:19:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 113889.96380999772, 2025: 122132.18019494016, 2026: 130374.3965798826}, values=[113889.96380999772, 122132.18019494016, 130374.3965798826], CI_lower=[108860.2061644727, 117102.42254941513, 125344.63893435757], CI_upper=[118919.72145552274, 127161.93784046518, 135404.1542254076]
+2025-12-15 23:19:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [113889.96380999772, 122132.18019494016, 130374.3965798826], CI_lower: [108860.2061644727, 117102.42254941513, 125344.63893435757], CI_upper: [118919.72145552274, 127161.93784046518, 135404.1542254076]
+2025-12-15 23:19:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(97193.81833417127), 108860.2061644727, 117102.42254941513, 125344.63893435757], upper=[np.float64(97193.81833417127), 118919.72145552274, 127161.93784046518, 135404.1542254076]
+2025-12-15 23:19:39 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-15 23:19:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 101287.14316600095, 2025: 104082.8663549861, 2026: 106878.58954397123}, values=[101287.14316600095, 104082.8663549861, 106878.58954397123], CI_lower=[91602.07476595049, 94397.79795493562, 97193.52114392076], CI_upper=[110972.21156605142, 113767.93475503656, 116563.6579440217]
+2025-12-15 23:19:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [101287.14316600095, 104082.8663549861, 106878.58954397123], CI_lower: [91602.07476595049, 94397.79795493562, 97193.52114392076], CI_upper: [110972.21156605142, 113767.93475503656, 116563.6579440217]
+2025-12-15 23:19:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 91602.07476595049, 94397.79795493562, 97193.52114392076], upper=[np.float64(77874.96061672532), 110972.21156605142, 113767.93475503656, 116563.6579440217]
+2025-12-15 23:19:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 113694.2590379715, 2025: 120614.81044375896, 2026: 127969.23625051975}, values=[113694.2590379715, 120614.81044375896, 127969.23625051975], CI_lower=[111200.37315119084, 118120.92455697831, 125475.3503637391], CI_upper=[116188.14492475215, 123108.69633053962, 130463.12213730041]
+2025-12-15 23:19:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [113694.2590379715, 120614.81044375896, 127969.23625051975], CI_lower: [111200.37315119084, 118120.92455697831, 125475.3503637391], CI_upper: [116188.14492475215, 123108.69633053962, 130463.12213730041]
+2025-12-15 23:19:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 111200.37315119084, 118120.92455697831, 125475.3503637391], upper=[np.float64(77874.96061672532), 116188.14492475215, 123108.69633053962, 130463.12213730041]
+2025-12-15 23:19:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 116234.24054718018, 2025: 124930.18363189697, 2026: 134530.08011627197}, values=[116234.24054718018, 124930.18363189697, 134530.08011627197], CI_lower=[114161.31408043028, 122857.25716514708, 132457.15364952208], CI_upper=[118307.16701393007, 127003.11009864687, 136603.00658302187]
+2025-12-15 23:19:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [116234.24054718018, 124930.18363189697, 134530.08011627197], CI_lower: [114161.31408043028, 122857.25716514708, 132457.15364952208], CI_upper: [118307.16701393007, 127003.11009864687, 136603.00658302187]
+2025-12-15 23:19:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 114161.31408043028, 122857.25716514708, 132457.15364952208], upper=[np.float64(77874.96061672532), 118307.16701393007, 127003.11009864687, 136603.00658302187]
+2025-12-15 23:19:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 101357.35973503969, 2025: 101357.35973503969, 2026: 101357.35973503969}, values=[101357.35973503969, 101357.35973503969, 101357.35973503969], CI_lower=[96043.71992796102, 96043.71992796102, 96043.71992796102], CI_upper=[106670.99954211836, 106670.99954211836, 106670.99954211836]
+2025-12-15 23:19:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [101357.35973503969, 101357.35973503969, 101357.35973503969], CI_lower: [96043.71992796102, 96043.71992796102, 96043.71992796102], CI_upper: [106670.99954211836, 106670.99954211836, 106670.99954211836]
+2025-12-15 23:19:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 96043.71992796102, 96043.71992796102, 96043.71992796102], upper=[np.float64(77874.96061672532), 106670.99954211836, 106670.99954211836, 106670.99954211836]
+2025-12-15 23:19:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 94311.29942248967, 2025: 94311.29942248967, 2026: 94311.29942248967}, values=[94311.29942248967, 94311.29942248967, 94311.29942248967], CI_lower=[85626.06376247684, 85626.06376247684, 85626.06376247684], CI_upper=[102996.5350825025, 102996.5350825025, 102996.5350825025]
+2025-12-15 23:19:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [94311.29942248967, 94311.29942248967, 94311.29942248967], CI_lower: [85626.06376247684, 85626.06376247684, 85626.06376247684], CI_upper: [102996.5350825025, 102996.5350825025, 102996.5350825025]
+2025-12-15 23:19:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 85626.06376247684, 85626.06376247684, 85626.06376247684], upper=[np.float64(77874.96061672532), 102996.5350825025, 102996.5350825025, 102996.5350825025]
+2025-12-15 23:19:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 103675.41425905524, 2025: 103675.41425905524, 2026: 103675.41425905524}, values=[103675.41425905524, 103675.41425905524, 103675.41425905524], CI_lower=[99783.34738531912, 99783.34738531912, 99783.34738531912], CI_upper=[107567.48113279135, 107567.48113279135, 107567.48113279135]
+2025-12-15 23:19:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [103675.41425905524, 103675.41425905524, 103675.41425905524], CI_lower: [99783.34738531912, 99783.34738531912, 99783.34738531912], CI_upper: [107567.48113279135, 107567.48113279135, 107567.48113279135]
+2025-12-15 23:19:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 99783.34738531912, 99783.34738531912, 99783.34738531912], upper=[np.float64(77874.96061672532), 107567.48113279135, 107567.48113279135, 107567.48113279135]
+2025-12-15 23:19:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 112018.07154485428, 2025: 115237.29044470929, 2026: 118456.50708589298}, values=[112018.07154485428, 115237.29044470929, 118456.50708589298], CI_lower=[83190.06780930658, 86409.28670916159, 89628.50335034527], CI_upper=[140846.07528040197, 144065.29418025698, 147284.5108214407]
+2025-12-15 23:19:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [112018.07154485428, 115237.29044470929, 118456.50708589298], CI_lower: [83190.06780930658, 86409.28670916159, 89628.50335034527], CI_upper: [140846.07528040197, 144065.29418025698, 147284.5108214407]
+2025-12-15 23:19:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 83190.06780930658, 86409.28670916159, 89628.50335034527], upper=[np.float64(77874.96061672532), 140846.07528040197, 144065.29418025698, 147284.5108214407]
+2025-12-15 23:19:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 116055.77641852276, 2025: 123721.55028832269, 2026: 131387.32415812262}, values=[116055.77641852276, 123721.55028832269, 131387.32415812262], CI_lower=[112067.31298533588, 119733.08685513581, 127398.86072493574], CI_upper=[120044.23985170963, 127710.01372150956, 135375.7875913095]
+2025-12-15 23:19:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [116055.77641852276, 123721.55028832269, 131387.32415812262], CI_lower: [112067.31298533588, 119733.08685513581, 127398.86072493574], CI_upper: [120044.23985170963, 127710.01372150956, 135375.7875913095]
+2025-12-15 23:19:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(77874.96061672532), 112067.31298533588, 119733.08685513581, 127398.86072493574], upper=[np.float64(77874.96061672532), 120044.23985170963, 127710.01372150956, 135375.7875913095]
+2025-12-15 23:19:46 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-15 23:19:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 101700.59096693806, 2025: 104414.97617411986, 2026: 107129.36138130259}, values=[101700.59096693806, 104414.97617411986, 107129.36138130259], CI_lower=[91487.08987913869, 94201.47508632048, 96915.86029350321], CI_upper=[111914.09205473744, 114628.47726191924, 117342.86246910196]
+2025-12-15 23:19:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [101700.59096693806, 104414.97617411986, 107129.36138130259], CI_lower: [91487.08987913869, 94201.47508632048, 96915.86029350321], CI_upper: [111914.09205473744, 114628.47726191924, 117342.86246910196]
+2025-12-15 23:19:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 91487.08987913869, 94201.47508632048, 96915.86029350321], upper=[np.float64(82919.11298482293), 111914.09205473744, 114628.47726191924, 117342.86246910196]
+2025-12-15 23:19:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 114586.20156276226, 2025: 121584.49374067783, 2026: 129033.39318573475}, values=[114586.20156276226, 121584.49374067783, 129033.39318573475], CI_lower=[111447.90154322879, 118446.19372114436, 125895.09316620127], CI_upper=[117724.50158229574, 124722.79376021131, 132171.69320526824]
+2025-12-15 23:19:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [114586.20156276226, 121584.49374067783, 129033.39318573475], CI_lower: [111447.90154322879, 118446.19372114436, 125895.09316620127], CI_upper: [117724.50158229574, 124722.79376021131, 132171.69320526824]
+2025-12-15 23:19:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 111447.90154322879, 118446.19372114436, 125895.09316620127], upper=[np.float64(82919.11298482293), 117724.50158229574, 124722.79376021131, 132171.69320526824]
+2025-12-15 23:19:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 117418.35369873047, 2025: 126397.53079223633, 2026: 136351.86489868164}, values=[117418.35369873047, 126397.53079223633, 136351.86489868164], CI_lower=[114687.9392036499, 123667.11629715576, 133621.45040360108], CI_upper=[120148.76819381103, 129127.94528731689, 139082.2793937622]
+2025-12-15 23:19:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [117418.35369873047, 126397.53079223633, 136351.86489868164], CI_lower: [114687.9392036499, 123667.11629715576, 133621.45040360108], CI_upper: [120148.76819381103, 129127.94528731689, 139082.2793937622]
+2025-12-15 23:19:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 114687.9392036499, 123667.11629715576, 133621.45040360108], upper=[np.float64(82919.11298482293), 120148.76819381103, 129127.94528731689, 139082.2793937622]
+2025-12-15 23:19:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 101850.87269720144, 2025: 101850.87269720144, 2026: 101850.87269720144}, values=[101850.87269720144, 101850.87269720144, 101850.87269720144], CI_lower=[96183.30927312675, 96183.30927312675, 96183.30927312675], CI_upper=[107518.43612127613, 107518.43612127613, 107518.43612127613]
+2025-12-15 23:19:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [101850.87269720144, 101850.87269720144, 101850.87269720144], CI_lower: [96183.30927312675, 96183.30927312675, 96183.30927312675], CI_upper: [107518.43612127613, 107518.43612127613, 107518.43612127613]
+2025-12-15 23:19:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 96183.30927312675, 96183.30927312675, 96183.30927312675], upper=[np.float64(82919.11298482293), 107518.43612127613, 107518.43612127613, 107518.43612127613]
+2025-12-15 23:19:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 95222.29032045759, 2025: 95222.29032045759, 2026: 95222.29032045759}, values=[95222.29032045759, 95222.29032045759, 95222.29032045759], CI_lower=[86409.52754128043, 86409.52754128043, 86409.52754128043], CI_upper=[104035.05309963474, 104035.05309963474, 104035.05309963474]
+2025-12-15 23:19:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [95222.29032045759, 95222.29032045759, 95222.29032045759], CI_lower: [86409.52754128043, 86409.52754128043, 86409.52754128043], CI_upper: [104035.05309963474, 104035.05309963474, 104035.05309963474]
+2025-12-15 23:19:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 86409.52754128043, 86409.52754128043, 86409.52754128043], upper=[np.float64(82919.11298482293), 104035.05309963474, 104035.05309963474, 104035.05309963474]
+2025-12-15 23:19:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 104600.99883678924, 2025: 104600.99883678924, 2026: 104600.99883678924}, values=[104600.99883678924, 104600.99883678924, 104600.99883678924], CI_lower=[100359.63326907111, 100359.63326907111, 100359.63326907111], CI_upper=[108842.36440450736, 108842.36440450736, 108842.36440450736]
+2025-12-15 23:19:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [104600.99883678924, 104600.99883678924, 104600.99883678924], CI_lower: [100359.63326907111, 100359.63326907111, 100359.63326907111], CI_upper: [108842.36440450736, 108842.36440450736, 108842.36440450736]
+2025-12-15 23:19:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 100359.63326907111, 100359.63326907111, 100359.63326907111], upper=[np.float64(82919.11298482293), 108842.36440450736, 108842.36440450736, 108842.36440450736]
+2025-12-15 23:19:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 114026.11573479936, 2025: 117255.73653082213, 2026: 120485.3563042471}, values=[114026.11573479936, 117255.73653082213, 120485.3563042471], CI_lower=[84359.53107571979, 87589.15187174256, 90818.77164516754], CI_upper=[143692.7003938789, 146922.3211899017, 150151.94096332666]
+2025-12-15 23:19:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [114026.11573479936, 117255.73653082213, 120485.3563042471], CI_lower: [84359.53107571979, 87589.15187174256, 90818.77164516754], CI_upper: [143692.7003938789, 146922.3211899017, 150151.94096332666]
+2025-12-15 23:19:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 84359.53107571979, 87589.15187174256, 90818.77164516754], upper=[np.float64(82919.11298482293), 143692.7003938789, 146922.3211899017, 150151.94096332666]
+2025-12-15 23:19:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 118203.53154156292, 2025: 126795.56943345306, 2026: 135387.6073253432}, values=[118203.53154156292, 126795.56943345306, 135387.6073253432], CI_lower=[113836.29699151576, 122428.3348834059, 131020.37277529605], CI_upper=[122570.76609161007, 131162.80398350023, 139754.84187539038]
+2025-12-15 23:19:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [118203.53154156292, 126795.56943345306, 135387.6073253432], CI_lower: [113836.29699151576, 122428.3348834059, 131020.37277529605], CI_upper: [122570.76609161007, 131162.80398350023, 139754.84187539038]
+2025-12-15 23:19:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(82919.11298482293), 113836.29699151576, 122428.3348834059, 131020.37277529605], upper=[np.float64(82919.11298482293), 122570.76609161007, 131162.80398350023, 139754.84187539038]
+2025-12-15 23:19:52 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-15 23:19:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 39.25527464137245, 2025: 39.25654230053712, 2026: 39.25780995970178}, values=[39.25527464137245, 39.25654230053712, 39.25780995970178], CI_lower=[38.291308794765115, 38.29257645392978, 38.293844113094444], CI_upper=[40.21924048797979, 40.22050814714446, 40.22177580630912]
+2025-12-15 23:19:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.25527464137245, 39.25654230053712, 39.25780995970178], CI_lower: [38.291308794765115, 38.29257645392978, 38.293844113094444], CI_upper: [40.21924048797979, 40.22050814714446, 40.22177580630912]
+2025-12-15 23:19:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 38.291308794765115, 38.29257645392978, 38.293844113094444], upper=[np.float64(39.57668893838159), 40.21924048797979, 40.22050814714446, 40.22177580630912]
+2025-12-15 23:19:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 40.33932574893697, 2025: 40.70099341106834, 2026: 41.1005701271788}, values=[40.33932574893697, 40.70099341106834, 41.1005701271788], CI_lower=[39.828808936393905, 40.19047659852527, 40.59005331463573], CI_upper=[40.84984256148004, 41.211510223611405, 41.611086939721865]
+2025-12-15 23:19:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [40.33932574893697, 40.70099341106834, 41.1005701271788], CI_lower: [39.828808936393905, 40.19047659852527, 40.59005331463573], CI_upper: [40.84984256148004, 41.211510223611405, 41.611086939721865]
+2025-12-15 23:19:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 39.828808936393905, 40.19047659852527, 40.59005331463573], upper=[np.float64(39.57668893838159), 40.84984256148004, 41.211510223611405, 41.611086939721865]
+2025-12-15 23:19:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 40.805615516379476, 2025: 41.493109883740544, 2026: 42.30477918870747}, values=[40.805615516379476, 41.493109883740544, 42.30477918870747], CI_lower=[40.363029775488386, 41.050524142849454, 41.86219344781638], CI_upper=[41.248201257270566, 41.935695624631634, 42.74736492959856]
+2025-12-15 23:19:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [40.805615516379476, 41.493109883740544, 42.30477918870747], CI_lower: [40.363029775488386, 41.050524142849454, 41.86219344781638], CI_upper: [41.248201257270566, 41.935695624631634, 42.74736492959856]
+2025-12-15 23:19:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 40.363029775488386, 41.050524142849454, 41.86219344781638], upper=[np.float64(39.57668893838159), 41.248201257270566, 41.935695624631634, 42.74736492959856]
+2025-12-15 23:19:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 39.82521693117014, 2025: 39.82521693117014, 2026: 39.82521693117014}, values=[39.82521693117014, 39.82521693117014, 39.82521693117014], CI_lower=[39.27798176085267, 39.27798176085267, 39.27798176085267], CI_upper=[40.37245210148761, 40.37245210148761, 40.37245210148761]
+2025-12-15 23:19:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.82521693117014, 39.82521693117014, 39.82521693117014], CI_lower: [39.27798176085267, 39.27798176085267, 39.27798176085267], CI_upper: [40.37245210148761, 40.37245210148761, 40.37245210148761]
+2025-12-15 23:19:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 39.27798176085267, 39.27798176085267, 39.27798176085267], upper=[np.float64(39.57668893838159), 40.37245210148761, 40.37245210148761, 40.37245210148761]
+2025-12-15 23:19:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 39.54366546604523, 2025: 39.54366546604523, 2026: 39.54366546604523}, values=[39.54366546604523, 39.54366546604523, 39.54366546604523], CI_lower=[38.88008613534017, 38.88008613534017, 38.88008613534017], CI_upper=[40.207244796750295, 40.207244796750295, 40.207244796750295]
+2025-12-15 23:19:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.54366546604523, 39.54366546604523, 39.54366546604523], CI_lower: [38.88008613534017, 38.88008613534017, 38.88008613534017], CI_upper: [40.207244796750295, 40.207244796750295, 40.207244796750295]
+2025-12-15 23:19:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 38.88008613534017, 38.88008613534017, 38.88008613534017], upper=[np.float64(39.57668893838159), 40.207244796750295, 40.207244796750295, 40.207244796750295]
+2025-12-15 23:19:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 39.96061929878814, 2025: 39.96061929878814, 2026: 39.96061929878814}, values=[39.96061929878814, 39.96061929878814, 39.96061929878814], CI_lower=[39.56390771456829, 39.56390771456829, 39.56390771456829], CI_upper=[40.35733088300799, 40.35733088300799, 40.35733088300799]
+2025-12-15 23:19:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.96061929878814, 39.96061929878814, 39.96061929878814], CI_lower: [39.56390771456829, 39.56390771456829, 39.56390771456829], CI_upper: [40.35733088300799, 40.35733088300799, 40.35733088300799]
+2025-12-15 23:19:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 39.56390771456829, 39.56390771456829, 39.56390771456829], upper=[np.float64(39.57668893838159), 40.35733088300799, 40.35733088300799, 40.35733088300799]
+2025-12-15 23:19:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 40.06264203351864, 2025: 40.019038345027475, 2026: 40.042142699940484}, values=[40.06264203351864, 40.019038345027475, 40.042142699940484], CI_lower=[21.212383959334048, 21.16878027084288, 21.19188462575589], CI_upper=[58.91290010770324, 58.86929641921207, 58.89240077412508]
+2025-12-15 23:19:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [40.06264203351864, 40.019038345027475, 40.042142699940484], CI_lower: [21.212383959334048, 21.16878027084288, 21.19188462575589], CI_upper: [58.91290010770324, 58.86929641921207, 58.89240077412508]
+2025-12-15 23:19:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 21.212383959334048, 21.16878027084288, 21.19188462575589], upper=[np.float64(39.57668893838159), 58.91290010770324, 58.86929641921207, 58.89240077412508]
+2025-12-15 23:19:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 40.28944382427681, 2025: 40.51237548634782, 2026: 40.73530714841883}, values=[40.28944382427681, 40.51237548634782, 40.73530714841883], CI_lower=[39.53145926144345, 39.754390923514464, 39.977322585585476], CI_upper=[41.047428387110166, 41.27036004918118, 41.49329171125219]
+2025-12-15 23:19:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [40.28944382427681, 40.51237548634782, 40.73530714841883], CI_lower: [39.53145926144345, 39.754390923514464, 39.977322585585476], CI_upper: [41.047428387110166, 41.27036004918118, 41.49329171125219]
+2025-12-15 23:19:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.57668893838159), 39.53145926144345, 39.754390923514464, 39.977322585585476], upper=[np.float64(39.57668893838159), 41.047428387110166, 41.27036004918118, 41.49329171125219]
+2025-12-15 23:19:58 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-15 23:19:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 39.20909450859861, 2025: 39.15007959823356, 2026: 39.091064687868524}, values=[39.20909450859861, 39.15007959823356, 39.091064687868524], CI_lower=[38.491623848541565, 38.432608938176514, 38.37359402781148], CI_upper=[39.92656516865566, 39.867550258290606, 39.80853534792557]
+2025-12-15 23:19:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.20909450859861, 39.15007959823356, 39.091064687868524], CI_lower: [38.491623848541565, 38.432608938176514, 38.37359402781148], CI_upper: [39.92656516865566, 39.867550258290606, 39.80853534792557]
+2025-12-15 23:19:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 38.491623848541565, 38.432608938176514, 38.37359402781148], upper=[np.float64(39.13986486486486), 39.92656516865566, 39.867550258290606, 39.80853534792557]
+2025-12-15 23:19:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 39.46063928297008, 2025: 39.48525210635489, 2026: 39.518661401005375}, values=[39.46063928297008, 39.48525210635489, 39.518661401005375], CI_lower=[38.76871123843475, 38.79332406181956, 38.826733356470044], CI_upper=[40.15256732750541, 40.17718015089022, 40.210589445540705]
+2025-12-15 23:19:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.46063928297008, 39.48525210635489, 39.518661401005375], CI_lower: [38.76871123843475, 38.79332406181956, 38.826733356470044], CI_upper: [40.15256732750541, 40.17718015089022, 40.210589445540705]
+2025-12-15 23:19:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 38.76871123843475, 38.79332406181956, 38.826733356470044], upper=[np.float64(39.13986486486486), 40.15256732750541, 40.17718015089022, 40.210589445540705]
+2025-12-15 23:19:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 38.589387480169535, 2025: 38.005081962794065, 2026: 37.26834996417165}, values=[38.589387480169535, 38.005081962794065, 37.26834996417165], CI_lower=[38.08678261337644, 37.50247709600097, 36.765745097378556], CI_upper=[39.09199234696263, 38.50768682958716, 37.77095483096474]
+2025-12-15 23:19:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.589387480169535, 38.005081962794065, 37.26834996417165], CI_lower: [38.08678261337644, 37.50247709600097, 36.765745097378556], CI_upper: [39.09199234696263, 38.50768682958716, 37.77095483096474]
+2025-12-15 23:19:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 38.08678261337644, 37.50247709600097, 36.765745097378556], upper=[np.float64(39.13986486486486), 39.09199234696263, 38.50768682958716, 37.77095483096474]
+2025-12-15 23:20:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 39.21882594509344, 2025: 39.21882594509344, 2026: 39.21882594509344}, values=[39.21882594509344, 39.21882594509344, 39.21882594509344], CI_lower=[38.67986959884011, 38.67986959884011, 38.67986959884011], CI_upper=[39.75778229134678, 39.75778229134678, 39.75778229134678]
+2025-12-15 23:20:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.21882594509344, 39.21882594509344, 39.21882594509344], CI_lower: [38.67986959884011, 38.67986959884011, 38.67986959884011], CI_upper: [39.75778229134678, 39.75778229134678, 39.75778229134678]
+2025-12-15 23:20:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 38.67986959884011, 38.67986959884011, 38.67986959884011], upper=[np.float64(39.13986486486486), 39.75778229134678, 39.75778229134678, 39.75778229134678]
+2025-12-15 23:20:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 39.449005341366195, 2025: 39.449005341366195, 2026: 39.449005341366195}, values=[39.449005341366195, 39.449005341366195, 39.449005341366195], CI_lower=[38.91862676341322, 38.91862676341322, 38.91862676341322], CI_upper=[39.97938391931917, 39.97938391931917, 39.97938391931917]
+2025-12-15 23:20:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.449005341366195, 39.449005341366195, 39.449005341366195], CI_lower: [38.91862676341322, 38.91862676341322, 38.91862676341322], CI_upper: [39.97938391931917, 39.97938391931917, 39.97938391931917]
+2025-12-15 23:20:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 38.91862676341322, 38.91862676341322, 38.91862676341322], upper=[np.float64(39.13986486486486), 39.97938391931917, 39.97938391931917, 39.97938391931917]
+2025-12-15 23:20:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 39.224403871504705, 2025: 39.224403871504705, 2026: 39.224403871504705}, values=[39.224403871504705, 39.224403871504705, 39.224403871504705], CI_lower=[38.803435247637736, 38.803435247637736, 38.803435247637736], CI_upper=[39.645372495371674, 39.645372495371674, 39.645372495371674]
+2025-12-15 23:20:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.224403871504705, 39.224403871504705, 39.224403871504705], CI_lower: [38.803435247637736, 38.803435247637736, 38.803435247637736], CI_upper: [39.645372495371674, 39.645372495371674, 39.645372495371674]
+2025-12-15 23:20:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 38.803435247637736, 38.803435247637736, 38.803435247637736], upper=[np.float64(39.13986486486486), 39.645372495371674, 39.645372495371674, 39.645372495371674]
+2025-12-15 23:20:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 39.07359956342774, 2025: 39.13392183446787, 2026: 39.07900959073663}, values=[39.07359956342774, 39.13392183446787, 39.07900959073663], CI_lower=[19.766888622047453, 19.82721089308758, 19.772298649356344], CI_upper=[58.38031050480803, 58.44063277584816, 58.38572053211692]
+2025-12-15 23:20:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.07359956342774, 39.13392183446787, 39.07900959073663], CI_lower: [19.766888622047453, 19.82721089308758, 19.772298649356344], CI_upper: [58.38031050480803, 58.44063277584816, 58.38572053211692]
+2025-12-15 23:20:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 19.766888622047453, 19.82721089308758, 19.772298649356344], upper=[np.float64(39.13986486486486), 58.38031050480803, 58.44063277584816, 58.38572053211692]
+2025-12-15 23:20:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 39.06932578316704, 2025: 38.97502973526695, 2026: 38.880733687366856}, values=[39.06932578316704, 38.97502973526695, 38.880733687366856], CI_lower=[38.3642485478658, 38.26995249996571, 38.17565645206562], CI_upper=[39.77440301846828, 39.68010697056819, 39.585810922668095]
+2025-12-15 23:20:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.06932578316704, 38.97502973526695, 38.880733687366856], CI_lower: [38.3642485478658, 38.26995249996571, 38.17565645206562], CI_upper: [39.77440301846828, 39.68010697056819, 39.585810922668095]
+2025-12-15 23:20:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.13986486486486), 38.3642485478658, 38.26995249996571, 38.17565645206562], upper=[np.float64(39.13986486486486), 39.77440301846828, 39.68010697056819, 39.585810922668095]
+2025-12-15 23:20:05 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-15 23:20:05 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-15 23:20:39 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 38105.0078125, 'mse': 5473942016.0, 'rmse': 73986.09339598895, 'r2': 0.23736202716827393}
+2025-12-15 23:20:39 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-15 23:21:04 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 4.134294509887695, 'mse': 79.90898132324219, 'rmse': 8.939182363238944, 'r2': 0.288717120885849}
+2025-12-15 23:21:04 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-15 23:21:30 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.140979766845703, 'mse': 564.86669921875, 'rmse': 23.766924479594536, 'r2': -6.515322685241699}
+2025-12-15 23:21:31 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-15 23:21:44 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/District_of_Columbia/population/1-year/figures/ml/deep_learning
+2025-12-15 23:21:44 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-15 23:21:44 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-15 23:21:44 [DEBUG] census_eda.main:  Running LLM analysis for state: District of Columbia
+2025-12-15 23:21:44 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-15 23:21:44 [INFO] census_eda.ml: [LLM] State context loaded: District of Columbia
+2025-12-15 23:21:44 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [API] Total request: ~2073 tokens (system: ~1891, user: ~182)
+2025-12-15 23:21:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [API] Received response: 5138 chars
+2025-12-15 23:21:59 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (5138 chars)
+2025-12-15 23:21:59 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [API] Total request: ~2212 tokens (system: ~1891, user: ~321)
+2025-12-15 23:21:59 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [API] Received response: 3644 chars
+2025-12-15 23:22:09 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3644 chars)
+2025-12-15 23:22:09 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [API] Total request: ~2439 tokens (system: ~1891, user: ~548)
+2025-12-15 23:22:09 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [API] Received response: 4174 chars
+2025-12-15 23:22:21 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4174 chars)
+2025-12-15 23:22:21 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [API] Total request: ~2231 tokens (system: ~1891, user: ~340)
+2025-12-15 23:22:21 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [API] Received response: 3654 chars
+2025-12-15 23:22:33 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3654 chars)
+2025-12-15 23:22:33 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [API] Total request: ~2081 tokens (system: ~1891, user: ~190)
+2025-12-15 23:22:33 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [API] Received response: 4393 chars
+2025-12-15 23:22:46 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4393 chars)
+2025-12-15 23:22:46 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [LLM] User prompt: 8629 chars (~2157 tokens)
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [API] Total request: ~4048 tokens (system: ~1891, user: ~2157)
+2025-12-15 23:22:46 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [API] Received response: 2931 chars
+2025-12-15 23:22:57 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (2931 chars)
+2025-12-15 23:22:57 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [LLM] User prompt: 5279 chars (~1319 tokens)
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [API] Total request: ~3210 tokens (system: ~1891, user: ~1319)
+2025-12-15 23:22:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [API] Received response: 3522 chars
+2025-12-15 23:23:08 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3522 chars)
+2025-12-15 23:23:08 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [API] Total request: ~2043 tokens (system: ~1891, user: ~152)
+2025-12-15 23:23:08 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [API] Received response: 4047 chars
+2025-12-15 23:23:20 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (4047 chars)
+2025-12-15 23:23:20 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [LLM] User prompt: 5450 chars (~1362 tokens)
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [API] Total request: ~3253 tokens (system: ~1891, user: ~1362)
+2025-12-15 23:23:20 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [API] Received response: 4186 chars
+2025-12-15 23:23:34 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4186 chars)
+2025-12-15 23:23:34 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [LLM] User prompt: 1833 chars (~458 tokens)
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [API] Total request: ~2349 tokens (system: ~1891, user: ~458)
+2025-12-15 23:23:34 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [API] Received response: 3900 chars
+2025-12-15 23:23:46 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3900 chars)
+2025-12-15 23:23:46 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: District of Columbia
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: District of Columbia
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2676 chars
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~669
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: District of Columbia
+
+ECONOMIC PROFILE:
+  Industries: Federal government, Professional and technical services, Higher education and research, Tourism and hospitality, Information and media
+  Trends: Strong growth 2011-2019 driven by federal spending, tech sector, gentrification. Pandemic impact significant but recovery strong. Federal government provides stability
+  Income: Highest median household income nationally ($106,287). Extreme income inequality within city
+  Dominant Sector: Public administration (federal government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Growth 2011-2017, decline 2018-2021, recovery 2022-2023. Gentrification driving demographic change
+  Migration: Young professional in-migration. Long-term resident displacement due to gentrification. International immigration strong
+  Education: Extremely high educational attainment. Highest concentration of advanced degrees in nation
+
+HOUSING MARKET:
+  Market: Extremely expensive housing market. Median home price ~$725k. Severe affordable housing crisis
+  Affordability: Housing costs rose dramatically 2011-2023. Gentrification displaced many longtime residents
+  Challenges: Extreme gentrification, Limited land, Displacement of longtime residents, Federal height restrictions
+
+POLITY:
+  Policy: Very liberal Democratic control. High taxes, extensive services. Strong labor protections
+  Housing: Extensive affordable housing programs. Rent control. Strong tenant protections. Inclusionary zoning
+  Labor: $17+ minimum wage. Strong union presence. Extensive worker protections
+
+REGIONAL:
+  Geography: Small federal district on Potomac River. Rolling hills. Limited developable land
+  Urban/Rural: 100% urban with varying density. No rural areas
+  Infrastructure: Extensive Metro system. Dense urban development. Traffic congestion significant
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession federal spending, early gentrification acceleration; 2014-2016: Tech sector growth, affordable housing crisis emerges; 2017-2019: Amazon HQ2 process, continued gentrification, political tensions; 2021-2023: January 6th impacts, pandemic recovery, housing preservation efforts
+  Shocks: Federal shutdowns cause temporary disruptions. Pandemic severely affected tourism and hospitality
+  Transitions: Government contracting evolution. Tech sector growth. Tourism industry development
+
+COMPARATIVE:
+  Benchmarks: Highest income, highest education, extreme housing costs. Unique federal government concentration
+  Peer States: San Francisco, Manhattan (comparable urban/expensive areas)
+  Unique: Federal government seat, height restrictions, gentrification intensity, political status unique
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: District of Columbia
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [PROMPT] State context injected (2676 chars)
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7564 chars (~1891 tokens)
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [API] Total request: ~2300 tokens (system: ~1891, user: ~409)
+2025-12-15 23:23:46 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 23:24:04 [DEBUG] census_eda.ml: [API] Received response: 6777 chars
+2025-12-15 23:24:04 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (6777 chars)
+2025-12-15 23:24:04 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-15 23:24:04 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-15 23:24:04 [INFO] census_eda.main: [REPORT] Generated: report_District_of_Columbia_population_20251215_232404.txt
+2025-12-15 23:24:04 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for District of Columbia!
+2025-12-15 23:24:04 [INFO] census_eda.memory: process_District of Columbia_population_1-year:EXIT: 7347.0MB (delta: -573.5MB)
+2025-12-15 23:24:05 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-15 23:24:05 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-15 23:24:06 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-15 23:24:06 [INFO] census_eda.memory: Cleared all caches

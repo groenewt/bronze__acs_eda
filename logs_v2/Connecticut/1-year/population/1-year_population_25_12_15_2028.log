@@ -1,0 +1,1262 @@
+2025-12-15 20:28:31 [INFO] census_eda: Logging context set: state=Connecticut, survey=population, scope=1-year
+2025-12-15 20:28:31 [INFO] census_eda: Log file: ./logs/Connecticut/1-year/population/1-year_population_25_12_15_2028.log
+2025-12-15 20:28:31 [INFO] census_eda.main: ======================================================================
+2025-12-15 20:28:31 [INFO] census_eda.main: [POPULATION] Processing Connecticut (1-year)...
+2025-12-15 20:28:31 [INFO] census_eda.main: ======================================================================
+2025-12-15 20:28:31 [INFO] census_eda.memory: process_Connecticut_population_1-year:ENTER: 11411.7MB (delta: +0.0MB)
+2025-12-15 20:28:31 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-15 20:28:31 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/09/*/*.csv
+2025-12-15 20:28:31 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-15 20:28:31 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pct.csv
+2025-12-15 20:28:32 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-15 20:28:32 [VERBOSE] census_eda.processing.loader:   -> Loaded 36,381 rows, 260 columns
+2025-12-15 20:28:32 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p09.csv
+2025-12-15 20:28:33 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-15 20:28:33 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,978 rows, 260 columns
+2025-12-15 20:28:33 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pct.csv
+2025-12-15 20:28:33 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-15 20:28:33 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,985 rows, 260 columns
+2025-12-15 20:28:33 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pct.csv
+2025-12-15 20:28:34 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-15 20:28:34 [VERBOSE] census_eda.processing.loader:   -> Loaded 36,382 rows, 260 columns
+2025-12-15 20:28:34 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pct.csv
+2025-12-15 20:28:35 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-15 20:28:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,198 rows, 260 columns
+2025-12-15 20:28:35 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pct.csv
+2025-12-15 20:28:35 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-15 20:28:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,272 rows, 260 columns
+2025-12-15 20:28:35 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p09.csv
+2025-12-15 20:28:36 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-15 20:28:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 36,287 rows, 260 columns
+2025-12-15 20:28:36 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pct.csv
+2025-12-15 20:28:36 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-15 20:28:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 34,776 rows, 260 columns
+2025-12-15 20:28:36 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pct.csv
+2025-12-15 20:28:37 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-15 20:28:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,657 rows, 260 columns
+2025-12-15 20:28:37 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p09.csv
+2025-12-15 20:28:38 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-15 20:28:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,578 rows, 260 columns
+2025-12-15 20:28:38 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p09.csv
+2025-12-15 20:28:38 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-15 20:28:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 37,369 rows, 260 columns
+2025-12-15 20:28:38 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p09.csv
+2025-12-15 20:28:39 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-15 20:28:39 [VERBOSE] census_eda.processing.loader:   -> Loaded 36,665 rows, 260 columns
+2025-12-15 20:28:39 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p09.csv
+2025-12-15 20:28:40 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-15 20:28:40 [VERBOSE] census_eda.processing.loader:   -> Loaded 37,112 rows, 260 columns
+2025-12-15 20:28:40 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pct.csv
+2025-12-15 20:28:40 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-15 20:28:40 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,787 rows, 260 columns
+2025-12-15 20:28:40 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pct.csv
+2025-12-15 20:28:41 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-15 20:28:41 [VERBOSE] census_eda.processing.loader:   -> Loaded 35,796 rows, 260 columns
+2025-12-15 20:28:41 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pct.csv
+2025-12-15 20:28:42 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-15 20:28:42 [VERBOSE] census_eda.processing.loader:   -> Loaded 36,538 rows, 260 columns
+2025-12-15 20:28:42 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-15 20:28:46 [VERBOSE] census_eda.processing.loader: Combined into 576,761 total rows, 260 columns
+2025-12-15 20:28:46 [INFO] census_eda.main: Loaded 576,761 records
+2025-12-15 20:28:46 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 576761 valid, 16 unique
+2025-12-15 20:28:46 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-15 20:28:47 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-15 20:28:47 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-15 20:28:47 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-15 20:28:47 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-15 20:28:48 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-15 20:28:48 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-15 20:28:48 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-15 20:28:48 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-15 20:28:48 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-15 20:28:49 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-15 20:28:49 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-15 20:28:49 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-15 20:28:49 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-15 20:28:50 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-15 20:28:50 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-15 20:28:50 [DEBUG] census_eda.main: Feature engineering complete: (576761, 292)
+2025-12-15 20:28:50 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-15 20:28:50 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-15 20:30:18 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(576761, 292)
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 576761
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(576761, 292)
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(35198), np.int64(2008): np.int64(34776), np.int64(2009): np.int64(35272), np.int64(2010): np.int64(35796), np.int64(2011): np.int64(36538), np.int64(2012): np.int64(36381), np.int64(2013): np.int64(36382), np.int64(2014): np.int64(35985), np.int64(2015): np.int64(35787), np.int64(2016): np.int64(35657), np.int64(2017): np.int64(35978), np.int64(2018): np.int64(36287), np.int64(2019): np.int64(35578), np.int64(2021): np.int64(36665), np.int64(2022): np.int64(37369), np.int64(2023): np.int64(37112)}
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(576761, 292)
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-15 20:30:18 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 576761 non-null values (zeros excluded if needed)
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 576761 non-null values (zeros excluded if needed)
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1336.00
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 576761 non-null values (zeros excluded if needed)
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 96.00
+2025-12-15 20:30:19 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-15 20:30:20 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 256413 non-null values (zeros excluded if needed)
+2025-12-15 20:30:20 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 179.00
+2025-12-15 20:30:20 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 88147 non-null values (zeros excluded if needed)
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 455000.00
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 29192 non-null values (zeros excluded if needed)
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 85000.00
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 8794 non-null values (zeros excluded if needed)
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 64976 non-null values (zeros excluded if needed)
+2025-12-15 20:30:21 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 201000.00
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 29518 non-null values (zeros excluded if needed)
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 448000.00
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 11755 non-null values (zeros excluded if needed)
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 112485 non-null values (zeros excluded if needed)
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 298233 non-null values (zeros excluded if needed)
+2025-12-15 20:30:22 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 770000.00
+2025-12-15 20:30:23 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-15 20:30:32 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-15 20:30:32 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-15 20:30:32 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-15 20:30:32 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-15 20:30:32 [DEBUG] census_eda.memory: Skipping sampling: 41541MB available (>16GB)
+2025-12-15 20:30:32 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 576761 rows
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(576761, 292)
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 576761 non-null values
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 576761 non-null values
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1336.00
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 576761 non-null values
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 96.00
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 256413 non-null values
+2025-12-15 20:32:15 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 179.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 88147 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 455000.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 29192 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 85000.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 8794 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 64976 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 201000.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 29518 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 448000.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 11755 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 112485 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 298233 non-null values
+2025-12-15 20:32:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 770000.00
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 317532 non-null values
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 257346 non-null values
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 110664 non-null values
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 476503 non-null values
+2025-12-15 20:32:17 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-15 20:32:22 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-15 20:32:29 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-15 20:32:37 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-15 20:32:52 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-15 20:32:52 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-15 20:32:52 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-15 20:32:52 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-15 20:32:53 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-15 20:32:53 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-15 20:32:54 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-15 20:32:54 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-15 20:32:54 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-15 20:32:54 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-15 20:32:54 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-15 20:32:55 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-15 20:32:55 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-15 20:32:55 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-15 20:32:56 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-15 20:32:57 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-15 20:32:57 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-15 20:32:57 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-15 20:32:57 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-15 20:32:58 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-15 20:32:58 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-15 20:32:58 [DEBUG] census_eda.memory: Skipping sampling: 41590MB available (>16GB)
+2025-12-15 20:33:07 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-15 20:33:07 [DEBUG] census_eda.memory: Skipping sampling: 41598MB available (>16GB)
+2025-12-15 20:33:24 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-15 20:33:24 [DEBUG] census_eda.memory: Skipping sampling: 41607MB available (>16GB)
+2025-12-15 20:33:26 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-15 20:33:33 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-15 20:33:33 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-15 20:33:33 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-15 20:33:34 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-15 20:33:34 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-15 20:33:34 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-15 20:33:35 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-15 20:33:35 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-15 20:33:36 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-15 20:33:37 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-15 20:33:37 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-15 20:33:38 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-15 20:33:39 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-15 20:33:40 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-15 20:33:41 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-15 20:33:42 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-15 20:33:42 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-15 20:33:42 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-15 20:33:42 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-15 20:33:43 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-15 20:33:44 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-15 20:33:44 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-15 20:33:45 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-15 20:33:45 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-15 20:33:46 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-15 20:33:47 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-15 20:33:49 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-15 20:33:49 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-15 20:33:50 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Connecticut/population/1-year/figures
+2025-12-15 20:33:50 [DEBUG] census_eda.memory: Skipping sampling: 41587MB available (>16GB)
+2025-12-15 20:33:50 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-15 20:33:50 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-15 20:33:50 [INFO] census_eda.memory: [ML-START]: 13385.7MB (delta: +1974.0MB)
+2025-12-15 20:33:50 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-15 20:33:50 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-15 20:33:50 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 14492 samples (was 14503)
+2025-12-15 20:33:50 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 20:33:50 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 20:33:50 [INFO] census_eda.ml.regression: [TUNE] Data: 14,492 samples, 10 features
+2025-12-15 20:33:50 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1194
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 20:33:52 [INFO] census_eda.ml.regression: [TUNE] Data: 14,492 samples, 10 features
+2025-12-15 20:33:52 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1193
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:33:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 20:33:52 [INFO] census_eda.ml.regression: [TUNE] Data: 14,492 samples, 10 features
+2025-12-15 20:33:52 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:34:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 20:34:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0565
+2025-12-15 20:34:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:34:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 20:34:06 [INFO] census_eda.ml.regression: [TUNE] Data: 14,492 samples, 10 features
+2025-12-15 20:34:06 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:34:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-15 20:34:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1406
+2025-12-15 20:34:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:34:17 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-15 20:34:17 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 13828 samples (was 14503)
+2025-12-15 20:34:17 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 20:34:17 [INFO] census_eda.ml.regression: [TUNE] Data: 13,828 samples, 10 features
+2025-12-15 20:34:17 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1229
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 20:34:17 [INFO] census_eda.ml.regression: [TUNE] Data: 13,828 samples, 10 features
+2025-12-15 20:34:17 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1228
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:34:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 20:34:17 [INFO] census_eda.ml.regression: [TUNE] Data: 13,828 samples, 10 features
+2025-12-15 20:34:17 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:34:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 20:34:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0545
+2025-12-15 20:34:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:34:31 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 20:34:31 [INFO] census_eda.ml.regression: [TUNE] Data: 13,828 samples, 10 features
+2025-12-15 20:34:31 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:34:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-15 20:34:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1419
+2025-12-15 20:34:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:34:41 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,766 -> 1,000
+2025-12-15 20:34:41 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,766 -> 1,000
+2025-12-15 20:34:41 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 13395.8MB (delta: +10.1MB)
+2025-12-15 20:34:41 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-15 20:34:41 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 13395.8MB (delta: +0.0MB)
+2025-12-15 20:34:41 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-15 20:34:41 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-15 20:34:41 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-15 20:34:41 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 14486 samples (was 14503)
+2025-12-15 20:34:41 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 20:34:41 [INFO] census_eda.ml.regression: [TUNE] Data: 14,486 samples, 10 features
+2025-12-15 20:34:41 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1195
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 20:34:41 [INFO] census_eda.ml.regression: [TUNE] Data: 14,486 samples, 10 features
+2025-12-15 20:34:41 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1195
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:34:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 20:34:41 [INFO] census_eda.ml.regression: [TUNE] Data: 14,486 samples, 10 features
+2025-12-15 20:34:41 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:34:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 20:34:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0565
+2025-12-15 20:34:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:34:56 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 20:34:56 [INFO] census_eda.ml.regression: [TUNE] Data: 14,486 samples, 10 features
+2025-12-15 20:34:56 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:35:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-15 20:35:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1430
+2025-12-15 20:35:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:35:07 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,898 -> 1,000
+2025-12-15 20:35:07 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,898 -> 1,000
+2025-12-15 20:35:07 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 13396.2MB (delta: +0.4MB)
+2025-12-15 20:35:07 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-15 20:35:07 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 13396.2MB (delta: +0.0MB)
+2025-12-15 20:35:07 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-15 20:35:07 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-15 20:35:07 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-15 20:35:07 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 20:35:07 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:07 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 20:35:07 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:07 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:35:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 20:35:07 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:07 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:35:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-15 20:35:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 20:35:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:35:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 20:35:13 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:13 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:35:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-15 20:35:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-15 20:35:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:35:23 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-15 20:35:23 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 20:35:23 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:23 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0593
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 20:35:23 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:23 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0595
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 20:35:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 20:35:23 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:23 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:35:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 20:35:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0435
+2025-12-15 20:35:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:35:39 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 20:35:39 [INFO] census_eda.ml.regression: [TUNE] Data: 14,503 samples, 10 features
+2025-12-15 20:35:39 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 20:35:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-15 20:35:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1149
+2025-12-15 20:35:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 20:35:49 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,901 -> 1,000
+2025-12-15 20:35:49 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,901 -> 1,000
+2025-12-15 20:35:49 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 13396.2MB (delta: +0.0MB)
+2025-12-15 20:35:49 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-15 20:35:49 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 13396.2MB (delta: +0.0MB)
+2025-12-15 20:35:49 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-15 20:35:49 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-15 20:35:49 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-15 20:35:49 [INFO] census_eda.memory: [PRE-CLUSTERING]: 13396.2MB (delta: +0.0MB)
+2025-12-15 20:35:49 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-15 20:35:49 [INFO] census_eda.main: [CLUSTERING] KMeans on 14,503 samples...
+2025-12-15 20:35:51 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-15 20:35:51 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 14,503 samples (will sample if needed)...
+2025-12-15 20:35:56 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-15 20:35:56 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-15 20:35:56 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 75692.96848297119, 2025: 77562.9228591919, 2026: 79296.94519805908}, Values: [75692.96848297119, 77562.9228591919, 79296.94519805908]
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-15 20:35:56 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 81282.318857193, 2025: 83871.31344795227, 2026: 86501.40559577942}, Values: [81282.318857193, 83871.31344795227, 86501.40559577942]
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-15 20:35:56 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 81347.93705749512, 2025: 83629.23791503906, 2026: 85865.9682006836}, Values: [81347.93705749512, 83629.23791503906, 85865.9682006836]
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-15 20:35:56 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 45.005577759468, 2025: 45.24928205937613, 2026: 45.48680270847399}, Values: [45.005577759468, 45.24928205937613, 45.48680270847399]
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-15 20:35:56 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.57220785692334, 2025: 36.06117000058293, 2026: 35.41305502131581}, Values: [36.57220785692334, 36.06117000058293, 35.41305502131581]
+2025-12-15 20:35:56 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-15 20:36:06 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-15 20:36:12 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-15 20:36:22 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-15 20:36:25 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-15 20:36:25 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-15 20:36:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 72587.53825228894, 2025: 74022.10525254719, 2026: 75456.67225280544}, values=[72587.53825228894, 74022.10525254719, 75456.67225280544], CI_lower=[68261.68335115945, 69696.2503514177, 71130.81735167594], CI_upper=[76913.39315341844, 78347.96015367669, 79782.52715393493]
+2025-12-15 20:36:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72587.53825228894, 74022.10525254719, 75456.67225280544], CI_lower: [68261.68335115945, 69696.2503514177, 71130.81735167594], CI_upper: [76913.39315341844, 78347.96015367669, 79782.52715393493]
+2025-12-15 20:36:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 68261.68335115945, 69696.2503514177, 71130.81735167594], upper=[np.float64(66861.10116231712), 76913.39315341844, 78347.96015367669, 79782.52715393493]
+2025-12-15 20:36:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 77322.57694643736, 2025: 80331.33906263113, 2026: 83505.68455010653}, values=[77322.57694643736, 80331.33906263113, 83505.68455010653], CI_lower=[74881.88325419648, 77890.64537039025, 81064.99085786565], CI_upper=[79763.27063867824, 82772.03275487201, 85946.3782423474]
+2025-12-15 20:36:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [77322.57694643736, 80331.33906263113, 83505.68455010653], CI_lower: [74881.88325419648, 77890.64537039025, 81064.99085786565], CI_upper: [79763.27063867824, 82772.03275487201, 85946.3782423474]
+2025-12-15 20:36:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 74881.88325419648, 77890.64537039025, 81064.99085786565], upper=[np.float64(66861.10116231712), 79763.27063867824, 82772.03275487201, 85946.3782423474]
+2025-12-15 20:36:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 75692.96848297119, 2025: 77562.9228591919, 2026: 79296.94519805908}, values=[75692.96848297119, 77562.9228591919, 79296.94519805908], CI_lower=[73420.09329427905, 75290.04767049976, 77024.07000936694], CI_upper=[77965.84367166333, 79835.79804788403, 81569.82038675122]
+2025-12-15 20:36:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [75692.96848297119, 77562.9228591919, 79296.94519805908], CI_lower: [73420.09329427905, 75290.04767049976, 77024.07000936694], CI_upper: [77965.84367166333, 79835.79804788403, 81569.82038675122]
+2025-12-15 20:36:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 73420.09329427905, 75290.04767049976, 77024.07000936694], upper=[np.float64(66861.10116231712), 77965.84367166333, 79835.79804788403, 81569.82038675122]
+2025-12-15 20:36:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 71109.72234741448, 2025: 71109.72234741448, 2026: 71109.72234741448}, values=[71109.72234741448, 71109.72234741448, 71109.72234741448], CI_lower=[68300.37103821046, 68300.37103821046, 68300.37103821046], CI_upper=[73919.07365661851, 73919.07365661851, 73919.07365661851]
+2025-12-15 20:36:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [71109.72234741448, 71109.72234741448, 71109.72234741448], CI_lower: [68300.37103821046, 68300.37103821046, 68300.37103821046], CI_upper: [73919.07365661851, 73919.07365661851, 73919.07365661851]
+2025-12-15 20:36:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 68300.37103821046, 68300.37103821046, 68300.37103821046], upper=[np.float64(66861.10116231712), 73919.07365661851, 73919.07365661851, 73919.07365661851]
+2025-12-15 20:36:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 68508.54012462529, 2025: 68508.54012462529, 2026: 68508.54012462529}, values=[68508.54012462529, 68508.54012462529, 68508.54012462529], CI_lower=[64481.19845786473, 64481.19845786473, 64481.19845786473], CI_upper=[72535.88179138584, 72535.88179138584, 72535.88179138584]
+2025-12-15 20:36:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [68508.54012462529, 68508.54012462529, 68508.54012462529], CI_lower: [64481.19845786473, 64481.19845786473, 64481.19845786473], CI_upper: [72535.88179138584, 72535.88179138584, 72535.88179138584]
+2025-12-15 20:36:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 64481.19845786473, 64481.19845786473, 64481.19845786473], upper=[np.float64(66861.10116231712), 72535.88179138584, 72535.88179138584, 72535.88179138584]
+2025-12-15 20:36:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 72398.75270043651, 2025: 72398.75270043651, 2026: 72398.75270043651}, values=[72398.75270043651, 72398.75270043651, 72398.75270043651], CI_lower=[70266.01552343882, 70266.01552343882, 70266.01552343882], CI_upper=[74531.4898774342, 74531.4898774342, 74531.4898774342]
+2025-12-15 20:36:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72398.75270043651, 72398.75270043651, 72398.75270043651], CI_lower: [70266.01552343882, 70266.01552343882, 70266.01552343882], CI_upper: [74531.4898774342, 74531.4898774342, 74531.4898774342]
+2025-12-15 20:36:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 70266.01552343882, 70266.01552343882, 70266.01552343882], upper=[np.float64(66861.10116231712), 74531.4898774342, 74531.4898774342, 74531.4898774342]
+2025-12-15 20:36:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 76417.66548792172, 2025: 77979.09366185532, 2026: 79540.48990965898}, values=[76417.66548792172, 77979.09366185532, 79540.48990965898], CI_lower=[52046.36326275089, 53607.79143668449, 55169.18768448815], CI_upper=[100788.96771309256, 102350.39588702616, 103911.79213482981]
+2025-12-15 20:36:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [76417.66548792172, 77979.09366185532, 79540.48990965898], CI_lower: [52046.36326275089, 53607.79143668449, 55169.18768448815], CI_upper: [100788.96771309256, 102350.39588702616, 103911.79213482981]
+2025-12-15 20:36:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 52046.36326275089, 53607.79143668449, 55169.18768448815], upper=[np.float64(66861.10116231712), 100788.96771309256, 102350.39588702616, 103911.79213482981]
+2025-12-15 20:36:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 77375.53739606099, 2025: 79981.9474590259, 2026: 82588.35752199081}, values=[77375.53739606099, 79981.9474590259, 82588.35752199081], CI_lower=[74321.65877052942, 76928.06883349434, 79534.47889645924], CI_upper=[80429.41602159255, 83035.82608455747, 85642.23614752237]
+2025-12-15 20:36:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [77375.53739606099, 79981.9474590259, 82588.35752199081], CI_lower: [74321.65877052942, 76928.06883349434, 79534.47889645924], CI_upper: [80429.41602159255, 83035.82608455747, 85642.23614752237]
+2025-12-15 20:36:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(66861.10116231712), 74321.65877052942, 76928.06883349434, 79534.47889645924], upper=[np.float64(66861.10116231712), 80429.41602159255, 83035.82608455747, 85642.23614752237]
+2025-12-15 20:36:31 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-15 20:36:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 77570.3325383733, 2025: 79141.91534732562, 2026: 80713.49815627793}, values=[77570.3325383733, 79141.91534732562, 80713.49815627793], CI_lower=[73921.46718279693, 75493.04999174924, 77064.63280070155], CI_upper=[81219.19789394968, 82790.78070290199, 84362.3635118543]
+2025-12-15 20:36:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [77570.3325383733, 79141.91534732562, 80713.49815627793], CI_lower: [73921.46718279693, 75493.04999174924, 77064.63280070155], CI_upper: [81219.19789394968, 82790.78070290199, 84362.3635118543]
+2025-12-15 20:36:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 73921.46718279693, 75493.04999174924, 77064.63280070155], upper=[np.float64(47806.50740937999), 81219.19789394968, 82790.78070290199, 84362.3635118543]
+2025-12-15 20:36:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 81872.8777756691, 2025: 84874.87037360668, 2026: 88027.32213187218}, values=[81872.8777756691, 84874.87037360668, 88027.32213187218], CI_lower=[80204.94252441934, 83206.93512235692, 86359.38688062242], CI_upper=[83540.81302691886, 86542.80562485644, 89695.25738312193]
+2025-12-15 20:36:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81872.8777756691, 84874.87037360668, 88027.32213187218], CI_lower: [80204.94252441934, 83206.93512235692, 86359.38688062242], CI_upper: [83540.81302691886, 86542.80562485644, 89695.25738312193]
+2025-12-15 20:36:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 80204.94252441934, 83206.93512235692, 86359.38688062242], upper=[np.float64(47806.50740937999), 83540.81302691886, 86542.80562485644, 89695.25738312193]
+2025-12-15 20:36:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 81282.318857193, 2025: 83871.31344795227, 2026: 86501.40559577942}, values=[81282.318857193, 83871.31344795227, 86501.40559577942], CI_lower=[79645.87921383833, 82234.8738045976, 84864.96595242475], CI_upper=[82918.75850054766, 85507.75309130693, 88137.84523913408]
+2025-12-15 20:36:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81282.318857193, 83871.31344795227, 86501.40559577942], CI_lower: [79645.87921383833, 82234.8738045976, 84864.96595242475], CI_upper: [82918.75850054766, 85507.75309130693, 88137.84523913408]
+2025-12-15 20:36:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 79645.87921383833, 82234.8738045976, 84864.96595242475], upper=[np.float64(47806.50740937999), 82918.75850054766, 85507.75309130693, 88137.84523913408]
+2025-12-15 20:36:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 76006.20700372012, 2025: 76006.20700372012, 2026: 76006.20700372012}, values=[76006.20700372012, 76006.20700372012, 76006.20700372012], CI_lower=[73395.1428123233, 73395.1428123233, 73395.1428123233], CI_upper=[78617.27119511693, 78617.27119511693, 78617.27119511693]
+2025-12-15 20:36:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [76006.20700372012, 76006.20700372012, 76006.20700372012], CI_lower: [73395.1428123233, 73395.1428123233, 73395.1428123233], CI_upper: [78617.27119511693, 78617.27119511693, 78617.27119511693]
+2025-12-15 20:36:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 73395.1428123233, 73395.1428123233, 73395.1428123233], upper=[np.float64(47806.50740937999), 78617.27119511693, 78617.27119511693, 78617.27119511693]
+2025-12-15 20:36:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 72901.53983360346, 2025: 72901.53983360346, 2026: 72901.53983360346}, values=[72901.53983360346, 72901.53983360346, 72901.53983360346], CI_lower=[69074.85294834875, 69074.85294834875, 69074.85294834875], CI_upper=[76728.22671885816, 76728.22671885816, 76728.22671885816]
+2025-12-15 20:36:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72901.53983360346, 72901.53983360346, 72901.53983360346], CI_lower: [69074.85294834875, 69074.85294834875, 69074.85294834875], CI_upper: [76728.22671885816, 76728.22671885816, 76728.22671885816]
+2025-12-15 20:36:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 69074.85294834875, 69074.85294834875, 69074.85294834875], upper=[np.float64(47806.50740937999), 76728.22671885816, 76728.22671885816, 76728.22671885816]
+2025-12-15 20:36:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 77184.64732291456, 2025: 77184.64732291456, 2026: 77184.64732291456}, values=[77184.64732291456, 77184.64732291456, 77184.64732291456], CI_lower=[75125.84998226522, 75125.84998226522, 75125.84998226522], CI_upper=[79243.4446635639, 79243.4446635639, 79243.4446635639]
+2025-12-15 20:36:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [77184.64732291456, 77184.64732291456, 77184.64732291456], CI_lower: [75125.84998226522, 75125.84998226522, 75125.84998226522], CI_upper: [79243.4446635639, 79243.4446635639, 79243.4446635639]
+2025-12-15 20:36:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 75125.84998226522, 75125.84998226522, 75125.84998226522], upper=[np.float64(47806.50740937999), 79243.4446635639, 79243.4446635639, 79243.4446635639]
+2025-12-15 20:36:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 81102.7549525042, 2025: 82824.69739081585, 2026: 84546.56445603802}, values=[81102.7549525042, 82824.69739081585, 84546.56445603802], CI_lower=[55783.71911392919, 57505.66155224085, 59227.52861746301], CI_upper=[106421.7907910792, 108143.73322939087, 109865.60029461302]
+2025-12-15 20:36:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81102.7549525042, 82824.69739081585, 84546.56445603802], CI_lower: [55783.71911392919, 57505.66155224085, 59227.52861746301], CI_upper: [106421.7907910792, 108143.73322939087, 109865.60029461302]
+2025-12-15 20:36:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 55783.71911392919, 57505.66155224085, 59227.52861746301], upper=[np.float64(47806.50740937999), 106421.7907910792, 108143.73322939087, 109865.60029461302]
+2025-12-15 20:36:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 82212.86848199664, 2025: 85057.33090561962, 2026: 87901.79332924257}, values=[82212.86848199664, 85057.33090561962, 87901.79332924257], CI_lower=[79788.26142984477, 82632.72385346775, 85477.1862770907], CI_upper=[84637.47553414851, 87481.93795777149, 90326.40038139444]
+2025-12-15 20:36:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [82212.86848199664, 85057.33090561962, 87901.79332924257], CI_lower: [79788.26142984477, 82632.72385346775, 85477.1862770907], CI_upper: [84637.47553414851, 87481.93795777149, 90326.40038139444]
+2025-12-15 20:36:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(47806.50740937999), 79788.26142984477, 82632.72385346775, 85477.1862770907], upper=[np.float64(47806.50740937999), 84637.47553414851, 87481.93795777149, 90326.40038139444]
+2025-12-15 20:36:37 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-15 20:36:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 78047.82352705812, 2025: 79622.59957402805, 2026: 81197.37562099798}, values=[78047.82352705812, 79622.59957402805, 81197.37562099798], CI_lower=[74298.36326158396, 75873.13930855389, 77447.91535552382], CI_upper=[81797.28379253228, 83372.05983950221, 84946.83588647214]
+2025-12-15 20:36:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [78047.82352705812, 79622.59957402805, 81197.37562099798], CI_lower: [74298.36326158396, 75873.13930855389, 77447.91535552382], CI_upper: [81797.28379253228, 83372.05983950221, 84946.83588647214]
+2025-12-15 20:36:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 74298.36326158396, 75873.13930855389, 77447.91535552382], upper=[np.float64(51458.946676406136), 81797.28379253228, 83372.05983950221, 84946.83588647214]
+2025-12-15 20:36:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 82413.79539680481, 2025: 85440.06783878803, 2026: 88619.01745802164}, values=[82413.79539680481, 85440.06783878803, 88619.01745802164], CI_lower=[80621.19151508028, 83647.4639570635, 86826.41357629711], CI_upper=[84206.39927852934, 87232.67172051256, 90411.62133974617]
+2025-12-15 20:36:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [82413.79539680481, 85440.06783878803, 88619.01745802164], CI_lower: [80621.19151508028, 83647.4639570635, 86826.41357629711], CI_upper: [84206.39927852934, 87232.67172051256, 90411.62133974617]
+2025-12-15 20:36:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 80621.19151508028, 83647.4639570635, 86826.41357629711], upper=[np.float64(51458.946676406136), 84206.39927852934, 87232.67172051256, 90411.62133974617]
+2025-12-15 20:36:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 81347.93705749512, 2025: 83629.23791503906, 2026: 85865.9682006836}, values=[81347.93705749512, 83629.23791503906, 85865.9682006836], CI_lower=[79652.38629844961, 81933.68715599355, 84170.41744163808], CI_upper=[83043.48781654063, 85324.78867408457, 87561.5189597291]
+2025-12-15 20:36:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81347.93705749512, 83629.23791503906, 85865.9682006836], CI_lower: [79652.38629844961, 81933.68715599355, 84170.41744163808], CI_upper: [83043.48781654063, 85324.78867408457, 87561.5189597291]
+2025-12-15 20:36:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 79652.38629844961, 81933.68715599355, 84170.41744163808], upper=[np.float64(51458.946676406136), 83043.48781654063, 85324.78867408457, 87561.5189597291]
+2025-12-15 20:36:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 76365.01778845201, 2025: 76365.01778845201, 2026: 76365.01778845201}, values=[76365.01778845201, 76365.01778845201, 76365.01778845201], CI_lower=[73778.2582904099, 73778.2582904099, 73778.2582904099], CI_upper=[78951.77728649412, 78951.77728649412, 78951.77728649412]
+2025-12-15 20:36:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [76365.01778845201, 76365.01778845201, 76365.01778845201], CI_lower: [73778.2582904099, 73778.2582904099, 73778.2582904099], CI_upper: [78951.77728649412, 78951.77728649412, 78951.77728649412]
+2025-12-15 20:36:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 73778.2582904099, 73778.2582904099, 73778.2582904099], upper=[np.float64(51458.946676406136), 78951.77728649412, 78951.77728649412, 78951.77728649412]
+2025-12-15 20:36:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 73363.61324473814, 2025: 73363.61324473814, 2026: 73363.61324473814}, values=[73363.61324473814, 73363.61324473814, 73363.61324473814], CI_lower=[69499.9752975111, 69499.9752975111, 69499.9752975111], CI_upper=[77227.25119196517, 77227.25119196517, 77227.25119196517]
+2025-12-15 20:36:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73363.61324473814, 73363.61324473814, 73363.61324473814], CI_lower: [69499.9752975111, 69499.9752975111, 69499.9752975111], CI_upper: [77227.25119196517, 77227.25119196517, 77227.25119196517]
+2025-12-15 20:36:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 69499.9752975111, 69499.9752975111, 69499.9752975111], upper=[np.float64(51458.946676406136), 77227.25119196517, 77227.25119196517, 77227.25119196517]
+2025-12-15 20:36:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 77548.85649620493, 2025: 77548.85649620493, 2026: 77548.85649620493}, values=[77548.85649620493, 77548.85649620493, 77548.85649620493], CI_lower=[75511.80707530754, 75511.80707530754, 75511.80707530754], CI_upper=[79585.90591710231, 79585.90591710231, 79585.90591710231]
+2025-12-15 20:36:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [77548.85649620493, 77548.85649620493, 77548.85649620493], CI_lower: [75511.80707530754, 75511.80707530754, 75511.80707530754], CI_upper: [79585.90591710231, 79585.90591710231, 79585.90591710231]
+2025-12-15 20:36:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 75511.80707530754, 75511.80707530754, 75511.80707530754], upper=[np.float64(51458.946676406136), 79585.90591710231, 79585.90591710231, 79585.90591710231]
+2025-12-15 20:36:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 81457.67443596864, 2025: 83170.37547423838, 2026: 84883.03195455114}, values=[81457.67443596864, 83170.37547423838, 84883.03195455114], CI_lower=[55863.244618752164, 57575.9456570219, 59288.60213733467], CI_upper=[107052.10425318513, 108764.80529145486, 110477.46177176762]
+2025-12-15 20:36:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81457.67443596864, 83170.37547423838, 84883.03195455114], CI_lower: [55863.244618752164, 57575.9456570219, 59288.60213733467], CI_upper: [107052.10425318513, 108764.80529145486, 110477.46177176762]
+2025-12-15 20:36:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 55863.244618752164, 57575.9456570219, 59288.60213733467], upper=[np.float64(51458.946676406136), 107052.10425318513, 108764.80529145486, 110477.46177176762]
+2025-12-15 20:36:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 82534.60685311545, 2025: 85330.67952618373, 2026: 88126.75219925202}, values=[82534.60685311545, 85330.67952618373, 88126.75219925202], CI_lower=[80176.4680394122, 82972.54071248048, 85768.61338554877], CI_upper=[84892.7456668187, 87688.81833988697, 90484.89101295527]
+2025-12-15 20:36:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [82534.60685311545, 85330.67952618373, 88126.75219925202], CI_lower: [80176.4680394122, 82972.54071248048, 85768.61338554877], CI_upper: [84892.7456668187, 87688.81833988697, 90484.89101295527]
+2025-12-15 20:36:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51458.946676406136), 80176.4680394122, 82972.54071248048, 85768.61338554877], upper=[np.float64(51458.946676406136), 84892.7456668187, 87688.81833988697, 90484.89101295527]
+2025-12-15 20:36:43 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-15 20:36:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 45.059381485302424, 2025: 45.33147707761907, 2026: 45.603572669935716}, values=[45.059381485302424, 45.33147707761907, 45.603572669935716], CI_lower=[44.629446249681806, 44.90154184199845, 45.1736374343151], CI_upper=[45.48931672092304, 45.76141231323969, 46.033507905556334]
+2025-12-15 20:36:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.059381485302424, 45.33147707761907, 45.603572669935716], CI_lower: [44.629446249681806, 44.90154184199845, 45.1736374343151], CI_upper: [45.48931672092304, 45.76141231323969, 46.033507905556334]
+2025-12-15 20:36:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 44.629446249681806, 44.90154184199845, 45.1736374343151], upper=[np.float64(44.463327225695195), 45.48931672092304, 45.76141231323969, 46.033507905556334]
+2025-12-15 20:36:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 45.034249519407695, 2025: 45.29798982245438, 2026: 45.56085126559947}, values=[45.034249519407695, 45.29798982245438, 45.56085126559947], CI_lower=[44.60473240264421, 44.8684727056909, 45.13133414883598], CI_upper=[45.46376663617118, 45.72750693921787, 45.99036838236295]
+2025-12-15 20:36:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.034249519407695, 45.29798982245438, 45.56085126559947], CI_lower: [44.60473240264421, 44.8684727056909, 45.13133414883598], CI_upper: [45.46376663617118, 45.72750693921787, 45.99036838236295]
+2025-12-15 20:36:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 44.60473240264421, 44.8684727056909, 45.13133414883598], upper=[np.float64(44.463327225695195), 45.46376663617118, 45.72750693921787, 45.99036838236295]
+2025-12-15 20:36:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 45.005577759468, 2025: 45.24928205937613, 2026: 45.48680270847399}, values=[45.005577759468, 45.24928205937613, 45.48680270847399], CI_lower=[44.57634574930304, 44.82005004921117, 45.05757069830903], CI_upper=[45.434809769632956, 45.67851406954109, 45.91603471863895]
+2025-12-15 20:36:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.005577759468, 45.24928205937613, 45.48680270847399], CI_lower: [44.57634574930304, 44.82005004921117, 45.05757069830903], CI_upper: [45.434809769632956, 45.67851406954109, 45.91603471863895]
+2025-12-15 20:36:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 44.57634574930304, 44.82005004921117, 45.05757069830903], upper=[np.float64(44.463327225695195), 45.434809769632956, 45.67851406954109, 45.91603471863895]
+2025-12-15 20:36:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 44.48595724888807, 2025: 44.48595724888807, 2026: 44.48595724888807}, values=[44.48595724888807, 44.48595724888807, 44.48595724888807], CI_lower=[43.99799508991504, 43.99799508991504, 43.99799508991504], CI_upper=[44.9739194078611, 44.9739194078611, 44.9739194078611]
+2025-12-15 20:36:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.48595724888807, 44.48595724888807, 44.48595724888807], CI_lower: [43.99799508991504, 43.99799508991504, 43.99799508991504], CI_upper: [44.9739194078611, 44.9739194078611, 44.9739194078611]
+2025-12-15 20:36:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 43.99799508991504, 43.99799508991504, 43.99799508991504], upper=[np.float64(44.463327225695195), 44.9739194078611, 44.9739194078611, 44.9739194078611]
+2025-12-15 20:36:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 44.05894990428906, 2025: 44.05894990428906, 2026: 44.05894990428906}, values=[44.05894990428906, 44.05894990428906, 44.05894990428906], CI_lower=[43.53454787782535, 43.53454787782535, 43.53454787782535], CI_upper=[44.58335193075277, 44.58335193075277, 44.58335193075277]
+2025-12-15 20:36:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.05894990428906, 44.05894990428906, 44.05894990428906], CI_lower: [43.53454787782535, 43.53454787782535, 43.53454787782535], CI_upper: [44.58335193075277, 44.58335193075277, 44.58335193075277]
+2025-12-15 20:36:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 43.53454787782535, 43.53454787782535, 43.53454787782535], upper=[np.float64(44.463327225695195), 44.58335193075277, 44.58335193075277, 44.58335193075277]
+2025-12-15 20:36:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 44.56764519557413, 2025: 44.56764519557413, 2026: 44.56764519557413}, values=[44.56764519557413, 44.56764519557413, 44.56764519557413], CI_lower=[44.17873249347428, 44.17873249347428, 44.17873249347428], CI_upper=[44.95655789767398, 44.95655789767398, 44.95655789767398]
+2025-12-15 20:36:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.56764519557413, 44.56764519557413, 44.56764519557413], CI_lower: [44.17873249347428, 44.17873249347428, 44.17873249347428], CI_upper: [44.95655789767398, 44.95655789767398, 44.95655789767398]
+2025-12-15 20:36:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 44.17873249347428, 44.17873249347428, 44.17873249347428], upper=[np.float64(44.463327225695195), 44.95655789767398, 44.95655789767398, 44.95655789767398]
+2025-12-15 20:36:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 45.164064777988145, 2025: 45.432919867958134, 2026: 45.70176320267808}, values=[45.164064777988145, 45.432919867958134, 45.70176320267808], CI_lower=[26.017846723598925, 26.286701813568914, 26.55554514828886], CI_upper=[64.31028283237737, 64.57913792234736, 64.8479812570673]
+2025-12-15 20:36:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.164064777988145, 45.432919867958134, 45.70176320267808], CI_lower: [26.017846723598925, 26.286701813568914, 26.55554514828886], CI_upper: [64.31028283237737, 64.57913792234736, 64.8479812570673]
+2025-12-15 20:36:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 26.017846723598925, 26.286701813568914, 26.55554514828886], upper=[np.float64(44.463327225695195), 64.31028283237737, 64.57913792234736, 64.8479812570673]
+2025-12-15 20:36:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 44.97314268770365, 2025: 45.26110168315982, 2026: 45.549060678615994}, values=[44.97314268770365, 45.26110168315982, 45.549060678615994], CI_lower=[44.53023007688362, 44.81818907233979, 45.106148067795964], CI_upper=[45.41605529852368, 45.70401429397985, 45.991973289436025]
+2025-12-15 20:36:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.97314268770365, 45.26110168315982, 45.549060678615994], CI_lower: [44.53023007688362, 44.81818907233979, 45.106148067795964], CI_upper: [45.41605529852368, 45.70401429397985, 45.991973289436025]
+2025-12-15 20:36:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.463327225695195), 44.53023007688362, 44.81818907233979, 45.106148067795964], upper=[np.float64(44.463327225695195), 45.41605529852368, 45.70401429397985, 45.991973289436025]
+2025-12-15 20:36:49 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-15 20:36:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.15841800187665, 2025: 37.12697442478056, 2026: 37.09553084768448}, values=[37.15841800187665, 37.12697442478056, 37.09553084768448], CI_lower=[36.611431889427344, 36.57998831233126, 36.548544735235176], CI_upper=[37.70540411432595, 37.67396053722987, 37.64251696013378]
+2025-12-15 20:36:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.15841800187665, 37.12697442478056, 37.09553084768448], CI_lower: [36.611431889427344, 36.57998831233126, 36.548544735235176], CI_upper: [37.70540411432595, 37.67396053722987, 37.64251696013378]
+2025-12-15 20:36:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 36.611431889427344, 36.57998831233126, 36.548544735235176], upper=[np.float64(37.18691634719355), 37.70540411432595, 37.67396053722987, 37.64251696013378]
+2025-12-15 20:36:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.34847366085705, 2025: 37.3802153520337, 2026: 37.41860325221387}, values=[37.34847366085705, 37.3802153520337, 37.41860325221387], CI_lower=[36.82060726146853, 36.85234895264518, 36.89073685282535], CI_upper=[37.876340060245575, 37.90808175142222, 37.94646965160239]
+2025-12-15 20:36:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.34847366085705, 37.3802153520337, 37.41860325221387], CI_lower: [36.82060726146853, 36.85234895264518, 36.89073685282535], CI_upper: [37.876340060245575, 37.90808175142222, 37.94646965160239]
+2025-12-15 20:36:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 36.82060726146853, 36.85234895264518, 36.89073685282535], upper=[np.float64(37.18691634719355), 37.876340060245575, 37.90808175142222, 37.94646965160239]
+2025-12-15 20:36:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.57220785692334, 2025: 36.06117000058293, 2026: 35.41305502131581}, values=[36.57220785692334, 36.06117000058293, 35.41305502131581], CI_lower=[36.257682464881995, 35.74664460854159, 35.098529629274466], CI_upper=[36.88673324896469, 36.37569539262428, 35.72758041335716]
+2025-12-15 20:36:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.57220785692334, 36.06117000058293, 35.41305502131581], CI_lower: [36.257682464881995, 35.74664460854159, 35.098529629274466], CI_upper: [36.88673324896469, 36.37569539262428, 35.72758041335716]
+2025-12-15 20:36:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 36.257682464881995, 35.74664460854159, 35.098529629274466], upper=[np.float64(37.18691634719355), 36.88673324896469, 36.37569539262428, 35.72758041335716]
+2025-12-15 20:36:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.20663854241343, 2025: 37.20663854241343, 2026: 37.20663854241343}, values=[37.20663854241343, 37.20663854241343, 37.20663854241343], CI_lower=[36.83259228496951, 36.83259228496951, 36.83259228496951], CI_upper=[37.58068479985735, 37.58068479985735, 37.58068479985735]
+2025-12-15 20:36:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.20663854241343, 37.20663854241343, 37.20663854241343], CI_lower: [36.83259228496951, 36.83259228496951, 36.83259228496951], CI_upper: [37.58068479985735, 37.58068479985735, 37.58068479985735]
+2025-12-15 20:36:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 36.83259228496951, 36.83259228496951, 36.83259228496951], upper=[np.float64(37.18691634719355), 37.58068479985735, 37.58068479985735, 37.58068479985735]
+2025-12-15 20:36:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.28311754842247, 2025: 37.28311754842247, 2026: 37.28311754842247}, values=[37.28311754842247, 37.28311754842247, 37.28311754842247], CI_lower=[36.87949247692344, 36.87949247692344, 36.87949247692344], CI_upper=[37.686742619921496, 37.686742619921496, 37.686742619921496]
+2025-12-15 20:36:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.28311754842247, 37.28311754842247, 37.28311754842247], CI_lower: [36.87949247692344, 36.87949247692344, 36.87949247692344], CI_upper: [37.686742619921496, 37.686742619921496, 37.686742619921496]
+2025-12-15 20:36:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 36.87949247692344, 36.87949247692344, 36.87949247692344], upper=[np.float64(37.18691634719355), 37.686742619921496, 37.686742619921496, 37.686742619921496]
+2025-12-15 20:36:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.17740454812955, 2025: 37.17740454812955, 2026: 37.17740454812955}, values=[37.17740454812955, 37.17740454812955, 37.17740454812955], CI_lower=[36.84102457595886, 36.84102457595886, 36.84102457595886], CI_upper=[37.51378452030024, 37.51378452030024, 37.51378452030024]
+2025-12-15 20:36:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.17740454812955, 37.17740454812955, 37.17740454812955], CI_lower: [36.84102457595886, 36.84102457595886, 36.84102457595886], CI_upper: [37.51378452030024, 37.51378452030024, 37.51378452030024]
+2025-12-15 20:36:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 36.84102457595886, 36.84102457595886, 36.84102457595886], upper=[np.float64(37.18691634719355), 37.51378452030024, 37.51378452030024, 37.51378452030024]
+2025-12-15 20:36:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.12199267079428, 2025: 37.183629109001295, 2026: 37.12511346839765}, values=[37.12199267079428, 37.183629109001295, 37.12511346839765], CI_lower=[18.94396910642312, 19.005605544630136, 18.94708990402649], CI_upper=[55.30001623516544, 55.361652673372454, 55.30313703276881]
+2025-12-15 20:36:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.12199267079428, 37.183629109001295, 37.12511346839765], CI_lower: [18.94396910642312, 19.005605544630136, 18.94708990402649], CI_upper: [55.30001623516544, 55.361652673372454, 55.30313703276881]
+2025-12-15 20:36:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 18.94396910642312, 19.005605544630136, 18.94708990402649], upper=[np.float64(37.18691634719355), 55.30001623516544, 55.361652673372454, 55.30313703276881]
+2025-12-15 20:36:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.11741132022463, 2025: 37.0479062960235, 2026: 36.97840127182236}, values=[37.11741132022463, 37.0479062960235, 36.97840127182236], CI_lower=[36.69815055516402, 36.628645530962885, 36.55914050676174], CI_upper=[37.53667208528525, 37.46716706108411, 37.39766203688297]
+2025-12-15 20:36:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.11741132022463, 37.0479062960235, 36.97840127182236], CI_lower: [36.69815055516402, 36.628645530962885, 36.55914050676174], CI_upper: [37.53667208528525, 37.46716706108411, 37.39766203688297]
+2025-12-15 20:36:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.18691634719355), 36.69815055516402, 36.628645530962885, 36.55914050676174], upper=[np.float64(37.18691634719355), 37.53667208528525, 37.46716706108411, 37.39766203688297]
+2025-12-15 20:36:55 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-15 20:36:56 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-15 20:39:32 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 28506.373046875, 'mse': 4280387328.0, 'rmse': 65424.66910883081, 'r2': 0.21767473220825195}
+2025-12-15 20:39:32 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-15 20:41:23 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.7847506999969482, 'mse': 72.48947143554688, 'rmse': 8.514074901922514, 'r2': 0.31619930267333984}
+2025-12-15 20:41:23 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-15 20:43:23 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.462174415588379, 'mse': 642.9228515625, 'rmse': 25.355923401889743, 'r2': -5.674347877502441}
+2025-12-15 20:43:23 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-15 20:43:42 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-15 20:43:43 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-15 20:43:43 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-15 20:43:43 [DEBUG] census_eda.main:  Running LLM analysis for state: Connecticut
+2025-12-15 20:43:43 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-15 20:43:43 [INFO] census_eda.ml: [LLM] State context loaded: Connecticut
+2025-12-15 20:43:43 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [API] Total request: ~2087 tokens (system: ~1905, user: ~182)
+2025-12-15 20:43:43 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [API] Received response: 3393 chars
+2025-12-15 20:43:57 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3393 chars)
+2025-12-15 20:43:57 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [API] Total request: ~2226 tokens (system: ~1905, user: ~321)
+2025-12-15 20:43:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [API] Received response: 3762 chars
+2025-12-15 20:44:07 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3762 chars)
+2025-12-15 20:44:07 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [API] Total request: ~2453 tokens (system: ~1905, user: ~548)
+2025-12-15 20:44:07 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [API] Received response: 3883 chars
+2025-12-15 20:44:18 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3883 chars)
+2025-12-15 20:44:18 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [API] Total request: ~2245 tokens (system: ~1905, user: ~340)
+2025-12-15 20:44:18 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [API] Received response: 3685 chars
+2025-12-15 20:44:29 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3685 chars)
+2025-12-15 20:44:29 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [API] Total request: ~2095 tokens (system: ~1905, user: ~190)
+2025-12-15 20:44:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [API] Received response: 3552 chars
+2025-12-15 20:44:38 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3552 chars)
+2025-12-15 20:44:38 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [LLM] User prompt: 8731 chars (~2182 tokens)
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [API] Total request: ~4087 tokens (system: ~1905, user: ~2182)
+2025-12-15 20:44:38 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [API] Received response: 3118 chars
+2025-12-15 20:44:49 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3118 chars)
+2025-12-15 20:44:49 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [LLM] User prompt: 5338 chars (~1334 tokens)
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [API] Total request: ~3239 tokens (system: ~1905, user: ~1334)
+2025-12-15 20:44:49 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [API] Received response: 3130 chars
+2025-12-15 20:44:58 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3130 chars)
+2025-12-15 20:44:58 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [LLM] User prompt: 770 chars (~192 tokens)
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [API] Total request: ~2097 tokens (system: ~1905, user: ~192)
+2025-12-15 20:44:58 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [API] Received response: 3492 chars
+2025-12-15 20:45:09 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3492 chars)
+2025-12-15 20:45:09 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [LLM] User prompt: 5594 chars (~1398 tokens)
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [API] Total request: ~3303 tokens (system: ~1905, user: ~1398)
+2025-12-15 20:45:09 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [API] Received response: 4141 chars
+2025-12-15 20:45:24 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4141 chars)
+2025-12-15 20:45:24 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [LLM] User prompt: 1829 chars (~457 tokens)
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [API] Total request: ~2362 tokens (system: ~1905, user: ~457)
+2025-12-15 20:45:24 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [API] Received response: 5068 chars
+2025-12-15 20:45:39 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (5068 chars)
+2025-12-15 20:45:39 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Connecticut
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Connecticut
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2735 chars
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~683
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Connecticut
+
+ECONOMIC PROFILE:
+  Industries: Financial services and insurance, Aerospace and defense manufacturing, Pharmaceuticals and bioscience, Higher education, Professional services
+  Trends: Slow recovery from 2008 recession, persistent fiscal challenges. Limited growth 2011-2019. Pandemic highlighted economic vulnerabilities with some sectors thriving (finance) while others struggled
+  Income: Third highest per capita income nationally ($77,940). Extreme income inequality between Fairfield County and other areas
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Population stagnation/slight decline. Out-migration of young adults and middle-class families due to costs
+  Migration: Out-migration to lower-cost states (Florida, North Carolina). Limited in-migration. Brain drain of young talent
+  Education: Very high educational attainment. Strong university system. High skilled workforce
+
+HOUSING MARKET:
+  Market: Very expensive housing. Median home price ~$340k but extreme variation by area. Fairfield County among nation's most expensive
+  Affordability: Housing costs major factor in out-migration. Limited affordability improvements despite population loss
+  Challenges: Extreme costs in southwestern counties, Zoning barriers, Population loss, Aging infrastructure
+
+POLITY:
+  Policy: Liberal Democratic control. High taxes to fund extensive services. Pro-union, pro-regulation
+  Housing: Affordable housing mandates. Some zoning reform efforts. Rent control in some municipalities
+  Labor: Pro-union environment. $15 minimum wage. Strong worker protections
+
+REGIONAL:
+  Geography: Small state with varied topography. Long Island Sound coastline. Hartford River valley
+  Urban/Rural: 88% urban but polycentric. Multiple small cities. Rural areas in eastern/northwestern regions
+  Infrastructure: Aging infrastructure. Amtrak corridor important. Limited public transit outside metros
+
+HISTORICAL:
+  Events: 2011-2013: Major fiscal crisis, tax increases, spending cuts; 2014-2016: Slow economic recovery, continued fiscal challenges; 2017-2019: Manufacturing plant closures, corporate relocations out of state; 2021-2023: Pandemic impact mixed, fiscal situation gradually improved
+  Shocks: 2008 recession severe due to finance exposure. Major corporate relocations (GE, others) hurt
+  Transitions: Manufacturing decline continues. Financial services consolidation. Defense industry changes
+
+COMPARATIVE:
+  Benchmarks: Highest income tier but high costs. Above average education. Below average growth
+  Peer States: Massachusetts, New Jersey, New York (similar challenges)
+  Unique: Extreme income inequality, no dominant city, proximity to NYC, manufacturing heritage
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Connecticut
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (2735 chars)
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7623 chars (~1905 tokens)
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [API] Total request: ~2314 tokens (system: ~1905, user: ~409)
+2025-12-15 20:45:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 20:45:49 [DEBUG] census_eda.ml: [API] Received response: 4138 chars
+2025-12-15 20:45:49 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4138 chars)
+2025-12-15 20:45:49 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-15 20:45:49 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-15 20:45:49 [INFO] census_eda.main: [REPORT] Generated: report_Connecticut_population_20251215_204549.txt
+2025-12-15 20:45:49 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Connecticut!
+2025-12-15 20:45:50 [INFO] census_eda.memory: process_Connecticut_population_1-year:EXIT: 9268.9MB (delta: -4127.3MB)
+2025-12-15 20:45:50 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-15 20:45:50 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-15 20:45:51 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-15 20:45:51 [INFO] census_eda.memory: Cleared all caches

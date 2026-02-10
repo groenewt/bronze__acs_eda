@@ -1,0 +1,1310 @@
+2025-12-18 00:57:31 [INFO] census_eda: Logging context set: state=Missouri, survey=population, scope=1-year
+2025-12-18 00:57:31 [INFO] census_eda: Log file: ./logs/Missouri/1-year/population/1-year_population_25_12_18_0057.log
+2025-12-18 00:57:31 [INFO] census_eda.main: ======================================================================
+2025-12-18 00:57:31 [INFO] census_eda.main: [POPULATION] Processing Missouri (1-year)...
+2025-12-18 00:57:31 [INFO] census_eda.main: ======================================================================
+2025-12-18 00:57:31 [INFO] census_eda.memory: process_Missouri_population_1-year:ENTER: 10439.4MB (delta: +0.0MB)
+2025-12-18 00:57:31 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 00:57:31 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/29/*/*.csv
+2025-12-18 00:57:31 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 00:57:31 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pmo.csv
+2025-12-18 00:57:32 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 00:57:32 [VERBOSE] census_eda.processing.loader:   -> Loaded 61,639 rows, 260 columns
+2025-12-18 00:57:32 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p29.csv
+2025-12-18 00:57:33 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 00:57:33 [VERBOSE] census_eda.processing.loader:   -> Loaded 62,073 rows, 260 columns
+2025-12-18 00:57:33 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pmo.csv
+2025-12-18 00:57:35 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 00:57:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 61,394 rows, 260 columns
+2025-12-18 00:57:35 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pmo.csv
+2025-12-18 00:57:36 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 00:57:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 61,699 rows, 260 columns
+2025-12-18 00:57:36 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pmo.csv
+2025-12-18 00:57:37 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 00:57:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 60,095 rows, 260 columns
+2025-12-18 00:57:37 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pmo.csv
+2025-12-18 00:57:38 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 00:57:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 60,303 rows, 260 columns
+2025-12-18 00:57:38 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p29.csv
+2025-12-18 00:57:39 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 00:57:39 [VERBOSE] census_eda.processing.loader:   -> Loaded 62,416 rows, 260 columns
+2025-12-18 00:57:39 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pmo.csv
+2025-12-18 00:57:40 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 00:57:40 [VERBOSE] census_eda.processing.loader:   -> Loaded 60,014 rows, 260 columns
+2025-12-18 00:57:40 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pmo.csv
+2025-12-18 00:57:41 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 00:57:41 [VERBOSE] census_eda.processing.loader:   -> Loaded 61,923 rows, 260 columns
+2025-12-18 00:57:41 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p29.csv
+2025-12-18 00:57:42 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 00:57:42 [VERBOSE] census_eda.processing.loader:   -> Loaded 63,174 rows, 260 columns
+2025-12-18 00:57:42 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p29.csv
+2025-12-18 00:57:44 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 00:57:44 [VERBOSE] census_eda.processing.loader:   -> Loaded 64,551 rows, 260 columns
+2025-12-18 00:57:44 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p29.csv
+2025-12-18 00:57:45 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 00:57:45 [VERBOSE] census_eda.processing.loader:   -> Loaded 62,254 rows, 260 columns
+2025-12-18 00:57:45 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p29.csv
+2025-12-18 00:57:46 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 00:57:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 64,578 rows, 260 columns
+2025-12-18 00:57:46 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pmo.csv
+2025-12-18 00:57:47 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 00:57:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 61,586 rows, 260 columns
+2025-12-18 00:57:47 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pmo.csv
+2025-12-18 00:57:48 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 00:57:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 60,685 rows, 260 columns
+2025-12-18 00:57:48 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pmo.csv
+2025-12-18 00:57:49 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 00:57:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 62,110 rows, 260 columns
+2025-12-18 00:57:49 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 00:57:56 [VERBOSE] census_eda.processing.loader: Combined into 990,494 total rows, 260 columns
+2025-12-18 00:57:56 [INFO] census_eda.main: Loaded 990,494 records
+2025-12-18 00:57:56 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 990494 valid, 16 unique
+2025-12-18 00:57:56 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 00:57:58 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 00:57:58 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 00:57:58 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 00:57:59 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 00:57:59 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 00:58:00 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 00:58:00 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 00:58:01 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 00:58:01 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 00:58:01 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 00:58:02 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 00:58:02 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 00:58:02 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 00:58:03 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 00:58:03 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 00:58:03 [DEBUG] census_eda.main: Feature engineering complete: (990494, 292)
+2025-12-18 00:58:04 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 00:58:04 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 01:00:35 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 01:00:35 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 01:00:35 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(990494, 292)
+2025-12-18 01:00:35 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 01:00:35 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 990494
+2025-12-18 01:00:35 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 01:00:36 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(990494, 292)
+2025-12-18 01:00:36 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(60095), np.int64(2008): np.int64(60014), np.int64(2009): np.int64(60303), np.int64(2010): np.int64(60685), np.int64(2011): np.int64(62110), np.int64(2012): np.int64(61639), np.int64(2013): np.int64(61699), np.int64(2014): np.int64(61394), np.int64(2015): np.int64(61586), np.int64(2016): np.int64(61923), np.int64(2017): np.int64(62073), np.int64(2018): np.int64(62416), np.int64(2019): np.int64(63174), np.int64(2021): np.int64(62254), np.int64(2022): np.int64(64551), np.int64(2023): np.int64(64578)}
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(990494, 292)
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 990494 non-null values (zeros excluded if needed)
+2025-12-18 01:00:37 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 01:00:38 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 01:00:38 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 990494 non-null values (zeros excluded if needed)
+2025-12-18 01:00:38 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2340.00
+2025-12-18 01:00:38 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 01:00:38 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 990494 non-null values (zeros excluded if needed)
+2025-12-18 01:00:38 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 94.00
+2025-12-18 01:00:38 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 01:00:39 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 415697 non-null values (zeros excluded if needed)
+2025-12-18 01:00:39 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 195.00
+2025-12-18 01:00:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 111387 non-null values (zeros excluded if needed)
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 303000.00
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 55750 non-null values (zeros excluded if needed)
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 70000.00
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 9833 non-null values (zeros excluded if needed)
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 113788 non-null values (zeros excluded if needed)
+2025-12-18 01:00:41 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 151000.00
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 48340 non-null values (zeros excluded if needed)
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 364000.00
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 26191 non-null values (zeros excluded if needed)
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: Value range: 10.00 to 30000.00
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 213570 non-null values (zeros excluded if needed)
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 01:00:43 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 01:00:44 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 476152 non-null values (zeros excluded if needed)
+2025-12-18 01:00:44 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 512000.00
+2025-12-18 01:00:46 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 01:01:01 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 01:01:01 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 01:01:01 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 01:01:02 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 01:01:02 [DEBUG] census_eda.memory: Skipping sampling: 35105MB available (>16GB)
+2025-12-18 01:01:02 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 990494 rows
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(990494, 292)
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 990494 non-null values
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 990494 non-null values
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2340.00
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 990494 non-null values
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 94.00
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 415697 non-null values
+2025-12-18 01:03:56 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 195.00
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 111387 non-null values
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 303000.00
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 55750 non-null values
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 70000.00
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 9833 non-null values
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 113788 non-null values
+2025-12-18 01:03:58 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 151000.00
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 48340 non-null values
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 364000.00
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 26191 non-null values
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 30000.00
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 213570 non-null values
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 476152 non-null values
+2025-12-18 01:03:59 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 512000.00
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 506857 non-null values
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 411645 non-null values
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 197378 non-null values
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 805579 non-null values
+2025-12-18 01:04:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 01:04:10 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 01:04:22 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 01:04:36 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 01:05:02 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 01:05:02 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 01:05:02 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 01:05:03 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 01:05:04 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 01:05:04 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 01:05:06 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 01:05:06 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 01:05:06 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 01:05:06 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 01:05:07 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 01:05:09 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 01:05:09 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 01:05:09 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 01:05:10 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 01:05:12 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 01:05:12 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 01:05:12 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 01:05:12 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 01:05:13 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 01:05:14 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 01:05:14 [DEBUG] census_eda.memory: Skipping sampling: 35077MB available (>16GB)
+2025-12-18 01:05:29 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 01:05:29 [DEBUG] census_eda.memory: Skipping sampling: 35103MB available (>16GB)
+2025-12-18 01:05:57 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 01:05:57 [DEBUG] census_eda.memory: Skipping sampling: 35080MB available (>16GB)
+2025-12-18 01:06:01 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 01:06:14 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 01:06:14 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 01:06:14 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 01:06:15 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 01:06:16 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 01:06:17 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 01:06:17 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 01:06:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 01:06:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 01:06:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 01:06:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 01:06:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 01:06:20 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 01:06:20 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 01:06:20 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 01:06:20 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 01:06:21 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 01:06:22 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 01:06:23 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 01:06:25 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 01:06:27 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 01:06:28 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 01:06:31 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 01:06:31 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 01:06:31 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 01:06:32 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 01:06:32 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 01:06:34 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 01:06:35 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 01:06:36 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 01:06:37 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 01:06:39 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 01:06:41 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 01:06:45 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 01:06:46 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 01:06:47 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Missouri/population/1-year/figures
+2025-12-18 01:06:47 [DEBUG] census_eda.memory: Skipping sampling: 35090MB available (>16GB)
+2025-12-18 01:06:47 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 01:06:47 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 01:06:48 [INFO] census_eda.memory: [ML-START]: 17470.8MB (delta: +7031.4MB)
+2025-12-18 01:06:48 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 01:06:48 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 01:06:48 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 6891 samples (was 6893)
+2025-12-18 01:06:48 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:06:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:06:48 [INFO] census_eda.ml.regression: [TUNE] Data: 6,891 samples, 10 features
+2025-12-18 01:06:48 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:06:48 [INFO] census_eda.memory: tune_ridge:ENTER: 17470.8MB (delta: +0.0MB)
+2025-12-18 01:06:49 [WARNING] census_eda.memory: Memory usage (17471.3MB) exceeded threshold (16000MB)
+2025-12-18 01:06:49 [INFO] census_eda.memory: tune_ridge:EXIT: 17471.3MB (delta: +0.6MB)
+2025-12-18 01:06:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 01:06:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1012
+2025-12-18 01:06:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:06:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:06:49 [INFO] census_eda.ml.regression: [TUNE] Data: 6,891 samples, 10 features
+2025-12-18 01:06:49 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:06:49 [INFO] census_eda.memory: tune_lasso:ENTER: 17471.3MB (delta: +0.0MB)
+2025-12-18 01:06:49 [WARNING] census_eda.memory: Memory usage (17471.3MB) exceeded threshold (16000MB)
+2025-12-18 01:06:50 [INFO] census_eda.memory: tune_lasso:EXIT: 17471.3MB (delta: +0.0MB)
+2025-12-18 01:06:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 01:06:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1012
+2025-12-18 01:06:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:06:50 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:06:50 [INFO] census_eda.ml.regression: [TUNE] Data: 6,891 samples, 10 features
+2025-12-18 01:06:50 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:06:50 [INFO] census_eda.memory: tune_random_forest:ENTER: 17471.3MB (delta: +0.0MB)
+2025-12-18 01:06:57 [WARNING] census_eda.memory: Memory usage (17472.5MB) exceeded threshold (16000MB)
+2025-12-18 01:06:57 [INFO] census_eda.memory: tune_random_forest:EXIT: 17472.5MB (delta: +1.2MB)
+2025-12-18 01:06:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 01:06:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0368
+2025-12-18 01:06:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:06:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:06:58 [INFO] census_eda.ml.regression: [TUNE] Data: 6,891 samples, 10 features
+2025-12-18 01:06:58 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:06:58 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 17472.7MB (delta: +0.2MB)
+2025-12-18 01:07:02 [WARNING] census_eda.memory: Memory usage (17472.7MB) exceeded threshold (16000MB)
+2025-12-18 01:07:03 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 17472.7MB (delta: +0.0MB)
+2025-12-18 01:07:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 01:07:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0889
+2025-12-18 01:07:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:04 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 01:07:04 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 6626 samples (was 6893)
+2025-12-18 01:07:04 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:07:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:07:04 [INFO] census_eda.ml.regression: [TUNE] Data: 6,626 samples, 10 features
+2025-12-18 01:07:04 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:04 [INFO] census_eda.memory: tune_ridge:ENTER: 17472.7MB (delta: +0.0MB)
+2025-12-18 01:07:04 [WARNING] census_eda.memory: Memory usage (17472.7MB) exceeded threshold (16000MB)
+2025-12-18 01:07:05 [INFO] census_eda.memory: tune_ridge:EXIT: 17472.7MB (delta: +0.0MB)
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1026
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:07:05 [INFO] census_eda.ml.regression: [TUNE] Data: 6,626 samples, 10 features
+2025-12-18 01:07:05 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:05 [INFO] census_eda.memory: tune_lasso:ENTER: 17472.7MB (delta: +0.0MB)
+2025-12-18 01:07:05 [WARNING] census_eda.memory: Memory usage (17472.7MB) exceeded threshold (16000MB)
+2025-12-18 01:07:05 [INFO] census_eda.memory: tune_lasso:EXIT: 17472.7MB (delta: +0.0MB)
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1026
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:07:05 [INFO] census_eda.ml.regression: [TUNE] Data: 6,626 samples, 10 features
+2025-12-18 01:07:05 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:05 [INFO] census_eda.memory: tune_random_forest:ENTER: 17472.7MB (delta: +0.0MB)
+2025-12-18 01:07:12 [WARNING] census_eda.memory: Memory usage (17472.7MB) exceeded threshold (16000MB)
+2025-12-18 01:07:13 [INFO] census_eda.memory: tune_random_forest:EXIT: 17472.7MB (delta: +0.0MB)
+2025-12-18 01:07:13 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 01:07:13 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0394
+2025-12-18 01:07:13 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:07:14 [INFO] census_eda.ml.regression: [TUNE] Data: 6,626 samples, 10 features
+2025-12-18 01:07:14 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:14 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:18 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:18 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 01:07:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0919
+2025-12-18 01:07:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:20 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 01:07:20 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 6889 samples (was 6893)
+2025-12-18 01:07:20 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:07:20 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:07:20 [INFO] census_eda.ml.regression: [TUNE] Data: 6,889 samples, 10 features
+2025-12-18 01:07:20 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:20 [INFO] census_eda.memory: tune_ridge:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:20 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:20 [INFO] census_eda.memory: tune_ridge:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:20 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 01:07:20 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0995
+2025-12-18 01:07:20 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:20 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:07:20 [INFO] census_eda.ml.regression: [TUNE] Data: 6,889 samples, 10 features
+2025-12-18 01:07:20 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:20 [INFO] census_eda.memory: tune_lasso:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:20 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:21 [INFO] census_eda.memory: tune_lasso:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 01:07:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0995
+2025-12-18 01:07:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:21 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:07:21 [INFO] census_eda.ml.regression: [TUNE] Data: 6,889 samples, 10 features
+2025-12-18 01:07:21 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:21 [INFO] census_eda.memory: tune_random_forest:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:28 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:29 [INFO] census_eda.memory: tune_random_forest:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 01:07:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0372
+2025-12-18 01:07:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:30 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:07:30 [INFO] census_eda.ml.regression: [TUNE] Data: 6,889 samples, 10 features
+2025-12-18 01:07:30 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:30 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:34 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:34 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:34 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 01:07:34 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0907
+2025-12-18 01:07:34 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:36 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 01:07:36 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:07:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:07:36 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:36 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:36 [INFO] census_eda.memory: tune_ridge:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:36 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:37 [INFO] census_eda.memory: tune_ridge:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:07:37 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:37 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:37 [INFO] census_eda.memory: tune_lasso:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:37 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:37 [INFO] census_eda.memory: tune_lasso:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:07:37 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:37 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:37 [INFO] census_eda.memory: tune_random_forest:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:40 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:41 [INFO] census_eda.memory: tune_random_forest:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 01:07:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:07:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:07:41 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:41 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:41 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:44 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:45 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 01:07:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:07:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:47 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 01:07:47 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:07:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:07:47 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:47 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:47 [INFO] census_eda.memory: tune_ridge:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:48 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:48 [INFO] census_eda.memory: tune_ridge:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 10.0}
+2025-12-18 01:07:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0765
+2025-12-18 01:07:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:07:48 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:48 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:07:48 [INFO] census_eda.memory: tune_lasso:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:48 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:49 [INFO] census_eda.memory: tune_lasso:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 01:07:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0766
+2025-12-18 01:07:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:07:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:07:49 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:49 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:49 [INFO] census_eda.memory: tune_random_forest:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:56 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:07:57 [INFO] census_eda.memory: tune_random_forest:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:07:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 01:07:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0865
+2025-12-18 01:07:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:07:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:07:58 [INFO] census_eda.ml.regression: [TUNE] Data: 6,893 samples, 10 features
+2025-12-18 01:07:58 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:07:58 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:08:02 [WARNING] census_eda.memory: Memory usage (17472.8MB) exceeded threshold (16000MB)
+2025-12-18 01:08:03 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:08:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 01:08:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1217
+2025-12-18 01:08:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:08:04 [INFO] census_eda.memory: [SHAP] Safe sample size: 1,379 -> 1,000
+2025-12-18 01:08:04 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 1,379 -> 1,000
+2025-12-18 01:08:04 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:08:04 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 01:08:05 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:08:05 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 01:08:05 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 01:08:05 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 01:08:05 [INFO] census_eda.memory: [PRE-CLUSTERING]: 17472.8MB (delta: +0.0MB)
+2025-12-18 01:08:05 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 01:08:05 [INFO] census_eda.main: [CLUSTERING] KMeans on 6,893 samples...
+2025-12-18 01:08:05 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 01:08:05 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 6,893 samples (will sample if needed)...
+2025-12-18 01:08:06 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 01:08:06 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 01:08:06 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 50487.68254852295, 2025: 51720.75350189209, 2026: 52803.4896774292}, Values: [50487.68254852295, 51720.75350189209, 52803.4896774292]
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 01:08:06 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 55034.71155548096, 2025: 56942.17873382568, 2026: 58838.59783935547}, Values: [55034.71155548096, 56942.17873382568, 58838.59783935547]
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 01:08:06 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 55509.3832321167, 2025: 57399.86809539795, 2026: 59267.35710144043}, Values: [55509.3832321167, 57399.86809539795, 59267.35710144043]
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 01:08:06 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 43.6128543401137, 2025: 43.92199295852333, 2026: 44.27409360278398}, Values: [43.6128543401137, 43.92199295852333, 44.27409360278398]
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 01:08:06 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.27709395065904, 2025: 36.741663847118616, 2026: 36.0550021789968}, Values: [37.27709395065904, 36.741663847118616, 36.0550021789968]
+2025-12-18 01:08:06 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 01:08:30 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 01:08:34 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 01:08:34 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 01:08:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 48346.249441749416, 2025: 49417.31790413661, 2026: 50488.38636652427}, values=[48346.249441749416, 49417.31790413661, 50488.38636652427], CI_lower=[45232.20433278306, 46303.272795170255, 47374.34125755791], CI_upper=[51460.29455071577, 52531.363013102964, 53602.43147549062]
+2025-12-18 01:08:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48346.249441749416, 49417.31790413661, 50488.38636652427], CI_lower: [45232.20433278306, 46303.272795170255, 47374.34125755791], CI_upper: [51460.29455071577, 52531.363013102964, 53602.43147549062]
+2025-12-18 01:08:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 45232.20433278306, 46303.272795170255, 47374.34125755791], upper=[np.float64(44352.76400391021), 51460.29455071577, 52531.363013102964, 53602.43147549062]
+2025-12-18 01:08:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 51988.267122626305, 2025: 54270.14859357476, 2026: 56679.39070621133}, values=[51988.267122626305, 54270.14859357476, 56679.39070621133], CI_lower=[50521.756792563596, 52803.63826351205, 55212.88037614862], CI_upper=[53454.77745268901, 55736.65892363747, 58145.90103627404]
+2025-12-18 01:08:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51988.267122626305, 54270.14859357476, 56679.39070621133], CI_lower: [50521.756792563596, 52803.63826351205, 55212.88037614862], CI_upper: [53454.77745268901, 55736.65892363747, 58145.90103627404]
+2025-12-18 01:08:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 50521.756792563596, 52803.63826351205, 55212.88037614862], upper=[np.float64(44352.76400391021), 53454.77745268901, 55736.65892363747, 58145.90103627404]
+2025-12-18 01:08:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 50487.68254852295, 2025: 51720.75350189209, 2026: 52803.4896774292}, values=[50487.68254852295, 51720.75350189209, 52803.4896774292], CI_lower=[49271.257311218586, 50504.328264587726, 51587.064440124836], CI_upper=[51704.10778582731, 52937.17873919645, 54019.91491473356]
+2025-12-18 01:08:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50487.68254852295, 51720.75350189209, 52803.4896774292], CI_lower: [49271.257311218586, 50504.328264587726, 51587.064440124836], CI_upper: [51704.10778582731, 52937.17873919645, 54019.91491473356]
+2025-12-18 01:08:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 49271.257311218586, 50504.328264587726, 51587.064440124836], upper=[np.float64(44352.76400391021), 51704.10778582731, 52937.17873919645, 54019.91491473356]
+2025-12-18 01:08:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 47454.39059746702, 2025: 47454.39059746702, 2026: 47454.39059746702}, values=[47454.39059746702, 47454.39059746702, 47454.39059746702], CI_lower=[45609.452186508, 45609.452186508, 45609.452186508], CI_upper=[49299.32900842604, 49299.32900842604, 49299.32900842604]
+2025-12-18 01:08:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47454.39059746702, 47454.39059746702, 47454.39059746702], CI_lower: [45609.452186508, 45609.452186508, 45609.452186508], CI_upper: [49299.32900842604, 49299.32900842604, 49299.32900842604]
+2025-12-18 01:08:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 45609.452186508, 45609.452186508, 45609.452186508], upper=[np.float64(44352.76400391021), 49299.32900842604, 49299.32900842604, 49299.32900842604]
+2025-12-18 01:08:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 45277.868784540406, 2025: 45277.868784540406, 2026: 45277.868784540406}, values=[45277.868784540406, 45277.868784540406, 45277.868784540406], CI_lower=[42283.03283401196, 42283.03283401196, 42283.03283401196], CI_upper=[48272.70473506885, 48272.70473506885, 48272.70473506885]
+2025-12-18 01:08:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45277.868784540406, 45277.868784540406, 45277.868784540406], CI_lower: [42283.03283401196, 42283.03283401196, 42283.03283401196], CI_upper: [48272.70473506885, 48272.70473506885, 48272.70473506885]
+2025-12-18 01:08:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 42283.03283401196, 42283.03283401196, 42283.03283401196], upper=[np.float64(44352.76400391021), 48272.70473506885, 48272.70473506885, 48272.70473506885]
+2025-12-18 01:08:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 48183.91884881966, 2025: 48183.91884881966, 2026: 48183.91884881966}, values=[48183.91884881966, 48183.91884881966, 48183.91884881966], CI_lower=[46815.80598154909, 46815.80598154909, 46815.80598154909], CI_upper=[49552.03171609023, 49552.03171609023, 49552.03171609023]
+2025-12-18 01:08:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48183.91884881966, 48183.91884881966, 48183.91884881966], CI_lower: [46815.80598154909, 46815.80598154909, 46815.80598154909], CI_upper: [49552.03171609023, 49552.03171609023, 49552.03171609023]
+2025-12-18 01:08:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 46815.80598154909, 46815.80598154909, 46815.80598154909], upper=[np.float64(44352.76400391021), 49552.03171609023, 49552.03171609023, 49552.03171609023]
+2025-12-18 01:08:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 50379.86086601109, 2025: 50588.013056821655, 2026: 50664.64826412768}, values=[50379.86086601109, 50588.013056821655, 50664.64826412768], CI_lower=[35113.79059293681, 35321.94278374738, 35398.577991053404], CI_upper=[65645.93113908537, 65854.08332989593, 65930.71853720196]
+2025-12-18 01:08:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50379.86086601109, 50588.013056821655, 50664.64826412768], CI_lower: [35113.79059293681, 35321.94278374738, 35398.577991053404], CI_upper: [65645.93113908537, 65854.08332989593, 65930.71853720196]
+2025-12-18 01:08:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 35113.79059293681, 35321.94278374738, 35398.577991053404], upper=[np.float64(44352.76400391021), 65645.93113908537, 65854.08332989593, 65930.71853720196]
+2025-12-18 01:08:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 52105.96195252074, 2025: 54397.43419336082, 2026: 56688.9064342009}, values=[52105.96195252074, 54397.43419336082, 56688.9064342009], CI_lower=[50523.251126563584, 52814.72336740367, 55106.19560824375], CI_upper=[53688.67277847789, 55980.14501931798, 58271.617260158055]
+2025-12-18 01:08:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52105.96195252074, 54397.43419336082, 56688.9064342009], CI_lower: [50523.251126563584, 52814.72336740367, 55106.19560824375], CI_upper: [53688.67277847789, 55980.14501931798, 58271.617260158055]
+2025-12-18 01:08:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44352.76400391021), 50523.251126563584, 52814.72336740367, 55106.19560824375], upper=[np.float64(44352.76400391021), 53688.67277847789, 55980.14501931798, 58271.617260158055]
+2025-12-18 01:08:40 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 01:08:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 52000.62720151618, 2025: 53185.47486137785, 2026: 54370.32252123952}, values=[52000.62720151618, 53185.47486137785, 54370.32252123952], CI_lower=[48932.215471552125, 50117.06313141379, 51301.91079127546], CI_upper=[55069.03893148024, 56253.88659134191, 57438.734251203576]
+2025-12-18 01:08:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52000.62720151618, 53185.47486137785, 54370.32252123952], CI_lower: [48932.215471552125, 50117.06313141379, 51301.91079127546], CI_upper: [55069.03893148024, 56253.88659134191, 57438.734251203576]
+2025-12-18 01:08:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 48932.215471552125, 50117.06313141379, 51301.91079127546], upper=[np.float64(30526.95944076581), 55069.03893148024, 56253.88659134191, 57438.734251203576]
+2025-12-18 01:08:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 55814.95862394571, 2025: 58267.906142383814, 2026: 60854.24008014798}, values=[55814.95862394571, 58267.906142383814, 60854.24008014798], CI_lower=[54748.40786669282, 57201.35538513092, 59787.68932289509], CI_upper=[56881.50938119861, 59334.45689963671, 61920.79083740088]
+2025-12-18 01:08:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55814.95862394571, 58267.906142383814, 60854.24008014798], CI_lower: [54748.40786669282, 57201.35538513092, 59787.68932289509], CI_upper: [56881.50938119861, 59334.45689963671, 61920.79083740088]
+2025-12-18 01:08:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 54748.40786669282, 57201.35538513092, 59787.68932289509], upper=[np.float64(30526.95944076581), 56881.50938119861, 59334.45689963671, 61920.79083740088]
+2025-12-18 01:08:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 55034.71155548096, 2025: 56942.17873382568, 2026: 58838.59783935547}, values=[55034.71155548096, 56942.17873382568, 58838.59783935547], CI_lower=[54056.95413202595, 55964.42131037068, 57860.840415900464], CI_upper=[56012.46897893596, 57919.93615728069, 59816.35526281047]
+2025-12-18 01:08:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55034.71155548096, 56942.17873382568, 58838.59783935547], CI_lower: [54056.95413202595, 55964.42131037068, 57860.840415900464], CI_upper: [56012.46897893596, 57919.93615728069, 59816.35526281047]
+2025-12-18 01:08:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 54056.95413202595, 55964.42131037068, 57860.840415900464], upper=[np.float64(30526.95944076581), 56012.46897893596, 57919.93615728069, 59816.35526281047]
+2025-12-18 01:08:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 51151.556650274724, 2025: 51151.556650274724, 2026: 51151.556650274724}, values=[51151.556650274724, 51151.556650274724, 51151.556650274724], CI_lower=[49205.47628884511, 49205.47628884511, 49205.47628884511], CI_upper=[53097.63701170434, 53097.63701170434, 53097.63701170434]
+2025-12-18 01:08:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51151.556650274724, 51151.556650274724, 51151.556650274724], CI_lower: [49205.47628884511, 49205.47628884511, 49205.47628884511], CI_upper: [53097.63701170434, 53097.63701170434, 53097.63701170434]
+2025-12-18 01:08:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 49205.47628884511, 49205.47628884511, 49205.47628884511], upper=[np.float64(30526.95944076581), 53097.63701170434, 53097.63701170434, 53097.63701170434]
+2025-12-18 01:08:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 48580.86933912776, 2025: 48580.86933912776, 2026: 48580.86933912776}, values=[48580.86933912776, 48580.86933912776, 48580.86933912776], CI_lower=[45500.31154212802, 45500.31154212802, 45500.31154212802], CI_upper=[51661.4271361275, 51661.4271361275, 51661.4271361275]
+2025-12-18 01:08:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48580.86933912776, 48580.86933912776, 48580.86933912776], CI_lower: [45500.31154212802, 45500.31154212802, 45500.31154212802], CI_upper: [51661.4271361275, 51661.4271361275, 51661.4271361275]
+2025-12-18 01:08:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 45500.31154212802, 45500.31154212802, 45500.31154212802], upper=[np.float64(30526.95944076581), 51661.4271361275, 51661.4271361275, 51661.4271361275]
+2025-12-18 01:08:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 51882.412817676726, 2025: 51882.412817676726, 2026: 51882.412817676726}, values=[51882.412817676726, 51882.412817676726, 51882.412817676726], CI_lower=[50372.40789441033, 50372.40789441033, 50372.40789441033], CI_upper=[53392.41774094312, 53392.41774094312, 53392.41774094312]
+2025-12-18 01:08:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51882.412817676726, 51882.412817676726, 51882.412817676726], CI_lower: [50372.40789441033, 50372.40789441033, 50372.40789441033], CI_upper: [53392.41774094312, 53392.41774094312, 53392.41774094312]
+2025-12-18 01:08:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 50372.40789441033, 50372.40789441033, 50372.40789441033], upper=[np.float64(30526.95944076581), 53392.41774094312, 53392.41774094312, 53392.41774094312]
+2025-12-18 01:08:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 54855.84661395209, 2025: 56140.55638055496, 2026: 57425.262492892325}, values=[54855.84661395209, 56140.55638055496, 57425.262492892325], CI_lower=[38649.82712957068, 39934.53689617355, 41219.24300851092], CI_upper=[71061.8660983335, 72346.57586493637, 73631.28197727373]
+2025-12-18 01:08:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54855.84661395209, 56140.55638055496, 57425.262492892325], CI_lower: [38649.82712957068, 39934.53689617355, 41219.24300851092], CI_upper: [71061.8660983335, 72346.57586493637, 73631.28197727373]
+2025-12-18 01:08:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 38649.82712957068, 39934.53689617355, 41219.24300851092], upper=[np.float64(30526.95944076581), 71061.8660983335, 72346.57586493637, 73631.28197727373]
+2025-12-18 01:08:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 55972.16257909378, 2025: 58373.19197877133, 2026: 60774.22137844886}, values=[55972.16257909378, 58373.19197877133, 60774.22137844886], CI_lower=[54427.77808323235, 56828.80748290989, 59229.83688258743], CI_upper=[57516.54707495522, 59917.57647463276, 62318.6058743103]
+2025-12-18 01:08:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55972.16257909378, 58373.19197877133, 60774.22137844886], CI_lower: [54427.77808323235, 56828.80748290989, 59229.83688258743], CI_upper: [57516.54707495522, 59917.57647463276, 62318.6058743103]
+2025-12-18 01:08:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30526.95944076581), 54427.77808323235, 56828.80748290989, 59229.83688258743], upper=[np.float64(30526.95944076581), 57516.54707495522, 59917.57647463276, 62318.6058743103]
+2025-12-18 01:08:45 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 01:08:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 52481.33315705368, 2025: 53679.84923036583, 2026: 54878.36530367797}, values=[52481.33315705368, 53679.84923036583, 54878.36530367797], CI_lower=[49334.87254563904, 50533.38861895118, 51731.90469226333], CI_upper=[55627.79376846833, 56826.30984178047, 58024.82591509262]
+2025-12-18 01:08:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52481.33315705368, 53679.84923036583, 54878.36530367797], CI_lower: [49334.87254563904, 50533.38861895118, 51731.90469226333], CI_upper: [55627.79376846833, 56826.30984178047, 58024.82591509262]
+2025-12-18 01:08:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 49334.87254563904, 50533.38861895118, 51731.90469226333], upper=[np.float64(32967.65934291965), 55627.79376846833, 56826.30984178047, 58024.82591509262]
+2025-12-18 01:08:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 56367.95024049282, 2025: 58858.598021030426, 2026: 61485.16003638506}, values=[56367.95024049282, 58858.598021030426, 61485.16003638506], CI_lower=[55225.19830091876, 57715.846081456366, 60342.408096811], CI_upper=[57510.70218006688, 60001.349960604486, 62627.91197595912]
+2025-12-18 01:08:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56367.95024049282, 58858.598021030426, 61485.16003638506], CI_lower: [55225.19830091876, 57715.846081456366, 60342.408096811], CI_upper: [57510.70218006688, 60001.349960604486, 62627.91197595912]
+2025-12-18 01:08:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 55225.19830091876, 57715.846081456366, 60342.408096811], upper=[np.float64(32967.65934291965), 57510.70218006688, 60001.349960604486, 62627.91197595912]
+2025-12-18 01:08:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 55509.3832321167, 2025: 57399.86809539795, 2026: 59267.35710144043}, values=[55509.3832321167, 57399.86809539795, 59267.35710144043], CI_lower=[54467.19643648515, 56357.6812997664, 58225.17030580888], CI_upper=[56551.57002774825, 58442.0548910295, 60309.54389707198]
+2025-12-18 01:08:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55509.3832321167, 57399.86809539795, 59267.35710144043], CI_lower: [54467.19643648515, 56357.6812997664, 58225.17030580888], CI_upper: [56551.57002774825, 58442.0548910295, 60309.54389707198]
+2025-12-18 01:08:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 54467.19643648515, 56357.6812997664, 58225.17030580888], upper=[np.float64(32967.65934291965), 56551.57002774825, 58442.0548910295, 60309.54389707198]
+2025-12-18 01:08:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 51601.565721583225, 2025: 51601.565721583225, 2026: 51601.565721583225}, values=[51601.565721583225, 51601.565721583225, 51601.565721583225], CI_lower=[49603.69071509094, 49603.69071509094, 49603.69071509094], CI_upper=[53599.44072807551, 53599.44072807551, 53599.44072807551]
+2025-12-18 01:08:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51601.565721583225, 51601.565721583225, 51601.565721583225], CI_lower: [49603.69071509094, 49603.69071509094, 49603.69071509094], CI_upper: [53599.44072807551, 53599.44072807551, 53599.44072807551]
+2025-12-18 01:08:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 49603.69071509094, 49603.69071509094, 49603.69071509094], upper=[np.float64(32967.65934291965), 53599.44072807551, 53599.44072807551, 53599.44072807551]
+2025-12-18 01:08:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 49027.71968761392, 2025: 49027.71968761392, 2026: 49027.71968761392}, values=[49027.71968761392, 49027.71968761392, 49027.71968761392], CI_lower=[45902.03007938747, 45902.03007938747, 45902.03007938747], CI_upper=[52153.40929584037, 52153.40929584037, 52153.40929584037]
+2025-12-18 01:08:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49027.71968761392, 49027.71968761392, 49027.71968761392], CI_lower: [45902.03007938747, 45902.03007938747, 45902.03007938747], CI_upper: [52153.40929584037, 52153.40929584037, 52153.40929584037]
+2025-12-18 01:08:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 45902.03007938747, 45902.03007938747, 45902.03007938747], upper=[np.float64(32967.65934291965), 52153.40929584037, 52153.40929584037, 52153.40929584037]
+2025-12-18 01:08:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 52357.36594594262, 2025: 52357.36594594262, 2026: 52357.36594594262}, values=[52357.36594594262, 52357.36594594262, 52357.36594594262], CI_lower=[50802.00423745549, 50802.00423745549, 50802.00423745549], CI_upper=[53912.72765442975, 53912.72765442975, 53912.72765442975]
+2025-12-18 01:08:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52357.36594594262, 52357.36594594262, 52357.36594594262], CI_lower: [50802.00423745549, 50802.00423745549, 50802.00423745549], CI_upper: [53912.72765442975, 53912.72765442975, 53912.72765442975]
+2025-12-18 01:08:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 50802.00423745549, 50802.00423745549, 50802.00423745549], upper=[np.float64(32967.65934291965), 53912.72765442975, 53912.72765442975, 53912.72765442975]
+2025-12-18 01:08:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 55310.73173469909, 2025: 56603.5039548192, 2026: 57896.181263107595}, values=[55310.73173469909, 56603.5039548192, 57896.181263107595], CI_lower=[38978.28015223173, 40271.05237235184, 41563.72968064023], CI_upper=[71643.18331716645, 72935.95553728656, 74228.63284557496]
+2025-12-18 01:08:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55310.73173469909, 56603.5039548192, 57896.181263107595], CI_lower: [38978.28015223173, 40271.05237235184, 41563.72968064023], CI_upper: [71643.18331716645, 72935.95553728656, 74228.63284557496]
+2025-12-18 01:08:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 38978.28015223173, 40271.05237235184, 41563.72968064023], upper=[np.float64(32967.65934291965), 71643.18331716645, 72935.95553728656, 74228.63284557496]
+2025-12-18 01:08:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 56476.81840978507, 2025: 58935.77223326841, 2026: 61394.72605675176}, values=[56476.81840978507, 58935.77223326841, 61394.72605675176], CI_lower=[54967.1748230053, 57426.12864648864, 59885.08246997199], CI_upper=[57986.46199656484, 60445.41582004818, 62904.36964353153]
+2025-12-18 01:08:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56476.81840978507, 58935.77223326841, 61394.72605675176], CI_lower: [54967.1748230053, 57426.12864648864, 59885.08246997199], CI_upper: [57986.46199656484, 60445.41582004818, 62904.36964353153]
+2025-12-18 01:08:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32967.65934291965), 54967.1748230053, 57426.12864648864, 59885.08246997199], upper=[np.float64(32967.65934291965), 57986.46199656484, 60445.41582004818, 62904.36964353153]
+2025-12-18 01:08:51 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 01:08:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 43.59581226881926, 2025: 43.79582700889773, 2026: 43.995841748976204}, values=[43.59581226881926, 43.79582700889773, 43.995841748976204], CI_lower=[43.17041328046776, 43.370428020546235, 43.57044276062471], CI_upper=[44.021211257170755, 44.22122599724923, 44.4212407373277]
+2025-12-18 01:08:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.59581226881926, 43.79582700889773, 43.995841748976204], CI_lower: [43.17041328046776, 43.370428020546235, 43.57044276062471], CI_upper: [44.021211257170755, 44.22122599724923, 44.4212407373277]
+2025-12-18 01:08:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 43.17041328046776, 43.370428020546235, 43.57044276062471], upper=[np.float64(43.013595961472944), 44.021211257170755, 44.22122599724923, 44.4212407373277]
+2025-12-18 01:08:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 43.33067632825259, 2025: 43.442544860950875, 2026: 43.5451416419819}, values=[43.33067632825259, 43.442544860950875, 43.5451416419819], CI_lower=[42.95521756023451, 43.06708609293279, 43.169682873963815], CI_upper=[43.70613509627068, 43.81800362896896, 43.920600409999984]
+2025-12-18 01:08:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.33067632825259, 43.442544860950875, 43.5451416419819], CI_lower: [42.95521756023451, 43.06708609293279, 43.169682873963815], CI_upper: [43.70613509627068, 43.81800362896896, 43.920600409999984]
+2025-12-18 01:08:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 42.95521756023451, 43.06708609293279, 43.169682873963815], upper=[np.float64(43.013595961472944), 43.70613509627068, 43.81800362896896, 43.920600409999984]
+2025-12-18 01:08:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 43.6128543401137, 2025: 43.92199295852333, 2026: 44.27409360278398}, values=[43.6128543401137, 43.92199295852333, 44.27409360278398], CI_lower=[43.27046553053344, 43.579604148943076, 43.93170479320372], CI_upper=[43.955243149693956, 44.26438176810359, 44.616482412364235]
+2025-12-18 01:08:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.6128543401137, 43.92199295852333, 44.27409360278398], CI_lower: [43.27046553053344, 43.579604148943076, 43.93170479320372], CI_upper: [43.955243149693956, 44.26438176810359, 44.616482412364235]
+2025-12-18 01:08:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 43.27046553053344, 43.579604148943076, 43.93170479320372], upper=[np.float64(43.013595961472944), 43.955243149693956, 44.26438176810359, 44.616482412364235]
+2025-12-18 01:08:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43.08645338646528, 2025: 43.08645338646528, 2026: 43.08645338646528}, values=[43.08645338646528, 43.08645338646528, 43.08645338646528], CI_lower=[42.71016048700332, 42.71016048700332, 42.71016048700332], CI_upper=[43.46274628592724, 43.46274628592724, 43.46274628592724]
+2025-12-18 01:08:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.08645338646528, 43.08645338646528, 43.08645338646528], CI_lower: [42.71016048700332, 42.71016048700332, 42.71016048700332], CI_upper: [43.46274628592724, 43.46274628592724, 43.46274628592724]
+2025-12-18 01:08:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 42.71016048700332, 42.71016048700332, 42.71016048700332], upper=[np.float64(43.013595961472944), 43.46274628592724, 43.46274628592724, 43.46274628592724]
+2025-12-18 01:08:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42.81997394996181, 2025: 42.81997394996181, 2026: 42.81997394996181}, values=[42.81997394996181, 42.81997394996181, 42.81997394996181], CI_lower=[42.418594867683325, 42.418594867683325, 42.418594867683325], CI_upper=[43.2213530322403, 43.2213530322403, 43.2213530322403]
+2025-12-18 01:08:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.81997394996181, 42.81997394996181, 42.81997394996181], CI_lower: [42.418594867683325, 42.418594867683325, 42.418594867683325], CI_upper: [43.2213530322403, 43.2213530322403, 43.2213530322403]
+2025-12-18 01:08:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 42.418594867683325, 42.418594867683325, 42.418594867683325], upper=[np.float64(43.013595961472944), 43.2213530322403, 43.2213530322403, 43.2213530322403]
+2025-12-18 01:08:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 43.17838132419589, 2025: 43.17838132419589, 2026: 43.17838132419589}, values=[43.17838132419589, 43.17838132419589, 43.17838132419589], CI_lower=[42.86836274622822, 42.86836274622822, 42.86836274622822], CI_upper=[43.48839990216356, 43.48839990216356, 43.48839990216356]
+2025-12-18 01:08:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.17838132419589, 43.17838132419589, 43.17838132419589], CI_lower: [42.86836274622822, 42.86836274622822, 42.86836274622822], CI_upper: [43.48839990216356, 43.48839990216356, 43.48839990216356]
+2025-12-18 01:08:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 42.86836274622822, 42.86836274622822, 42.86836274622822], upper=[np.float64(43.013595961472944), 43.48839990216356, 43.48839990216356, 43.48839990216356]
+2025-12-18 01:08:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 43.62878788848754, 2025: 43.83853472506726, 2026: 44.048263567164284}, values=[43.62878788848754, 43.83853472506726, 44.048263567164284], CI_lower=[24.652999890523354, 24.86274672710308, 25.0724755692001], CI_upper=[62.60457588645172, 62.814322723031445, 63.02405156512847]
+2025-12-18 01:08:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.62878788848754, 43.83853472506726, 44.048263567164284], CI_lower: [24.652999890523354, 24.86274672710308, 25.0724755692001], CI_upper: [62.60457588645172, 62.814322723031445, 63.02405156512847]
+2025-12-18 01:08:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 24.652999890523354, 24.86274672710308, 25.0724755692001], upper=[np.float64(43.013595961472944), 62.60457588645172, 62.814322723031445, 63.02405156512847]
+2025-12-18 01:08:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 43.59421944835174, 2025: 43.81817409459725, 2026: 44.04212874084276}, values=[43.59421944835174, 43.81817409459725, 44.04212874084276], CI_lower=[43.176601122119266, 43.40055576836478, 43.62451041461029], CI_upper=[44.01183777458421, 44.235792420829725, 44.459747067075234]
+2025-12-18 01:08:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.59421944835174, 43.81817409459725, 44.04212874084276], CI_lower: [43.176601122119266, 43.40055576836478, 43.62451041461029], CI_upper: [44.01183777458421, 44.235792420829725, 44.459747067075234]
+2025-12-18 01:08:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.013595961472944), 43.176601122119266, 43.40055576836478, 43.62451041461029], upper=[np.float64(43.013595961472944), 44.01183777458421, 44.235792420829725, 44.459747067075234]
+2025-12-18 01:08:57 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 01:08:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.92393067448742, 2025: 37.9175785485007, 2026: 37.91122642251398}, values=[37.92393067448742, 37.9175785485007, 37.91122642251398], CI_lower=[37.40061608308307, 37.39426395709635, 37.387911831109626], CI_upper=[38.44724526589177, 38.44089313990505, 38.43454101391833]
+2025-12-18 01:08:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.92393067448742, 37.9175785485007, 37.91122642251398], CI_lower: [37.40061608308307, 37.39426395709635, 37.387911831109626], CI_upper: [38.44724526589177, 38.44089313990505, 38.43454101391833]
+2025-12-18 01:08:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 37.40061608308307, 37.39426395709635, 37.387911831109626], upper=[np.float64(37.62460220318238), 38.44724526589177, 38.44089313990505, 38.43454101391833]
+2025-12-18 01:08:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.13404426454508, 2025: 38.197545799477666, 2026: 38.26839496531829}, values=[38.13404426454508, 38.197545799477666, 38.26839496531829], CI_lower=[37.63530522254402, 37.6988067574766, 37.76965592331723], CI_upper=[38.632783306546145, 38.69628484147873, 38.767134007319356]
+2025-12-18 01:08:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.13404426454508, 38.197545799477666, 38.26839496531829], CI_lower: [37.63530522254402, 37.6988067574766, 37.76965592331723], CI_upper: [38.632783306546145, 38.69628484147873, 38.767134007319356]
+2025-12-18 01:08:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 37.63530522254402, 37.6988067574766, 37.76965592331723], upper=[np.float64(37.62460220318238), 38.632783306546145, 38.69628484147873, 38.767134007319356]
+2025-12-18 01:08:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 37.27709395065904, 2025: 36.741663847118616, 2026: 36.0550021789968}, values=[37.27709395065904, 36.741663847118616, 36.0550021789968], CI_lower=[37.104032189768944, 36.56860208622852, 35.88194041810671], CI_upper=[37.45015571154913, 36.91472560800871, 36.228063939886894]
+2025-12-18 01:08:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.27709395065904, 36.741663847118616, 36.0550021789968], CI_lower: [37.104032189768944, 36.56860208622852, 35.88194041810671], CI_upper: [37.45015571154913, 36.91472560800871, 36.228063939886894]
+2025-12-18 01:08:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 37.104032189768944, 36.56860208622852, 35.88194041810671], upper=[np.float64(37.62460220318238), 37.45015571154913, 36.91472560800871, 36.228063939886894]
+2025-12-18 01:08:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.95033943378851, 2025: 37.95033943378851, 2026: 37.95033943378851}, values=[37.95033943378851, 37.95033943378851, 37.95033943378851], CI_lower=[37.60521272569621, 37.60521272569621, 37.60521272569621], CI_upper=[38.2954661418808, 38.2954661418808, 38.2954661418808]
+2025-12-18 01:08:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.95033943378851, 37.95033943378851, 37.95033943378851], CI_lower: [37.60521272569621, 37.60521272569621, 37.60521272569621], CI_upper: [38.2954661418808, 38.2954661418808, 38.2954661418808]
+2025-12-18 01:08:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 37.60521272569621, 37.60521272569621, 37.60521272569621], upper=[np.float64(37.62460220318238), 38.2954661418808, 38.2954661418808, 38.2954661418808]
+2025-12-18 01:09:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.945771521770354, 2025: 37.945771521770354, 2026: 37.945771521770354}, values=[37.945771521770354, 37.945771521770354, 37.945771521770354], CI_lower=[37.55340872848935, 37.55340872848935, 37.55340872848935], CI_upper=[38.338134315051356, 38.338134315051356, 38.338134315051356]
+2025-12-18 01:09:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.945771521770354, 37.945771521770354, 37.945771521770354], CI_lower: [37.55340872848935, 37.55340872848935, 37.55340872848935], CI_upper: [38.338134315051356, 38.338134315051356, 38.338134315051356]
+2025-12-18 01:09:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 37.55340872848935, 37.55340872848935, 37.55340872848935], upper=[np.float64(37.62460220318238), 38.338134315051356, 38.338134315051356, 38.338134315051356]
+2025-12-18 01:09:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.85707025344907, 2025: 37.85707025344907, 2026: 37.85707025344907}, values=[37.85707025344907, 37.85707025344907, 37.85707025344907], CI_lower=[37.551927235267115, 37.551927235267115, 37.551927235267115], CI_upper=[38.16221327163103, 38.16221327163103, 38.16221327163103]
+2025-12-18 01:09:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.85707025344907, 37.85707025344907, 37.85707025344907], CI_lower: [37.551927235267115, 37.551927235267115, 37.551927235267115], CI_upper: [38.16221327163103, 38.16221327163103, 38.16221327163103]
+2025-12-18 01:09:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 37.551927235267115, 37.551927235267115, 37.551927235267115], upper=[np.float64(37.62460220318238), 38.16221327163103, 38.16221327163103, 38.16221327163103]
+2025-12-18 01:09:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.377051075063264, 2025: 37.20578599078031, 2026: 37.0872984309889}, values=[37.377051075063264, 37.20578599078031, 37.0872984309889], CI_lower=[19.048768837965383, 18.877503753682433, 18.75901619389102], CI_upper=[55.705333312161144, 55.534068227878194, 55.41558066808678]
+2025-12-18 01:09:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.377051075063264, 37.20578599078031, 37.0872984309889], CI_lower: [19.048768837965383, 18.877503753682433, 18.75901619389102], CI_upper: [55.705333312161144, 55.534068227878194, 55.41558066808678]
+2025-12-18 01:09:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 19.048768837965383, 18.877503753682433, 18.75901619389102], upper=[np.float64(37.62460220318238), 55.705333312161144, 55.534068227878194, 55.41558066808678]
+2025-12-18 01:09:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.560594005446696, 2025: 37.49658580244215, 2026: 37.43257759943759}, values=[37.560594005446696, 37.49658580244215, 37.43257759943759], CI_lower=[37.19269338460817, 37.12868518160362, 37.06467697859907], CI_upper=[37.92849462628522, 37.864486423280674, 37.80047822027612]
+2025-12-18 01:09:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.560594005446696, 37.49658580244215, 37.43257759943759], CI_lower: [37.19269338460817, 37.12868518160362, 37.06467697859907], CI_upper: [37.92849462628522, 37.864486423280674, 37.80047822027612]
+2025-12-18 01:09:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.62460220318238), 37.19269338460817, 37.12868518160362, 37.06467697859907], upper=[np.float64(37.62460220318238), 37.92849462628522, 37.864486423280674, 37.80047822027612]
+2025-12-18 01:09:04 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 01:09:04 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 01:13:29 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 17141.2265625, 'mse': 1357439488.0, 'rmse': 36843.445658624274, 'r2': 0.21959751844406128}
+2025-12-18 01:13:30 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 01:16:37 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.4857547283172607, 'mse': 66.713134765625, 'rmse': 8.167810891886822, 'r2': 0.3194141983985901}
+2025-12-18 01:16:37 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 01:19:58 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.04063606262207, 'mse': 620.1741943359375, 'rmse': 24.9032968567605, 'r2': -5.551194190979004}
+2025-12-18 01:19:59 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 01:20:28 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 01:20:29 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 01:20:29 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 01:20:29 [DEBUG] census_eda.main:  Running LLM analysis for state: Missouri
+2025-12-18 01:20:29 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 01:20:29 [INFO] census_eda.ml: [LLM] State context loaded: Missouri
+2025-12-18 01:20:29 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [API] Total request: ~2387 tokens (system: ~2206, user: ~181)
+2025-12-18 01:20:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:20:50 [DEBUG] census_eda.ml: [API] Received response: 5465 chars
+2025-12-18 01:20:50 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (5465 chars)
+2025-12-18 01:20:51 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [API] Total request: ~2527 tokens (system: ~2206, user: ~321)
+2025-12-18 01:20:51 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [API] Received response: 3869 chars
+2025-12-18 01:21:01 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3869 chars)
+2025-12-18 01:21:01 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [API] Total request: ~2754 tokens (system: ~2206, user: ~548)
+2025-12-18 01:21:01 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [API] Received response: 4476 chars
+2025-12-18 01:21:14 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4476 chars)
+2025-12-18 01:21:14 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [API] Total request: ~2546 tokens (system: ~2206, user: ~340)
+2025-12-18 01:21:14 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [API] Received response: 4270 chars
+2025-12-18 01:21:29 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4270 chars)
+2025-12-18 01:21:29 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [API] Total request: ~2396 tokens (system: ~2206, user: ~190)
+2025-12-18 01:21:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [API] Received response: 4467 chars
+2025-12-18 01:21:42 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4467 chars)
+2025-12-18 01:21:42 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [LLM] User prompt: 8735 chars (~2183 tokens)
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [API] Total request: ~4389 tokens (system: ~2206, user: ~2183)
+2025-12-18 01:21:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [API] Received response: 3430 chars
+2025-12-18 01:21:55 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3430 chars)
+2025-12-18 01:21:55 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [LLM] User prompt: 5375 chars (~1343 tokens)
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [API] Total request: ~3549 tokens (system: ~2206, user: ~1343)
+2025-12-18 01:21:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [API] Received response: 3285 chars
+2025-12-18 01:22:04 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3285 chars)
+2025-12-18 01:22:04 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [LLM] User prompt: 753 chars (~188 tokens)
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [API] Total request: ~2394 tokens (system: ~2206, user: ~188)
+2025-12-18 01:22:04 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [API] Received response: 3882 chars
+2025-12-18 01:22:17 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3882 chars)
+2025-12-18 01:22:17 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [LLM] User prompt: 5604 chars (~1401 tokens)
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [API] Total request: ~3607 tokens (system: ~2206, user: ~1401)
+2025-12-18 01:22:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [API] Received response: 3800 chars
+2025-12-18 01:22:28 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3800 chars)
+2025-12-18 01:22:28 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [LLM] User prompt: 1843 chars (~460 tokens)
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [API] Total request: ~2666 tokens (system: ~2206, user: ~460)
+2025-12-18 01:22:28 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [API] Received response: 4235 chars
+2025-12-18 01:22:41 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4235 chars)
+2025-12-18 01:22:41 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Missouri
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Missouri
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3936 chars
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~984
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Missouri
+
+ECONOMIC PROFILE:
+  Industries: Agriculture and food processing, Advanced manufacturing (automotive, aerospace), Healthcare and life sciences, Financial services, Transportation and logistics
+  Trends: Moderate growth 2011-2023. St. Louis and Kansas City diverging from rural decline. Manufacturing resilient. Agriculture important. Financial services (Kansas City) strong. Post-pandemic recovery solid in metros
+  Income: Near national median (~$65k). Lower in rural areas. St. Louis and Kansas City suburbs higher. Cost of living below national average improves purchasing power
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.2% annually 2011-2023. Slower than national average. Metro areas growing, rural declining. Minimal population change overall
+  Migration: Modest net migration - attracting from Illinois, California (cost); losing some to Texas, Florida. Intrastate: St. Louis city losing to suburbs, rural depopulation. Limited international immigration
+  Education: Near national average in bachelor's degrees (~32%). Strong public universities (Mizzou, Missouri S&T). Metro areas higher attainment than rural
+
+HOUSING MARKET:
+  Market: Affordable - statewide median ~$220k (2023). St. Louis and Kansas City suburbs more expensive but still reasonable. Rural very affordable. Wide price variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 but less than national average. Still affordable relative to coasts
+  Challenges: St. Louis city vacancy and blight, Rural housing stock aging, Suburban sprawl, Tornado/storm damage reconstruction needs
+
+POLITY:
+  Policy: Conservative Republican governance (2011-2023). Right-to-work state. Low taxes. Business-friendly. Urban progressive pockets (St. Louis, Kansas City) vs. conservative rural dominance
+  Housing: Limited state intervention. Local control. No rent control. Tax credit programs for historic preservation and low-income housing
+  Labor: Right-to-work debates 2017-2018 (law passed then repealed). $12 minimum wage (2023, from voter-approved increase). Limited worker protections
+
+REGIONAL:
+  Geography: Mississippi River border (east), Missouri River traverses state. Ozark Plateau (south), glaciated plains (north). Mississippi-Missouri confluence (St. Louis)
+  Urban/Rural: 70% urban (St. Louis, Kansas City metros, Springfield, Columbia). 30% rural - agriculture, Ozarks tourism
+  Infrastructure: Central US location - major logistics hub. Lambert Airport (St. Louis), KCI (Kansas City). I-70, I-44 corridors. River ports. Aging urban infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Joplin tornado (2011, EF5), budget challenges, education debates; 2014-2016: Ferguson unrest (2014) and national attention, economic recovery continues; 2017-2019: Right-to-work passed then repealed by voters (2018), infrastructure needs debated; 2021-2023: Medicaid expansion implemented (2021), COVID-19 pandemic, abortion restrictions post-Dobbs, political polarization increases
+  Shocks: Joplin tornado (2011, $2.8B damage). Ferguson unrest economic impact. COVID-19. Supply chain disruptions affecting manufacturing
+  Transitions: Manufacturing automation reducing employment. Retail consolidation. Agriculture consolidation. Financial services growth (Kansas City). Healthcare expansion
+
+COMPARATIVE:
+  Benchmarks: Near median income and cost of living. Average educational attainment. Below average population growth. Affordable housing. Healthcare employment high
+  Peer States: Kansas (adjacent, similar economy), Oklahoma (geography, politics), Illinois (St. Louis shared metro)
+  Unique: Geographic center of US. Two major metros with different identities (St. Louis old industrial, Kansas City younger/growing). Gateway Arch symbolism. I-70 corridor important. Bellwether state politically (historically). Rural decline vs. metro growth divide stark
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Missouri
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [PROMPT] State context injected (3936 chars)
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8824 chars (~2206 tokens)
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [API] Total request: ~2615 tokens (system: ~2206, user: ~409)
+2025-12-18 01:22:41 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:22:54 [DEBUG] census_eda.ml: [API] Received response: 4776 chars
+2025-12-18 01:22:54 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4776 chars)
+2025-12-18 01:22:54 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 01:22:54 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 01:22:54 [INFO] census_eda.main: [REPORT] Generated: report_Missouri_population_20251218_012254.txt
+2025-12-18 01:22:54 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Missouri!
+2025-12-18 01:22:55 [INFO] census_eda.memory: process_Missouri_population_1-year:EXIT: 13911.3MB (delta: -3561.5MB)
+2025-12-18 01:22:55 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 01:22:56 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 01:22:57 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 01:22:58 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 01:22:59 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 01:23:00 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 01:23:01 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 01:23:02 [INFO] census_eda.memory: Cleared all caches

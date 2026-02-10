@@ -1,0 +1,1293 @@
+2025-12-18 02:18:10 [INFO] census_eda: Logging context set: state=Nevada, survey=population, scope=1-year
+2025-12-18 02:18:10 [INFO] census_eda: Log file: ./logs/Nevada/1-year/population/1-year_population_25_12_18_0218.log
+2025-12-18 02:18:10 [INFO] census_eda.main: ======================================================================
+2025-12-18 02:18:10 [INFO] census_eda.main: [POPULATION] Processing Nevada (1-year)...
+2025-12-18 02:18:10 [INFO] census_eda.main: ======================================================================
+2025-12-18 02:18:10 [INFO] census_eda.memory: process_Nevada_population_1-year:ENTER: 9400.1MB (delta: +0.0MB)
+2025-12-18 02:18:10 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 02:18:10 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/32/*/*.csv
+2025-12-18 02:18:10 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 02:18:10 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pnv.csv
+2025-12-18 02:18:11 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 02:18:11 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,726 rows, 260 columns
+2025-12-18 02:18:11 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p32.csv
+2025-12-18 02:18:11 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 02:18:11 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,413 rows, 260 columns
+2025-12-18 02:18:11 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pnv.csv
+2025-12-18 02:18:12 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 02:18:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,812 rows, 260 columns
+2025-12-18 02:18:12 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pnv.csv
+2025-12-18 02:18:12 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 02:18:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,748 rows, 260 columns
+2025-12-18 02:18:12 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pnv.csv
+2025-12-18 02:18:13 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 02:18:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 25,688 rows, 260 columns
+2025-12-18 02:18:13 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pnv.csv
+2025-12-18 02:18:13 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 02:18:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,145 rows, 260 columns
+2025-12-18 02:18:13 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p32.csv
+2025-12-18 02:18:14 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 02:18:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,927 rows, 260 columns
+2025-12-18 02:18:14 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pnv.csv
+2025-12-18 02:18:14 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 02:18:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 25,743 rows, 260 columns
+2025-12-18 02:18:14 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pnv.csv
+2025-12-18 02:18:15 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 02:18:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,285 rows, 260 columns
+2025-12-18 02:18:15 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p32.csv
+2025-12-18 02:18:15 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 02:18:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,347 rows, 260 columns
+2025-12-18 02:18:15 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p32.csv
+2025-12-18 02:18:16 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 02:18:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 30,749 rows, 260 columns
+2025-12-18 02:18:16 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p32.csv
+2025-12-18 02:18:17 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 02:18:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 30,080 rows, 260 columns
+2025-12-18 02:18:17 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p32.csv
+2025-12-18 02:18:17 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 02:18:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 30,836 rows, 260 columns
+2025-12-18 02:18:17 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pnv.csv
+2025-12-18 02:18:18 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 02:18:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,988 rows, 260 columns
+2025-12-18 02:18:18 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pnv.csv
+2025-12-18 02:18:18 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 02:18:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,810 rows, 260 columns
+2025-12-18 02:18:18 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pnv.csv
+2025-12-18 02:18:19 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 02:18:19 [VERBOSE] census_eda.processing.loader:   -> Loaded 26,113 rows, 260 columns
+2025-12-18 02:18:19 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 02:18:22 [VERBOSE] census_eda.processing.loader: Combined into 443,410 total rows, 260 columns
+2025-12-18 02:18:22 [INFO] census_eda.main: Loaded 443,410 records
+2025-12-18 02:18:22 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 443410 valid, 16 unique
+2025-12-18 02:18:22 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 02:18:23 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 02:18:23 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 02:18:23 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 02:18:23 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 02:18:23 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 02:18:24 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 02:18:24 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 02:18:24 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 02:18:24 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 02:18:24 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 02:18:25 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 02:18:25 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 02:18:25 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 02:18:25 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 02:18:25 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 02:18:25 [DEBUG] census_eda.main: Feature engineering complete: (443410, 292)
+2025-12-18 02:18:26 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 02:18:26 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 02:19:38 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 02:19:38 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 02:19:38 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(443410, 292)
+2025-12-18 02:19:38 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 02:19:38 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 443410
+2025-12-18 02:19:38 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 02:19:39 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(443410, 292)
+2025-12-18 02:19:39 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(25688), np.int64(2008): np.int64(25743), np.int64(2009): np.int64(26145), np.int64(2010): np.int64(26810), np.int64(2011): np.int64(26113), np.int64(2012): np.int64(26726), np.int64(2013): np.int64(26748), np.int64(2014): np.int64(26812), np.int64(2015): np.int64(26988), np.int64(2016): np.int64(27285), np.int64(2017): np.int64(28413), np.int64(2018): np.int64(28927), np.int64(2019): np.int64(29347), np.int64(2021): np.int64(30080), np.int64(2022): np.int64(30749), np.int64(2023): np.int64(30836)}
+2025-12-18 02:19:39 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(443410, 292)
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 443410 non-null values (zeros excluded if needed)
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 443410 non-null values (zeros excluded if needed)
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1954.00
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 443410 non-null values (zeros excluded if needed)
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 93.00
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 187607 non-null values (zeros excluded if needed)
+2025-12-18 02:19:40 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 163.00
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 41821 non-null values (zeros excluded if needed)
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 469000.00
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 24518 non-null values (zeros excluded if needed)
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 81000.00
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 5881 non-null values (zeros excluded if needed)
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 02:19:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 02:19:43 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 49846 non-null values (zeros excluded if needed)
+2025-12-18 02:19:43 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 170000.00
+2025-12-18 02:19:44 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 02:19:44 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 17712 non-null values (zeros excluded if needed)
+2025-12-18 02:19:44 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 424000.00
+2025-12-18 02:19:44 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 02:19:44 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 8190 non-null values (zeros excluded if needed)
+2025-12-18 02:19:44 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 02:19:44 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 02:19:45 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 82564 non-null values (zeros excluded if needed)
+2025-12-18 02:19:45 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 02:19:45 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 02:19:45 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 215000 non-null values (zeros excluded if needed)
+2025-12-18 02:19:45 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 562000.00
+2025-12-18 02:19:47 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 02:20:00 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 02:20:00 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 02:20:00 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 02:20:01 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 02:20:01 [DEBUG] census_eda.memory: Skipping sampling: 39663MB available (>16GB)
+2025-12-18 02:20:01 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 443410 rows
+2025-12-18 02:21:22 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 02:21:22 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(443410, 292)
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 443410 non-null values
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 443410 non-null values
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1954.00
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 443410 non-null values
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 93.00
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 187607 non-null values
+2025-12-18 02:21:23 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 163.00
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 41821 non-null values
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 469000.00
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 24518 non-null values
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 81000.00
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 5881 non-null values
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 49846 non-null values
+2025-12-18 02:21:24 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 170000.00
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 17712 non-null values
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 424000.00
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 8190 non-null values
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 82564 non-null values
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 215000 non-null values
+2025-12-18 02:21:26 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 562000.00
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 226717 non-null values
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 181351 non-null values
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 89421 non-null values
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 360035 non-null values
+2025-12-18 02:21:28 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 02:21:38 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 02:21:52 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 02:22:02 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 02:22:21 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 02:22:21 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 02:22:21 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 02:22:22 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 02:22:23 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 02:22:24 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 02:22:26 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 02:22:26 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 02:22:26 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 02:22:26 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 02:22:27 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 02:22:29 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 02:22:29 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 02:22:29 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 02:22:30 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 02:22:32 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 02:22:32 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 02:22:32 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 02:22:33 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 02:22:34 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 02:22:35 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 02:22:35 [DEBUG] census_eda.memory: Skipping sampling: 39693MB available (>16GB)
+2025-12-18 02:22:44 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 02:22:44 [DEBUG] census_eda.memory: Skipping sampling: 39689MB available (>16GB)
+2025-12-18 02:23:00 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 02:23:00 [DEBUG] census_eda.memory: Skipping sampling: 39693MB available (>16GB)
+2025-12-18 02:23:04 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 02:23:14 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 02:23:14 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 02:23:14 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 02:23:14 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 02:23:15 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 02:23:16 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 02:23:17 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 02:23:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 02:23:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 02:23:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 02:23:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 02:23:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 02:23:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 02:23:20 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 02:23:20 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 02:23:20 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 02:23:21 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 02:23:22 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 02:23:23 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 02:23:24 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 02:23:26 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 02:23:27 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 02:23:29 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 02:23:29 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 02:23:29 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 02:23:30 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 02:23:30 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 02:23:32 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 02:23:33 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 02:23:34 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 02:23:35 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 02:23:36 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 02:23:38 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 02:23:41 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 02:23:42 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 02:23:43 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Nevada/population/1-year/figures
+2025-12-18 02:23:44 [DEBUG] census_eda.memory: Skipping sampling: 39693MB available (>16GB)
+2025-12-18 02:23:44 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 02:23:44 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 02:23:44 [INFO] census_eda.memory: [ML-START]: 12522.1MB (delta: +3121.9MB)
+2025-12-18 02:23:44 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 02:23:44 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 02:23:44 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 17380 samples (was 17388)
+2025-12-18 02:23:44 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:23:44 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:23:44 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:23:44 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:23:44 [INFO] census_eda.memory: tune_ridge:ENTER: 12522.1MB (delta: +0.0MB)
+2025-12-18 02:23:46 [INFO] census_eda.memory: tune_ridge:EXIT: 12522.7MB (delta: +0.6MB)
+2025-12-18 02:23:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:23:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0792
+2025-12-18 02:23:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:23:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:23:46 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:23:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:23:46 [INFO] census_eda.memory: tune_lasso:ENTER: 12522.7MB (delta: +0.0MB)
+2025-12-18 02:23:47 [INFO] census_eda.memory: tune_lasso:EXIT: 12522.8MB (delta: +0.1MB)
+2025-12-18 02:23:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 02:23:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0792
+2025-12-18 02:23:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:23:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:23:47 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:23:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:23:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 12522.8MB (delta: +0.0MB)
+2025-12-18 02:24:04 [INFO] census_eda.memory: tune_random_forest:EXIT: 12523.3MB (delta: +0.5MB)
+2025-12-18 02:24:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 02:24:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0094
+2025-12-18 02:24:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:24:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:24:06 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:24:06 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:24:06 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12523.4MB (delta: +0.1MB)
+2025-12-18 02:24:15 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:24:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0808
+2025-12-18 02:24:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:24:19 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 02:24:19 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 16769 samples (was 17388)
+2025-12-18 02:24:19 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:24:19 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:24:19 [INFO] census_eda.ml.regression: [TUNE] Data: 16,769 samples, 10 features
+2025-12-18 02:24:19 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:24:19 [INFO] census_eda.memory: tune_ridge:ENTER: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:20 [INFO] census_eda.memory: tune_ridge:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:20 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:24:20 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0895
+2025-12-18 02:24:20 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:24:20 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:24:20 [INFO] census_eda.ml.regression: [TUNE] Data: 16,769 samples, 10 features
+2025-12-18 02:24:20 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:24:20 [INFO] census_eda.memory: tune_lasso:ENTER: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:21 [INFO] census_eda.memory: tune_lasso:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 02:24:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0896
+2025-12-18 02:24:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:24:21 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:24:21 [INFO] census_eda.ml.regression: [TUNE] Data: 16,769 samples, 10 features
+2025-12-18 02:24:21 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:24:21 [INFO] census_eda.memory: tune_random_forest:ENTER: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:37 [INFO] census_eda.memory: tune_random_forest:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 02:24:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0221
+2025-12-18 02:24:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:24:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:24:38 [INFO] census_eda.ml.regression: [TUNE] Data: 16,769 samples, 10 features
+2025-12-18 02:24:38 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:24:38 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:48 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:24:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0911
+2025-12-18 02:24:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:24:51 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 02:24:51 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 17380 samples (was 17388)
+2025-12-18 02:24:51 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:24:51 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:24:51 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:24:51 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:24:51 [INFO] census_eda.memory: tune_ridge:ENTER: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:52 [INFO] census_eda.memory: tune_ridge:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:24:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0776
+2025-12-18 02:24:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:24:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:24:52 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:24:52 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:24:52 [INFO] census_eda.memory: tune_lasso:ENTER: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:53 [INFO] census_eda.memory: tune_lasso:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:24:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 02:24:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0776
+2025-12-18 02:24:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:24:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:24:53 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:24:53 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:24:53 [INFO] census_eda.memory: tune_random_forest:ENTER: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:25:10 [INFO] census_eda.memory: tune_random_forest:EXIT: 12523.4MB (delta: +0.0MB)
+2025-12-18 02:25:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 02:25:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0073
+2025-12-18 02:25:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:25:11 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:25:11 [INFO] census_eda.ml.regression: [TUNE] Data: 17,380 samples, 10 features
+2025-12-18 02:25:11 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:25:11 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:21 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:25:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0737
+2025-12-18 02:25:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:25:25 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 02:25:25 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:25:25 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:25:25 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:25:25 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:25:25 [INFO] census_eda.memory: tune_ridge:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:26 [INFO] census_eda.memory: tune_ridge:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 02:25:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:25:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:25:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:25:26 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:25:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:25:26 [INFO] census_eda.memory: tune_lasso:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:27 [INFO] census_eda.memory: tune_lasso:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 02:25:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:25:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:25:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:25:27 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:25:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:25:27 [INFO] census_eda.memory: tune_random_forest:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:33 [INFO] census_eda.memory: tune_random_forest:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 02:25:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:25:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:25:34 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:25:34 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:25:34 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:25:34 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:41 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 02:25:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:25:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:25:47 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 02:25:47 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:25:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:25:47 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:25:47 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:25:47 [INFO] census_eda.memory: tune_ridge:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:48 [INFO] census_eda.memory: tune_ridge:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:25:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0337
+2025-12-18 02:25:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:25:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:25:48 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:25:48 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:25:48 [INFO] census_eda.memory: tune_lasso:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:49 [INFO] census_eda.memory: tune_lasso:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:25:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 02:25:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0338
+2025-12-18 02:25:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:25:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:25:49 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:25:49 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:25:49 [INFO] census_eda.memory: tune_random_forest:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:26:06 [INFO] census_eda.memory: tune_random_forest:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:26:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 02:26:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0059
+2025-12-18 02:26:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:26:08 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:26:08 [INFO] census_eda.ml.regression: [TUNE] Data: 17,388 samples, 10 features
+2025-12-18 02:26:08 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:26:08 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:26:18 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:26:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:26:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0683
+2025-12-18 02:26:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:26:21 [INFO] census_eda.memory: [SHAP] Safe sample size: 3,478 -> 1,000
+2025-12-18 02:26:21 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 3,478 -> 1,000
+2025-12-18 02:26:21 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:26:21 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 02:26:22 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:26:22 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 02:26:22 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 02:26:22 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 02:26:22 [INFO] census_eda.memory: [PRE-CLUSTERING]: 12523.5MB (delta: +0.0MB)
+2025-12-18 02:26:22 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 02:26:22 [INFO] census_eda.main: [CLUSTERING] KMeans on 17,388 samples...
+2025-12-18 02:26:25 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 02:26:25 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 17,388 samples (will sample if needed)...
+2025-12-18 02:26:25 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 17,388 -> 15,000 (distance matrix would be 2.3GB)
+2025-12-18 02:26:25 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 17,388 -> 15,000 for O(n²) distance matrix
+2025-12-18 02:26:30 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 02:26:30 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 02:26:30 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 58619.12007141113, 2025: 60660.103775024414, 2026: 62605.26545715332}, Values: [58619.12007141113, 60660.103775024414, 62605.26545715332]
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 02:26:30 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 60964.450103759766, 2025: 63792.99835205078, 2026: 66743.36936187744}, Values: [60964.450103759766, 63792.99835205078, 66743.36936187744]
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 02:26:30 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 61614.014221191406, 2025: 64283.909088134766, 2026: 67011.63984680176}, Values: [61614.014221191406, 64283.909088134766, 67011.63984680176]
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 02:26:30 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 44.34662777557969, 2025: 45.01760421320796, 2026: 45.786298517137766}, Values: [44.34662777557969, 45.01760421320796, 45.786298517137766]
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 02:26:30 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.454982437193394, 2025: 36.856656186282635, 2026: 36.07312575727701}, Values: [37.454982437193394, 36.856656186282635, 36.07312575727701]
+2025-12-18 02:26:30 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 02:26:56 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 02:26:58 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 17388.
+2025-12-18 02:26:58 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 02:26:58 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 02:26:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 53593.186478294665, 2025: 54626.54274856392, 2026: 55659.89901883318}, values=[53593.186478294665, 54626.54274856392, 55659.89901883318], CI_lower=[47995.60785662182, 49028.96412689108, 50062.320397160336], CI_upper=[59190.76509996751, 60224.12137023677, 61257.477640506026]
+2025-12-18 02:26:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53593.186478294665, 54626.54274856392, 55659.89901883318], CI_lower: [47995.60785662182, 49028.96412689108, 50062.320397160336], CI_upper: [59190.76509996751, 60224.12137023677, 61257.477640506026]
+2025-12-18 02:26:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 47995.60785662182, 49028.96412689108, 50062.320397160336], upper=[np.float64(50499.130913755376), 59190.76509996751, 60224.12137023677, 61257.477640506026]
+2025-12-18 02:26:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 60427.22321206331, 2025: 63732.60046207905, 2026: 67276.96263194084}, values=[60427.22321206331, 63732.60046207905, 67276.96263194084], CI_lower=[58245.26376406189, 61550.64101407763, 65095.00318393942], CI_upper=[62609.18266006473, 65914.55991008047, 69458.92207994226]
+2025-12-18 02:26:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60427.22321206331, 63732.60046207905, 67276.96263194084], CI_lower: [58245.26376406189, 61550.64101407763, 65095.00318393942], CI_upper: [62609.18266006473, 65914.55991008047, 69458.92207994226]
+2025-12-18 02:26:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 58245.26376406189, 61550.64101407763, 65095.00318393942], upper=[np.float64(50499.130913755376), 62609.18266006473, 65914.55991008047, 69458.92207994226]
+2025-12-18 02:26:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 58619.12007141113, 2025: 60660.103775024414, 2026: 62605.26545715332}, values=[58619.12007141113, 60660.103775024414, 62605.26545715332], CI_lower=[56673.447078942634, 58714.430782555915, 60659.59246468482], CI_upper=[60564.79306387963, 62605.77676749291, 64550.93844962182]
+2025-12-18 02:26:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58619.12007141113, 60660.103775024414, 62605.26545715332], CI_lower: [56673.447078942634, 58714.430782555915, 60659.59246468482], CI_upper: [60564.79306387963, 62605.77676749291, 64550.93844962182]
+2025-12-18 02:26:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 56673.447078942634, 58714.430782555915, 60659.59246468482], upper=[np.float64(50499.130913755376), 60564.79306387963, 62605.77676749291, 64550.93844962182]
+2025-12-18 02:27:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 53850.91967987356, 2025: 53850.91967987356, 2026: 53850.91967987356}, values=[53850.91967987356, 53850.91967987356, 53850.91967987356], CI_lower=[51018.049813441576, 51018.049813441576, 51018.049813441576], CI_upper=[56683.78954630554, 56683.78954630554, 56683.78954630554]
+2025-12-18 02:27:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53850.91967987356, 53850.91967987356, 53850.91967987356], CI_lower: [51018.049813441576, 51018.049813441576, 51018.049813441576], CI_upper: [56683.78954630554, 56683.78954630554, 56683.78954630554]
+2025-12-18 02:27:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 51018.049813441576, 51018.049813441576, 51018.049813441576], upper=[np.float64(50499.130913755376), 56683.78954630554, 56683.78954630554, 56683.78954630554]
+2025-12-18 02:27:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 51501.1697279885, 2025: 51501.1697279885, 2026: 51501.1697279885}, values=[51501.1697279885, 51501.1697279885, 51501.1697279885], CI_lower=[46891.40277259969, 46891.40277259969, 46891.40277259969], CI_upper=[56110.9366833773, 56110.9366833773, 56110.9366833773]
+2025-12-18 02:27:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51501.1697279885, 51501.1697279885, 51501.1697279885], CI_lower: [46891.40277259969, 46891.40277259969, 46891.40277259969], CI_upper: [56110.9366833773, 56110.9366833773, 56110.9366833773]
+2025-12-18 02:27:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 46891.40277259969, 46891.40277259969, 46891.40277259969], upper=[np.float64(50499.130913755376), 56110.9366833773, 56110.9366833773, 56110.9366833773]
+2025-12-18 02:27:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 55194.96289807125, 2025: 55194.96289807125, 2026: 55194.96289807125}, values=[55194.96289807125, 55194.96289807125, 55194.96289807125], CI_lower=[53270.0507755088, 53270.0507755088, 53270.0507755088], CI_upper=[57119.875020633706, 57119.875020633706, 57119.875020633706]
+2025-12-18 02:27:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55194.96289807125, 55194.96289807125, 55194.96289807125], CI_lower: [53270.0507755088, 53270.0507755088, 53270.0507755088], CI_upper: [57119.875020633706, 57119.875020633706, 57119.875020633706]
+2025-12-18 02:27:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 53270.0507755088, 53270.0507755088, 53270.0507755088], upper=[np.float64(50499.130913755376), 57119.875020633706, 57119.875020633706, 57119.875020633706]
+2025-12-18 02:27:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 58792.11026242361, 2025: 59867.1087217134, 2026: 60942.104160700255}, values=[58792.11026242361, 59867.1087217134, 60942.104160700255], CI_lower=[39098.40796687448, 40173.40642616427, 41248.40186515113], CI_upper=[78485.81255797273, 79560.81101726252, 80635.80645624938]
+2025-12-18 02:27:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58792.11026242361, 59867.1087217134, 60942.104160700255], CI_lower: [39098.40796687448, 40173.40642616427, 41248.40186515113], CI_upper: [78485.81255797273, 79560.81101726252, 80635.80645624938]
+2025-12-18 02:27:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 39098.40796687448, 40173.40642616427, 41248.40186515113], upper=[np.float64(50499.130913755376), 78485.81255797273, 79560.81101726252, 80635.80645624938]
+2025-12-18 02:27:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 60728.088284696336, 2025: 64249.50948188865, 2026: 67770.93067908096}, values=[60728.088284696336, 64249.50948188865, 67770.93067908096], CI_lower=[58153.0596368693, 61674.480834061615, 65195.90203125393], CI_upper=[63303.11693252337, 66824.53812971569, 70345.959326908]
+2025-12-18 02:27:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60728.088284696336, 64249.50948188865, 67770.93067908096], CI_lower: [58153.0596368693, 61674.480834061615, 65195.90203125393], CI_upper: [63303.11693252337, 66824.53812971569, 70345.959326908]
+2025-12-18 02:27:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50499.130913755376), 58153.0596368693, 61674.480834061615, 65195.90203125393], upper=[np.float64(50499.130913755376), 63303.11693252337, 66824.53812971569, 70345.959326908]
+2025-12-18 02:27:05 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 02:27:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 55110.32240327727, 2025: 56194.991568699945, 2026: 57279.66073412262}, values=[55110.32240327727, 56194.991568699945, 57279.66073412262], CI_lower=[49928.07088004007, 51012.74004546274, 52097.40921088542], CI_upper=[60292.57392651447, 61377.24309193715, 62461.91225735982]
+2025-12-18 02:27:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55110.32240327727, 56194.991568699945, 57279.66073412262], CI_lower: [49928.07088004007, 51012.74004546274, 52097.40921088542], CI_upper: [60292.57392651447, 61377.24309193715, 62461.91225735982]
+2025-12-18 02:27:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 49928.07088004007, 51012.74004546274, 52097.40921088542], upper=[np.float64(34373.73990794537), 60292.57392651447, 61377.24309193715, 62461.91225735982]
+2025-12-18 02:27:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 61517.14635592699, 2025: 64731.80676931143, 2026: 68170.51255577803}, values=[61517.14635592699, 64731.80676931143, 68170.51255577803], CI_lower=[59645.75370266406, 62860.414116048494, 66299.11990251509], CI_upper=[63388.539009189924, 66603.19942257437, 70041.90520904097]
+2025-12-18 02:27:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61517.14635592699, 64731.80676931143, 68170.51255577803], CI_lower: [59645.75370266406, 62860.414116048494, 66299.11990251509], CI_upper: [63388.539009189924, 66603.19942257437, 70041.90520904097]
+2025-12-18 02:27:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 59645.75370266406, 62860.414116048494, 66299.11990251509], upper=[np.float64(34373.73990794537), 63388.539009189924, 66603.19942257437, 70041.90520904097]
+2025-12-18 02:27:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 60964.450103759766, 2025: 63792.99835205078, 2026: 66743.36936187744}, values=[60964.450103759766, 63792.99835205078, 66743.36936187744], CI_lower=[59117.50874160486, 61946.05698989588, 64896.42799972254], CI_upper=[62811.39146591467, 65639.93971420568, 68590.31072403234]
+2025-12-18 02:27:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60964.450103759766, 63792.99835205078, 66743.36936187744], CI_lower: [59117.50874160486, 61946.05698989588, 64896.42799972254], CI_upper: [62811.39146591467, 65639.93971420568, 68590.31072403234]
+2025-12-18 02:27:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 59117.50874160486, 61946.05698989588, 64896.42799972254], upper=[np.float64(34373.73990794537), 62811.39146591467, 65639.93971420568, 68590.31072403234]
+2025-12-18 02:27:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 55286.992625627005, 2025: 55286.992625627005, 2026: 55286.992625627005}, values=[55286.992625627005, 55286.992625627005, 55286.992625627005], CI_lower=[52495.60498081631, 52495.60498081631, 52495.60498081631], CI_upper=[58078.3802704377, 58078.3802704377, 58078.3802704377]
+2025-12-18 02:27:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55286.992625627005, 55286.992625627005, 55286.992625627005], CI_lower: [52495.60498081631, 52495.60498081631, 52495.60498081631], CI_upper: [58078.3802704377, 58078.3802704377, 58078.3802704377]
+2025-12-18 02:27:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 52495.60498081631, 52495.60498081631, 52495.60498081631], upper=[np.float64(34373.73990794537), 58078.3802704377, 58078.3802704377, 58078.3802704377]
+2025-12-18 02:27:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 52798.27674033411, 2025: 52798.27674033411, 2026: 52798.27674033411}, values=[52798.27674033411, 52798.27674033411, 52798.27674033411], CI_lower=[48376.617378085684, 48376.617378085684, 48376.617378085684], CI_upper=[57219.93610258254, 57219.93610258254, 57219.93610258254]
+2025-12-18 02:27:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52798.27674033411, 52798.27674033411, 52798.27674033411], CI_lower: [48376.617378085684, 48376.617378085684, 48376.617378085684], CI_upper: [57219.93610258254, 57219.93610258254, 57219.93610258254]
+2025-12-18 02:27:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 48376.617378085684, 48376.617378085684, 48376.617378085684], upper=[np.float64(34373.73990794537), 57219.93610258254, 57219.93610258254, 57219.93610258254]
+2025-12-18 02:27:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 56754.37652663656, 2025: 56754.37652663656, 2026: 56754.37652663656}, values=[56754.37652663656, 56754.37652663656, 56754.37652663656], CI_lower=[54861.34865706276, 54861.34865706276, 54861.34865706276], CI_upper=[58647.40439621036, 58647.40439621036, 58647.40439621036]
+2025-12-18 02:27:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56754.37652663656, 56754.37652663656, 56754.37652663656], CI_lower: [54861.34865706276, 54861.34865706276, 54861.34865706276], CI_upper: [58647.40439621036, 58647.40439621036, 58647.40439621036]
+2025-12-18 02:27:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 54861.34865706276, 54861.34865706276, 54861.34865706276], upper=[np.float64(34373.73990794537), 58647.40439621036, 58647.40439621036, 58647.40439621036]
+2025-12-18 02:27:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 60801.61731795269, 2025: 61998.97500200851, 2026: 63196.3089547705}, values=[60801.61731795269, 61998.97500200851, 63196.3089547705], CI_lower=[41117.56074341017, 42314.91842746599, 43512.252380227976], CI_upper=[80485.67389249521, 81683.03157655103, 82880.36552931303]
+2025-12-18 02:27:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60801.61731795269, 61998.97500200851, 63196.3089547705], CI_lower: [41117.56074341017, 42314.91842746599, 43512.252380227976], CI_upper: [80485.67389249521, 81683.03157655103, 82880.36552931303]
+2025-12-18 02:27:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 41117.56074341017, 42314.91842746599, 43512.252380227976], upper=[np.float64(34373.73990794537), 80485.67389249521, 81683.03157655103, 82880.36552931303]
+2025-12-18 02:27:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 63306.02792527478, 2025: 67007.81996253568, 2026: 70709.61199979659}, values=[63306.02792527478, 67007.81996253568, 70709.61199979659], CI_lower=[60923.35098560299, 64625.14302286389, 68326.9350601248], CI_upper=[65688.70486494657, 69390.49690220747, 73092.28893946837]
+2025-12-18 02:27:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [63306.02792527478, 67007.81996253568, 70709.61199979659], CI_lower: [60923.35098560299, 64625.14302286389, 68326.9350601248], CI_upper: [65688.70486494657, 69390.49690220747, 73092.28893946837]
+2025-12-18 02:27:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34373.73990794537), 60923.35098560299, 64625.14302286389, 68326.9350601248], upper=[np.float64(34373.73990794537), 65688.70486494657, 69390.49690220747, 73092.28893946837]
+2025-12-18 02:27:10 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 02:27:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 55869.82344898535, 2025: 56979.35690022679, 2026: 58088.89035146823}, values=[55869.82344898535, 56979.35690022679, 58088.89035146823], CI_lower=[50463.4785840961, 51573.01203533754, 52682.54548657898], CI_upper=[61276.1683138746, 62385.70176511604, 63495.23521635748]
+2025-12-18 02:27:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55869.82344898535, 56979.35690022679, 58088.89035146823], CI_lower: [50463.4785840961, 51573.01203533754, 52682.54548657898], CI_upper: [61276.1683138746, 62385.70176511604, 63495.23521635748]
+2025-12-18 02:27:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 50463.4785840961, 51573.01203533754, 52682.54548657898], upper=[np.float64(37122.06330373546), 61276.1683138746, 62385.70176511604, 63495.23521635748]
+2025-12-18 02:27:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 62566.399035036564, 2025: 65902.25359255075, 2026: 69472.28608053923}, values=[62566.399035036564, 65902.25359255075, 69472.28608053923], CI_lower=[60639.011875460754, 63974.866432974944, 67544.89892096342], CI_upper=[64493.786194612374, 67829.64075212656, 71399.67324011504]
+2025-12-18 02:27:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62566.399035036564, 65902.25359255075, 69472.28608053923], CI_lower: [60639.011875460754, 63974.866432974944, 67544.89892096342], CI_upper: [64493.786194612374, 67829.64075212656, 71399.67324011504]
+2025-12-18 02:27:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 60639.011875460754, 63974.866432974944, 67544.89892096342], upper=[np.float64(37122.06330373546), 64493.786194612374, 67829.64075212656, 71399.67324011504]
+2025-12-18 02:27:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 61614.014221191406, 2025: 64283.909088134766, 2026: 67011.63984680176}, values=[61614.014221191406, 64283.909088134766, 67011.63984680176], CI_lower=[59758.14277277605, 62428.03763971941, 65155.768398386404], CI_upper=[63469.88566960676, 66139.78053655011, 68867.5112952171]
+2025-12-18 02:27:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61614.014221191406, 64283.909088134766, 67011.63984680176], CI_lower: [59758.14277277605, 62428.03763971941, 65155.768398386404], CI_upper: [63469.88566960676, 66139.78053655011, 68867.5112952171]
+2025-12-18 02:27:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 59758.14277277605, 62428.03763971941, 65155.768398386404], upper=[np.float64(37122.06330373546), 63469.88566960676, 66139.78053655011, 68867.5112952171]
+2025-12-18 02:27:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 56058.89383860654, 2025: 56058.89383860654, 2026: 56058.89383860654}, values=[56058.89383860654, 56058.89383860654, 56058.89383860654], CI_lower=[53232.631861675545, 53232.631861675545, 53232.631861675545], CI_upper=[58885.15581553754, 58885.15581553754, 58885.15581553754]
+2025-12-18 02:27:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56058.89383860654, 56058.89383860654, 56058.89383860654], CI_lower: [53232.631861675545, 53232.631861675545, 53232.631861675545], CI_upper: [58885.15581553754, 58885.15581553754, 58885.15581553754]
+2025-12-18 02:27:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 53232.631861675545, 53232.631861675545, 53232.631861675545], upper=[np.float64(37122.06330373546), 58885.15581553754, 58885.15581553754, 58885.15581553754]
+2025-12-18 02:27:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 53512.45653460087, 2025: 53512.45653460087, 2026: 53512.45653460087}, values=[53512.45653460087, 53512.45653460087, 53512.45653460087], CI_lower=[48944.4544694929, 48944.4544694929, 48944.4544694929], CI_upper=[58080.458599708836, 58080.458599708836, 58080.458599708836]
+2025-12-18 02:27:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53512.45653460087, 53512.45653460087, 53512.45653460087], CI_lower: [48944.4544694929, 48944.4544694929, 48944.4544694929], CI_upper: [58080.458599708836, 58080.458599708836, 58080.458599708836]
+2025-12-18 02:27:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 48944.4544694929, 48944.4544694929, 48944.4544694929], upper=[np.float64(37122.06330373546), 58080.458599708836, 58080.458599708836, 58080.458599708836]
+2025-12-18 02:27:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 57507.011976187, 2025: 57507.011976187, 2026: 57507.011976187}, values=[57507.011976187, 57507.011976187, 57507.011976187], CI_lower=[55595.03402534435, 55595.03402534435, 55595.03402534435], CI_upper=[59418.98992702965, 59418.98992702965, 59418.98992702965]
+2025-12-18 02:27:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57507.011976187, 57507.011976187, 57507.011976187], CI_lower: [55595.03402534435, 55595.03402534435, 55595.03402534435], CI_upper: [59418.98992702965, 59418.98992702965, 59418.98992702965]
+2025-12-18 02:27:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 55595.03402534435, 55595.03402534435, 55595.03402534435], upper=[np.float64(37122.06330373546), 59418.98992702965, 59418.98992702965, 59418.98992702965]
+2025-12-18 02:27:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 61434.03108407883, 2025: 62636.61286534005, 2026: 63839.18340660218}, values=[61434.03108407883, 62636.61286534005, 63839.18340660218], CI_lower=[41462.751985602685, 42665.33376686391, 43867.90430812603], CI_upper=[81405.31018255497, 82607.89196381619, 83810.46250507832]
+2025-12-18 02:27:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61434.03108407883, 62636.61286534005, 63839.18340660218], CI_lower: [41462.751985602685, 42665.33376686391, 43867.90430812603], CI_upper: [81405.31018255497, 82607.89196381619, 83810.46250507832]
+2025-12-18 02:27:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 41462.751985602685, 42665.33376686391, 43867.90430812603], upper=[np.float64(37122.06330373546), 81405.31018255497, 82607.89196381619, 83810.46250507832]
+2025-12-18 02:27:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 63844.01980098339, 2025: 67548.30384844632, 2026: 71252.58789590924}, values=[63844.01980098339, 67548.30384844632, 71252.58789590924], CI_lower=[61412.371665249164, 65116.65571271209, 68820.93976017501], CI_upper=[66275.66793671763, 69979.95198418054, 73684.23603164346]
+2025-12-18 02:27:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [63844.01980098339, 67548.30384844632, 71252.58789590924], CI_lower: [61412.371665249164, 65116.65571271209, 68820.93976017501], CI_upper: [66275.66793671763, 69979.95198418054, 73684.23603164346]
+2025-12-18 02:27:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37122.06330373546), 61412.371665249164, 65116.65571271209, 68820.93976017501], upper=[np.float64(37122.06330373546), 66275.66793671763, 69979.95198418054, 73684.23603164346]
+2025-12-18 02:27:16 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 02:27:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 43.8492107583138, 2025: 44.15873264660661, 2026: 44.468254534899415}, values=[43.8492107583138, 44.15873264660661, 44.468254534899415], CI_lower=[43.331284561951215, 43.64080645024402, 43.95032833853683], CI_upper=[44.36713695467639, 44.676658842969196, 44.986180731262]
+2025-12-18 02:27:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.8492107583138, 44.15873264660661, 44.468254534899415], CI_lower: [43.331284561951215, 43.64080645024402, 43.95032833853683], CI_upper: [44.36713695467639, 44.676658842969196, 44.986180731262]
+2025-12-18 02:27:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 43.331284561951215, 43.64080645024402, 43.95032833853683], upper=[np.float64(43.585062913477756), 44.36713695467639, 44.676658842969196, 44.986180731262]
+2025-12-18 02:27:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 43.81106268794156, 2025: 44.10790199643225, 2026: 44.40340727440707}, values=[43.81106268794156, 44.10790199643225, 44.40340727440707], CI_lower=[43.29393642054375, 43.59077572903444, 43.886281007009266], CI_upper=[44.328188955339364, 44.62502826383005, 44.92053354180488]
+2025-12-18 02:27:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.81106268794156, 44.10790199643225, 44.40340727440707], CI_lower: [43.29393642054375, 43.59077572903444, 43.886281007009266], CI_upper: [44.328188955339364, 44.62502826383005, 44.92053354180488]
+2025-12-18 02:27:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 43.29393642054375, 43.59077572903444, 43.886281007009266], upper=[np.float64(43.585062913477756), 44.328188955339364, 44.62502826383005, 44.92053354180488]
+2025-12-18 02:27:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 44.34662777557969, 2025: 45.01760421320796, 2026: 45.786298517137766}, values=[44.34662777557969, 45.01760421320796, 45.786298517137766], CI_lower=[43.91994504076423, 44.5909214783925, 45.35961578232231], CI_upper=[44.77331051039515, 45.44428694802342, 46.212981251953224]
+2025-12-18 02:27:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.34662777557969, 45.01760421320796, 45.786298517137766], CI_lower: [43.91994504076423, 44.5909214783925, 45.35961578232231], CI_upper: [44.77331051039515, 45.44428694802342, 46.212981251953224]
+2025-12-18 02:27:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 43.91994504076423, 44.5909214783925, 45.35961578232231], upper=[np.float64(43.585062913477756), 44.77331051039515, 45.44428694802342, 46.212981251953224]
+2025-12-18 02:27:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43.26767481254583, 2025: 43.26767481254583, 2026: 43.26767481254583}, values=[43.26767481254583, 43.26767481254583, 43.26767481254583], CI_lower=[42.67322902388215, 42.67322902388215, 42.67322902388215], CI_upper=[43.862120601209504, 43.862120601209504, 43.862120601209504]
+2025-12-18 02:27:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.26767481254583, 43.26767481254583, 43.26767481254583], CI_lower: [42.67322902388215, 42.67322902388215, 42.67322902388215], CI_upper: [43.862120601209504, 43.862120601209504, 43.862120601209504]
+2025-12-18 02:27:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 42.67322902388215, 42.67322902388215, 42.67322902388215], upper=[np.float64(43.585062913477756), 43.862120601209504, 43.862120601209504, 43.862120601209504]
+2025-12-18 02:27:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42.74289833093044, 2025: 42.74289833093044, 2026: 42.74289833093044}, values=[42.74289833093044, 42.74289833093044, 42.74289833093044], CI_lower=[42.16630498112458, 42.16630498112458, 42.16630498112458], CI_upper=[43.31949168073629, 43.31949168073629, 43.31949168073629]
+2025-12-18 02:27:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.74289833093044, 42.74289833093044, 42.74289833093044], CI_lower: [42.16630498112458, 42.16630498112458, 42.16630498112458], CI_upper: [43.31949168073629, 43.31949168073629, 43.31949168073629]
+2025-12-18 02:27:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 42.16630498112458, 42.16630498112458, 42.16630498112458], upper=[np.float64(43.585062913477756), 43.31949168073629, 43.31949168073629, 43.31949168073629]
+2025-12-18 02:27:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 43.44378138125024, 2025: 43.44378138125024, 2026: 43.44378138125024}, values=[43.44378138125024, 43.44378138125024, 43.44378138125024], CI_lower=[42.89673546921871, 42.89673546921871, 42.89673546921871], CI_upper=[43.99082729328177, 43.99082729328177, 43.99082729328177]
+2025-12-18 02:27:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.44378138125024, 43.44378138125024, 43.44378138125024], CI_lower: [42.89673546921871, 42.89673546921871, 42.89673546921871], CI_upper: [43.99082729328177, 43.99082729328177, 43.99082729328177]
+2025-12-18 02:27:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 42.89673546921871, 42.89673546921871, 42.89673546921871], upper=[np.float64(43.585062913477756), 43.99082729328177, 43.99082729328177, 43.99082729328177]
+2025-12-18 02:27:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 44.27575391167627, 2025: 44.61736713818785, 2026: 44.95897063336041}, values=[44.27575391167627, 44.61736713818785, 44.95897063336041], CI_lower=[26.119968848169464, 26.461582074681047, 26.803185569853603], CI_upper=[62.431538975183074, 62.77315220169466, 63.11475569686721]
+2025-12-18 02:27:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.27575391167627, 44.61736713818785, 44.95897063336041], CI_lower: [26.119968848169464, 26.461582074681047, 26.803185569853603], CI_upper: [62.431538975183074, 62.77315220169466, 63.11475569686721]
+2025-12-18 02:27:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 26.119968848169464, 26.461582074681047, 26.803185569853603], upper=[np.float64(43.585062913477756), 62.431538975183074, 62.77315220169466, 63.11475569686721]
+2025-12-18 02:27:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 43.745802885195154, 2025: 44.072745791832766, 2026: 44.399688698470385}, values=[43.745802885195154, 44.072745791832766, 44.399688698470385], CI_lower=[43.183428057475766, 43.51037096411338, 43.837313870751], CI_upper=[44.30817771291454, 44.635120619552154, 44.96206352618977]
+2025-12-18 02:27:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.745802885195154, 44.072745791832766, 44.399688698470385], CI_lower: [43.183428057475766, 43.51037096411338, 43.837313870751], CI_upper: [44.30817771291454, 44.635120619552154, 44.96206352618977]
+2025-12-18 02:27:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.585062913477756), 43.183428057475766, 43.51037096411338, 43.837313870751], upper=[np.float64(43.585062913477756), 44.30817771291454, 44.635120619552154, 44.96206352618977]
+2025-12-18 02:27:22 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 02:27:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.892872892584904, 2025: 37.854917164433516, 2026: 37.81696143628213}, values=[37.892872892584904, 37.854917164433516, 37.81696143628213], CI_lower=[37.018241618591965, 36.98028589044058, 36.94233016228919], CI_upper=[38.767504166577844, 38.729548438426455, 38.69159271027507]
+2025-12-18 02:27:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.892872892584904, 37.854917164433516, 37.81696143628213], CI_lower: [37.018241618591965, 36.98028589044058, 36.94233016228919], CI_upper: [38.767504166577844, 38.729548438426455, 38.69159271027507]
+2025-12-18 02:27:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 37.018241618591965, 36.98028589044058, 36.94233016228919], upper=[np.float64(38.08507471941465), 38.767504166577844, 38.729548438426455, 38.69159271027507]
+2025-12-18 02:27:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.587284679320874, 2025: 38.78019076964847, 2026: 38.9973803035391}, values=[38.587284679320874, 38.78019076964847, 38.9973803035391], CI_lower=[37.88683394523255, 38.07974003556015, 38.29692956945078], CI_upper=[39.287735413409195, 39.48064150373679, 39.697831037627424]
+2025-12-18 02:27:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.587284679320874, 38.78019076964847, 38.9973803035391], CI_lower: [37.88683394523255, 38.07974003556015, 38.29692956945078], CI_upper: [39.287735413409195, 39.48064150373679, 39.697831037627424]
+2025-12-18 02:27:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 37.88683394523255, 38.07974003556015, 38.29692956945078], upper=[np.float64(38.08507471941465), 39.287735413409195, 39.48064150373679, 39.697831037627424]
+2025-12-18 02:27:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 37.454982437193394, 2025: 36.856656186282635, 2026: 36.07312575727701}, values=[37.454982437193394, 36.856656186282635, 36.07312575727701], CI_lower=[37.125096313411255, 36.526770062500496, 35.74323963349487], CI_upper=[37.78486856097553, 37.18654231006477, 36.40301188105915]
+2025-12-18 02:27:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.454982437193394, 36.856656186282635, 36.07312575727701], CI_lower: [37.125096313411255, 36.526770062500496, 35.74323963349487], CI_upper: [37.78486856097553, 37.18654231006477, 36.40301188105915]
+2025-12-18 02:27:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 37.125096313411255, 36.526770062500496, 35.74323963349487], upper=[np.float64(38.08507471941465), 37.78486856097553, 37.18654231006477, 36.40301188105915]
+2025-12-18 02:27:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 38.10147882776298, 2025: 38.10147882776298, 2026: 38.10147882776298}, values=[38.10147882776298, 38.10147882776298, 38.10147882776298], CI_lower=[37.46169577334317, 37.46169577334317, 37.46169577334317], CI_upper=[38.74126188218279, 38.74126188218279, 38.74126188218279]
+2025-12-18 02:27:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.10147882776298, 38.10147882776298, 38.10147882776298], CI_lower: [37.46169577334317, 37.46169577334317, 37.46169577334317], CI_upper: [38.74126188218279, 38.74126188218279, 38.74126188218279]
+2025-12-18 02:27:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 37.46169577334317, 37.46169577334317, 37.46169577334317], upper=[np.float64(38.08507471941465), 38.74126188218279, 38.74126188218279, 38.74126188218279]
+2025-12-18 02:27:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 38.15256094745492, 2025: 38.15256094745492, 2026: 38.15256094745492}, values=[38.15256094745492, 38.15256094745492, 38.15256094745492], CI_lower=[37.48632023719584, 37.48632023719584, 37.48632023719584], CI_upper=[38.818801657714005, 38.818801657714005, 38.818801657714005]
+2025-12-18 02:27:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.15256094745492, 38.15256094745492, 38.15256094745492], CI_lower: [37.48632023719584, 37.48632023719584, 37.48632023719584], CI_upper: [38.818801657714005, 38.818801657714005, 38.818801657714005]
+2025-12-18 02:27:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 37.48632023719584, 37.48632023719584, 37.48632023719584], upper=[np.float64(38.08507471941465), 38.818801657714005, 38.818801657714005, 38.818801657714005]
+2025-12-18 02:27:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 38.10884694180165, 2025: 38.10884694180165, 2026: 38.10884694180165}, values=[38.10884694180165, 38.10884694180165, 38.10884694180165], CI_lower=[37.457516152841706, 37.457516152841706, 37.457516152841706], CI_upper=[38.7601777307616, 38.7601777307616, 38.7601777307616]
+2025-12-18 02:27:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.10884694180165, 38.10884694180165, 38.10884694180165], CI_lower: [37.457516152841706, 37.457516152841706, 37.457516152841706], CI_upper: [38.7601777307616, 38.7601777307616, 38.7601777307616]
+2025-12-18 02:27:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 37.457516152841706, 37.457516152841706, 37.457516152841706], upper=[np.float64(38.08507471941465), 38.7601777307616, 38.7601777307616, 38.7601777307616]
+2025-12-18 02:27:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 38.06453212745976, 2025: 38.08150886583391, 2026: 38.067479007943675}, values=[38.06453212745976, 38.08150886583391, 38.067479007943675], CI_lower=[19.136188973405545, 19.153165711779693, 19.139135853889456], CI_upper=[56.99287528151398, 57.00985201988813, 56.99582216199789]
+2025-12-18 02:27:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.06453212745976, 38.08150886583391, 38.067479007943675], CI_lower: [19.136188973405545, 19.153165711779693, 19.139135853889456], CI_upper: [56.99287528151398, 57.00985201988813, 56.99582216199789]
+2025-12-18 02:27:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 19.136188973405545, 19.153165711779693, 19.139135853889456], upper=[np.float64(38.08507471941465), 56.99287528151398, 57.00985201988813, 56.99582216199789]
+2025-12-18 02:27:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.97299032893289, 2025: 37.86090593872924, 2026: 37.748821548525584}, values=[37.97299032893289, 37.86090593872924, 37.748821548525584], CI_lower=[37.33498313648955, 37.2228987462859, 37.110814356082244], CI_upper=[38.61099752137623, 38.49891313117258, 38.38682874096892]
+2025-12-18 02:27:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.97299032893289, 37.86090593872924, 37.748821548525584], CI_lower: [37.33498313648955, 37.2228987462859, 37.110814356082244], CI_upper: [38.61099752137623, 38.49891313117258, 38.38682874096892]
+2025-12-18 02:27:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.08507471941465), 37.33498313648955, 37.2228987462859, 37.110814356082244], upper=[np.float64(38.08507471941465), 38.61099752137623, 38.49891313117258, 38.38682874096892]
+2025-12-18 02:27:29 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 02:27:29 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 02:29:37 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 19547.0234375, 'mse': 1889331200.0, 'rmse': 43466.43762720842, 'r2': 0.18658573925495148}
+2025-12-18 02:29:38 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 02:31:07 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.4737374782562256, 'mse': 66.3300552368164, 'rmse': 8.144326567422036, 'r2': 0.2847118675708771}
+2025-12-18 02:31:07 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 02:32:43 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 14.870405197143555, 'mse': 597.8828125, 'rmse': 24.45164232725483, 'r2': -5.476978302001953}
+2025-12-18 02:32:43 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 02:33:02 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 02:33:03 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 02:33:03 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 02:33:03 [DEBUG] census_eda.main:  Running LLM analysis for state: Nevada
+2025-12-18 02:33:03 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 02:33:03 [INFO] census_eda.ml: [LLM] State context loaded: Nevada
+2025-12-18 02:33:03 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [API] Total request: ~2506 tokens (system: ~2324, user: ~182)
+2025-12-18 02:33:03 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:33:20 [DEBUG] census_eda.ml: [API] Received response: 4283 chars
+2025-12-18 02:33:20 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4283 chars)
+2025-12-18 02:33:21 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [API] Total request: ~2645 tokens (system: ~2324, user: ~321)
+2025-12-18 02:33:21 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [API] Received response: 3763 chars
+2025-12-18 02:33:31 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3763 chars)
+2025-12-18 02:33:31 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [API] Total request: ~2872 tokens (system: ~2324, user: ~548)
+2025-12-18 02:33:31 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [API] Received response: 4289 chars
+2025-12-18 02:33:43 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4289 chars)
+2025-12-18 02:33:43 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [API] Total request: ~2664 tokens (system: ~2324, user: ~340)
+2025-12-18 02:33:43 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [API] Received response: 4428 chars
+2025-12-18 02:33:59 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4428 chars)
+2025-12-18 02:33:59 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [API] Total request: ~2514 tokens (system: ~2324, user: ~190)
+2025-12-18 02:33:59 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [API] Received response: 4164 chars
+2025-12-18 02:34:13 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4164 chars)
+2025-12-18 02:34:13 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [LLM] User prompt: 8714 chars (~2178 tokens)
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [API] Total request: ~4502 tokens (system: ~2324, user: ~2178)
+2025-12-18 02:34:13 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [API] Received response: 3157 chars
+2025-12-18 02:34:24 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3157 chars)
+2025-12-18 02:34:24 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [LLM] User prompt: 5328 chars (~1332 tokens)
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [API] Total request: ~3656 tokens (system: ~2324, user: ~1332)
+2025-12-18 02:34:24 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [API] Received response: 3248 chars
+2025-12-18 02:34:33 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3248 chars)
+2025-12-18 02:34:33 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [API] Total request: ~2476 tokens (system: ~2324, user: ~152)
+2025-12-18 02:34:33 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [API] Received response: 3792 chars
+2025-12-18 02:34:45 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3792 chars)
+2025-12-18 02:34:45 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [LLM] User prompt: 5578 chars (~1394 tokens)
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [API] Total request: ~3718 tokens (system: ~2324, user: ~1394)
+2025-12-18 02:34:45 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [API] Received response: 4147 chars
+2025-12-18 02:34:58 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4147 chars)
+2025-12-18 02:34:58 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [LLM] User prompt: 1833 chars (~458 tokens)
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [API] Total request: ~2782 tokens (system: ~2324, user: ~458)
+2025-12-18 02:34:58 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [API] Received response: 4265 chars
+2025-12-18 02:35:11 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4265 chars)
+2025-12-18 02:35:11 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Nevada
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Nevada
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4409 chars
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1102
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Nevada
+
+ECONOMIC PROFILE:
+  Industries: Gaming and hospitality, Tourism and entertainment, Mining (gold, silver, lithium), Warehousing and logistics, Construction
+  Trends: Boom-bust cycles. Devastated by 2008 housing crash. Recovery 2011-2019 strong (Las Vegas). Gaming/tourism dominant but volatile. Tesla (2014) diversification. Pandemic crashed tourism 2020, strong recovery 2021-2023. Lithium mining emerging
+  Income: Near national median (~$71k) but extreme inequality. High-earning professionals and casino workers. No state income tax attracts high earners. Cost of living rising
+  Dominant Sector: Leisure and hospitality
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2019 (~1.6% annually), slowdown 2020-2021, resumed growth 2022-2023. Fastest-growing state in many years
+  Migration: Strong in-migration from California (housing costs), Arizona, Texas. International immigration (Latino, Asian). 87% of population in Las Vegas/Reno metros. Remote workers during pandemic
+  Education: Below national average bachelor's degrees (~26%). UNLV, UNR growing. Service industry not requiring degrees. Educational attainment improving but still low
+
+HOUSING MARKET:
+  Market: High-cost and volatile. Las Vegas median ~$450k (2023), Reno ~$500k. Among worst housing crashes 2008-2011, among strongest recoveries. Extreme boom-bust
+  Affordability: Crash 2008-2011 (foreclosures epidemic), recovery 2012-2019, explosion 2020-2023. Prices exceeded 2007 peak. Affordability crisis now
+  Challenges: Extreme boom-bust volatility, Water constraints limiting growth, Sprawl in desert, Foreclosure legacy (2008-2012), Investor/corporate ownership high, Affordability crisis post-pandemic
+
+POLITY:
+  Policy: Purple/swing state trending Democratic. Pro-business (no corporate income tax). Gaming industry political influence enormous. Libertarian streak. Labor unions strong (Culinary)
+  Housing: Limited intervention. Las Vegas market-driven. Recent tenant protections (eviction reforms). Affordable housing incentives. Rapid growth makes planning difficult
+  Labor: No state income tax. Federal minimum wage $7.25 but many localities higher. Strong Culinary Union in Las Vegas. Right-to-work state but union-friendly in practice (gaming)
+
+REGIONAL:
+  Geography: Basin and Range - valleys and mountains. Mojave Desert (south), Great Basin Desert (north). Lake Tahoe, Lake Mead. 86% federal land
+  Urban/Rural: 94% urban (Las Vegas 73%, Reno 16%, Henderson 8%). 6% rural - vast empty desert and mountains. Mining towns
+  Infrastructure: Excellent in Las Vegas (McCarran Airport, I-15 corridor). Reno growing. Rural minimal. Water infrastructure crisis (Lake Mead). Colorado River allocation critical
+
+HISTORICAL:
+  Events: 2011-2013: Worst foreclosure crisis in nation, slow recovery begins, diversification efforts (Tesla recruitment); 2014-2016: Tesla Gigafactory groundbreaking (2014), economic recovery strengthens, Las Vegas Strip projects resume, recreational marijuana approved (2016); 2017-2019: Route 91 Harvest shooting (2017), continued growth, housing prices recover to pre-crash levels, marijuana sales begin; 2020-2023: COVID devastates tourism (casinos closed spring 2020), rapid recovery 2021-2023, housing explosion, Raiders NFL team, Formula 1 Grand Prix (2023)
+  Shocks: 2008-2012 housing crash and foreclosure crisis (worst in nation). 2017 Route 91 shooting. 2020 casino closures (COVID). Water shortage concerns ongoing
+  Transitions: Gaming diversifying to entertainment (shows, sports, F1). Mining lithium boom emerging. Warehousing/logistics (Amazon). Technology (Tesla, data centers). Tourism evolving beyond gaming
+
+COMPARATIVE:
+  Benchmarks: Near median income but no state income tax. Among most diverse states. Lowest educational attainment. Highest urban percentage. Worst 2008 crash, strongest recovery. Extreme housing volatility
+  Peer States: Arizona (desert growth), Florida (tourism, rapid growth), Utah (fast growth, different political culture)
+  Unique: Gaming industry political and economic dominance unique. No state income tax attracts businesses and retirees. Extreme urban concentration (94%). Water scarcity existential issue. Lithium reserves ('Saudi Arabia of lithium'). Federal land 86%. Extreme boom-bust housing cycles. Transient population (people move frequently). Entertainment industry unique labor force. 24/7 economy in Las Vegas
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Nevada
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [PROMPT] State context injected (4409 chars)
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9297 chars (~2324 tokens)
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [API] Total request: ~2733 tokens (system: ~2324, user: ~409)
+2025-12-18 02:35:11 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:35:25 [DEBUG] census_eda.ml: [API] Received response: 4920 chars
+2025-12-18 02:35:25 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4920 chars)
+2025-12-18 02:35:25 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 02:35:25 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 02:35:26 [INFO] census_eda.main: [REPORT] Generated: report_Nevada_population_20251218_023525.txt
+2025-12-18 02:35:26 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Nevada!
+2025-12-18 02:35:26 [INFO] census_eda.memory: process_Nevada_population_1-year:EXIT: 10991.6MB (delta: -1531.8MB)
+2025-12-18 02:35:27 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 02:35:28 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 02:35:29 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 02:35:30 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 02:35:31 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 02:35:32 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 02:35:34 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 02:35:34 [INFO] census_eda.memory: Cleared all caches

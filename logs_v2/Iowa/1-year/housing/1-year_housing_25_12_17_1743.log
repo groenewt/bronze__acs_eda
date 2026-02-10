@@ -1,0 +1,1088 @@
+2025-12-17 17:43:58 [INFO] census_eda: Logging context set: state=Iowa, survey=housing, scope=1-year
+2025-12-17 17:43:58 [INFO] census_eda: Log file: ./logs/Iowa/1-year/housing/1-year_housing_25_12_17_1743.log
+2025-12-17 17:43:58 [INFO] census_eda.main: ======================================================================
+2025-12-17 17:43:58 [INFO] census_eda.main: [HOUSING] Processing Iowa (1-year)...
+2025-12-17 17:43:58 [INFO] census_eda.main: ======================================================================
+2025-12-17 17:43:58 [INFO] census_eda.memory: process_Iowa_housing_1-year:ENTER: 7550.9MB (delta: -821.2MB)
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/19/*/*.csv
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hia.csv
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,444 rows, 235 columns
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h19.csv
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,964 rows, 235 columns
+2025-12-17 17:43:58 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hia.csv
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,455 rows, 235 columns
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hia.csv
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,363 rows, 235 columns
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hia.csv
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,352 rows, 235 columns
+2025-12-17 17:43:59 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hia.csv
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,496 rows, 235 columns
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h19.csv
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,950 rows, 235 columns
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hia.csv
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,351 rows, 235 columns
+2025-12-17 17:44:00 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hia.csv
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,716 rows, 235 columns
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h19.csv
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,039 rows, 235 columns
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h19.csv
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,581 rows, 235 columns
+2025-12-17 17:44:01 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h19.csv
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,124 rows, 235 columns
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h19.csv
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,593 rows, 235 columns
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hia.csv
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,532 rows, 235 columns
+2025-12-17 17:44:02 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hia.csv
+2025-12-17 17:44:03 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-17 17:44:03 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,358 rows, 235 columns
+2025-12-17 17:44:03 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hia.csv
+2025-12-17 17:44:03 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-17 17:44:03 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,415 rows, 235 columns
+2025-12-17 17:44:03 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-17 17:44:05 [VERBOSE] census_eda.processing.loader: Combined into 247,733 total rows, 235 columns
+2025-12-17 17:44:05 [INFO] census_eda.main: Loaded 247,733 records
+2025-12-17 17:44:05 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 247733 valid, 16 unique
+2025-12-17 17:44:05 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-17 17:44:05 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-17 17:44:05 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-17 17:44:05 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-17 17:44:05 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-17 17:44:06 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-17 17:44:06 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-17 17:44:06 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-17 17:44:06 [DEBUG] census_eda.main: Feature engineering complete: (247733, 254)
+2025-12-17 17:44:06 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-17 17:44:06 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-17 17:44:34 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-17 17:44:34 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-17 17:44:34 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(247733, 254)
+2025-12-17 17:44:34 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-17 17:44:34 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 247733
+2025-12-17 17:44:34 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(247733, 254)
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(14352), np.int64(2008): np.int64(14351), np.int64(2009): np.int64(14496), np.int64(2010): np.int64(14358), np.int64(2011): np.int64(15415), np.int64(2012): np.int64(15444), np.int64(2013): np.int64(15363), np.int64(2014): np.int64(15455), np.int64(2015): np.int64(15532), np.int64(2016): np.int64(15716), np.int64(2017): np.int64(15964), np.int64(2018): np.int64(15950), np.int64(2019): np.int64(16039), np.int64(2021): np.int64(16124), np.int64(2022): np.int64(16581), np.int64(2023): np.int64(16593)}
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(247733, 254)
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 247733 non-null values (zeros excluded if needed)
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 20.00
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 206997 non-null values (zeros excluded if needed)
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 140022 non-null values (zeros excluded if needed)
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 125460 non-null values (zeros excluded if needed)
+2025-12-17 17:44:35 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3145000.00
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 206180 non-null values (zeros excluded if needed)
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2800.00
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 144406 non-null values (zeros excluded if needed)
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 6100.00
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 180889 non-null values (zeros excluded if needed)
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1800.00
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 208942 non-null values (zeros excluded if needed)
+2025-12-17 17:44:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 142352 non-null values (zeros excluded if needed)
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 9000.00
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 195494 non-null values (zeros excluded if needed)
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 4500.00
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 4237 non-null values (zeros excluded if needed)
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 22900.00
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 90912 non-null values (zeros excluded if needed)
+2025-12-17 17:44:37 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-17 17:44:38 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-17 17:44:45 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-17 17:44:45 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-17 17:44:45 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-17 17:44:46 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-17 17:44:46 [DEBUG] census_eda.memory: Skipping sampling: 58530MB available (>16GB)
+2025-12-17 17:44:46 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 247733 rows
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(247733, 254)
+2025-12-17 17:45:19 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 247733 non-null values
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 20.00
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 166780 non-null values
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 11.00
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 166780 non-null values
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 23.00
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 206997 non-null values
+2025-12-17 17:45:19 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 140022 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 125460 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3145000.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 208942 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 3934 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 2200.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 206180 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2800.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 144406 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6100.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 180889 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1800.00
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 208942 non-null values
+2025-12-17 17:45:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 142352 non-null values
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 9000.00
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 195494 non-null values
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 4500.00
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 4237 non-null values
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 22900.00
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 90912 non-null values
+2025-12-17 17:45:21 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-17 17:45:22 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-17 17:45:25 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-17 17:45:28 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-17 17:45:33 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-17 17:45:43 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-17 17:45:43 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-17 17:45:43 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-17 17:45:43 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-17 17:45:43 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-17 17:45:44 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-17 17:45:44 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-17 17:45:44 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-17 17:45:44 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-17 17:45:44 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-17 17:45:44 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-17 17:45:45 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-17 17:45:45 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-17 17:45:45 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-17 17:45:46 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-17 17:45:46 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-17 17:45:47 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-17 17:45:47 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-17 17:45:47 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-17 17:45:47 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-17 17:45:47 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-17 17:45:48 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-17 17:45:48 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-17 17:45:48 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-17 17:45:49 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-17 17:45:49 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-17 17:45:49 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-17 17:45:49 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-17 17:45:49 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-17 17:45:49 [DEBUG] census_eda.memory: Skipping sampling: 59275MB available (>16GB)
+2025-12-17 17:45:53 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-17 17:45:53 [DEBUG] census_eda.memory: Skipping sampling: 59264MB available (>16GB)
+2025-12-17 17:46:02 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-17 17:46:02 [DEBUG] census_eda.memory: Skipping sampling: 59230MB available (>16GB)
+2025-12-17 17:46:04 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-17 17:46:06 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-17 17:46:06 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-17 17:46:06 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Iowa/housing/1-year/figures
+2025-12-17 17:46:06 [DEBUG] census_eda.memory: Skipping sampling: 59225MB available (>16GB)
+2025-12-17 17:46:06 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-17 17:46:06 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-17 17:46:06 [INFO] census_eda.memory: [ML-START]: 7562.6MB (delta: +11.7MB)
+2025-12-17 17:46:06 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-17 17:46:06 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-17 17:46:06 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 93388 samples (was 93388)
+2025-12-17 17:46:06 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-17 17:46:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 17:46:07 [INFO] census_eda.ml.regression: [TUNE] Data: 93,388 samples, 10 features
+2025-12-17 17:46:07 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 17:46:07 [INFO] census_eda.memory: tune_ridge:ENTER: 7562.6MB (delta: +0.0MB)
+2025-12-17 17:46:08 [INFO] census_eda.memory: tune_ridge:EXIT: 7565.2MB (delta: +2.6MB)
+2025-12-17 17:46:08 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 17:46:08 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0947
+2025-12-17 17:46:08 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 17:46:08 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 17:46:08 [INFO] census_eda.ml.regression: [TUNE] Data: 93,388 samples, 10 features
+2025-12-17 17:46:08 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 17:46:08 [INFO] census_eda.memory: tune_lasso:ENTER: 7565.2MB (delta: +0.0MB)
+2025-12-17 17:46:08 [INFO] census_eda.memory: tune_lasso:EXIT: 7565.2MB (delta: +0.0MB)
+2025-12-17 17:46:08 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-17 17:46:08 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0947
+2025-12-17 17:46:08 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 17:46:10 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 17:46:10 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 93,388 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 17:46:10 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 17:46:10 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 17:46:10 [INFO] census_eda.memory: tune_random_forest:ENTER: 7565.2MB (delta: +0.0MB)
+2025-12-17 17:46:38 [INFO] census_eda.memory: tune_random_forest:EXIT: 7606.9MB (delta: +41.7MB)
+2025-12-17 17:46:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 17:46:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1209
+2025-12-17 17:46:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 17:46:44 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 17:46:44 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 93,388 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 17:46:44 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 17:46:44 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 17:46:44 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 8391.3MB (delta: +784.4MB)
+2025-12-17 17:46:58 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:46:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-17 17:46:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1778
+2025-12-17 17:46:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 17:47:18 [INFO] census_eda.memory: [SHAP] Safe sample size: 18,678 -> 1,000
+2025-12-17 17:47:18 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 18,678 -> 1,000
+2025-12-17 17:47:18 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:47:18 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 17:47:18 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:47:18 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-17 17:47:18 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 17:47:18 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-17 17:47:18 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 23356 samples (was 23356)
+2025-12-17 17:47:18 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 17:47:18 [INFO] census_eda.ml.regression: [TUNE] Data: 23,356 samples, 10 features
+2025-12-17 17:47:18 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 17:47:18 [INFO] census_eda.memory: tune_ridge:ENTER: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:47:18 [INFO] census_eda.memory: tune_ridge:EXIT: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1108
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 17:47:18 [INFO] census_eda.ml.regression: [TUNE] Data: 23,356 samples, 10 features
+2025-12-17 17:47:18 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 17:47:18 [INFO] census_eda.memory: tune_lasso:ENTER: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:47:18 [INFO] census_eda.memory: tune_lasso:EXIT: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 1.0}
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1109
+2025-12-17 17:47:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 17:47:20 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 17:47:20 [INFO] census_eda.ml.regression: [TUNE] Data: 23,356 samples, 10 features
+2025-12-17 17:47:20 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 17:47:20 [INFO] census_eda.memory: tune_random_forest:ENTER: 8391.3MB (delta: +0.0MB)
+2025-12-17 17:47:46 [INFO] census_eda.memory: tune_random_forest:EXIT: 8391.4MB (delta: +0.1MB)
+2025-12-17 17:47:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 17:47:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1723
+2025-12-17 17:47:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 17:47:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 17:47:48 [INFO] census_eda.ml.regression: [TUNE] Data: 23,356 samples, 10 features
+2025-12-17 17:47:48 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 17:47:48 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 8391.5MB (delta: +0.1MB)
+2025-12-17 17:48:03 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 8391.5MB (delta: +0.0MB)
+2025-12-17 17:48:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 17:48:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2171
+2025-12-17 17:48:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 17:48:09 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,672 -> 1,000
+2025-12-17 17:48:09 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,672 -> 1,000
+2025-12-17 17:48:09 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 8391.5MB (delta: +0.0MB)
+2025-12-17 17:48:09 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 17:48:09 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 8391.5MB (delta: +0.0MB)
+2025-12-17 17:48:09 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-17 17:48:09 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 17:48:09 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-17 17:48:09 [INFO] census_eda.memory: [PRE-CLUSTERING]: 8391.5MB (delta: +0.0MB)
+2025-12-17 17:48:09 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-17 17:48:09 [INFO] census_eda.main: [CLUSTERING] KMeans on 124,832 samples...
+2025-12-17 17:49:25 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-17 17:49:25 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 124,832 samples (will sample if needed)...
+2025-12-17 17:49:25 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 124,832 -> 15,000 (distance matrix would be 116.1GB)
+2025-12-17 17:49:25 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 124,832 -> 15,000 for O(n²) distance matrix
+2025-12-17 17:49:29 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-17 17:49:29 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-17 17:49:29 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-17 17:49:29 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-17 17:49:29 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-17 17:49:30 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 263344.4533691406, 2025: 302759.6047363281, 2026: 351285.0886230469}, Values: [263344.4533691406, 302759.6047363281, 351285.0886230469]
+2025-12-17 17:49:30 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-17 17:49:30 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 1036.1580173969269, 2025: 1105.2368643283844, 2026: 1184.2295773029327}, Values: [1036.1580173969269, 1105.2368643283844, 1184.2295773029327]
+2025-12-17 17:49:30 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-17 17:49:36 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-17 17:49:43 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-17 17:49:46 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 124832.
+2025-12-17 17:49:46 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-17 17:49:46 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-17 17:49:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 239089.8574600853, 2025: 250432.27269725874, 2026: 261774.6879344359}, values=[239089.8574600853, 250432.27269725874, 261774.6879344359], CI_lower=[199248.62102369458, 210591.03626086802, 221933.45149804518], CI_upper=[278931.093896476, 290273.50913364947, 301615.92437082663]
+2025-12-17 17:49:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [239089.8574600853, 250432.27269725874, 261774.6879344359], CI_lower: [199248.62102369458, 210591.03626086802, 221933.45149804518], CI_upper: [278931.093896476, 290273.50913364947, 301615.92437082663]
+2025-12-17 17:49:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 199248.62102369458, 210591.03626086802, 221933.45149804518], upper=[np.float64(228586.15523465705), 278931.093896476, 290273.50913364947, 301615.92437082663]
+2025-12-17 17:49:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 211146.3727865219, 2025: 212716.95295667648, 2026: 213194.99826526642}, values=[211146.3727865219, 212716.95295667648, 213194.99826526642], CI_lower=[180135.3050807962, 181705.88525095079, 182183.93055954072], CI_upper=[242157.4404922476, 243728.02066240218, 244206.06597099212]
+2025-12-17 17:49:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [211146.3727865219, 212716.95295667648, 213194.99826526642], CI_lower: [180135.3050807962, 181705.88525095079, 182183.93055954072], CI_upper: [242157.4404922476, 243728.02066240218, 244206.06597099212]
+2025-12-17 17:49:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 180135.3050807962, 181705.88525095079, 182183.93055954072], upper=[np.float64(228586.15523465705), 242157.4404922476, 243728.02066240218, 244206.06597099212]
+2025-12-17 17:49:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 263344.4533691406, 2025: 302759.6047363281, 2026: 351285.0886230469}, values=[263344.4533691406, 302759.6047363281, 351285.0886230469], CI_lower=[255780.18511712592, 295195.3364843134, 343720.82037103217], CI_upper=[270908.72162115533, 310323.87298834283, 358849.3568750616]
+2025-12-17 17:49:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [263344.4533691406, 302759.6047363281, 351285.0886230469], CI_lower: [255780.18511712592, 295195.3364843134, 343720.82037103217], CI_upper: [270908.72162115533, 310323.87298834283, 358849.3568750616]
+2025-12-17 17:49:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 255780.18511712592, 295195.3364843134, 343720.82037103217], upper=[np.float64(228586.15523465705), 270908.72162115533, 310323.87298834283, 358849.3568750616]
+2025-12-17 17:49:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 209326.19136564972, 2025: 209326.19136564972, 2026: 209326.19136564972}, values=[209326.19136564972, 209326.19136564972, 209326.19136564972], CI_lower=[143481.41519604775, 143481.41519604775, 143481.41519604775], CI_upper=[275170.9675352517, 275170.9675352517, 275170.9675352517]
+2025-12-17 17:49:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [209326.19136564972, 209326.19136564972, 209326.19136564972], CI_lower: [143481.41519604775, 143481.41519604775, 143481.41519604775], CI_upper: [275170.9675352517, 275170.9675352517, 275170.9675352517]
+2025-12-17 17:49:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 143481.41519604775, 143481.41519604775, 143481.41519604775], upper=[np.float64(228586.15523465705), 275170.9675352517, 275170.9675352517, 275170.9675352517]
+2025-12-17 17:49:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 192303.2678331113, 2025: 192303.2678331113, 2026: 192303.2678331113}, values=[192303.2678331113, 192303.2678331113, 192303.2678331113], CI_lower=[145270.72319577797, 145270.72319577797, 145270.72319577797], CI_upper=[239335.81247044465, 239335.81247044465, 239335.81247044465]
+2025-12-17 17:49:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [192303.2678331113, 192303.2678331113, 192303.2678331113], CI_lower: [145270.72319577797, 145270.72319577797, 145270.72319577797], CI_upper: [239335.81247044465, 239335.81247044465, 239335.81247044465]
+2025-12-17 17:49:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 145270.72319577797, 145270.72319577797, 145270.72319577797], upper=[np.float64(228586.15523465705), 239335.81247044465, 239335.81247044465, 239335.81247044465]
+2025-12-17 17:49:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 216504.33149015383, 2025: 216504.33149015383, 2026: 216504.33149015383}, values=[216504.33149015383, 216504.33149015383, 216504.33149015383], CI_lower=[147000.48466364166, 147000.48466364166, 147000.48466364166], CI_upper=[286008.178316666, 286008.178316666, 286008.178316666]
+2025-12-17 17:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [216504.33149015383, 216504.33149015383, 216504.33149015383], CI_lower: [147000.48466364166, 147000.48466364166, 147000.48466364166], CI_upper: [286008.178316666, 286008.178316666, 286008.178316666]
+2025-12-17 17:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 147000.48466364166, 147000.48466364166, 147000.48466364166], upper=[np.float64(228586.15523465705), 286008.178316666, 286008.178316666, 286008.178316666]
+2025-12-17 17:49:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 241143.2477019691, 2025: 253700.34016534835, 2026: 266257.4326247947}, values=[241143.2477019691, 253700.34016534835, 266257.4326247947], CI_lower=[163511.71515246254, 176068.8076158418, 188625.90007528814], CI_upper=[318774.7802514757, 331331.8727148549, 343888.9651743013]
+2025-12-17 17:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [241143.2477019691, 253700.34016534835, 266257.4326247947], CI_lower: [163511.71515246254, 176068.8076158418, 188625.90007528814], CI_upper: [318774.7802514757, 331331.8727148549, 343888.9651743013]
+2025-12-17 17:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 163511.71515246254, 176068.8076158418, 188625.90007528814], upper=[np.float64(228586.15523465705), 318774.7802514757, 331331.8727148549, 343888.9651743013]
+2025-12-17 17:49:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 237658.6081364724, 2025: 250671.67879249758, 2026: 263684.74944852275}, values=[237658.6081364724, 250671.67879249758, 263684.74944852275], CI_lower=[179108.42916650392, 192121.4998225291, 205134.57047855426], CI_upper=[296208.78710644087, 309221.85776246607, 322234.9284184912]
+2025-12-17 17:49:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [237658.6081364724, 250671.67879249758, 263684.74944852275], CI_lower: [179108.42916650392, 192121.4998225291, 205134.57047855426], CI_upper: [296208.78710644087, 309221.85776246607, 322234.9284184912]
+2025-12-17 17:49:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(228586.15523465705), 179108.42916650392, 192121.4998225291, 205134.57047855426], upper=[np.float64(228586.15523465705), 296208.78710644087, 309221.85776246607, 322234.9284184912]
+2025-12-17 17:49:52 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-17 17:49:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 940.8417620856853, 2025: 962.1654380600521, 2026: 983.4891140344189}, values=[940.8417620856853, 962.1654380600521, 983.4891140344189], CI_lower=[891.37683362491, 912.7005095992768, 934.0241855736435], CI_upper=[990.3066905464607, 1011.6303665208275, 1032.9540424951942]
+2025-12-17 17:49:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [940.8417620856853, 962.1654380600521, 983.4891140344189], CI_lower: [891.37683362491, 912.7005095992768, 934.0241855736435], CI_upper: [990.3066905464607, 1011.6303665208275, 1032.9540424951942]
+2025-12-17 17:49:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 891.37683362491, 912.7005095992768, 934.0241855736435], upper=[np.float64(979.4694035631294), 990.3066905464607, 1011.6303665208275, 1032.9540424951942]
+2025-12-17 17:49:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 992.2976084146649, 2025: 1030.7281228406355, 2026: 1070.9580380874686}, values=[992.2976084146649, 1030.7281228406355, 1070.9580380874686], CI_lower=[961.6318808263088, 1000.0623952522794, 1040.2923104991125], CI_upper=[1022.9633360030209, 1061.3938504289915, 1101.6237656758246]
+2025-12-17 17:49:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [992.2976084146649, 1030.7281228406355, 1070.9580380874686], CI_lower: [961.6318808263088, 1000.0623952522794, 1040.2923104991125], CI_upper: [1022.9633360030209, 1061.3938504289915, 1101.6237656758246]
+2025-12-17 17:49:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 961.6318808263088, 1000.0623952522794, 1040.2923104991125], upper=[np.float64(979.4694035631294), 1022.9633360030209, 1061.3938504289915, 1101.6237656758246]
+2025-12-17 17:49:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 1036.1580173969269, 2025: 1105.2368643283844, 2026: 1184.2295773029327}, values=[1036.1580173969269, 1105.2368643283844, 1184.2295773029327], CI_lower=[1016.9871155082516, 1086.065962439709, 1165.0586754142573], CI_upper=[1055.3289192856023, 1124.4077662170598, 1203.4004791916082]
+2025-12-17 17:49:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1036.1580173969269, 1105.2368643283844, 1184.2295773029327], CI_lower: [1016.9871155082516, 1086.065962439709, 1165.0586754142573], CI_upper: [1055.3289192856023, 1124.4077662170598, 1203.4004791916082]
+2025-12-17 17:49:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 1016.9871155082516, 1086.065962439709, 1165.0586754142573], upper=[np.float64(979.4694035631294), 1055.3289192856023, 1124.4077662170598, 1203.4004791916082]
+2025-12-17 17:49:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 924.7599057155356, 2025: 924.7599057155356, 2026: 924.7599057155356}, values=[924.7599057155356, 924.7599057155356, 924.7599057155356], CI_lower=[883.7001949399946, 883.7001949399946, 883.7001949399946], CI_upper=[965.8196164910767, 965.8196164910767, 965.8196164910767]
+2025-12-17 17:49:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [924.7599057155356, 924.7599057155356, 924.7599057155356], CI_lower: [883.7001949399946, 883.7001949399946, 883.7001949399946], CI_upper: [965.8196164910767, 965.8196164910767, 965.8196164910767]
+2025-12-17 17:49:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 883.7001949399946, 883.7001949399946, 883.7001949399946], upper=[np.float64(979.4694035631294), 965.8196164910767, 965.8196164910767, 965.8196164910767]
+2025-12-17 17:49:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 878.6461229181317, 2025: 878.6461229181317, 2026: 878.6461229181317}, values=[878.6461229181317, 878.6461229181317, 878.6461229181317], CI_lower=[827.4664328927851, 827.4664328927851, 827.4664328927851], CI_upper=[929.8258129434784, 929.8258129434784, 929.8258129434784]
+2025-12-17 17:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [878.6461229181317, 878.6461229181317, 878.6461229181317], CI_lower: [827.4664328927851, 827.4664328927851, 827.4664328927851], CI_upper: [929.8258129434784, 929.8258129434784, 929.8258129434784]
+2025-12-17 17:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 827.4664328927851, 827.4664328927851, 827.4664328927851], upper=[np.float64(979.4694035631294), 929.8258129434784, 929.8258129434784, 929.8258129434784]
+2025-12-17 17:49:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 945.1344948448444, 2025: 945.1344948448444, 2026: 945.1344948448444}, values=[945.1344948448444, 945.1344948448444, 945.1344948448444], CI_lower=[911.5909749897663, 911.5909749897663, 911.5909749897663], CI_upper=[978.6780146999225, 978.6780146999225, 978.6780146999225]
+2025-12-17 17:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [945.1344948448444, 945.1344948448444, 945.1344948448444], CI_lower: [911.5909749897663, 911.5909749897663, 911.5909749897663], CI_upper: [978.6780146999225, 978.6780146999225, 978.6780146999225]
+2025-12-17 17:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 911.5909749897663, 911.5909749897663, 911.5909749897663], upper=[np.float64(979.4694035631294), 978.6780146999225, 978.6780146999225, 978.6780146999225]
+2025-12-17 17:49:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 1024.8848634502149, 2025: 1068.6271323485246, 2026: 1110.757853762096}, values=[1024.8848634502149, 1068.6271323485246, 1110.757853762096], CI_lower=[745.2221116676915, 788.9643805660012, 831.0951019795725], CI_upper=[1304.5476152327383, 1348.289884131048, 1390.4206055446193]
+2025-12-17 17:49:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1024.8848634502149, 1068.6271323485246, 1110.757853762096], CI_lower: [745.2221116676915, 788.9643805660012, 831.0951019795725], CI_upper: [1304.5476152327383, 1348.289884131048, 1390.4206055446193]
+2025-12-17 17:49:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 745.2221116676915, 788.9643805660012, 831.0951019795725], upper=[np.float64(979.4694035631294), 1304.5476152327383, 1348.289884131048, 1390.4206055446193]
+2025-12-17 17:49:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 1034.2779093914335, 2025: 1087.7166620840635, 2026: 1141.1554147766938}, values=[1034.2779093914335, 1087.7166620840635, 1141.1554147766938], CI_lower=[997.6899366898064, 1051.1286893824365, 1104.5674420750668], CI_upper=[1070.8658820930605, 1124.3046347856905, 1177.7433874783208]
+2025-12-17 17:49:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1034.2779093914335, 1087.7166620840635, 1141.1554147766938], CI_lower: [997.6899366898064, 1051.1286893824365, 1104.5674420750668], CI_upper: [1070.8658820930605, 1124.3046347856905, 1177.7433874783208]
+2025-12-17 17:49:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(979.4694035631294), 997.6899366898064, 1051.1286893824365, 1104.5674420750668], upper=[np.float64(979.4694035631294), 1070.8658820930605, 1124.3046347856905, 1177.7433874783208]
+2025-12-17 17:49:58 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-17 17:49:58 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-17 17:51:10 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 24918.25390625, 'mse': 7795688960.0, 'rmse': 88293.19883207313, 'r2': -0.14156678318977356}
+2025-12-17 17:51:10 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-17 17:52:00 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 5.777139663696289, 'mse': 156.12953186035156, 'rmse': 12.495180345251187, 'r2': 0.06480109691619873}
+2025-12-17 17:52:01 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-17 17:52:50 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 1.0585354566574097, 'mse': 28.46575164794922, 'rmse': 5.335330509720014, 'r2': 0.8403962254524231}
+2025-12-17 17:52:50 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-17 17:53:39 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 202.52622985839844, 'mse': 310037.4375, 'rmse': 556.8100551355013, 'r2': 0.3084503710269928}
+2025-12-17 17:53:40 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-17 17:54:28 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.2768856883049011, 'mse': 0.2941495180130005, 'rmse': 0.5423555273185666, 'r2': 0.2241693139076233}
+2025-12-17 17:54:28 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-17 17:54:50 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Iowa/housing/1-year/figures/ml/deep_learning
+2025-12-17 17:54:50 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-17 17:54:50 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-17 17:54:50 [DEBUG] census_eda.main:  Running LLM analysis for state: Iowa
+2025-12-17 17:54:50 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-17 17:54:50 [INFO] census_eda.ml: [LLM] State context loaded: Iowa
+2025-12-17 17:54:50 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [API] Total request: ~2499 tokens (system: ~2317, user: ~182)
+2025-12-17 17:54:50 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [API] Received response: 4269 chars
+2025-12-17 17:55:08 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4269 chars)
+2025-12-17 17:55:08 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [LLM] User prompt: 1263 chars (~315 tokens)
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [API] Total request: ~2632 tokens (system: ~2317, user: ~315)
+2025-12-17 17:55:08 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [API] Received response: 3163 chars
+2025-12-17 17:55:17 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3163 chars)
+2025-12-17 17:55:17 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [LLM] User prompt: 1690 chars (~422 tokens)
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [API] Total request: ~2739 tokens (system: ~2317, user: ~422)
+2025-12-17 17:55:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [API] Received response: 3226 chars
+2025-12-17 17:55:26 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3226 chars)
+2025-12-17 17:55:26 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [LLM] User prompt: 1464 chars (~366 tokens)
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [API] Total request: ~2683 tokens (system: ~2317, user: ~366)
+2025-12-17 17:55:26 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [API] Received response: 4906 chars
+2025-12-17 17:55:42 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4906 chars)
+2025-12-17 17:55:42 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [API] Total request: ~2328 tokens (system: ~2317, user: ~11)
+2025-12-17 17:55:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [API] Received response: 5090 chars
+2025-12-17 17:55:58 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (5090 chars)
+2025-12-17 17:55:58 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [LLM] User prompt: 11032 chars (~2758 tokens)
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [API] Total request: ~5075 tokens (system: ~2317, user: ~2758)
+2025-12-17 17:55:58 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [API] Received response: 3326 chars
+2025-12-17 17:56:10 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3326 chars)
+2025-12-17 17:56:10 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [LLM] User prompt: 6681 chars (~1670 tokens)
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [API] Total request: ~3987 tokens (system: ~2317, user: ~1670)
+2025-12-17 17:56:10 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [API] Received response: 2670 chars
+2025-12-17 17:56:18 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (2670 chars)
+2025-12-17 17:56:18 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [LLM] User prompt: 696 chars (~174 tokens)
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [API] Total request: ~2491 tokens (system: ~2317, user: ~174)
+2025-12-17 17:56:18 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [API] Received response: 3662 chars
+2025-12-17 17:56:31 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3662 chars)
+2025-12-17 17:56:31 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [LLM] User prompt: 6447 chars (~1611 tokens)
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [API] Total request: ~3928 tokens (system: ~2317, user: ~1611)
+2025-12-17 17:56:31 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [API] Received response: 3816 chars
+2025-12-17 17:56:42 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3816 chars)
+2025-12-17 17:56:42 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [LLM] User prompt: 2518 chars (~629 tokens)
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [API] Total request: ~2946 tokens (system: ~2317, user: ~629)
+2025-12-17 17:56:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [API] Received response: 4137 chars
+2025-12-17 17:56:55 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4137 chars)
+2025-12-17 17:56:55 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [LLM] User prompt: 1048 chars (~262 tokens)
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Iowa
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Iowa
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4380 chars
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1095
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Iowa
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (corn, soybeans, hogs), Food processing and manufacturing, Finance and insurance, Advanced manufacturing, Renewable energy (wind, biofuels)
+  Trends: Steady growth 2011-2019 driven by agriculture and manufacturing. Strong recovery post-2008 recession. Moderate impact from 2015-2016 agricultural commodity price decline. Pandemic resilience in agriculture sector, challenges in services. 2021-2023 recovery with inflation pressures on farmers
+  Income: Median income near national average (~$65k). Lower cost of living improves purchasing power. Income inequality lower than coastal states. Rural-urban income gap present
+  Dominant Sector: Manufacturing and agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow but steady growth (~0.4% annually). Growth concentrated in metros (Des Moines, Cedar Rapids, Iowa City). Rural depopulation ongoing. Pandemic brought slight migration uptick
+  Migration: Slight net domestic outmigration offset by international immigration. Brain drain of young college graduates to larger metros. Recent reverse migration from Chicago, Minneapolis. International migration increasingly important (2019-2023)
+  Education: High school completion rates above national average (91%+). Bachelor's degree attainment moderate (~29%). Strong public university system. Rural-urban education gap
+
+HOUSING MARKET:
+  Market: Affordable housing market. Median home price ~$230k (2023). Homeownership rate high (~70%). More affordable than national average
+  Affordability: Housing remained affordable 2011-2019. Pandemic spike 2020-2022 (+20-30% in some metros). Still relatively affordable compared to coasts. Rural housing very cheap but declining
+  Challenges: Rural housing abandonment and deterioration, Limited affordable housing in growing metros, Aging housing stock statewide, Broadband access in rural areas limiting remote work
+
+POLITY:
+  Policy: Politically competitive 2011-2016, shifted more conservative 2017-2023. Business-friendly tax environment. Traditional agricultural interests influential. Social conservatism balanced with pragmatic governance
+  Housing: Limited state intervention in housing markets. Local control dominant. No rent control. Relatively permissive zoning in most areas. Affordable housing initiatives in larger cities
+  Labor: Right-to-work state (2017). $7.25 federal minimum wage. Weakened public employee unions (2017). Generally business-friendly. Worker's compensation reforms
+
+REGIONAL:
+  Geography: Rolling plains, fertile soil (Iowa loess), major rivers (Mississippi, Missouri). Midwest location central to agriculture and transportation
+  Urban/Rural: 61% urban (Des Moines metro ~700k, Cedar Rapids ~270k), 39% rural farming communities. Small town decline ongoing
+  Infrastructure: Strong Interstate highway system (I-80, I-35, I-29). Extensive rail network for agriculture. Broadband gaps in rural areas. Aging infrastructure in older industrial cities
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from 2008 recession, agricultural exports strong, political competitiveness in presidential politics; 2014-2016: Agricultural commodity price decline (corn, soybeans), farm income stress, political shift beginning; 2017-2019: Republican trifecta enacts conservative agenda (union restrictions, tax cuts, abortion), stable economy, continued rural depopulation; 2021-2023: COVID recovery, agricultural inflation (input costs), political polarization, school choice debates, property tax relief efforts
+  Shocks: 2012 severe drought, 2015-2016 agricultural commodity price collapse, 2020 derecho storm devastation ($11B damage to crops/property)
+  Transitions: Decline of traditional manufacturing, growth of biofuels and renewable energy, agricultural consolidation, rural main street decline
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing significantly more affordable. Lower unemployment than national average typically. Higher percentage in manufacturing. Lower diversity than national average
+  Peer States: Nebraska, Wisconsin, Minnesota (economy/agriculture), Indiana (manufacturing)
+  Unique: First-in-nation presidential caucuses shape politics disproportionately. Leading producer of corn, soybeans, pork, eggs. Renewable energy leader (wind #2 nationally). Strong agricultural economy with cyclical volatility
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Iowa
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (4380 chars)
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9268 chars (~2317 tokens)
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [API] Total request: ~2579 tokens (system: ~2317, user: ~262)
+2025-12-17 17:56:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 17:57:08 [DEBUG] census_eda.ml: [API] Received response: 4118 chars
+2025-12-17 17:57:08 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4118 chars)
+2025-12-17 17:57:08 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-17 17:57:08 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-17 17:57:08 [INFO] census_eda.main: [REPORT] Generated: report_Iowa_housing_20251217_175708.txt
+2025-12-17 17:57:08 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for Iowa!
+2025-12-17 17:57:08 [INFO] census_eda.memory: process_Iowa_housing_1-year:EXIT: 4847.1MB (delta: -3544.5MB)
+2025-12-17 17:57:09 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-17 17:57:09 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-17 17:57:09 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-17 17:57:09 [INFO] census_eda.memory: Cleared all caches

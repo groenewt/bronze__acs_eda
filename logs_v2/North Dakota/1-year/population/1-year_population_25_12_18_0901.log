@@ -1,0 +1,1288 @@
+2025-12-18 09:01:13 [INFO] census_eda: Logging context set: state=North Dakota, survey=population, scope=1-year
+2025-12-18 09:01:13 [INFO] census_eda: Log file: ./logs/North Dakota/1-year/population/1-year_population_25_12_18_0901.log
+2025-12-18 09:01:13 [INFO] census_eda.main: ======================================================================
+2025-12-18 09:01:13 [INFO] census_eda.main: [POPULATION] Processing North Dakota (1-year)...
+2025-12-18 09:01:13 [INFO] census_eda.main: ======================================================================
+2025-12-18 09:01:13 [INFO] census_eda.memory: process_North Dakota_population_1-year:ENTER: 10486.2MB (delta: +0.0MB)
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/38/*/*.csv
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pnd.csv
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,122 rows, 260 columns
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p38.csv
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,892 rows, 260 columns
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pnd.csv
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,625 rows, 260 columns
+2025-12-18 09:01:13 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pnd.csv
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,435 rows, 260 columns
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pnd.csv
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,689 rows, 260 columns
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pnd.csv
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,798 rows, 260 columns
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p38.csv
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,876 rows, 260 columns
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pnd.csv
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,656 rows, 260 columns
+2025-12-18 09:01:14 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pnd.csv
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,864 rows, 260 columns
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p38.csv
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,960 rows, 260 columns
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p38.csv
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,107 rows, 260 columns
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p38.csv
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,691 rows, 260 columns
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p38.csv
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,403 rows, 260 columns
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pnd.csv
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 7,869 rows, 260 columns
+2025-12-18 09:01:15 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pnd.csv
+2025-12-18 09:01:16 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 09:01:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,869 rows, 260 columns
+2025-12-18 09:01:16 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pnd.csv
+2025-12-18 09:01:16 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 09:01:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,987 rows, 260 columns
+2025-12-18 09:01:16 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 09:01:17 [VERBOSE] census_eda.processing.loader: Combined into 119,843 total rows, 260 columns
+2025-12-18 09:01:17 [INFO] census_eda.main: Loaded 119,843 records
+2025-12-18 09:01:17 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 119843 valid, 16 unique
+2025-12-18 09:01:17 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 09:01:17 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 09:01:18 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 09:01:18 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 09:01:18 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 09:01:18 [DEBUG] census_eda.main: Feature engineering complete: (119843, 292)
+2025-12-18 09:01:19 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 09:01:19 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 09:01:44 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 09:01:44 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 09:01:44 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(119843, 292)
+2025-12-18 09:01:44 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 09:01:44 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 119843
+2025-12-18 09:01:44 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 09:01:45 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(119843, 292)
+2025-12-18 09:01:45 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(6689), np.int64(2008): np.int64(6656), np.int64(2009): np.int64(6798), np.int64(2010): np.int64(6869), np.int64(2011): np.int64(6987), np.int64(2012): np.int64(7122), np.int64(2013): np.int64(7435), np.int64(2014): np.int64(7625), np.int64(2015): np.int64(7869), np.int64(2016): np.int64(7864), np.int64(2017): np.int64(7892), np.int64(2018): np.int64(7876), np.int64(2019): np.int64(7960), np.int64(2021): np.int64(7691), np.int64(2022): np.int64(8107), np.int64(2023): np.int64(8403)}
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(119843, 292)
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 119843 non-null values (zeros excluded if needed)
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 119843 non-null values (zeros excluded if needed)
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2798.00
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 09:01:46 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 119843 non-null values (zeros excluded if needed)
+2025-12-18 09:01:47 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-18 09:01:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 09:01:47 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 55439 non-null values (zeros excluded if needed)
+2025-12-18 09:01:47 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 191.00
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 18457 non-null values (zeros excluded if needed)
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 432000.00
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 6961 non-null values (zeros excluded if needed)
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 89000.00
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 957 non-null values (zeros excluded if needed)
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Value range: 20.00 to 30000.00
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 9713 non-null values (zeros excluded if needed)
+2025-12-18 09:01:49 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 180000.00
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 10852 non-null values (zeros excluded if needed)
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 560000.00
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 1959 non-null values (zeros excluded if needed)
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: Value range: 1200.00 to 30000.00
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 24980 non-null values (zeros excluded if needed)
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 09:01:51 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 09:01:52 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 61782 non-null values (zeros excluded if needed)
+2025-12-18 09:01:52 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 468000.00
+2025-12-18 09:01:55 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 09:02:08 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 09:02:08 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 09:02:08 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 09:02:09 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 09:02:09 [DEBUG] census_eda.memory: Skipping sampling: 41671MB available (>16GB)
+2025-12-18 09:02:09 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 119843 rows
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(119843, 292)
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 119843 non-null values
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 119843 non-null values
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2798.00
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 119843 non-null values
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 55439 non-null values
+2025-12-18 09:02:34 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 191.00
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 18457 non-null values
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 432000.00
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 6961 non-null values
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 89000.00
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 957 non-null values
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Data range: 20.00 to 30000.00
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 9713 non-null values
+2025-12-18 09:02:36 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 180000.00
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 10852 non-null values
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 560000.00
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 1959 non-null values
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Data range: 1200.00 to 30000.00
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 24980 non-null values
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 61782 non-null values
+2025-12-18 09:02:38 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 468000.00
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 68851 non-null values
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 55622 non-null values
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 24505 non-null values
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 97107 non-null values
+2025-12-18 09:02:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 09:02:54 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 09:03:05 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 09:03:15 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 09:03:32 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 09:03:32 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 09:03:32 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 09:03:34 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 09:03:35 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 09:03:36 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 09:03:38 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 09:03:38 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 09:03:38 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 09:03:39 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 09:03:40 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 09:03:42 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 09:03:42 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 09:03:42 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 09:03:43 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 09:03:46 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 09:03:46 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 09:03:46 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 09:03:47 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 09:03:48 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 09:03:50 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 09:03:50 [DEBUG] census_eda.memory: Skipping sampling: 41647MB available (>16GB)
+2025-12-18 09:03:55 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 09:03:55 [DEBUG] census_eda.memory: Skipping sampling: 41651MB available (>16GB)
+2025-12-18 09:04:04 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 09:04:04 [DEBUG] census_eda.memory: Skipping sampling: 41655MB available (>16GB)
+2025-12-18 09:04:09 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 09:04:18 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 09:04:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 09:04:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 09:04:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 09:04:20 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 09:04:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 09:04:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 09:04:24 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 09:04:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 09:04:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 09:04:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 09:04:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 09:04:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 09:04:26 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 09:04:26 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 09:04:26 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 09:04:27 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 09:04:28 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 09:04:29 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 09:04:30 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 09:04:32 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 09:04:33 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 09:04:35 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 09:04:35 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 09:04:35 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 09:04:36 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 09:04:37 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 09:04:38 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 09:04:40 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 09:04:41 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 09:04:42 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 09:04:43 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 09:04:45 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 09:04:49 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 09:04:50 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 09:04:51 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/North_Dakota/population/1-year/figures
+2025-12-18 09:04:52 [DEBUG] census_eda.memory: Skipping sampling: 41648MB available (>16GB)
+2025-12-18 09:04:52 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 09:04:52 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 09:04:52 [INFO] census_eda.memory: [ML-START]: 11054.2MB (delta: +568.0MB)
+2025-12-18 09:04:52 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 09:04:52 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 09:04:52 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 609 samples (was 609)
+2025-12-18 09:04:52 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 09:04:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 09:04:52 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:04:52 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:04:52 [INFO] census_eda.memory: tune_ridge:ENTER: 11054.2MB (delta: +0.0MB)
+2025-12-18 09:04:54 [INFO] census_eda.memory: tune_ridge:EXIT: 11054.6MB (delta: +0.3MB)
+2025-12-18 09:04:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 09:04:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0256
+2025-12-18 09:04:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:04:54 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 09:04:54 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:04:54 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:04:54 [INFO] census_eda.memory: tune_lasso:ENTER: 11054.6MB (delta: +0.0MB)
+2025-12-18 09:04:55 [INFO] census_eda.memory: tune_lasso:EXIT: 11054.6MB (delta: +0.0MB)
+2025-12-18 09:04:55 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 09:04:55 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0172
+2025-12-18 09:04:55 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:04:55 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 09:04:55 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:04:55 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:04:55 [INFO] census_eda.memory: tune_random_forest:ENTER: 11054.6MB (delta: +0.0MB)
+2025-12-18 09:04:58 [INFO] census_eda.memory: tune_random_forest:EXIT: 11057.4MB (delta: +2.8MB)
+2025-12-18 09:04:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 09:04:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0606
+2025-12-18 09:04:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:04:59 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 09:04:59 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:04:59 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:04:59 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11058.6MB (delta: +1.2MB)
+2025-12-18 09:05:01 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 09:05:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.2843
+2025-12-18 09:05:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:01 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 09:05:01 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 591 samples (was 609)
+2025-12-18 09:05:01 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 09:05:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 09:05:01 [INFO] census_eda.ml.regression: [TUNE] Data: 591 samples, 10 features
+2025-12-18 09:05:01 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:01 [INFO] census_eda.memory: tune_ridge:ENTER: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:02 [INFO] census_eda.memory: tune_ridge:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 09:05:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0336
+2025-12-18 09:05:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:02 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 09:05:02 [INFO] census_eda.ml.regression: [TUNE] Data: 591 samples, 10 features
+2025-12-18 09:05:02 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:02 [INFO] census_eda.memory: tune_lasso:ENTER: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:03 [INFO] census_eda.memory: tune_lasso:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 09:05:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0251
+2025-12-18 09:05:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:03 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 09:05:03 [INFO] census_eda.ml.regression: [TUNE] Data: 591 samples, 10 features
+2025-12-18 09:05:03 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:03 [INFO] census_eda.memory: tune_random_forest:ENTER: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:06 [INFO] census_eda.memory: tune_random_forest:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 09:05:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0655
+2025-12-18 09:05:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 09:05:07 [INFO] census_eda.ml.regression: [TUNE] Data: 591 samples, 10 features
+2025-12-18 09:05:07 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:07 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:09 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 09:05:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1931
+2025-12-18 09:05:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:09 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 09:05:09 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 609 samples (was 609)
+2025-12-18 09:05:09 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 09:05:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 09:05:09 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:09 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:09 [INFO] census_eda.memory: tune_ridge:ENTER: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:10 [INFO] census_eda.memory: tune_ridge:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 09:05:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0263
+2025-12-18 09:05:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:11 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 09:05:11 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:11 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:11 [INFO] census_eda.memory: tune_lasso:ENTER: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:12 [INFO] census_eda.memory: tune_lasso:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 09:05:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0159
+2025-12-18 09:05:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 09:05:12 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:12 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:12 [INFO] census_eda.memory: tune_random_forest:ENTER: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:14 [INFO] census_eda.memory: tune_random_forest:EXIT: 11058.6MB (delta: +0.0MB)
+2025-12-18 09:05:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200}
+2025-12-18 09:05:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0631
+2025-12-18 09:05:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 09:05:15 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:15 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:15 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11058.8MB (delta: +0.2MB)
+2025-12-18 09:05:17 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 09:05:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.3760
+2025-12-18 09:05:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:17 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 09:05:17 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 09:05:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 09:05:18 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:18 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:18 [INFO] census_eda.memory: tune_ridge:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:19 [INFO] census_eda.memory: tune_ridge:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:19 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 09:05:19 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 09:05:19 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:19 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 09:05:19 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:19 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:19 [INFO] census_eda.memory: tune_lasso:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:20 [INFO] census_eda.memory: tune_lasso:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:20 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 09:05:20 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 09:05:20 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:20 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 09:05:20 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:20 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:20 [INFO] census_eda.memory: tune_random_forest:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:22 [INFO] census_eda.memory: tune_random_forest:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:22 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 09:05:22 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 09:05:22 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 09:05:23 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:23 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:23 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:24 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.9}
+2025-12-18 09:05:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 09:05:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:25 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 09:05:25 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 09:05:25 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 09:05:25 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:25 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:25 [INFO] census_eda.memory: tune_ridge:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:26 [INFO] census_eda.memory: tune_ridge:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 09:05:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0246
+2025-12-18 09:05:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 09:05:26 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 09:05:26 [INFO] census_eda.memory: tune_lasso:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:27 [INFO] census_eda.memory: tune_lasso:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 09:05:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0319
+2025-12-18 09:05:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 09:05:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 09:05:27 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:27 [INFO] census_eda.memory: tune_random_forest:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:30 [INFO] census_eda.memory: tune_random_forest:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:30 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 09:05:30 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0361
+2025-12-18 09:05:30 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:31 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 09:05:31 [INFO] census_eda.ml.regression: [TUNE] Data: 609 samples, 10 features
+2025-12-18 09:05:31 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 09:05:31 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:33 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 09:05:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1201
+2025-12-18 09:05:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 09:05:33 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:33 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 122 samples...
+2025-12-18 09:05:34 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:34 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 09:05:34 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-18 09:05:34 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 09:05:34 [INFO] census_eda.memory: [PRE-CLUSTERING]: 11058.8MB (delta: +0.0MB)
+2025-12-18 09:05:34 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 09:05:34 [INFO] census_eda.main: [CLUSTERING] KMeans on 609 samples...
+2025-12-18 09:05:34 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 09:05:34 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 609 samples (will sample if needed)...
+2025-12-18 09:05:34 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 09:05:34 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 09:05:34 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 09:05:34 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 09:05:34 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 09:05:35 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 56726.86791229248, 2025: 59254.14635467529, 2026: 62134.22389984131}, Values: [56726.86791229248, 59254.14635467529, 62134.22389984131]
+2025-12-18 09:05:35 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 09:05:35 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 54753.384765625, 2025: 57089.42224121094, 2026: 59673.37516784668}, Values: [54753.384765625, 57089.42224121094, 59673.37516784668]
+2025-12-18 09:05:35 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 09:05:35 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 58937.21260070801, 2025: 62039.17778015137, 2026: 65610.82472229004}, Values: [58937.21260070801, 62039.17778015137, 65610.82472229004]
+2025-12-18 09:05:35 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 09:05:35 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 42.61113606790634, 2025: 42.61113606790634, 2026: 42.61113606790634}, Values: [42.61113606790634, 42.61113606790634, 42.61113606790634]
+2025-12-18 09:05:35 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 09:05:35 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 39.24248735071556, 2025: 39.24248735071556, 2026: 39.24248735071556}, Values: [39.24248735071556, 39.24248735071556, 39.24248735071556]
+2025-12-18 09:05:35 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 09:05:59 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 09:06:01 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 09:06:01 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 09:06:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 55633.88920654822, 2025: 57029.771975433454, 2026: 58425.65474431915}, values=[55633.88920654822, 57029.771975433454, 58425.65474431915], CI_lower=[52182.124472329626, 53578.00724121486, 54973.89001010056], CI_upper=[59085.65394076682, 60481.53670965205, 61877.41947853775]
+2025-12-18 09:06:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55633.88920654822, 57029.771975433454, 58425.65474431915], CI_lower: [52182.124472329626, 53578.00724121486, 54973.89001010056], CI_upper: [59085.65394076682, 60481.53670965205, 61877.41947853775]
+2025-12-18 09:06:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 52182.124472329626, 53578.00724121486, 54973.89001010056], upper=[np.float64(51997.94985507246), 59085.65394076682, 60481.53670965205, 61877.41947853775]
+2025-12-18 09:06:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 54630.101441040635, 2025: 55692.2682890445, 2026: 56719.33287638426}, values=[54630.101441040635, 55692.2682890445, 56719.33287638426], CI_lower=[51262.39914794186, 52324.565995945726, 53351.630583285485], CI_upper=[57997.80373413941, 59059.97058214327, 60087.03516948303]
+2025-12-18 09:06:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54630.101441040635, 55692.2682890445, 56719.33287638426], CI_lower: [51262.39914794186, 52324.565995945726, 53351.630583285485], CI_upper: [57997.80373413941, 59059.97058214327, 60087.03516948303]
+2025-12-18 09:06:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 51262.39914794186, 52324.565995945726, 53351.630583285485], upper=[np.float64(51997.94985507246), 57997.80373413941, 59059.97058214327, 60087.03516948303]
+2025-12-18 09:06:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 56726.86791229248, 2025: 59254.14635467529, 2026: 62134.22389984131}, values=[56726.86791229248, 59254.14635467529, 62134.22389984131], CI_lower=[53559.48779299956, 56086.76623538237, 58966.843780548385], CI_upper=[59894.248031585405, 62421.52647396822, 65301.60401913423]
+2025-12-18 09:06:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56726.86791229248, 59254.14635467529, 62134.22389984131], CI_lower: [53559.48779299956, 56086.76623538237, 58966.843780548385], CI_upper: [59894.248031585405, 62421.52647396822, 65301.60401913423]
+2025-12-18 09:06:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 53559.48779299956, 56086.76623538237, 58966.843780548385], upper=[np.float64(51997.94985507246), 59894.248031585405, 62421.52647396822, 65301.60401913423]
+2025-12-18 09:06:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 52091.95266626202, 2025: 52091.95266626202, 2026: 52091.95266626202}, values=[52091.95266626202, 52091.95266626202, 52091.95266626202], CI_lower=[48507.118780527206, 48507.118780527206, 48507.118780527206], CI_upper=[55676.78655199683, 55676.78655199683, 55676.78655199683]
+2025-12-18 09:06:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52091.95266626202, 52091.95266626202, 52091.95266626202], CI_lower: [48507.118780527206, 48507.118780527206, 48507.118780527206], CI_upper: [55676.78655199683, 55676.78655199683, 55676.78655199683]
+2025-12-18 09:06:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 48507.118780527206, 48507.118780527206, 48507.118780527206], upper=[np.float64(51997.94985507246), 55676.78655199683, 55676.78655199683, 55676.78655199683]
+2025-12-18 09:06:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 50519.846953909895, 2025: 50519.846953909895, 2026: 50519.846953909895}, values=[50519.846953909895, 50519.846953909895, 50519.846953909895], CI_lower=[47474.166522510044, 47474.166522510044, 47474.166522510044], CI_upper=[53565.527385309746, 53565.527385309746, 53565.527385309746]
+2025-12-18 09:06:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50519.846953909895, 50519.846953909895, 50519.846953909895], CI_lower: [47474.166522510044, 47474.166522510044, 47474.166522510044], CI_upper: [53565.527385309746, 53565.527385309746, 53565.527385309746]
+2025-12-18 09:06:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 47474.166522510044, 47474.166522510044, 47474.166522510044], upper=[np.float64(51997.94985507246), 53565.527385309746, 53565.527385309746, 53565.527385309746]
+2025-12-18 09:06:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 53493.048769779176, 2025: 53493.048769779176, 2026: 53493.048769779176}, values=[53493.048769779176, 53493.048769779176, 53493.048769779176], CI_lower=[50308.61274201913, 50308.61274201913, 50308.61274201913], CI_upper=[56677.48479753922, 56677.48479753922, 56677.48479753922]
+2025-12-18 09:06:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53493.048769779176, 53493.048769779176, 53493.048769779176], CI_lower: [50308.61274201913, 50308.61274201913, 50308.61274201913], CI_upper: [56677.48479753922, 56677.48479753922, 56677.48479753922]
+2025-12-18 09:06:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 50308.61274201913, 50308.61274201913, 50308.61274201913], upper=[np.float64(51997.94985507246), 56677.48479753922, 56677.48479753922, 56677.48479753922]
+2025-12-18 09:06:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 57692.76661856175, 2025: 59354.82756959992, 2026: 61016.7487611824}, values=[57692.76661856175, 59354.82756959992, 61016.7487611824], CI_lower=[42699.99333029499, 44362.054281333156, 46023.97547291564], CI_upper=[72685.53990682852, 74347.60085786668, 76009.52204944917]
+2025-12-18 09:06:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57692.76661856175, 59354.82756959992, 61016.7487611824], CI_lower: [42699.99333029499, 44362.054281333156, 46023.97547291564], CI_upper: [72685.53990682852, 74347.60085786668, 76009.52204944917]
+2025-12-18 09:06:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 42699.99333029499, 44362.054281333156, 46023.97547291564], upper=[np.float64(51997.94985507246), 72685.53990682852, 74347.60085786668, 76009.52204944917]
+2025-12-18 09:06:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 55236.49716391332, 2025: 56719.056649605314, 2026: 58201.616135297314}, values=[55236.49716391332, 56719.056649605314, 58201.616135297314], CI_lower=[51929.96043396974, 53412.51991966173, 54895.07940535373], CI_upper=[58543.033893856904, 60025.593379548896, 61508.152865240896]
+2025-12-18 09:06:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55236.49716391332, 56719.056649605314, 58201.616135297314], CI_lower: [51929.96043396974, 53412.51991966173, 54895.07940535373], CI_upper: [58543.033893856904, 60025.593379548896, 61508.152865240896]
+2025-12-18 09:06:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51997.94985507246), 51929.96043396974, 53412.51991966173, 54895.07940535373], upper=[np.float64(51997.94985507246), 58543.033893856904, 60025.593379548896, 61508.152865240896]
+2025-12-18 09:06:07 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 09:06:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 53366.45512930583, 2025: 54754.455234085675, 2026: 56142.45533886552}, values=[53366.45512930583, 54754.455234085675, 56142.45533886552], CI_lower=[50871.80641430615, 52259.80651908599, 53647.806623865836], CI_upper=[55861.103844305515, 57249.10394908536, 58637.1040538652]
+2025-12-18 09:06:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53366.45512930583, 54754.455234085675, 56142.45533886552], CI_lower: [50871.80641430615, 52259.80651908599, 53647.806623865836], CI_upper: [55861.103844305515, 57249.10394908536, 58637.1040538652]
+2025-12-18 09:06:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 50871.80641430615, 52259.80651908599, 53647.806623865836], upper=[np.float64(33547.275072463766), 55861.103844305515, 57249.10394908536, 58637.1040538652]
+2025-12-18 09:06:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 53424.936639658874, 2025: 54832.37931163376, 2026: 56241.8670705182}, values=[53424.936639658874, 54832.37931163376, 56241.8670705182], CI_lower=[50930.67795676104, 52338.12062873593, 53747.60838762037], CI_upper=[55919.195322556705, 57326.63799453159, 58736.12575341603]
+2025-12-18 09:06:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53424.936639658874, 54832.37931163376, 56241.8670705182], CI_lower: [50930.67795676104, 52338.12062873593, 53747.60838762037], CI_upper: [55919.195322556705, 57326.63799453159, 58736.12575341603]
+2025-12-18 09:06:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 50930.67795676104, 52338.12062873593, 53747.60838762037], upper=[np.float64(33547.275072463766), 55919.195322556705, 57326.63799453159, 58736.12575341603]
+2025-12-18 09:06:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 54753.384765625, 2025: 57089.42224121094, 2026: 59673.37516784668}, values=[54753.384765625, 57089.42224121094, 59673.37516784668], CI_lower=[52366.887028056284, 54702.92450364222, 57286.877430277964], CI_upper=[57139.882503193716, 59475.91997877965, 62059.872905415396]
+2025-12-18 09:06:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54753.384765625, 57089.42224121094, 59673.37516784668], CI_lower: [52366.887028056284, 54702.92450364222, 57286.877430277964], CI_upper: [57139.882503193716, 59475.91997877965, 62059.872905415396]
+2025-12-18 09:06:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 52366.887028056284, 54702.92450364222, 57286.877430277964], upper=[np.float64(33547.275072463766), 57139.882503193716, 59475.91997877965, 62059.872905415396]
+2025-12-18 09:06:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 50191.55104602702, 2025: 50191.55104602702, 2026: 50191.55104602702}, values=[50191.55104602702, 50191.55104602702, 50191.55104602702], CI_lower=[47392.61735495849, 47392.61735495849, 47392.61735495849], CI_upper=[52990.484737095554, 52990.484737095554, 52990.484737095554]
+2025-12-18 09:06:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50191.55104602702, 50191.55104602702, 50191.55104602702], CI_lower: [47392.61735495849, 47392.61735495849, 47392.61735495849], CI_upper: [52990.484737095554, 52990.484737095554, 52990.484737095554]
+2025-12-18 09:06:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 47392.61735495849, 47392.61735495849, 47392.61735495849], upper=[np.float64(33547.275072463766), 52990.484737095554, 52990.484737095554, 52990.484737095554]
+2025-12-18 09:06:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 48499.17895202038, 2025: 48499.17895202038, 2026: 48499.17895202038}, values=[48499.17895202038, 48499.17895202038, 48499.17895202038], CI_lower=[45841.98902201639, 45841.98902201639, 45841.98902201639], CI_upper=[51156.36888202438, 51156.36888202438, 51156.36888202438]
+2025-12-18 09:06:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48499.17895202038, 48499.17895202038, 48499.17895202038], CI_lower: [45841.98902201639, 45841.98902201639, 45841.98902201639], CI_upper: [51156.36888202438, 51156.36888202438, 51156.36888202438]
+2025-12-18 09:06:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 45841.98902201639, 45841.98902201639, 45841.98902201639], upper=[np.float64(33547.275072463766), 51156.36888202438, 51156.36888202438, 51156.36888202438]
+2025-12-18 09:06:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 51589.1008483879, 2025: 51589.1008483879, 2026: 51589.1008483879}, values=[51589.1008483879, 51589.1008483879, 51589.1008483879], CI_lower=[49127.24610671859, 49127.24610671859, 49127.24610671859], CI_upper=[54050.95559005721, 54050.95559005721, 54050.95559005721]
+2025-12-18 09:06:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51589.1008483879, 51589.1008483879, 51589.1008483879], CI_lower: [49127.24610671859, 49127.24610671859, 49127.24610671859], CI_upper: [54050.95559005721, 54050.95559005721, 54050.95559005721]
+2025-12-18 09:06:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 49127.24610671859, 49127.24610671859, 49127.24610671859], upper=[np.float64(33547.275072463766), 54050.95559005721, 54050.95559005721, 54050.95559005721]
+2025-12-18 09:06:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 56133.43596303164, 2025: 57789.04799707766, 2026: 59444.6421743476}, values=[56133.43596303164, 57789.04799707766, 59444.6421743476], CI_lower=[41965.60666870216, 43621.21870274818, 45276.81288001812], CI_upper=[70301.26525736111, 71956.87729140715, 73612.47146867707]
+2025-12-18 09:06:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56133.43596303164, 57789.04799707766, 59444.6421743476], CI_lower: [41965.60666870216, 43621.21870274818, 45276.81288001812], CI_upper: [70301.26525736111, 71956.87729140715, 73612.47146867707]
+2025-12-18 09:06:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 41965.60666870216, 43621.21870274818, 45276.81288001812], upper=[np.float64(33547.275072463766), 70301.26525736111, 71956.87729140715, 73612.47146867707]
+2025-12-18 09:06:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 52945.40768499691, 2025: 54416.54950524434, 2026: 55887.69132549176}, values=[52945.40768499691, 54416.54950524434, 55887.69132549176], CI_lower=[50498.151962093245, 51969.29378234067, 53440.43560258809], CI_upper=[55392.66340790058, 56863.805228148005, 58334.94704839543]
+2025-12-18 09:06:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52945.40768499691, 54416.54950524434, 55887.69132549176], CI_lower: [50498.151962093245, 51969.29378234067, 53440.43560258809], CI_upper: [55392.66340790058, 56863.805228148005, 58334.94704839543]
+2025-12-18 09:06:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33547.275072463766), 50498.151962093245, 51969.29378234067, 53440.43560258809], upper=[np.float64(33547.275072463766), 55392.66340790058, 56863.805228148005, 58334.94704839543]
+2025-12-18 09:06:14 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 09:06:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 56750.13503635628, 2025: 58164.873312650714, 2026: 59579.61158894515}, values=[56750.13503635628, 58164.873312650714, 59579.61158894515], CI_lower=[53244.81244523165, 54659.55072152608, 56074.28899782051], CI_upper=[60255.457627480915, 61670.19590377535, 63084.93418006978]
+2025-12-18 09:06:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56750.13503635628, 58164.873312650714, 59579.61158894515], CI_lower: [53244.81244523165, 54659.55072152608, 56074.28899782051], CI_upper: [60255.457627480915, 61670.19590377535, 63084.93418006978]
+2025-12-18 09:06:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 53244.81244523165, 54659.55072152608, 56074.28899782051], upper=[np.float64(39798.04971319312), 60255.457627480915, 61670.19590377535, 63084.93418006978]
+2025-12-18 09:06:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 56317.625178426504, 2025: 57588.572674915195, 2026: 58844.39538678527}, values=[56317.625178426504, 57588.572674915195, 58844.39538678527], CI_lower=[52827.51668405623, 54098.46418054492, 55354.286892414995], CI_upper=[59807.73367279678, 61078.68116928547, 62334.50388115554]
+2025-12-18 09:06:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56317.625178426504, 57588.572674915195, 58844.39538678527], CI_lower: [52827.51668405623, 54098.46418054492, 55354.286892414995], CI_upper: [59807.73367279678, 61078.68116928547, 62334.50388115554]
+2025-12-18 09:06:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 52827.51668405623, 54098.46418054492, 55354.286892414995], upper=[np.float64(39798.04971319312), 59807.73367279678, 61078.68116928547, 62334.50388115554]
+2025-12-18 09:06:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 58937.21260070801, 2025: 62039.17778015137, 2026: 65610.82472229004}, values=[58937.21260070801, 62039.17778015137, 65610.82472229004], CI_lower=[55753.51334237478, 58855.47852181814, 62427.125463956814], CI_upper=[62120.91185904123, 65222.87703848459, 68794.52398062327]
+2025-12-18 09:06:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58937.21260070801, 62039.17778015137, 65610.82472229004], CI_lower: [55753.51334237478, 58855.47852181814, 62427.125463956814], CI_upper: [62120.91185904123, 65222.87703848459, 68794.52398062327]
+2025-12-18 09:06:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 55753.51334237478, 58855.47852181814, 62427.125463956814], upper=[np.float64(39798.04971319312), 62120.91185904123, 65222.87703848459, 68794.52398062327]
+2025-12-18 09:06:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 53395.924105138285, 2025: 53395.924105138285, 2026: 53395.924105138285}, values=[53395.924105138285, 53395.924105138285, 53395.924105138285], CI_lower=[49804.8418747537, 49804.8418747537, 49804.8418747537], CI_upper=[56987.00633552287, 56987.00633552287, 56987.00633552287]
+2025-12-18 09:06:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53395.924105138285, 53395.924105138285, 53395.924105138285], CI_lower: [49804.8418747537, 49804.8418747537, 49804.8418747537], CI_upper: [56987.00633552287, 56987.00633552287, 56987.00633552287]
+2025-12-18 09:06:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 49804.8418747537, 49804.8418747537, 49804.8418747537], upper=[np.float64(39798.04971319312), 56987.00633552287, 56987.00633552287, 56987.00633552287]
+2025-12-18 09:06:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 51766.745887994155, 2025: 51766.745887994155, 2026: 51766.745887994155}, values=[51766.745887994155, 51766.745887994155, 51766.745887994155], CI_lower=[48601.732992927435, 48601.732992927435, 48601.732992927435], CI_upper=[54931.758783060875, 54931.758783060875, 54931.758783060875]
+2025-12-18 09:06:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51766.745887994155, 51766.745887994155, 51766.745887994155], CI_lower: [48601.732992927435, 48601.732992927435, 48601.732992927435], CI_upper: [54931.758783060875, 54931.758783060875, 54931.758783060875]
+2025-12-18 09:06:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 48601.732992927435, 48601.732992927435, 48601.732992927435], upper=[np.float64(39798.04971319312), 54931.758783060875, 54931.758783060875, 54931.758783060875]
+2025-12-18 09:06:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 55083.79295774185, 2025: 55083.79295774185, 2026: 55083.79295774185}, values=[55083.79295774185, 55083.79295774185, 55083.79295774185], CI_lower=[51990.694256371666, 51990.694256371666, 51990.694256371666], CI_upper=[58176.89165911203, 58176.89165911203, 58176.89165911203]
+2025-12-18 09:06:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55083.79295774185, 55083.79295774185, 55083.79295774185], CI_lower: [51990.694256371666, 51990.694256371666, 51990.694256371666], CI_upper: [58176.89165911203, 58176.89165911203, 58176.89165911203]
+2025-12-18 09:06:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 51990.694256371666, 51990.694256371666, 51990.694256371666], upper=[np.float64(39798.04971319312), 58176.89165911203, 58176.89165911203, 58176.89165911203]
+2025-12-18 09:06:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 60223.598509725394, 2025: 61988.44954274213, 2026: 63753.293919809636}, values=[60223.598509725394, 61988.44954274213, 63753.293919809636], CI_lower=[44843.66808153174, 46608.51911454847, 48373.36349161598], CI_upper=[75603.52893791905, 77368.37997093578, 79133.22434800329]
+2025-12-18 09:06:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60223.598509725394, 61988.44954274213, 63753.293919809636], CI_lower: [44843.66808153174, 46608.51911454847, 48373.36349161598], CI_upper: [75603.52893791905, 77368.37997093578, 79133.22434800329]
+2025-12-18 09:06:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 44843.66808153174, 46608.51911454847, 48373.36349161598], upper=[np.float64(39798.04971319312), 75603.52893791905, 77368.37997093578, 79133.22434800329]
+2025-12-18 09:06:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 56329.762417518235, 2025: 57830.276428983416, 2026: 59330.790440448596}, values=[56329.762417518235, 57830.276428983416, 59330.790440448596], CI_lower=[52896.2999131989, 54396.81392466408, 55897.32793612926], CI_upper=[59763.22492183757, 61263.73893330275, 62764.25294476793]
+2025-12-18 09:06:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56329.762417518235, 57830.276428983416, 59330.790440448596], CI_lower: [52896.2999131989, 54396.81392466408, 55897.32793612926], CI_upper: [59763.22492183757, 61263.73893330275, 62764.25294476793]
+2025-12-18 09:06:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39798.04971319312), 52896.2999131989, 54396.81392466408, 55897.32793612926], upper=[np.float64(39798.04971319312), 59763.22492183757, 61263.73893330275, 62764.25294476793]
+2025-12-18 09:06:20 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 09:06:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 42.343470159362184, 2025: 42.376791101850856, 2026: 42.41011204433953}, values=[42.343470159362184, 42.376791101850856, 42.41011204433953], CI_lower=[41.6164267946684, 41.64974773715707, 41.68306867964574], CI_upper=[43.07051352405597, 43.10383446654464, 43.13715540903331]
+2025-12-18 09:06:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.343470159362184, 42.376791101850856, 42.41011204433953], CI_lower: [41.6164267946684, 41.64974773715707, 41.68306867964574], CI_upper: [43.07051352405597, 43.10383446654464, 43.13715540903331]
+2025-12-18 09:06:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 41.6164267946684, 41.64974773715707, 41.68306867964574], upper=[np.float64(42.20064262763299), 43.07051352405597, 43.10383446654464, 43.13715540903331]
+2025-12-18 09:06:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 42.9636194636405, 2025: 43.2031131682088, 2026: 43.46429337190784}, values=[42.9636194636405, 43.2031131682088, 43.46429337190784], CI_lower=[42.40703606308011, 42.64652976764842, 42.90770997134746], CI_upper=[43.52020286420088, 43.759696568769186, 44.02087677246823]
+2025-12-18 09:06:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.9636194636405, 43.2031131682088, 43.46429337190784], CI_lower: [42.40703606308011, 42.64652976764842, 42.90770997134746], CI_upper: [43.52020286420088, 43.759696568769186, 44.02087677246823]
+2025-12-18 09:06:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 42.40703606308011, 42.64652976764842, 42.90770997134746], upper=[np.float64(42.20064262763299), 43.52020286420088, 43.759696568769186, 44.02087677246823]
+2025-12-18 09:06:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 43.16827380284667, 2025: 43.550866751000285, 2026: 43.99303769879043}, values=[43.16827380284667, 43.550866751000285, 43.99303769879043], CI_lower=[42.62302712504085, 43.005620073194464, 43.44779102098461], CI_upper=[43.71352048065249, 44.096113428806106, 44.53828437659625]
+2025-12-18 09:06:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.16827380284667, 43.550866751000285, 43.99303769879043], CI_lower: [42.62302712504085, 43.005620073194464, 43.44779102098461], CI_upper: [43.71352048065249, 44.096113428806106, 44.53828437659625]
+2025-12-18 09:06:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 42.62302712504085, 43.005620073194464, 43.44779102098461], upper=[np.float64(42.20064262763299), 43.71352048065249, 44.096113428806106, 44.53828437659625]
+2025-12-18 09:06:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 42.64871740593901, 2025: 42.64871740593901, 2026: 42.64871740593901}, values=[42.64871740593901, 42.64871740593901, 42.64871740593901], CI_lower=[42.16342191954359, 42.16342191954359, 42.16342191954359], CI_upper=[43.13401289233443, 43.13401289233443, 43.13401289233443]
+2025-12-18 09:06:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.64871740593901, 42.64871740593901, 42.64871740593901], CI_lower: [42.16342191954359, 42.16342191954359, 42.16342191954359], CI_upper: [43.13401289233443, 43.13401289233443, 43.13401289233443]
+2025-12-18 09:06:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 42.16342191954359, 42.16342191954359, 42.16342191954359], upper=[np.float64(42.20064262763299), 43.13401289233443, 43.13401289233443, 43.13401289233443]
+2025-12-18 09:06:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42.373371950558, 2025: 42.373371950558, 2026: 42.373371950558}, values=[42.373371950558, 42.373371950558, 42.373371950558], CI_lower=[41.83364252001838, 41.83364252001838, 41.83364252001838], CI_upper=[42.913101381097626, 42.913101381097626, 42.913101381097626]
+2025-12-18 09:06:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.373371950558, 42.373371950558, 42.373371950558], CI_lower: [41.83364252001838, 41.83364252001838, 41.83364252001838], CI_upper: [42.913101381097626, 42.913101381097626, 42.913101381097626]
+2025-12-18 09:06:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 41.83364252001838, 41.83364252001838, 41.83364252001838], upper=[np.float64(42.20064262763299), 42.913101381097626, 42.913101381097626, 42.913101381097626]
+2025-12-18 09:06:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 42.61113606790634, 2025: 42.61113606790634, 2026: 42.61113606790634}, values=[42.61113606790634, 42.61113606790634, 42.61113606790634], CI_lower=[42.23887683925196, 42.23887683925196, 42.23887683925196], CI_upper=[42.983395296560715, 42.983395296560715, 42.983395296560715]
+2025-12-18 09:06:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.61113606790634, 42.61113606790634, 42.61113606790634], CI_lower: [42.23887683925196, 42.23887683925196, 42.23887683925196], CI_upper: [42.983395296560715, 42.983395296560715, 42.983395296560715]
+2025-12-18 09:06:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 42.23887683925196, 42.23887683925196, 42.23887683925196], upper=[np.float64(42.20064262763299), 42.983395296560715, 42.983395296560715, 42.983395296560715]
+2025-12-18 09:06:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 42.53214659838969, 2025: 42.59926993147215, 2026: 42.56839172699509}, values=[42.53214659838969, 42.59926993147215, 42.56839172699509], CI_lower=[22.599452742894396, 22.66657607597686, 22.635697871499797], CI_upper=[62.464840453884975, 62.53196378696744, 62.501085582490376]
+2025-12-18 09:06:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.53214659838969, 42.59926993147215, 42.56839172699509], CI_lower: [22.599452742894396, 22.66657607597686, 22.635697871499797], CI_upper: [62.464840453884975, 62.53196378696744, 62.501085582490376]
+2025-12-18 09:06:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 22.599452742894396, 22.66657607597686, 22.635697871499797], upper=[np.float64(42.20064262763299), 62.464840453884975, 62.53196378696744, 62.501085582490376]
+2025-12-18 09:06:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 42.62233405684353, 2025: 42.66151998320123, 2026: 42.70070590955893}, values=[42.62233405684353, 42.66151998320123, 42.70070590955893], CI_lower=[41.87878898549468, 41.91797491185238, 41.95716083821008], CI_upper=[43.365879128192375, 43.40506505455008, 43.444250980907775]
+2025-12-18 09:06:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.62233405684353, 42.66151998320123, 42.70070590955893], CI_lower: [41.87878898549468, 41.91797491185238, 41.95716083821008], CI_upper: [43.365879128192375, 43.40506505455008, 43.444250980907775]
+2025-12-18 09:06:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.20064262763299), 41.87878898549468, 41.91797491185238, 41.95716083821008], upper=[np.float64(42.20064262763299), 43.365879128192375, 43.40506505455008, 43.444250980907775]
+2025-12-18 09:06:26 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 09:06:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 39.40026444315582, 2025: 39.366335373969136, 2026: 39.33240630478247}, values=[39.40026444315582, 39.366335373969136, 39.33240630478247], CI_lower=[38.66764370233525, 38.633714633148564, 38.599785563961895], CI_upper=[40.13288518397639, 40.09895611478971, 40.06502704560304]
+2025-12-18 09:06:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.40026444315582, 39.366335373969136, 39.33240630478247], CI_lower: [38.66764370233525, 38.633714633148564, 38.599785563961895], CI_upper: [40.13288518397639, 40.09895611478971, 40.06502704560304]
+2025-12-18 09:06:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 38.66764370233525, 38.633714633148564, 38.599785563961895], upper=[np.float64(39.37812230835487), 40.13288518397639, 40.09895611478971, 40.06502704560304]
+2025-12-18 09:06:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.89997841328295, 2025: 38.69972592504928, 2026: 38.48197853277088}, values=[38.89997841328295, 38.69972592504928, 38.48197853277088], CI_lower=[38.272017698733386, 38.07176521049971, 37.854017818221315], CI_upper=[39.52793912783252, 39.327686639598845, 39.10993924732045]
+2025-12-18 09:06:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.89997841328295, 38.69972592504928, 38.48197853277088], CI_lower: [38.272017698733386, 38.07176521049971, 37.854017818221315], CI_upper: [39.52793912783252, 39.327686639598845, 39.10993924732045]
+2025-12-18 09:06:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 38.272017698733386, 38.07176521049971, 37.854017818221315], upper=[np.float64(39.37812230835487), 39.52793912783252, 39.327686639598845, 39.10993924732045]
+2025-12-18 09:06:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 38.948539077769965, 2025: 38.78223630832508, 2026: 38.60742799285799}, values=[38.948539077769965, 38.78223630832508, 38.60742799285799], CI_lower=[38.321138793269206, 38.15483602382432, 37.980027708357234], CI_upper=[39.575939362270724, 39.40963659282584, 39.23482827735875]
+2025-12-18 09:06:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.948539077769965, 38.78223630832508, 38.60742799285799], CI_lower: [38.321138793269206, 38.15483602382432, 37.980027708357234], CI_upper: [39.575939362270724, 39.40963659282584, 39.23482827735875]
+2025-12-18 09:06:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 38.321138793269206, 38.15483602382432, 37.980027708357234], upper=[np.float64(39.37812230835487), 39.575939362270724, 39.40963659282584, 39.23482827735875]
+2025-12-18 09:06:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 39.26831631355795, 2025: 39.26831631355795, 2026: 39.26831631355795}, values=[39.26831631355795, 39.26831631355795, 39.26831631355795], CI_lower=[38.6844624101037, 38.6844624101037, 38.6844624101037], CI_upper=[39.85217021701221, 39.85217021701221, 39.85217021701221]
+2025-12-18 09:06:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.26831631355795, 39.26831631355795, 39.26831631355795], CI_lower: [38.6844624101037, 38.6844624101037, 38.6844624101037], CI_upper: [39.85217021701221, 39.85217021701221, 39.85217021701221]
+2025-12-18 09:06:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 38.6844624101037, 38.6844624101037, 38.6844624101037], upper=[np.float64(39.37812230835487), 39.85217021701221, 39.85217021701221, 39.85217021701221]
+2025-12-18 09:06:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 39.411266276734054, 2025: 39.411266276734054, 2026: 39.411266276734054}, values=[39.411266276734054, 39.411266276734054, 39.411266276734054], CI_lower=[38.86837537675646, 38.86837537675646, 38.86837537675646], CI_upper=[39.95415717671165, 39.95415717671165, 39.95415717671165]
+2025-12-18 09:06:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.411266276734054, 39.411266276734054, 39.411266276734054], CI_lower: [38.86837537675646, 38.86837537675646, 38.86837537675646], CI_upper: [39.95415717671165, 39.95415717671165, 39.95415717671165]
+2025-12-18 09:06:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 38.86837537675646, 38.86837537675646, 38.86837537675646], upper=[np.float64(39.37812230835487), 39.95415717671165, 39.95415717671165, 39.95415717671165]
+2025-12-18 09:06:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 39.24248735071556, 2025: 39.24248735071556, 2026: 39.24248735071556}, values=[39.24248735071556, 39.24248735071556, 39.24248735071556], CI_lower=[38.75092587649209, 38.75092587649209, 38.75092587649209], CI_upper=[39.73404882493902, 39.73404882493902, 39.73404882493902]
+2025-12-18 09:06:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.24248735071556, 39.24248735071556, 39.24248735071556], CI_lower: [38.75092587649209, 38.75092587649209, 38.75092587649209], CI_upper: [39.73404882493902, 39.73404882493902, 39.73404882493902]
+2025-12-18 09:06:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 38.75092587649209, 38.75092587649209, 38.75092587649209], upper=[np.float64(39.37812230835487), 39.73404882493902, 39.73404882493902, 39.73404882493902]
+2025-12-18 09:06:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 39.540208958996466, 2025: 39.62244615930385, 2026: 39.664170490626795}, values=[39.540208958996466, 39.62244615930385, 39.664170490626795], CI_lower=[20.55864454420874, 20.640881744516122, 20.682606075839068], CI_upper=[58.52177337378419, 58.604010574091575, 58.64573490541452]
+2025-12-18 09:06:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.540208958996466, 39.62244615930385, 39.664170490626795], CI_lower: [20.55864454420874, 20.640881744516122, 20.682606075839068], CI_upper: [58.52177337378419, 58.604010574091575, 58.64573490541452]
+2025-12-18 09:06:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 20.55864454420874, 20.640881744516122, 20.682606075839068], upper=[np.float64(39.37812230835487), 58.52177337378419, 58.604010574091575, 58.64573490541452]
+2025-12-18 09:06:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 39.245374084427226, 2025: 39.20885568647222, 2026: 39.17233728851721}, values=[39.245374084427226, 39.20885568647222, 39.17233728851721], CI_lower=[38.47296478851071, 38.4364463905557, 38.399927992600695], CI_upper=[40.017783380343744, 39.98126498238874, 39.94474658443373]
+2025-12-18 09:06:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39.245374084427226, 39.20885568647222, 39.17233728851721], CI_lower: [38.47296478851071, 38.4364463905557, 38.399927992600695], CI_upper: [40.017783380343744, 39.98126498238874, 39.94474658443373]
+2025-12-18 09:06:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39.37812230835487), 38.47296478851071, 38.4364463905557, 38.399927992600695], upper=[np.float64(39.37812230835487), 40.017783380343744, 39.98126498238874, 39.94474658443373]
+2025-12-18 09:06:33 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 09:06:33 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 09:07:11 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 19622.1015625, 'mse': 1657655936.0, 'rmse': 40714.32101853106, 'r2': 0.1883029341697693}
+2025-12-18 09:07:12 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 09:07:38 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 4.100433826446533, 'mse': 82.86166381835938, 'rmse': 9.102838228726213, 'r2': 0.30312153697013855}
+2025-12-18 09:07:39 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 09:08:07 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.129307746887207, 'mse': 631.84375, 'rmse': 25.136502342211415, 'r2': -5.454201698303223}
+2025-12-18 09:08:08 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 09:08:22 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/North_Dakota/population/1-year/figures/ml/deep_learning
+2025-12-18 09:08:23 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 09:08:23 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 09:08:23 [DEBUG] census_eda.main:  Running LLM analysis for state: North Dakota
+2025-12-18 09:08:23 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 09:08:23 [INFO] census_eda.ml: [LLM] State context loaded: North Dakota
+2025-12-18 09:08:23 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [API] Total request: ~2499 tokens (system: ~2318, user: ~181)
+2025-12-18 09:08:23 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [API] Received response: 3892 chars
+2025-12-18 09:08:35 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3892 chars)
+2025-12-18 09:08:35 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [API] Total request: ~2639 tokens (system: ~2318, user: ~321)
+2025-12-18 09:08:35 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [API] Received response: 3364 chars
+2025-12-18 09:08:44 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3364 chars)
+2025-12-18 09:08:44 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [API] Total request: ~2866 tokens (system: ~2318, user: ~548)
+2025-12-18 09:08:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [API] Received response: 4116 chars
+2025-12-18 09:08:56 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4116 chars)
+2025-12-18 09:08:56 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [API] Total request: ~2658 tokens (system: ~2318, user: ~340)
+2025-12-18 09:08:56 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [API] Received response: 4141 chars
+2025-12-18 09:09:11 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4141 chars)
+2025-12-18 09:09:11 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [API] Total request: ~2508 tokens (system: ~2318, user: ~190)
+2025-12-18 09:09:11 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [API] Received response: 3828 chars
+2025-12-18 09:09:23 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3828 chars)
+2025-12-18 09:09:23 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [LLM] User prompt: 8759 chars (~2189 tokens)
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [API] Total request: ~4507 tokens (system: ~2318, user: ~2189)
+2025-12-18 09:09:23 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [API] Received response: 4063 chars
+2025-12-18 09:09:36 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (4063 chars)
+2025-12-18 09:09:36 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [LLM] User prompt: 5264 chars (~1316 tokens)
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [API] Total request: ~3634 tokens (system: ~2318, user: ~1316)
+2025-12-18 09:09:36 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [API] Received response: 3268 chars
+2025-12-18 09:09:47 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3268 chars)
+2025-12-18 09:09:47 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [LLM] User prompt: 692 chars (~173 tokens)
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [API] Total request: ~2491 tokens (system: ~2318, user: ~173)
+2025-12-18 09:09:47 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [API] Received response: 3120 chars
+2025-12-18 09:09:57 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3120 chars)
+2025-12-18 09:09:57 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [LLM] User prompt: 5552 chars (~1388 tokens)
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [API] Total request: ~3706 tokens (system: ~2318, user: ~1388)
+2025-12-18 09:09:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [API] Received response: 4050 chars
+2025-12-18 09:10:10 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4050 chars)
+2025-12-18 09:10:10 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [LLM] User prompt: 1827 chars (~456 tokens)
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [API] Total request: ~2774 tokens (system: ~2318, user: ~456)
+2025-12-18 09:10:10 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [API] Received response: 4328 chars
+2025-12-18 09:10:23 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4328 chars)
+2025-12-18 09:10:23 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Dakota
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Dakota
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4384 chars
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1096
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Dakota
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction (Bakken formation), Agriculture (wheat, soybeans, corn, cattle), Energy production (coal, wind), Manufacturing (farm equipment, food processing), Federal government and military
+  Trends: Extreme boom-bust cycles. Oil boom 2011-2014 (GDP doubled). Bust 2015-2016 (oil price crash). Modest recovery 2017-2019. Boom 2021-2023. Led nation in GDP growth Q1 2023 (12.4%). Agriculture provides stability
+  Income: High per capita GDP ($75k, #7 nationally) due to oil wealth but small population. Median household income above national average during booms. Agriculture provides stable middle-class income
+  Dominant Sector: Mining and oil/gas extraction
+
+DEMOGRAPHIC PROFILE:
+  Trends: Boom-bust population cycles. Rapid growth 2011-2015 (oil boom), decline 2016-2019 (bust), growth 2020-2023. #1 in net migration during booms. One of least populous states
+  Migration: Massive in-migration during oil booms from across US (Texas, California, Midwest). Out-migration during busts. Cyclical 'man camp' workers. Limited international immigration. Return to family farms during busts
+  Education: Moderate educational attainment (30% bachelor's or higher). Strong vocational/technical training. University of North Dakota. Agriculture extension programs. Oil boom didn't require degrees
+
+HOUSING MARKET:
+  Market: Boom-bust housing cycles. Median home ~$280k (2023). Very affordable in agricultural areas during busts. Oil patch housing shortages during booms (temporary 'man camps' erected)
+  Affordability: Generally affordable. Spikes during oil booms (Williston housing crisis 2012-2014). Returns to affordable during busts. Among most affordable states outside boom periods
+  Challenges: Boom-bust volatility, Rural housing shortages, Harsh climate weatherization needs, Tribal land housing deficits, Aging housing stock in agricultural towns, Oil patch temporary housing
+
+POLITY:
+  Policy: Strongly conservative, Republican-dominated. Low taxes, light regulation. Pro-energy, pro-agriculture. Fiscal conservatism but oil revenue allows spending
+  Housing: Minimal state intervention. Local control. Oil boom created temporary 'man camps.' Limited affordable housing programs. Pro-development stance
+  Labor: Right-to-work state, $7.25 federal minimum wage, very light regulation. Business-friendly. Agriculture worker protections. Oil field safety regulations
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling prairie. Missouri River corridor. Badlands in west. Bakken oil formation in northwest. Extremely flat in Red River Valley (east)
+  Urban/Rural: 60% urban in four main cities (Fargo, Bismarck, Grand Forks, Minot). 40% rural (agriculture, oil patch, tribal lands). Vast unpopulated areas
+  Infrastructure: Limited road network outside urban areas. Extensive oil field infrastructure in west. Air Force bases. Agricultural rail network. Broadband challenges in rural areas. Aging water infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Bakken oil boom explodes, GDP doubles, population surge, infrastructure strain, man camps proliferate; 2014-2016: Oil price crash, bust begins, unemployment rises, out-migration, budget cuts, agricultural sector stable; 2017-2019: Dakota Access Pipeline protests, gradual recovery, population stabilizes, infrastructure improvements from boom tax revenue; 2020-2023: Oil boom returns, led nation in GDP growth Q1 2023 (12.4%), agriculture strong, population growth resumes, housing prices spike again
+  Shocks: 2015-2016 oil price crash (severe), periodic agricultural droughts
+  Transitions: Oil boom transformed economy 2011-2014. Coal industry declining. Wind energy sector growing. Agriculture technology advancing
+
+COMPARATIVE:
+  Benchmarks: Low population (#47) but high per capita GDP (#7). Low unemployment during booms. Above-average median income. Affordable housing. Low poverty rate. Low educational attainment by some measures but high vocational skills
+  Peer States: Wyoming (oil/gas, low population), Alaska (oil economy, extreme climate), Montana (agriculture, low density)
+  Unique: Extreme boom-bust oil economy cycles. Most dramatic GDP swings nationally. 'Man camp' phenomenon unique. Oil wealth with small population creates high per capita income. Agriculture stability counterbalances. Least diverse state. Harshest climate
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Dakota
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [PROMPT] State context injected (4384 chars)
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9272 chars (~2318 tokens)
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [API] Total request: ~2727 tokens (system: ~2318, user: ~409)
+2025-12-18 09:10:23 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 09:10:40 [DEBUG] census_eda.ml: [API] Received response: 5647 chars
+2025-12-18 09:10:40 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5647 chars)
+2025-12-18 09:10:40 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 09:10:40 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 09:10:40 [INFO] census_eda.main: [REPORT] Generated: report_North_Dakota_population_20251218_091040.txt
+2025-12-18 09:10:40 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for North Dakota!
+2025-12-18 09:10:41 [INFO] census_eda.memory: process_North Dakota_population_1-year:EXIT: 10874.1MB (delta: -184.8MB)
+2025-12-18 09:10:42 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 09:10:43 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 09:10:45 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 09:10:46 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 09:10:48 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 09:10:49 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 09:10:51 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 09:10:52 [INFO] census_eda.memory: Cleared all caches

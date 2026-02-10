@@ -1,0 +1,1282 @@
+2025-12-18 01:31:34 [INFO] census_eda: Logging context set: state=Montana, survey=population, scope=1-year
+2025-12-18 01:31:34 [INFO] census_eda: Log file: ./logs/Montana/1-year/population/1-year_population_25_12_18_0131.log
+2025-12-18 01:31:34 [INFO] census_eda.main: ======================================================================
+2025-12-18 01:31:34 [INFO] census_eda.main: [POPULATION] Processing Montana (1-year)...
+2025-12-18 01:31:34 [INFO] census_eda.main: ======================================================================
+2025-12-18 01:31:34 [INFO] census_eda.memory: process_Montana_population_1-year:ENTER: 8890.6MB (delta: +0.0MB)
+2025-12-18 01:31:34 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 01:31:34 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/30/*/*.csv
+2025-12-18 01:31:34 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 01:31:34 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pmt.csv
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,154 rows, 260 columns
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p30.csv
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,221 rows, 260 columns
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pmt.csv
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,878 rows, 260 columns
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pmt.csv
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,113 rows, 260 columns
+2025-12-18 01:31:35 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pmt.csv
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,070 rows, 260 columns
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pmt.csv
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 8,958 rows, 260 columns
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p30.csv
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,336 rows, 260 columns
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pmt.csv
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,103 rows, 260 columns
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pmt.csv
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,161 rows, 260 columns
+2025-12-18 01:31:36 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p30.csv
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,649 rows, 260 columns
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p30.csv
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 11,116 rows, 260 columns
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p30.csv
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,615 rows, 260 columns
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p30.csv
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 11,383 rows, 260 columns
+2025-12-18 01:31:37 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pmt.csv
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,841 rows, 260 columns
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pmt.csv
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,812 rows, 260 columns
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pmt.csv
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,965 rows, 260 columns
+2025-12-18 01:31:38 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 01:31:39 [VERBOSE] census_eda.processing.loader: Combined into 161,375 total rows, 260 columns
+2025-12-18 01:31:39 [INFO] census_eda.main: Loaded 161,375 records
+2025-12-18 01:31:39 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 161375 valid, 16 unique
+2025-12-18 01:31:39 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 01:31:39 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 01:31:40 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 01:31:40 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 01:31:40 [DEBUG] census_eda.main: Feature engineering complete: (161375, 292)
+2025-12-18 01:31:41 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 01:31:41 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 01:32:11 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 01:32:11 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 01:32:11 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(161375, 292)
+2025-12-18 01:32:11 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 01:32:11 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 161375
+2025-12-18 01:32:11 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(161375, 292)
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(9070), np.int64(2008): np.int64(9103), np.int64(2009): np.int64(8958), np.int64(2010): np.int64(9812), np.int64(2011): np.int64(9965), np.int64(2012): np.int64(10154), np.int64(2013): np.int64(10113), np.int64(2014): np.int64(9878), np.int64(2015): np.int64(9841), np.int64(2016): np.int64(10161), np.int64(2017): np.int64(10221), np.int64(2018): np.int64(10336), np.int64(2019): np.int64(10649), np.int64(2021): np.int64(10615), np.int64(2022): np.int64(11116), np.int64(2023): np.int64(11383)}
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(161375, 292)
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 161375 non-null values (zeros excluded if needed)
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 01:32:12 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 161375 non-null values (zeros excluded if needed)
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2097.00
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 161375 non-null values (zeros excluded if needed)
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 66127 non-null values (zeros excluded if needed)
+2025-12-18 01:32:13 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 185.00
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 23822 non-null values (zeros excluded if needed)
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 325000.00
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 9978 non-null values (zeros excluded if needed)
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 76000.00
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 1728 non-null values (zeros excluded if needed)
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 01:32:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 01:32:15 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 18080 non-null values (zeros excluded if needed)
+2025-12-18 01:32:15 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 178000.00
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 13538 non-null values (zeros excluded if needed)
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 412000.00
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 3411 non-null values (zeros excluded if needed)
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Value range: 1000.00 to 30000.00
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 37113 non-null values (zeros excluded if needed)
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 77527 non-null values (zeros excluded if needed)
+2025-12-18 01:32:16 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 503000.00
+2025-12-18 01:32:19 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 01:32:28 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 01:32:28 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 01:32:29 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 01:32:29 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 01:32:29 [DEBUG] census_eda.memory: Skipping sampling: 42693MB available (>16GB)
+2025-12-18 01:32:29 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 161375 rows
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(161375, 292)
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 161375 non-null values
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 161375 non-null values
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2097.00
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 161375 non-null values
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 66127 non-null values
+2025-12-18 01:33:00 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 185.00
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 23822 non-null values
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 325000.00
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 9978 non-null values
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 76000.00
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 1728 non-null values
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 18080 non-null values
+2025-12-18 01:33:02 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 178000.00
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 13538 non-null values
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 412000.00
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 3411 non-null values
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Data range: 1000.00 to 30000.00
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 37113 non-null values
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 77527 non-null values
+2025-12-18 01:33:04 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 503000.00
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 86451 non-null values
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 69580 non-null values
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 31187 non-null values
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 131878 non-null values
+2025-12-18 01:33:05 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 01:33:15 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 01:33:23 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 01:33:31 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 01:33:44 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 01:33:44 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 01:33:44 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 01:33:45 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 01:33:46 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 01:33:47 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 01:33:48 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 01:33:48 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 01:33:48 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 01:33:49 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 01:33:50 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 01:33:51 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 01:33:51 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 01:33:51 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 01:33:52 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 01:33:54 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 01:33:54 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 01:33:54 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 01:33:54 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 01:33:55 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 01:33:57 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 01:33:57 [DEBUG] census_eda.memory: Skipping sampling: 42666MB available (>16GB)
+2025-12-18 01:34:01 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 01:34:01 [DEBUG] census_eda.memory: Skipping sampling: 42656MB available (>16GB)
+2025-12-18 01:34:10 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 01:34:10 [DEBUG] census_eda.memory: Skipping sampling: 42666MB available (>16GB)
+2025-12-18 01:34:13 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 01:34:20 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 01:34:20 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 01:34:20 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 01:34:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 01:34:22 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 01:34:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 01:34:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 01:34:24 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 01:34:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 01:34:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 01:34:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 01:34:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 01:34:25 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 01:34:26 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 01:34:26 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 01:34:26 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 01:34:26 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 01:34:27 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 01:34:28 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 01:34:29 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 01:34:30 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 01:34:31 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 01:34:32 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 01:34:32 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 01:34:32 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 01:34:33 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 01:34:34 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 01:34:35 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 01:34:36 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 01:34:36 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 01:34:37 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 01:34:38 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 01:34:40 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 01:34:42 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 01:34:43 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 01:34:44 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Montana/population/1-year/figures
+2025-12-18 01:34:44 [DEBUG] census_eda.memory: Skipping sampling: 42627MB available (>16GB)
+2025-12-18 01:34:44 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 01:34:44 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 01:34:45 [INFO] census_eda.memory: [ML-START]: 9785.5MB (delta: +894.8MB)
+2025-12-18 01:34:45 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 01:34:45 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 01:34:45 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 651 samples (was 652)
+2025-12-18 01:34:45 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:34:45 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:34:45 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:34:45 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:34:45 [INFO] census_eda.memory: tune_ridge:ENTER: 9785.5MB (delta: +0.0MB)
+2025-12-18 01:34:46 [INFO] census_eda.memory: tune_ridge:EXIT: 9785.9MB (delta: +0.4MB)
+2025-12-18 01:34:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 01:34:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0704
+2025-12-18 01:34:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:34:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:34:46 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:34:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:34:46 [INFO] census_eda.memory: tune_lasso:ENTER: 9785.9MB (delta: +0.0MB)
+2025-12-18 01:34:47 [INFO] census_eda.memory: tune_lasso:EXIT: 9785.9MB (delta: +0.0MB)
+2025-12-18 01:34:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 01:34:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0584
+2025-12-18 01:34:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:34:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:34:47 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:34:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:34:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 9785.9MB (delta: +0.0MB)
+2025-12-18 01:34:50 [INFO] census_eda.memory: tune_random_forest:EXIT: 9786.3MB (delta: +0.4MB)
+2025-12-18 01:34:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 01:34:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0084
+2025-12-18 01:34:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:34:51 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:34:51 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:34:51 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:34:51 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 9786.5MB (delta: +0.2MB)
+2025-12-18 01:34:52 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 9786.5MB (delta: +0.0MB)
+2025-12-18 01:34:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 01:34:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.3967
+2025-12-18 01:34:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:34:53 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 01:34:53 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 626 samples (was 652)
+2025-12-18 01:34:53 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:34:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:34:53 [INFO] census_eda.ml.regression: [TUNE] Data: 626 samples, 10 features
+2025-12-18 01:34:53 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:34:53 [INFO] census_eda.memory: tune_ridge:ENTER: 9786.5MB (delta: +0.0MB)
+2025-12-18 01:34:53 [INFO] census_eda.memory: tune_ridge:EXIT: 9786.5MB (delta: +0.0MB)
+2025-12-18 01:34:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 01:34:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0794
+2025-12-18 01:34:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:34:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:34:53 [INFO] census_eda.ml.regression: [TUNE] Data: 626 samples, 10 features
+2025-12-18 01:34:53 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:34:53 [INFO] census_eda.memory: tune_lasso:ENTER: 9786.5MB (delta: +0.0MB)
+2025-12-18 01:34:54 [INFO] census_eda.memory: tune_lasso:EXIT: 9786.5MB (delta: +0.0MB)
+2025-12-18 01:34:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 01:34:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0649
+2025-12-18 01:34:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:34:54 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:34:54 [INFO] census_eda.ml.regression: [TUNE] Data: 626 samples, 10 features
+2025-12-18 01:34:54 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:34:54 [INFO] census_eda.memory: tune_random_forest:ENTER: 9786.5MB (delta: +0.0MB)
+2025-12-18 01:34:57 [INFO] census_eda.memory: tune_random_forest:EXIT: 9786.5MB (delta: +0.0MB)
+2025-12-18 01:34:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 01:34:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0120
+2025-12-18 01:34:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:34:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:34:58 [INFO] census_eda.ml.regression: [TUNE] Data: 626 samples, 10 features
+2025-12-18 01:34:58 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:34:58 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 9786.6MB (delta: +0.1MB)
+2025-12-18 01:34:59 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:34:59 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 01:34:59 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.4716
+2025-12-18 01:34:59 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:34:59 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 01:34:59 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 651 samples (was 652)
+2025-12-18 01:34:59 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:34:59 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:34:59 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:34:59 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:34:59 [INFO] census_eda.memory: tune_ridge:ENTER: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:00 [INFO] census_eda.memory: tune_ridge:EXIT: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:00 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 01:35:00 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0658
+2025-12-18 01:35:00 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:35:00 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:35:00 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:35:00 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:35:00 [INFO] census_eda.memory: tune_lasso:ENTER: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:01 [INFO] census_eda.memory: tune_lasso:EXIT: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 01:35:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0543
+2025-12-18 01:35:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:35:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:35:01 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:35:01 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:35:01 [INFO] census_eda.memory: tune_random_forest:ENTER: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:03 [INFO] census_eda.memory: tune_random_forest:EXIT: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 01:35:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0043
+2025-12-18 01:35:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:35:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:35:05 [INFO] census_eda.ml.regression: [TUNE] Data: 651 samples, 10 features
+2025-12-18 01:35:05 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:35:05 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:06 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 01:35:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.4485
+2025-12-18 01:35:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:35:06 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 01:35:06 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:35:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:35:06 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:06 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:35:06 [INFO] census_eda.memory: tune_ridge:ENTER: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:07 [INFO] census_eda.memory: tune_ridge:EXIT: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:07 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 01:35:07 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:35:07 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:35:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:35:07 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:07 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:35:07 [INFO] census_eda.memory: tune_lasso:ENTER: 9786.6MB (delta: +0.0MB)
+2025-12-18 01:35:08 [INFO] census_eda.memory: tune_lasso:EXIT: 9786.7MB (delta: +0.1MB)
+2025-12-18 01:35:08 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 01:35:08 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:35:08 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:35:08 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:35:08 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:08 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:35:08 [INFO] census_eda.memory: tune_random_forest:ENTER: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:10 [INFO] census_eda.memory: tune_random_forest:EXIT: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 01:35:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:35:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:35:11 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:35:11 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:11 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:35:11 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:12 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 1.0}
+2025-12-18 01:35:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 01:35:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:35:12 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 01:35:12 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 01:35:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 01:35:12 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:12 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:35:12 [INFO] census_eda.memory: tune_ridge:ENTER: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:13 [INFO] census_eda.memory: tune_ridge:EXIT: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:13 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 01:35:13 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0656
+2025-12-18 01:35:13 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:35:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 01:35:13 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:13 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 01:35:13 [INFO] census_eda.memory: tune_lasso:ENTER: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:14 [INFO] census_eda.memory: tune_lasso:EXIT: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 01:35:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0669
+2025-12-18 01:35:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 01:35:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 01:35:14 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:14 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:35:14 [INFO] census_eda.memory: tune_random_forest:ENTER: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:16 [INFO] census_eda.memory: tune_random_forest:EXIT: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 01:35:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0436
+2025-12-18 01:35:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:35:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 01:35:18 [INFO] census_eda.ml.regression: [TUNE] Data: 652 samples, 10 features
+2025-12-18 01:35:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 01:35:18 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:19 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:19 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 01:35:19 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1544
+2025-12-18 01:35:19 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 01:35:19 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 01:35:19 [INFO] census_eda.memory: [PRE-CLUSTERING]: 9786.7MB (delta: +0.0MB)
+2025-12-18 01:35:19 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 01:35:19 [INFO] census_eda.main: [CLUSTERING] KMeans on 652 samples...
+2025-12-18 01:35:19 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 01:35:19 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 652 samples (will sample if needed)...
+2025-12-18 01:35:19 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 01:35:19 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 01:35:19 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 01:35:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 01:35:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 01:35:19 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 52321.83320426941, 2025: 54487.38033866882, 2026: 56731.46118736267}, Values: [52321.83320426941, 54487.38033866882, 56731.46118736267]
+2025-12-18 01:35:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 01:35:20 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 52735.607511520386, 2025: 55521.745470047, 2026: 58521.88549232483}, Values: [52735.607511520386, 55521.745470047, 58521.88549232483]
+2025-12-18 01:35:20 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 01:35:20 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 54189.3717880249, 2025: 56937.0237121582, 2026: 59876.33218765259}, Values: [54189.3717880249, 56937.0237121582, 59876.33218765259]
+2025-12-18 01:35:20 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 01:35:20 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 44.54673711012369, 2025: 44.54673711012369, 2026: 44.54673711012369}, Values: [44.54673711012369, 44.54673711012369, 44.54673711012369]
+2025-12-18 01:35:20 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 01:35:20 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.4066169206053, 2025: 37.09031801111996, 2026: 36.68446763791144}, Values: [37.4066169206053, 37.09031801111996, 36.68446763791144]
+2025-12-18 01:35:20 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 01:35:46 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 01:35:46 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 01:35:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 49071.40385276172, 2025: 50242.13333191164, 2026: 51412.862811061554}, values=[49071.40385276172, 50242.13333191164, 51412.862811061554], CI_lower=[46042.78506556573, 47213.51454471565, 48384.24402386556], CI_upper=[52100.022639957715, 53270.75211910763, 54441.481598257546]
+2025-12-18 01:35:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49071.40385276172, 50242.13333191164, 51412.862811061554], CI_lower: [46042.78506556573, 47213.51454471565, 48384.24402386556], CI_upper: [52100.022639957715, 53270.75211910763, 54441.481598257546]
+2025-12-18 01:35:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 46042.78506556573, 47213.51454471565, 48384.24402386556], upper=[np.float64(46199.03237297014), 52100.022639957715, 53270.75211910763, 54441.481598257546]
+2025-12-18 01:35:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 52555.71403452754, 2025: 54884.8256149292, 2026: 57335.78283679485}, values=[52555.71403452754, 54884.8256149292, 57335.78283679485], CI_lower=[51050.61330861932, 53379.72488902098, 55830.682110886635], CI_upper=[54060.81476043576, 56389.92634083742, 58840.88356270307]
+2025-12-18 01:35:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52555.71403452754, 54884.8256149292, 57335.78283679485], CI_lower: [51050.61330861932, 53379.72488902098, 55830.682110886635], CI_upper: [54060.81476043576, 56389.92634083742, 58840.88356270307]
+2025-12-18 01:35:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 51050.61330861932, 53379.72488902098, 55830.682110886635], upper=[np.float64(46199.03237297014), 54060.81476043576, 56389.92634083742, 58840.88356270307]
+2025-12-18 01:35:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 52321.83320426941, 2025: 54487.38033866882, 2026: 56731.46118736267}, values=[52321.83320426941, 54487.38033866882, 56731.46118736267], CI_lower=[50822.16514099454, 52987.712275393955, 55231.7931240878], CI_upper=[53821.50126754428, 55987.04840194369, 58231.12925063754]
+2025-12-18 01:35:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52321.83320426941, 54487.38033866882, 56731.46118736267], CI_lower: [50822.16514099454, 52987.712275393955, 55231.7931240878], CI_upper: [53821.50126754428, 55987.04840194369, 58231.12925063754]
+2025-12-18 01:35:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 50822.16514099454, 52987.712275393955, 55231.7931240878], upper=[np.float64(46199.03237297014), 53821.50126754428, 55987.04840194369, 58231.12925063754]
+2025-12-18 01:35:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 48251.76505208291, 2025: 48251.76505208291, 2026: 48251.76505208291}, values=[48251.76505208291, 48251.76505208291, 48251.76505208291], CI_lower=[46164.518575451, 46164.518575451, 46164.518575451], CI_upper=[50339.01152871482, 50339.01152871482, 50339.01152871482]
+2025-12-18 01:35:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48251.76505208291, 48251.76505208291, 48251.76505208291], CI_lower: [46164.518575451, 46164.518575451, 46164.518575451], CI_upper: [50339.01152871482, 50339.01152871482, 50339.01152871482]
+2025-12-18 01:35:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 46164.518575451, 46164.518575451, 46164.518575451], upper=[np.float64(46199.03237297014), 50339.01152871482, 50339.01152871482, 50339.01152871482]
+2025-12-18 01:35:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 45662.19000772069, 2025: 45662.19000772069, 2026: 45662.19000772069}, values=[45662.19000772069, 45662.19000772069, 45662.19000772069], CI_lower=[42498.04672828732, 42498.04672828732, 42498.04672828732], CI_upper=[48826.333287154055, 48826.333287154055, 48826.333287154055]
+2025-12-18 01:35:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45662.19000772069, 45662.19000772069, 45662.19000772069], CI_lower: [42498.04672828732, 42498.04672828732, 42498.04672828732], CI_upper: [48826.333287154055, 48826.333287154055, 48826.333287154055]
+2025-12-18 01:35:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 42498.04672828732, 42498.04672828732, 42498.04672828732], upper=[np.float64(46199.03237297014), 48826.333287154055, 48826.333287154055, 48826.333287154055]
+2025-12-18 01:35:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 49034.47814220844, 2025: 49034.47814220844, 2026: 49034.47814220844}, values=[49034.47814220844, 49034.47814220844, 49034.47814220844], CI_lower=[47495.036455915186, 47495.036455915186, 47495.036455915186], CI_upper=[50573.9198285017, 50573.9198285017, 50573.9198285017]
+2025-12-18 01:35:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49034.47814220844, 49034.47814220844, 49034.47814220844], CI_lower: [47495.036455915186, 47495.036455915186, 47495.036455915186], CI_upper: [50573.9198285017, 50573.9198285017, 50573.9198285017]
+2025-12-18 01:35:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 47495.036455915186, 47495.036455915186, 47495.036455915186], upper=[np.float64(46199.03237297014), 50573.9198285017, 50573.9198285017, 50573.9198285017]
+2025-12-18 01:35:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 52085.36319517489, 2025: 53358.83669071612, 2026: 54632.297891973394}, values=[52085.36319517489, 53358.83669071612, 54632.297891973394], CI_lower=[37071.85848639953, 38345.331981940755, 39618.79318319803], CI_upper=[67098.86790395025, 68372.34139949147, 69645.80260074875]
+2025-12-18 01:35:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52085.36319517489, 53358.83669071612, 54632.297891973394], CI_lower: [37071.85848639953, 38345.331981940755, 39618.79318319803], CI_upper: [67098.86790395025, 68372.34139949147, 69645.80260074875]
+2025-12-18 01:35:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 37071.85848639953, 38345.331981940755, 39618.79318319803], upper=[np.float64(46199.03237297014), 67098.86790395025, 68372.34139949147, 69645.80260074875]
+2025-12-18 01:35:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 52875.09514747955, 2025: 55037.12817102501, 2026: 57199.161194570464}, values=[52875.09514747955, 55037.12817102501, 57199.161194570464], CI_lower=[50443.4638740337, 52605.49689757916, 54767.52992112462], CI_upper=[55306.7264209254, 57468.75944447086, 59630.79246801631]
+2025-12-18 01:35:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52875.09514747955, 55037.12817102501, 57199.161194570464], CI_lower: [50443.4638740337, 52605.49689757916, 54767.52992112462], CI_upper: [55306.7264209254, 57468.75944447086, 59630.79246801631]
+2025-12-18 01:35:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46199.03237297014), 50443.4638740337, 52605.49689757916, 54767.52992112462], upper=[np.float64(46199.03237297014), 55306.7264209254, 57468.75944447086, 59630.79246801631]
+2025-12-18 01:35:52 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 01:35:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 48441.83089945838, 2025: 49644.56346250372, 2026: 50847.296025548596}, values=[48441.83089945838, 49644.56346250372, 50847.296025548596], CI_lower=[44962.533071339974, 46165.265634385316, 47367.99819743019], CI_upper=[51921.12872757678, 53123.861290622124, 54326.593853667]
+2025-12-18 01:35:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48441.83089945838, 49644.56346250372, 50847.296025548596], CI_lower: [44962.533071339974, 46165.265634385316, 47367.99819743019], CI_upper: [51921.12872757678, 53123.861290622124, 54326.593853667]
+2025-12-18 01:35:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 44962.533071339974, 46165.265634385316, 47367.99819743019], upper=[np.float64(27728.28328968046), 51921.12872757678, 53123.861290622124, 54326.593853667]
+2025-12-18 01:35:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 52310.25014203787, 2025: 54799.06441873312, 2026: 57423.156555354595}, values=[52310.25014203787, 54799.06441873312, 57423.156555354595], CI_lower=[50415.13193751585, 52903.9462142111, 55528.038350832576], CI_upper=[54205.36834655989, 56694.18262325514, 59318.274759876615]
+2025-12-18 01:35:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52310.25014203787, 54799.06441873312, 57423.156555354595], CI_lower: [50415.13193751585, 52903.9462142111, 55528.038350832576], CI_upper: [54205.36834655989, 56694.18262325514, 59318.274759876615]
+2025-12-18 01:35:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 50415.13193751585, 52903.9462142111, 55528.038350832576], upper=[np.float64(27728.28328968046), 54205.36834655989, 56694.18262325514, 59318.274759876615]
+2025-12-18 01:35:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 52735.607511520386, 2025: 55521.745470047, 2026: 58521.88549232483}, values=[52735.607511520386, 55521.745470047, 58521.88549232483], CI_lower=[50854.76644983638, 53640.90440836299, 56641.044430640824], CI_upper=[54616.44857320439, 57402.586531731, 60402.726554008834]
+2025-12-18 01:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52735.607511520386, 55521.745470047, 58521.88549232483], CI_lower: [50854.76644983638, 53640.90440836299, 56641.044430640824], CI_upper: [54616.44857320439, 57402.586531731, 60402.726554008834]
+2025-12-18 01:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 50854.76644983638, 53640.90440836299, 56641.044430640824], upper=[np.float64(27728.28328968046), 54616.44857320439, 57402.586531731, 60402.726554008834]
+2025-12-18 01:35:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 48010.17565144729, 2025: 48010.17565144729, 2026: 48010.17565144729}, values=[48010.17565144729, 48010.17565144729, 48010.17565144729], CI_lower=[45427.116690505645, 45427.116690505645, 45427.116690505645], CI_upper=[50593.23461238893, 50593.23461238893, 50593.23461238893]
+2025-12-18 01:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48010.17565144729, 48010.17565144729, 48010.17565144729], CI_lower: [45427.116690505645, 45427.116690505645, 45427.116690505645], CI_upper: [50593.23461238893, 50593.23461238893, 50593.23461238893]
+2025-12-18 01:35:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 45427.116690505645, 45427.116690505645, 45427.116690505645], upper=[np.float64(27728.28328968046), 50593.23461238893, 50593.23461238893, 50593.23461238893]
+2025-12-18 01:35:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 45012.84969513644, 2025: 45012.84969513644, 2026: 45012.84969513644}, values=[45012.84969513644, 45012.84969513644, 45012.84969513644], CI_lower=[41619.13530126866, 41619.13530126866, 41619.13530126866], CI_upper=[48406.56408900423, 48406.56408900423, 48406.56408900423]
+2025-12-18 01:35:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45012.84969513644, 45012.84969513644, 45012.84969513644], CI_lower: [41619.13530126866, 41619.13530126866, 41619.13530126866], CI_upper: [48406.56408900423, 48406.56408900423, 48406.56408900423]
+2025-12-18 01:35:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 41619.13530126866, 41619.13530126866, 41619.13530126866], upper=[np.float64(27728.28328968046), 48406.56408900423, 48406.56408900423, 48406.56408900423]
+2025-12-18 01:35:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 48716.40072049903, 2025: 48716.40072049903, 2026: 48716.40072049903}, values=[48716.40072049903, 48716.40072049903, 48716.40072049903], CI_lower=[46731.543061859156, 46731.543061859156, 46731.543061859156], CI_upper=[50701.2583791389, 50701.2583791389, 50701.2583791389]
+2025-12-18 01:35:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48716.40072049903, 48716.40072049903, 48716.40072049903], CI_lower: [46731.543061859156, 46731.543061859156, 46731.543061859156], CI_upper: [50701.2583791389, 50701.2583791389, 50701.2583791389]
+2025-12-18 01:35:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 46731.543061859156, 46731.543061859156, 46731.543061859156], upper=[np.float64(27728.28328968046), 50701.2583791389, 50701.2583791389, 50701.2583791389]
+2025-12-18 01:35:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 51592.55657754754, 2025: 52925.59005305364, 2026: 54258.58846390098}, values=[51592.55657754754, 52925.59005305364, 54258.58846390098], CI_lower=[37187.37132461568, 38520.404800121774, 39853.40321096912], CI_upper=[65997.74183047941, 67330.7753059855, 68663.77371683285]
+2025-12-18 01:35:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51592.55657754754, 52925.59005305364, 54258.58846390098], CI_lower: [37187.37132461568, 38520.404800121774, 39853.40321096912], CI_upper: [65997.74183047941, 67330.7753059855, 68663.77371683285]
+2025-12-18 01:35:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 37187.37132461568, 38520.404800121774, 39853.40321096912], upper=[np.float64(27728.28328968046), 65997.74183047941, 67330.7753059855, 68663.77371683285]
+2025-12-18 01:35:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 51585.98204942536, 2025: 52947.546941097666, 2026: 54309.111832769966}, values=[51585.98204942536, 52947.546941097666, 54309.111832769966], CI_lower=[48417.33662697272, 49778.90151864503, 51140.46641031733], CI_upper=[54754.627471878, 56116.192363550304, 57477.757255222605]
+2025-12-18 01:35:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51585.98204942536, 52947.546941097666, 54309.111832769966], CI_lower: [48417.33662697272, 49778.90151864503, 51140.46641031733], CI_upper: [54754.627471878, 56116.192363550304, 57477.757255222605]
+2025-12-18 01:35:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(27728.28328968046), 48417.33662697272, 49778.90151864503, 51140.46641031733], upper=[np.float64(27728.28328968046), 54754.627471878, 56116.192363550304, 57477.757255222605]
+2025-12-18 01:35:58 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 01:35:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 49883.302397956606, 2025: 51099.0612005, 2026: 52314.820003043395}, values=[49883.302397956606, 51099.0612005, 52314.820003043395], CI_lower=[46331.187279000114, 47546.94608154351, 48762.7048840869], CI_upper=[53435.4175169131, 54651.17631945649, 55866.935121999886]
+2025-12-18 01:35:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49883.302397956606, 51099.0612005, 52314.820003043395], CI_lower: [46331.187279000114, 47546.94608154351, 48762.7048840869], CI_upper: [53435.4175169131, 54651.17631945649, 55866.935121999886]
+2025-12-18 01:35:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 46331.187279000114, 47546.94608154351, 48762.7048840869], upper=[np.float64(32136.941476909982), 53435.4175169131, 54651.17631945649, 55866.935121999886]
+2025-12-18 01:35:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 53915.87322127819, 2025: 56472.287023067474, 2026: 59169.71903318167}, values=[53915.87322127819, 56472.287023067474, 59169.71903318167], CI_lower=[52081.32005090717, 54637.73385269645, 57335.165862810645], CI_upper=[55750.42639164921, 58306.8401934385, 61004.27220355269]
+2025-12-18 01:35:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53915.87322127819, 56472.287023067474, 59169.71903318167], CI_lower: [52081.32005090717, 54637.73385269645, 57335.165862810645], CI_upper: [55750.42639164921, 58306.8401934385, 61004.27220355269]
+2025-12-18 01:35:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 52081.32005090717, 54637.73385269645, 57335.165862810645], upper=[np.float64(32136.941476909982), 55750.42639164921, 58306.8401934385, 61004.27220355269]
+2025-12-18 01:36:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 54189.3717880249, 2025: 56937.0237121582, 2026: 59876.33218765259}, values=[54189.3717880249, 56937.0237121582, 59876.33218765259], CI_lower=[52360.90748169137, 55108.55940582467, 58047.867881319056], CI_upper=[56017.836094358434, 58765.488018491735, 61704.79649398612]
+2025-12-18 01:36:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54189.3717880249, 56937.0237121582, 59876.33218765259], CI_lower: [52360.90748169137, 55108.55940582467, 58047.867881319056], CI_upper: [56017.836094358434, 58765.488018491735, 61704.79649398612]
+2025-12-18 01:36:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 52360.90748169137, 55108.55940582467, 58047.867881319056], upper=[np.float64(32136.941476909982), 56017.836094358434, 58765.488018491735, 61704.79649398612]
+2025-12-18 01:36:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 49328.68770310545, 2025: 49328.68770310545, 2026: 49328.68770310545}, values=[49328.68770310545, 49328.68770310545, 49328.68770310545], CI_lower=[46834.71562103523, 46834.71562103523, 46834.71562103523], CI_upper=[51822.65978517566, 51822.65978517566, 51822.65978517566]
+2025-12-18 01:36:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49328.68770310545, 49328.68770310545, 49328.68770310545], CI_lower: [46834.71562103523, 46834.71562103523, 46834.71562103523], CI_upper: [51822.65978517566, 51822.65978517566, 51822.65978517566]
+2025-12-18 01:36:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 46834.71562103523, 46834.71562103523, 46834.71562103523], upper=[np.float64(32136.941476909982), 51822.65978517566, 51822.65978517566, 51822.65978517566]
+2025-12-18 01:36:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 46465.22997211804, 2025: 46465.22997211804, 2026: 46465.22997211804}, values=[46465.22997211804, 46465.22997211804, 46465.22997211804], CI_lower=[43016.49467549624, 43016.49467549624, 43016.49467549624], CI_upper=[49913.96526873984, 49913.96526873984, 49913.96526873984]
+2025-12-18 01:36:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46465.22997211804, 46465.22997211804, 46465.22997211804], CI_lower: [43016.49467549624, 43016.49467549624, 43016.49467549624], CI_upper: [49913.96526873984, 49913.96526873984, 49913.96526873984]
+2025-12-18 01:36:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 43016.49467549624, 43016.49467549624, 43016.49467549624], upper=[np.float64(32136.941476909982), 49913.96526873984, 49913.96526873984, 49913.96526873984]
+2025-12-18 01:36:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 50184.867407158534, 2025: 50184.867407158534, 2026: 50184.867407158534}, values=[50184.867407158534, 50184.867407158534, 50184.867407158534], CI_lower=[48279.65123934515, 48279.65123934515, 48279.65123934515], CI_upper=[52090.08357497192, 52090.08357497192, 52090.08357497192]
+2025-12-18 01:36:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50184.867407158534, 50184.867407158534, 50184.867407158534], CI_lower: [48279.65123934515, 48279.65123934515, 48279.65123934515], CI_upper: [52090.08357497192, 52090.08357497192, 52090.08357497192]
+2025-12-18 01:36:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 48279.65123934515, 48279.65123934515, 48279.65123934515], upper=[np.float64(32136.941476909982), 52090.08357497192, 52090.08357497192, 52090.08357497192]
+2025-12-18 01:36:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 53345.23678468195, 2025: 54696.882846176464, 2026: 56048.49859824412}, values=[53345.23678468195, 54696.882846176464, 56048.49859824412], CI_lower=[38290.43085660337, 39642.07691809789, 40993.69267016555], CI_upper=[68400.04271276052, 69751.68877425505, 71103.3045263227]
+2025-12-18 01:36:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53345.23678468195, 54696.882846176464, 56048.49859824412], CI_lower: [38290.43085660337, 39642.07691809789, 40993.69267016555], CI_upper: [68400.04271276052, 69751.68877425505, 71103.3045263227]
+2025-12-18 01:36:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 38290.43085660337, 39642.07691809789, 40993.69267016555], upper=[np.float64(32136.941476909982), 68400.04271276052, 69751.68877425505, 71103.3045263227]
+2025-12-18 01:36:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 54049.39196698285, 2025: 56227.820206934295, 2026: 58406.248446885744}, values=[54049.39196698285, 56227.820206934295, 58406.248446885744], CI_lower=[51014.68812784974, 53193.11636780119, 55371.544607752636], CI_upper=[57084.095806115954, 59262.5240460674, 61440.95228601885]
+2025-12-18 01:36:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54049.39196698285, 56227.820206934295, 58406.248446885744], CI_lower: [51014.68812784974, 53193.11636780119, 55371.544607752636], CI_upper: [57084.095806115954, 59262.5240460674, 61440.95228601885]
+2025-12-18 01:36:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32136.941476909982), 51014.68812784974, 53193.11636780119, 55371.544607752636], upper=[np.float64(32136.941476909982), 57084.095806115954, 59262.5240460674, 61440.95228601885]
+2025-12-18 01:36:04 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 01:36:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44.92639409534212, 2025: 45.11963126326964, 2026: 45.31286843119716}, values=[44.92639409534212, 45.11963126326964, 45.31286843119716], CI_lower=[44.26152327275742, 44.45476044068494, 44.647997608612464], CI_upper=[45.591264917926814, 45.784502085854335, 45.977739253781856]
+2025-12-18 01:36:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.92639409534212, 45.11963126326964, 45.31286843119716], CI_lower: [44.26152327275742, 44.45476044068494, 44.647997608612464], CI_upper: [45.591264917926814, 45.784502085854335, 45.977739253781856]
+2025-12-18 01:36:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 44.26152327275742, 44.45476044068494, 44.647997608612464], upper=[np.float64(44.338047966265485), 45.591264917926814, 45.784502085854335, 45.977739253781856]
+2025-12-18 01:36:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44.88382299811019, 2025: 45.062907121533954, 2026: 45.240502542062586}, values=[44.88382299811019, 45.062907121533954, 45.240502542062586], CI_lower=[44.21972803760058, 44.398812161024345, 44.57640758155298], CI_upper=[45.5479179586198, 45.72700208204356, 45.904597502572194]
+2025-12-18 01:36:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.88382299811019, 45.062907121533954, 45.240502542062586], CI_lower: [44.21972803760058, 44.398812161024345, 44.57640758155298], CI_upper: [45.5479179586198, 45.72700208204356, 45.904597502572194]
+2025-12-18 01:36:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 44.21972803760058, 44.398812161024345, 44.57640758155298], upper=[np.float64(44.338047966265485), 45.5479179586198, 45.72700208204356, 45.904597502572194]
+2025-12-18 01:36:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 44.95447377348319, 2025: 45.18294890364632, 2026: 45.42301319492981}, values=[44.95447377348319, 45.18294890364632, 45.42301319492981], CI_lower=[44.29149985490313, 44.51997498506626, 44.76003927634975], CI_upper=[45.617447692063244, 45.84592282222638, 46.085987113509866]
+2025-12-18 01:36:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.95447377348319, 45.18294890364632, 45.42301319492981], CI_lower: [44.29149985490313, 44.51997498506626, 44.76003927634975], CI_upper: [45.617447692063244, 45.84592282222638, 46.085987113509866]
+2025-12-18 01:36:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 44.29149985490313, 44.51997498506626, 44.76003927634975], upper=[np.float64(44.338047966265485), 45.617447692063244, 45.84592282222638, 46.085987113509866]
+2025-12-18 01:36:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 44.48700799740715, 2025: 44.48700799740715, 2026: 44.48700799740715}, values=[44.48700799740715, 44.48700799740715, 44.48700799740715], CI_lower=[43.7598450924365, 43.7598450924365, 43.7598450924365], CI_upper=[45.214170902377795, 45.214170902377795, 45.214170902377795]
+2025-12-18 01:36:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.48700799740715, 44.48700799740715, 44.48700799740715], CI_lower: [43.7598450924365, 43.7598450924365, 43.7598450924365], CI_upper: [45.214170902377795, 45.214170902377795, 45.214170902377795]
+2025-12-18 01:36:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 43.7598450924365, 43.7598450924365, 43.7598450924365], upper=[np.float64(44.338047966265485), 45.214170902377795, 45.214170902377795, 45.214170902377795]
+2025-12-18 01:36:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 44.21240506501254, 2025: 44.21240506501254, 2026: 44.21240506501254}, values=[44.21240506501254, 44.21240506501254, 44.21240506501254], CI_lower=[43.64002412279446, 43.64002412279446, 43.64002412279446], CI_upper=[44.78478600723062, 44.78478600723062, 44.78478600723062]
+2025-12-18 01:36:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.21240506501254, 44.21240506501254, 44.21240506501254], CI_lower: [43.64002412279446, 43.64002412279446, 43.64002412279446], CI_upper: [44.78478600723062, 44.78478600723062, 44.78478600723062]
+2025-12-18 01:36:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 43.64002412279446, 43.64002412279446, 43.64002412279446], upper=[np.float64(44.338047966265485), 44.78478600723062, 44.78478600723062, 44.78478600723062]
+2025-12-18 01:36:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 44.54673711012369, 2025: 44.54673711012369, 2026: 44.54673711012369}, values=[44.54673711012369, 44.54673711012369, 44.54673711012369], CI_lower=[43.91792320872828, 43.91792320872828, 43.91792320872828], CI_upper=[45.175551011519104, 45.175551011519104, 45.175551011519104]
+2025-12-18 01:36:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.54673711012369, 44.54673711012369, 44.54673711012369], CI_lower: [43.91792320872828, 43.91792320872828, 43.91792320872828], CI_upper: [45.175551011519104, 45.175551011519104, 45.175551011519104]
+2025-12-18 01:36:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 43.91792320872828, 43.91792320872828, 43.91792320872828], upper=[np.float64(44.338047966265485), 45.175551011519104, 45.175551011519104, 45.175551011519104]
+2025-12-18 01:36:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 44.753758282310194, 2025: 44.73788152225474, 2026: 44.74896303704261}, values=[44.753758282310194, 44.73788152225474, 44.74896303704261], CI_lower=[25.167519437750336, 25.15164267769488, 25.16272419248275], CI_upper=[64.33999712687006, 64.3241203668146, 64.33520188160247]
+2025-12-18 01:36:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.753758282310194, 44.73788152225474, 44.74896303704261], CI_lower: [25.167519437750336, 25.15164267769488, 25.16272419248275], CI_upper: [64.33999712687006, 64.3241203668146, 64.33520188160247]
+2025-12-18 01:36:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 25.167519437750336, 25.15164267769488, 25.16272419248275], upper=[np.float64(44.338047966265485), 64.33999712687006, 64.3241203668146, 64.33520188160247]
+2025-12-18 01:36:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 44.8675602066874, 2025: 45.07234694314608, 2026: 45.277133679604766}, values=[44.8675602066874, 45.07234694314608, 45.277133679604766], CI_lower=[44.205527181740685, 44.410313918199364, 44.61510065465805], CI_upper=[45.52959323163412, 45.734379968092796, 45.93916670455148]
+2025-12-18 01:36:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.8675602066874, 45.07234694314608, 45.277133679604766], CI_lower: [44.205527181740685, 44.410313918199364, 44.61510065465805], CI_upper: [45.52959323163412, 45.734379968092796, 45.93916670455148]
+2025-12-18 01:36:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.338047966265485), 44.205527181740685, 44.410313918199364, 44.61510065465805], upper=[np.float64(44.338047966265485), 45.52959323163412, 45.734379968092796, 45.93916670455148]
+2025-12-18 01:36:10 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 01:36:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.543804091586, 2025: 37.480013134597385, 2026: 37.41622217760877}, values=[37.543804091586, 37.480013134597385, 37.41622217760877], CI_lower=[36.86716660774653, 36.80337565075792, 36.73958469376931], CI_upper=[38.22044157542546, 38.15665061843685, 38.09285966144824]
+2025-12-18 01:36:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.543804091586, 37.480013134597385, 37.41622217760877], CI_lower: [36.86716660774653, 36.80337565075792, 36.73958469376931], CI_upper: [38.22044157542546, 38.15665061843685, 38.09285966144824]
+2025-12-18 01:36:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 36.86716660774653, 36.80337565075792, 36.73958469376931], upper=[np.float64(37.370020604395606), 38.22044157542546, 38.15665061843685, 38.09285966144824]
+2025-12-18 01:36:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.97174430008454, 2025: 38.05022491252748, 2026: 38.14367050984947}, values=[37.97174430008454, 38.05022491252748, 38.14367050984947], CI_lower=[37.377062724033536, 37.45554333647648, 37.54898893379847], CI_upper=[38.56642587613554, 38.644906488578485, 38.73835208590047]
+2025-12-18 01:36:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.97174430008454, 38.05022491252748, 38.14367050984947], CI_lower: [37.377062724033536, 37.45554333647648, 37.54898893379847], CI_upper: [38.56642587613554, 38.644906488578485, 38.73835208590047]
+2025-12-18 01:36:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 37.377062724033536, 37.45554333647648, 37.54898893379847], upper=[np.float64(37.370020604395606), 38.56642587613554, 38.644906488578485, 38.73835208590047]
+2025-12-18 01:36:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 37.4066169206053, 2025: 37.09031801111996, 2026: 36.68446763791144}, values=[37.4066169206053, 37.09031801111996, 36.68446763791144], CI_lower=[36.89808308832431, 36.58178417883897, 36.17593380563045], CI_upper=[37.91515075288629, 37.59885184340095, 37.19300147019243]
+2025-12-18 01:36:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.4066169206053, 37.09031801111996, 36.68446763791144], CI_lower: [36.89808308832431, 36.58178417883897, 36.17593380563045], CI_upper: [37.91515075288629, 37.59885184340095, 37.19300147019243]
+2025-12-18 01:36:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 36.89808308832431, 36.58178417883897, 36.17593380563045], upper=[np.float64(37.370020604395606), 37.91515075288629, 37.59885184340095, 37.19300147019243]
+2025-12-18 01:36:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.87321210834809, 2025: 37.87321210834809, 2026: 37.87321210834809}, values=[37.87321210834809, 37.87321210834809, 37.87321210834809], CI_lower=[37.27389405002555, 37.27389405002555, 37.27389405002555], CI_upper=[38.47253016667064, 38.47253016667064, 38.47253016667064]
+2025-12-18 01:36:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.87321210834809, 37.87321210834809, 37.87321210834809], CI_lower: [37.27389405002555, 37.27389405002555, 37.27389405002555], CI_upper: [38.47253016667064, 38.47253016667064, 38.47253016667064]
+2025-12-18 01:36:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 37.27389405002555, 37.27389405002555, 37.27389405002555], upper=[np.float64(37.370020604395606), 38.47253016667064, 38.47253016667064, 38.47253016667064]
+2025-12-18 01:36:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.836881709685365, 2025: 37.836881709685365, 2026: 37.836881709685365}, values=[37.836881709685365, 37.836881709685365, 37.836881709685365], CI_lower=[37.3334576458319, 37.3334576458319, 37.3334576458319], CI_upper=[38.34030577353883, 38.34030577353883, 38.34030577353883]
+2025-12-18 01:36:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.836881709685365, 37.836881709685365, 37.836881709685365], CI_lower: [37.3334576458319, 37.3334576458319, 37.3334576458319], CI_upper: [38.34030577353883, 38.34030577353883, 38.34030577353883]
+2025-12-18 01:36:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 37.3334576458319, 37.3334576458319, 37.3334576458319], upper=[np.float64(37.370020604395606), 38.34030577353883, 38.34030577353883, 38.34030577353883]
+2025-12-18 01:36:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.72762389862018, 2025: 37.72762389862018, 2026: 37.72762389862018}, values=[37.72762389862018, 37.72762389862018, 37.72762389862018], CI_lower=[37.18333962461031, 37.18333962461031, 37.18333962461031], CI_upper=[38.27190817263005, 38.27190817263005, 38.27190817263005]
+2025-12-18 01:36:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.72762389862018, 37.72762389862018, 37.72762389862018], CI_lower: [37.18333962461031, 37.18333962461031, 37.18333962461031], CI_upper: [38.27190817263005, 38.27190817263005, 38.27190817263005]
+2025-12-18 01:36:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 37.18333962461031, 37.18333962461031, 37.18333962461031], upper=[np.float64(37.370020604395606), 38.27190817263005, 38.27190817263005, 38.27190817263005]
+2025-12-18 01:36:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.5537021334047, 2025: 37.614653710242386, 2026: 37.634879449537145}, values=[37.5537021334047, 37.614653710242386, 37.634879449537145], CI_lower=[18.868478373042205, 18.929429949879893, 18.94965568917465], CI_upper=[56.23892589376719, 56.29987747060488, 56.32010320989964]
+2025-12-18 01:36:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.5537021334047, 37.614653710242386, 37.634879449537145], CI_lower: [18.868478373042205, 18.929429949879893, 18.94965568917465], CI_upper: [56.23892589376719, 56.29987747060488, 56.32010320989964]
+2025-12-18 01:36:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 18.868478373042205, 18.929429949879893, 18.94965568917465], upper=[np.float64(37.370020604395606), 56.23892589376719, 56.29987747060488, 56.32010320989964]
+2025-12-18 01:36:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.549399015713036, 2025: 37.48016862070429, 2026: 37.41093822569555}, values=[37.549399015713036, 37.48016862070429, 37.41093822569555], CI_lower=[36.88663418232223, 36.81740378731349, 36.74817339230475], CI_upper=[38.21216384910384, 38.14293345409509, 38.073703059086355]
+2025-12-18 01:36:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.549399015713036, 37.48016862070429, 37.41093822569555], CI_lower: [36.88663418232223, 36.81740378731349, 36.74817339230475], CI_upper: [38.21216384910384, 38.14293345409509, 38.073703059086355]
+2025-12-18 01:36:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.370020604395606), 36.88663418232223, 36.81740378731349, 36.74817339230475], upper=[np.float64(37.370020604395606), 38.21216384910384, 38.14293345409509, 38.073703059086355]
+2025-12-18 01:36:17 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 01:36:17 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 01:37:06 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 17734.603515625, 'mse': 1393782656.0, 'rmse': 37333.3986666095, 'r2': 0.16818416118621826}
+2025-12-18 01:37:06 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 01:37:40 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.871431350708008, 'mse': 78.25297546386719, 'rmse': 8.846071188039762, 'r2': 0.27955135703086853}
+2025-12-18 01:37:41 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 01:38:17 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.459165573120117, 'mse': 654.5367431640625, 'rmse': 25.583915712104403, 'r2': -5.60947847366333}
+2025-12-18 01:38:18 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 01:38:32 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Montana/population/1-year/figures/ml/deep_learning
+2025-12-18 01:38:33 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 01:38:33 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 01:38:33 [DEBUG] census_eda.main:  Running LLM analysis for state: Montana
+2025-12-18 01:38:33 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 01:38:33 [INFO] census_eda.ml: [LLM] State context loaded: Montana
+2025-12-18 01:38:33 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [API] Total request: ~2463 tokens (system: ~2282, user: ~181)
+2025-12-18 01:38:33 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [API] Received response: 3541 chars
+2025-12-18 01:38:45 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3541 chars)
+2025-12-18 01:38:45 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [API] Total request: ~2603 tokens (system: ~2282, user: ~321)
+2025-12-18 01:38:45 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [API] Received response: 3569 chars
+2025-12-18 01:38:55 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3569 chars)
+2025-12-18 01:38:55 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [API] Total request: ~2830 tokens (system: ~2282, user: ~548)
+2025-12-18 01:38:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [API] Received response: 4429 chars
+2025-12-18 01:39:08 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4429 chars)
+2025-12-18 01:39:08 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [API] Total request: ~2622 tokens (system: ~2282, user: ~340)
+2025-12-18 01:39:08 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [API] Received response: 4290 chars
+2025-12-18 01:39:23 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4290 chars)
+2025-12-18 01:39:23 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [API] Total request: ~2472 tokens (system: ~2282, user: ~190)
+2025-12-18 01:39:23 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [API] Received response: 4422 chars
+2025-12-18 01:39:36 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4422 chars)
+2025-12-18 01:39:36 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [LLM] User prompt: 8710 chars (~2177 tokens)
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [API] Total request: ~4459 tokens (system: ~2282, user: ~2177)
+2025-12-18 01:39:36 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [API] Received response: 3279 chars
+2025-12-18 01:39:48 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3279 chars)
+2025-12-18 01:39:48 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [LLM] User prompt: 5317 chars (~1329 tokens)
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [API] Total request: ~3611 tokens (system: ~2282, user: ~1329)
+2025-12-18 01:39:48 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [API] Received response: 2983 chars
+2025-12-18 01:39:58 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (2983 chars)
+2025-12-18 01:39:58 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [API] Total request: ~2434 tokens (system: ~2282, user: ~152)
+2025-12-18 01:39:58 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [API] Received response: 3862 chars
+2025-12-18 01:40:11 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3862 chars)
+2025-12-18 01:40:11 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [LLM] User prompt: 5574 chars (~1393 tokens)
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [API] Total request: ~3675 tokens (system: ~2282, user: ~1393)
+2025-12-18 01:40:11 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [API] Received response: 3575 chars
+2025-12-18 01:40:22 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3575 chars)
+2025-12-18 01:40:22 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [LLM] User prompt: 1828 chars (~457 tokens)
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [API] Total request: ~2739 tokens (system: ~2282, user: ~457)
+2025-12-18 01:40:22 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [API] Received response: 5534 chars
+2025-12-18 01:40:39 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (5534 chars)
+2025-12-18 01:40:39 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Montana
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Montana
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4243 chars
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1060
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Montana
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (cattle, wheat), Mining (coal, copper, precious metals), Tourism and outdoor recreation, Healthcare, Energy (coal, oil, natural gas)
+  Trends: Modest growth 2011-2023 driven by energy, agriculture, tourism. Remote work boom 2020-2023 brought population and housing surge. Extractive industries volatile. Tourism increasingly important
+  Income: Below national median (~$60k) but cost of living historically lower (changing post-2020). Wage growth lagging housing costs. Significant wealth inequality - billionaire ranches vs. working poor
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~0.8% annually), acceleration 2020-2023 from migration (~1.5% annually). Pandemic migration surge changed demographics
+  Migration: Strong in-migration 2020-2023 from California, Washington, Texas (remote workers, retirees, lifestyle migration). Historically lost young people to metro areas. Native Americans significant portion of rural population
+  Education: Near national average bachelor's degrees (~34%). Montana State, University of Montana anchors. Brain drain of graduates to larger metros persistent
+
+HOUSING MARKET:
+  Market: Formerly affordable, now crisis-level expensive in desirable areas. Bozeman median >$800k, Missoula >$500k (2023). Remote work migration drove prices. Rural still relatively affordable
+  Affordability: Modest increases 2011-2019. Explosion 2020-2023 - worst housing inflation nationally. Wages not keeping pace. Local workers priced out
+  Challenges: Worst housing affordability crisis nationally (recent), Local workers priced out, Short-term rental proliferation, Construction costs high, Limited buildable land in valleys, Seasonal workers housing crisis
+
+POLITY:
+  Policy: Conservative libertarian streak. Republican dominance but independent voters important. Environmental concerns cross party lines. Property rights sacred. Anti-federal government sentiment
+  Housing: Limited state intervention historically. 2021-2023 crisis prompted action - developer incentives, local authority preservation debates. No rent control. Property tax caps contentious
+  Labor: Federal minimum wage $7.25. Right-to-work state. Limited worker protections. Independent contractor economy in tourism
+
+REGIONAL:
+  Geography: Rocky Mountains (west), Great Plains (east). Continental Divide. Yellowstone, Glacier National Parks. Vast - 4th largest state by area
+  Urban/Rural: 56% urban in few cities. 44% rural across vast landscape. Extremely low population density (4th lowest)
+  Infrastructure: Sparse infrastructure. Long distances between towns. Aging highways. Broadband limited in rural areas. Airports in major cities. No major interstates east-west
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery slow, agriculture struggles, tourism growth; 2014-2016: Energy sector volatility, Medicaid expansion (2015), housing affordable; 2017-2019: Strong economy, tourism boom, housing prices start rising, wildfires increasing; 2020-2023: COVID migration boom, housing crisis, recreational marijuana (2020), unprecedented population growth, wildfire seasons severe, polarization increases
+  Shocks: Coal industry decline long-term. Oil price volatility. 2020-2023 housing explosion. Wildfires affecting tourism and property
+  Transitions: Coal mining declining. Renewable energy (wind) growing. Tourism eclipsing extractive industries. Remote work creating service economy. Agriculture consolidating
+
+COMPARATIVE:
+  Benchmarks: Below median income. Fastest housing cost increases 2020-2023. Low population density. High public land percentage (federal). Near average educational attainment. Healthcare access challenges in rural areas
+  Peer States: Wyoming (extractive economy, low population), Idaho (growth, in-migration), North Dakota (rural, extractive)
+  Unique: Largest population influx rate 2020-2023. Geography (mountains/plains) defines regions. Public lands dominance (30% federal). Native American reservations significant. Extractive industry legacy. Outdoor recreation economy. 'last best place' mystique driving migration. Housing crisis severity unique for rural state
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Montana
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (4243 chars)
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9131 chars (~2282 tokens)
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [API] Total request: ~2691 tokens (system: ~2282, user: ~409)
+2025-12-18 01:40:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 01:40:53 [DEBUG] census_eda.ml: [API] Received response: 4585 chars
+2025-12-18 01:40:53 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4585 chars)
+2025-12-18 01:40:53 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 01:40:53 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 01:40:53 [INFO] census_eda.main: [REPORT] Generated: report_Montana_population_20251218_014053.txt
+2025-12-18 01:40:53 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Montana!
+2025-12-18 01:40:53 [INFO] census_eda.memory: process_Montana_population_1-year:EXIT: 9340.2MB (delta: -446.5MB)
+2025-12-18 01:40:54 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 01:40:55 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 01:40:56 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 01:40:57 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 01:40:58 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 01:40:59 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 01:41:00 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 01:41:01 [INFO] census_eda.memory: Cleared all caches

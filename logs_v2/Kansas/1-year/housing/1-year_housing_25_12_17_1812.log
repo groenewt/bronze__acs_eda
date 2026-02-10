@@ -1,0 +1,1090 @@
+2025-12-17 18:12:55 [INFO] census_eda: Logging context set: state=Kansas, survey=housing, scope=1-year
+2025-12-17 18:12:55 [INFO] census_eda: Log file: ./logs/Kansas/1-year/housing/1-year_housing_25_12_17_1812.log
+2025-12-17 18:12:55 [INFO] census_eda.main: ======================================================================
+2025-12-17 18:12:55 [INFO] census_eda.main: [HOUSING] Processing Kansas (1-year)...
+2025-12-17 18:12:55 [INFO] census_eda.main: ======================================================================
+2025-12-17 18:12:55 [INFO] census_eda.memory: process_Kansas_housing_1-year:ENTER: 6655.9MB (delta: +0.0MB)
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/20/*/*.csv
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hks.csv
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,956 rows, 235 columns
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h20.csv
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,249 rows, 235 columns
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hks.csv
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,924 rows, 235 columns
+2025-12-17 18:12:55 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hks.csv
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,904 rows, 235 columns
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hks.csv
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,017 rows, 235 columns
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hks.csv
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,163 rows, 235 columns
+2025-12-17 18:12:56 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h20.csv
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,296 rows, 235 columns
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hks.csv
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,091 rows, 235 columns
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hks.csv
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,091 rows, 235 columns
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h20.csv
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,363 rows, 235 columns
+2025-12-17 18:12:57 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h20.csv
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,633 rows, 235 columns
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h20.csv
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,252 rows, 235 columns
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h20.csv
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,901 rows, 235 columns
+2025-12-17 18:12:58 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hks.csv
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,025 rows, 235 columns
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hks.csv
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,134 rows, 235 columns
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hks.csv
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,980 rows, 235 columns
+2025-12-17 18:12:59 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-17 18:13:01 [VERBOSE] census_eda.processing.loader: Combined into 222,979 total rows, 235 columns
+2025-12-17 18:13:01 [INFO] census_eda.main: Loaded 222,979 records
+2025-12-17 18:13:01 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 222979 valid, 16 unique
+2025-12-17 18:13:01 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-17 18:13:01 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-17 18:13:01 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-17 18:13:01 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-17 18:13:02 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-17 18:13:02 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-17 18:13:02 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-17 18:13:02 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-17 18:13:02 [DEBUG] census_eda.main: Feature engineering complete: (222979, 254)
+2025-12-17 18:13:02 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-17 18:13:02 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-17 18:13:27 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-17 18:13:27 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-17 18:13:27 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(222979, 254)
+2025-12-17 18:13:27 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-17 18:13:27 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 222979
+2025-12-17 18:13:27 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(222979, 254)
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(13017), np.int64(2008): np.int64(13091), np.int64(2009): np.int64(13163), np.int64(2010): np.int64(13134), np.int64(2011): np.int64(13980), np.int64(2012): np.int64(13956), np.int64(2013): np.int64(13904), np.int64(2014): np.int64(13924), np.int64(2015): np.int64(14025), np.int64(2016): np.int64(14091), np.int64(2017): np.int64(14249), np.int64(2018): np.int64(14296), np.int64(2019): np.int64(14363), np.int64(2021): np.int64(14252), np.int64(2022): np.int64(14633), np.int64(2023): np.int64(14901)}
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(222979, 254)
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 222979 non-null values (zeros excluded if needed)
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 20.00
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 188953 non-null values (zeros excluded if needed)
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 127235 non-null values (zeros excluded if needed)
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 105895 non-null values (zeros excluded if needed)
+2025-12-17 18:13:28 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2601000.00
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 184418 non-null values (zeros excluded if needed)
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3200.00
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 130090 non-null values (zeros excluded if needed)
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 5200.00
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 173984 non-null values (zeros excluded if needed)
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1900.00
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 186815 non-null values (zeros excluded if needed)
+2025-12-17 18:13:29 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 116012 non-null values (zeros excluded if needed)
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 9300.00
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 177086 non-null values (zeros excluded if needed)
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 4700.00
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 4993 non-null values (zeros excluded if needed)
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 23600.00
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 75586 non-null values (zeros excluded if needed)
+2025-12-17 18:13:30 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-17 18:13:31 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-17 18:13:39 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-17 18:13:39 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-17 18:13:39 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-17 18:13:40 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-17 18:13:40 [DEBUG] census_eda.memory: Skipping sampling: 47458MB available (>16GB)
+2025-12-17 18:13:40 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 222979 rows
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(222979, 254)
+2025-12-17 18:14:10 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 222979 non-null values
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 20.00
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 151818 non-null values
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 10.00
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 151818 non-null values
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 22.00
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 188953 non-null values
+2025-12-17 18:14:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 127235 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 105895 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2601000.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 186815 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 1862 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 1800.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 184418 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3200.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 130090 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 5200.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 173984 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1900.00
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 186815 non-null values
+2025-12-17 18:14:11 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 116012 non-null values
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 9300.00
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 177086 non-null values
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 4700.00
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 4993 non-null values
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 23600.00
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 75586 non-null values
+2025-12-17 18:14:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-17 18:14:13 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-17 18:14:16 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-17 18:14:20 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-17 18:14:25 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-17 18:14:35 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-17 18:14:35 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-17 18:14:35 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-17 18:14:35 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-17 18:14:36 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-17 18:14:36 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-17 18:14:36 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-17 18:14:36 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-17 18:14:36 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-17 18:14:37 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-17 18:14:37 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-17 18:14:37 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-17 18:14:37 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-17 18:14:38 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-17 18:14:38 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-17 18:14:38 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-17 18:14:39 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-17 18:14:39 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-17 18:14:39 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-17 18:14:40 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-17 18:14:40 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-17 18:14:41 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-17 18:14:41 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-17 18:14:41 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-17 18:14:42 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-17 18:14:42 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-17 18:14:42 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-17 18:14:42 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-17 18:14:43 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-17 18:14:43 [DEBUG] census_eda.memory: Skipping sampling: 47291MB available (>16GB)
+2025-12-17 18:14:46 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-17 18:14:46 [DEBUG] census_eda.memory: Skipping sampling: 47320MB available (>16GB)
+2025-12-17 18:14:55 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-17 18:14:55 [DEBUG] census_eda.memory: Skipping sampling: 47361MB available (>16GB)
+2025-12-17 18:14:56 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-17 18:14:58 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-17 18:14:59 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-17 18:14:59 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Kansas/housing/1-year/figures
+2025-12-17 18:14:59 [DEBUG] census_eda.memory: Skipping sampling: 47308MB available (>16GB)
+2025-12-17 18:14:59 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-17 18:14:59 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-17 18:14:59 [INFO] census_eda.memory: [ML-START]: 6821.8MB (delta: +165.9MB)
+2025-12-17 18:14:59 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-17 18:14:59 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-17 18:14:59 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 78921 samples (was 78921)
+2025-12-17 18:14:59 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-17 18:14:59 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 18:14:59 [INFO] census_eda.ml.regression: [TUNE] Data: 78,921 samples, 10 features
+2025-12-17 18:14:59 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 18:14:59 [INFO] census_eda.memory: tune_ridge:ENTER: 6821.8MB (delta: +0.0MB)
+2025-12-17 18:15:01 [INFO] census_eda.memory: tune_ridge:EXIT: 6833.7MB (delta: +12.0MB)
+2025-12-17 18:15:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 18:15:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1436
+2025-12-17 18:15:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 18:15:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 18:15:01 [INFO] census_eda.ml.regression: [TUNE] Data: 78,921 samples, 10 features
+2025-12-17 18:15:01 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 18:15:01 [INFO] census_eda.memory: tune_lasso:ENTER: 6833.7MB (delta: +0.0MB)
+2025-12-17 18:15:01 [INFO] census_eda.memory: tune_lasso:EXIT: 6833.7MB (delta: +0.0MB)
+2025-12-17 18:15:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-17 18:15:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1436
+2025-12-17 18:15:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 18:15:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 18:15:04 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 78,921 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 18:15:04 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 18:15:04 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 18:15:04 [INFO] census_eda.memory: tune_random_forest:ENTER: 6833.7MB (delta: +0.0MB)
+2025-12-17 18:15:30 [INFO] census_eda.memory: tune_random_forest:EXIT: 6860.2MB (delta: +26.4MB)
+2025-12-17 18:15:30 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 18:15:30 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1694
+2025-12-17 18:15:30 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 18:15:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 18:15:36 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 78,921 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 18:15:36 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 18:15:36 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 18:15:36 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 7332.6MB (delta: +472.4MB)
+2025-12-17 18:15:50 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:15:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 18:15:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2179
+2025-12-17 18:15:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 18:16:08 [INFO] census_eda.memory: [SHAP] Safe sample size: 15,785 -> 1,000
+2025-12-17 18:16:08 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 15,785 -> 1,000
+2025-12-17 18:16:08 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:08 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 18:16:08 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:08 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-17 18:16:08 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 18:16:08 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-17 18:16:08 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 25345 samples (was 25345)
+2025-12-17 18:16:08 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-17 18:16:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 18:16:09 [INFO] census_eda.ml.regression: [TUNE] Data: 25,345 samples, 10 features
+2025-12-17 18:16:09 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 18:16:09 [INFO] census_eda.memory: tune_ridge:ENTER: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:09 [INFO] census_eda.memory: tune_ridge:EXIT: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 18:16:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1441
+2025-12-17 18:16:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 18:16:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 18:16:09 [INFO] census_eda.ml.regression: [TUNE] Data: 25,345 samples, 10 features
+2025-12-17 18:16:09 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 18:16:09 [INFO] census_eda.memory: tune_lasso:ENTER: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:10 [INFO] census_eda.memory: tune_lasso:EXIT: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 1.0}
+2025-12-17 18:16:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1440
+2025-12-17 18:16:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 18:16:10 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 18:16:10 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,345 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 18:16:10 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 18:16:10 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 18:16:10 [INFO] census_eda.memory: tune_random_forest:ENTER: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:38 [INFO] census_eda.memory: tune_random_forest:EXIT: 7332.6MB (delta: +0.0MB)
+2025-12-17 18:16:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 18:16:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2600
+2025-12-17 18:16:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 18:16:40 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 18:16:40 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,345 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-17 18:16:40 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-17 18:16:40 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 18:16:40 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 7332.7MB (delta: +0.1MB)
+2025-12-17 18:16:56 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 7332.7MB (delta: +0.0MB)
+2025-12-17 18:16:56 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 18:16:56 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.3120
+2025-12-17 18:16:56 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 18:17:03 [INFO] census_eda.memory: [SHAP] Safe sample size: 5,069 -> 1,000
+2025-12-17 18:17:03 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 5,069 -> 1,000
+2025-12-17 18:17:03 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 7332.7MB (delta: +0.0MB)
+2025-12-17 18:17:03 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 18:17:03 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 7332.7MB (delta: +0.0MB)
+2025-12-17 18:17:03 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-17 18:17:03 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 18:17:03 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-17 18:17:03 [INFO] census_eda.memory: [PRE-CLUSTERING]: 7332.7MB (delta: +0.0MB)
+2025-12-17 18:17:03 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-17 18:17:03 [INFO] census_eda.main: [CLUSTERING] KMeans on 113,852 samples...
+2025-12-17 18:18:10 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-17 18:18:10 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 113,852 samples (will sample if needed)...
+2025-12-17 18:18:10 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 113,852 -> 15,000 (distance matrix would be 96.6GB)
+2025-12-17 18:18:10 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 113,852 -> 15,000 for O(n²) distance matrix
+2025-12-17 18:18:16 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-17 18:18:16 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-17 18:18:16 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-17 18:18:16 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-17 18:18:16 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-17 18:18:16 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 275645.7072753906, 2025: 313497.3098144531, 2026: 359661.1062011719}, Values: [275645.7072753906, 313497.3098144531, 359661.1062011719]
+2025-12-17 18:18:16 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-17 18:18:16 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 1162.1163139343262, 2025: 1250.0044384002686, 2026: 1351.4778470993042}, Values: [1162.1163139343262, 1250.0044384002686, 1351.4778470993042]
+2025-12-17 18:18:16 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-17 18:18:22 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-17 18:18:28 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-17 18:18:32 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 113852.
+2025-12-17 18:18:32 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-17 18:18:32 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-17 18:18:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 254207.80777286738, 2025: 266621.03431799635, 2026: 279034.2608631253}, values=[254207.80777286738, 266621.03431799635, 279034.2608631253], CI_lower=[216835.98585693832, 229249.2124020673, 241662.43894719626], CI_upper=[291579.62968879647, 303992.85623392544, 316406.0827790544]
+2025-12-17 18:18:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [254207.80777286738, 266621.03431799635, 279034.2608631253], CI_lower: [216835.98585693832, 229249.2124020673, 241662.43894719626], CI_upper: [291579.62968879647, 303992.85623392544, 316406.0827790544]
+2025-12-17 18:18:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 216835.98585693832, 229249.2124020673, 241662.43894719626], upper=[np.float64(240605.59012875537), 291579.62968879647, 303992.85623392544, 316406.0827790544]
+2025-12-17 18:18:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 227868.2398121357, 2025: 231070.52087974548, 2026: 233242.9770503044}, values=[227868.2398121357, 231070.52087974548, 233242.9770503044], CI_lower=[198872.11063670783, 202074.39170431762, 204246.84787487655], CI_upper=[256864.36898756356, 260066.65005517335, 262239.1062257323]
+2025-12-17 18:18:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [227868.2398121357, 231070.52087974548, 233242.9770503044], CI_lower: [198872.11063670783, 202074.39170431762, 204246.84787487655], CI_upper: [256864.36898756356, 260066.65005517335, 262239.1062257323]
+2025-12-17 18:18:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 198872.11063670783, 202074.39170431762, 204246.84787487655], upper=[np.float64(240605.59012875537), 256864.36898756356, 260066.65005517335, 262239.1062257323]
+2025-12-17 18:18:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 275645.7072753906, 2025: 313497.3098144531, 2026: 359661.1062011719}, values=[275645.7072753906, 313497.3098144531, 359661.1062011719], CI_lower=[266563.1094836853, 304414.7120227478, 350578.50840946654], CI_upper=[284728.30506709596, 322579.90760615846, 368743.7039928772]
+2025-12-17 18:18:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [275645.7072753906, 313497.3098144531, 359661.1062011719], CI_lower: [266563.1094836853, 304414.7120227478, 350578.50840946654], CI_upper: [284728.30506709596, 322579.90760615846, 368743.7039928772]
+2025-12-17 18:18:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 266563.1094836853, 304414.7120227478, 350578.50840946654], upper=[np.float64(240605.59012875537), 284728.30506709596, 322579.90760615846, 368743.7039928772]
+2025-12-17 18:18:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 223030.39413444526, 2025: 223030.39413444526, 2026: 223030.39413444526}, values=[223030.39413444526, 223030.39413444526, 223030.39413444526], CI_lower=[156741.4039063605, 156741.4039063605, 156741.4039063605], CI_upper=[289319.38436253, 289319.38436253, 289319.38436253]
+2025-12-17 18:18:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [223030.39413444526, 223030.39413444526, 223030.39413444526], CI_lower: [156741.4039063605, 156741.4039063605, 156741.4039063605], CI_upper: [289319.38436253, 289319.38436253, 289319.38436253]
+2025-12-17 18:18:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 156741.4039063605, 156741.4039063605, 156741.4039063605], upper=[np.float64(240605.59012875537), 289319.38436253, 289319.38436253, 289319.38436253]
+2025-12-17 18:18:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 203570.00224421255, 2025: 203570.00224421255, 2026: 203570.00224421255}, values=[203570.00224421255, 203570.00224421255, 203570.00224421255], CI_lower=[157317.9588781792, 157317.9588781792, 157317.9588781792], CI_upper=[249822.0456102459, 249822.0456102459, 249822.0456102459]
+2025-12-17 18:18:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [203570.00224421255, 203570.00224421255, 203570.00224421255], CI_lower: [157317.9588781792, 157317.9588781792, 157317.9588781792], CI_upper: [249822.0456102459, 249822.0456102459, 249822.0456102459]
+2025-12-17 18:18:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 157317.9588781792, 157317.9588781792, 157317.9588781792], upper=[np.float64(240605.59012875537), 249822.0456102459, 249822.0456102459, 249822.0456102459]
+2025-12-17 18:18:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 230060.72877971138, 2025: 230060.72877971138, 2026: 230060.72877971138}, values=[230060.72877971138, 230060.72877971138, 230060.72877971138], CI_lower=[160119.71622528968, 160119.71622528968, 160119.71622528968], CI_upper=[300001.7413341331, 300001.7413341331, 300001.7413341331]
+2025-12-17 18:18:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [230060.72877971138, 230060.72877971138, 230060.72877971138], CI_lower: [160119.71622528968, 160119.71622528968, 160119.71622528968], CI_upper: [300001.7413341331, 300001.7413341331, 300001.7413341331]
+2025-12-17 18:18:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 160119.71622528968, 160119.71622528968, 160119.71622528968], upper=[np.float64(240605.59012875537), 300001.7413341331, 300001.7413341331, 300001.7413341331]
+2025-12-17 18:18:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 255291.42650498383, 2025: 269977.26284530736, 2026: 284663.099149726}, values=[255291.42650498383, 269977.26284530736, 284663.099149726], CI_lower=[175470.25881044118, 190156.09515076474, 204841.93145518337], CI_upper=[335112.5941995265, 349798.43053985, 364484.2668442686]
+2025-12-17 18:18:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [255291.42650498383, 269977.26284530736, 284663.099149726], CI_lower: [175470.25881044118, 190156.09515076474, 204841.93145518337], CI_upper: [335112.5941995265, 349798.43053985, 364484.2668442686]
+2025-12-17 18:18:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 175470.25881044118, 190156.09515076474, 204841.93145518337], upper=[np.float64(240605.59012875537), 335112.5941995265, 349798.43053985, 364484.2668442686]
+2025-12-17 18:18:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 253816.18064581667, 2025: 268237.7858026207, 2026: 282659.39095942467}, values=[253816.18064581667, 268237.7858026207, 282659.39095942467], CI_lower=[195796.0250348992, 210217.63019170324, 224639.2353485072], CI_upper=[311836.3362567341, 326257.9414135381, 340679.5465703421]
+2025-12-17 18:18:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [253816.18064581667, 268237.7858026207, 282659.39095942467], CI_lower: [195796.0250348992, 210217.63019170324, 224639.2353485072], CI_upper: [311836.3362567341, 326257.9414135381, 340679.5465703421]
+2025-12-17 18:18:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(240605.59012875537), 195796.0250348992, 210217.63019170324, 224639.2353485072], upper=[np.float64(240605.59012875537), 311836.3362567341, 326257.9414135381, 340679.5465703421]
+2025-12-17 18:18:38 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-17 18:18:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 1036.6714112997506, 2025: 1060.3958687973573, 2026: 1084.120326294964}, values=[1036.6714112997506, 1060.3958687973573, 1084.120326294964], CI_lower=[970.4769703105559, 994.2014278081625, 1017.9258853057692], CI_upper=[1102.8658522889455, 1126.590309786552, 1150.3147672841587]
+2025-12-17 18:18:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1036.6714112997506, 1060.3958687973573, 1084.120326294964], CI_lower: [970.4769703105559, 994.2014278081625, 1017.9258853057692], CI_upper: [1102.8658522889455, 1126.590309786552, 1150.3147672841587]
+2025-12-17 18:18:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 970.4769703105559, 994.2014278081625, 1017.9258853057692], upper=[np.float64(1082.186980108499), 1102.8658522889455, 1126.590309786552, 1150.3147672841587]
+2025-12-17 18:18:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 1100.813635962084, 2025: 1145.8626027926803, 2026: 1193.1546106021851}, values=[1100.813635962084, 1145.8626027926803, 1193.1546106021851], CI_lower=[1055.636814749844, 1100.6857815804403, 1147.9777893899452], CI_upper=[1145.9904571743239, 1191.0394240049202, 1238.331431814425]
+2025-12-17 18:18:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1100.813635962084, 1145.8626027926803, 1193.1546106021851], CI_lower: [1055.636814749844, 1100.6857815804403, 1147.9777893899452], CI_upper: [1145.9904571743239, 1191.0394240049202, 1238.331431814425]
+2025-12-17 18:18:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 1055.636814749844, 1100.6857815804403, 1147.9777893899452], upper=[np.float64(1082.186980108499), 1145.9904571743239, 1191.0394240049202, 1238.331431814425]
+2025-12-17 18:18:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 1162.1163139343262, 2025: 1250.0044384002686, 2026: 1351.4778470993042}, values=[1162.1163139343262, 1250.0044384002686, 1351.4778470993042], CI_lower=[1131.7571488410904, 1219.6452733070328, 1321.1186820060684], CI_upper=[1192.475479027562, 1280.3636034935043, 1381.83701219254]
+2025-12-17 18:18:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1162.1163139343262, 1250.0044384002686, 1351.4778470993042], CI_lower: [1131.7571488410904, 1219.6452733070328, 1321.1186820060684], CI_upper: [1192.475479027562, 1280.3636034935043, 1381.83701219254]
+2025-12-17 18:18:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 1131.7571488410904, 1219.6452733070328, 1321.1186820060684], upper=[np.float64(1082.186980108499), 1192.475479027562, 1280.3636034935043, 1381.83701219254]
+2025-12-17 18:18:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 1023.1607844121759, 2025: 1023.1607844121759, 2026: 1023.1607844121759}, values=[1023.1607844121759, 1023.1607844121759, 1023.1607844121759], CI_lower=[970.8468428497456, 970.8468428497456, 970.8468428497456], CI_upper=[1075.4747259746061, 1075.4747259746061, 1075.4747259746061]
+2025-12-17 18:18:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1023.1607844121759, 1023.1607844121759, 1023.1607844121759], CI_lower: [970.8468428497456, 970.8468428497456, 970.8468428497456], CI_upper: [1075.4747259746061, 1075.4747259746061, 1075.4747259746061]
+2025-12-17 18:18:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 970.8468428497456, 970.8468428497456, 970.8468428497456], upper=[np.float64(1082.186980108499), 1075.4747259746061, 1075.4747259746061, 1075.4747259746061]
+2025-12-17 18:18:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 969.9333952635163, 2025: 969.9333952635163, 2026: 969.9333952635163}, values=[969.9333952635163, 969.9333952635163, 969.9333952635163], CI_lower=[905.90569897957, 905.90569897957, 905.90569897957], CI_upper=[1033.9610915474625, 1033.9610915474625, 1033.9610915474625]
+2025-12-17 18:18:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [969.9333952635163, 969.9333952635163, 969.9333952635163], CI_lower: [905.90569897957, 905.90569897957, 905.90569897957], CI_upper: [1033.9610915474625, 1033.9610915474625, 1033.9610915474625]
+2025-12-17 18:18:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 905.90569897957, 905.90569897957, 905.90569897957], upper=[np.float64(1082.186980108499), 1033.9610915474625, 1033.9610915474625, 1033.9610915474625]
+2025-12-17 18:18:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 1048.7062833858065, 2025: 1048.7062833858065, 2026: 1048.7062833858065}, values=[1048.7062833858065, 1048.7062833858065, 1048.7062833858065], CI_lower=[1007.3862412344705, 1007.3862412344705, 1007.3862412344705], CI_upper=[1090.0263255371424, 1090.0263255371424, 1090.0263255371424]
+2025-12-17 18:18:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1048.7062833858065, 1048.7062833858065, 1048.7062833858065], CI_lower: [1007.3862412344705, 1007.3862412344705, 1007.3862412344705], CI_upper: [1090.0263255371424, 1090.0263255371424, 1090.0263255371424]
+2025-12-17 18:18:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 1007.3862412344705, 1007.3862412344705, 1007.3862412344705], upper=[np.float64(1082.186980108499), 1090.0263255371424, 1090.0263255371424, 1090.0263255371424]
+2025-12-17 18:18:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 1123.629726151783, 2025: 1163.8104840491717, 2026: 1202.7676830610894}, values=[1123.629726151783, 1163.8104840491717, 1202.7676830610894], CI_lower=[815.0260691377639, 855.2068270351526, 894.1640260470704], CI_upper=[1432.233383165802, 1472.4141410631908, 1511.3713400751085]
+2025-12-17 18:18:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1123.629726151783, 1163.8104840491717, 1202.7676830610894], CI_lower: [815.0260691377639, 855.2068270351526, 894.1640260470704], CI_upper: [1432.233383165802, 1472.4141410631908, 1511.3713400751085]
+2025-12-17 18:18:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 815.0260691377639, 855.2068270351526, 894.1640260470704], upper=[np.float64(1082.186980108499), 1432.233383165802, 1472.4141410631908, 1511.3713400751085]
+2025-12-17 18:18:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 1160.9998933011816, 2025: 1231.3493621810637, 2026: 1301.6988310609458}, values=[1160.9998933011816, 1231.3493621810637, 1301.6988310609458], CI_lower=[1104.9826574046965, 1175.3321262845786, 1245.6815951644608], CI_upper=[1217.0171291976667, 1287.3665980775488, 1357.716066957431]
+2025-12-17 18:18:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1160.9998933011816, 1231.3493621810637, 1301.6988310609458], CI_lower: [1104.9826574046965, 1175.3321262845786, 1245.6815951644608], CI_upper: [1217.0171291976667, 1287.3665980775488, 1357.716066957431]
+2025-12-17 18:18:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1082.186980108499), 1104.9826574046965, 1175.3321262845786, 1245.6815951644608], upper=[np.float64(1082.186980108499), 1217.0171291976667, 1287.3665980775488, 1357.716066957431]
+2025-12-17 18:18:44 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-17 18:18:44 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-17 18:19:50 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 26691.70703125, 'mse': 8948078592.0, 'rmse': 94594.28414021642, 'r2': -0.5532621741294861}
+2025-12-17 18:19:50 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-17 18:20:37 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 6.058823585510254, 'mse': 169.08328247070312, 'rmse': 13.003202777419997, 'r2': 0.06066662073135376}
+2025-12-17 18:20:38 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-17 18:21:24 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 0.9879593849182129, 'mse': 11.275104522705078, 'rmse': 3.3578422420812264, 'r2': 0.7657864689826965}
+2025-12-17 18:21:25 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-17 18:22:12 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 259.16552734375, 'mse': 432924.40625, 'rmse': 657.9699128759612, 'r2': 0.314442902803421}
+2025-12-17 18:22:12 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-17 18:22:58 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.2970312535762787, 'mse': 0.35951870679855347, 'rmse': 0.5995987881896973, 'r2': 0.38598892092704773}
+2025-12-17 18:22:59 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-17 18:23:20 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Kansas/housing/1-year/figures/ml/deep_learning
+2025-12-17 18:23:21 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-17 18:23:21 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-17 18:23:21 [DEBUG] census_eda.main:  Running LLM analysis for state: Kansas
+2025-12-17 18:23:21 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-17 18:23:21 [INFO] census_eda.ml: [LLM] State context loaded: Kansas
+2025-12-17 18:23:21 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [API] Total request: ~2473 tokens (system: ~2291, user: ~182)
+2025-12-17 18:23:21 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [API] Received response: 4440 chars
+2025-12-17 18:23:40 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4440 chars)
+2025-12-17 18:23:40 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [LLM] User prompt: 1259 chars (~314 tokens)
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [API] Total request: ~2605 tokens (system: ~2291, user: ~314)
+2025-12-17 18:23:40 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [API] Received response: 3356 chars
+2025-12-17 18:23:50 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3356 chars)
+2025-12-17 18:23:50 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [LLM] User prompt: 1690 chars (~422 tokens)
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [API] Total request: ~2713 tokens (system: ~2291, user: ~422)
+2025-12-17 18:23:50 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [API] Received response: 4138 chars
+2025-12-17 18:24:01 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4138 chars)
+2025-12-17 18:24:01 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [LLM] User prompt: 1464 chars (~366 tokens)
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [API] Total request: ~2657 tokens (system: ~2291, user: ~366)
+2025-12-17 18:24:01 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [API] Received response: 5542 chars
+2025-12-17 18:24:18 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (5542 chars)
+2025-12-17 18:24:18 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [API] Total request: ~2302 tokens (system: ~2291, user: ~11)
+2025-12-17 18:24:18 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [API] Received response: 4488 chars
+2025-12-17 18:24:33 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4488 chars)
+2025-12-17 18:24:33 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [LLM] User prompt: 11140 chars (~2785 tokens)
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [API] Total request: ~5076 tokens (system: ~2291, user: ~2785)
+2025-12-17 18:24:33 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [API] Received response: 3195 chars
+2025-12-17 18:24:44 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3195 chars)
+2025-12-17 18:24:44 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [LLM] User prompt: 6913 chars (~1728 tokens)
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [API] Total request: ~4019 tokens (system: ~2291, user: ~1728)
+2025-12-17 18:24:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [API] Received response: 3491 chars
+2025-12-17 18:24:54 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3491 chars)
+2025-12-17 18:24:54 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [API] Total request: ~2443 tokens (system: ~2291, user: ~152)
+2025-12-17 18:24:54 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [API] Received response: 5514 chars
+2025-12-17 18:25:14 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (5514 chars)
+2025-12-17 18:25:14 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [LLM] User prompt: 6443 chars (~1610 tokens)
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [API] Total request: ~3901 tokens (system: ~2291, user: ~1610)
+2025-12-17 18:25:14 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [API] Received response: 3566 chars
+2025-12-17 18:25:25 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3566 chars)
+2025-12-17 18:25:25 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [LLM] User prompt: 2517 chars (~629 tokens)
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [API] Total request: ~2920 tokens (system: ~2291, user: ~629)
+2025-12-17 18:25:25 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [API] Received response: 4124 chars
+2025-12-17 18:25:38 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4124 chars)
+2025-12-17 18:25:38 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [LLM] User prompt: 1048 chars (~262 tokens)
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Kansas
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Kansas
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4276 chars
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1069
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Kansas
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (wheat, cattle, sorghum), Aircraft manufacturing (Wichita), Food processing, Energy (oil, natural gas, wind), Professional and business services
+  Trends: Moderate growth 2011-2014, tax experiment slowdown 2013-2017, recovery 2018-2023. Aircraft manufacturing (Boeing/Spirit AeroSystems) drives Wichita economy. Agriculture and energy sectors cyclical. Post-pandemic recovery moderate
+  Income: Median income near national average (~$64k). Cost of living below national average improving purchasing power. Urban-rural income gap. Wichita metro higher income than rural areas
+  Dominant Sector: Manufacturing (especially aircraft)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth (~0.2% annually). Growth concentrated in Kansas City suburbs (Johnson County) and Manhattan. Rural depopulation severe in western counties. Wichita stagnant
+  Migration: Slight net domestic outmigration from rural areas. Johnson County (KC suburbs) attracts domestic migrants. International immigration to meatpacking towns (Garden City, Dodge City, Liberal). Brain drain of young adults
+  Education: High school completion high. Bachelor's degree attainment moderate (~34%). Strong university system (KU, K-State). Educational divide between urban and rural areas widening
+
+HOUSING MARKET:
+  Market: Affordable overall. Wide variation: Johnson County expensive (~$400k median), rural western Kansas very cheap (~$100k). Homeownership rate high (~67%)
+  Affordability: Housing affordable 2011-2019. Pandemic spike 2020-2022, especially Johnson County. Rural housing values stagnant or declining. Wichita remained affordable
+  Challenges: Rural housing abandonment in western counties, Johnson County affordability pressures, Aging housing stock in Wichita, Limited multifamily supply
+
+POLITY:
+  Policy: Conservative with libertarian influences. 2013-2017 tax experiment under Gov. Brownback created fiscal crisis. 2017 reversal bipartisan. Social conservatism balanced with fiscal pragmatism post-2017
+  Housing: Minimal state intervention in housing. Local control dominant. No rent control. Generally permissive development policies. Some affordable housing initiatives in Johnson County
+  Labor: Right-to-work state. $7.25 federal minimum wage. Business-friendly environment. Limited worker protections. Public employee bargaining restricted
+
+REGIONAL:
+  Geography: Great Plains, flat to rolling. Eastern Kansas more wooded and hilly. Western Kansas high plains, semi-arid. Central Kansas (Flint Hills) tallgrass prairie
+  Urban/Rural: 74% urban (Kansas City suburbs, Wichita metro), 26% rural. Stark urban-rural divide. Western counties losing population rapidly
+  Infrastructure: Strong Interstate system (I-70, I-35). Rail network for grain transport. Wichita airport critical for aircraft industry. Rural broadband challenges
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, beginning of Brownback tax experiment (2013), agricultural boom; 2014-2016: Tax experiment budget crisis, education funding litigation, rural depopulation accelerates, aircraft industry volatility; 2017-2019: Bipartisan tax reversal, fiscal stabilization, political moderation, continued rural decline; 2021-2023: COVID recovery, political battles over abortion, Medicaid expansion, school funding lawsuits settled, inflation impacts agriculture
+  Shocks: 2013-2017 self-inflicted fiscal crisis from tax experiment. 2015-2016 oil price crash hurt western Kansas. 2020 pandemic hit aircraft manufacturing (Boeing 737 MAX crisis compounded)
+  Transitions: Aircraft manufacturing volatility (Boeing's challenges). Oil/gas sector decline. Growth of wind energy. Agricultural consolidation. Meatpacking growth in southwest
+
+COMPARATIVE:
+  Benchmarks: Median income near national average. Housing more affordable. Lower unemployment typically. Higher percentage in agriculture and manufacturing. Less diverse than national average
+  Peer States: Nebraska, Oklahoma, Missouri (geography/economy)
+  Unique: 2013-2017 tax experiment cautionary tale studied nationally. Aircraft manufacturing concentration in Wichita unique. Geographic center of contiguous 48 states. Extreme urban (Johnson County affluence) vs rural (western decline) divide
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Kansas
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [PROMPT] State context injected (4276 chars)
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9164 chars (~2291 tokens)
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [API] Total request: ~2553 tokens (system: ~2291, user: ~262)
+2025-12-17 18:25:38 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 18:25:51 [DEBUG] census_eda.ml: [API] Received response: 4054 chars
+2025-12-17 18:25:51 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4054 chars)
+2025-12-17 18:25:51 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-17 18:25:51 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-17 18:25:51 [INFO] census_eda.main: [REPORT] Generated: report_Kansas_housing_20251217_182551.txt
+2025-12-17 18:25:51 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for Kansas!
+2025-12-17 18:25:51 [INFO] census_eda.memory: process_Kansas_housing_1-year:EXIT: 5322.7MB (delta: -2009.9MB)
+2025-12-17 18:25:51 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-17 18:25:51 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-17 18:25:52 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-17 18:25:52 [INFO] census_eda.memory: Cleared all caches

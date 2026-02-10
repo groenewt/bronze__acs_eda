@@ -1,0 +1,1326 @@
+2025-12-18 11:45:18 [INFO] census_eda: Logging context set: state=Oregon, survey=population, scope=1-year
+2025-12-18 11:45:18 [INFO] census_eda: Log file: ./logs/Oregon/1-year/population/1-year_population_25_12_18_1145.log
+2025-12-18 11:45:18 [INFO] census_eda.main: ======================================================================
+2025-12-18 11:45:18 [INFO] census_eda.main: [POPULATION] Processing Oregon (1-year)...
+2025-12-18 11:45:18 [INFO] census_eda.main: ======================================================================
+2025-12-18 11:45:18 [INFO] census_eda.memory: process_Oregon_population_1-year:ENTER: 11898.4MB (delta: +0.0MB)
+2025-12-18 11:45:18 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 11:45:18 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/41/*/*.csv
+2025-12-18 11:45:18 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 11:45:18 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12por.csv
+2025-12-18 11:45:18 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 11:45:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 38,767 rows, 260 columns
+2025-12-18 11:45:18 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p41.csv
+2025-12-18 11:45:19 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 11:45:19 [VERBOSE] census_eda.processing.loader:   -> Loaded 41,219 rows, 260 columns
+2025-12-18 11:45:19 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14por.csv
+2025-12-18 11:45:20 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 11:45:20 [VERBOSE] census_eda.processing.loader:   -> Loaded 39,336 rows, 260 columns
+2025-12-18 11:45:20 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13por.csv
+2025-12-18 11:45:20 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 11:45:20 [VERBOSE] census_eda.processing.loader:   -> Loaded 39,342 rows, 260 columns
+2025-12-18 11:45:20 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07por.csv
+2025-12-18 11:45:21 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 11:45:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 37,076 rows, 260 columns
+2025-12-18 11:45:21 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09por.csv
+2025-12-18 11:45:22 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 11:45:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 37,792 rows, 260 columns
+2025-12-18 11:45:22 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p41.csv
+2025-12-18 11:45:23 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 11:45:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 42,117 rows, 260 columns
+2025-12-18 11:45:23 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08por.csv
+2025-12-18 11:45:23 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 11:45:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 37,220 rows, 260 columns
+2025-12-18 11:45:23 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16por.csv
+2025-12-18 11:45:24 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 11:45:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 40,269 rows, 260 columns
+2025-12-18 11:45:24 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p41.csv
+2025-12-18 11:45:25 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 11:45:25 [VERBOSE] census_eda.processing.loader:   -> Loaded 42,080 rows, 260 columns
+2025-12-18 11:45:25 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p41.csv
+2025-12-18 11:45:25 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 11:45:25 [VERBOSE] census_eda.processing.loader:   -> Loaded 43,708 rows, 260 columns
+2025-12-18 11:45:25 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p41.csv
+2025-12-18 11:45:26 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 11:45:26 [VERBOSE] census_eda.processing.loader:   -> Loaded 42,752 rows, 260 columns
+2025-12-18 11:45:26 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p41.csv
+2025-12-18 11:45:27 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 11:45:27 [VERBOSE] census_eda.processing.loader:   -> Loaded 43,935 rows, 260 columns
+2025-12-18 11:45:27 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15por.csv
+2025-12-18 11:45:28 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 11:45:28 [VERBOSE] census_eda.processing.loader:   -> Loaded 39,992 rows, 260 columns
+2025-12-18 11:45:28 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10por.csv
+2025-12-18 11:45:28 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 11:45:28 [VERBOSE] census_eda.processing.loader:   -> Loaded 38,464 rows, 260 columns
+2025-12-18 11:45:28 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11por.csv
+2025-12-18 11:45:29 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 11:45:29 [VERBOSE] census_eda.processing.loader:   -> Loaded 39,050 rows, 260 columns
+2025-12-18 11:45:29 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 11:45:33 [VERBOSE] census_eda.processing.loader: Combined into 643,119 total rows, 260 columns
+2025-12-18 11:45:34 [INFO] census_eda.main: Loaded 643,119 records
+2025-12-18 11:45:34 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 643119 valid, 16 unique
+2025-12-18 11:45:34 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 11:45:35 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 11:45:35 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 11:45:35 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 11:45:36 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 11:45:36 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 11:45:36 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 11:45:36 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 11:45:37 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 11:45:37 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 11:45:37 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 11:45:37 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 11:45:37 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 11:45:38 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 11:45:38 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 11:45:38 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 11:45:38 [DEBUG] census_eda.main: Feature engineering complete: (643119, 292)
+2025-12-18 11:45:39 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 11:45:39 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 11:47:22 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 11:47:22 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 11:47:22 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(643119, 292)
+2025-12-18 11:47:22 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 11:47:22 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 643119
+2025-12-18 11:47:22 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 11:47:23 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(643119, 292)
+2025-12-18 11:47:24 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(37076), np.int64(2008): np.int64(37220), np.int64(2009): np.int64(37792), np.int64(2010): np.int64(38464), np.int64(2011): np.int64(39050), np.int64(2012): np.int64(38767), np.int64(2013): np.int64(39342), np.int64(2014): np.int64(39336), np.int64(2015): np.int64(39992), np.int64(2016): np.int64(40269), np.int64(2017): np.int64(41219), np.int64(2018): np.int64(42117), np.int64(2019): np.int64(42080), np.int64(2021): np.int64(42752), np.int64(2022): np.int64(43708), np.int64(2023): np.int64(43935)}
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(643119, 292)
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 643119 non-null values (zeros excluded if needed)
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 643119 non-null values (zeros excluded if needed)
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1644.00
+2025-12-18 11:47:25 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 11:47:26 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 643119 non-null values (zeros excluded if needed)
+2025-12-18 11:47:26 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-18 11:47:26 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 11:47:26 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 257449 non-null values (zeros excluded if needed)
+2025-12-18 11:47:26 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 185.00
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 86667 non-null values (zeros excluded if needed)
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 330000.00
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 44541 non-null values (zeros excluded if needed)
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 75000.00
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 10437 non-null values (zeros excluded if needed)
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 75699 non-null values (zeros excluded if needed)
+2025-12-18 11:47:29 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 154000.00
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 38468 non-null values (zeros excluded if needed)
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 366000.00
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 15215 non-null values (zeros excluded if needed)
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Value range: 20.00 to 30000.00
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 136955 non-null values (zeros excluded if needed)
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 308211 non-null values (zeros excluded if needed)
+2025-12-18 11:47:32 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 565000.00
+2025-12-18 11:47:36 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 11:47:54 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 11:47:54 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 11:47:54 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 11:47:56 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 11:47:56 [DEBUG] census_eda.memory: Skipping sampling: 35414MB available (>16GB)
+2025-12-18 11:47:56 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 643119 rows
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(643119, 292)
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 643119 non-null values
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 643119 non-null values
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1644.00
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 643119 non-null values
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 257449 non-null values
+2025-12-18 11:49:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 185.00
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 86667 non-null values
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 330000.00
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 44541 non-null values
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 75000.00
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 10437 non-null values
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 75699 non-null values
+2025-12-18 11:49:55 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 154000.00
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 38468 non-null values
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 366000.00
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 15215 non-null values
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Data range: 20.00 to 30000.00
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 136955 non-null values
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 308211 non-null values
+2025-12-18 11:49:57 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 565000.00
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 333281 non-null values
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 267201 non-null values
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 119498 non-null values
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 531908 non-null values
+2025-12-18 11:50:00 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 11:50:15 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 11:50:30 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 11:50:45 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 11:51:12 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 11:51:12 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 11:51:12 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 11:51:14 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 11:51:15 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 11:51:16 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 11:51:19 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 11:51:19 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 11:51:19 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 11:51:20 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 11:51:21 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 11:51:24 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 11:51:24 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 11:51:24 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 11:51:25 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 11:51:28 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 11:51:28 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 11:51:28 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 11:51:29 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 11:51:31 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 11:51:33 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 11:51:33 [DEBUG] census_eda.memory: Skipping sampling: 35360MB available (>16GB)
+2025-12-18 11:51:45 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 11:51:45 [DEBUG] census_eda.memory: Skipping sampling: 35368MB available (>16GB)
+2025-12-18 11:52:07 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 11:52:07 [DEBUG] census_eda.memory: Skipping sampling: 35392MB available (>16GB)
+2025-12-18 11:52:13 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 11:52:27 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 11:52:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 11:52:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 11:52:28 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 11:52:29 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 11:52:31 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 11:52:32 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 11:52:33 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 11:52:34 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 11:52:34 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 11:52:34 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 11:52:34 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 11:52:35 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 11:52:36 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 11:52:36 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 11:52:36 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 11:52:37 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 11:52:38 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 11:52:40 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 11:52:42 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 11:52:44 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 11:52:46 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 11:52:49 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 11:52:49 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 11:52:49 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 11:52:50 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 11:52:51 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 11:52:53 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 11:52:55 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 11:52:56 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 11:52:58 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 11:52:59 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 11:53:02 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 11:53:07 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 11:53:08 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 11:53:10 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Oregon/population/1-year/figures
+2025-12-18 11:53:11 [DEBUG] census_eda.memory: Skipping sampling: 35535MB available (>16GB)
+2025-12-18 11:53:11 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 11:53:11 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 11:53:11 [INFO] census_eda.memory: [ML-START]: 16531.2MB (delta: +4632.8MB)
+2025-12-18 11:53:11 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 11:53:11 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 11:53:11 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 10036 samples (was 10043)
+2025-12-18 11:53:11 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 11:53:11 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 11:53:11 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:53:11 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:53:11 [INFO] census_eda.memory: tune_ridge:ENTER: 16531.2MB (delta: +0.0MB)
+2025-12-18 11:53:12 [WARNING] census_eda.memory: Memory usage (16531.8MB) exceeded threshold (16000MB)
+2025-12-18 11:53:13 [INFO] census_eda.memory: tune_ridge:EXIT: 16531.8MB (delta: +0.6MB)
+2025-12-18 11:53:13 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 11:53:13 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1052
+2025-12-18 11:53:13 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:53:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 11:53:13 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:53:13 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:53:13 [INFO] census_eda.memory: tune_lasso:ENTER: 16531.8MB (delta: +0.0MB)
+2025-12-18 11:53:13 [WARNING] census_eda.memory: Memory usage (16531.9MB) exceeded threshold (16000MB)
+2025-12-18 11:53:15 [INFO] census_eda.memory: tune_lasso:EXIT: 16531.9MB (delta: +0.0MB)
+2025-12-18 11:53:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 11:53:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1053
+2025-12-18 11:53:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:53:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 11:53:15 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:53:15 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:53:15 [INFO] census_eda.memory: tune_random_forest:ENTER: 16531.9MB (delta: +0.0MB)
+2025-12-18 11:53:24 [WARNING] census_eda.memory: Memory usage (16539.6MB) exceeded threshold (16000MB)
+2025-12-18 11:53:25 [INFO] census_eda.memory: tune_random_forest:EXIT: 16539.6MB (delta: +7.8MB)
+2025-12-18 11:53:25 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 11:53:25 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0827
+2025-12-18 11:53:25 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:53:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 11:53:27 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:53:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:53:27 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16540.2MB (delta: +0.6MB)
+2025-12-18 11:53:32 [WARNING] census_eda.memory: Memory usage (16540.2MB) exceeded threshold (16000MB)
+2025-12-18 11:53:34 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:53:34 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 11:53:34 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1306
+2025-12-18 11:53:34 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:53:36 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,008 -> 1,000
+2025-12-18 11:53:36 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,008 -> 1,000
+2025-12-18 11:53:36 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:53:36 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 11:54:51 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:54:51 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 11:54:51 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-18 11:54:51 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 11:54:51 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 9638 samples (was 10043)
+2025-12-18 11:54:51 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 11:54:51 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 11:54:51 [INFO] census_eda.ml.regression: [TUNE] Data: 9,638 samples, 10 features
+2025-12-18 11:54:51 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:54:51 [INFO] census_eda.memory: tune_ridge:ENTER: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:54:51 [WARNING] census_eda.memory: Memory usage (16540.2MB) exceeded threshold (16000MB)
+2025-12-18 11:54:52 [INFO] census_eda.memory: tune_ridge:EXIT: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:54:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 11:54:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1095
+2025-12-18 11:54:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:54:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 11:54:52 [INFO] census_eda.ml.regression: [TUNE] Data: 9,638 samples, 10 features
+2025-12-18 11:54:52 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:54:52 [INFO] census_eda.memory: tune_lasso:ENTER: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:54:52 [WARNING] census_eda.memory: Memory usage (16540.2MB) exceeded threshold (16000MB)
+2025-12-18 11:54:53 [INFO] census_eda.memory: tune_lasso:EXIT: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:54:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 11:54:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1094
+2025-12-18 11:54:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:54:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 11:54:53 [INFO] census_eda.ml.regression: [TUNE] Data: 9,638 samples, 10 features
+2025-12-18 11:54:53 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:54:53 [INFO] census_eda.memory: tune_random_forest:ENTER: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:55:03 [WARNING] census_eda.memory: Memory usage (16540.2MB) exceeded threshold (16000MB)
+2025-12-18 11:55:04 [INFO] census_eda.memory: tune_random_forest:EXIT: 16540.2MB (delta: +0.0MB)
+2025-12-18 11:55:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 11:55:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0809
+2025-12-18 11:55:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:55:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 11:55:05 [INFO] census_eda.ml.regression: [TUNE] Data: 9,638 samples, 10 features
+2025-12-18 11:55:05 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:55:05 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:10 [WARNING] census_eda.memory: Memory usage (16540.3MB) exceeded threshold (16000MB)
+2025-12-18 11:55:12 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 11:55:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1383
+2025-12-18 11:55:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:55:14 [INFO] census_eda.memory: [SHAP] Safe sample size: 1,928 -> 1,000
+2025-12-18 11:55:14 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 1,928 -> 1,000
+2025-12-18 11:55:14 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:14 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 11:55:15 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:15 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 11:55:15 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 11:55:15 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 11:55:15 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 10036 samples (was 10043)
+2025-12-18 11:55:15 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 11:55:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 11:55:15 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:55:15 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:55:15 [INFO] census_eda.memory: tune_ridge:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:15 [WARNING] census_eda.memory: Memory usage (16540.3MB) exceeded threshold (16000MB)
+2025-12-18 11:55:16 [INFO] census_eda.memory: tune_ridge:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 11:55:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1004
+2025-12-18 11:55:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:55:16 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 11:55:16 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:55:16 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:55:16 [INFO] census_eda.memory: tune_lasso:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:16 [WARNING] census_eda.memory: Memory usage (16540.3MB) exceeded threshold (16000MB)
+2025-12-18 11:55:17 [INFO] census_eda.memory: tune_lasso:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 11:55:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1004
+2025-12-18 11:55:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:55:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 11:55:17 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:55:17 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:55:17 [INFO] census_eda.memory: tune_random_forest:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:27 [WARNING] census_eda.memory: Memory usage (16540.3MB) exceeded threshold (16000MB)
+2025-12-18 11:55:28 [INFO] census_eda.memory: tune_random_forest:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 11:55:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0727
+2025-12-18 11:55:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:55:29 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 11:55:29 [INFO] census_eda.ml.regression: [TUNE] Data: 10,036 samples, 10 features
+2025-12-18 11:55:29 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:55:29 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:35 [WARNING] census_eda.memory: Memory usage (16540.3MB) exceeded threshold (16000MB)
+2025-12-18 11:55:36 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:36 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 11:55:36 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1200
+2025-12-18 11:55:36 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:55:38 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,008 -> 1,000
+2025-12-18 11:55:38 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,008 -> 1,000
+2025-12-18 11:55:38 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:38 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 11:55:39 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:39 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 11:55:39 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 11:55:39 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 11:55:39 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 11:55:40 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 11:55:40 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:55:40 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:55:40 [INFO] census_eda.memory: tune_ridge:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:40 [WARNING] census_eda.memory: Memory usage (16540.3MB) exceeded threshold (16000MB)
+2025-12-18 11:55:41 [INFO] census_eda.memory: tune_ridge:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 11:55:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 11:55:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:55:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 11:55:41 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:55:41 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:55:41 [INFO] census_eda.memory: tune_lasso:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:41 [WARNING] census_eda.memory: Memory usage (16540.3MB) exceeded threshold (16000MB)
+2025-12-18 11:55:42 [INFO] census_eda.memory: tune_lasso:EXIT: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 11:55:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 11:55:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:55:42 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 11:55:42 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:55:42 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:55:42 [INFO] census_eda.memory: tune_random_forest:ENTER: 16540.3MB (delta: +0.0MB)
+2025-12-18 11:55:45 [WARNING] census_eda.memory: Memory usage (16540.4MB) exceeded threshold (16000MB)
+2025-12-18 11:55:47 [INFO] census_eda.memory: tune_random_forest:EXIT: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:55:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 11:55:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 11:55:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:55:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 11:55:47 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:55:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:55:47 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16540.4MB (delta: +0.1MB)
+2025-12-18 11:55:51 [WARNING] census_eda.memory: Memory usage (16540.4MB) exceeded threshold (16000MB)
+2025-12-18 11:55:52 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:55:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 11:55:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 11:55:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:55:56 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 11:55:56 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 11:55:56 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 11:55:56 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:55:56 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:55:56 [INFO] census_eda.memory: tune_ridge:ENTER: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:55:56 [WARNING] census_eda.memory: Memory usage (16540.4MB) exceeded threshold (16000MB)
+2025-12-18 11:55:57 [INFO] census_eda.memory: tune_ridge:EXIT: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:55:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 11:55:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0461
+2025-12-18 11:55:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:55:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 11:55:57 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:55:57 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 11:55:57 [INFO] census_eda.memory: tune_lasso:ENTER: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:55:57 [WARNING] census_eda.memory: Memory usage (16540.4MB) exceeded threshold (16000MB)
+2025-12-18 11:55:58 [INFO] census_eda.memory: tune_lasso:EXIT: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:55:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 11:55:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0464
+2025-12-18 11:55:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 11:55:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 11:55:58 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:55:58 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:55:58 [INFO] census_eda.memory: tune_random_forest:ENTER: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:56:09 [WARNING] census_eda.memory: Memory usage (16540.4MB) exceeded threshold (16000MB)
+2025-12-18 11:56:11 [INFO] census_eda.memory: tune_random_forest:EXIT: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:56:11 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 11:56:11 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0287
+2025-12-18 11:56:11 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:56:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 11:56:12 [INFO] census_eda.ml.regression: [TUNE] Data: 10,043 samples, 10 features
+2025-12-18 11:56:12 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 11:56:12 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:56:18 [WARNING] census_eda.memory: Memory usage (16540.4MB) exceeded threshold (16000MB)
+2025-12-18 11:56:19 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:56:19 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 11:56:19 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0646
+2025-12-18 11:56:19 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 11:56:21 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 11:56:21 [INFO] census_eda.memory: [PRE-CLUSTERING]: 16540.4MB (delta: +0.0MB)
+2025-12-18 11:56:21 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 11:56:21 [INFO] census_eda.main: [CLUSTERING] KMeans on 10,043 samples...
+2025-12-18 11:56:22 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 11:56:22 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 10,043 samples (will sample if needed)...
+2025-12-18 11:56:24 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 11:56:24 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 11:56:24 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 11:56:24 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 11:56:24 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 11:56:24 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 59905.706813812256, 2025: 62317.60515975952, 2026: 64711.292949676514}, Values: [59905.706813812256, 62317.60515975952, 64711.292949676514]
+2025-12-18 11:56:24 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 11:56:24 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 65449.29518175125, 2025: 69001.43564414978, 2026: 72766.43913841248}, Values: [65449.29518175125, 69001.43564414978, 72766.43913841248]
+2025-12-18 11:56:24 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 11:56:24 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 65760.79336357117, 2025: 69092.72379112244, 2026: 72553.76595878601}, Values: [65760.79336357117, 69092.72379112244, 72553.76595878601]
+2025-12-18 11:56:24 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 11:56:25 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 45.12646438367665, 2025: 45.737668784335256, 2026: 46.4456784222275}, Values: [45.12646438367665, 45.737668784335256, 46.4456784222275]
+2025-12-18 11:56:25 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 11:56:25 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.1275722309947, 2025: 35.41771452873945, 2026: 34.49747645109892}, Values: [36.1275722309947, 35.41771452873945, 34.49747645109892]
+2025-12-18 11:56:25 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 11:56:29 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-18 11:56:35 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-18 11:56:40 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-18 11:56:53 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 11:56:53 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 11:56:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 55536.00408627512, 2025: 56912.78138534352, 2026: 58289.558684411924}, values=[55536.00408627512, 56912.78138534352, 58289.558684411924], CI_lower=[51198.82598550052, 52575.603284568926, 53952.38058363733], CI_upper=[59873.182187049715, 61249.95948611812, 62626.73678518652]
+2025-12-18 11:56:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55536.00408627512, 56912.78138534352, 58289.558684411924], CI_lower: [51198.82598550052, 52575.603284568926, 53952.38058363733], CI_upper: [59873.182187049715, 61249.95948611812, 62626.73678518652]
+2025-12-18 11:56:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 51198.82598550052, 52575.603284568926, 53952.38058363733], upper=[np.float64(51891.29515744906), 59873.182187049715, 61249.95948611812, 62626.73678518652]
+2025-12-18 11:56:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 61044.87142533064, 2025: 64253.10832178593, 2026: 67653.98922508955}, values=[61044.87142533064, 64253.10832178593, 67653.98922508955], CI_lower=[59801.86974404315, 63010.10664049844, 66410.98754380205], CI_upper=[62287.87310661813, 65496.110003073416, 68896.99090637705]
+2025-12-18 11:56:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61044.87142533064, 64253.10832178593, 67653.98922508955], CI_lower: [59801.86974404315, 63010.10664049844, 66410.98754380205], CI_upper: [62287.87310661813, 65496.110003073416, 68896.99090637705]
+2025-12-18 11:56:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 59801.86974404315, 63010.10664049844, 66410.98754380205], upper=[np.float64(51891.29515744906), 62287.87310661813, 65496.110003073416, 68896.99090637705]
+2025-12-18 11:56:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 59905.706813812256, 2025: 62317.60515975952, 2026: 64711.292949676514}, values=[59905.706813812256, 62317.60515975952, 64711.292949676514], CI_lower=[58829.50191060269, 61241.400256549954, 63635.088046466946], CI_upper=[60981.91171702182, 63393.81006296909, 65787.49785288608]
+2025-12-18 11:56:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59905.706813812256, 62317.60515975952, 64711.292949676514], CI_lower: [58829.50191060269, 61241.400256549954, 63635.088046466946], CI_upper: [60981.91171702182, 63393.81006296909, 65787.49785288608]
+2025-12-18 11:56:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 58829.50191060269, 61241.400256549954, 63635.088046466946], upper=[np.float64(51891.29515744906), 60981.91171702182, 63393.81006296909, 65787.49785288608]
+2025-12-18 11:56:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 54962.34685260477, 2025: 54962.34685260477, 2026: 54962.34685260477}, values=[54962.34685260477, 54962.34685260477, 54962.34685260477], CI_lower=[52549.54137548996, 52549.54137548996, 52549.54137548996], CI_upper=[57375.15232971959, 57375.15232971959, 57375.15232971959]
+2025-12-18 11:56:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54962.34685260477, 54962.34685260477, 54962.34685260477], CI_lower: [52549.54137548996, 52549.54137548996, 52549.54137548996], CI_upper: [57375.15232971959, 57375.15232971959, 57375.15232971959]
+2025-12-18 11:56:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 52549.54137548996, 52549.54137548996, 52549.54137548996], upper=[np.float64(51891.29515744906), 57375.15232971959, 57375.15232971959, 57375.15232971959]
+2025-12-18 11:56:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 51831.57257887478, 2025: 51831.57257887478, 2026: 51831.57257887478}, values=[51831.57257887478, 51831.57257887478, 51831.57257887478], CI_lower=[47676.52181333061, 47676.52181333061, 47676.52181333061], CI_upper=[55986.62334441895, 55986.62334441895, 55986.62334441895]
+2025-12-18 11:56:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51831.57257887478, 51831.57257887478, 51831.57257887478], CI_lower: [47676.52181333061, 47676.52181333061, 47676.52181333061], CI_upper: [55986.62334441895, 55986.62334441895, 55986.62334441895]
+2025-12-18 11:56:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 47676.52181333061, 47676.52181333061, 47676.52181333061], upper=[np.float64(51891.29515744906), 55986.62334441895, 55986.62334441895, 55986.62334441895]
+2025-12-18 11:56:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 55967.18893748885, 2025: 55967.18893748885, 2026: 55967.18893748885}, values=[55967.18893748885, 55967.18893748885, 55967.18893748885], CI_lower=[54272.68969330982, 54272.68969330982, 54272.68969330982], CI_upper=[57661.68818166788, 57661.68818166788, 57661.68818166788]
+2025-12-18 11:56:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55967.18893748885, 55967.18893748885, 55967.18893748885], CI_lower: [54272.68969330982, 54272.68969330982, 54272.68969330982], CI_upper: [57661.68818166788, 57661.68818166788, 57661.68818166788]
+2025-12-18 11:56:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 54272.68969330982, 54272.68969330982, 54272.68969330982], upper=[np.float64(51891.29515744906), 57661.68818166788, 57661.68818166788, 57661.68818166788]
+2025-12-18 11:56:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 59520.72764096872, 2025: 60977.689377874005, 2026: 62434.62822386566}, values=[59520.72764096872, 60977.689377874005, 62434.62822386566], CI_lower=[42408.51572596949, 43865.47746287478, 45322.41630886643], CI_upper=[76632.93955596795, 78089.90129287323, 79546.84013886488]
+2025-12-18 11:56:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59520.72764096872, 60977.689377874005, 62434.62822386566], CI_lower: [42408.51572596949, 43865.47746287478, 45322.41630886643], CI_upper: [76632.93955596795, 78089.90129287323, 79546.84013886488]
+2025-12-18 11:56:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 42408.51572596949, 43865.47746287478, 45322.41630886643], upper=[np.float64(51891.29515744906), 76632.93955596795, 78089.90129287323, 79546.84013886488]
+2025-12-18 11:56:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 61185.4540001524, 2025: 64307.164993766295, 2026: 67428.87598738019}, values=[61185.4540001524, 64307.164993766295, 67428.87598738019], CI_lower=[59376.665012615624, 62498.37600622952, 65620.08699984342], CI_upper=[62994.24298768918, 66115.95398130307, 69237.66497491696]
+2025-12-18 11:56:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61185.4540001524, 64307.164993766295, 67428.87598738019], CI_lower: [59376.665012615624, 62498.37600622952, 65620.08699984342], CI_upper: [62994.24298768918, 66115.95398130307, 69237.66497491696]
+2025-12-18 11:56:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(51891.29515744906), 59376.665012615624, 62498.37600622952, 65620.08699984342], upper=[np.float64(51891.29515744906), 62994.24298768918, 66115.95398130307, 69237.66497491696]
+2025-12-18 11:56:59 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 11:56:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 59538.62581757223, 2025: 61110.66480921442, 2026: 62682.7038008566}, values=[59538.62581757223, 61110.66480921442, 62682.7038008566], CI_lower=[55004.28517648257, 56576.32416812475, 58148.36315976694], CI_upper=[64072.9664586619, 65645.00545030409, 67217.04444194627]
+2025-12-18 11:56:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59538.62581757223, 61110.66480921442, 62682.7038008566], CI_lower: [55004.28517648257, 56576.32416812475, 58148.36315976694], CI_upper: [64072.9664586619, 65645.00545030409, 67217.04444194627]
+2025-12-18 11:56:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 55004.28517648257, 56576.32416812475, 58148.36315976694], upper=[np.float64(34971.64509129399), 64072.9664586619, 65645.00545030409, 67217.04444194627]
+2025-12-18 11:56:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 65408.19194996357, 2025: 68931.60725277662, 2026: 72660.28012830019}, values=[65408.19194996357, 68931.60725277662, 72660.28012830019], CI_lower=[64428.83684798288, 67952.25215079593, 71680.9250263195], CI_upper=[66387.54705194426, 69910.96235475731, 73639.63523028088]
+2025-12-18 11:56:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65408.19194996357, 68931.60725277662, 72660.28012830019], CI_lower: [64428.83684798288, 67952.25215079593, 71680.9250263195], CI_upper: [66387.54705194426, 69910.96235475731, 73639.63523028088]
+2025-12-18 11:56:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 64428.83684798288, 67952.25215079593, 71680.9250263195], upper=[np.float64(34971.64509129399), 66387.54705194426, 69910.96235475731, 73639.63523028088]
+2025-12-18 11:57:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 65449.29518175125, 2025: 69001.43564414978, 2026: 72766.43913841248}, values=[65449.29518175125, 69001.43564414978, 72766.43913841248], CI_lower=[64470.196886573285, 68022.3373489718, 71787.3408432345], CI_upper=[66428.39347692922, 69980.53393932775, 73745.53743359045]
+2025-12-18 11:57:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65449.29518175125, 69001.43564414978, 72766.43913841248], CI_lower: [64470.196886573285, 68022.3373489718, 71787.3408432345], CI_upper: [66428.39347692922, 69980.53393932775, 73745.53743359045]
+2025-12-18 11:57:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 64470.196886573285, 68022.3373489718, 71787.3408432345], upper=[np.float64(34971.64509129399), 66428.39347692922, 69980.53393932775, 73745.53743359045]
+2025-12-18 11:57:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 58954.45023743685, 2025: 58954.45023743685, 2026: 58954.45023743685}, values=[58954.45023743685, 58954.45023743685, 58954.45023743685], CI_lower=[56289.871429898114, 56289.871429898114, 56289.871429898114], CI_upper=[61619.02904497559, 61619.02904497559, 61619.02904497559]
+2025-12-18 11:57:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58954.45023743685, 58954.45023743685, 58954.45023743685], CI_lower: [56289.871429898114, 56289.871429898114, 56289.871429898114], CI_upper: [61619.02904497559, 61619.02904497559, 61619.02904497559]
+2025-12-18 11:57:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 56289.871429898114, 56289.871429898114, 56289.871429898114], upper=[np.float64(34971.64509129399), 61619.02904497559, 61619.02904497559, 61619.02904497559]
+2025-12-18 11:57:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 55272.59410061388, 2025: 55272.59410061388, 2026: 55272.59410061388}, values=[55272.59410061388, 55272.59410061388, 55272.59410061388], CI_lower=[50714.26405223382, 50714.26405223382, 50714.26405223382], CI_upper=[59830.924148993945, 59830.924148993945, 59830.924148993945]
+2025-12-18 11:57:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55272.59410061388, 55272.59410061388, 55272.59410061388], CI_lower: [50714.26405223382, 50714.26405223382, 50714.26405223382], CI_upper: [59830.924148993945, 59830.924148993945, 59830.924148993945]
+2025-12-18 11:57:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 50714.26405223382, 50714.26405223382, 50714.26405223382], upper=[np.float64(34971.64509129399), 59830.924148993945, 59830.924148993945, 59830.924148993945]
+2025-12-18 11:57:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 60116.1056223055, 2025: 60116.1056223055, 2026: 60116.1056223055}, values=[60116.1056223055, 60116.1056223055, 60116.1056223055], CI_lower=[58206.89426778428, 58206.89426778428, 58206.89426778428], CI_upper=[62025.31697682672, 62025.31697682672, 62025.31697682672]
+2025-12-18 11:57:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60116.1056223055, 60116.1056223055, 60116.1056223055], CI_lower: [58206.89426778428, 58206.89426778428, 58206.89426778428], CI_upper: [62025.31697682672, 62025.31697682672, 62025.31697682672]
+2025-12-18 11:57:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 58206.89426778428, 58206.89426778428, 58206.89426778428], upper=[np.float64(34971.64509129399), 62025.31697682672, 62025.31697682672, 62025.31697682672]
+2025-12-18 11:57:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 64448.707557718844, 2025: 66162.18476437569, 2026: 67875.57204052666}, values=[64448.707557718844, 66162.18476437569, 67875.57204052666], CI_lower=[46921.987240167655, 48635.464446824495, 50348.851722975465], CI_upper=[81975.42787527003, 83688.90508192689, 85402.29235807786]
+2025-12-18 11:57:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64448.707557718844, 66162.18476437569, 67875.57204052666], CI_lower: [46921.987240167655, 48635.464446824495, 50348.851722975465], CI_upper: [81975.42787527003, 83688.90508192689, 85402.29235807786]
+2025-12-18 11:57:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 46921.987240167655, 48635.464446824495, 50348.851722975465], upper=[np.float64(34971.64509129399), 81975.42787527003, 83688.90508192689, 85402.29235807786]
+2025-12-18 11:57:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 66364.15942772527, 2025: 70301.44536420028, 2026: 74238.7313006753}, values=[66364.15942772527, 70301.44536420028, 74238.7313006753], CI_lower=[64299.67516062575, 68236.96109710075, 72174.24703357577], CI_upper=[68428.6436948248, 72365.9296312998, 76303.21556777482]
+2025-12-18 11:57:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66364.15942772527, 70301.44536420028, 74238.7313006753], CI_lower: [64299.67516062575, 68236.96109710075, 72174.24703357577], CI_upper: [68428.6436948248, 72365.9296312998, 76303.21556777482]
+2025-12-18 11:57:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(34971.64509129399), 64299.67516062575, 68236.96109710075, 72174.24703357577], upper=[np.float64(34971.64509129399), 68428.6436948248, 72365.9296312998, 76303.21556777482]
+2025-12-18 11:57:04 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 11:57:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 59978.709621714894, 2025: 61566.84680078644, 2026: 63154.98397985846}, values=[59978.709621714894, 61566.84680078644, 63154.98397985846], CI_lower=[55127.53144694726, 56715.66862601881, 58303.80580509082], CI_upper=[64829.88779648253, 66418.02497555407, 68006.16215462609]
+2025-12-18 11:57:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59978.709621714894, 61566.84680078644, 63154.98397985846], CI_lower: [55127.53144694726, 56715.66862601881, 58303.80580509082], CI_upper: [64829.88779648253, 66418.02497555407, 68006.16215462609]
+2025-12-18 11:57:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 55127.53144694726, 56715.66862601881, 58303.80580509082], upper=[np.float64(38100.118580890834), 64829.88779648253, 66418.02497555407, 68006.16215462609]
+2025-12-18 11:57:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 66247.39771902561, 2025: 69919.60196191072, 2026: 73811.02099400759}, values=[66247.39771902561, 69919.60196191072, 73811.02099400759], CI_lower=[65162.733895669066, 68834.93813855418, 72726.35717065104], CI_upper=[67332.06154238216, 71004.26578526727, 74895.68481736413]
+2025-12-18 11:57:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66247.39771902561, 69919.60196191072, 73811.02099400759], CI_lower: [65162.733895669066, 68834.93813855418, 72726.35717065104], CI_upper: [67332.06154238216, 71004.26578526727, 74895.68481736413]
+2025-12-18 11:57:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 65162.733895669066, 68834.93813855418, 72726.35717065104], upper=[np.float64(38100.118580890834), 67332.06154238216, 71004.26578526727, 74895.68481736413]
+2025-12-18 11:57:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 65760.79336357117, 2025: 69092.72379112244, 2026: 72553.76595878601}, values=[65760.79336357117, 69092.72379112244, 72553.76595878601], CI_lower=[64709.19678124273, 68041.127208794, 71502.16937645758], CI_upper=[66812.3899458996, 70144.32037345087, 73605.36254111445]
+2025-12-18 11:57:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65760.79336357117, 69092.72379112244, 72553.76595878601], CI_lower: [64709.19678124273, 68041.127208794, 71502.16937645758], CI_upper: [66812.3899458996, 70144.32037345087, 73605.36254111445]
+2025-12-18 11:57:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 64709.19678124273, 68041.127208794, 71502.16937645758], upper=[np.float64(38100.118580890834), 66812.3899458996, 70144.32037345087, 73605.36254111445]
+2025-12-18 11:57:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 59481.00024557877, 2025: 59481.00024557877, 2026: 59481.00024557877}, values=[59481.00024557877, 59481.00024557877, 59481.00024557877], CI_lower=[56709.65193264514, 56709.65193264514, 56709.65193264514], CI_upper=[62252.3485585124, 62252.3485585124, 62252.3485585124]
+2025-12-18 11:57:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59481.00024557877, 59481.00024557877, 59481.00024557877], CI_lower: [56709.65193264514, 56709.65193264514, 56709.65193264514], CI_upper: [62252.3485585124, 62252.3485585124, 62252.3485585124]
+2025-12-18 11:57:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 56709.65193264514, 56709.65193264514, 56709.65193264514], upper=[np.float64(38100.118580890834), 62252.3485585124, 62252.3485585124, 62252.3485585124]
+2025-12-18 11:57:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 55718.63408613707, 2025: 55718.63408613707, 2026: 55718.63408613707}, values=[55718.63408613707, 55718.63408613707, 55718.63408613707], CI_lower=[50959.6650258724, 50959.6650258724, 50959.6650258724], CI_upper=[60477.60314640174, 60477.60314640174, 60477.60314640174]
+2025-12-18 11:57:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55718.63408613707, 55718.63408613707, 55718.63408613707], CI_lower: [50959.6650258724, 50959.6650258724, 50959.6650258724], CI_upper: [60477.60314640174, 60477.60314640174, 60477.60314640174]
+2025-12-18 11:57:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 50959.6650258724, 50959.6650258724, 50959.6650258724], upper=[np.float64(38100.118580890834), 60477.60314640174, 60477.60314640174, 60477.60314640174]
+2025-12-18 11:57:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 60618.507437031716, 2025: 60618.507437031716, 2026: 60618.507437031716}, values=[60618.507437031716, 60618.507437031716, 60618.507437031716], CI_lower=[58651.45722648757, 58651.45722648757, 58651.45722648757], CI_upper=[62585.557647575864, 62585.557647575864, 62585.557647575864]
+2025-12-18 11:57:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60618.507437031716, 60618.507437031716, 60618.507437031716], CI_lower: [58651.45722648757, 58651.45722648757, 58651.45722648757], CI_upper: [62585.557647575864, 62585.557647575864, 62585.557647575864]
+2025-12-18 11:57:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 58651.45722648757, 58651.45722648757, 58651.45722648757], upper=[np.float64(38100.118580890834), 62585.557647575864, 62585.557647575864, 62585.557647575864]
+2025-12-18 11:57:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 64819.81530745069, 2025: 66520.41731886883, 2026: 68220.98167474705}, values=[64819.81530745069, 66520.41731886883, 68220.98167474705], CI_lower=[47024.59916725783, 48725.20117867597, 50425.765534554186], CI_upper=[82615.03144764356, 84315.63345906169, 86016.19781493991]
+2025-12-18 11:57:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64819.81530745069, 66520.41731886883, 68220.98167474705], CI_lower: [47024.59916725783, 48725.20117867597, 50425.765534554186], CI_upper: [82615.03144764356, 84315.63345906169, 86016.19781493991]
+2025-12-18 11:57:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 47024.59916725783, 48725.20117867597, 50425.765534554186], upper=[np.float64(38100.118580890834), 82615.03144764356, 84315.63345906169, 86016.19781493991]
+2025-12-18 11:57:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 66832.57440393603, 2025: 70709.21898991786, 2026: 74585.86357589968}, values=[66832.57440393603, 70709.21898991786, 74585.86357589968], CI_lower=[64468.0984535164, 68344.74303949824, 72221.38762548006], CI_upper=[69197.05035435566, 73073.69494033749, 76950.33952631931]
+2025-12-18 11:57:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66832.57440393603, 70709.21898991786, 74585.86357589968], CI_lower: [64468.0984535164, 68344.74303949824, 72221.38762548006], CI_upper: [69197.05035435566, 73073.69494033749, 76950.33952631931]
+2025-12-18 11:57:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38100.118580890834), 64468.0984535164, 68344.74303949824, 72221.38762548006], upper=[np.float64(38100.118580890834), 69197.05035435566, 73073.69494033749, 76950.33952631931]
+2025-12-18 11:57:10 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 11:57:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44.558184832087306, 2025: 44.792566489970284, 2026: 45.02694814785332}, values=[44.558184832087306, 44.792566489970284, 45.02694814785332], CI_lower=[44.169391915726536, 44.40377357360951, 44.63815523149255], CI_upper=[44.94697774844808, 45.181359406331055, 45.41574106421409]
+2025-12-18 11:57:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.558184832087306, 44.792566489970284, 45.02694814785332], CI_lower: [44.169391915726536, 44.40377357360951, 44.63815523149255], CI_upper: [44.94697774844808, 45.181359406331055, 45.41574106421409]
+2025-12-18 11:57:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 44.169391915726536, 44.40377357360951, 44.63815523149255], upper=[np.float64(44.3522021167634), 44.94697774844808, 45.181359406331055, 45.41574106421409]
+2025-12-18 11:57:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44.614274624781046, 2025: 44.8673037074127, 2026: 45.12229423905728}, values=[44.614274624781046, 44.8673037074127, 45.12229423905728], CI_lower=[44.22779047148512, 44.48081955411678, 44.73581008576136], CI_upper=[45.00075877807697, 45.25378786070863, 45.50877839235321]
+2025-12-18 11:57:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.614274624781046, 44.8673037074127, 45.12229423905728], CI_lower: [44.22779047148512, 44.48081955411678, 44.73581008576136], CI_upper: [45.00075877807697, 45.25378786070863, 45.50877839235321]
+2025-12-18 11:57:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 44.22779047148512, 44.48081955411678, 44.73581008576136], upper=[np.float64(44.3522021167634), 45.00075877807697, 45.25378786070863, 45.50877839235321]
+2025-12-18 11:57:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 45.12646438367665, 2025: 45.737668784335256, 2026: 46.4456784222275}, values=[45.12646438367665, 45.737668784335256, 46.4456784222275], CI_lower=[44.85980790806749, 45.471012308726095, 46.17902194661834], CI_upper=[45.39312085928581, 46.004325259944416, 46.71233489783666]
+2025-12-18 11:57:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.12646438367665, 45.737668784335256, 46.4456784222275], CI_lower: [44.85980790806749, 45.471012308726095, 46.17902194661834], CI_upper: [45.39312085928581, 46.004325259944416, 46.71233489783666]
+2025-12-18 11:57:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 44.85980790806749, 45.471012308726095, 46.17902194661834], upper=[np.float64(44.3522021167634), 45.39312085928581, 46.004325259944416, 46.71233489783666]
+2025-12-18 11:57:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 44.161274382368966, 2025: 44.161274382368966, 2026: 44.161274382368966}, values=[44.161274382368966, 44.161274382368966, 44.161274382368966], CI_lower=[43.761872401493015, 43.761872401493015, 43.761872401493015], CI_upper=[44.560676363244916, 44.560676363244916, 44.560676363244916]
+2025-12-18 11:57:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.161274382368966, 44.161274382368966, 44.161274382368966], CI_lower: [43.761872401493015, 43.761872401493015, 43.761872401493015], CI_upper: [44.560676363244916, 44.560676363244916, 44.560676363244916]
+2025-12-18 11:57:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 43.761872401493015, 43.761872401493015, 43.761872401493015], upper=[np.float64(44.3522021167634), 44.560676363244916, 44.560676363244916, 44.560676363244916]
+2025-12-18 11:57:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43.74996338735539, 2025: 43.74996338735539, 2026: 43.74996338735539}, values=[43.74996338735539, 43.74996338735539, 43.74996338735539], CI_lower=[43.295531995572794, 43.295531995572794, 43.295531995572794], CI_upper=[44.20439477913799, 44.20439477913799, 44.20439477913799]
+2025-12-18 11:57:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.74996338735539, 43.74996338735539, 43.74996338735539], CI_lower: [43.295531995572794, 43.295531995572794, 43.295531995572794], CI_upper: [44.20439477913799, 44.20439477913799, 44.20439477913799]
+2025-12-18 11:57:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 43.295531995572794, 43.295531995572794, 43.295531995572794], upper=[np.float64(44.3522021167634), 44.20439477913799, 44.20439477913799, 44.20439477913799]
+2025-12-18 11:57:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 44.324179939325084, 2025: 44.324179939325084, 2026: 44.324179939325084}, values=[44.324179939325084, 44.324179939325084, 44.324179939325084], CI_lower=[43.98576324341542, 43.98576324341542, 43.98576324341542], CI_upper=[44.66259663523475, 44.66259663523475, 44.66259663523475]
+2025-12-18 11:57:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.324179939325084, 44.324179939325084, 44.324179939325084], CI_lower: [43.98576324341542, 43.98576324341542, 43.98576324341542], CI_upper: [44.66259663523475, 44.66259663523475, 44.66259663523475]
+2025-12-18 11:57:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 43.98576324341542, 43.98576324341542, 43.98576324341542], upper=[np.float64(44.3522021167634), 44.66259663523475, 44.66259663523475, 44.66259663523475]
+2025-12-18 11:57:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 44.955934937671046, 2025: 45.22700204896195, 2026: 45.49798396935055}, values=[44.955934937671046, 45.22700204896195, 45.49798396935055], CI_lower=[25.780226477570892, 26.051293588861796, 26.322275509250396], CI_upper=[64.1316433977712, 64.4027105090621, 64.67369242945071]
+2025-12-18 11:57:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.955934937671046, 45.22700204896195, 45.49798396935055], CI_lower: [25.780226477570892, 26.051293588861796, 26.322275509250396], CI_upper: [64.1316433977712, 64.4027105090621, 64.67369242945071]
+2025-12-18 11:57:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 25.780226477570892, 26.051293588861796, 26.322275509250396], upper=[np.float64(44.3522021167634), 64.1316433977712, 64.4027105090621, 64.67369242945071]
+2025-12-18 11:57:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 44.95592354091134, 2025: 45.235870648680795, 2026: 45.515817756450254}, values=[44.95592354091134, 45.235870648680795, 45.515817756450254], CI_lower=[44.552033284003194, 44.831980391772646, 45.111927499542105], CI_upper=[45.35981379781949, 45.63976090558894, 45.9197080133584]
+2025-12-18 11:57:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.95592354091134, 45.235870648680795, 45.515817756450254], CI_lower: [44.552033284003194, 44.831980391772646, 45.111927499542105], CI_upper: [45.35981379781949, 45.63976090558894, 45.9197080133584]
+2025-12-18 11:57:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.3522021167634), 44.552033284003194, 44.831980391772646, 45.111927499542105], upper=[np.float64(44.3522021167634), 45.35981379781949, 45.63976090558894, 45.9197080133584]
+2025-12-18 11:57:17 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 11:57:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 36.87314445439715, 2025: 36.861254173384836, 2026: 36.84936389237253}, values=[36.87314445439715, 36.861254173384836, 36.84936389237253], CI_lower=[36.0441833542156, 36.032293073203284, 36.02040279219098], CI_upper=[37.7021055545787, 37.69021527356639, 37.67832499255408]
+2025-12-18 11:57:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.87314445439715, 36.861254173384836, 36.84936389237253], CI_lower: [36.0441833542156, 36.032293073203284, 36.02040279219098], CI_upper: [37.7021055545787, 37.69021527356639, 37.67832499255408]
+2025-12-18 11:57:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 36.0441833542156, 36.032293073203284, 36.02040279219098], upper=[np.float64(36.77574279379157), 37.7021055545787, 37.69021527356639, 37.67832499255408]
+2025-12-18 11:57:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.35500587991555, 2025: 37.50331363566511, 2026: 37.668471990655235}, values=[37.35500587991555, 37.50331363566511, 37.668471990655235], CI_lower=[36.60997338309038, 36.75828113883993, 36.92343949383006], CI_upper=[38.10003837674073, 38.24834613249028, 38.41350448748041]
+2025-12-18 11:57:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.35500587991555, 37.50331363566511, 37.668471990655235], CI_lower: [36.60997338309038, 36.75828113883993, 36.92343949383006], CI_upper: [38.10003837674073, 38.24834613249028, 38.41350448748041]
+2025-12-18 11:57:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 36.60997338309038, 36.75828113883993, 36.92343949383006], upper=[np.float64(36.77574279379157), 38.10003837674073, 38.24834613249028, 38.41350448748041]
+2025-12-18 11:57:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.1275722309947, 2025: 35.41771452873945, 2026: 34.49747645109892}, values=[36.1275722309947, 35.41771452873945, 34.49747645109892], CI_lower=[35.80223020942814, 35.09237250717289, 34.172134429532356], CI_upper=[36.452914252561264, 35.743056550306015, 34.82281847266548]
+2025-12-18 11:57:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.1275722309947, 35.41771452873945, 34.49747645109892], CI_lower: [35.80223020942814, 35.09237250717289, 34.172134429532356], CI_upper: [36.452914252561264, 35.743056550306015, 34.82281847266548]
+2025-12-18 11:57:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 35.80223020942814, 35.09237250717289, 34.172134429532356], upper=[np.float64(36.77574279379157), 36.452914252561264, 35.743056550306015, 34.82281847266548]
+2025-12-18 11:57:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 36.979487668545886, 2025: 36.979487668545886, 2026: 36.979487668545886}, values=[36.979487668545886, 36.979487668545886, 36.979487668545886], CI_lower=[36.41061113334348, 36.41061113334348, 36.41061113334348], CI_upper=[37.54836420374829, 37.54836420374829, 37.54836420374829]
+2025-12-18 11:57:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.979487668545886, 36.979487668545886, 36.979487668545886], CI_lower: [36.41061113334348, 36.41061113334348, 36.41061113334348], CI_upper: [37.54836420374829, 37.54836420374829, 37.54836420374829]
+2025-12-18 11:57:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 36.41061113334348, 36.41061113334348, 36.41061113334348], upper=[np.float64(36.77574279379157), 37.54836420374829, 37.54836420374829, 37.54836420374829]
+2025-12-18 11:57:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 36.96896775541863, 2025: 36.96896775541863, 2026: 36.96896775541863}, values=[36.96896775541863, 36.96896775541863, 36.96896775541863], CI_lower=[36.32455718546357, 36.32455718546357, 36.32455718546357], CI_upper=[37.613378325373695, 37.613378325373695, 37.613378325373695]
+2025-12-18 11:57:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.96896775541863, 36.96896775541863, 36.96896775541863], CI_lower: [36.32455718546357, 36.32455718546357, 36.32455718546357], CI_upper: [37.613378325373695, 37.613378325373695, 37.613378325373695]
+2025-12-18 11:57:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 36.32455718546357, 36.32455718546357, 36.32455718546357], upper=[np.float64(36.77574279379157), 37.613378325373695, 37.613378325373695, 37.613378325373695]
+2025-12-18 11:57:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 36.91168125526486, 2025: 36.91168125526486, 2026: 36.91168125526486}, values=[36.91168125526486, 36.91168125526486, 36.91168125526486], CI_lower=[36.36624899078553, 36.36624899078553, 36.36624899078553], CI_upper=[37.45711351974419, 37.45711351974419, 37.45711351974419]
+2025-12-18 11:57:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.91168125526486, 36.91168125526486, 36.91168125526486], CI_lower: [36.36624899078553, 36.36624899078553, 36.36624899078553], CI_upper: [37.45711351974419, 37.45711351974419, 37.45711351974419]
+2025-12-18 11:57:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 36.36624899078553, 36.36624899078553, 36.36624899078553], upper=[np.float64(36.77574279379157), 37.45711351974419, 37.45711351974419, 37.45711351974419]
+2025-12-18 11:57:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 36.72329625663294, 2025: 36.769473088896945, 2026: 36.72881645161528}, values=[36.72329625663294, 36.769473088896945, 36.72881645161528], CI_lower=[18.56342194465127, 18.609598776915274, 18.56894213963361], CI_upper=[54.88317056861462, 54.92934740087861, 54.888690763596955]
+2025-12-18 11:57:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.72329625663294, 36.769473088896945, 36.72881645161528], CI_lower: [18.56342194465127, 18.609598776915274, 18.56894213963361], CI_upper: [54.88317056861462, 54.92934740087861, 54.888690763596955]
+2025-12-18 11:57:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 18.56342194465127, 18.609598776915274, 18.56894213963361], upper=[np.float64(36.77574279379157), 54.88317056861462, 54.92934740087861, 54.888690763596955]
+2025-12-18 11:57:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 36.68377106807528, 2025: 36.591799340683735, 2026: 36.49982761329218}, values=[36.68377106807528, 36.591799340683735, 36.49982761329218], CI_lower=[36.05124222345307, 35.95927049606153, 35.867298768669976], CI_upper=[37.31629991269749, 37.22432818530594, 37.13235645791439]
+2025-12-18 11:57:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.68377106807528, 36.591799340683735, 36.49982761329218], CI_lower: [36.05124222345307, 35.95927049606153, 35.867298768669976], CI_upper: [37.31629991269749, 37.22432818530594, 37.13235645791439]
+2025-12-18 11:57:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.77574279379157), 36.05124222345307, 35.95927049606153, 35.867298768669976], upper=[np.float64(36.77574279379157), 37.31629991269749, 37.22432818530594, 37.13235645791439]
+2025-12-18 11:57:24 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 11:57:24 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 12:01:16 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 20110.015625, 'mse': 1652994688.0, 'rmse': 40657.03737362082, 'r2': 0.20576202869415283}
+2025-12-18 12:01:17 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 12:03:36 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.6117961406707764, 'mse': 69.94153594970703, 'rmse': 8.363105640233599, 'r2': 0.2960989773273468}
+2025-12-18 12:03:37 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 12:05:47 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.36741828918457, 'mse': 635.1525268554688, 'rmse': 25.202232576806935, 'r2': -5.6962361335754395}
+2025-12-18 12:05:48 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 12:06:09 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 12:06:10 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 12:06:10 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 12:06:10 [DEBUG] census_eda.main:  Running LLM analysis for state: Oregon
+2025-12-18 12:06:10 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 12:06:10 [INFO] census_eda.ml: [LLM] State context loaded: Oregon
+2025-12-18 12:06:10 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [API] Total request: ~2570 tokens (system: ~2388, user: ~182)
+2025-12-18 12:06:10 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:06:27 [DEBUG] census_eda.ml: [API] Received response: 3871 chars
+2025-12-18 12:06:28 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3871 chars)
+2025-12-18 12:06:28 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [API] Total request: ~2709 tokens (system: ~2388, user: ~321)
+2025-12-18 12:06:28 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:06:37 [DEBUG] census_eda.ml: [API] Received response: 3682 chars
+2025-12-18 12:06:37 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3682 chars)
+2025-12-18 12:06:38 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [API] Total request: ~2936 tokens (system: ~2388, user: ~548)
+2025-12-18 12:06:38 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [API] Received response: 3835 chars
+2025-12-18 12:06:49 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3835 chars)
+2025-12-18 12:06:49 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [API] Total request: ~2728 tokens (system: ~2388, user: ~340)
+2025-12-18 12:06:49 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [API] Received response: 4656 chars
+2025-12-18 12:07:03 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4656 chars)
+2025-12-18 12:07:03 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [API] Total request: ~2578 tokens (system: ~2388, user: ~190)
+2025-12-18 12:07:03 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [API] Received response: 3834 chars
+2025-12-18 12:07:14 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3834 chars)
+2025-12-18 12:07:14 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [LLM] User prompt: 8736 chars (~2184 tokens)
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [API] Total request: ~4572 tokens (system: ~2388, user: ~2184)
+2025-12-18 12:07:14 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [API] Received response: 2857 chars
+2025-12-18 12:07:25 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (2857 chars)
+2025-12-18 12:07:25 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [LLM] User prompt: 5334 chars (~1333 tokens)
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [API] Total request: ~3721 tokens (system: ~2388, user: ~1333)
+2025-12-18 12:07:25 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [API] Received response: 3743 chars
+2025-12-18 12:07:37 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3743 chars)
+2025-12-18 12:07:37 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [LLM] User prompt: 695 chars (~173 tokens)
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [API] Total request: ~2561 tokens (system: ~2388, user: ~173)
+2025-12-18 12:07:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [API] Received response: 3086 chars
+2025-12-18 12:07:47 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3086 chars)
+2025-12-18 12:07:47 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [LLM] User prompt: 5624 chars (~1406 tokens)
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [API] Total request: ~3794 tokens (system: ~2388, user: ~1406)
+2025-12-18 12:07:47 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [API] Received response: 3690 chars
+2025-12-18 12:07:57 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3690 chars)
+2025-12-18 12:07:57 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [LLM] User prompt: 1836 chars (~459 tokens)
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [API] Total request: ~2847 tokens (system: ~2388, user: ~459)
+2025-12-18 12:07:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [API] Received response: 4368 chars
+2025-12-18 12:08:11 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4368 chars)
+2025-12-18 12:08:11 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Oregon
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Oregon
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4664 chars
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1166
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Oregon
+
+ECONOMIC PROFILE:
+  Industries: Technology (Silicon Forest - Intel, Nike), Manufacturing (semiconductors, athletic equipment), Agriculture (wine, berries, hazelnuts, Christmas trees), Timber and forestry (declining), Tourism and outdoor recreation
+  Trends: Strong growth 2011-2019 driven by tech boom (Portland), Nike expansion, wine industry. Timber industry continued long decline. Post-pandemic: remote work influx, housing spike, uneven urban/rural recovery
+  Income: Median household income slightly above national average ($76k). Portland metro higher, rural areas lower. Income inequality growing. Tech workers vs. service workers wage gap
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth 2011-2019 (~1.0% annually), accelerated 2020-2023 due to remote work migration from California. Portland metro driving growth, rural areas stagnant or declining
+  Migration: Strong domestic in-migration from California (housing refugees). Some outmigration to Idaho, Washington. Internal migration from rural to urban. Limited international immigration compared to peers
+  Education: Above national average (35% bachelor's or higher). Strong universities (U of Oregon, Oregon State, Portland State). Portland very educated. Rural education challenges
+
+HOUSING MARKET:
+  Market: Expensive in Portland metro (median ~$550k), affordable in rural areas (~$300k). Bend very expensive resort market. Sharp urban-rural divide. Strong demand from California migrants
+  Affordability: Rapid appreciation 2011-2019 in Portland (60%+), accelerated 2020-2023 (30% more). California migration driving prices. Statewide rent control enacted 2019 to address crisis. Affordability crisis in cities
+  Challenges: Severe affordability crisis in cities, Homelessness epidemic (Portland), Urban growth boundaries limiting supply, Wildfire risk in rural areas, NIMBYism in neighborhoods, California migration driving prices
+
+POLITY:
+  Policy: Progressive in urban areas (Portland), conservative in rural areas. No sales tax (unique). Progressive social policies, environmental leadership. Deep urban-rural political divide
+  Housing: Statewide rent control enacted 2019 (first in nation). Urban growth boundaries (Portland). Upzoning efforts in cities. ADU reforms. Strong tenant protections. Homeless crisis driving policy
+  Labor: $14.70 minimum wage (higher in Portland metro), strong worker protections, paid family leave, robust unemployment insurance. No sales tax affects revenue
+
+REGIONAL:
+  Geography: Diverse: Pacific coast (temperate rainforest), Cascade Range (volcanic mountains), Willamette Valley (population/agriculture center), high desert east of Cascades. Columbia River Gorge
+  Urban/Rural: 81% urban in Portland metro, Eugene, Salem, Bend. 19% rural (timber towns declining, agriculture, coastal communities, high desert ranching). Extreme urban-rural political divide
+  Infrastructure: Portland MAX light rail, limited public transit elsewhere. I-5 corridor critical. Ports (Portland). Tech infrastructure strong. Broadband gaps in rural areas. Aging bridges. Wildfire infrastructure concerns
+
+HISTORICAL:
+  Events: 2011-2013: Economic recovery, tech growth, marijuana legalization campaign, no sales tax remains; 2014-2016: Marijuana legalization implemented, housing crisis emerging, Bundy standoff (Malheur 2016), tech boom continues; 2017-2019: Statewide rent control enacted (first in nation), homeless crisis worsens, Portland protests, climate legislation attempts fail; 2020-2023: COVID-19, Portland protests (George Floyd), wildfires devastate rural areas (2020), drug decriminalization experiment (Measure 110), California exodus influx, housing spike
+  Shocks: 2020 wildfires ($500M+ damage), timber industry collapse 1990s-ongoing
+  Transitions: Timber industry collapse to tech/services. Nike dominance. Clean tech growth. Wine industry expansion. Agriculture diversification. Data center growth (cheap power)
+
+COMPARATIVE:
+  Benchmarks: Median income above national average. High housing costs in cities offset income benefits. Above-average educational attainment. Significant homelessness problem. No sales tax unique
+  Peer States: Washington (Pacific Northwest, tech, no income tax vs. OR no sales tax), Colorado (outdoor recreation, migration destination), California (migration source, progressive policies)
+  Unique: No sales tax (unique among major states). Urban growth boundaries (Portland). First statewide rent control. Drug decriminalization experiment. Extreme urban-rural political divide. Cascadia earthquake threat. California migration driving change
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Oregon
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [PROMPT] State context injected (4664 chars)
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9552 chars (~2388 tokens)
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [API] Total request: ~2797 tokens (system: ~2388, user: ~409)
+2025-12-18 12:08:11 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 12:08:25 [DEBUG] census_eda.ml: [API] Received response: 4414 chars
+2025-12-18 12:08:25 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4414 chars)
+2025-12-18 12:08:25 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 12:08:25 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 12:08:25 [INFO] census_eda.main: [REPORT] Generated: report_Oregon_population_20251218_120825.txt
+2025-12-18 12:08:25 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Oregon!
+2025-12-18 12:08:26 [INFO] census_eda.memory: process_Oregon_population_1-year:EXIT: 14238.3MB (delta: -2302.2MB)
+2025-12-18 12:08:27 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 12:08:28 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 12:08:30 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 12:08:31 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 12:08:34 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 12:08:35 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 12:08:37 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 12:08:38 [INFO] census_eda.memory: Cleared all caches

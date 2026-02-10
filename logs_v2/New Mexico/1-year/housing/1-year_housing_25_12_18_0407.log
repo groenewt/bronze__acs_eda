@@ -1,0 +1,1096 @@
+2025-12-18 04:07:34 [INFO] census_eda: Logging context set: state=New Mexico, survey=housing, scope=1-year
+2025-12-18 04:07:34 [INFO] census_eda: Log file: ./logs/New Mexico/1-year/housing/1-year_housing_25_12_18_0407.log
+2025-12-18 04:07:34 [INFO] census_eda.main: ======================================================================
+2025-12-18 04:07:34 [INFO] census_eda.main: [HOUSING] Processing New Mexico (1-year)...
+2025-12-18 04:07:34 [INFO] census_eda.main: ======================================================================
+2025-12-18 04:07:34 [INFO] census_eda.memory: process_New Mexico_housing_1-year:ENTER: 16198.3MB (delta: -552.3MB)
+2025-12-18 04:07:34 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-18 04:07:34 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/35/*/*.csv
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hnm.csv
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,872 rows, 235 columns
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h35.csv
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,126 rows, 235 columns
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hnm.csv
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,864 rows, 235 columns
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hnm.csv
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,891 rows, 235 columns
+2025-12-18 04:07:35 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hnm.csv
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,047 rows, 235 columns
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hnm.csv
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,204 rows, 235 columns
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h35.csv
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,227 rows, 235 columns
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hnm.csv
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,141 rows, 235 columns
+2025-12-18 04:07:36 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hnm.csv
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,882 rows, 235 columns
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h35.csv
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,220 rows, 235 columns
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h35.csv
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,605 rows, 235 columns
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h35.csv
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,397 rows, 235 columns
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h35.csv
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 10,717 rows, 235 columns
+2025-12-18 04:07:37 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hnm.csv
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,921 rows, 235 columns
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hnm.csv
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,449 rows, 235 columns
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hnm.csv
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,930 rows, 235 columns
+2025-12-18 04:07:38 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 04:07:39 [VERBOSE] census_eda.processing.loader: Combined into 158,493 total rows, 235 columns
+2025-12-18 04:07:39 [INFO] census_eda.main: Loaded 158,493 records
+2025-12-18 04:07:39 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 158493 valid, 16 unique
+2025-12-18 04:07:39 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 04:07:40 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 04:07:40 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-18 04:07:40 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-18 04:07:40 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-18 04:07:40 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-18 04:07:40 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-18 04:07:40 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-18 04:07:40 [DEBUG] census_eda.main: Feature engineering complete: (158493, 254)
+2025-12-18 04:07:41 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 04:07:41 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-18 04:08:02 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-18 04:08:02 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 04:08:02 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(158493, 254)
+2025-12-18 04:08:02 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 04:08:02 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 158493
+2025-12-18 04:08:02 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 04:08:03 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(158493, 254)
+2025-12-18 04:08:03 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(9047), np.int64(2008): np.int64(9141), np.int64(2009): np.int64(9204), np.int64(2010): np.int64(9449), np.int64(2011): np.int64(9930), np.int64(2012): np.int64(9872), np.int64(2013): np.int64(9891), np.int64(2014): np.int64(9864), np.int64(2015): np.int64(9921), np.int64(2016): np.int64(9882), np.int64(2017): np.int64(10126), np.int64(2018): np.int64(10227), np.int64(2019): np.int64(10220), np.int64(2021): np.int64(10397), np.int64(2022): np.int64(10605), np.int64(2023): np.int64(10717)}
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(158493, 254)
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 158493 non-null values (zeros excluded if needed)
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 20.00
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 138180 non-null values (zeros excluded if needed)
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 93509 non-null values (zeros excluded if needed)
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 70928 non-null values (zeros excluded if needed)
+2025-12-18 04:08:04 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 7681000.00
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 122334 non-null values (zeros excluded if needed)
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3700.00
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 90392 non-null values (zeros excluded if needed)
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 4900.00
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 116269 non-null values (zeros excluded if needed)
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1800.00
+2025-12-18 04:08:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-18 04:08:07 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 124784 non-null values (zeros excluded if needed)
+2025-12-18 04:08:07 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 68528 non-null values (zeros excluded if needed)
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 7700.00
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 113356 non-null values (zeros excluded if needed)
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 5200.00
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 8007 non-null values (zeros excluded if needed)
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 27800.00
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 46032 non-null values (zeros excluded if needed)
+2025-12-18 04:08:09 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-18 04:08:12 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 04:08:30 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 04:08:30 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 04:08:30 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 04:08:31 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 04:08:31 [DEBUG] census_eda.memory: Skipping sampling: 35791MB available (>16GB)
+2025-12-18 04:08:31 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 158493 rows
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(158493, 254)
+2025-12-18 04:08:53 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 158493 non-null values
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 20.00
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 111199 non-null values
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 7.00
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 111199 non-null values
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 17.00
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 138180 non-null values
+2025-12-18 04:08:53 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 93509 non-null values
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 70928 non-null values
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 7681000.00
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 124784 non-null values
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 1410 non-null values
+2025-12-18 04:08:55 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 1800.00
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 122334 non-null values
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3700.00
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 90392 non-null values
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 4900.00
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 116269 non-null values
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1800.00
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 124784 non-null values
+2025-12-18 04:08:57 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 68528 non-null values
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 7700.00
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 113356 non-null values
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 5200.00
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 8007 non-null values
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 27800.00
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 46032 non-null values
+2025-12-18 04:08:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-18 04:09:01 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-18 04:09:10 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 04:09:19 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 04:09:28 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 04:09:45 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-18 04:09:45 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-18 04:09:45 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-18 04:09:46 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-18 04:09:47 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-18 04:09:48 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-18 04:09:50 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-18 04:09:50 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-18 04:09:50 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-18 04:09:51 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-18 04:09:52 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-18 04:09:52 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-18 04:09:53 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-18 04:09:54 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-18 04:09:55 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-18 04:09:56 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-18 04:09:58 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-18 04:09:58 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-18 04:09:58 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-18 04:09:59 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-18 04:10:00 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-18 04:10:02 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-18 04:10:03 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-18 04:10:04 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-18 04:10:05 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-18 04:10:05 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-18 04:10:05 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-18 04:10:06 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-18 04:10:08 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 04:10:08 [DEBUG] census_eda.memory: Skipping sampling: 35818MB available (>16GB)
+2025-12-18 04:10:13 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 04:10:13 [DEBUG] census_eda.memory: Skipping sampling: 35826MB available (>16GB)
+2025-12-18 04:10:21 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 04:10:21 [DEBUG] census_eda.memory: Skipping sampling: 35825MB available (>16GB)
+2025-12-18 04:10:26 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 04:10:31 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 04:10:32 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 04:10:33 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/New_Mexico/housing/1-year/figures
+2025-12-18 04:10:34 [DEBUG] census_eda.memory: Skipping sampling: 35807MB available (>16GB)
+2025-12-18 04:10:34 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-18 04:10:34 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 04:10:34 [INFO] census_eda.memory: [ML-START]: 16216.6MB (delta: +18.3MB)
+2025-12-18 04:10:34 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 04:10:34 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-18 04:10:34 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 52559 samples (was 52559)
+2025-12-18 04:10:34 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-18 04:10:34 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 04:10:34 [INFO] census_eda.ml.regression: [TUNE] Data: 52,559 samples, 10 features
+2025-12-18 04:10:34 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 04:10:34 [INFO] census_eda.memory: tune_ridge:ENTER: 16216.6MB (delta: +0.0MB)
+2025-12-18 04:10:35 [WARNING] census_eda.memory: Memory usage (16217.3MB) exceeded threshold (16000MB)
+2025-12-18 04:10:36 [INFO] census_eda.memory: tune_ridge:EXIT: 16217.3MB (delta: +0.7MB)
+2025-12-18 04:10:36 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 04:10:36 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0357
+2025-12-18 04:10:36 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 04:10:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 04:10:36 [INFO] census_eda.ml.regression: [TUNE] Data: 52,559 samples, 10 features
+2025-12-18 04:10:36 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 04:10:36 [INFO] census_eda.memory: tune_lasso:ENTER: 16217.3MB (delta: +0.0MB)
+2025-12-18 04:10:36 [WARNING] census_eda.memory: Memory usage (16217.3MB) exceeded threshold (16000MB)
+2025-12-18 04:10:37 [INFO] census_eda.memory: tune_lasso:EXIT: 16217.3MB (delta: +0.0MB)
+2025-12-18 04:10:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 04:10:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0357
+2025-12-18 04:10:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 04:10:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 04:10:37 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 52,559 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 04:10:37 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 04:10:37 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 04:10:37 [INFO] census_eda.memory: tune_random_forest:ENTER: 16217.3MB (delta: +0.0MB)
+2025-12-18 04:11:04 [WARNING] census_eda.memory: Memory usage (16218.7MB) exceeded threshold (16000MB)
+2025-12-18 04:11:05 [INFO] census_eda.memory: tune_random_forest:EXIT: 16218.7MB (delta: +1.4MB)
+2025-12-18 04:11:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 04:11:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0348
+2025-12-18 04:11:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 04:11:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 04:11:09 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 52,559 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 04:11:09 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 04:11:09 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 04:11:09 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16233.7MB (delta: +15.0MB)
+2025-12-18 04:11:23 [WARNING] census_eda.memory: Memory usage (16233.7MB) exceeded threshold (16000MB)
+2025-12-18 04:11:24 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 04:11:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0075
+2025-12-18 04:11:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 04:11:34 [INFO] census_eda.memory: [SHAP] Safe sample size: 10,512 -> 1,000
+2025-12-18 04:11:34 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 10,512 -> 1,000
+2025-12-18 04:11:34 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:34 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 04:11:35 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:35 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Building_Type
+2025-12-18 04:11:35 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 04:11:35 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-18 04:11:35 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 16531 samples (was 16531)
+2025-12-18 04:11:35 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-18 04:11:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 04:11:35 [INFO] census_eda.ml.regression: [TUNE] Data: 16,531 samples, 10 features
+2025-12-18 04:11:35 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 04:11:35 [INFO] census_eda.memory: tune_ridge:ENTER: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:35 [WARNING] census_eda.memory: Memory usage (16233.7MB) exceeded threshold (16000MB)
+2025-12-18 04:11:36 [INFO] census_eda.memory: tune_ridge:EXIT: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:36 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 10.0}
+2025-12-18 04:11:36 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1387
+2025-12-18 04:11:36 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 04:11:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 04:11:36 [INFO] census_eda.ml.regression: [TUNE] Data: 16,531 samples, 10 features
+2025-12-18 04:11:36 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 04:11:36 [INFO] census_eda.memory: tune_lasso:ENTER: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:36 [WARNING] census_eda.memory: Memory usage (16233.7MB) exceeded threshold (16000MB)
+2025-12-18 04:11:37 [INFO] census_eda.memory: tune_lasso:EXIT: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 04:11:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1387
+2025-12-18 04:11:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 04:11:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 04:11:37 [INFO] census_eda.ml.regression: [TUNE] Data: 16,531 samples, 10 features
+2025-12-18 04:11:37 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 04:11:37 [INFO] census_eda.memory: tune_random_forest:ENTER: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:55 [WARNING] census_eda.memory: Memory usage (16233.7MB) exceeded threshold (16000MB)
+2025-12-18 04:11:56 [INFO] census_eda.memory: tune_random_forest:EXIT: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:11:56 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 04:11:56 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1963
+2025-12-18 04:11:56 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 04:11:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 04:11:58 [INFO] census_eda.ml.regression: [TUNE] Data: 16,531 samples, 10 features
+2025-12-18 04:11:58 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 04:11:58 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:12:07 [WARNING] census_eda.memory: Memory usage (16233.7MB) exceeded threshold (16000MB)
+2025-12-18 04:12:08 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:12:08 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 04:12:08 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2431
+2025-12-18 04:12:08 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 04:12:13 [INFO] census_eda.memory: [SHAP] Safe sample size: 3,307 -> 1,000
+2025-12-18 04:12:13 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 3,307 -> 1,000
+2025-12-18 04:12:13 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:12:13 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 04:12:13 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:12:13 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-18 04:12:13 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 04:12:13 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-18 04:12:13 [INFO] census_eda.memory: [PRE-CLUSTERING]: 16233.7MB (delta: +0.0MB)
+2025-12-18 04:12:13 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 04:12:13 [INFO] census_eda.main: [CLUSTERING] KMeans on 83,528 samples...
+2025-12-18 04:12:47 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 04:12:47 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 83,528 samples (will sample if needed)...
+2025-12-18 04:12:47 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 83,528 -> 15,000 (distance matrix would be 52.0GB)
+2025-12-18 04:12:47 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 83,528 -> 15,000 for O(n²) distance matrix
+2025-12-18 04:12:52 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 04:12:52 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 04:12:52 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 04:12:52 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-18 04:12:52 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-18 04:12:52 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 322090.33502197266, 2025: 333645.31744384766, 2026: 346843.46881103516}, Values: [322090.33502197266, 333645.31744384766, 346843.46881103516]
+2025-12-18 04:12:52 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-18 04:12:52 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 1273.2362926006317, 2025: 1390.0911586284637, 2026: 1525.9870011806488}, Values: [1273.2362926006317, 1390.0911586284637, 1525.9870011806488]
+2025-12-18 04:12:52 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-18 04:12:58 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-18 04:13:04 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-18 04:13:07 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 83528.
+2025-12-18 04:13:07 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-18 04:13:07 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-18 04:13:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 359217.8357129991, 2025: 376328.3347454518, 2026: 393438.8337779045}, values=[359217.8357129991, 376328.3347454518, 393438.8337779045], CI_lower=[297817.69972744194, 314928.19875989464, 332038.69779234735], CI_upper=[420617.97169855627, 437728.470731009, 454838.9697634617]
+2025-12-18 04:13:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [359217.8357129991, 376328.3347454518, 393438.8337779045], CI_lower: [297817.69972744194, 314928.19875989464, 332038.69779234735], CI_upper: [420617.97169855627, 437728.470731009, 454838.9697634617]
+2025-12-18 04:13:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 297817.69972744194, 314928.19875989464, 332038.69779234735], upper=[np.float64(319033.72182180645), 420617.97169855627, 437728.470731009, 454838.9697634617]
+2025-12-18 04:13:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 302295.6795196533, 2025: 299500.5036354065, 2026: 294479.7842760086}, values=[302295.6795196533, 299500.5036354065, 294479.7842760086], CI_lower=[268034.06777256425, 265238.8918883174, 260218.1725289195], CI_upper=[336557.2912667424, 333762.11538249557, 328741.3960230977]
+2025-12-18 04:13:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [302295.6795196533, 299500.5036354065, 294479.7842760086], CI_lower: [268034.06777256425, 265238.8918883174, 260218.1725289195], CI_upper: [336557.2912667424, 333762.11538249557, 328741.3960230977]
+2025-12-18 04:13:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 268034.06777256425, 265238.8918883174, 260218.1725289195], upper=[np.float64(319033.72182180645), 336557.2912667424, 333762.11538249557, 328741.3960230977]
+2025-12-18 04:13:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 322090.33502197266, 2025: 333645.31744384766, 2026: 346843.46881103516}, values=[322090.33502197266, 333645.31744384766, 346843.46881103516], CI_lower=[289782.46225756407, 301337.44467943907, 314535.59604662657], CI_upper=[354398.20778638124, 365953.19020825624, 379151.34157544374]
+2025-12-18 04:13:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [322090.33502197266, 333645.31744384766, 346843.46881103516], CI_lower: [289782.46225756407, 301337.44467943907, 314535.59604662657], CI_upper: [354398.20778638124, 365953.19020825624, 379151.34157544374]
+2025-12-18 04:13:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 289782.46225756407, 301337.44467943907, 314535.59604662657], upper=[np.float64(319033.72182180645), 354398.20778638124, 365953.19020825624, 379151.34157544374]
+2025-12-18 04:13:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 297533.6971788106, 2025: 297533.6971788106, 2026: 297533.6971788106}, values=[297533.6971788106, 297533.6971788106, 297533.6971788106], CI_lower=[203793.59407799726, 203793.59407799726, 203793.59407799726], CI_upper=[391273.80027962395, 391273.80027962395, 391273.80027962395]
+2025-12-18 04:13:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [297533.6971788106, 297533.6971788106, 297533.6971788106], CI_lower: [203793.59407799726, 203793.59407799726, 203793.59407799726], CI_upper: [391273.80027962395, 391273.80027962395, 391273.80027962395]
+2025-12-18 04:13:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 203793.59407799726, 203793.59407799726, 203793.59407799726], upper=[np.float64(319033.72182180645), 391273.80027962395, 391273.80027962395, 391273.80027962395]
+2025-12-18 04:13:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 282769.4505871861, 2025: 282769.4505871861, 2026: 282769.4505871861}, values=[282769.4505871861, 282769.4505871861, 282769.4505871861], CI_lower=[214948.6007659561, 214948.6007659561, 214948.6007659561], CI_upper=[350590.3004084161, 350590.3004084161, 350590.3004084161]
+2025-12-18 04:13:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [282769.4505871861, 282769.4505871861, 282769.4505871861], CI_lower: [214948.6007659561, 214948.6007659561, 214948.6007659561], CI_upper: [350590.3004084161, 350590.3004084161, 350590.3004084161]
+2025-12-18 04:13:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 214948.6007659561, 214948.6007659561, 214948.6007659561], upper=[np.float64(319033.72182180645), 350590.3004084161, 350590.3004084161, 350590.3004084161]
+2025-12-18 04:13:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 302818.72860804264, 2025: 302818.72860804264, 2026: 302818.72860804264}, values=[302818.72860804264, 302818.72860804264, 302818.72860804264], CI_lower=[204568.69398220128, 204568.69398220128, 204568.69398220128], CI_upper=[401068.763233884, 401068.763233884, 401068.763233884]
+2025-12-18 04:13:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [302818.72860804264, 302818.72860804264, 302818.72860804264], CI_lower: [204568.69398220128, 204568.69398220128, 204568.69398220128], CI_upper: [401068.763233884, 401068.763233884, 401068.763233884]
+2025-12-18 04:13:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 204568.69398220128, 204568.69398220128, 204568.69398220128], upper=[np.float64(319033.72182180645), 401068.763233884, 401068.763233884, 401068.763233884]
+2025-12-18 04:13:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 319032.7402980559, 2025: 319031.75878094125, 2026: 319030.77727046236}, values=[319032.7402980559, 319031.75878094125, 319030.77727046236], CI_lower=[210549.6238128126, 210548.64229569794, 210547.66078521905], CI_upper=[427515.85678329924, 427514.87526618456, 427513.8937557057]
+2025-12-18 04:13:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [319032.7402980559, 319031.75878094125, 319030.77727046236], CI_lower: [210549.6238128126, 210548.64229569794, 210547.66078521905], CI_upper: [427515.85678329924, 427514.87526618456, 427513.8937557057]
+2025-12-18 04:13:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 210549.6238128126, 210548.64229569794, 210547.66078521905], upper=[np.float64(319033.72182180645), 427515.85678329924, 427514.87526618456, 427513.8937557057]
+2025-12-18 04:13:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 368589.77582369413, 2025: 390526.66815511463, 2026: 412463.56048653513}, values=[368589.77582369413, 390526.66815511463, 412463.56048653513], CI_lower=[282486.99891833484, 304423.8912497554, 326360.78358117584], CI_upper=[454692.5527290534, 476629.44506047387, 498566.3373918944]
+2025-12-18 04:13:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [368589.77582369413, 390526.66815511463, 412463.56048653513], CI_lower: [282486.99891833484, 304423.8912497554, 326360.78358117584], CI_upper: [454692.5527290534, 476629.44506047387, 498566.3373918944]
+2025-12-18 04:13:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(319033.72182180645), 282486.99891833484, 304423.8912497554, 326360.78358117584], upper=[np.float64(319033.72182180645), 454692.5527290534, 476629.44506047387, 498566.3373918944]
+2025-12-18 04:13:12 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-18 04:13:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 1089.2827231362098, 2025: 1114.1982792339986, 2026: 1139.1138353317801}, values=[1089.2827231362098, 1114.1982792339986, 1139.1138353317801], CI_lower=[997.1652226785901, 1022.0807787763789, 1046.9963348741605], CI_upper=[1181.4002235938294, 1206.3157796916182, 1231.2313357893997]
+2025-12-18 04:13:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1089.2827231362098, 1114.1982792339986, 1139.1138353317801], CI_lower: [997.1652226785901, 1022.0807787763789, 1046.9963348741605], CI_upper: [1181.4002235938294, 1206.3157796916182, 1231.2313357893997]
+2025-12-18 04:13:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 997.1652226785901, 1022.0807787763789, 1046.9963348741605], upper=[np.float64(1196.7167755991286), 1181.4002235938294, 1206.3157796916182, 1231.2313357893997]
+2025-12-18 04:13:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 1189.2029207255691, 2025: 1247.337611289695, 2026: 1308.966491503641}, values=[1189.2029207255691, 1247.337611289695, 1308.966491503641], CI_lower=[1136.238003275782, 1194.3726938399077, 1256.0015740538538], CI_upper=[1242.1678381753563, 1300.302528739482, 1361.9314089534282]
+2025-12-18 04:13:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1189.2029207255691, 1247.337611289695, 1308.966491503641], CI_lower: [1136.238003275782, 1194.3726938399077, 1256.0015740538538], CI_upper: [1242.1678381753563, 1300.302528739482, 1361.9314089534282]
+2025-12-18 04:13:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 1136.238003275782, 1194.3726938399077, 1256.0015740538538], upper=[np.float64(1196.7167755991286), 1242.1678381753563, 1300.302528739482, 1361.9314089534282]
+2025-12-18 04:13:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 1273.2362926006317, 2025: 1390.0911586284637, 2026: 1525.9870011806488}, values=[1273.2362926006317, 1390.0911586284637, 1525.9870011806488], CI_lower=[1246.7340032174106, 1363.5888692452427, 1499.4847117974277], CI_upper=[1299.7385819838528, 1416.5934480116848, 1552.4892905638699]
+2025-12-18 04:13:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1273.2362926006317, 1390.0911586284637, 1525.9870011806488], CI_lower: [1246.7340032174106, 1363.5888692452427, 1499.4847117974277], CI_upper: [1299.7385819838528, 1416.5934480116848, 1552.4892905638699]
+2025-12-18 04:13:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 1246.7340032174106, 1363.5888692452427, 1499.4847117974277], upper=[np.float64(1196.7167755991286), 1299.7385819838528, 1416.5934480116848, 1552.4892905638699]
+2025-12-18 04:13:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 1090.403934610582, 2025: 1090.403934610582, 2026: 1090.403934610582}, values=[1090.403934610582, 1090.403934610582, 1090.403934610582], CI_lower=[1028.9755322578205, 1028.9755322578205, 1028.9755322578205], CI_upper=[1151.8323369633433, 1151.8323369633433, 1151.8323369633433]
+2025-12-18 04:13:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1090.403934610582, 1090.403934610582, 1090.403934610582], CI_lower: [1028.9755322578205, 1028.9755322578205, 1028.9755322578205], CI_upper: [1151.8323369633433, 1151.8323369633433, 1151.8323369633433]
+2025-12-18 04:13:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 1028.9755322578205, 1028.9755322578205, 1028.9755322578205], upper=[np.float64(1196.7167755991286), 1151.8323369633433, 1151.8323369633433, 1151.8323369633433]
+2025-12-18 04:13:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 1029.249710405284, 2025: 1029.249710405284, 2026: 1029.249710405284}, values=[1029.249710405284, 1029.249710405284, 1029.249710405284], CI_lower=[946.6204414499758, 946.6204414499758, 946.6204414499758], CI_upper=[1111.8789793605922, 1111.8789793605922, 1111.8789793605922]
+2025-12-18 04:13:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1029.249710405284, 1029.249710405284, 1029.249710405284], CI_lower: [946.6204414499758, 946.6204414499758, 946.6204414499758], CI_upper: [1111.8789793605922, 1111.8789793605922, 1111.8789793605922]
+2025-12-18 04:13:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 946.6204414499758, 946.6204414499758, 946.6204414499758], upper=[np.float64(1196.7167755991286), 1111.8789793605922, 1111.8789793605922, 1111.8789793605922]
+2025-12-18 04:13:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 1123.5112254642224, 2025: 1123.5112254642224, 2026: 1123.5112254642224}, values=[1123.5112254642224, 1123.5112254642224, 1123.5112254642224], CI_lower=[1077.2209577556423, 1077.2209577556423, 1077.2209577556423], CI_upper=[1169.8014931728026, 1169.8014931728026, 1169.8014931728026]
+2025-12-18 04:13:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1123.5112254642224, 1123.5112254642224, 1123.5112254642224], CI_lower: [1077.2209577556423, 1077.2209577556423, 1077.2209577556423], CI_upper: [1169.8014931728026, 1169.8014931728026, 1169.8014931728026]
+2025-12-18 04:13:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 1077.2209577556423, 1077.2209577556423, 1077.2209577556423], upper=[np.float64(1196.7167755991286), 1169.8014931728026, 1169.8014931728026, 1169.8014931728026]
+2025-12-18 04:13:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 1300.4960703957888, 2025: 1398.9184546334232, 2026: 1492.2604429173161}, values=[1300.4960703957888, 1398.9184546334232, 1492.2604429173161], CI_lower=[968.1674591928147, 1066.589843430449, 1159.931831714342], CI_upper=[1632.824681598763, 1731.2470658363973, 1824.5890541202903]
+2025-12-18 04:13:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1300.4960703957888, 1398.9184546334232, 1492.2604429173161], CI_lower: [968.1674591928147, 1066.589843430449, 1159.931831714342], CI_upper: [1632.824681598763, 1731.2470658363973, 1824.5890541202903]
+2025-12-18 04:13:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 968.1674591928147, 1066.589843430449, 1159.931831714342], upper=[np.float64(1196.7167755991286), 1632.824681598763, 1731.2470658363973, 1824.5890541202903]
+2025-12-18 04:13:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 1305.1425588615896, 2025: 1417.9680319106099, 2026: 1530.7935049596304}, values=[1305.1425588615896, 1417.9680319106099, 1530.7935049596304], CI_lower=[1258.5033266377704, 1371.3287996867907, 1484.154272735811], CI_upper=[1351.7817910854087, 1464.607264134429, 1577.4327371834497]
+2025-12-18 04:13:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1305.1425588615896, 1417.9680319106099, 1530.7935049596304], CI_lower: [1258.5033266377704, 1371.3287996867907, 1484.154272735811], CI_upper: [1351.7817910854087, 1464.607264134429, 1577.4327371834497]
+2025-12-18 04:13:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1196.7167755991286), 1258.5033266377704, 1371.3287996867907, 1484.154272735811], upper=[np.float64(1196.7167755991286), 1351.7817910854087, 1464.607264134429, 1577.4327371834497]
+2025-12-18 04:13:19 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-18 04:13:19 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-18 04:14:07 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 41149.8828125, 'mse': 39686893568.0, 'rmse': 199215.69608843577, 'r2': -0.439150333404541}
+2025-12-18 04:14:08 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-18 04:14:42 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 6.829444885253906, 'mse': 193.6953125, 'rmse': 13.917446335445307, 'r2': 0.05351343750953674}
+2025-12-18 04:14:42 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-18 04:15:16 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 1.6353263854980469, 'mse': 48.76542663574219, 'rmse': 6.983224658833638, 'r2': 0.7677521705627441}
+2025-12-18 04:15:17 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-18 04:15:51 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 202.00759887695312, 'mse': 290705.21875, 'rmse': 539.1708622969161, 'r2': 0.22494003176689148}
+2025-12-18 04:15:52 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-18 04:16:25 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.33804962038993835, 'mse': 0.4268421232700348, 'rmse': 0.6533315569219313, 'r2': 0.21219658851623535}
+2025-12-18 04:16:26 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-18 04:16:44 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/New_Mexico/housing/1-year/figures/ml/deep_learning
+2025-12-18 04:16:45 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 04:16:45 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 04:16:45 [DEBUG] census_eda.main:  Running LLM analysis for state: New Mexico
+2025-12-18 04:16:45 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 04:16:45 [INFO] census_eda.ml: [LLM] State context loaded: New Mexico
+2025-12-18 04:16:45 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [API] Total request: ~2338 tokens (system: ~2157, user: ~181)
+2025-12-18 04:16:45 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [API] Received response: 2956 chars
+2025-12-18 04:16:55 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (2956 chars)
+2025-12-18 04:16:55 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [LLM] User prompt: 1259 chars (~314 tokens)
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [API] Total request: ~2471 tokens (system: ~2157, user: ~314)
+2025-12-18 04:16:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [API] Received response: 3904 chars
+2025-12-18 04:17:05 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3904 chars)
+2025-12-18 04:17:05 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [LLM] User prompt: 1690 chars (~422 tokens)
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [API] Total request: ~2579 tokens (system: ~2157, user: ~422)
+2025-12-18 04:17:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [API] Received response: 3595 chars
+2025-12-18 04:17:15 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3595 chars)
+2025-12-18 04:17:15 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [LLM] User prompt: 1465 chars (~366 tokens)
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [API] Total request: ~2523 tokens (system: ~2157, user: ~366)
+2025-12-18 04:17:15 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [API] Received response: 4462 chars
+2025-12-18 04:17:29 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4462 chars)
+2025-12-18 04:17:29 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [API] Total request: ~2168 tokens (system: ~2157, user: ~11)
+2025-12-18 04:17:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [API] Received response: 5498 chars
+2025-12-18 04:17:45 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (5498 chars)
+2025-12-18 04:17:45 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [LLM] User prompt: 11319 chars (~2829 tokens)
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [API] Total request: ~4986 tokens (system: ~2157, user: ~2829)
+2025-12-18 04:17:45 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [API] Received response: 3652 chars
+2025-12-18 04:17:58 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3652 chars)
+2025-12-18 04:17:58 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [LLM] User prompt: 7031 chars (~1757 tokens)
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [API] Total request: ~3914 tokens (system: ~2157, user: ~1757)
+2025-12-18 04:17:58 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [API] Received response: 3627 chars
+2025-12-18 04:18:09 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3627 chars)
+2025-12-18 04:18:09 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [API] Total request: ~2309 tokens (system: ~2157, user: ~152)
+2025-12-18 04:18:09 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [API] Received response: 3550 chars
+2025-12-18 04:18:21 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3550 chars)
+2025-12-18 04:18:21 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [LLM] User prompt: 6407 chars (~1601 tokens)
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [API] Total request: ~3758 tokens (system: ~2157, user: ~1601)
+2025-12-18 04:18:21 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [API] Received response: 4214 chars
+2025-12-18 04:18:34 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4214 chars)
+2025-12-18 04:18:34 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [LLM] User prompt: 2527 chars (~631 tokens)
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [API] Total request: ~2788 tokens (system: ~2157, user: ~631)
+2025-12-18 04:18:34 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [API] Received response: 3915 chars
+2025-12-18 04:18:46 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3915 chars)
+2025-12-18 04:18:46 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [LLM] User prompt: 1048 chars (~262 tokens)
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Mexico
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Mexico
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3742 chars
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~935
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Mexico
+
+ECONOMIC PROFILE:
+  Industries: Oil and gas extraction, Federal government and military installations, Mining (potash, copper), Tourism and hospitality, Research and development (national labs)
+  Trends: Sluggish growth 2010-2019 (avg 1.0% annually). Oil boom 2011-2014, bust 2015-2016. Recovery 2017-2019. Strong 2021-2023 driven by energy sector resurgence. Boom-bust cycles tied to oil prices
+  Income: Low median household income ($61k, 48th nationally). High poverty rate (17.8%). Significant income inequality. Low wages outside energy/government sectors
+  Dominant Sector: Government (federal, state, local)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth, nearly stagnant 2011-2023 (~0.15% annually). Outmigration during oil busts, modest in-migration during booms. Population challenges persist
+  Migration: Limited in-migration. Some domestic outmigration to Texas, Colorado for opportunities. Modest international immigration, primarily from Mexico. Return migration to tribal lands
+  Education: Low educational attainment (31.6% bachelor's or higher vs. 36.2% nationally). Improving but lags. Strong tribal colleges, UNM system. Urban-rural education gap
+
+HOUSING MARKET:
+  Market: Affordable compared to national average. Median home ~$320k (2023). Higher in Santa Fe, Albuquerque metro. Very affordable rural areas. Adobe-style regional architecture
+  Affordability: Relatively affordable 2011-2019, rapid appreciation 2020-2023 (30-40% in Albuquerque). Still affordable vs. national average. Rising costs challenging for low-income residents
+  Challenges: Poverty limiting affordability despite low costs, Rural infrastructure deficits, Tribal land housing shortages, Water access issues, Aging housing stock
+
+POLITY:
+  Policy: Democratic-leaning, progressive on social issues. Dependent on federal spending and oil revenue. Pro-labor in government sectors
+  Housing: Limited state intervention. Affordable housing challenges in Albuquerque. Native American housing programs. No rent control
+  Labor: Prevailing wage requirements. Gradual minimum wage increases. Strong public sector unions. Right-to-work law repealed 2021
+
+REGIONAL:
+  Geography: Diverse: high desert, mountains (Sangre de Cristo), plains. Rio Grande corridor. Four Corners region. Vast federal and tribal lands
+  Urban/Rural: 77% urban (mostly Albuquerque metro, Santa Fe, Las Cruces). 23% rural (ranching, tribal lands, small towns). Very low population density
+  Infrastructure: Limited road network outside urban areas. Aging water infrastructure. Expanding broadband but rural gaps. Major labs (Sandia, Los Alamos). Spaceport America
+
+HISTORICAL:
+  Events: 2011-2013: Oil boom beginning, state budget challenges, Albuquerque crime concerns; 2014-2016: Oil price crash, revenue shortfall, budget cuts, education funding crisis; 2017-2019: Oil recovery, marijuana legalization, film industry growth, education reforms; 2020-2023: Pandemic impacts, oil boom returns, federal infrastructure investments, housing price spike
+  Shocks: 2015-2016 oil price crash, severe budget shortfalls
+  Transitions: Oil boom-bust cycles. Film industry growth. National labs remain stable anchor. Tourism sector growth
+
+COMPARATIVE:
+  Benchmarks: Low median income, high poverty rate. Affordable housing but low wages. Educational attainment below average. Unique cultural diversity with large Native American population
+  Peer States: Oklahoma (oil economy), Arizona (demographics, climate), West Virginia (poverty, rural challenges)
+  Unique: Highest percentage Native American population. Major federal research facilities. Oil boom-bust economy. Trilingual culture (English, Spanish, Native languages). Tribal sovereignty complexity
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Mexico
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [PROMPT] State context injected (3742 chars)
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8630 chars (~2157 tokens)
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [API] Total request: ~2419 tokens (system: ~2157, user: ~262)
+2025-12-18 04:18:46 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 04:19:02 [DEBUG] census_eda.ml: [API] Received response: 5369 chars
+2025-12-18 04:19:02 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5369 chars)
+2025-12-18 04:19:02 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 04:19:02 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 04:19:02 [INFO] census_eda.main: [REPORT] Generated: report_New_Mexico_housing_20251218_041902.txt
+2025-12-18 04:19:02 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for New Mexico!
+2025-12-18 04:19:03 [INFO] census_eda.memory: process_New Mexico_housing_1-year:EXIT: 9633.1MB (delta: -6600.7MB)
+2025-12-18 04:19:04 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 04:19:05 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 04:19:07 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 04:19:08 [INFO] census_eda.memory: Cleared all caches

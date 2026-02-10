@@ -1,0 +1,1334 @@
+2025-12-17 22:39:29 [INFO] census_eda: Logging context set: state=Michigan, survey=population, scope=1-year
+2025-12-17 22:39:29 [INFO] census_eda: Log file: ./logs/Michigan/1-year/population/1-year_population_25_12_17_2239.log
+2025-12-17 22:39:29 [INFO] census_eda.main: ======================================================================
+2025-12-17 22:39:29 [INFO] census_eda.main: [POPULATION] Processing Michigan (1-year)...
+2025-12-17 22:39:29 [INFO] census_eda.main: ======================================================================
+2025-12-17 22:39:29 [INFO] census_eda.memory: process_Michigan_population_1-year:ENTER: 11025.4MB (delta: +0.0MB)
+2025-12-17 22:39:29 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-17 22:39:29 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/26/*/*.csv
+2025-12-17 22:39:29 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-17 22:39:29 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pmi.csv
+2025-12-17 22:39:30 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-17 22:39:30 [VERBOSE] census_eda.processing.loader:   -> Loaded 98,587 rows, 260 columns
+2025-12-17 22:39:30 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p26.csv
+2025-12-17 22:39:32 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-17 22:39:32 [VERBOSE] census_eda.processing.loader:   -> Loaded 99,459 rows, 260 columns
+2025-12-17 22:39:32 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pmi.csv
+2025-12-17 22:39:35 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-17 22:39:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 98,180 rows, 260 columns
+2025-12-17 22:39:35 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pmi.csv
+2025-12-17 22:39:36 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-17 22:39:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 99,441 rows, 260 columns
+2025-12-17 22:39:36 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pmi.csv
+2025-12-17 22:39:38 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-17 22:39:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 101,093 rows, 260 columns
+2025-12-17 22:39:38 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pmi.csv
+2025-12-17 22:39:40 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-17 22:39:40 [VERBOSE] census_eda.processing.loader:   -> Loaded 100,064 rows, 260 columns
+2025-12-17 22:39:40 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p26.csv
+2025-12-17 22:39:42 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-17 22:39:42 [VERBOSE] census_eda.processing.loader:   -> Loaded 99,419 rows, 260 columns
+2025-12-17 22:39:42 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pmi.csv
+2025-12-17 22:39:44 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-17 22:39:44 [VERBOSE] census_eda.processing.loader:   -> Loaded 100,191 rows, 260 columns
+2025-12-17 22:39:44 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pmi.csv
+2025-12-17 22:39:46 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-17 22:39:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 98,145 rows, 260 columns
+2025-12-17 22:39:46 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p26.csv
+2025-12-17 22:39:48 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-17 22:39:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 100,078 rows, 260 columns
+2025-12-17 22:39:48 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p26.csv
+2025-12-17 22:39:50 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-17 22:39:50 [VERBOSE] census_eda.processing.loader:   -> Loaded 101,512 rows, 260 columns
+2025-12-17 22:39:50 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p26.csv
+2025-12-17 22:39:52 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-17 22:39:52 [VERBOSE] census_eda.processing.loader:   -> Loaded 99,040 rows, 260 columns
+2025-12-17 22:39:52 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p26.csv
+2025-12-17 22:39:54 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-17 22:39:54 [VERBOSE] census_eda.processing.loader:   -> Loaded 102,581 rows, 260 columns
+2025-12-17 22:39:54 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pmi.csv
+2025-12-17 22:39:56 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-17 22:39:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 98,008 rows, 260 columns
+2025-12-17 22:39:56 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pmi.csv
+2025-12-17 22:39:58 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-17 22:39:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 98,973 rows, 260 columns
+2025-12-17 22:39:58 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pmi.csv
+2025-12-17 22:40:00 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-17 22:40:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 99,285 rows, 260 columns
+2025-12-17 22:40:00 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-17 22:40:11 [VERBOSE] census_eda.processing.loader: Combined into 1,594,056 total rows, 260 columns
+2025-12-17 22:40:11 [INFO] census_eda.main: Loaded 1,594,056 records
+2025-12-17 22:40:11 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 1594056 valid, 16 unique
+2025-12-17 22:40:11 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-17 22:40:14 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-17 22:40:14 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-17 22:40:15 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-17 22:40:16 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-17 22:40:17 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-17 22:40:18 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-17 22:40:19 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-17 22:40:19 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-17 22:40:20 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-17 22:40:20 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-17 22:40:21 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-17 22:40:21 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-17 22:40:22 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-17 22:40:23 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-17 22:40:23 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-17 22:40:23 [DEBUG] census_eda.main: Feature engineering complete: (1594056, 292)
+2025-12-17 22:40:23 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-17 22:40:23 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-17 22:44:27 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-17 22:44:27 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-17 22:44:27 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(1594056, 292)
+2025-12-17 22:44:27 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-17 22:44:27 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 1594056
+2025-12-17 22:44:27 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-17 22:44:28 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(1594056, 292)
+2025-12-17 22:44:28 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(101093), np.int64(2008): np.int64(100191), np.int64(2009): np.int64(100064), np.int64(2010): np.int64(98973), np.int64(2011): np.int64(99285), np.int64(2012): np.int64(98587), np.int64(2013): np.int64(99441), np.int64(2014): np.int64(98180), np.int64(2015): np.int64(98008), np.int64(2016): np.int64(98145), np.int64(2017): np.int64(99459), np.int64(2018): np.int64(99419), np.int64(2019): np.int64(100078), np.int64(2021): np.int64(99040), np.int64(2022): np.int64(101512), np.int64(2023): np.int64(102581)}
+2025-12-17 22:44:28 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(1594056, 292)
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 1594056 non-null values (zeros excluded if needed)
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-17 22:44:29 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-17 22:44:30 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 1594056 non-null values (zeros excluded if needed)
+2025-12-17 22:44:30 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1906.00
+2025-12-17 22:44:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-17 22:44:31 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 1594056 non-null values (zeros excluded if needed)
+2025-12-17 22:44:31 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-17 22:44:31 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-17 22:44:32 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 641586 non-null values (zeros excluded if needed)
+2025-12-17 22:44:32 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 194.00
+2025-12-17 22:44:33 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-17 22:44:33 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 186199 non-null values (zeros excluded if needed)
+2025-12-17 22:44:33 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 340000.00
+2025-12-17 22:44:33 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 98603 non-null values (zeros excluded if needed)
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 77000.00
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 21575 non-null values (zeros excluded if needed)
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 216991 non-null values (zeros excluded if needed)
+2025-12-17 22:44:34 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 141000.00
+2025-12-17 22:44:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 68148 non-null values (zeros excluded if needed)
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 388000.00
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 45088 non-null values (zeros excluded if needed)
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 357815 non-null values (zeros excluded if needed)
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-17 22:44:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-17 22:44:37 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 750749 non-null values (zeros excluded if needed)
+2025-12-17 22:44:37 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 489000.00
+2025-12-17 22:44:39 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-17 22:44:57 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-17 22:44:57 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-17 22:44:57 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-17 22:44:58 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-17 22:44:58 [DEBUG] census_eda.memory: Skipping sampling: 32037MB available (>16GB)
+2025-12-17 22:44:58 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 1594056 rows
+2025-12-17 22:49:40 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-17 22:49:40 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(1594056, 292)
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 1594056 non-null values
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 1594056 non-null values
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1906.00
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 1594056 non-null values
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 641586 non-null values
+2025-12-17 22:49:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 194.00
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 186199 non-null values
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 340000.00
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 98603 non-null values
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 77000.00
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 21575 non-null values
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 216991 non-null values
+2025-12-17 22:49:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 141000.00
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 68148 non-null values
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 388000.00
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 45088 non-null values
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 357815 non-null values
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 750749 non-null values
+2025-12-17 22:49:44 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 489000.00
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 794637 non-null values
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 644505 non-null values
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 310476 non-null values
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 1309217 non-null values
+2025-12-17 22:49:45 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-17 22:49:54 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-17 22:50:10 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-17 22:50:28 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-17 22:51:03 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-17 22:51:03 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-17 22:51:03 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-17 22:51:05 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-17 22:51:05 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-17 22:51:06 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-17 22:51:07 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-17 22:51:07 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-17 22:51:07 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-17 22:51:08 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-17 22:51:08 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-17 22:51:10 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-17 22:51:10 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-17 22:51:10 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-17 22:51:11 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-17 22:51:13 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-17 22:51:13 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-17 22:51:13 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-17 22:51:14 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-17 22:51:14 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-17 22:51:15 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-17 22:51:15 [DEBUG] census_eda.memory: Skipping sampling: 32057MB available (>16GB)
+2025-12-17 22:51:37 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-17 22:51:37 [DEBUG] census_eda.memory: Skipping sampling: 32079MB available (>16GB)
+2025-12-17 22:52:18 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-17 22:52:18 [DEBUG] census_eda.memory: Skipping sampling: 32171MB available (>16GB)
+2025-12-17 22:52:23 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-17 22:52:40 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-17 22:52:40 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-17 22:52:40 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-17 22:52:41 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-17 22:52:42 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-17 22:52:43 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-17 22:52:43 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-17 22:52:44 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-17 22:52:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-17 22:52:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-17 22:52:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-17 22:52:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-17 22:52:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-17 22:52:46 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-17 22:52:46 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-17 22:52:46 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-17 22:52:47 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-17 22:52:47 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-17 22:52:49 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-17 22:52:52 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-17 22:52:54 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-17 22:52:56 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-17 22:52:59 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-17 22:52:59 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-17 22:52:59 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-17 22:53:00 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-17 22:53:00 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-17 22:53:03 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-17 22:53:05 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-17 22:53:06 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-17 22:53:07 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-17 22:53:09 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-17 22:53:12 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-17 22:53:16 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-17 22:53:17 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-17 22:53:18 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Michigan/population/1-year/figures
+2025-12-17 22:53:19 [DEBUG] census_eda.memory: Skipping sampling: 31926MB available (>16GB)
+2025-12-17 22:53:19 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-17 22:53:19 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-17 22:53:19 [INFO] census_eda.memory: [ML-START]: 18595.2MB (delta: +7569.9MB)
+2025-12-17 22:53:19 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-17 22:53:19 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-17 22:53:19 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 14027 samples (was 14034)
+2025-12-17 22:53:19 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 22:53:19 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 22:53:19 [INFO] census_eda.ml.regression: [TUNE] Data: 14,027 samples, 10 features
+2025-12-17 22:53:19 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:53:19 [INFO] census_eda.memory: tune_ridge:ENTER: 18595.2MB (delta: +0.0MB)
+2025-12-17 22:53:20 [WARNING] census_eda.memory: Memory usage (18595.9MB) exceeded threshold (16000MB)
+2025-12-17 22:53:21 [INFO] census_eda.memory: tune_ridge:EXIT: 18595.9MB (delta: +0.7MB)
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1188
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 22:53:21 [INFO] census_eda.ml.regression: [TUNE] Data: 14,027 samples, 10 features
+2025-12-17 22:53:21 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:53:21 [INFO] census_eda.memory: tune_lasso:ENTER: 18595.9MB (delta: +0.0MB)
+2025-12-17 22:53:21 [WARNING] census_eda.memory: Memory usage (18596.0MB) exceeded threshold (16000MB)
+2025-12-17 22:53:21 [INFO] census_eda.memory: tune_lasso:EXIT: 18596.0MB (delta: +0.1MB)
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1187
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:53:21 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 22:53:21 [INFO] census_eda.ml.regression: [TUNE] Data: 14,027 samples, 10 features
+2025-12-17 22:53:21 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:53:21 [INFO] census_eda.memory: tune_random_forest:ENTER: 18596.0MB (delta: +0.0MB)
+2025-12-17 22:53:34 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:53:34 [INFO] census_eda.memory: tune_random_forest:EXIT: 18597.3MB (delta: +1.3MB)
+2025-12-17 22:53:34 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 22:53:34 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0658
+2025-12-17 22:53:34 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:53:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 22:53:36 [INFO] census_eda.ml.regression: [TUNE] Data: 14,027 samples, 10 features
+2025-12-17 22:53:36 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:53:36 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:43 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:53:43 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 22:53:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1295
+2025-12-17 22:53:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:53:46 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,806 -> 1,000
+2025-12-17 22:53:46 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,806 -> 1,000
+2025-12-17 22:53:46 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:46 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 22:53:47 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:47 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 22:53:47 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 22:53:47 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-17 22:53:47 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 13674 samples (was 14034)
+2025-12-17 22:53:47 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 22:53:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 22:53:47 [INFO] census_eda.ml.regression: [TUNE] Data: 13,674 samples, 10 features
+2025-12-17 22:53:47 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:53:47 [INFO] census_eda.memory: tune_ridge:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:47 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:53:48 [INFO] census_eda.memory: tune_ridge:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1256
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 22:53:48 [INFO] census_eda.ml.regression: [TUNE] Data: 13,674 samples, 10 features
+2025-12-17 22:53:48 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:53:48 [INFO] census_eda.memory: tune_lasso:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:48 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:53:48 [INFO] census_eda.memory: tune_lasso:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1256
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:53:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 22:53:48 [INFO] census_eda.ml.regression: [TUNE] Data: 13,674 samples, 10 features
+2025-12-17 22:53:48 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:53:48 [INFO] census_eda.memory: tune_random_forest:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:01 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:01 [INFO] census_eda.memory: tune_random_forest:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 22:54:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0764
+2025-12-17 22:54:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:54:03 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 22:54:03 [INFO] census_eda.ml.regression: [TUNE] Data: 13,674 samples, 10 features
+2025-12-17 22:54:03 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:54:03 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:10 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:10 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 22:54:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1404
+2025-12-17 22:54:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:54:13 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,735 -> 1,000
+2025-12-17 22:54:13 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,735 -> 1,000
+2025-12-17 22:54:13 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:13 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 22:54:14 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:14 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 22:54:14 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 22:54:14 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-17 22:54:14 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 14026 samples (was 14034)
+2025-12-17 22:54:14 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 22:54:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 22:54:14 [INFO] census_eda.ml.regression: [TUNE] Data: 14,026 samples, 10 features
+2025-12-17 22:54:14 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:54:14 [INFO] census_eda.memory: tune_ridge:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:14 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:14 [INFO] census_eda.memory: tune_ridge:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 22:54:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1208
+2025-12-17 22:54:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:54:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 22:54:14 [INFO] census_eda.ml.regression: [TUNE] Data: 14,026 samples, 10 features
+2025-12-17 22:54:14 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:54:14 [INFO] census_eda.memory: tune_lasso:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:14 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:15 [INFO] census_eda.memory: tune_lasso:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 10.0}
+2025-12-17 22:54:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1207
+2025-12-17 22:54:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:54:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 22:54:15 [INFO] census_eda.ml.regression: [TUNE] Data: 14,026 samples, 10 features
+2025-12-17 22:54:15 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:54:15 [INFO] census_eda.memory: tune_random_forest:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:28 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:28 [INFO] census_eda.memory: tune_random_forest:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 22:54:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0713
+2025-12-17 22:54:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:54:30 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 22:54:30 [INFO] census_eda.ml.regression: [TUNE] Data: 14,026 samples, 10 features
+2025-12-17 22:54:30 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:54:30 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:38 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:38 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 22:54:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1340
+2025-12-17 22:54:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:54:41 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,806 -> 1,000
+2025-12-17 22:54:41 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,806 -> 1,000
+2025-12-17 22:54:41 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:41 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 22:54:42 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:42 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 22:54:42 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 22:54:42 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-17 22:54:42 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 22:54:42 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 22:54:42 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:54:42 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:54:42 [INFO] census_eda.memory: tune_ridge:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:42 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:42 [INFO] census_eda.memory: tune_ridge:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-17 22:54:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 22:54:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:54:42 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 22:54:42 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:54:42 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:54:42 [INFO] census_eda.memory: tune_lasso:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:43 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:43 [INFO] census_eda.memory: tune_lasso:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 22:54:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 22:54:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:54:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 22:54:43 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:54:43 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:54:43 [INFO] census_eda.memory: tune_random_forest:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:48 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:48 [INFO] census_eda.memory: tune_random_forest:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-17 22:54:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 22:54:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:54:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 22:54:49 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:54:49 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:54:49 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:54 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:54:55 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:54:55 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-17 22:54:55 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 22:54:55 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:54:59 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-17 22:54:59 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 22:54:59 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 22:54:59 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:54:59 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:54:59 [INFO] census_eda.memory: tune_ridge:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:00 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:55:00 [INFO] census_eda.memory: tune_ridge:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:00 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 22:55:00 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0641
+2025-12-17 22:55:00 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:55:00 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 22:55:00 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:55:00 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 22:55:00 [INFO] census_eda.memory: tune_lasso:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:00 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:55:01 [INFO] census_eda.memory: tune_lasso:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 22:55:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0641
+2025-12-17 22:55:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 22:55:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 22:55:01 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:55:01 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:55:01 [INFO] census_eda.memory: tune_random_forest:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:14 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:55:15 [INFO] census_eda.memory: tune_random_forest:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 22:55:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0700
+2025-12-17 22:55:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:55:16 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 22:55:16 [INFO] census_eda.ml.regression: [TUNE] Data: 14,034 samples, 10 features
+2025-12-17 22:55:16 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 22:55:16 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:23 [WARNING] census_eda.memory: Memory usage (18597.3MB) exceeded threshold (16000MB)
+2025-12-17 22:55:24 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-17 22:55:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1268
+2025-12-17 22:55:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 22:55:27 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,807 -> 1,000
+2025-12-17 22:55:27 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,807 -> 1,000
+2025-12-17 22:55:27 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:27 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 22:55:27 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:27 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 22:55:27 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 22:55:27 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-17 22:55:27 [INFO] census_eda.memory: [PRE-CLUSTERING]: 18597.3MB (delta: +0.0MB)
+2025-12-17 22:55:27 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-17 22:55:27 [INFO] census_eda.main: [CLUSTERING] KMeans on 14,034 samples...
+2025-12-17 22:55:29 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-17 22:55:29 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 14,034 samples (will sample if needed)...
+2025-12-17 22:55:33 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-17 22:55:33 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-17 22:55:33 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-17 22:55:33 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-17 22:55:33 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-17 22:55:33 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 51442.78268432617, 2025: 52364.72738647461, 2026: 53033.09558105469}, Values: [51442.78268432617, 52364.72738647461, 53033.09558105469]
+2025-12-17 22:55:33 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-17 22:55:33 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 56251.747230529785, 2025: 57833.29206085205, 2026: 59306.362129211426}, Values: [56251.747230529785, 57833.29206085205, 59306.362129211426]
+2025-12-17 22:55:33 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-17 22:55:33 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 56695.03552246094, 2025: 58248.39454650879, 2026: 59664.543853759766}, Values: [56695.03552246094, 58248.39454650879, 59664.543853759766]
+2025-12-17 22:55:33 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-17 22:55:34 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 45.36873970925808, 2025: 45.894664868712425, 2026: 46.4931346103549}, Values: [45.36873970925808, 45.894664868712425, 46.4931346103549]
+2025-12-17 22:55:34 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-17 22:55:34 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.521604523062706, 2025: 35.793173745274544, 2026: 34.86002303659916}, Values: [36.521604523062706, 35.793173745274544, 34.86002303659916]
+2025-12-17 22:55:34 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-17 22:55:38 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-17 22:55:44 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-17 22:55:49 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-17 22:56:01 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-17 22:56:04 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-17 22:56:04 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-17 22:56:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 49535.540760076605, 2025: 50605.56295397226, 2026: 51675.585147867445}, values=[49535.540760076605, 50605.56295397226, 51675.585147867445], CI_lower=[46139.5519541573, 47209.574148052954, 48279.59634194814], CI_upper=[52931.52956599591, 54001.55175989156, 55071.57395378675]
+2025-12-17 22:56:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49535.540760076605, 50605.56295397226, 51675.585147867445], CI_lower: [46139.5519541573, 47209.574148052954, 48279.59634194814], CI_upper: [52931.52956599591, 54001.55175989156, 55071.57395378675]
+2025-12-17 22:56:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 46139.5519541573, 47209.574148052954, 48279.59634194814], upper=[np.float64(45625.342245007974), 52931.52956599591, 54001.55175989156, 55071.57395378675]
+2025-12-17 22:56:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 53575.539259791374, 2025: 55988.68583327532, 2026: 58543.11035943031}, values=[53575.539259791374, 55988.68583327532, 58543.11035943031], CI_lower=[52076.64318964151, 54489.78976312545, 57044.21428928045], CI_upper=[55074.43532994124, 57487.58190342518, 60042.00642958018]
+2025-12-17 22:56:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53575.539259791374, 55988.68583327532, 58543.11035943031], CI_lower: [52076.64318964151, 54489.78976312545, 57044.21428928045], CI_upper: [55074.43532994124, 57487.58190342518, 60042.00642958018]
+2025-12-17 22:56:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 52076.64318964151, 54489.78976312545, 57044.21428928045], upper=[np.float64(45625.342245007974), 55074.43532994124, 57487.58190342518, 60042.00642958018]
+2025-12-17 22:56:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 51442.78268432617, 2025: 52364.72738647461, 2026: 53033.09558105469}, values=[51442.78268432617, 52364.72738647461, 53033.09558105469], CI_lower=[50499.286321639665, 51421.2310237881, 52089.59921836818], CI_upper=[52386.27904701268, 53308.223749161116, 53976.591943741194]
+2025-12-17 22:56:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51442.78268432617, 52364.72738647461, 53033.09558105469], CI_lower: [50499.286321639665, 51421.2310237881, 52089.59921836818], CI_upper: [52386.27904701268, 53308.223749161116, 53976.591943741194]
+2025-12-17 22:56:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 50499.286321639665, 51421.2310237881, 52089.59921836818], upper=[np.float64(45625.342245007974), 52386.27904701268, 53308.223749161116, 53976.591943741194]
+2025-12-17 22:56:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 48759.3529102628, 2025: 48759.3529102628, 2026: 48759.3529102628}, values=[48759.3529102628, 48759.3529102628, 48759.3529102628], CI_lower=[46993.53906687491, 46993.53906687491, 46993.53906687491], CI_upper=[50525.166753650694, 50525.166753650694, 50525.166753650694]
+2025-12-17 22:56:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48759.3529102628, 48759.3529102628, 48759.3529102628], CI_lower: [46993.53906687491, 46993.53906687491, 46993.53906687491], CI_upper: [50525.166753650694, 50525.166753650694, 50525.166753650694]
+2025-12-17 22:56:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 46993.53906687491, 46993.53906687491, 46993.53906687491], upper=[np.float64(45625.342245007974), 50525.166753650694, 50525.166753650694, 50525.166753650694]
+2025-12-17 22:56:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 46529.1841777153, 2025: 46529.1841777153, 2026: 46529.1841777153}, values=[46529.1841777153, 46529.1841777153, 46529.1841777153], CI_lower=[43252.41190764707, 43252.41190764707, 43252.41190764707], CI_upper=[49805.95644778354, 49805.95644778354, 49805.95644778354]
+2025-12-17 22:56:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46529.1841777153, 46529.1841777153, 46529.1841777153], CI_lower: [43252.41190764707, 43252.41190764707, 43252.41190764707], CI_upper: [49805.95644778354, 49805.95644778354, 49805.95644778354]
+2025-12-17 22:56:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 43252.41190764707, 43252.41190764707, 43252.41190764707], upper=[np.float64(45625.342245007974), 49805.95644778354, 49805.95644778354, 49805.95644778354]
+2025-12-17 22:56:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 49453.508643052344, 2025: 49453.508643052344, 2026: 49453.508643052344}, values=[49453.508643052344, 49453.508643052344, 49453.508643052344], CI_lower=[48268.890620514845, 48268.890620514845, 48268.890620514845], CI_upper=[50638.12666558984, 50638.12666558984, 50638.12666558984]
+2025-12-17 22:56:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49453.508643052344, 49453.508643052344, 49453.508643052344], CI_lower: [48268.890620514845, 48268.890620514845, 48268.890620514845], CI_upper: [50638.12666558984, 50638.12666558984, 50638.12666558984]
+2025-12-17 22:56:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 48268.890620514845, 48268.890620514845, 48268.890620514845], upper=[np.float64(45625.342245007974), 50638.12666558984, 50638.12666558984, 50638.12666558984]
+2025-12-17 22:56:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 50730.344623150246, 2025: 50726.966829742196, 2026: 50727.09610252085}, values=[50730.344623150246, 50726.966829742196, 50727.09610252085], CI_lower=[34577.53662209056, 34574.15882868251, 34574.28810146117], CI_upper=[66883.15262420994, 66879.77483080188, 66879.90410358054]
+2025-12-17 22:56:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50730.344623150246, 50726.966829742196, 50727.09610252085], CI_lower: [34577.53662209056, 34574.15882868251, 34574.28810146117], CI_upper: [66883.15262420994, 66879.77483080188, 66879.90410358054]
+2025-12-17 22:56:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 34577.53662209056, 34574.15882868251, 34574.28810146117], upper=[np.float64(45625.342245007974), 66883.15262420994, 66879.77483080188, 66879.90410358054]
+2025-12-17 22:56:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 52672.34926455069, 2025: 54589.34888124047, 2026: 56506.348497930245}, values=[52672.34926455069, 54589.34888124047, 56506.348497930245], CI_lower=[51294.903459113375, 53211.90307580315, 55128.90269249293], CI_upper=[54049.79506998801, 55966.794686677786, 57883.79430336756]
+2025-12-17 22:56:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52672.34926455069, 54589.34888124047, 56506.348497930245], CI_lower: [51294.903459113375, 53211.90307580315, 55128.90269249293], CI_upper: [54049.79506998801, 55966.794686677786, 57883.79430336756]
+2025-12-17 22:56:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45625.342245007974), 51294.903459113375, 53211.90307580315, 55128.90269249293], upper=[np.float64(45625.342245007974), 54049.79506998801, 55966.794686677786, 57883.79430336756]
+2025-12-17 22:56:10 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-17 22:56:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 53519.92119966494, 2025: 54691.35550572816, 2026: 55862.78981179139}, values=[53519.92119966494, 54691.35550572816, 55862.78981179139], CI_lower=[50223.85891113756, 51395.293217200786, 52566.72752326401], CI_upper=[56815.983488192316, 57987.41779425554, 59158.85210031876]
+2025-12-17 22:56:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53519.92119966494, 54691.35550572816, 55862.78981179139], CI_lower: [50223.85891113756, 51395.293217200786, 52566.72752326401], CI_upper: [56815.983488192316, 57987.41779425554, 59158.85210031876]
+2025-12-17 22:56:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 50223.85891113756, 51395.293217200786, 52566.72752326401], upper=[np.float64(30498.68449001594), 56815.983488192316, 57987.41779425554, 59158.85210031876]
+2025-12-17 22:56:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 57611.24032062292, 2025: 60142.86088812351, 2026: 62817.554080188274}, values=[57611.24032062292, 60142.86088812351, 62817.554080188274], CI_lower=[56453.417451567104, 58985.038019067695, 61659.73121113246], CI_upper=[58769.06318967874, 61300.68375717933, 63975.37694924409]
+2025-12-17 22:56:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57611.24032062292, 60142.86088812351, 62817.554080188274], CI_lower: [56453.417451567104, 58985.038019067695, 61659.73121113246], CI_upper: [58769.06318967874, 61300.68375717933, 63975.37694924409]
+2025-12-17 22:56:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 56453.417451567104, 58985.038019067695, 61659.73121113246], upper=[np.float64(30498.68449001594), 58769.06318967874, 61300.68375717933, 63975.37694924409]
+2025-12-17 22:56:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 56251.747230529785, 2025: 57833.29206085205, 2026: 59306.362129211426}, values=[56251.747230529785, 57833.29206085205, 59306.362129211426], CI_lower=[55362.9172152801, 56944.46204560236, 58417.53211396174], CI_upper=[57140.577245779474, 58722.12207610174, 60195.192144461114]
+2025-12-17 22:56:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56251.747230529785, 57833.29206085205, 59306.362129211426], CI_lower: [55362.9172152801, 56944.46204560236, 58417.53211396174], CI_upper: [57140.577245779474, 58722.12207610174, 60195.192144461114]
+2025-12-17 22:56:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 55362.9172152801, 56944.46204560236, 58417.53211396174], upper=[np.float64(30498.68449001594), 57140.577245779474, 58722.12207610174, 60195.192144461114]
+2025-12-17 22:56:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 52674.05240778782, 2025: 52674.05240778782, 2026: 52674.05240778782}, values=[52674.05240778782, 52674.05240778782, 52674.05240778782], CI_lower=[50840.54893735833, 50840.54893735833, 50840.54893735833], CI_upper=[54507.55587821731, 54507.55587821731, 54507.55587821731]
+2025-12-17 22:56:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52674.05240778782, 52674.05240778782, 52674.05240778782], CI_lower: [50840.54893735833, 50840.54893735833, 50840.54893735833], CI_upper: [54507.55587821731, 54507.55587821731, 54507.55587821731]
+2025-12-17 22:56:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 50840.54893735833, 50840.54893735833, 50840.54893735833], upper=[np.float64(30498.68449001594), 54507.55587821731, 54507.55587821731, 54507.55587821731]
+2025-12-17 22:56:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 50206.18334652475, 2025: 50206.18334652475, 2026: 50206.18334652475}, values=[50206.18334652475, 50206.18334652475, 50206.18334652475], CI_lower=[46839.82024367053, 46839.82024367053, 46839.82024367053], CI_upper=[53572.54644937896, 53572.54644937896, 53572.54644937896]
+2025-12-17 22:56:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50206.18334652475, 50206.18334652475, 50206.18334652475], CI_lower: [46839.82024367053, 46839.82024367053, 46839.82024367053], CI_upper: [53572.54644937896, 53572.54644937896, 53572.54644937896]
+2025-12-17 22:56:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 46839.82024367053, 46839.82024367053, 46839.82024367053], upper=[np.float64(30498.68449001594), 53572.54644937896, 53572.54644937896, 53572.54644937896]
+2025-12-17 22:56:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 53526.086634618325, 2025: 53526.086634618325, 2026: 53526.086634618325}, values=[53526.086634618325, 53526.086634618325, 53526.086634618325], CI_lower=[52294.4669666498, 52294.4669666498, 52294.4669666498], CI_upper=[54757.70630258685, 54757.70630258685, 54757.70630258685]
+2025-12-17 22:56:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53526.086634618325, 53526.086634618325, 53526.086634618325], CI_lower: [52294.4669666498, 52294.4669666498, 52294.4669666498], CI_upper: [54757.70630258685, 54757.70630258685, 54757.70630258685]
+2025-12-17 22:56:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 52294.4669666498, 52294.4669666498, 52294.4669666498], upper=[np.float64(30498.68449001594), 54757.70630258685, 54757.70630258685, 54757.70630258685]
+2025-12-17 22:56:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 56339.75409978385, 2025: 57547.02378179531, 2026: 58754.28959837716}, values=[56339.75409978385, 57547.02378179531, 58754.28959837716], CI_lower=[38858.32975704717, 40065.59943905863, 41272.86525564048], CI_upper=[73821.17844252053, 75028.44812453199, 76235.71394111385]
+2025-12-17 22:56:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56339.75409978385, 57547.02378179531, 58754.28959837716], CI_lower: [38858.32975704717, 40065.59943905863, 41272.86525564048], CI_upper: [73821.17844252053, 75028.44812453199, 76235.71394111385]
+2025-12-17 22:56:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 38858.32975704717, 40065.59943905863, 41272.86525564048], upper=[np.float64(30498.68449001594), 73821.17844252053, 75028.44812453199, 76235.71394111385]
+2025-12-17 22:56:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 57496.04282764895, 2025: 59859.60509592706, 2026: 62223.16736420516}, values=[57496.04282764895, 59859.60509592706, 62223.16736420516], CI_lower=[56337.820283171925, 58701.382551450035, 61064.94481972814], CI_upper=[58654.26537212597, 61017.82764040408, 63381.389908682184]
+2025-12-17 22:56:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57496.04282764895, 59859.60509592706, 62223.16736420516], CI_lower: [56337.820283171925, 58701.382551450035, 61064.94481972814], CI_upper: [58654.26537212597, 61017.82764040408, 63381.389908682184]
+2025-12-17 22:56:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30498.68449001594), 56337.820283171925, 58701.382551450035, 61064.94481972814], upper=[np.float64(30498.68449001594), 58654.26537212597, 61017.82764040408, 63381.389908682184]
+2025-12-17 22:56:16 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-17 22:56:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 53913.82971128775, 2025: 55115.06778441928, 2026: 56316.30585755082}, values=[53913.82971128775, 55115.06778441928, 56316.30585755082], CI_lower=[50415.03024022537, 51616.26831335691, 52817.50638648844], CI_upper=[57412.62918235012, 58613.86725548166, 59815.105328613194]
+2025-12-17 22:56:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53913.82971128775, 55115.06778441928, 56316.30585755082], CI_lower: [50415.03024022537, 51616.26831335691, 52817.50638648844], CI_upper: [57412.62918235012, 58613.86725548166, 59815.105328613194]
+2025-12-17 22:56:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 50415.03024022537, 51616.26831335691, 52817.50638648844], upper=[np.float64(32886.389611898674), 57412.62918235012, 58613.86725548166, 59815.105328613194]
+2025-12-17 22:56:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 58257.256192445755, 2025: 60902.495296537876, 2026: 63699.62316995859}, values=[58257.256192445755, 60902.495296537876, 63699.62316995859], CI_lower=[57029.13164419103, 59674.37074828315, 62471.49862170387], CI_upper=[59485.38074070048, 62130.6198447926, 64927.747718213315]
+2025-12-17 22:56:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58257.256192445755, 60902.495296537876, 63699.62316995859], CI_lower: [57029.13164419103, 59674.37074828315, 62471.49862170387], CI_upper: [59485.38074070048, 62130.6198447926, 64927.747718213315]
+2025-12-17 22:56:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 57029.13164419103, 59674.37074828315, 62471.49862170387], upper=[np.float64(32886.389611898674), 59485.38074070048, 62130.6198447926, 64927.747718213315]
+2025-12-17 22:56:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 56695.03552246094, 2025: 58248.39454650879, 2026: 59664.543853759766}, values=[56695.03552246094, 58248.39454650879, 59664.543853759766], CI_lower=[55811.22498247454, 57364.58400652239, 58780.733313773366], CI_upper=[57578.84606244734, 59132.20508649519, 60548.354393746165]
+2025-12-17 22:56:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56695.03552246094, 58248.39454650879, 59664.543853759766], CI_lower: [55811.22498247454, 57364.58400652239, 58780.733313773366], CI_upper: [57578.84606244734, 59132.20508649519, 60548.354393746165]
+2025-12-17 22:56:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 55811.22498247454, 57364.58400652239, 58780.733313773366], upper=[np.float64(32886.389611898674), 57578.84606244734, 59132.20508649519, 60548.354393746165]
+2025-12-17 22:56:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 53092.26802116146, 2025: 53092.26802116146, 2026: 53092.26802116146}, values=[53092.26802116146, 53092.26802116146, 53092.26802116146], CI_lower=[51199.326267486744, 51199.326267486744, 51199.326267486744], CI_upper=[54985.20977483617, 54985.20977483617, 54985.20977483617]
+2025-12-17 22:56:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53092.26802116146, 53092.26802116146, 53092.26802116146], CI_lower: [51199.326267486744, 51199.326267486744, 51199.326267486744], CI_upper: [54985.20977483617, 54985.20977483617, 54985.20977483617]
+2025-12-17 22:56:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 51199.326267486744, 51199.326267486744, 51199.326267486744], upper=[np.float64(32886.389611898674), 54985.20977483617, 54985.20977483617, 54985.20977483617]
+2025-12-17 22:56:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 50543.86773024377, 2025: 50543.86773024377, 2026: 50543.86773024377}, values=[50543.86773024377, 50543.86773024377, 50543.86773024377], CI_lower=[47001.65601570265, 47001.65601570265, 47001.65601570265], CI_upper=[54086.0794447849, 54086.0794447849, 54086.0794447849]
+2025-12-17 22:56:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50543.86773024377, 50543.86773024377, 50543.86773024377], CI_lower: [47001.65601570265, 47001.65601570265, 47001.65601570265], CI_upper: [54086.0794447849, 54086.0794447849, 54086.0794447849]
+2025-12-17 22:56:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 47001.65601570265, 47001.65601570265, 47001.65601570265], upper=[np.float64(32886.389611898674), 54086.0794447849, 54086.0794447849, 54086.0794447849]
+2025-12-17 22:56:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 53954.92295501265, 2025: 53954.92295501265, 2026: 53954.92295501265}, values=[53954.92295501265, 53954.92295501265, 53954.92295501265], CI_lower=[52699.435658891976, 52699.435658891976, 52699.435658891976], CI_upper=[55210.41025113332, 55210.41025113332, 55210.41025113332]
+2025-12-17 22:56:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53954.92295501265, 53954.92295501265, 53954.92295501265], CI_lower: [52699.435658891976, 52699.435658891976, 52699.435658891976], CI_upper: [55210.41025113332, 55210.41025113332, 55210.41025113332]
+2025-12-17 22:56:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 52699.435658891976, 52699.435658891976, 52699.435658891976], upper=[np.float64(32886.389611898674), 55210.41025113332, 55210.41025113332, 55210.41025113332]
+2025-12-17 22:56:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 56849.30562862017, 2025: 58075.83768459114, 2026: 59302.334328743535}, values=[56849.30562862017, 58075.83768459114, 59302.334328743535], CI_lower=[39274.58757236288, 40501.11962833385, 41727.616272486244], CI_upper=[74424.02368487747, 75650.55574084843, 76877.05238500083]
+2025-12-17 22:56:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56849.30562862017, 58075.83768459114, 59302.334328743535], CI_lower: [39274.58757236288, 40501.11962833385, 41727.616272486244], CI_upper: [74424.02368487747, 75650.55574084843, 76877.05238500083]
+2025-12-17 22:56:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 39274.58757236288, 40501.11962833385, 41727.616272486244], upper=[np.float64(32886.389611898674), 74424.02368487747, 75650.55574084843, 76877.05238500083]
+2025-12-17 22:56:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 58038.218990583686, 2025: 60453.69981621876, 2026: 62869.180641853825}, values=[58038.218990583686, 60453.69981621876, 62869.180641853825], CI_lower=[56812.254208661354, 59227.73503429643, 61643.21585993149], CI_upper=[59264.18377250602, 61679.66459814109, 64095.14542377616]
+2025-12-17 22:56:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58038.218990583686, 60453.69981621876, 62869.180641853825], CI_lower: [56812.254208661354, 59227.73503429643, 61643.21585993149], CI_upper: [59264.18377250602, 61679.66459814109, 64095.14542377616]
+2025-12-17 22:56:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32886.389611898674), 56812.254208661354, 59227.73503429643, 61643.21585993149], upper=[np.float64(32886.389611898674), 59264.18377250602, 61679.66459814109, 64095.14542377616]
+2025-12-17 22:56:23 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-17 22:56:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 45.10567934801156, 2025: 45.389466162006556, 2026: 45.673252976001436}, values=[45.10567934801156, 45.389466162006556, 45.673252976001436], CI_lower=[44.67931948453937, 44.96310629853436, 45.24689311252924], CI_upper=[45.532039211483756, 45.81582602547875, 46.09961283947363]
+2025-12-17 22:56:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.10567934801156, 45.389466162006556, 45.673252976001436], CI_lower: [44.67931948453937, 44.96310629853436, 45.24689311252924], CI_upper: [45.532039211483756, 45.81582602547875, 46.09961283947363]
+2025-12-17 22:56:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 44.67931948453937, 44.96310629853436, 45.24689311252924], upper=[np.float64(44.48358857878164), 45.532039211483756, 45.81582602547875, 46.09961283947363]
+2025-12-17 22:56:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44.946762072580896, 2025: 45.1777157810684, 2026: 45.40311218370152}, values=[44.946762072580896, 45.1777157810684, 45.40311218370152], CI_lower=[44.53759920498088, 44.76855291346838, 44.99394931610151], CI_upper=[45.35592494018091, 45.58687864866842, 45.81227505130154]
+2025-12-17 22:56:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.946762072580896, 45.1777157810684, 45.40311218370152], CI_lower: [44.53759920498088, 44.76855291346838, 44.99394931610151], CI_upper: [45.35592494018091, 45.58687864866842, 45.81227505130154]
+2025-12-17 22:56:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 44.53759920498088, 44.76855291346838, 44.99394931610151], upper=[np.float64(44.48358857878164), 45.35592494018091, 45.58687864866842, 45.81227505130154]
+2025-12-17 22:56:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 45.36873970925808, 2025: 45.894664868712425, 2026: 46.4931346103549}, values=[45.36873970925808, 45.894664868712425, 46.4931346103549], CI_lower=[45.03059492662801, 45.55652008608236, 46.15498982772483], CI_upper=[45.70688449188815, 46.23280965134249, 46.83127939298497]
+2025-12-17 22:56:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.36873970925808, 45.894664868712425, 46.4931346103549], CI_lower: [45.03059492662801, 45.55652008608236, 46.15498982772483], CI_upper: [45.70688449188815, 46.23280965134249, 46.83127939298497]
+2025-12-17 22:56:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 45.03059492662801, 45.55652008608236, 46.15498982772483], upper=[np.float64(44.48358857878164), 45.70688449188815, 46.23280965134249, 46.83127939298497]
+2025-12-17 22:56:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 44.54565241117245, 2025: 44.54565241117245, 2026: 44.54565241117245}, values=[44.54565241117245, 44.54565241117245, 44.54565241117245], CI_lower=[44.0516980451764, 44.0516980451764, 44.0516980451764], CI_upper=[45.039606777168494, 45.039606777168494, 45.039606777168494]
+2025-12-17 22:56:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.54565241117245, 44.54565241117245, 44.54565241117245], CI_lower: [44.0516980451764, 44.0516980451764, 44.0516980451764], CI_upper: [45.039606777168494, 45.039606777168494, 45.039606777168494]
+2025-12-17 22:56:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 44.0516980451764, 44.0516980451764, 44.0516980451764], upper=[np.float64(44.48358857878164), 45.039606777168494, 45.039606777168494, 45.039606777168494]
+2025-12-17 22:56:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 44.047611790343, 2025: 44.047611790343, 2026: 44.047611790343}, values=[44.047611790343, 44.047611790343, 44.047611790343], CI_lower=[43.54794677228967, 43.54794677228967, 43.54794677228967], CI_upper=[44.547276808396326, 44.547276808396326, 44.547276808396326]
+2025-12-17 22:56:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.047611790343, 44.047611790343, 44.047611790343], CI_lower: [43.54794677228967, 43.54794677228967, 43.54794677228967], CI_upper: [44.547276808396326, 44.547276808396326, 44.547276808396326]
+2025-12-17 22:56:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 43.54794677228967, 43.54794677228967, 43.54794677228967], upper=[np.float64(44.48358857878164), 44.547276808396326, 44.547276808396326, 44.547276808396326]
+2025-12-17 22:56:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 44.64013335249748, 2025: 44.64013335249748, 2026: 44.64013335249748}, values=[44.64013335249748, 44.64013335249748, 44.64013335249748], CI_lower=[44.201943548885346, 44.201943548885346, 44.201943548885346], CI_upper=[45.07832315610961, 45.07832315610961, 45.07832315610961]
+2025-12-17 22:56:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.64013335249748, 44.64013335249748, 44.64013335249748], CI_lower: [44.201943548885346, 44.201943548885346, 44.201943548885346], CI_upper: [45.07832315610961, 45.07832315610961, 45.07832315610961]
+2025-12-17 22:56:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 44.201943548885346, 44.201943548885346, 44.201943548885346], upper=[np.float64(44.48358857878164), 45.07832315610961, 45.07832315610961, 45.07832315610961]
+2025-12-17 22:56:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 45.149995674593924, 2025: 45.45176519236494, 2026: 45.75352029488838}, values=[45.149995674593924, 45.45176519236494, 45.75352029488838], CI_lower=[26.164359072699806, 26.46612859047082, 26.767883692994264], CI_upper=[64.13563227648804, 64.43740179425906, 64.7391568967825]
+2025-12-17 22:56:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.149995674593924, 45.45176519236494, 45.75352029488838], CI_lower: [26.164359072699806, 26.46612859047082, 26.767883692994264], CI_upper: [64.13563227648804, 64.43740179425906, 64.7391568967825]
+2025-12-17 22:56:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 26.164359072699806, 26.46612859047082, 26.767883692994264], upper=[np.float64(44.48358857878164), 64.13563227648804, 64.43740179425906, 64.7391568967825]
+2025-12-17 22:56:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 45.01288255471358, 2025: 45.31287878875901, 2026: 45.612875022804445}, values=[45.01288255471358, 45.31287878875901, 45.612875022804445], CI_lower=[44.55402350297073, 44.85401973701616, 45.1540159710616], CI_upper=[45.471741606456426, 45.77173784050186, 46.071734074547294]
+2025-12-17 22:56:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.01288255471358, 45.31287878875901, 45.612875022804445], CI_lower: [44.55402350297073, 44.85401973701616, 45.1540159710616], CI_upper: [45.471741606456426, 45.77173784050186, 46.071734074547294]
+2025-12-17 22:56:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.48358857878164), 44.55402350297073, 44.85401973701616, 45.1540159710616], upper=[np.float64(44.48358857878164), 45.471741606456426, 45.77173784050186, 46.071734074547294]
+2025-12-17 22:56:29 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-17 22:56:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.545236049448675, 2025: 37.569515254603616, 2026: 37.593794459758556}, values=[37.545236049448675, 37.569515254603616, 37.593794459758556], CI_lower=[36.89662618819203, 36.92090539334697, 36.94518459850191], CI_upper=[38.19384591070532, 38.21812511586026, 38.2424043210152]
+2025-12-17 22:56:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.545236049448675, 37.569515254603616, 37.593794459758556], CI_lower: [36.89662618819203, 36.92090539334697, 36.94518459850191], CI_upper: [38.19384591070532, 38.21812511586026, 38.2424043210152]
+2025-12-17 22:56:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 36.89662618819203, 36.92090539334697, 36.94518459850191], upper=[np.float64(37.1289277933701), 38.19384591070532, 38.21812511586026, 38.2424043210152]
+2025-12-17 22:56:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.64773913406407, 2025: 37.70609617165792, 2026: 37.76803772195399}, values=[37.64773913406407, 37.70609617165792, 37.76803772195399], CI_lower=[37.00375393497305, 37.0621109725669, 37.12405252286297], CI_upper=[38.29172433315509, 38.35008137074894, 38.41202292104501]
+2025-12-17 22:56:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.64773913406407, 37.70609617165792, 37.76803772195399], CI_lower: [37.00375393497305, 37.0621109725669, 37.12405252286297], CI_upper: [38.29172433315509, 38.35008137074894, 38.41202292104501]
+2025-12-17 22:56:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 37.00375393497305, 37.0621109725669, 37.12405252286297], upper=[np.float64(37.1289277933701), 38.29172433315509, 38.35008137074894, 38.41202292104501]
+2025-12-17 22:56:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.521604523062706, 2025: 35.793173745274544, 2026: 34.86002303659916}, values=[36.521604523062706, 35.793173745274544, 34.86002303659916], CI_lower=[36.32871030615041, 35.60027952836225, 34.667128819686866], CI_upper=[36.714498739975, 35.98606796218684, 35.05291725351145]
+2025-12-17 22:56:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.521604523062706, 35.793173745274544, 34.86002303659916], CI_lower: [36.32871030615041, 35.60027952836225, 34.667128819686866], CI_upper: [36.714498739975, 35.98606796218684, 35.05291725351145]
+2025-12-17 22:56:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 36.32871030615041, 35.60027952836225, 34.667128819686866], upper=[np.float64(37.1289277933701), 36.714498739975, 35.98606796218684, 35.05291725351145]
+2025-12-17 22:56:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.41414774096142, 2025: 37.41414774096142, 2026: 37.41414774096142}, values=[37.41414774096142, 37.41414774096142, 37.41414774096142], CI_lower=[36.97527224163974, 36.97527224163974, 36.97527224163974], CI_upper=[37.85302324028309, 37.85302324028309, 37.85302324028309]
+2025-12-17 22:56:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.41414774096142, 37.41414774096142, 37.41414774096142], CI_lower: [36.97527224163974, 36.97527224163974, 36.97527224163974], CI_upper: [37.85302324028309, 37.85302324028309, 37.85302324028309]
+2025-12-17 22:56:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 36.97527224163974, 36.97527224163974, 36.97527224163974], upper=[np.float64(37.1289277933701), 37.85302324028309, 37.85302324028309, 37.85302324028309]
+2025-12-17 22:56:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.41817769616744, 2025: 37.41817769616744, 2026: 37.41817769616744}, values=[37.41817769616744, 37.41817769616744, 37.41817769616744], CI_lower=[36.904758542200014, 36.904758542200014, 36.904758542200014], CI_upper=[37.931596850134866, 37.931596850134866, 37.931596850134866]
+2025-12-17 22:56:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.41817769616744, 37.41817769616744, 37.41817769616744], CI_lower: [36.904758542200014, 36.904758542200014, 36.904758542200014], CI_upper: [37.931596850134866, 37.931596850134866, 37.931596850134866]
+2025-12-17 22:56:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 36.904758542200014, 36.904758542200014, 36.904758542200014], upper=[np.float64(37.1289277933701), 37.931596850134866, 37.931596850134866, 37.931596850134866]
+2025-12-17 22:56:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.32721487061617, 2025: 37.32721487061617, 2026: 37.32721487061617}, values=[37.32721487061617, 37.32721487061617, 37.32721487061617], CI_lower=[36.918799086141874, 36.918799086141874, 36.918799086141874], CI_upper=[37.73563065509046, 37.73563065509046, 37.73563065509046]
+2025-12-17 22:56:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.32721487061617, 37.32721487061617, 37.32721487061617], CI_lower: [36.918799086141874, 36.918799086141874, 36.918799086141874], CI_upper: [37.73563065509046, 37.73563065509046, 37.73563065509046]
+2025-12-17 22:56:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 36.918799086141874, 36.918799086141874, 36.918799086141874], upper=[np.float64(37.1289277933701), 37.73563065509046, 37.73563065509046, 37.73563065509046]
+2025-12-17 22:56:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 36.888012957700646, 2025: 36.8769503119144, 2026: 36.87644232272622}, values=[36.888012957700646, 36.8769503119144, 36.87644232272622], CI_lower=[18.91198718377069, 18.900924537984444, 18.900416548796265], CI_upper=[54.8640387316306, 54.852976085844354, 54.852468096656175]
+2025-12-17 22:56:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.888012957700646, 36.8769503119144, 36.87644232272622], CI_lower: [18.91198718377069, 18.900924537984444, 18.900416548796265], CI_upper: [54.8640387316306, 54.852976085844354, 54.852468096656175]
+2025-12-17 22:56:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 18.91198718377069, 18.900924537984444, 18.900416548796265], upper=[np.float64(37.1289277933701), 54.8640387316306, 54.852976085844354, 54.852468096656175]
+2025-12-17 22:56:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.08142099205339, 2025: 37.03391418646665, 2026: 36.986407380879925}, values=[37.08142099205339, 37.03391418646665, 36.986407380879925], CI_lower=[36.643564359774565, 36.59605755418783, 36.5485507486011], CI_upper=[37.51927762433221, 37.471770818745476, 37.42426401315875]
+2025-12-17 22:56:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.08142099205339, 37.03391418646665, 36.986407380879925], CI_lower: [36.643564359774565, 36.59605755418783, 36.5485507486011], CI_upper: [37.51927762433221, 37.471770818745476, 37.42426401315875]
+2025-12-17 22:56:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.1289277933701), 36.643564359774565, 36.59605755418783, 36.5485507486011], upper=[np.float64(37.1289277933701), 37.51927762433221, 37.471770818745476, 37.42426401315875]
+2025-12-17 22:56:35 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-17 22:56:36 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-17 23:03:46 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 17100.39453125, 'mse': 1377584512.0, 'rmse': 37115.82562735201, 'r2': 0.2446235567331314}
+2025-12-17 23:03:47 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-17 23:08:48 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.5239689350128174, 'mse': 66.02228546142578, 'rmse': 8.125409864211514, 'r2': 0.3213977515697479}
+2025-12-17 23:08:49 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-17 23:14:22 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.279272079467773, 'mse': 635.6096801757812, 'rmse': 25.211300644270246, 'r2': -5.635396957397461}
+2025-12-17 23:14:23 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-17 23:15:08 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-17 23:15:09 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-17 23:15:09 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-17 23:15:09 [DEBUG] census_eda.main:  Running LLM analysis for state: Michigan
+2025-12-17 23:15:09 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-17 23:15:09 [INFO] census_eda.ml: [LLM] State context loaded: Michigan
+2025-12-17 23:15:09 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [API] Total request: ~2354 tokens (system: ~2172, user: ~182)
+2025-12-17 23:15:09 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:15:28 [DEBUG] census_eda.ml: [API] Received response: 4563 chars
+2025-12-17 23:15:28 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4563 chars)
+2025-12-17 23:15:30 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [LLM] User prompt: 1286 chars (~321 tokens)
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [API] Total request: ~2493 tokens (system: ~2172, user: ~321)
+2025-12-17 23:15:30 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [API] Received response: 3107 chars
+2025-12-17 23:15:39 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3107 chars)
+2025-12-17 23:15:39 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [LLM] User prompt: 2194 chars (~548 tokens)
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [API] Total request: ~2720 tokens (system: ~2172, user: ~548)
+2025-12-17 23:15:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [API] Received response: 3784 chars
+2025-12-17 23:15:50 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3784 chars)
+2025-12-17 23:15:50 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [API] Total request: ~2512 tokens (system: ~2172, user: ~340)
+2025-12-17 23:15:50 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [API] Received response: 3757 chars
+2025-12-17 23:16:01 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3757 chars)
+2025-12-17 23:16:01 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [API] Total request: ~2362 tokens (system: ~2172, user: ~190)
+2025-12-17 23:16:01 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [API] Received response: 4682 chars
+2025-12-17 23:16:13 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4682 chars)
+2025-12-17 23:16:13 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [LLM] User prompt: 8777 chars (~2194 tokens)
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [API] Total request: ~4366 tokens (system: ~2172, user: ~2194)
+2025-12-17 23:16:13 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [API] Received response: 3357 chars
+2025-12-17 23:16:26 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3357 chars)
+2025-12-17 23:16:26 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [LLM] User prompt: 5340 chars (~1335 tokens)
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [API] Total request: ~3507 tokens (system: ~2172, user: ~1335)
+2025-12-17 23:16:26 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [API] Received response: 3635 chars
+2025-12-17 23:16:37 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3635 chars)
+2025-12-17 23:16:37 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [LLM] User prompt: 770 chars (~192 tokens)
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [API] Total request: ~2364 tokens (system: ~2172, user: ~192)
+2025-12-17 23:16:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [API] Received response: 3816 chars
+2025-12-17 23:16:50 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3816 chars)
+2025-12-17 23:16:50 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [LLM] User prompt: 5612 chars (~1403 tokens)
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [API] Total request: ~3575 tokens (system: ~2172, user: ~1403)
+2025-12-17 23:16:50 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [API] Received response: 3395 chars
+2025-12-17 23:17:00 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3395 chars)
+2025-12-17 23:17:00 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [LLM] User prompt: 1828 chars (~457 tokens)
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [API] Total request: ~2629 tokens (system: ~2172, user: ~457)
+2025-12-17 23:17:00 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [API] Received response: 4495 chars
+2025-12-17 23:17:14 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4495 chars)
+2025-12-17 23:17:14 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [LLM] User prompt: 1642 chars (~410 tokens)
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Michigan
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Michigan
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3802 chars
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~950
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Michigan
+
+ECONOMIC PROFILE:
+  Industries: Automotive manufacturing, Advanced manufacturing and machinery, Healthcare, Tourism and recreation, Agriculture
+  Trends: Slow recovery from 2008 auto crisis through 2011. Growth 2012-2019 as Detroit Three rebounded. Post-pandemic: EV transition uncertainty, auto sector volatility, healthcare growth. Gradual diversification away from auto dependence
+  Income: Near national median household income (~$64k). Lower cost of living improves purchasing power. Significant gap between auto workers and service workers
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth 2011-2019 (~0.1% annually). First state to lose population in 2000s. Very slow growth 2020-2023. Aging and stagnant
+  Migration: Net domestic outmigration to Sunbelt (Florida, Texas, Carolinas). Detroit metro losing population. Limited international immigration. Rural depopulation continuing
+  Education: Below national average in bachelor's degrees (~30%). Strong trade/technical education tradition. Brain drain of college graduates to other states
+
+HOUSING MARKET:
+  Market: Affordable compared to coasts. Detroit median ~$75k (low), Ann Arbor >$400k, Grand Rapids ~$250k. Wide variation
+  Affordability: Generally affordable 2011-2019. Pandemic spike 2020-2022 especially Ann Arbor, Grand Rapids. Detroit still recovering from foreclosure crisis
+  Challenges: Detroit blight and vacancy (100,000+ vacant), Foreclosure legacy, Rural housing decay, Affordability in growth areas (Ann Arbor, GR)
+
+POLITY:
+  Policy: Historically Republican-controlled legislature, Democratic governors often. Swing state politically. Pro-business, right-to-work. Union influence declining but still present
+  Housing: Limited state intervention. Detroit blight remediation programs. Local control over zoning. No rent control
+  Labor: Right-to-work repealed 2023. $10.33 minimum wage (2024), rising to $12. UAW remains influential in auto sector
+
+REGIONAL:
+  Geography: Two peninsulas surrounded by Great Lakes. Lower Peninsula urban/agricultural. Upper Peninsula rural, forested. Longest freshwater coastline in US
+  Urban/Rural: 75% urban in Detroit metro, Grand Rapids, Ann Arbor. 25% rural across state, especially Upper Peninsula
+  Infrastructure: Aging infrastructure, roads in poor condition. Detroit airport hub. Ports on Great Lakes. Rural broadband gaps
+
+HISTORICAL:
+  Events: 2011-2013: Detroit bankruptcy (2013), emergency managers, right-to-work legislation, slow recovery from auto crisis; 2014-2016: Flint water crisis (2014), Detroit emerges from bankruptcy, economic recovery strengthens; 2017-2019: Continued recovery, recreational marijuana legalization (2018), auto sector concerns about trade; 2021-2023: Pandemic recovery uneven, EV transition investments (Ford, GM), political shift (Democratic trifecta 2023), battery plant construction
+  Shocks: 2008-2009 auto industry collapse and bailout. Detroit bankruptcy 2013. Flint water crisis 2014. COVID impact on auto production 2020
+  Transitions: Auto manufacturing employment down 35% since 1990. 180 factories closed in Midwest since 1980. Healthcare now largest employer. EV transition underway but uncertain
+
+COMPARATIVE:
+  Benchmarks: Near median income but lower cost of living. Below average educational attainment. Population stagnation/decline unique among large states. Auto employment 3.7% of jobs (down from 7% in 1990)
+  Peer States: Ohio (industrial legacy), Wisconsin (manufacturing, Great Lakes), Indiana (auto manufacturing)
+  Unique: Auto industry legacy dominates identity but employs small fraction. Detroit bankruptcy and recovery unique. Great Lakes define geography. Extreme urban (Detroit) vs. rural divide. EV transition existential question
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Michigan
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [PROMPT] State context injected (3802 chars)
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8690 chars (~2172 tokens)
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [API] Total request: ~2582 tokens (system: ~2172, user: ~410)
+2025-12-17 23:17:14 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 23:17:30 [DEBUG] census_eda.ml: [API] Received response: 5636 chars
+2025-12-17 23:17:30 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5636 chars)
+2025-12-17 23:17:30 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-17 23:17:30 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-17 23:17:30 [INFO] census_eda.main: [REPORT] Generated: report_Michigan_population_20251217_231730.txt
+2025-12-17 23:17:30 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Michigan!
+2025-12-17 23:17:30 [INFO] census_eda.memory: process_Michigan_population_1-year:EXIT: 15659.6MB (delta: -2937.7MB)
+2025-12-17 23:17:31 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-17 23:17:31 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-17 23:17:32 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-17 23:17:33 [INFO] census_eda.memory: Cleared all caches
+2025-12-17 23:17:34 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-17 23:17:34 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-17 23:17:35 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-17 23:17:36 [INFO] census_eda.memory: Cleared all caches

@@ -1,0 +1,1288 @@
+2025-12-18 02:45:14 [INFO] census_eda: Logging context set: state=New Hampshire, survey=population, scope=1-year
+2025-12-18 02:45:14 [INFO] census_eda: Log file: ./logs/New Hampshire/1-year/population/1-year_population_25_12_18_0245.log
+2025-12-18 02:45:14 [INFO] census_eda.main: ======================================================================
+2025-12-18 02:45:14 [INFO] census_eda.main: [POPULATION] Processing New Hampshire (1-year)...
+2025-12-18 02:45:14 [INFO] census_eda.main: ======================================================================
+2025-12-18 02:45:14 [INFO] census_eda.memory: process_New Hampshire_population_1-year:ENTER: 9087.7MB (delta: +0.0MB)
+2025-12-18 02:45:14 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 02:45:14 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/33/*/*.csv
+2025-12-18 02:45:14 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 02:45:14 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pnh.csv
+2025-12-18 02:45:14 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 02:45:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,469 rows, 260 columns
+2025-12-18 02:45:14 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p33.csv
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,708 rows, 260 columns
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pnh.csv
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,426 rows, 260 columns
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pnh.csv
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,547 rows, 260 columns
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pnh.csv
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,183 rows, 260 columns
+2025-12-18 02:45:15 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pnh.csv
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,021 rows, 260 columns
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p33.csv
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,780 rows, 260 columns
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pnh.csv
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,012 rows, 260 columns
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pnh.csv
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,428 rows, 260 columns
+2025-12-18 02:45:16 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p33.csv
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,896 rows, 260 columns
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p33.csv
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,077 rows, 260 columns
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p33.csv
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,606 rows, 260 columns
+2025-12-18 02:45:17 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p33.csv
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,527 rows, 260 columns
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pnh.csv
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,378 rows, 260 columns
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pnh.csv
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,225 rows, 260 columns
+2025-12-18 02:45:18 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pnh.csv
+2025-12-18 02:45:19 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 02:45:19 [VERBOSE] census_eda.processing.loader:   -> Loaded 13,584 rows, 260 columns
+2025-12-18 02:45:19 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 02:45:20 [VERBOSE] census_eda.processing.loader: Combined into 216,867 total rows, 260 columns
+2025-12-18 02:45:20 [INFO] census_eda.main: Loaded 216,867 records
+2025-12-18 02:45:20 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 216867 valid, 16 unique
+2025-12-18 02:45:20 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 02:45:21 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 02:45:22 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 02:45:22 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 02:45:22 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 02:45:22 [DEBUG] census_eda.main: Feature engineering complete: (216867, 292)
+2025-12-18 02:45:22 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 02:45:22 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 02:46:01 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 02:46:01 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 02:46:01 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(216867, 292)
+2025-12-18 02:46:01 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 02:46:01 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 216867
+2025-12-18 02:46:01 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 02:46:02 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(216867, 292)
+2025-12-18 02:46:02 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(13183), np.int64(2008): np.int64(13012), np.int64(2009): np.int64(13021), np.int64(2010): np.int64(13225), np.int64(2011): np.int64(13584), np.int64(2012): np.int64(13469), np.int64(2013): np.int64(13547), np.int64(2014): np.int64(13426), np.int64(2015): np.int64(13378), np.int64(2016): np.int64(13428), np.int64(2017): np.int64(13708), np.int64(2018): np.int64(13780), np.int64(2019): np.int64(13896), np.int64(2021): np.int64(13606), np.int64(2022): np.int64(14077), np.int64(2023): np.int64(14527)}
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(216867, 292)
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 216867 non-null values (zeros excluded if needed)
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 216867 non-null values (zeros excluded if needed)
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1422.00
+2025-12-18 02:46:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 02:46:04 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 216867 non-null values (zeros excluded if needed)
+2025-12-18 02:46:04 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-18 02:46:04 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 02:46:04 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 100226 non-null values (zeros excluded if needed)
+2025-12-18 02:46:04 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 194.00
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 31760 non-null values (zeros excluded if needed)
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 346000.00
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 10752 non-null values (zeros excluded if needed)
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 78000.00
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 2383 non-null values (zeros excluded if needed)
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 24915 non-null values (zeros excluded if needed)
+2025-12-18 02:46:06 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 163000.00
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 13689 non-null values (zeros excluded if needed)
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 468000.00
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 4119 non-null values (zeros excluded if needed)
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Value range: 100.00 to 30000.00
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 45830 non-null values (zeros excluded if needed)
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 116807 non-null values (zeros excluded if needed)
+2025-12-18 02:46:08 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 605000.00
+2025-12-18 02:46:11 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 02:46:22 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 02:46:22 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 02:46:22 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 02:46:23 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 02:46:23 [DEBUG] census_eda.memory: Skipping sampling: 41729MB available (>16GB)
+2025-12-18 02:46:23 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 216867 rows
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(216867, 292)
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 216867 non-null values
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 216867 non-null values
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1422.00
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 216867 non-null values
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 100226 non-null values
+2025-12-18 02:47:06 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 194.00
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 31760 non-null values
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 346000.00
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 10752 non-null values
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 78000.00
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 2383 non-null values
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 24915 non-null values
+2025-12-18 02:47:08 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 163000.00
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 13689 non-null values
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 468000.00
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 4119 non-null values
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Data range: 100.00 to 30000.00
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 45830 non-null values
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 116807 non-null values
+2025-12-18 02:47:10 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 605000.00
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 125956 non-null values
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 102395 non-null values
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 38093 non-null values
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 182178 non-null values
+2025-12-18 02:47:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 02:47:22 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 02:47:32 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 02:47:42 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 02:47:58 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 02:47:58 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 02:47:58 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 02:47:59 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 02:48:00 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 02:48:01 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 02:48:02 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 02:48:02 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 02:48:02 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 02:48:03 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 02:48:04 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 02:48:06 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 02:48:06 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 02:48:06 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 02:48:07 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 02:48:09 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 02:48:09 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 02:48:09 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 02:48:10 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 02:48:11 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 02:48:12 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 02:48:12 [DEBUG] census_eda.memory: Skipping sampling: 41743MB available (>16GB)
+2025-12-18 02:48:18 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 02:48:18 [DEBUG] census_eda.memory: Skipping sampling: 41746MB available (>16GB)
+2025-12-18 02:48:29 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 02:48:29 [DEBUG] census_eda.memory: Skipping sampling: 41712MB available (>16GB)
+2025-12-18 02:48:33 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 02:48:41 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 02:48:41 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 02:48:41 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 02:48:42 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 02:48:43 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 02:48:44 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 02:48:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 02:48:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 02:48:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 02:48:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 02:48:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 02:48:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 02:48:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 02:48:48 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 02:48:48 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 02:48:48 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 02:48:48 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 02:48:49 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 02:48:50 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 02:48:51 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 02:48:53 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 02:48:54 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 02:48:56 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 02:48:56 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 02:48:56 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 02:48:56 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 02:48:57 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 02:48:58 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 02:48:59 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 02:49:00 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 02:49:01 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 02:49:02 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 02:49:04 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 02:49:07 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 02:49:08 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 02:49:09 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/New_Hampshire/population/1-year/figures
+2025-12-18 02:49:10 [DEBUG] census_eda.memory: Skipping sampling: 41742MB available (>16GB)
+2025-12-18 02:49:10 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 02:49:10 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 02:49:10 [INFO] census_eda.memory: [ML-START]: 10468.6MB (delta: +1380.8MB)
+2025-12-18 02:49:10 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 02:49:10 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 02:49:10 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 1834 samples (was 1834)
+2025-12-18 02:49:10 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:49:10 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:49:10 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:10 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:10 [INFO] census_eda.memory: tune_ridge:ENTER: 10468.6MB (delta: +0.0MB)
+2025-12-18 02:49:12 [INFO] census_eda.memory: tune_ridge:EXIT: 10469.2MB (delta: +0.6MB)
+2025-12-18 02:49:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:49:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0859
+2025-12-18 02:49:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:49:12 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:12 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:12 [INFO] census_eda.memory: tune_lasso:ENTER: 10469.2MB (delta: +0.0MB)
+2025-12-18 02:49:13 [INFO] census_eda.memory: tune_lasso:EXIT: 10469.2MB (delta: +0.0MB)
+2025-12-18 02:49:13 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 02:49:13 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0841
+2025-12-18 02:49:13 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:49:13 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:13 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:13 [INFO] census_eda.memory: tune_random_forest:ENTER: 10469.2MB (delta: +0.0MB)
+2025-12-18 02:49:16 [INFO] census_eda.memory: tune_random_forest:EXIT: 10469.8MB (delta: +0.6MB)
+2025-12-18 02:49:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 02:49:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0717
+2025-12-18 02:49:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:49:17 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:17 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:17 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 10469.9MB (delta: +0.1MB)
+2025-12-18 02:49:19 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:19 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:49:19 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0883
+2025-12-18 02:49:19 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:20 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 02:49:20 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 1786 samples (was 1834)
+2025-12-18 02:49:20 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:49:20 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:49:20 [INFO] census_eda.ml.regression: [TUNE] Data: 1,786 samples, 10 features
+2025-12-18 02:49:20 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:20 [INFO] census_eda.memory: tune_ridge:ENTER: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:21 [INFO] census_eda.memory: tune_ridge:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0898
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:49:21 [INFO] census_eda.ml.regression: [TUNE] Data: 1,786 samples, 10 features
+2025-12-18 02:49:21 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:21 [INFO] census_eda.memory: tune_lasso:ENTER: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:21 [INFO] census_eda.memory: tune_lasso:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0880
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:21 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:49:21 [INFO] census_eda.ml.regression: [TUNE] Data: 1,786 samples, 10 features
+2025-12-18 02:49:21 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:21 [INFO] census_eda.memory: tune_random_forest:ENTER: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:25 [INFO] census_eda.memory: tune_random_forest:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:25 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 02:49:25 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0662
+2025-12-18 02:49:25 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:49:26 [INFO] census_eda.ml.regression: [TUNE] Data: 1,786 samples, 10 features
+2025-12-18 02:49:26 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:26 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:28 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:49:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0895
+2025-12-18 02:49:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:28 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 02:49:28 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 1833 samples (was 1834)
+2025-12-18 02:49:28 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:49:28 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:49:28 [INFO] census_eda.ml.regression: [TUNE] Data: 1,833 samples, 10 features
+2025-12-18 02:49:28 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:28 [INFO] census_eda.memory: tune_ridge:ENTER: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:29 [INFO] census_eda.memory: tune_ridge:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:49:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0885
+2025-12-18 02:49:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:29 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:49:29 [INFO] census_eda.ml.regression: [TUNE] Data: 1,833 samples, 10 features
+2025-12-18 02:49:29 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:29 [INFO] census_eda.memory: tune_lasso:ENTER: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:30 [INFO] census_eda.memory: tune_lasso:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:30 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 02:49:30 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0864
+2025-12-18 02:49:30 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:30 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:49:30 [INFO] census_eda.ml.regression: [TUNE] Data: 1,833 samples, 10 features
+2025-12-18 02:49:30 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:30 [INFO] census_eda.memory: tune_random_forest:ENTER: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:33 [INFO] census_eda.memory: tune_random_forest:EXIT: 10469.9MB (delta: +0.0MB)
+2025-12-18 02:49:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 02:49:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0681
+2025-12-18 02:49:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:49:35 [INFO] census_eda.ml.regression: [TUNE] Data: 1,833 samples, 10 features
+2025-12-18 02:49:35 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:35 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 10470.9MB (delta: +1.0MB)
+2025-12-18 02:49:37 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:49:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0934
+2025-12-18 02:49:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:37 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 02:49:37 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:49:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:49:37 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:37 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:37 [INFO] census_eda.memory: tune_ridge:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:38 [INFO] census_eda.memory: tune_ridge:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 02:49:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:49:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:49:38 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:38 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:38 [INFO] census_eda.memory: tune_lasso:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:39 [INFO] census_eda.memory: tune_lasso:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:39 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 02:49:39 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:49:39 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:39 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:49:39 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:39 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:39 [INFO] census_eda.memory: tune_random_forest:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:41 [INFO] census_eda.memory: tune_random_forest:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 02:49:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:49:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:42 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:49:42 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:42 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:42 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:44 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:44 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 02:49:44 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 02:49:44 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:45 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 02:49:45 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 02:49:45 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 02:49:45 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:45 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:45 [INFO] census_eda.memory: tune_ridge:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:46 [INFO] census_eda.memory: tune_ridge:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 02:49:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0785
+2025-12-18 02:49:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 02:49:46 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 02:49:46 [INFO] census_eda.memory: tune_lasso:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:47 [INFO] census_eda.memory: tune_lasso:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 02:49:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0779
+2025-12-18 02:49:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 02:49:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 02:49:47 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:51 [INFO] census_eda.memory: tune_random_forest:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:51 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 02:49:51 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0261
+2025-12-18 02:49:51 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:52 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 02:49:52 [INFO] census_eda.ml.regression: [TUNE] Data: 1,834 samples, 10 features
+2025-12-18 02:49:52 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 02:49:52 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:54 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 02:49:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0051
+2025-12-18 02:49:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 02:49:55 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:55 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 367 samples...
+2025-12-18 02:49:59 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:59 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 02:49:59 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 02:49:59 [INFO] census_eda.memory: [PRE-CLUSTERING]: 10470.9MB (delta: +0.0MB)
+2025-12-18 02:49:59 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 02:49:59 [INFO] census_eda.main: [CLUSTERING] KMeans on 1,834 samples...
+2025-12-18 02:49:59 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 02:49:59 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 1,834 samples (will sample if needed)...
+2025-12-18 02:49:59 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 02:49:59 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 02:49:59 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 65972.49444293976, 2025: 69329.69838428497, 2026: 72938.39355182648}, Values: [65972.49444293976, 69329.69838428497, 72938.39355182648]
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 02:49:59 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 70580.43209075928, 2025: 74942.14139556885, 2026: 79769.20658111572}, Values: [70580.43209075928, 74942.14139556885, 79769.20658111572]
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 02:49:59 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 71032.02507400513, 2025: 75348.53746414185, 2026: 80093.90788650513}, Values: [71032.02507400513, 75348.53746414185, 80093.90788650513]
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 02:49:59 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 46.96637635678053, 2025: 47.70854280889034, 2026: 48.57741003483534}, Values: [46.96637635678053, 47.70854280889034, 48.57741003483534]
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 02:49:59 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.17437816044837, 2025: 37.17437816044837, 2026: 37.17437816044837}, Values: [37.17437816044837, 37.17437816044837, 37.17437816044837]
+2025-12-18 02:49:59 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 02:50:23 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 02:50:25 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 02:50:25 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 02:50:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 60236.4109105207, 2025: 61562.323617729824, 2026: 62888.236324938945}, values=[60236.4109105207, 61562.323617729824, 62888.236324938945], CI_lower=[55986.01461543544, 57311.92732264456, 58637.84002985368], CI_upper=[64486.80720560597, 65812.7199128151, 67138.63262002422]
+2025-12-18 02:50:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60236.4109105207, 61562.323617729824, 62888.236324938945], CI_lower: [55986.01461543544, 57311.92732264456, 58637.84002985368], CI_upper: [64486.80720560597, 65812.7199128151, 67138.63262002422]
+2025-12-18 02:50:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 55986.01461543544, 57311.92732264456, 58637.84002985368], upper=[np.float64(58103.49588477366), 64486.80720560597, 65812.7199128151, 67138.63262002422]
+2025-12-18 02:50:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 65633.38126808405, 2025: 68753.55267727375, 2026: 72062.455078125}, values=[65633.38126808405, 68753.55267727375, 72062.455078125], CI_lower=[64411.0449211724, 67531.21633036209, 70840.11873121334], CI_upper=[66855.71761499571, 69975.88902418541, 73284.79142503666]
+2025-12-18 02:50:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65633.38126808405, 68753.55267727375, 72062.455078125], CI_lower: [64411.0449211724, 67531.21633036209, 70840.11873121334], CI_upper: [66855.71761499571, 69975.88902418541, 73284.79142503666]
+2025-12-18 02:50:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 64411.0449211724, 67531.21633036209, 70840.11873121334], upper=[np.float64(58103.49588477366), 66855.71761499571, 69975.88902418541, 73284.79142503666]
+2025-12-18 02:50:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 65972.49444293976, 2025: 69329.69838428497, 2026: 72938.39355182648}, values=[65972.49444293976, 69329.69838428497, 72938.39355182648], CI_lower=[64764.25328227266, 68121.45722361788, 71730.15239115938], CI_upper=[67180.73560360685, 70537.93954495207, 74146.63471249357]
+2025-12-18 02:50:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65972.49444293976, 69329.69838428497, 72938.39355182648], CI_lower: [64764.25328227266, 68121.45722361788, 71730.15239115938], CI_upper: [67180.73560360685, 70537.93954495207, 74146.63471249357]
+2025-12-18 02:50:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 64764.25328227266, 68121.45722361788, 71730.15239115938], upper=[np.float64(58103.49588477366), 67180.73560360685, 70537.93954495207, 74146.63471249357]
+2025-12-18 02:50:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 60035.73602141947, 2025: 60035.73602141947, 2026: 60035.73602141947}, values=[60035.73602141947, 60035.73602141947, 60035.73602141947], CI_lower=[57533.75038572076, 57533.75038572076, 57533.75038572076], CI_upper=[62537.72165711818, 62537.72165711818, 62537.72165711818]
+2025-12-18 02:50:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60035.73602141947, 60035.73602141947, 60035.73602141947], CI_lower: [57533.75038572076, 57533.75038572076, 57533.75038572076], CI_upper: [62537.72165711818, 62537.72165711818, 62537.72165711818]
+2025-12-18 02:50:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 57533.75038572076, 57533.75038572076, 57533.75038572076], upper=[np.float64(58103.49588477366), 62537.72165711818, 62537.72165711818, 62537.72165711818]
+2025-12-18 02:50:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 56742.98732377108, 2025: 56742.98732377108, 2026: 56742.98732377108}, values=[56742.98732377108, 56742.98732377108, 56742.98732377108], CI_lower=[52826.40973707211, 52826.40973707211, 52826.40973707211], CI_upper=[60659.56491047005, 60659.56491047005, 60659.56491047005]
+2025-12-18 02:50:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56742.98732377108, 56742.98732377108, 56742.98732377108], CI_lower: [52826.40973707211, 52826.40973707211, 52826.40973707211], CI_upper: [60659.56491047005, 60659.56491047005, 60659.56491047005]
+2025-12-18 02:50:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 52826.40973707211, 52826.40973707211, 52826.40973707211], upper=[np.float64(58103.49588477366), 60659.56491047005, 60659.56491047005, 60659.56491047005]
+2025-12-18 02:50:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 60997.11886631078, 2025: 60997.11886631078, 2026: 60997.11886631078}, values=[60997.11886631078, 60997.11886631078, 60997.11886631078], CI_lower=[59159.86821983842, 59159.86821983842, 59159.86821983842], CI_upper=[62834.369512783145, 62834.369512783145, 62834.369512783145]
+2025-12-18 02:50:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60997.11886631078, 60997.11886631078, 60997.11886631078], CI_lower: [59159.86821983842, 59159.86821983842, 59159.86821983842], CI_upper: [62834.369512783145, 62834.369512783145, 62834.369512783145]
+2025-12-18 02:50:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 59159.86821983842, 59159.86821983842, 59159.86821983842], upper=[np.float64(58103.49588477366), 62834.369512783145, 62834.369512783145, 62834.369512783145]
+2025-12-18 02:50:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 64109.75506855049, 2025: 65570.4402254125, 2026: 67031.1232180295}, values=[64109.75506855049, 65570.4402254125, 67031.1232180295], CI_lower=[44819.286427653045, 46279.971584515064, 47740.65457713207], CI_upper=[83400.22370944794, 84860.90886630994, 86321.59185892694]
+2025-12-18 02:50:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64109.75506855049, 65570.4402254125, 67031.1232180295], CI_lower: [44819.286427653045, 46279.971584515064, 47740.65457713207], CI_upper: [83400.22370944794, 84860.90886630994, 86321.59185892694]
+2025-12-18 02:50:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 44819.286427653045, 46279.971584515064, 47740.65457713207], upper=[np.float64(58103.49588477366), 83400.22370944794, 84860.90886630994, 86321.59185892694]
+2025-12-18 02:50:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 65779.60507544823, 2025: 68708.0655965143, 2026: 71636.52611758036}, values=[65779.60507544823, 68708.0655965143, 71636.52611758036], CI_lower=[63372.8143581873, 66301.27487925337, 69229.73540031943], CI_upper=[68186.39579270915, 71114.85631377522, 74043.31683484129]
+2025-12-18 02:50:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [65779.60507544823, 68708.0655965143, 71636.52611758036], CI_lower: [63372.8143581873, 66301.27487925337, 69229.73540031943], CI_upper: [68186.39579270915, 71114.85631377522, 74043.31683484129]
+2025-12-18 02:50:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(58103.49588477366), 63372.8143581873, 66301.27487925337, 69229.73540031943], upper=[np.float64(58103.49588477366), 68186.39579270915, 71114.85631377522, 74043.31683484129]
+2025-12-18 02:50:32 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 02:50:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 63448.21538180439, 2025: 64911.38951029116, 2026: 66374.5636387784}, values=[63448.21538180439, 64911.38951029116, 66374.5636387784], CI_lower=[58825.00198537076, 60288.17611385754, 61751.35024234478], CI_upper=[68071.42877823801, 69534.60290672479, 70997.77703521203]
+2025-12-18 02:50:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [63448.21538180439, 64911.38951029116, 66374.5636387784], CI_lower: [58825.00198537076, 60288.17611385754, 61751.35024234478], CI_upper: [68071.42877823801, 69534.60290672479, 70997.77703521203]
+2025-12-18 02:50:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 58825.00198537076, 60288.17611385754, 61751.35024234478], upper=[np.float64(39821.75007913897), 68071.42877823801, 69534.60290672479, 70997.77703521203]
+2025-12-18 02:50:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 69142.56082093716, 2025: 72498.85797601938, 2026: 76054.28527075052}, values=[69142.56082093716, 72498.85797601938, 76054.28527075052], CI_lower=[67432.06198708399, 70788.35914216621, 74343.78643689735], CI_upper=[70853.05965479033, 74209.35680987255, 77764.78410460369]
+2025-12-18 02:50:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69142.56082093716, 72498.85797601938, 76054.28527075052], CI_lower: [67432.06198708399, 70788.35914216621, 74343.78643689735], CI_upper: [70853.05965479033, 74209.35680987255, 77764.78410460369]
+2025-12-18 02:50:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 67432.06198708399, 70788.35914216621, 74343.78643689735], upper=[np.float64(39821.75007913897), 70853.05965479033, 74209.35680987255, 77764.78410460369]
+2025-12-18 02:50:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 70580.43209075928, 2025: 74942.14139556885, 2026: 79769.20658111572}, values=[70580.43209075928, 74942.14139556885, 79769.20658111572], CI_lower=[69060.82151782194, 73422.53082263151, 78249.59600817839], CI_upper=[72100.04266369661, 76461.75196850619, 81288.81715405306]
+2025-12-18 02:50:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [70580.43209075928, 74942.14139556885, 79769.20658111572], CI_lower: [69060.82151782194, 73422.53082263151, 78249.59600817839], CI_upper: [72100.04266369661, 76461.75196850619, 81288.81715405306]
+2025-12-18 02:50:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 69060.82151782194, 73422.53082263151, 78249.59600817839], upper=[np.float64(39821.75007913897), 72100.04266369661, 76461.75196850619, 81288.81715405306]
+2025-12-18 02:50:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 63379.12391337308, 2025: 63379.12391337308, 2026: 63379.12391337308}, values=[63379.12391337308, 63379.12391337308, 63379.12391337308], CI_lower=[60398.14583662389, 60398.14583662389, 60398.14583662389], CI_upper=[66360.10199012228, 66360.10199012228, 66360.10199012228]
+2025-12-18 02:50:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [63379.12391337308, 63379.12391337308, 63379.12391337308], CI_lower: [60398.14583662389, 60398.14583662389, 60398.14583662389], CI_upper: [66360.10199012228, 66360.10199012228, 66360.10199012228]
+2025-12-18 02:50:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 60398.14583662389, 60398.14583662389, 60398.14583662389], upper=[np.float64(39821.75007913897), 66360.10199012228, 66360.10199012228, 66360.10199012228]
+2025-12-18 02:50:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 59558.80161227383, 2025: 59558.80161227383, 2026: 59558.80161227383}, values=[59558.80161227383, 59558.80161227383, 59558.80161227383], CI_lower=[55364.75225947951, 55364.75225947951, 55364.75225947951], CI_upper=[63752.85096506816, 63752.85096506816, 63752.85096506816]
+2025-12-18 02:50:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59558.80161227383, 59558.80161227383, 59558.80161227383], CI_lower: [55364.75225947951, 55364.75225947951, 55364.75225947951], CI_upper: [63752.85096506816, 63752.85096506816, 63752.85096506816]
+2025-12-18 02:50:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 55364.75225947951, 55364.75225947951, 55364.75225947951], upper=[np.float64(39821.75007913897), 63752.85096506816, 63752.85096506816, 63752.85096506816]
+2025-12-18 02:50:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 64347.15539454147, 2025: 64347.15539454147, 2026: 64347.15539454147}, values=[64347.15539454147, 64347.15539454147, 64347.15539454147], CI_lower=[62033.62823353032, 62033.62823353032, 62033.62823353032], CI_upper=[66660.68255555263, 66660.68255555263, 66660.68255555263]
+2025-12-18 02:50:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64347.15539454147, 64347.15539454147, 64347.15539454147], CI_lower: [62033.62823353032, 62033.62823353032, 62033.62823353032], CI_upper: [66660.68255555263, 66660.68255555263, 66660.68255555263]
+2025-12-18 02:50:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 62033.62823353032, 62033.62823353032, 62033.62823353032], upper=[np.float64(39821.75007913897), 66660.68255555263, 66660.68255555263, 66660.68255555263]
+2025-12-18 02:50:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 67568.74361056203, 2025: 69223.39767244902, 2026: 70877.98288540822}, values=[67568.74361056203, 69223.39767244902, 70877.98288540822], CI_lower=[48071.29730065346, 49725.95136254045, 51380.536575499646], CI_upper=[87066.1899204706, 88720.84398235759, 90375.42919531678]
+2025-12-18 02:50:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [67568.74361056203, 69223.39767244902, 70877.98288540822], CI_lower: [48071.29730065346, 49725.95136254045, 51380.536575499646], CI_upper: [87066.1899204706, 88720.84398235759, 90375.42919531678]
+2025-12-18 02:50:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 48071.29730065346, 49725.95136254045, 51380.536575499646], upper=[np.float64(39821.75007913897), 87066.1899204706, 88720.84398235759, 90375.42919531678]
+2025-12-18 02:50:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 69271.87936503811, 2025: 72357.40552387443, 2026: 75442.93168271075}, values=[69271.87936503811, 72357.40552387443, 75442.93168271075], CI_lower=[66141.97171019293, 69227.49786902925, 72313.02402786557], CI_upper=[72401.7870198833, 75487.31317871962, 78572.83933755594]
+2025-12-18 02:50:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69271.87936503811, 72357.40552387443, 75442.93168271075], CI_lower: [66141.97171019293, 69227.49786902925, 72313.02402786557], CI_upper: [72401.7870198833, 75487.31317871962, 78572.83933755594]
+2025-12-18 02:50:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(39821.75007913897), 66141.97171019293, 69227.49786902925, 72313.02402786557], upper=[np.float64(39821.75007913897), 72401.7870198833, 75487.31317871962, 78572.83933755594]
+2025-12-18 02:50:38 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 02:50:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 63778.393084215466, 2025: 65255.5638736547, 2026: 66732.73466309393}, values=[63778.393084215466, 65255.5638736547, 66732.73466309393], CI_lower=[58940.65324600189, 60417.824035441125, 61894.994824880356], CI_upper=[68616.13292242904, 70093.30371186827, 71570.4745013075]
+2025-12-18 02:50:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [63778.393084215466, 65255.5638736547, 66732.73466309393], CI_lower: [58940.65324600189, 60417.824035441125, 61894.994824880356], CI_upper: [68616.13292242904, 70093.30371186827, 71570.4745013075]
+2025-12-18 02:50:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 58940.65324600189, 60417.824035441125, 61894.994824880356], upper=[np.float64(43616.83688963478), 68616.13292242904, 70093.30371186827, 71570.4745013075]
+2025-12-18 02:50:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 69864.97155106068, 2025: 73365.66584670544, 2026: 77079.2065936327}, values=[69864.97155106068, 73365.66584670544, 77079.2065936327], CI_lower=[68339.71044227826, 71840.40473792302, 75553.94548485028], CI_upper=[71390.2326598431, 74890.92695548786, 78604.46770241512]
+2025-12-18 02:50:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69864.97155106068, 73365.66584670544, 77079.2065936327], CI_lower: [68339.71044227826, 71840.40473792302, 75553.94548485028], CI_upper: [71390.2326598431, 74890.92695548786, 78604.46770241512]
+2025-12-18 02:50:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 68339.71044227826, 71840.40473792302, 75553.94548485028], upper=[np.float64(43616.83688963478), 71390.2326598431, 74890.92695548786, 78604.46770241512]
+2025-12-18 02:50:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 71032.02507400513, 2025: 75348.53746414185, 2026: 80093.90788650513}, values=[71032.02507400513, 75348.53746414185, 80093.90788650513], CI_lower=[69646.20574735098, 73962.7181374877, 78708.08855985098], CI_upper=[72417.84440065928, 76734.356790796, 81479.72721315928]
+2025-12-18 02:50:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [71032.02507400513, 75348.53746414185, 80093.90788650513], CI_lower: [69646.20574735098, 73962.7181374877, 78708.08855985098], CI_upper: [72417.84440065928, 76734.356790796, 81479.72721315928]
+2025-12-18 02:50:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 69646.20574735098, 73962.7181374877, 78708.08855985098], upper=[np.float64(43616.83688963478), 72417.84440065928, 76734.356790796, 81479.72721315928]
+2025-12-18 02:50:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 63694.93041778685, 2025: 63694.93041778685, 2026: 63694.93041778685}, values=[63694.93041778685, 63694.93041778685, 63694.93041778685], CI_lower=[60722.98339633261, 60722.98339633261, 60722.98339633261], CI_upper=[66666.87743924109, 66666.87743924109, 66666.87743924109]
+2025-12-18 02:50:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [63694.93041778685, 63694.93041778685, 63694.93041778685], CI_lower: [60722.98339633261, 60722.98339633261, 60722.98339633261], CI_upper: [66666.87743924109, 66666.87743924109, 66666.87743924109]
+2025-12-18 02:50:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 60722.98339633261, 60722.98339633261, 60722.98339633261], upper=[np.float64(43616.83688963478), 66666.87743924109, 66666.87743924109, 66666.87743924109]
+2025-12-18 02:50:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 59954.08413212528, 2025: 59954.08413212528, 2026: 59954.08413212528}, values=[59954.08413212528, 59954.08413212528, 59954.08413212528], CI_lower=[55570.97135953181, 55570.97135953181, 55570.97135953181], CI_upper=[64337.19690471875, 64337.19690471875, 64337.19690471875]
+2025-12-18 02:50:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59954.08413212528, 59954.08413212528, 59954.08413212528], CI_lower: [55570.97135953181, 55570.97135953181, 55570.97135953181], CI_upper: [64337.19690471875, 64337.19690471875, 64337.19690471875]
+2025-12-18 02:50:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 55570.97135953181, 55570.97135953181, 55570.97135953181], upper=[np.float64(43616.83688963478), 64337.19690471875, 64337.19690471875, 64337.19690471875]
+2025-12-18 02:50:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 64856.231030068564, 2025: 64856.231030068564, 2026: 64856.231030068564}, values=[64856.231030068564, 64856.231030068564, 64856.231030068564], CI_lower=[62604.33817897846, 62604.33817897846, 62604.33817897846], CI_upper=[67108.12388115867, 67108.12388115867, 67108.12388115867]
+2025-12-18 02:50:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [64856.231030068564, 64856.231030068564, 64856.231030068564], CI_lower: [62604.33817897846, 62604.33817897846, 62604.33817897846], CI_upper: [67108.12388115867, 67108.12388115867, 67108.12388115867]
+2025-12-18 02:50:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 62604.33817897846, 62604.33817897846, 62604.33817897846], upper=[np.float64(43616.83688963478), 67108.12388115867, 67108.12388115867, 67108.12388115867]
+2025-12-18 02:50:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 68766.18799050103, 2025: 70457.30909370608, 2026: 72148.4038605291}, values=[68766.18799050103, 70457.30909370608, 72148.4038605291], CI_lower=[48992.94854094037, 50684.06964414542, 52375.16441096844], CI_upper=[88539.42744006169, 90230.54854326673, 91921.64331008976]
+2025-12-18 02:50:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [68766.18799050103, 70457.30909370608, 72148.4038605291], CI_lower: [48992.94854094037, 50684.06964414542, 52375.16441096844], CI_upper: [88539.42744006169, 90230.54854326673, 91921.64331008976]
+2025-12-18 02:50:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 48992.94854094037, 50684.06964414542, 52375.16441096844], upper=[np.float64(43616.83688963478), 88539.42744006169, 90230.54854326673, 91921.64331008976]
+2025-12-18 02:50:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 70832.29471160565, 2025: 74490.35672044693, 2026: 78148.41872928821}, values=[70832.29471160565, 74490.35672044693, 78148.41872928821], CI_lower=[67990.13110450852, 71648.1931133498, 75306.25512219108], CI_upper=[73674.45831870277, 77332.52032754406, 80990.58233638534]
+2025-12-18 02:50:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [70832.29471160565, 74490.35672044693, 78148.41872928821], CI_lower: [67990.13110450852, 71648.1931133498, 75306.25512219108], CI_upper: [73674.45831870277, 77332.52032754406, 80990.58233638534]
+2025-12-18 02:50:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43616.83688963478), 67990.13110450852, 71648.1931133498, 75306.25512219108], upper=[np.float64(43616.83688963478), 73674.45831870277, 77332.52032754406, 80990.58233638534]
+2025-12-18 02:50:44 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 02:50:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 46.59870076886068, 2025: 46.940640418002545, 2026: 47.28258006714441}, values=[46.59870076886068, 46.940640418002545, 47.28258006714441], CI_lower=[45.932099930645414, 46.27403957978728, 46.61597922892914], CI_upper=[47.26530160707595, 47.60724125621781, 47.949180905359675]
+2025-12-18 02:50:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46.59870076886068, 46.940640418002545, 47.28258006714441], CI_lower: [45.932099930645414, 46.27403957978728, 46.61597922892914], CI_upper: [47.26530160707595, 47.60724125621781, 47.949180905359675]
+2025-12-18 02:50:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 45.932099930645414, 46.27403957978728, 46.61597922892914], upper=[np.float64(46.09313691746403), 47.26530160707595, 47.60724125621781, 47.949180905359675]
+2025-12-18 02:50:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 46.207993186890235, 2025: 46.420039501019346, 2026: 46.61842284788145}, values=[46.207993186890235, 46.420039501019346, 46.61842284788145], CI_lower=[45.61007498225903, 45.82212129638814, 46.02050464325024], CI_upper=[46.80591139152144, 47.01795770565055, 47.216341052512654]
+2025-12-18 02:50:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46.207993186890235, 46.420039501019346, 46.61842284788145], CI_lower: [45.61007498225903, 45.82212129638814, 46.02050464325024], CI_upper: [46.80591139152144, 47.01795770565055, 47.216341052512654]
+2025-12-18 02:50:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 45.61007498225903, 45.82212129638814, 46.02050464325024], upper=[np.float64(46.09313691746403), 46.80591139152144, 47.01795770565055, 47.216341052512654]
+2025-12-18 02:50:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 46.96637635678053, 2025: 47.70854280889034, 2026: 48.57741003483534}, values=[46.96637635678053, 47.70854280889034, 48.57741003483534], CI_lower=[46.534990367494075, 47.27715681960389, 48.146024045548884], CI_upper=[47.39776234606698, 48.1399287981768, 49.00879602412179]
+2025-12-18 02:50:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46.96637635678053, 47.70854280889034, 48.57741003483534], CI_lower: [46.534990367494075, 47.27715681960389, 48.146024045548884], CI_upper: [47.39776234606698, 48.1399287981768, 49.00879602412179]
+2025-12-18 02:50:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 46.534990367494075, 47.27715681960389, 48.146024045548884], upper=[np.float64(46.09313691746403), 47.39776234606698, 48.1399287981768, 49.00879602412179]
+2025-12-18 02:50:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 45.859563563532525, 2025: 45.859563563532525, 2026: 45.859563563532525}, values=[45.859563563532525, 45.859563563532525, 45.859563563532525], CI_lower=[45.17523639189502, 45.17523639189502, 45.17523639189502], CI_upper=[46.54389073517003, 46.54389073517003, 46.54389073517003]
+2025-12-18 02:50:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.859563563532525, 45.859563563532525, 45.859563563532525], CI_lower: [45.17523639189502, 45.17523639189502, 45.17523639189502], CI_upper: [46.54389073517003, 46.54389073517003, 46.54389073517003]
+2025-12-18 02:50:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 45.17523639189502, 45.17523639189502, 45.17523639189502], upper=[np.float64(46.09313691746403), 46.54389073517003, 46.54389073517003, 46.54389073517003]
+2025-12-18 02:50:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 45.29148118879547, 2025: 45.29148118879547, 2026: 45.29148118879547}, values=[45.29148118879547, 45.29148118879547, 45.29148118879547], CI_lower=[44.69764919109612, 44.69764919109612, 44.69764919109612], CI_upper=[45.88531318649483, 45.88531318649483, 45.88531318649483]
+2025-12-18 02:50:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.29148118879547, 45.29148118879547, 45.29148118879547], CI_lower: [44.69764919109612, 44.69764919109612, 44.69764919109612], CI_upper: [45.88531318649483, 45.88531318649483, 45.88531318649483]
+2025-12-18 02:50:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 44.69764919109612, 44.69764919109612, 44.69764919109612], upper=[np.float64(46.09313691746403), 45.88531318649483, 45.88531318649483, 45.88531318649483]
+2025-12-18 02:50:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 45.99273485539209, 2025: 45.99273485539209, 2026: 45.99273485539209}, values=[45.99273485539209, 45.99273485539209, 45.99273485539209], CI_lower=[45.343669677230615, 45.343669677230615, 45.343669677230615], CI_upper=[46.64180003355356, 46.64180003355356, 46.64180003355356]
+2025-12-18 02:50:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.99273485539209, 45.99273485539209, 45.99273485539209], CI_lower: [45.343669677230615, 45.343669677230615, 45.343669677230615], CI_upper: [46.64180003355356, 46.64180003355356, 46.64180003355356]
+2025-12-18 02:50:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 45.343669677230615, 45.343669677230615, 45.343669677230615], upper=[np.float64(46.09313691746403), 46.64180003355356, 46.64180003355356, 46.64180003355356]
+2025-12-18 02:50:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 46.84858126744137, 2025: 47.242664186366135, 2026: 47.63673744856082}, values=[46.84858126744137, 47.242664186366135, 47.63673744856082], CI_lower=[27.827176577240138, 28.221259496164905, 28.615332758359592], CI_upper=[65.8699859576426, 66.26406887656736, 66.65814213876206]
+2025-12-18 02:50:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46.84858126744137, 47.242664186366135, 47.63673744856082], CI_lower: [27.827176577240138, 28.221259496164905, 28.615332758359592], CI_upper: [65.8699859576426, 66.26406887656736, 66.65814213876206]
+2025-12-18 02:50:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 27.827176577240138, 28.221259496164905, 28.615332758359592], upper=[np.float64(46.09313691746403), 65.8699859576426, 66.26406887656736, 66.65814213876206]
+2025-12-18 02:50:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 46.58722924069609, 2025: 46.9710605039506, 2026: 47.35489176720512}, values=[46.58722924069609, 46.9710605039506, 47.35489176720512], CI_lower=[45.86339194835663, 46.24722321161114, 46.63105447486566], CI_upper=[47.31106653303555, 47.694897796290064, 48.07872905954458]
+2025-12-18 02:50:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46.58722924069609, 46.9710605039506, 47.35489176720512], CI_lower: [45.86339194835663, 46.24722321161114, 46.63105447486566], CI_upper: [47.31106653303555, 47.694897796290064, 48.07872905954458]
+2025-12-18 02:50:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.09313691746403), 45.86339194835663, 46.24722321161114, 46.63105447486566], upper=[np.float64(46.09313691746403), 47.31106653303555, 47.694897796290064, 48.07872905954458]
+2025-12-18 02:50:50 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 02:50:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.10791033158347, 2025: 37.07890688543024, 2026: 37.04990343927702}, values=[37.10791033158347, 37.07890688543024, 37.04990343927702], CI_lower=[36.545988624294914, 36.51698517814169, 36.48798173198846], CI_upper=[37.66983203887202, 37.6408285927188, 37.61182514656557]
+2025-12-18 02:50:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.10791033158347, 37.07890688543024, 37.04990343927702], CI_lower: [36.545988624294914, 36.51698517814169, 36.48798173198846], CI_upper: [37.66983203887202, 37.6408285927188, 37.61182514656557]
+2025-12-18 02:50:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 36.545988624294914, 36.51698517814169, 36.48798173198846], upper=[np.float64(36.826524352840146), 37.66983203887202, 37.6408285927188, 37.61182514656557]
+2025-12-18 02:50:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.41784860588086, 2025: 37.49188620107816, 2026: 37.576762276745285}, values=[37.41784860588086, 37.49188620107816, 37.576762276745285], CI_lower=[36.90686683562703, 36.980904430824324, 37.06578050649145], CI_upper=[37.9288303761347, 38.002867971331995, 38.08774404699912]
+2025-12-18 02:50:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.41784860588086, 37.49188620107816, 37.576762276745285], CI_lower: [36.90686683562703, 36.980904430824324, 37.06578050649145], CI_upper: [37.9288303761347, 38.002867971331995, 38.08774404699912]
+2025-12-18 02:50:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 36.90686683562703, 36.980904430824324, 37.06578050649145], upper=[np.float64(36.826524352840146), 37.9288303761347, 38.002867971331995, 38.08774404699912]
+2025-12-18 02:50:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.87512392364442, 2025: 36.56964117102325, 2026: 36.17450142465532}, values=[36.87512392364442, 36.56964117102325, 36.17450142465532], CI_lower=[36.45891370417471, 36.15343095155354, 35.75829120518561], CI_upper=[37.291334143114135, 36.98585139049296, 36.59071164412503]
+2025-12-18 02:50:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.87512392364442, 36.56964117102325, 36.17450142465532], CI_lower: [36.45891370417471, 36.15343095155354, 35.75829120518561], CI_upper: [37.291334143114135, 36.98585139049296, 36.59071164412503]
+2025-12-18 02:50:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 36.45891370417471, 36.15343095155354, 35.75829120518561], upper=[np.float64(36.826524352840146), 37.291334143114135, 36.98585139049296, 36.59071164412503]
+2025-12-18 02:50:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.270642366481866, 2025: 37.270642366481866, 2026: 37.270642366481866}, values=[37.270642366481866, 37.270642366481866, 37.270642366481866], CI_lower=[36.83249395304753, 36.83249395304753, 36.83249395304753], CI_upper=[37.7087907799162, 37.7087907799162, 37.7087907799162]
+2025-12-18 02:50:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.270642366481866, 37.270642366481866, 37.270642366481866], CI_lower: [36.83249395304753, 36.83249395304753, 36.83249395304753], CI_upper: [37.7087907799162, 37.7087907799162, 37.7087907799162]
+2025-12-18 02:50:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 36.83249395304753, 36.83249395304753, 36.83249395304753], upper=[np.float64(36.826524352840146), 37.7087907799162, 37.7087907799162, 37.7087907799162]
+2025-12-18 02:50:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.24741799226901, 2025: 37.24741799226901, 2026: 37.24741799226901}, values=[37.24741799226901, 37.24741799226901, 37.24741799226901], CI_lower=[36.828707847108326, 36.828707847108326, 36.828707847108326], CI_upper=[37.66612813742969, 37.66612813742969, 37.66612813742969]
+2025-12-18 02:50:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.24741799226901, 37.24741799226901, 37.24741799226901], CI_lower: [36.828707847108326, 36.828707847108326, 36.828707847108326], CI_upper: [37.66612813742969, 37.66612813742969, 37.66612813742969]
+2025-12-18 02:50:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 36.828707847108326, 36.828707847108326, 36.828707847108326], upper=[np.float64(36.826524352840146), 37.66612813742969, 37.66612813742969, 37.66612813742969]
+2025-12-18 02:50:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.17437816044837, 2025: 37.17437816044837, 2026: 37.17437816044837}, values=[37.17437816044837, 37.17437816044837, 37.17437816044837], CI_lower=[36.76182855364511, 36.76182855364511, 36.76182855364511], CI_upper=[37.58692776725163, 37.58692776725163, 37.58692776725163]
+2025-12-18 02:50:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.17437816044837, 37.17437816044837, 37.17437816044837], CI_lower: [36.76182855364511, 36.76182855364511, 36.76182855364511], CI_upper: [37.58692776725163, 37.58692776725163, 37.58692776725163]
+2025-12-18 02:50:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 36.76182855364511, 36.76182855364511, 36.76182855364511], upper=[np.float64(36.826524352840146), 37.58692776725163, 37.58692776725163, 37.58692776725163]
+2025-12-18 02:50:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.317942877174204, 2025: 36.93790711836238, 2026: 37.23180564034301}, values=[37.317942877174204, 36.93790711836238, 37.23180564034301], CI_lower=[19.3063643812601, 18.926328622448278, 19.220227144428907], CI_upper=[55.32952137308831, 54.94948561427648, 55.24338413625712]
+2025-12-18 02:50:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.317942877174204, 36.93790711836238, 37.23180564034301], CI_lower: [19.3063643812601, 18.926328622448278, 19.220227144428907], CI_upper: [55.32952137308831, 54.94948561427648, 55.24338413625712]
+2025-12-18 02:50:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 19.3063643812601, 18.926328622448278, 19.220227144428907], upper=[np.float64(36.826524352840146), 55.32952137308831, 54.94948561427648, 55.24338413625712]
+2025-12-18 02:50:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.10014719729479, 2025: 37.07092375898645, 2026: 37.04170032067812}, values=[37.10014719729479, 37.07092375898645, 37.04170032067812], CI_lower=[36.52914501975341, 36.49992158144507, 36.47069814313674], CI_upper=[37.67114937483617, 37.641925936527834, 37.6127024982195]
+2025-12-18 02:50:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.10014719729479, 37.07092375898645, 37.04170032067812], CI_lower: [36.52914501975341, 36.49992158144507, 36.47069814313674], CI_upper: [37.67114937483617, 37.641925936527834, 37.6127024982195]
+2025-12-18 02:50:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.826524352840146), 36.52914501975341, 36.49992158144507, 36.47069814313674], upper=[np.float64(36.826524352840146), 37.67114937483617, 37.641925936527834, 37.6127024982195]
+2025-12-18 02:50:57 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 02:50:57 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 02:52:02 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 22604.984375, 'mse': 2089372672.0, 'rmse': 45709.656222728256, 'r2': 0.20349723100662231}
+2025-12-18 02:52:03 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 02:52:48 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.950627088546753, 'mse': 74.09505462646484, 'rmse': 8.607848431894281, 'r2': 0.3076849579811096}
+2025-12-18 02:52:49 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 02:53:37 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.67283821105957, 'mse': 656.4100341796875, 'rmse': 25.620500271846517, 'r2': -5.882251739501953}
+2025-12-18 02:53:38 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 02:53:54 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/New_Hampshire/population/1-year/figures/ml/deep_learning
+2025-12-18 02:53:55 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 02:53:55 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 02:53:55 [DEBUG] census_eda.main:  Running LLM analysis for state: New Hampshire
+2025-12-18 02:53:55 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 02:53:55 [INFO] census_eda.ml: [LLM] State context loaded: New Hampshire
+2025-12-18 02:53:55 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [API] Total request: ~2548 tokens (system: ~2367, user: ~181)
+2025-12-18 02:53:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [API] Received response: 4837 chars
+2025-12-18 02:54:10 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4837 chars)
+2025-12-18 02:54:10 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [API] Total request: ~2688 tokens (system: ~2367, user: ~321)
+2025-12-18 02:54:10 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [API] Received response: 3617 chars
+2025-12-18 02:54:20 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3617 chars)
+2025-12-18 02:54:20 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [API] Total request: ~2915 tokens (system: ~2367, user: ~548)
+2025-12-18 02:54:20 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [API] Received response: 4204 chars
+2025-12-18 02:54:32 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4204 chars)
+2025-12-18 02:54:32 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [API] Total request: ~2707 tokens (system: ~2367, user: ~340)
+2025-12-18 02:54:32 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [API] Received response: 5426 chars
+2025-12-18 02:54:51 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (5426 chars)
+2025-12-18 02:54:51 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [API] Total request: ~2557 tokens (system: ~2367, user: ~190)
+2025-12-18 02:54:51 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [API] Received response: 3268 chars
+2025-12-18 02:55:02 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3268 chars)
+2025-12-18 02:55:02 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [LLM] User prompt: 8749 chars (~2187 tokens)
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [API] Total request: ~4554 tokens (system: ~2367, user: ~2187)
+2025-12-18 02:55:02 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [API] Received response: 3055 chars
+2025-12-18 02:55:13 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3055 chars)
+2025-12-18 02:55:13 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [LLM] User prompt: 5231 chars (~1307 tokens)
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [API] Total request: ~3674 tokens (system: ~2367, user: ~1307)
+2025-12-18 02:55:13 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [API] Received response: 3520 chars
+2025-12-18 02:55:25 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3520 chars)
+2025-12-18 02:55:25 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [LLM] User prompt: 695 chars (~173 tokens)
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [API] Total request: ~2540 tokens (system: ~2367, user: ~173)
+2025-12-18 02:55:25 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [API] Received response: 3960 chars
+2025-12-18 02:55:37 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3960 chars)
+2025-12-18 02:55:37 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [LLM] User prompt: 5640 chars (~1410 tokens)
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [API] Total request: ~3777 tokens (system: ~2367, user: ~1410)
+2025-12-18 02:55:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [API] Received response: 4571 chars
+2025-12-18 02:55:50 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4571 chars)
+2025-12-18 02:55:50 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [LLM] User prompt: 1832 chars (~458 tokens)
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [API] Total request: ~2825 tokens (system: ~2367, user: ~458)
+2025-12-18 02:55:50 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [API] Received response: 4911 chars
+2025-12-18 02:56:05 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4911 chars)
+2025-12-18 02:56:05 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: New Hampshire
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: New Hampshire
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4580 chars
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1145
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: New Hampshire
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (electronics, machinery), Healthcare, Tourism and hospitality, Professional and business services, Retail (no sales tax destination)
+  Trends: Steady moderate growth 2011-2023. Manufacturing resilient. Tourism strong (mountains, lakes, coast). Boston exurb benefiting. No broad-based taxes attractive. Pandemic: remote workers boosted economy
+  Income: High median income (~$90k) - among top 10 nationally. Low poverty. No state income or sales tax. Cost of living high but wages compensate. Wealthy Boston commuters
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth 2011-2019 (~0.3% annually), acceleration 2020-2023 (~0.8% annually) from pandemic migration. Aging population concern
+  Migration: In-migration from Massachusetts (taxes, cost), COVID refugees from Boston. Out-migration of young to cities. Retirees moving in. Internal: southern tier (Boston suburbs) growing, North Country declining
+  Education: High educational attainment - top 10 in bachelor's degrees (~38%). Dartmouth, UNH, other colleges. But youth leave post-graduation
+
+HOUSING MARKET:
+  Market: High-cost especially southern tier. Median ~$450k statewide (2023), $500k+ near Boston. Seacoast and Lakes Region expensive. North Country affordable
+  Affordability: Steady increases 2011-2019, explosion 2020-2023. Among fastest growing housing costs nationally during pandemic. Severe shortage
+  Challenges: Severe affordability crisis, Workforce housing shortage critical, Local zoning resistance to density, Limited buildable land, Aging housing stock, Young people priced out, Property taxes high (funding schools)
+
+POLITY:
+  Policy: Libertarian 'Live Free or Die' ethos. Fiscally conservative, socially moderate-liberal. No broad-based taxes (income or sales) - defining principle. Republican and Democratic governance alternates. Town meeting democracy tradition
+  Housing: Limited state intervention. Local control sacred. Recent attempts to encourage ADUs, density. Workforce housing law (2008) requiring towns to allow. No rent control
+  Labor: Federal minimum wage $7.25 (no state minimum). No right-to-work law. No required paid leave. Business-friendly. But worker shortage driving wage increases
+
+REGIONAL:
+  Geography: White Mountains (north), Lakes Region (center), Seacoast (18 miles Atlantic coast), Merrimack Valley (south). Forested and mountainous
+  Urban/Rural: 60% urban (Manchester, Nashua, Concord, Portsmouth). 40% rural - North Country, Lakes Region. Small state makes rural accessible
+  Infrastructure: Good highways (I-93, I-95). Manchester-Boston Regional Airport. Seacoast access. Aging town roads and bridges. Limited public transit (except Boston commuter rail edge). Broadband gaps in North Country
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, education funding debates, Democratic legislature flip to Republican; 2014-2016: Opioid/heroin epidemic declared emergency, Medicaid expansion reauthorized, presidential primary always first in nation; 2017-2019: Housing shortage recognized as crisis, education funding lawsuit continues, marijuana legalization fails despite neighbor states legalizing; 2020-2023: COVID refugees from Boston, housing explosion, remote work migration, workforce shortage acute, education freedom accounts (school vouchers) approved (2021)
+  Shocks: 2008 recession impact moderate. Opioid epidemic 2014-2020. COVID-19 tourism impact. Housing shortage becoming economic development barrier
+  Transitions: Traditional manufacturing declining but resilient. Tourism evolving. Remote work enabling professional services growth. Retail impacted by online (despite no sales tax advantage). Healthcare growing
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 10 educational attainment. Lowest poverty rate. 2nd oldest median age. Least diverse state. Among highest housing costs regionally. No broad-based taxes unique
+  Peer States: Vermont (New England, small state), Maine (New England, aging), Massachusetts (proximity, commuter overlap)
+  Unique: 'Live Free or Die' libertarian culture. No income tax or sales tax (unique in region). First in nation presidential primary (tradition). Huge state legislature (400 reps, 24 senators for 1.4M people - largest in US). Town meeting democracy. Extreme aging population. Workforce shortage severe. Housing crisis for small state. Boston exurb dynamics. Lakes Region tourism. White Mountains recreation. Seacoast premium. Vermont and Maine border influences
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: New Hampshire
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (4580 chars)
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9468 chars (~2367 tokens)
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [API] Total request: ~2776 tokens (system: ~2367, user: ~409)
+2025-12-18 02:56:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 02:56:20 [DEBUG] census_eda.ml: [API] Received response: 4948 chars
+2025-12-18 02:56:20 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4948 chars)
+2025-12-18 02:56:20 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 02:56:20 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 02:56:20 [INFO] census_eda.main: [REPORT] Generated: report_New_Hampshire_population_20251218_025620.txt
+2025-12-18 02:56:20 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for New Hampshire!
+2025-12-18 02:56:21 [INFO] census_eda.memory: process_New Hampshire_population_1-year:EXIT: 9755.0MB (delta: -715.9MB)
+2025-12-18 02:56:22 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 02:56:22 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 02:56:24 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 02:56:25 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 02:56:26 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 02:56:27 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 02:56:29 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 02:56:30 [INFO] census_eda.memory: Cleared all caches

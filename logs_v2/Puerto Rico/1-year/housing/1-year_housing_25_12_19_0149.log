@@ -1,0 +1,1088 @@
+2025-12-19 01:49:44 [INFO] census_eda: Logging context set: state=Puerto Rico, survey=housing, scope=1-year
+2025-12-19 01:49:44 [INFO] census_eda: Log file: ./logs/Puerto Rico/1-year/housing/1-year_housing_25_12_19_0149.log
+2025-12-19 01:49:44 [INFO] census_eda.main: ======================================================================
+2025-12-19 01:49:44 [INFO] census_eda.main: [HOUSING] Processing Puerto Rico (1-year)...
+2025-12-19 01:49:44 [INFO] census_eda.main: ======================================================================
+2025-12-19 01:49:44 [INFO] census_eda.memory: process_Puerto Rico_housing_1-year:ENTER: 11409.3MB (delta: +0.0MB)
+2025-12-19 01:49:44 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-19 01:49:44 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/72/*/*.csv
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hpr.csv
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,754 rows, 235 columns
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h72.csv
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader:   -> Loaded 12,218 rows, 235 columns
+2025-12-19 01:49:45 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hpr.csv
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,455 rows, 235 columns
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hpr.csv
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,532 rows, 235 columns
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hpr.csv
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,786 rows, 235 columns
+2025-12-19 01:49:46 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hpr.csv
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,739 rows, 235 columns
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h72.csv
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,224 rows, 235 columns
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hpr.csv
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 14,788 rows, 235 columns
+2025-12-19 01:49:47 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hpr.csv
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,360 rows, 235 columns
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h72.csv
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,279 rows, 235 columns
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h72.csv
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 17,112 rows, 235 columns
+2025-12-19 01:49:48 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h72.csv
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 15,988 rows, 235 columns
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h72.csv
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,667 rows, 235 columns
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hpr.csv
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,633 rows, 235 columns
+2025-12-19 01:49:49 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hpr.csv
+2025-12-19 01:49:50 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-19 01:49:50 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,753 rows, 235 columns
+2025-12-19 01:49:50 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hpr.csv
+2025-12-19 01:49:50 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-19 01:49:50 [VERBOSE] census_eda.processing.loader:   -> Loaded 16,742 rows, 235 columns
+2025-12-19 01:49:50 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-19 01:49:52 [VERBOSE] census_eda.processing.loader: Combined into 255,030 total rows, 235 columns
+2025-12-19 01:49:52 [INFO] census_eda.main: Loaded 255,030 records
+2025-12-19 01:49:52 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 255030 valid, 16 unique
+2025-12-19 01:49:52 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-19 01:49:53 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-19 01:49:53 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-19 01:49:53 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-19 01:49:53 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-19 01:49:53 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-19 01:49:53 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-19 01:49:53 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-19 01:49:53 [DEBUG] census_eda.main: Feature engineering complete: (255030, 254)
+2025-12-19 01:49:55 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-19 01:49:55 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-19 01:50:32 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-19 01:50:32 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-19 01:50:32 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(255030, 254)
+2025-12-19 01:50:32 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-19 01:50:32 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 255030
+2025-12-19 01:50:32 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-19 01:50:34 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(255030, 254)
+2025-12-19 01:50:34 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(14786), np.int64(2008): np.int64(14788), np.int64(2009): np.int64(14739), np.int64(2010): np.int64(16753), np.int64(2011): np.int64(16742), np.int64(2012): np.int64(16754), np.int64(2013): np.int64(16532), np.int64(2014): np.int64(16455), np.int64(2015): np.int64(16633), np.int64(2016): np.int64(16360), np.int64(2017): np.int64(12218), np.int64(2018): np.int64(16224), np.int64(2019): np.int64(16279), np.int64(2021): np.int64(15988), np.int64(2022): np.int64(17112), np.int64(2023): np.int64(16667)}
+2025-12-19 01:50:35 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(255030, 254)
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 255030 non-null values (zeros excluded if needed)
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 15.00
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 228440 non-null values (zeros excluded if needed)
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 151942 non-null values (zeros excluded if needed)
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 105783 non-null values (zeros excluded if needed)
+2025-12-19 01:50:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3920000.00
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 193053 non-null values (zeros excluded if needed)
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2300.00
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 135903 non-null values (zeros excluded if needed)
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 5800.00
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 166878 non-null values (zeros excluded if needed)
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 590.00
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 194985 non-null values (zeros excluded if needed)
+2025-12-19 01:50:40 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 43599 non-null values (zeros excluded if needed)
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 4200.00
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 190550 non-null values (zeros excluded if needed)
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3900.00
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 43 non-null values (zeros excluded if needed)
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 10400.00
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 50335 non-null values (zeros excluded if needed)
+2025-12-19 01:50:44 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-19 01:50:50 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-19 01:51:25 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-19 01:51:25 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-19 01:51:25 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-19 01:51:27 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-19 01:51:27 [DEBUG] census_eda.memory: Skipping sampling: 35526MB available (>16GB)
+2025-12-19 01:51:27 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 255030 rows
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(255030, 254)
+2025-12-19 01:52:04 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 255030 non-null values
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 15.00
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 182121 non-null values
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 8.00
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 182121 non-null values
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 12.00
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 228440 non-null values
+2025-12-19 01:52:04 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 151942 non-null values
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 105783 non-null values
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3920000.00
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 194985 non-null values
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 12455 non-null values
+2025-12-19 01:52:08 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 1700.00
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 193053 non-null values
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2300.00
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 135903 non-null values
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 5800.00
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 166878 non-null values
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 590.00
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 194985 non-null values
+2025-12-19 01:52:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 43599 non-null values
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 4200.00
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 190550 non-null values
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3900.00
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 43 non-null values
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 10400.00
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 50335 non-null values
+2025-12-19 01:52:16 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-19 01:52:19 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-19 01:52:37 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-19 01:53:01 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-19 01:53:18 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-19 01:53:49 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-19 01:53:49 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-19 01:53:49 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-19 01:53:51 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-19 01:53:53 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-19 01:53:55 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-19 01:53:58 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-19 01:53:58 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-19 01:53:58 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-19 01:54:00 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-19 01:54:02 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-19 01:54:04 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-19 01:54:06 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-19 01:54:08 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-19 01:54:10 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-19 01:54:12 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-19 01:54:16 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-19 01:54:16 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-19 01:54:16 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-19 01:54:17 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-19 01:54:19 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-19 01:54:22 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-19 01:54:23 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-19 01:54:25 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-19 01:54:29 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-19 01:54:29 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-19 01:54:29 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-19 01:54:31 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-19 01:54:35 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-19 01:54:35 [DEBUG] census_eda.memory: Skipping sampling: 35471MB available (>16GB)
+2025-12-19 01:54:43 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-19 01:54:43 [DEBUG] census_eda.memory: Skipping sampling: 35416MB available (>16GB)
+2025-12-19 01:54:58 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-19 01:54:58 [DEBUG] census_eda.memory: Skipping sampling: 35398MB available (>16GB)
+2025-12-19 01:55:07 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-19 01:55:17 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-19 01:55:19 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-19 01:55:21 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Puerto_Rico/housing/1-year/figures
+2025-12-19 01:55:23 [DEBUG] census_eda.memory: Skipping sampling: 35365MB available (>16GB)
+2025-12-19 01:55:23 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-19 01:55:23 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-19 01:55:23 [INFO] census_eda.memory: [ML-START]: 12500.3MB (delta: +1090.9MB)
+2025-12-19 01:55:23 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-19 01:55:23 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-19 01:55:23 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 78666 samples (was 78666)
+2025-12-19 01:55:23 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-19 01:55:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-19 01:55:23 [INFO] census_eda.ml.regression: [TUNE] Data: 78,666 samples, 10 features
+2025-12-19 01:55:23 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 01:55:23 [INFO] census_eda.memory: tune_ridge:ENTER: 12500.3MB (delta: +0.0MB)
+2025-12-19 01:55:26 [INFO] census_eda.memory: tune_ridge:EXIT: 12500.9MB (delta: +0.7MB)
+2025-12-19 01:55:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-19 01:55:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0206
+2025-12-19 01:55:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 01:55:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-19 01:55:26 [INFO] census_eda.ml.regression: [TUNE] Data: 78,666 samples, 10 features
+2025-12-19 01:55:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 01:55:26 [INFO] census_eda.memory: tune_lasso:ENTER: 12500.9MB (delta: +0.0MB)
+2025-12-19 01:55:29 [INFO] census_eda.memory: tune_lasso:EXIT: 12500.9MB (delta: +0.0MB)
+2025-12-19 01:55:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-19 01:55:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0206
+2025-12-19 01:55:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 01:55:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-19 01:55:35 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 78,666 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 01:55:35 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 01:55:35 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 01:55:35 [INFO] census_eda.memory: tune_random_forest:ENTER: 12500.9MB (delta: +0.0MB)
+2025-12-19 01:56:07 [INFO] census_eda.memory: tune_random_forest:EXIT: 12502.3MB (delta: +1.4MB)
+2025-12-19 01:56:07 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-19 01:56:07 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0572
+2025-12-19 01:56:07 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 01:56:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-19 01:56:13 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 78,666 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 01:56:13 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 01:56:13 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 01:56:13 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12518.1MB (delta: +15.8MB)
+2025-12-19 01:56:29 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:56:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-19 01:56:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0184
+2025-12-19 01:56:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 01:56:47 [INFO] census_eda.memory: [SHAP] Safe sample size: 15,734 -> 1,000
+2025-12-19 01:56:47 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 15,734 -> 1,000
+2025-12-19 01:56:47 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:56:47 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-19 01:56:49 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:56:49 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Number_of_Rooms
+2025-12-19 01:56:49 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-19 01:56:49 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-19 01:56:49 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 19483 samples (was 19483)
+2025-12-19 01:56:49 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-19 01:56:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-19 01:56:49 [INFO] census_eda.ml.regression: [TUNE] Data: 19,483 samples, 10 features
+2025-12-19 01:56:49 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 01:56:49 [INFO] census_eda.memory: tune_ridge:ENTER: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:56:50 [INFO] census_eda.memory: tune_ridge:EXIT: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:56:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-19 01:56:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1174
+2025-12-19 01:56:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 01:56:51 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-19 01:56:51 [INFO] census_eda.ml.regression: [TUNE] Data: 19,483 samples, 10 features
+2025-12-19 01:56:51 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 01:56:51 [INFO] census_eda.memory: tune_lasso:ENTER: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:56:54 [INFO] census_eda.memory: tune_lasso:EXIT: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:56:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-19 01:56:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1173
+2025-12-19 01:56:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 01:57:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-19 01:57:09 [INFO] census_eda.ml.regression: [TUNE] Data: 19,483 samples, 10 features
+2025-12-19 01:57:09 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 01:57:09 [INFO] census_eda.memory: tune_random_forest:ENTER: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:57:33 [INFO] census_eda.memory: tune_random_forest:EXIT: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:57:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-19 01:57:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1572
+2025-12-19 01:57:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 01:57:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-19 01:57:35 [INFO] census_eda.ml.regression: [TUNE] Data: 19,483 samples, 10 features
+2025-12-19 01:57:35 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 01:57:35 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:57:49 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:57:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-19 01:57:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2019
+2025-12-19 01:57:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 01:57:54 [INFO] census_eda.memory: [SHAP] Safe sample size: 3,897 -> 1,000
+2025-12-19 01:57:54 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 3,897 -> 1,000
+2025-12-19 01:57:54 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:57:54 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-19 01:57:56 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:57:56 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Number_of_Bedrooms
+2025-12-19 01:57:56 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-19 01:57:56 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-19 01:57:56 [INFO] census_eda.memory: [PRE-CLUSTERING]: 12518.1MB (delta: +0.0MB)
+2025-12-19 01:57:56 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-19 01:57:56 [INFO] census_eda.main: [CLUSTERING] KMeans on 136,522 samples...
+2025-12-19 01:59:37 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-19 01:59:37 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 136,522 samples (will sample if needed)...
+2025-12-19 01:59:37 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 136,522 -> 15,000 (distance matrix would be 138.9GB)
+2025-12-19 01:59:37 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 136,522 -> 15,000 for O(n²) distance matrix
+2025-12-19 01:59:43 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-19 01:59:43 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-19 01:59:43 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-19 01:59:43 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-19 01:59:43 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-19 01:59:43 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 215083.99072265625, 2025: 265483.19482421875, 2026: 331066.65771484375}, Values: [215083.99072265625, 265483.19482421875, 331066.65771484375]
+2025-12-19 01:59:43 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-19 01:59:43 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 688.2747802734375, 2025: 745.8828225135803, 2026: 813.7023077011108}, Values: [688.2747802734375, 745.8828225135803, 813.7023077011108]
+2025-12-19 01:59:43 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-19 01:59:50 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-19 01:59:56 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-19 02:00:00 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 136522.
+2025-12-19 02:00:00 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-19 02:00:00 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-19 02:00:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 182330.01280336827, 2025: 187902.49627284147, 2026: 193474.97974231653}, values=[182330.01280336827, 187902.49627284147, 193474.97974231653], CI_lower=[109210.69594912493, 114783.17941859813, 120355.66288807319], CI_upper=[255449.3296576116, 261021.8131270848, 266594.29659655987]
+2025-12-19 02:00:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [182330.01280336827, 187902.49627284147, 193474.97974231653], CI_lower: [109210.69594912493, 114783.17941859813, 120355.66288807319], CI_upper: [255449.3296576116, 261021.8131270848, 266594.29659655987]
+2025-12-19 02:00:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 109210.69594912493, 114783.17941859813, 120355.66288807319], upper=[np.float64(170369.72147349507), 255449.3296576116, 261021.8131270848, 266594.29659655987]
+2025-12-19 02:00:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 126171.37643146515, 2025: 112105.18782806396, 2026: 95843.30786037445}, values=[126171.37643146515, 112105.18782806396, 95843.30786037445], CI_lower=[73072.46572002451, 59006.277116623336, 42744.39714893382], CI_upper=[179270.28714290579, 165204.0985395046, 148942.2185718151]
+2025-12-19 02:00:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [126171.37643146515, 112105.18782806396, 95843.30786037445], CI_lower: [73072.46572002451, 59006.277116623336, 42744.39714893382], CI_upper: [179270.28714290579, 165204.0985395046, 148942.2185718151]
+2025-12-19 02:00:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 73072.46572002451, 59006.277116623336, 42744.39714893382], upper=[np.float64(170369.72147349507), 179270.28714290579, 165204.0985395046, 148942.2185718151]
+2025-12-19 02:00:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 215083.99072265625, 2025: 265483.19482421875, 2026: 331066.65771484375}, values=[215083.99072265625, 265483.19482421875, 331066.65771484375], CI_lower=[201119.68624074906, 251518.89034231156, 317102.3532329366], CI_upper=[229048.29520456344, 279447.4993061259, 345030.9621967509]
+2025-12-19 02:00:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [215083.99072265625, 265483.19482421875, 331066.65771484375], CI_lower: [201119.68624074906, 251518.89034231156, 317102.3532329366], CI_upper: [229048.29520456344, 279447.4993061259, 345030.9621967509]
+2025-12-19 02:00:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 201119.68624074906, 251518.89034231156, 317102.3532329366], upper=[np.float64(170369.72147349507), 229048.29520456344, 279447.4993061259, 345030.9621967509]
+2025-12-19 02:00:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 156645.56183270458, 2025: 156645.56183270458, 2026: 156645.56183270458}, values=[156645.56183270458, 156645.56183270458, 156645.56183270458], CI_lower=[76418.02847388796, 76418.02847388796, 76418.02847388796], CI_upper=[236873.09519152122, 236873.09519152122, 236873.09519152122]
+2025-12-19 02:00:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [156645.56183270458, 156645.56183270458, 156645.56183270458], CI_lower: [76418.02847388796, 76418.02847388796, 76418.02847388796], CI_upper: [236873.09519152122, 236873.09519152122, 236873.09519152122]
+2025-12-19 02:00:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 76418.02847388796, 76418.02847388796, 76418.02847388796], upper=[np.float64(170369.72147349507), 236873.09519152122, 236873.09519152122, 236873.09519152122]
+2025-12-19 02:00:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 151256.4580773852, 2025: 151256.4580773852, 2026: 151256.4580773852}, values=[151256.4580773852, 151256.4580773852, 151256.4580773852], CI_lower=[80381.17190842006, 80381.17190842006, 80381.17190842006], CI_upper=[222131.74424635037, 222131.74424635037, 222131.74424635037]
+2025-12-19 02:00:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [151256.4580773852, 151256.4580773852, 151256.4580773852], CI_lower: [80381.17190842006, 80381.17190842006, 80381.17190842006], CI_upper: [222131.74424635037, 222131.74424635037, 222131.74424635037]
+2025-12-19 02:00:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 80381.17190842006, 80381.17190842006, 80381.17190842006], upper=[np.float64(170369.72147349507), 222131.74424635037, 222131.74424635037, 222131.74424635037]
+2025-12-19 02:00:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 161688.78236880884, 2025: 161688.78236880884, 2026: 161688.78236880884}, values=[161688.78236880884, 161688.78236880884, 161688.78236880884], CI_lower=[78763.97919254511, 78763.97919254511, 78763.97919254511], CI_upper=[244613.58554507256, 244613.58554507256, 244613.58554507256]
+2025-12-19 02:00:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [161688.78236880884, 161688.78236880884, 161688.78236880884], CI_lower: [78763.97919254511, 78763.97919254511, 78763.97919254511], CI_upper: [244613.58554507256, 244613.58554507256, 244613.58554507256]
+2025-12-19 02:00:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 78763.97919254511, 78763.97919254511, 78763.97919254511], upper=[np.float64(170369.72147349507), 244613.58554507256, 244613.58554507256, 244613.58554507256]
+2025-12-19 02:00:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 170369.7377685286, 2025: 170369.75406356205, 2026: 170369.7703585954}, values=[170369.7377685286, 170369.75406356205, 170369.7703585954], CI_lower=[79304.62628103029, 79304.64257606374, 79304.65887109707], CI_upper=[261434.8492560269, 261434.86555106036, 261434.8818460937]
+2025-12-19 02:00:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [170369.7377685286, 170369.75406356205, 170369.7703585954], CI_lower: [79304.62628103029, 79304.64257606374, 79304.65887109707], CI_upper: [261434.8492560269, 261434.86555106036, 261434.8818460937]
+2025-12-19 02:00:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 79304.62628103029, 79304.64257606374, 79304.65887109707], upper=[np.float64(170369.72147349507), 261434.8492560269, 261434.86555106036, 261434.8818460937]
+2025-12-19 02:00:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 170955.1371141325, 2025: 175683.87732845766, 2026: 180412.61754278286}, values=[170955.1371141325, 175683.87732845766, 180412.61754278286], CI_lower=[89698.84687046037, 94427.58708478554, 99156.32729911074], CI_upper=[252211.4273578046, 256940.16757212978, 261668.90778645498]
+2025-12-19 02:00:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [170955.1371141325, 175683.87732845766, 180412.61754278286], CI_lower: [89698.84687046037, 94427.58708478554, 99156.32729911074], CI_upper: [252211.4273578046, 256940.16757212978, 261668.90778645498]
+2025-12-19 02:00:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(170369.72147349507), 89698.84687046037, 94427.58708478554, 99156.32729911074], upper=[np.float64(170369.72147349507), 252211.4273578046, 256940.16757212978, 261668.90778645498]
+2025-12-19 02:00:06 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-19 02:00:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 597.2432893564219, 2025: 607.4275616612285, 2026: 617.6118339660316}, values=[597.2432893564219, 607.4275616612285, 617.6118339660316], CI_lower=[550.4742696581154, 560.6585419629221, 570.8428142677251], CI_upper=[644.0123090547283, 654.196581359535, 664.380853664338]
+2025-12-19 02:00:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [597.2432893564219, 607.4275616612285, 617.6118339660316], CI_lower: [550.4742696581154, 560.6585419629221, 570.8428142677251], CI_upper: [644.0123090547283, 654.196581359535, 664.380853664338]
+2025-12-19 02:00:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 550.4742696581154, 560.6585419629221, 570.8428142677251], upper=[np.float64(643.2534216335541), 644.0123090547283, 654.196581359535, 664.380853664338]
+2025-12-19 02:00:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 641.4388771601953, 2025: 666.3162666633725, 2026: 692.7391671757214}, values=[641.4388771601953, 666.3162666633725, 692.7391671757214], CI_lower=[608.6356209958378, 633.5130104990151, 659.9359110113639], CI_upper=[674.2421333245527, 699.11952282773, 725.5424233400788]
+2025-12-19 02:00:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [641.4388771601953, 666.3162666633725, 692.7391671757214], CI_lower: [608.6356209958378, 633.5130104990151, 659.9359110113639], CI_upper: [674.2421333245527, 699.11952282773, 725.5424233400788]
+2025-12-19 02:00:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 608.6356209958378, 633.5130104990151, 659.9359110113639], upper=[np.float64(643.2534216335541), 674.2421333245527, 699.11952282773, 725.5424233400788]
+2025-12-19 02:00:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 688.2747802734375, 2025: 745.8828225135803, 2026: 813.7023077011108}, values=[688.2747802734375, 745.8828225135803, 813.7023077011108], CI_lower=[667.7155772786958, 725.3236195188387, 793.1431047063692], CI_upper=[708.8339832681792, 766.442025508322, 834.2615106958525]
+2025-12-19 02:00:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [688.2747802734375, 745.8828225135803, 813.7023077011108], CI_lower: [667.7155772786958, 725.3236195188387, 793.1431047063692], CI_upper: [708.8339832681792, 766.442025508322, 834.2615106958525]
+2025-12-19 02:00:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 667.7155772786958, 725.3236195188387, 793.1431047063692], upper=[np.float64(643.2534216335541), 708.8339832681792, 766.442025508322, 834.2615106958525]
+2025-12-19 02:00:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 600.6007041924846, 2025: 600.6007041924846, 2026: 600.6007041924846}, values=[600.6007041924846, 600.6007041924846, 600.6007041924846], CI_lower=[567.6895064532899, 567.6895064532899, 567.6895064532899], CI_upper=[633.5119019316793, 633.5119019316793, 633.5119019316793]
+2025-12-19 02:00:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [600.6007041924846, 600.6007041924846, 600.6007041924846], CI_lower: [567.6895064532899, 567.6895064532899, 567.6895064532899], CI_upper: [633.5119019316793, 633.5119019316793, 633.5119019316793]
+2025-12-19 02:00:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 567.6895064532899, 567.6895064532899, 567.6895064532899], upper=[np.float64(643.2534216335541), 633.5119019316793, 633.5119019316793, 633.5119019316793]
+2025-12-19 02:00:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 574.1278726571788, 2025: 574.1278726571788, 2026: 574.1278726571788}, values=[574.1278726571788, 574.1278726571788, 574.1278726571788], CI_lower=[536.0361555921164, 536.0361555921164, 536.0361555921164], CI_upper=[612.2195897222413, 612.2195897222413, 612.2195897222413]
+2025-12-19 02:00:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [574.1278726571788, 574.1278726571788, 574.1278726571788], CI_lower: [536.0361555921164, 536.0361555921164, 536.0361555921164], CI_upper: [612.2195897222413, 612.2195897222413, 612.2195897222413]
+2025-12-19 02:00:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 536.0361555921164, 536.0361555921164, 536.0361555921164], upper=[np.float64(643.2534216335541), 612.2195897222413, 612.2195897222413, 612.2195897222413]
+2025-12-19 02:00:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 615.7850024127473, 2025: 615.7850024127473, 2026: 615.7850024127473}, values=[615.7850024127473, 615.7850024127473, 615.7850024127473], CI_lower=[589.9922731873659, 589.9922731873659, 589.9922731873659], CI_upper=[641.5777316381287, 641.5777316381287, 641.5777316381287]
+2025-12-19 02:00:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [615.7850024127473, 615.7850024127473, 615.7850024127473], CI_lower: [589.9922731873659, 589.9922731873659, 589.9922731873659], CI_upper: [641.5777316381287, 641.5777316381287, 641.5777316381287]
+2025-12-19 02:00:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 589.9922731873659, 589.9922731873659, 589.9922731873659], upper=[np.float64(643.2534216335541), 641.5777316381287, 641.5777316381287, 641.5777316381287]
+2025-12-19 02:00:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 662.2549133514532, 2025: 680.5769355793271, 2026: 698.2437852931573}, values=[662.2549133514532, 680.5769355793271, 698.2437852931573], CI_lower=[457.99770575579254, 476.3197279836665, 493.98657769749667], CI_upper=[866.5121209471138, 884.8341431749877, 902.500992888818]
+2025-12-19 02:00:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [662.2549133514532, 680.5769355793271, 698.2437852931573], CI_lower: [457.99770575579254, 476.3197279836665, 493.98657769749667], CI_upper: [866.5121209471138, 884.8341431749877, 902.500992888818]
+2025-12-19 02:00:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 457.99770575579254, 476.3197279836665, 493.98657769749667], upper=[np.float64(643.2534216335541), 866.5121209471138, 884.8341431749877, 902.500992888818]
+2025-12-19 02:00:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 678.9789988062437, 2025: 721.2864876601599, 2026: 763.5939765140761}, values=[678.9789988062437, 721.2864876601599, 763.5939765140761], CI_lower=[639.357407062993, 681.6648959169092, 723.9723847708254], CI_upper=[718.6005905494943, 760.9080794034105, 803.2155682573267]
+2025-12-19 02:00:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [678.9789988062437, 721.2864876601599, 763.5939765140761], CI_lower: [639.357407062993, 681.6648959169092, 723.9723847708254], CI_upper: [718.6005905494943, 760.9080794034105, 803.2155682573267]
+2025-12-19 02:00:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(643.2534216335541), 639.357407062993, 681.6648959169092, 723.9723847708254], upper=[np.float64(643.2534216335541), 718.6005905494943, 760.9080794034105, 803.2155682573267]
+2025-12-19 02:00:15 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-19 02:00:15 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-19 02:01:39 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 20777.73046875, 'mse': 15395736576.0, 'rmse': 124079.55744601929, 'r2': -0.17036709189414978}
+2025-12-19 02:01:40 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-19 02:02:41 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 6.685662746429443, 'mse': 215.2181854248047, 'rmse': 14.670316473232766, 'r2': 0.024062931537628174}
+2025-12-19 02:02:43 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-19 02:03:43 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 6.41887092590332, 'mse': 1664.00390625, 'rmse': 40.792203988629986, 'r2': 0.7959766387939453}
+2025-12-19 02:03:45 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-19 02:04:44 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 79.95799255371094, 'mse': 66262.953125, 'rmse': 257.41591466923717, 'r2': 0.05576172471046448}
+2025-12-19 02:04:46 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-19 02:05:50 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.40409281849861145, 'mse': 0.6250814199447632, 'rmse': 0.7906209078596158, 'r2': 0.2360554337501526}
+2025-12-19 02:05:52 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-19 02:06:16 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Puerto_Rico/housing/1-year/figures/ml/deep_learning
+2025-12-19 02:06:18 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-19 02:06:18 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-19 02:06:18 [DEBUG] census_eda.main:  Running LLM analysis for state: Puerto Rico
+2025-12-19 02:06:18 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-19 02:06:18 [INFO] census_eda.ml: [LLM] State context loaded: Puerto Rico
+2025-12-19 02:06:18 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [API] Total request: ~2891 tokens (system: ~2709, user: ~182)
+2025-12-19 02:06:18 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [API] Received response: 3601 chars
+2025-12-19 02:06:35 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3601 chars)
+2025-12-19 02:06:35 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [LLM] User prompt: 1267 chars (~316 tokens)
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [API] Total request: ~3025 tokens (system: ~2709, user: ~316)
+2025-12-19 02:06:35 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [API] Received response: 3385 chars
+2025-12-19 02:06:46 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3385 chars)
+2025-12-19 02:06:46 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [LLM] User prompt: 1690 chars (~422 tokens)
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [API] Total request: ~3131 tokens (system: ~2709, user: ~422)
+2025-12-19 02:06:46 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [API] Received response: 4463 chars
+2025-12-19 02:07:00 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4463 chars)
+2025-12-19 02:07:00 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [LLM] User prompt: 1464 chars (~366 tokens)
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [API] Total request: ~3075 tokens (system: ~2709, user: ~366)
+2025-12-19 02:07:00 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [API] Received response: 4404 chars
+2025-12-19 02:07:17 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4404 chars)
+2025-12-19 02:07:17 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [API] Total request: ~2720 tokens (system: ~2709, user: ~11)
+2025-12-19 02:07:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [API] Received response: 3938 chars
+2025-12-19 02:07:32 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3938 chars)
+2025-12-19 02:07:32 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [LLM] User prompt: 11271 chars (~2817 tokens)
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [API] Total request: ~5526 tokens (system: ~2709, user: ~2817)
+2025-12-19 02:07:32 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [API] Received response: 3548 chars
+2025-12-19 02:07:44 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3548 chars)
+2025-12-19 02:07:44 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [LLM] User prompt: 6699 chars (~1674 tokens)
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [API] Total request: ~4383 tokens (system: ~2709, user: ~1674)
+2025-12-19 02:07:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [API] Received response: 3596 chars
+2025-12-19 02:07:55 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3596 chars)
+2025-12-19 02:07:55 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [LLM] User prompt: 874 chars (~218 tokens)
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [API] Total request: ~2927 tokens (system: ~2709, user: ~218)
+2025-12-19 02:07:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [API] Received response: 3888 chars
+2025-12-19 02:08:10 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3888 chars)
+2025-12-19 02:08:10 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [LLM] User prompt: 6264 chars (~1566 tokens)
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [API] Total request: ~4275 tokens (system: ~2709, user: ~1566)
+2025-12-19 02:08:10 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [API] Received response: 3305 chars
+2025-12-19 02:08:20 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3305 chars)
+2025-12-19 02:08:20 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [LLM] User prompt: 2533 chars (~633 tokens)
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [API] Total request: ~3342 tokens (system: ~2709, user: ~633)
+2025-12-19 02:08:20 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [API] Received response: 3688 chars
+2025-12-19 02:08:29 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3688 chars)
+2025-12-19 02:08:29 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [LLM] User prompt: 1048 chars (~262 tokens)
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Puerto Rico
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Puerto Rico
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5951 chars
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1487
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Puerto Rico
+
+ECONOMIC PROFILE:
+  Industries: Pharmaceutical manufacturing, Medical devices, Tourism and hospitality, Finance and insurance, Federal government
+  Trends: Decade-long recession 2006-2017 after Section 936 tax incentives ended. Manufacturing ~47-50% of GDP but declining employment. Hurricane Maria 2017 devastated economy. Debt crisis: $70B+ debt, PROMESA federal oversight 2016. GDP ~$118B (2023). Modest recovery 2018-2019, pandemic shock 2020, uneven recovery 2021-2023
+  Income: GDP per capita ~$30,123 (2023), or ~$43,000 PPP. Poorest U.S. jurisdiction but richest in Latin America/Caribbean. Median household income ~$21,000. 43% poverty rate. Federal transfers >20% of personal income. High income inequality. Informal economy significant
+  Dominant Sector: Manufacturing (pharma, medical devices)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steep population decline. Peak 3.8M (2004), down to 3.2M (2023). -14% since 2010. Accelerated post-Hurricane Maria (600,000+ left 2017-2020). Continued outmigration 2011-2023 averaging ~1-2% annually. Net domestic migration very negative, some international immigration
+  Migration: Massive outmigration to U.S. mainland (Florida, New York, Texas) driven by economy, hurricane, debt crisis. 2017-2020 exodus post-Maria. Young, working-age, educated leaving. Net loss ~50,000-80,000 annually recent years. Return migration minimal. Diaspora >5M vs. 3.2M on island
+  Education: Educational attainment: ~85% high school, ~25% bachelor's (slightly below U.S. mainland). Brain drain - educated professionals emigrate. University of Puerto Rico system strong but underfunded. Declining school enrollment (-40% since 2000)
+
+HOUSING MARKET:
+  Market: Diverse market. Metro San Juan median ~$200-250K. Rural areas cheaper. Wealthy areas (Condado, Dorado) expensive. Informal settlements common. Many homes built incrementally. Hurricane damage widespread - tens of thousands still damaged from 2017. Property titles often unclear
+  Affordability: Relatively affordable in raw prices but unaffordable relative to local incomes (43% poverty). 2017-2020 crisis caused some depreciation. Recent years: mainland buyers (Acts 20/22 beneficiaries) driving up prices in desirable areas (Condado, Rincón), creating affordability/gentrification concerns
+  Challenges: Hurricane damage - thousands still not repaired, Infrastructure (power, water) unreliability, Gentrification from mainland buyers (tax incentives), Informal settlements lacking services, Depopulation leaving housing stock abandoned, Property title issues, Insurance costs
+
+POLITY:
+  Policy: Commonwealth status (unincorporated territory). Non-voting Resident Commissioner in Congress. Internal political divide: statehood vs. commonwealth vs. independence. PROMESA oversight board controls finances (2016-present). Austerity measures imposed
+  Housing: Limited intervention capacity due to fiscal crisis. Some affordable housing programs. CDBG-DR funds post-hurricane. Informal housing settlements (arrabal) significant. Property tax reforms debated. Gentrification concerns in San Juan
+  Labor: Federal minimum wage applies ($7.25). High unemployment (~8-10%, often higher for youth). Labor force participation low (~40% vs. 63% U.S.). Informal economy large. Labor protections limited by fiscal constraints
+
+REGIONAL:
+  Geography: Main island 3,515 sq mi, plus Vieques, Culebra, others. Mountainous interior (Cordillera Central), coastal plains. Tropical climate supports agriculture and tourism. Caribbean location, 1,000 miles southeast of Florida
+  Urban/Rural: 94% urban (by U.S. definition). San Juan metro area dominant. Other cities: Ponce, Mayagüez, Bayamón, Carolina. Rural interior depopulating. 78 municipalities (municipios). Coffee-growing mountain region rural
+  Infrastructure: Severely degraded. Power grid failed spectacularly during Maria (longest blackout in U.S. history). PREPA (power authority) bankrupt. Roads deteriorating. Water system aged. Luis Muñoz Marín Airport main gateway. Ports critical for imports (85% food imported). Telecom modernizing
+
+HISTORICAL:
+  Events: 2006-2012: Section 936 tax repeal leads to manufacturing exodus, recession begins, government deficit grows, austerity measures; 2013-2016: Debt crisis escalates, partial defaults, PROMESA Act (2016) federal oversight imposed, fiscal control board established; 2017: Hurricanes Irma and Maria (Sept) - 3,000+ deaths, total infrastructure collapse, $90B+ damage, massive exodus begins, grid destroyed; 2019-2023: Political crises (Governor Rosselló resigns July 2019), earthquakes (Jan 2020 southwest), COVID-19 pandemic, debt restructuring continues, Acts 20/22 controversy, slow recovery
+  Shocks: 2006 Section 936 loss triggered decade recession. 2015-2017 debt crisis, partial defaults. 2017 Hurricane Maria catastrophic ($90B damage). 2020 earthquakes, pandemic. Chronic fiscal crisis throughout period
+  Transitions: Manufacturing shifted from traditional (garment, electronics) to pharma/medical devices but employment declined. Tourism growing 2014-2017 then Maria crash, slow recovery. Cryptocurrency/tech interest (tax incentives). Renewable energy development increasing
+
+COMPARATIVE:
+  Benchmarks: Population 3.2M (larger than 20 states). GDP larger than many states but per capita income lowest in U.S. Poverty rate 43% (vs. MS 20%). High federal dependency. Labor force participation 40% (vs. U.S. 63%). Educational attainment below average
+  Peer States: Mississippi (poverty), Louisiana (hurricane impacts), Detroit (population loss, fiscal crisis), Greece (debt crisis comparison)
+  Unique: Territory status - vote but no electoral votes, no full congressional representation. Commonwealth debate. Spanish-speaking. Cultural identity separate from mainland. Section 936/Acts 20/22 tax dynamics. Hurricane vulnerability extreme. Debt crisis scale. Diaspora larger than island population. Baseball talent exporter
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Puerto Rico
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (5951 chars)
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10839 chars (~2709 tokens)
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [API] Total request: ~2971 tokens (system: ~2709, user: ~262)
+2025-12-19 02:08:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 02:08:47 [DEBUG] census_eda.ml: [API] Received response: 5623 chars
+2025-12-19 02:08:47 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5623 chars)
+2025-12-19 02:08:47 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-19 02:08:47 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-19 02:08:47 [INFO] census_eda.main: [REPORT] Generated: report_Puerto_Rico_housing_20251219_020847.txt
+2025-12-19 02:08:47 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for Puerto Rico!
+2025-12-19 02:08:49 [INFO] census_eda.memory: process_Puerto Rico_housing_1-year:EXIT: 12077.2MB (delta: -440.9MB)
+2025-12-19 02:08:51 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-19 02:08:52 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-19 02:08:56 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-19 02:08:58 [INFO] census_eda.memory: Cleared all caches

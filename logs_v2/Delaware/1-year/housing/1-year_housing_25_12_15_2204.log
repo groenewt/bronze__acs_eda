@@ -1,0 +1,1070 @@
+2025-12-15 22:04:47 [INFO] census_eda: Logging context set: state=Delaware, survey=housing, scope=1-year
+2025-12-15 22:04:47 [INFO] census_eda: Log file: ./logs/Delaware/1-year/housing/1-year_housing_25_12_15_2204.log
+2025-12-15 22:04:47 [INFO] census_eda.main: ======================================================================
+2025-12-15 22:04:47 [INFO] census_eda.main: [HOUSING] Processing Delaware (1-year)...
+2025-12-15 22:04:47 [INFO] census_eda.main: ======================================================================
+2025-12-15 22:04:47 [INFO] census_eda.memory: process_Delaware_housing_1-year:ENTER: 20221.2MB (delta: -173.7MB)
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/10/*/*.csv
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hde.csv
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,434 rows, 235 columns
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h10.csv
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,651 rows, 235 columns
+2025-12-15 22:04:47 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hde.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,490 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hde.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,449 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hde.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,136 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hde.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,203 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h10.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,767 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hde.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,172 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hde.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,582 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h10.csv
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,755 rows, 235 columns
+2025-12-15 22:04:48 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h10.csv
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,963 rows, 235 columns
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h10.csv
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,912 rows, 235 columns
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h10.csv
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,033 rows, 235 columns
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hde.csv
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,547 rows, 235 columns
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hde.csv
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,310 rows, 235 columns
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hde.csv
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,447 rows, 235 columns
+2025-12-15 22:04:49 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-15 22:04:50 [VERBOSE] census_eda.processing.loader: Combined into 72,851 total rows, 235 columns
+2025-12-15 22:04:50 [INFO] census_eda.main: Loaded 72,851 records
+2025-12-15 22:04:50 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 72851 valid, 16 unique
+2025-12-15 22:04:50 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-15 22:04:50 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-15 22:04:50 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-15 22:04:50 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-15 22:04:50 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-15 22:04:50 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-15 22:04:50 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-15 22:04:50 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-15 22:04:50 [DEBUG] census_eda.main: Feature engineering complete: (72851, 254)
+2025-12-15 22:04:50 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-15 22:04:50 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-15 22:05:00 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-15 22:05:00 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-15 22:05:00 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(72851, 254)
+2025-12-15 22:05:00 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-15 22:05:00 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 72851
+2025-12-15 22:05:00 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(72851, 254)
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(4136), np.int64(2008): np.int64(4172), np.int64(2009): np.int64(4203), np.int64(2010): np.int64(4310), np.int64(2011): np.int64(4447), np.int64(2012): np.int64(4434), np.int64(2013): np.int64(4449), np.int64(2014): np.int64(4490), np.int64(2015): np.int64(4547), np.int64(2016): np.int64(4582), np.int64(2017): np.int64(4651), np.int64(2018): np.int64(4767), np.int64(2019): np.int64(4755), np.int64(2021): np.int64(4912), np.int64(2022): np.int64(4963), np.int64(2023): np.int64(5033)}
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(72851, 254)
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 72851 non-null values (zeros excluded if needed)
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 17.00
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 64043 non-null values (zeros excluded if needed)
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 43883 non-null values (zeros excluded if needed)
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 35704 non-null values (zeros excluded if needed)
+2025-12-15 22:05:01 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3864000.00
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 58253 non-null values (zeros excluded if needed)
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3000.00
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 41575 non-null values (zeros excluded if needed)
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 5600.00
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 48517 non-null values (zeros excluded if needed)
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1700.00
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 58807 non-null values (zeros excluded if needed)
+2025-12-15 22:05:02 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 41979 non-null values (zeros excluded if needed)
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 9400.00
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 52642 non-null values (zeros excluded if needed)
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3900.00
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 2752 non-null values (zeros excluded if needed)
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 23500.00
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 28988 non-null values (zeros excluded if needed)
+2025-12-15 22:05:03 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-15 22:05:04 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-15 22:05:13 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-15 22:05:13 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-15 22:05:13 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-15 22:05:13 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-15 22:05:13 [DEBUG] census_eda.memory: Skipping sampling: 36620MB available (>16GB)
+2025-12-15 22:05:13 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 72851 rows
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(72851, 254)
+2025-12-15 22:05:24 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 72851 non-null values
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 17.00
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 51874 non-null values
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 8.00
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 51874 non-null values
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 22.00
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 64043 non-null values
+2025-12-15 22:05:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 43883 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 35704 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3864000.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 58807 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 2104 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 1600.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 58253 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3000.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 41575 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 5600.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 48517 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1700.00
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 58807 non-null values
+2025-12-15 22:05:25 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 41979 non-null values
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 9400.00
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 52642 non-null values
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3900.00
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 2752 non-null values
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 23500.00
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 28988 non-null values
+2025-12-15 22:05:26 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-15 22:05:27 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-15 22:05:31 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-15 22:05:35 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-15 22:05:39 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-15 22:05:47 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-15 22:05:47 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-15 22:05:47 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-15 22:05:47 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-15 22:05:48 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-15 22:05:48 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-15 22:05:49 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-15 22:05:49 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-15 22:05:49 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-15 22:05:49 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-15 22:05:49 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-15 22:05:50 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-15 22:05:50 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-15 22:05:50 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-15 22:05:51 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-15 22:05:51 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-15 22:05:52 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-15 22:05:52 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-15 22:05:52 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-15 22:05:52 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-15 22:05:53 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-15 22:05:54 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-15 22:05:54 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-15 22:05:54 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-15 22:05:55 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-15 22:05:55 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-15 22:05:55 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-15 22:05:55 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-15 22:05:56 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-15 22:05:56 [DEBUG] census_eda.memory: Skipping sampling: 36669MB available (>16GB)
+2025-12-15 22:05:58 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-15 22:05:58 [DEBUG] census_eda.memory: Skipping sampling: 36670MB available (>16GB)
+2025-12-15 22:06:02 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-15 22:06:02 [DEBUG] census_eda.memory: Skipping sampling: 36663MB available (>16GB)
+2025-12-15 22:06:04 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-15 22:06:06 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-15 22:06:07 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-15 22:06:07 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Delaware/housing/1-year/figures
+2025-12-15 22:06:07 [DEBUG] census_eda.memory: Skipping sampling: 36661MB available (>16GB)
+2025-12-15 22:06:07 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-15 22:06:07 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-15 22:06:07 [INFO] census_eda.memory: [ML-START]: 20220.7MB (delta: -0.5MB)
+2025-12-15 22:06:07 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-15 22:06:07 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-15 22:06:07 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 26423 samples (was 26423)
+2025-12-15 22:06:07 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-15 22:06:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 22:06:07 [INFO] census_eda.ml.regression: [TUNE] Data: 26,423 samples, 10 features
+2025-12-15 22:06:07 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1262
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 22:06:09 [INFO] census_eda.ml.regression: [TUNE] Data: 26,423 samples, 10 features
+2025-12-15 22:06:09 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1262
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 22:06:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 22:06:09 [INFO] census_eda.ml.regression: [TUNE] Data: 26,423 samples, 10 features
+2025-12-15 22:06:09 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 22:06:34 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 22:06:34 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1312
+2025-12-15 22:06:34 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 22:06:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 22:06:36 [INFO] census_eda.ml.regression: [TUNE] Data: 26,423 samples, 10 features
+2025-12-15 22:06:36 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 22:06:51 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-15 22:06:51 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1777
+2025-12-15 22:06:51 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 22:06:56 [INFO] census_eda.memory: [SHAP] Safe sample size: 5,285 -> 1,000
+2025-12-15 22:06:56 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 5,285 -> 1,000
+2025-12-15 22:06:56 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 20224.7MB (delta: +4.0MB)
+2025-12-15 22:06:56 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-15 22:06:57 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 20224.7MB (delta: +0.0MB)
+2025-12-15 22:06:57 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Number_of_Bedrooms
+2025-12-15 22:06:57 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-15 22:06:57 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-15 22:06:57 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 7105 samples (was 7105)
+2025-12-15 22:06:57 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-15 22:06:57 [INFO] census_eda.ml.regression: [TUNE] Data: 7,105 samples, 10 features
+2025-12-15 22:06:57 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 10.0}
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1984
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-15 22:06:57 [INFO] census_eda.ml.regression: [TUNE] Data: 7,105 samples, 10 features
+2025-12-15 22:06:57 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 1.0}
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1987
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-15 22:06:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-15 22:06:57 [INFO] census_eda.ml.regression: [TUNE] Data: 7,105 samples, 10 features
+2025-12-15 22:06:57 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 22:07:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-15 22:07:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2285
+2025-12-15 22:07:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 22:07:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-15 22:07:06 [INFO] census_eda.ml.regression: [TUNE] Data: 7,105 samples, 10 features
+2025-12-15 22:07:06 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-15 22:07:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-15 22:07:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2631
+2025-12-15 22:07:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-15 22:07:12 [INFO] census_eda.memory: [SHAP] Safe sample size: 1,421 -> 1,000
+2025-12-15 22:07:12 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 1,421 -> 1,000
+2025-12-15 22:07:12 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 20224.8MB (delta: +0.1MB)
+2025-12-15 22:07:12 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-15 22:07:12 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 20224.8MB (delta: +0.0MB)
+2025-12-15 22:07:12 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-15 22:07:12 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-15 22:07:12 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-15 22:07:12 [INFO] census_eda.memory: [PRE-CLUSTERING]: 20224.8MB (delta: +0.0MB)
+2025-12-15 22:07:12 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-15 22:07:12 [INFO] census_eda.main: [CLUSTERING] KMeans on 38,749 samples...
+2025-12-15 22:07:21 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-15 22:07:21 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 38,749 samples (will sample if needed)...
+2025-12-15 22:07:21 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 38,749 -> 15,000 (distance matrix would be 11.2GB)
+2025-12-15 22:07:21 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 38,749 -> 15,000 for O(n²) distance matrix
+2025-12-15 22:07:26 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-15 22:07:26 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-15 22:07:26 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-15 22:07:26 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-15 22:07:26 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-15 22:07:26 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 503590.822265625, 2025: 575035.3388671875, 2026: 662877.6611328125}, Values: [503590.822265625, 575035.3388671875, 662877.6611328125]
+2025-12-15 22:07:26 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-15 22:07:26 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 1571.2706899642944, 2025: 1696.172477722168, 2026: 1840.140097618103}, Values: [1571.2706899642944, 1696.172477722168, 1840.140097618103]
+2025-12-15 22:07:26 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-15 22:07:31 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-15 22:07:36 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-15 22:07:38 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 38749.
+2025-12-15 22:07:38 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-15 22:07:38 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-15 22:07:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 464284.3857726753, 2025: 486315.345773004, 2026: 508346.3057733327}, values=[464284.3857726753, 486315.345773004, 508346.3057733327], CI_lower=[386964.3377428402, 408995.2977431689, 431026.2577434976], CI_upper=[541604.4338025104, 563635.3938028391, 585666.3538031678]
+2025-12-15 22:07:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [464284.3857726753, 486315.345773004, 508346.3057733327], CI_lower: [386964.3377428402, 408995.2977431689, 431026.2577434976], CI_upper: [541604.4338025104, 563635.3938028391, 585666.3538031678]
+2025-12-15 22:07:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 386964.3377428402, 408995.2977431689, 431026.2577434976], upper=[np.float64(433046.77230046946), 541604.4338025104, 563635.3938028391, 585666.3538031678]
+2025-12-15 22:07:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 408530.86166858673, 2025: 411064.81732463837, 2026: 411418.9207019806}, values=[408530.86166858673, 411064.81732463837, 411418.9207019806], CI_lower=[349473.47102176666, 352007.4266778183, 352361.5300551605], CI_upper=[467588.2523154068, 470122.20797145844, 470476.31134880066]
+2025-12-15 22:07:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [408530.86166858673, 411064.81732463837, 411418.9207019806], CI_lower: [349473.47102176666, 352007.4266778183, 352361.5300551605], CI_upper: [467588.2523154068, 470122.20797145844, 470476.31134880066]
+2025-12-15 22:07:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 349473.47102176666, 352007.4266778183, 352361.5300551605], upper=[np.float64(433046.77230046946), 467588.2523154068, 470122.20797145844, 470476.31134880066]
+2025-12-15 22:07:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 503590.822265625, 2025: 575035.3388671875, 2026: 662877.6611328125}, values=[503590.822265625, 575035.3388671875, 662877.6611328125], CI_lower=[481475.68264128966, 552920.1992428522, 640762.5215084772], CI_upper=[525705.9618899603, 597150.4784915228, 684992.8007571478]
+2025-12-15 22:07:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [503590.822265625, 575035.3388671875, 662877.6611328125], CI_lower: [481475.68264128966, 552920.1992428522, 640762.5215084772], CI_upper: [525705.9618899603, 597150.4784915228, 684992.8007571478]
+2025-12-15 22:07:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 481475.68264128966, 552920.1992428522, 640762.5215084772], upper=[np.float64(433046.77230046946), 525705.9618899603, 597150.4784915228, 684992.8007571478]
+2025-12-15 22:07:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 406313.38609955827, 2025: 406313.38609955827, 2026: 406313.38609955827}, values=[406313.38609955827, 406313.38609955827, 406313.38609955827], CI_lower=[278442.05037818477, 278442.05037818477, 278442.05037818477], CI_upper=[534184.7218209318, 534184.7218209318, 534184.7218209318]
+2025-12-15 22:07:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [406313.38609955827, 406313.38609955827, 406313.38609955827], CI_lower: [278442.05037818477, 278442.05037818477, 278442.05037818477], CI_upper: [534184.7218209318, 534184.7218209318, 534184.7218209318]
+2025-12-15 22:07:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 278442.05037818477, 278442.05037818477, 278442.05037818477], upper=[np.float64(433046.77230046946), 534184.7218209318, 534184.7218209318, 534184.7218209318]
+2025-12-15 22:07:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 372448.0003843951, 2025: 372448.0003843951, 2026: 372448.0003843951}, values=[372448.0003843951, 372448.0003843951, 372448.0003843951], CI_lower=[281063.3498429176, 281063.3498429176, 281063.3498429176], CI_upper=[463832.6509258727, 463832.6509258727, 463832.6509258727]
+2025-12-15 22:07:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [372448.0003843951, 372448.0003843951, 372448.0003843951], CI_lower: [281063.3498429176, 281063.3498429176, 281063.3498429176], CI_upper: [463832.6509258727, 463832.6509258727, 463832.6509258727]
+2025-12-15 22:07:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 281063.3498429176, 281063.3498429176, 281063.3498429176], upper=[np.float64(433046.77230046946), 463832.6509258727, 463832.6509258727, 463832.6509258727]
+2025-12-15 22:07:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 418751.3843457028, 2025: 418751.3843457028, 2026: 418751.3843457028}, values=[418751.3843457028, 418751.3843457028, 418751.3843457028], CI_lower=[284176.2716679946, 284176.2716679946, 284176.2716679946], CI_upper=[553326.4970234111, 553326.4970234111, 553326.4970234111]
+2025-12-15 22:07:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [418751.3843457028, 418751.3843457028, 418751.3843457028], CI_lower: [284176.2716679946, 284176.2716679946, 284176.2716679946], CI_upper: [553326.4970234111, 553326.4970234111, 553326.4970234111]
+2025-12-15 22:07:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 284176.2716679946, 284176.2716679946, 284176.2716679946], upper=[np.float64(433046.77230046946), 553326.4970234111, 553326.4970234111, 553326.4970234111]
+2025-12-15 22:07:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 439620.7272163287, 2025: 433580.60332408414, 2026: 439130.2453737506}, values=[439620.7272163287, 433580.60332408414, 439130.2453737506], CI_lower=[299367.5048391663, 293327.38094692177, 298877.02299658814], CI_upper=[579873.9495934912, 573833.8257012465, 579383.467750913]
+2025-12-15 22:07:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [439620.7272163287, 433580.60332408414, 439130.2453737506], CI_lower: [299367.5048391663, 293327.38094692177, 298877.02299658814], CI_upper: [579873.9495934912, 573833.8257012465, 579383.467750913]
+2025-12-15 22:07:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 299367.5048391663, 293327.38094692177, 298877.02299658814], upper=[np.float64(433046.77230046946), 579873.9495934912, 573833.8257012465, 579383.467750913]
+2025-12-15 22:07:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 459647.36958085524, 2025: 484524.242357333, 2026: 509401.11513381073}, values=[459647.36958085524, 484524.242357333, 509401.11513381073], CI_lower=[345997.8572992693, 370874.7300757471, 395751.60285222484], CI_upper=[573296.8818624412, 598173.7546389189, 623050.6274153966]
+2025-12-15 22:07:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [459647.36958085524, 484524.242357333, 509401.11513381073], CI_lower: [345997.8572992693, 370874.7300757471, 395751.60285222484], CI_upper: [573296.8818624412, 598173.7546389189, 623050.6274153966]
+2025-12-15 22:07:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(433046.77230046946), 345997.8572992693, 370874.7300757471, 395751.60285222484], upper=[np.float64(433046.77230046946), 573296.8818624412, 598173.7546389189, 623050.6274153966]
+2025-12-15 22:07:44 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-15 22:07:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 1369.564034013958, 2025: 1398.077009047156, 2026: 1426.589984080354}, values=[1369.564034013958, 1398.077009047156, 1426.589984080354], CI_lower=[1261.2383351673125, 1289.7513102005105, 1318.2642852337085], CI_upper=[1477.8897328606035, 1506.4027078938016, 1534.9156829269996]
+2025-12-15 22:07:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1369.564034013958, 1398.077009047156, 1426.589984080354], CI_lower: [1261.2383351673125, 1289.7513102005105, 1318.2642852337085], CI_upper: [1477.8897328606035, 1506.4027078938016, 1534.9156829269996]
+2025-12-15 22:07:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1261.2383351673125, 1289.7513102005105, 1318.2642852337085], upper=[np.float64(1489.9176788124157), 1477.8897328606035, 1506.4027078938016, 1534.9156829269996]
+2025-12-15 22:07:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 1491.2308436315507, 2025: 1560.1927589643747, 2026: 1633.4093386903405}, values=[1491.2308436315507, 1560.1927589643747, 1633.4093386903405], CI_lower=[1433.6764968084099, 1502.6384121412339, 1575.8549918671997], CI_upper=[1548.7851904546915, 1617.7471057875155, 1690.9636855134813]
+2025-12-15 22:07:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1491.2308436315507, 1560.1927589643747, 1633.4093386903405], CI_lower: [1433.6764968084099, 1502.6384121412339, 1575.8549918671997], CI_upper: [1548.7851904546915, 1617.7471057875155, 1690.9636855134813]
+2025-12-15 22:07:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1433.6764968084099, 1502.6384121412339, 1575.8549918671997], upper=[np.float64(1489.9176788124157), 1548.7851904546915, 1617.7471057875155, 1690.9636855134813]
+2025-12-15 22:07:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 1571.2706899642944, 2025: 1696.172477722168, 2026: 1840.140097618103}, values=[1571.2706899642944, 1696.172477722168, 1840.140097618103], CI_lower=[1533.8017375785414, 1658.703525336415, 1802.67114523235], CI_upper=[1608.7396423500475, 1733.641430107921, 1877.609050003856]
+2025-12-15 22:07:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1571.2706899642944, 1696.172477722168, 1840.140097618103], CI_lower: [1533.8017375785414, 1658.703525336415, 1802.67114523235], CI_upper: [1608.7396423500475, 1733.641430107921, 1877.609050003856]
+2025-12-15 22:07:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1533.8017375785414, 1658.703525336415, 1802.67114523235], upper=[np.float64(1489.9176788124157), 1608.7396423500475, 1733.641430107921, 1877.609050003856]
+2025-12-15 22:07:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 1374.0581205563046, 2025: 1374.0581205563046, 2026: 1374.0581205563046}, values=[1374.0581205563046, 1374.0581205563046, 1374.0581205563046], CI_lower=[1299.5539212986569, 1299.5539212986569, 1299.5539212986569], CI_upper=[1448.5623198139524, 1448.5623198139524, 1448.5623198139524]
+2025-12-15 22:07:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1374.0581205563046, 1374.0581205563046, 1374.0581205563046], CI_lower: [1299.5539212986569, 1299.5539212986569, 1299.5539212986569], CI_upper: [1448.5623198139524, 1448.5623198139524, 1448.5623198139524]
+2025-12-15 22:07:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1299.5539212986569, 1299.5539212986569, 1299.5539212986569], upper=[np.float64(1489.9176788124157), 1448.5623198139524, 1448.5623198139524, 1448.5623198139524]
+2025-12-15 22:07:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 1301.29271367105, 2025: 1301.29271367105, 2026: 1301.29271367105}, values=[1301.29271367105, 1301.29271367105, 1301.29271367105], CI_lower=[1206.1926054015398, 1206.1926054015398, 1206.1926054015398], CI_upper=[1396.3928219405602, 1396.3928219405602, 1396.3928219405602]
+2025-12-15 22:07:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1301.29271367105, 1301.29271367105, 1301.29271367105], CI_lower: [1206.1926054015398, 1206.1926054015398, 1206.1926054015398], CI_upper: [1396.3928219405602, 1396.3928219405602, 1396.3928219405602]
+2025-12-15 22:07:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1206.1926054015398, 1206.1926054015398, 1206.1926054015398], upper=[np.float64(1489.9176788124157), 1396.3928219405602, 1396.3928219405602, 1396.3928219405602]
+2025-12-15 22:07:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 1409.1168261873438, 2025: 1409.1168261873438, 2026: 1409.1168261873438}, values=[1409.1168261873438, 1409.1168261873438, 1409.1168261873438], CI_lower=[1349.1990921746678, 1349.1990921746678, 1349.1990921746678], CI_upper=[1469.0345602000198, 1469.0345602000198, 1469.0345602000198]
+2025-12-15 22:07:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1409.1168261873438, 1409.1168261873438, 1409.1168261873438], CI_lower: [1349.1990921746678, 1349.1990921746678, 1349.1990921746678], CI_upper: [1469.0345602000198, 1469.0345602000198, 1469.0345602000198]
+2025-12-15 22:07:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1349.1990921746678, 1349.1990921746678, 1349.1990921746678], upper=[np.float64(1489.9176788124157), 1469.0345602000198, 1469.0345602000198, 1469.0345602000198]
+2025-12-15 22:07:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 1572.35326336493, 2025: 1650.9408003160956, 2026: 1725.8599144047027}, values=[1572.35326336493, 1650.9408003160956, 1725.8599144047027], CI_lower=[1132.9008637762413, 1211.488400727407, 1286.407514816014], CI_upper=[2011.8056629536186, 2090.3931999047845, 2165.3123139933914]
+2025-12-15 22:07:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1572.35326336493, 1650.9408003160956, 1725.8599144047027], CI_lower: [1132.9008637762413, 1211.488400727407, 1286.407514816014], CI_upper: [2011.8056629536186, 2090.3931999047845, 2165.3123139933914]
+2025-12-15 22:07:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1132.9008637762413, 1211.488400727407, 1286.407514816014], upper=[np.float64(1489.9176788124157), 2011.8056629536186, 2090.3931999047845, 2165.3123139933914]
+2025-12-15 22:07:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 1591.7580800583844, 2025: 1709.19296561097, 2026: 1826.6278511635555}, values=[1591.7580800583844, 1709.19296561097, 1826.6278511635555], CI_lower=[1516.9217936629464, 1634.356679215532, 1751.7915647681175], CI_upper=[1666.5943664538224, 1784.0292520064081, 1901.4641375589936]
+2025-12-15 22:07:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1591.7580800583844, 1709.19296561097, 1826.6278511635555], CI_lower: [1516.9217936629464, 1634.356679215532, 1751.7915647681175], CI_upper: [1666.5943664538224, 1784.0292520064081, 1901.4641375589936]
+2025-12-15 22:07:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1489.9176788124157), 1516.9217936629464, 1634.356679215532, 1751.7915647681175], upper=[np.float64(1489.9176788124157), 1666.5943664538224, 1784.0292520064081, 1901.4641375589936]
+2025-12-15 22:07:50 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-15 22:07:50 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-15 22:08:12 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 45763.484375, 'mse': 25766610944.0, 'rmse': 160519.814801787, 'r2': -0.684962809085846}
+2025-12-15 22:08:12 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-15 22:08:29 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 6.908525466918945, 'mse': 209.1846466064453, 'rmse': 14.463217021342288, 'r2': 0.04899781942367554}
+2025-12-15 22:08:29 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-15 22:08:46 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 1.5669008493423462, 'mse': 14.66878604888916, 'rmse': 3.829985123846979, 'r2': 0.8450620770454407}
+2025-12-15 22:08:47 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-15 22:09:03 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 176.2938690185547, 'mse': 241147.78125, 'rmse': 491.06800063738626, 'r2': 0.2800918519496918}
+2025-12-15 22:09:04 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-15 22:09:21 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.30446913838386536, 'mse': 0.3153434097766876, 'rmse': 0.5615544584247263, 'r2': 0.22227421402931213}
+2025-12-15 22:09:21 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-15 22:09:37 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Delaware/housing/1-year/figures/ml/deep_learning
+2025-12-15 22:09:37 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-15 22:09:37 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-15 22:09:37 [DEBUG] census_eda.main:  Running LLM analysis for state: Delaware
+2025-12-15 22:09:37 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-15 22:09:37 [INFO] census_eda.ml: [LLM] State context loaded: Delaware
+2025-12-15 22:09:37 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [API] Total request: ~2069 tokens (system: ~1887, user: ~182)
+2025-12-15 22:09:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [API] Received response: 3648 chars
+2025-12-15 22:09:48 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3648 chars)
+2025-12-15 22:09:48 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [LLM] User prompt: 1258 chars (~314 tokens)
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [API] Total request: ~2201 tokens (system: ~1887, user: ~314)
+2025-12-15 22:09:48 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [API] Received response: 3398 chars
+2025-12-15 22:09:57 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3398 chars)
+2025-12-15 22:09:57 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [LLM] User prompt: 1689 chars (~422 tokens)
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [API] Total request: ~2309 tokens (system: ~1887, user: ~422)
+2025-12-15 22:09:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [API] Received response: 3851 chars
+2025-12-15 22:10:07 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3851 chars)
+2025-12-15 22:10:07 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [LLM] User prompt: 1473 chars (~368 tokens)
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [API] Total request: ~2255 tokens (system: ~1887, user: ~368)
+2025-12-15 22:10:07 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [API] Received response: 4629 chars
+2025-12-15 22:10:22 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4629 chars)
+2025-12-15 22:10:22 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [API] Total request: ~1898 tokens (system: ~1887, user: ~11)
+2025-12-15 22:10:22 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [API] Received response: 6217 chars
+2025-12-15 22:10:39 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (6217 chars)
+2025-12-15 22:10:39 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [LLM] User prompt: 10979 chars (~2744 tokens)
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [API] Total request: ~4631 tokens (system: ~1887, user: ~2744)
+2025-12-15 22:10:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [API] Received response: 2947 chars
+2025-12-15 22:10:50 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (2947 chars)
+2025-12-15 22:10:50 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [LLM] User prompt: 6835 chars (~1708 tokens)
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [API] Total request: ~3595 tokens (system: ~1887, user: ~1708)
+2025-12-15 22:10:50 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [API] Received response: 2842 chars
+2025-12-15 22:10:59 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (2842 chars)
+2025-12-15 22:10:59 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [LLM] User prompt: 756 chars (~189 tokens)
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [API] Total request: ~2076 tokens (system: ~1887, user: ~189)
+2025-12-15 22:10:59 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [API] Received response: 3800 chars
+2025-12-15 22:11:11 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3800 chars)
+2025-12-15 22:11:11 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [LLM] User prompt: 6350 chars (~1587 tokens)
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [API] Total request: ~3474 tokens (system: ~1887, user: ~1587)
+2025-12-15 22:11:11 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [API] Received response: 3682 chars
+2025-12-15 22:11:22 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3682 chars)
+2025-12-15 22:11:22 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [LLM] User prompt: 2534 chars (~633 tokens)
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [API] Total request: ~2520 tokens (system: ~1887, user: ~633)
+2025-12-15 22:11:22 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [API] Received response: 3857 chars
+2025-12-15 22:11:33 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3857 chars)
+2025-12-15 22:11:33 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [LLM] User prompt: 1046 chars (~261 tokens)
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Delaware
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Delaware
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 2661 chars
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~665
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Delaware
+
+ECONOMIC PROFILE:
+  Industries: Financial services (credit cards, banking), Chemical manufacturing (DuPont legacy), Corporate headquarters/incorporation, Healthcare and pharmaceuticals, Agriculture (poultry)
+  Trends: Steady moderate growth 2011-2023. Corporate-friendly laws maintain incorporation revenue. Chemical industry transformation post-DuPont breakup. Financial services stable
+  Income: High median household income ($86,340). Benefits from proximity to major metros and corporate activity
+  Dominant Sector: Financial activities
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth averaging 1.1% annually. Growth driven by proximity to Philadelphia, Baltimore, DC metros
+  Migration: In-migration from higher-cost northeastern areas. Retirees from NY, NJ, PA. Growing immigrant population
+  Education: Above average educational attainment. University of Delaware provides educated workforce
+
+HOUSING MARKET:
+  Market: Expensive housing influenced by proximity to major metros. Median home price ~$360k. Wide variation by county
+  Affordability: Housing costs rose steadily 2011-2023. More affordable than nearby metros but still challenging
+  Challenges: Rising costs due to metro proximity, Limited land availability, Seasonal market fluctuations
+
+POLITY:
+  Policy: Business-friendly incorporation laws. Moderate Democratic control. Balanced approach to regulation
+  Housing: Limited state intervention. Local control predominates. Some affordable housing initiatives
+  Labor: Moderate approach. Gradual minimum wage increases. Balance between business and worker interests
+
+REGIONAL:
+  Geography: Small coastal state. Atlantic Ocean coastline. Low elevation. Part of Delmarva Peninsula
+  Urban/Rural: 84% urban in northern New Castle County. Rural areas in Kent and Sussex counties
+  Infrastructure: I-95 corridor critical. Amtrak service. Port of Wilmington for trade
+
+HISTORICAL:
+  Events: 2011-2013: Post-recession recovery, DuPont restructuring begins; 2014-2016: Corporate law updates, renewable energy initiatives; 2017-2019: DuPont-Dow merger and subsequent breakup affects state; 2021-2023: Pandemic recovery strong, continued growth pressures
+  Shocks: DuPont transformation major change but not catastrophic due to diversification
+  Transitions: Chemical industry evolution post-DuPont. Financial services growth. Tourism expansion
+
+COMPARATIVE:
+  Benchmarks: High income for size. Corporate incorporation unique. Above average growth for region
+  Peer States: Rhode Island, New Hampshire (small states)
+  Unique: Corporate incorporation haven, DuPont legacy, proximity to major metros, small size advantages
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Delaware
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [PROMPT] State context injected (2661 chars)
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 7549 chars (~1887 tokens)
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [API] Total request: ~2148 tokens (system: ~1887, user: ~261)
+2025-12-15 22:11:33 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-15 22:11:49 [DEBUG] census_eda.ml: [API] Received response: 5784 chars
+2025-12-15 22:11:49 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5784 chars)
+2025-12-15 22:11:49 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-15 22:11:49 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-15 22:11:49 [INFO] census_eda.main: [REPORT] Generated: report_Delaware_housing_20251215_221149.txt
+2025-12-15 22:11:49 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for Delaware!
+2025-12-15 22:11:49 [INFO] census_eda.memory: process_Delaware_housing_1-year:EXIT: 6883.7MB (delta: -13341.1MB)
+2025-12-15 22:11:49 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-15 22:11:50 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-15 22:11:50 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-15 22:11:50 [INFO] census_eda.memory: Cleared all caches

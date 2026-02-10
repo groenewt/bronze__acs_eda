@@ -1,0 +1,1092 @@
+2025-12-19 00:28:18 [INFO] census_eda: Logging context set: state=Wisconsin, survey=housing, scope=1-year
+2025-12-19 00:28:18 [INFO] census_eda: Log file: ./logs/Wisconsin/1-year/housing/1-year_housing_25_12_19_0028.log
+2025-12-19 00:28:18 [INFO] census_eda.main: ======================================================================
+2025-12-19 00:28:18 [INFO] census_eda.main: [HOUSING] Processing Wisconsin (1-year)...
+2025-12-19 00:28:18 [INFO] census_eda.main: ======================================================================
+2025-12-19 00:28:18 [INFO] census_eda.memory: process_Wisconsin_housing_1-year:ENTER: 12357.0MB (delta: +0.0MB)
+2025-12-19 00:28:18 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-19 00:28:18 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/55/*/*.csv
+2025-12-19 00:28:18 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-19 00:28:18 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hwi.csv
+2025-12-19 00:28:19 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-19 00:28:19 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,167 rows, 235 columns
+2025-12-19 00:28:19 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h55.csv
+2025-12-19 00:28:19 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-19 00:28:19 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,646 rows, 235 columns
+2025-12-19 00:28:19 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hwi.csv
+2025-12-19 00:28:20 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-19 00:28:20 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,161 rows, 235 columns
+2025-12-19 00:28:20 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hwi.csv
+2025-12-19 00:28:21 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-19 00:28:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,023 rows, 235 columns
+2025-12-19 00:28:21 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hwi.csv
+2025-12-19 00:28:21 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-19 00:28:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,200 rows, 235 columns
+2025-12-19 00:28:21 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hwi.csv
+2025-12-19 00:28:22 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-19 00:28:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,533 rows, 235 columns
+2025-12-19 00:28:22 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h55.csv
+2025-12-19 00:28:22 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-19 00:28:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,863 rows, 235 columns
+2025-12-19 00:28:22 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hwi.csv
+2025-12-19 00:28:23 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-19 00:28:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,327 rows, 235 columns
+2025-12-19 00:28:23 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hwi.csv
+2025-12-19 00:28:24 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-19 00:28:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,340 rows, 235 columns
+2025-12-19 00:28:24 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h55.csv
+2025-12-19 00:28:24 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-19 00:28:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 30,028 rows, 235 columns
+2025-12-19 00:28:24 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h55.csv
+2025-12-19 00:28:25 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-19 00:28:25 [VERBOSE] census_eda.processing.loader:   -> Loaded 31,210 rows, 235 columns
+2025-12-19 00:28:25 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h55.csv
+2025-12-19 00:28:25 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-19 00:28:25 [VERBOSE] census_eda.processing.loader:   -> Loaded 30,139 rows, 235 columns
+2025-12-19 00:28:25 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h55.csv
+2025-12-19 00:28:26 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-19 00:28:26 [VERBOSE] census_eda.processing.loader:   -> Loaded 31,308 rows, 235 columns
+2025-12-19 00:28:26 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hwi.csv
+2025-12-19 00:28:27 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-19 00:28:27 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,300 rows, 235 columns
+2025-12-19 00:28:27 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hwi.csv
+2025-12-19 00:28:27 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-19 00:28:27 [VERBOSE] census_eda.processing.loader:   -> Loaded 27,759 rows, 235 columns
+2025-12-19 00:28:27 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hwi.csv
+2025-12-19 00:28:28 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-19 00:28:28 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,510 rows, 235 columns
+2025-12-19 00:28:28 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-19 00:28:31 [VERBOSE] census_eda.processing.loader: Combined into 467,514 total rows, 235 columns
+2025-12-19 00:28:31 [INFO] census_eda.main: Loaded 467,514 records
+2025-12-19 00:28:31 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 467514 valid, 16 unique
+2025-12-19 00:28:32 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-19 00:28:32 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-19 00:28:32 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-19 00:28:32 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-19 00:28:33 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-19 00:28:33 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-19 00:28:33 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-19 00:28:33 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-19 00:28:33 [DEBUG] census_eda.main: Feature engineering complete: (467514, 254)
+2025-12-19 00:28:35 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-19 00:28:35 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-19 00:29:33 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-19 00:29:33 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-19 00:29:33 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(467514, 254)
+2025-12-19 00:29:33 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-19 00:29:33 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 467514
+2025-12-19 00:29:33 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-19 00:29:35 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(467514, 254)
+2025-12-19 00:29:35 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(27200), np.int64(2008): np.int64(27327), np.int64(2009): np.int64(27533), np.int64(2010): np.int64(27759), np.int64(2011): np.int64(29510), np.int64(2012): np.int64(29167), np.int64(2013): np.int64(29023), np.int64(2014): np.int64(29161), np.int64(2015): np.int64(29300), np.int64(2016): np.int64(29340), np.int64(2017): np.int64(29646), np.int64(2018): np.int64(29863), np.int64(2019): np.int64(30028), np.int64(2021): np.int64(30139), np.int64(2022): np.int64(31210), np.int64(2023): np.int64(31308)}
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(467514, 254)
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 467514 non-null values (zeros excluded if needed)
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 20.00
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 400963 non-null values (zeros excluded if needed)
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 270464 non-null values (zeros excluded if needed)
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-19 00:29:37 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-19 00:29:38 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 229298 non-null values (zeros excluded if needed)
+2025-12-19 00:29:38 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2919000.00
+2025-12-19 00:29:41 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-19 00:29:41 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 379981 non-null values (zeros excluded if needed)
+2025-12-19 00:29:41 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2800.00
+2025-12-19 00:29:41 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 275042 non-null values (zeros excluded if needed)
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 5700.00
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 332274 non-null values (zeros excluded if needed)
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1900.00
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 384363 non-null values (zeros excluded if needed)
+2025-12-19 00:29:42 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 263658 non-null values (zeros excluded if needed)
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 7000.00
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 316176 non-null values (zeros excluded if needed)
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3400.00
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 9095 non-null values (zeros excluded if needed)
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 28500.00
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 181095 non-null values (zeros excluded if needed)
+2025-12-19 00:29:47 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-19 00:29:53 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-19 00:30:30 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-19 00:30:30 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-19 00:30:30 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-19 00:30:32 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-19 00:30:32 [DEBUG] census_eda.memory: Skipping sampling: 35533MB available (>16GB)
+2025-12-19 00:30:32 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 467514 rows
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(467514, 254)
+2025-12-19 00:31:41 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 467514 non-null values
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 20.00
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 322391 non-null values
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 10.00
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 322391 non-null values
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 400963 non-null values
+2025-12-19 00:31:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 270464 non-null values
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 229298 non-null values
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2919000.00
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 384363 non-null values
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 8757 non-null values
+2025-12-19 00:31:44 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 1300.00
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 379981 non-null values
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2800.00
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 275042 non-null values
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 5700.00
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 332274 non-null values
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1900.00
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 384363 non-null values
+2025-12-19 00:31:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 263658 non-null values
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 7000.00
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 316176 non-null values
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3400.00
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 9095 non-null values
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 28500.00
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 181095 non-null values
+2025-12-19 00:31:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-19 00:31:55 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-19 00:32:12 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-19 00:32:38 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-19 00:32:57 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-19 00:33:32 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-19 00:33:32 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-19 00:33:32 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-19 00:33:33 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-19 00:33:35 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-19 00:33:37 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-19 00:33:40 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-19 00:33:40 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-19 00:33:40 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-19 00:33:42 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-19 00:33:44 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-19 00:33:45 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-19 00:33:47 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-19 00:33:49 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-19 00:33:51 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-19 00:33:53 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-19 00:33:57 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-19 00:33:57 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-19 00:33:57 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-19 00:33:58 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-19 00:34:00 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-19 00:34:03 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-19 00:34:04 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-19 00:34:06 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-19 00:34:10 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-19 00:34:10 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-19 00:34:10 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-19 00:34:11 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-19 00:34:15 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-19 00:34:15 [DEBUG] census_eda.memory: Skipping sampling: 35126MB available (>16GB)
+2025-12-19 00:34:26 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-19 00:34:26 [DEBUG] census_eda.memory: Skipping sampling: 35099MB available (>16GB)
+2025-12-19 00:34:47 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-19 00:34:47 [DEBUG] census_eda.memory: Skipping sampling: 35209MB available (>16GB)
+2025-12-19 00:34:56 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-19 00:35:06 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-19 00:35:08 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-19 00:35:10 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Wisconsin/housing/1-year/figures
+2025-12-19 00:35:11 [DEBUG] census_eda.memory: Skipping sampling: 35190MB available (>16GB)
+2025-12-19 00:35:11 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-19 00:35:11 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-19 00:35:11 [INFO] census_eda.memory: [ML-START]: 13923.1MB (delta: +1566.1MB)
+2025-12-19 00:35:11 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-19 00:35:11 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-19 00:35:11 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 170343 samples (was 170343)
+2025-12-19 00:35:11 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-19 00:35:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-19 00:35:12 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 170,343 -> 100,000 (25 total fits from 5 combos × 5 folds)
+2025-12-19 00:35:12 [INFO] census_eda.ml.regression: [TUNE] Data: 100,000 samples, 10 features
+2025-12-19 00:35:12 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:35:12 [INFO] census_eda.memory: tune_ridge:ENTER: 13923.1MB (delta: +0.0MB)
+2025-12-19 00:35:15 [INFO] census_eda.memory: tune_ridge:EXIT: 13923.5MB (delta: +0.4MB)
+2025-12-19 00:35:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 10.0}
+2025-12-19 00:35:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0990
+2025-12-19 00:35:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:35:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-19 00:35:15 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 170,343 -> 100,000 (25 total fits from 5 combos × 5 folds)
+2025-12-19 00:35:15 [INFO] census_eda.ml.regression: [TUNE] Data: 100,000 samples, 10 features
+2025-12-19 00:35:15 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:35:15 [INFO] census_eda.memory: tune_lasso:ENTER: 13923.5MB (delta: +0.0MB)
+2025-12-19 00:35:19 [INFO] census_eda.memory: tune_lasso:EXIT: 13923.5MB (delta: +0.0MB)
+2025-12-19 00:35:19 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-19 00:35:19 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1006
+2025-12-19 00:35:19 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:35:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-19 00:35:26 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 170,343 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 00:35:26 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 00:35:26 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:35:26 [INFO] census_eda.memory: tune_random_forest:ENTER: 13923.5MB (delta: +0.0MB)
+2025-12-19 00:35:58 [INFO] census_eda.memory: tune_random_forest:EXIT: 13924.3MB (delta: +0.8MB)
+2025-12-19 00:35:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-19 00:35:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0607
+2025-12-19 00:35:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:36:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-19 00:36:12 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 170,343 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 00:36:12 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 00:36:12 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:36:12 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 13991.9MB (delta: +67.6MB)
+2025-12-19 00:36:29 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:36:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-19 00:36:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1268
+2025-12-19 00:36:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:37:13 [INFO] census_eda.memory: [SHAP] Safe sample size: 34,069 -> 1,000
+2025-12-19 00:37:13 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 34,069 -> 1,000
+2025-12-19 00:37:13 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:37:13 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-19 00:37:15 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:37:15 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-19 00:37:15 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-19 00:37:15 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-19 00:37:15 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 43743 samples (was 43743)
+2025-12-19 00:37:15 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-19 00:37:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-19 00:37:15 [INFO] census_eda.ml.regression: [TUNE] Data: 43,743 samples, 10 features
+2025-12-19 00:37:15 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:37:15 [INFO] census_eda.memory: tune_ridge:ENTER: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:37:17 [INFO] census_eda.memory: tune_ridge:EXIT: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:37:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-19 00:37:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1249
+2025-12-19 00:37:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:37:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-19 00:37:17 [INFO] census_eda.ml.regression: [TUNE] Data: 43,743 samples, 10 features
+2025-12-19 00:37:17 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:37:17 [INFO] census_eda.memory: tune_lasso:ENTER: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:37:22 [INFO] census_eda.memory: tune_lasso:EXIT: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:37:22 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 1.0}
+2025-12-19 00:37:22 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1249
+2025-12-19 00:37:22 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:37:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-19 00:37:37 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 43,743 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 00:37:37 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 00:37:37 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:37:37 [INFO] census_eda.memory: tune_random_forest:ENTER: 13991.9MB (delta: +0.0MB)
+2025-12-19 00:38:11 [INFO] census_eda.memory: tune_random_forest:EXIT: 13992.0MB (delta: +0.0MB)
+2025-12-19 00:38:11 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-19 00:38:11 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2163
+2025-12-19 00:38:11 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:38:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-19 00:38:15 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 43,743 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 00:38:15 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 00:38:15 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:38:15 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 13992.0MB (delta: +0.0MB)
+2025-12-19 00:38:33 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 13992.0MB (delta: +0.0MB)
+2025-12-19 00:38:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-19 00:38:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2678
+2025-12-19 00:38:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:38:45 [INFO] census_eda.memory: [SHAP] Safe sample size: 8,749 -> 1,000
+2025-12-19 00:38:45 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 8,749 -> 1,000
+2025-12-19 00:38:45 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 13992.0MB (delta: +0.0MB)
+2025-12-19 00:38:45 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-19 00:38:47 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 13992.0MB (delta: +0.0MB)
+2025-12-19 00:38:47 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-19 00:38:47 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-19 00:38:47 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-19 00:38:47 [INFO] census_eda.memory: [PRE-CLUSTERING]: 13992.0MB (delta: +0.0MB)
+2025-12-19 00:38:47 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-19 00:38:47 [INFO] census_eda.main: [CLUSTERING] KMeans on 241,594 samples...
+2025-12-19 00:43:37 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-19 00:43:37 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 241,594 samples (will sample if needed)...
+2025-12-19 00:43:37 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 241,594 -> 15,000 (distance matrix would be 434.9GB)
+2025-12-19 00:43:37 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 241,594 -> 15,000 for O(n²) distance matrix
+2025-12-19 00:43:42 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-19 00:43:42 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-19 00:43:42 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-19 00:43:42 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-19 00:43:42 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-19 00:43:42 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 367705.31005859375, 2025: 423861.14892578125, 2026: 493055.35595703125}, Values: [367705.31005859375, 423861.14892578125, 493055.35595703125]
+2025-12-19 00:43:42 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-19 00:43:42 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 1189.487843990326, 2025: 1278.180163860321, 2026: 1380.0006804466248}, Values: [1189.487843990326, 1278.180163860321, 1380.0006804466248]
+2025-12-19 00:43:42 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-19 00:43:52 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-19 00:43:59 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-19 00:44:04 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 241594.
+2025-12-19 00:44:04 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-19 00:44:04 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-19 00:44:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 331781.7081581205, 2025: 347457.56557262316, 2026: 363133.42298712954}, values=[331781.7081581205, 347457.56557262316, 363133.42298712954], CI_lower=[275544.2619249174, 291220.11933942005, 306895.9767539264], CI_upper=[388019.1543913236, 403695.0118058263, 419370.86922033265]
+2025-12-19 00:44:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [331781.7081581205, 347457.56557262316, 363133.42298712954], CI_lower: [275544.2619249174, 291220.11933942005, 306895.9767539264], CI_upper: [388019.1543913236, 403695.0118058263, 419370.86922033265]
+2025-12-19 00:44:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 275544.2619249174, 291220.11933942005, 306895.9767539264], upper=[np.float64(315078.426124197), 388019.1543913236, 403695.0118058263, 419370.86922033265]
+2025-12-19 00:44:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 293237.6270251274, 2025: 295434.62137031555, 2026: 296124.61854457855}, values=[293237.6270251274, 295434.62137031555, 296124.61854457855], CI_lower=[248827.11798940357, 251024.11233459171, 251714.10950885472], CI_upper=[337648.1360608512, 339845.13040603936, 340535.12758030236]
+2025-12-19 00:44:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [293237.6270251274, 295434.62137031555, 296124.61854457855], CI_lower: [248827.11798940357, 251024.11233459171, 251714.10950885472], CI_upper: [337648.1360608512, 339845.13040603936, 340535.12758030236]
+2025-12-19 00:44:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 248827.11798940357, 251024.11233459171, 251714.10950885472], upper=[np.float64(315078.426124197), 337648.1360608512, 339845.13040603936, 340535.12758030236]
+2025-12-19 00:44:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 367705.31005859375, 2025: 423861.14892578125, 2026: 493055.35595703125}, values=[367705.31005859375, 423861.14892578125, 493055.35595703125], CI_lower=[356126.8277740472, 412282.6666412347, 481476.8736724847], CI_upper=[379283.7923431403, 435439.6312103278, 504633.8382415778]
+2025-12-19 00:44:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [367705.31005859375, 423861.14892578125, 493055.35595703125], CI_lower: [356126.8277740472, 412282.6666412347, 481476.8736724847], CI_upper: [379283.7923431403, 435439.6312103278, 504633.8382415778]
+2025-12-19 00:44:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 356126.8277740472, 412282.6666412347, 481476.8736724847], upper=[np.float64(315078.426124197), 379283.7923431403, 435439.6312103278, 504633.8382415778]
+2025-12-19 00:44:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 292410.5568198086, 2025: 292410.5568198086, 2026: 292410.5568198086}, values=[292410.5568198086, 292410.5568198086, 292410.5568198086], CI_lower=[199861.5895112768, 199861.5895112768, 199861.5895112768], CI_upper=[384959.5241283404, 384959.5241283404, 384959.5241283404]
+2025-12-19 00:44:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [292410.5568198086, 292410.5568198086, 292410.5568198086], CI_lower: [199861.5895112768, 199861.5895112768, 199861.5895112768], CI_upper: [384959.5241283404, 384959.5241283404, 384959.5241283404]
+2025-12-19 00:44:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 199861.5895112768, 199861.5895112768, 199861.5895112768], upper=[np.float64(315078.426124197), 384959.5241283404, 384959.5241283404, 384959.5241283404]
+2025-12-19 00:44:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 266938.4501616827, 2025: 266938.4501616827, 2026: 266938.4501616827}, values=[266938.4501616827, 266938.4501616827, 266938.4501616827], CI_lower=[200360.1897024063, 200360.1897024063, 200360.1897024063], CI_upper=[333516.71062095906, 333516.71062095906, 333516.71062095906]
+2025-12-19 00:44:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [266938.4501616827, 266938.4501616827, 266938.4501616827], CI_lower: [200360.1897024063, 200360.1897024063, 200360.1897024063], CI_upper: [333516.71062095906, 333516.71062095906, 333516.71062095906]
+2025-12-19 00:44:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 200360.1897024063, 200360.1897024063, 200360.1897024063], upper=[np.float64(315078.426124197), 333516.71062095906, 333516.71062095906, 333516.71062095906]
+2025-12-19 00:44:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 300724.8304073314, 2025: 300724.8304073314, 2026: 300724.8304073314}, values=[300724.8304073314, 300724.8304073314, 300724.8304073314], CI_lower=[203207.67929103153, 203207.67929103153, 203207.67929103153], CI_upper=[398241.98152363126, 398241.98152363126, 398241.98152363126]
+2025-12-19 00:44:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [300724.8304073314, 300724.8304073314, 300724.8304073314], CI_lower: [203207.67929103153, 203207.67929103153, 203207.67929103153], CI_upper: [398241.98152363126, 398241.98152363126, 398241.98152363126]
+2025-12-19 00:44:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 203207.67929103153, 203207.67929103153, 203207.67929103153], upper=[np.float64(315078.426124197), 398241.98152363126, 398241.98152363126, 398241.98152363126]
+2025-12-19 00:44:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 336694.3957425658, 2025: 358310.36536083, 2026: 379926.33497898956}, values=[336694.3957425658, 358310.36536083, 379926.33497898956], CI_lower=[219617.3310663732, 241233.3006846374, 262849.27030279697], CI_upper=[453771.4604187584, 475387.43003702257, 497003.39965518215]
+2025-12-19 00:44:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [336694.3957425658, 358310.36536083, 379926.33497898956], CI_lower: [219617.3310663732, 241233.3006846374, 262849.27030279697], CI_upper: [453771.4604187584, 475387.43003702257, 497003.39965518215]
+2025-12-19 00:44:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 219617.3310663732, 241233.3006846374, 262849.27030279697], upper=[np.float64(315078.426124197), 453771.4604187584, 475387.43003702257, 497003.39965518215]
+2025-12-19 00:44:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 328096.94096488605, 2025: 345745.9708764808, 2026: 363395.0007880756}, values=[328096.94096488605, 345745.9708764808, 363395.0007880756], CI_lower=[245606.89103533214, 263255.9209469269, 280904.95085852174], CI_upper=[410586.99089444, 428236.0208060347, 445885.0507176295]
+2025-12-19 00:44:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [328096.94096488605, 345745.9708764808, 363395.0007880756], CI_lower: [245606.89103533214, 263255.9209469269, 280904.95085852174], CI_upper: [410586.99089444, 428236.0208060347, 445885.0507176295]
+2025-12-19 00:44:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(315078.426124197), 245606.89103533214, 263255.9209469269, 280904.95085852174], upper=[np.float64(315078.426124197), 410586.99089444, 428236.0208060347, 445885.0507176295]
+2025-12-19 00:44:11 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-19 00:44:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 1051.8306385764881, 2025: 1074.454679843715, 2026: 1097.0787211109418}, values=[1051.8306385764881, 1074.454679843715, 1097.0787211109418], CI_lower=[979.4200916769895, 1002.0441329442164, 1024.668174211443], CI_upper=[1124.2411854759869, 1146.8652267432137, 1169.4892680104406]
+2025-12-19 00:44:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1051.8306385764881, 1074.454679843715, 1097.0787211109418], CI_lower: [979.4200916769895, 1002.0441329442164, 1024.668174211443], CI_upper: [1124.2411854759869, 1146.8652267432137, 1169.4892680104406]
+2025-12-19 00:44:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 979.4200916769895, 1002.0441329442164, 1024.668174211443], upper=[np.float64(1126.6387768103632), 1124.2411854759869, 1146.8652267432137, 1169.4892680104406]
+2025-12-19 00:44:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 1134.1062922161072, 2025: 1184.0834219148383, 2026: 1236.9377150312066}, values=[1134.1062922161072, 1184.0834219148383, 1236.9377150312066], CI_lower=[1096.7974177399294, 1146.7745474386604, 1199.6288405550288], CI_upper=[1171.415166692285, 1221.392296391016, 1274.2465895073844]
+2025-12-19 00:44:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1134.1062922161072, 1184.0834219148383, 1236.9377150312066], CI_lower: [1096.7974177399294, 1146.7745474386604, 1199.6288405550288], CI_upper: [1171.415166692285, 1221.392296391016, 1274.2465895073844]
+2025-12-19 00:44:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 1096.7974177399294, 1146.7745474386604, 1199.6288405550288], upper=[np.float64(1126.6387768103632), 1171.415166692285, 1221.392296391016, 1274.2465895073844]
+2025-12-19 00:44:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 1189.487843990326, 2025: 1278.180163860321, 2026: 1380.0006804466248}, values=[1189.487843990326, 1278.180163860321, 1380.0006804466248], CI_lower=[1167.6316617511616, 1256.3239816211567, 1358.1444982074604], CI_upper=[1211.3440262294903, 1300.0363460994854, 1401.856862685789]
+2025-12-19 00:44:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1189.487843990326, 1278.180163860321, 1380.0006804466248], CI_lower: [1167.6316617511616, 1256.3239816211567, 1358.1444982074604], CI_upper: [1211.3440262294903, 1300.0363460994854, 1401.856862685789]
+2025-12-19 00:44:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 1167.6316617511616, 1256.3239816211567, 1358.1444982074604], upper=[np.float64(1126.6387768103632), 1211.3440262294903, 1300.0363460994854, 1401.856862685789]
+2025-12-19 00:44:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 1046.3132016465527, 2025: 1046.3132016465527, 2026: 1046.3132016465527}, values=[1046.3132016465527, 1046.3132016465527, 1046.3132016465527], CI_lower=[995.9420354240066, 995.9420354240066, 995.9420354240066], CI_upper=[1096.6843678690987, 1096.6843678690987, 1096.6843678690987]
+2025-12-19 00:44:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1046.3132016465527, 1046.3132016465527, 1046.3132016465527], CI_lower: [995.9420354240066, 995.9420354240066, 995.9420354240066], CI_upper: [1096.6843678690987, 1096.6843678690987, 1096.6843678690987]
+2025-12-19 00:44:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 995.9420354240066, 995.9420354240066, 995.9420354240066], upper=[np.float64(1126.6387768103632), 1096.6843678690987, 1096.6843678690987, 1096.6843678690987]
+2025-12-19 00:44:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 993.7749014866822, 2025: 993.7749014866822, 2026: 993.7749014866822}, values=[993.7749014866822, 993.7749014866822, 993.7749014866822], CI_lower=[926.8702351147234, 926.8702351147234, 926.8702351147234], CI_upper=[1060.679567858641, 1060.679567858641, 1060.679567858641]
+2025-12-19 00:44:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [993.7749014866822, 993.7749014866822, 993.7749014866822], CI_lower: [926.8702351147234, 926.8702351147234, 926.8702351147234], CI_upper: [1060.679567858641, 1060.679567858641, 1060.679567858641]
+2025-12-19 00:44:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 926.8702351147234, 926.8702351147234, 926.8702351147234], upper=[np.float64(1126.6387768103632), 1060.679567858641, 1060.679567858641, 1060.679567858641]
+2025-12-19 00:44:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 1073.7637986058867, 2025: 1073.7637986058867, 2026: 1073.7637986058867}, values=[1073.7637986058867, 1073.7637986058867, 1073.7637986058867], CI_lower=[1035.1133828355871, 1035.1133828355871, 1035.1133828355871], CI_upper=[1112.4142143761862, 1112.4142143761862, 1112.4142143761862]
+2025-12-19 00:44:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1073.7637986058867, 1073.7637986058867, 1073.7637986058867], CI_lower: [1035.1133828355871, 1035.1133828355871, 1035.1133828355871], CI_upper: [1112.4142143761862, 1112.4142143761862, 1112.4142143761862]
+2025-12-19 00:44:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 1035.1133828355871, 1035.1133828355871, 1035.1133828355871], upper=[np.float64(1126.6387768103632), 1112.4142143761862, 1112.4142143761862, 1112.4142143761862]
+2025-12-19 00:44:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 1192.662970761018, 2025: 1251.0917906124691, 2026: 1302.7990025442778}, values=[1192.662970761018, 1251.0917906124691, 1302.7990025442778], CI_lower=[863.5495643000128, 921.978384151464, 973.6855960832726], CI_upper=[1521.7763772220233, 1580.2051970734742, 1631.9124090052828]
+2025-12-19 00:44:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1192.662970761018, 1251.0917906124691, 1302.7990025442778], CI_lower: [863.5495643000128, 921.978384151464, 973.6855960832726], CI_upper: [1521.7763772220233, 1580.2051970734742, 1631.9124090052828]
+2025-12-19 00:44:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 863.5495643000128, 921.978384151464, 973.6855960832726], upper=[np.float64(1126.6387768103632), 1521.7763772220233, 1580.2051970734742, 1631.9124090052828]
+2025-12-19 00:44:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 1202.9119215150379, 2025: 1279.185066038555, 2026: 1355.458210562072}, values=[1202.9119215150379, 1279.185066038555, 1355.458210562072], CI_lower=[1170.2068321447423, 1246.4799766682595, 1322.7531211917765], CI_upper=[1235.6170108853335, 1311.8901554088507, 1388.1632999323676]
+2025-12-19 00:44:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1202.9119215150379, 1279.185066038555, 1355.458210562072], CI_lower: [1170.2068321447423, 1246.4799766682595, 1322.7531211917765], CI_upper: [1235.6170108853335, 1311.8901554088507, 1388.1632999323676]
+2025-12-19 00:44:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1126.6387768103632), 1170.2068321447423, 1246.4799766682595, 1322.7531211917765], upper=[np.float64(1126.6387768103632), 1235.6170108853335, 1311.8901554088507, 1388.1632999323676]
+2025-12-19 00:44:19 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-19 00:44:19 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-19 00:46:53 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 31638.130859375, 'mse': 12118405120.0, 'rmse': 110083.62784719624, 'r2': -0.2602319121360779}
+2025-12-19 00:46:55 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-19 00:48:41 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 6.23929500579834, 'mse': 177.15733337402344, 'rmse': 13.3100463325273, 'r2': 0.07024085521697998}
+2025-12-19 00:48:42 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-19 00:50:27 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 1.1965665817260742, 'mse': 17.383211135864258, 'rmse': 4.16931782619942, 'r2': 0.8045499324798584}
+2025-12-19 00:50:29 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-19 00:52:16 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 196.35507202148438, 'mse': 334152.1875, 'rmse': 578.0589827171618, 'r2': 0.32621246576309204}
+2025-12-19 00:52:17 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-19 00:54:01 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.27806296944618225, 'mse': 0.2675410509109497, 'rmse': 0.5172437055305262, 'r2': 0.23330312967300415}
+2025-12-19 00:54:03 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-19 00:54:35 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Wisconsin/housing/1-year/figures/ml/deep_learning
+2025-12-19 00:54:37 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-19 00:54:37 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-19 00:54:37 [DEBUG] census_eda.main:  Running LLM analysis for state: Wisconsin
+2025-12-19 00:54:37 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-19 00:54:37 [INFO] census_eda.ml: [LLM] State context loaded: Wisconsin
+2025-12-19 00:54:37 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [API] Total request: ~2413 tokens (system: ~2231, user: ~182)
+2025-12-19 00:54:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [API] Received response: 4731 chars
+2025-12-19 00:54:57 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4731 chars)
+2025-12-19 00:54:57 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [LLM] User prompt: 1263 chars (~315 tokens)
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [API] Total request: ~2546 tokens (system: ~2231, user: ~315)
+2025-12-19 00:54:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [API] Received response: 3434 chars
+2025-12-19 00:55:07 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3434 chars)
+2025-12-19 00:55:07 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [LLM] User prompt: 1690 chars (~422 tokens)
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [API] Total request: ~2653 tokens (system: ~2231, user: ~422)
+2025-12-19 00:55:07 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [API] Received response: 4719 chars
+2025-12-19 00:55:21 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4719 chars)
+2025-12-19 00:55:21 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [LLM] User prompt: 1465 chars (~366 tokens)
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [API] Total request: ~2597 tokens (system: ~2231, user: ~366)
+2025-12-19 00:55:21 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [API] Received response: 3983 chars
+2025-12-19 00:55:34 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3983 chars)
+2025-12-19 00:55:34 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [API] Total request: ~2242 tokens (system: ~2231, user: ~11)
+2025-12-19 00:55:34 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [API] Received response: 5430 chars
+2025-12-19 00:55:51 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (5430 chars)
+2025-12-19 00:55:51 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [LLM] User prompt: 11125 chars (~2781 tokens)
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [API] Total request: ~5012 tokens (system: ~2231, user: ~2781)
+2025-12-19 00:55:51 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [API] Received response: 2680 chars
+2025-12-19 00:56:02 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (2680 chars)
+2025-12-19 00:56:02 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [LLM] User prompt: 6854 chars (~1713 tokens)
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [API] Total request: ~3944 tokens (system: ~2231, user: ~1713)
+2025-12-19 00:56:02 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [API] Received response: 3376 chars
+2025-12-19 00:56:13 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3376 chars)
+2025-12-19 00:56:13 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [LLM] User prompt: 754 chars (~188 tokens)
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [API] Total request: ~2419 tokens (system: ~2231, user: ~188)
+2025-12-19 00:56:13 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [API] Received response: 3118 chars
+2025-12-19 00:56:24 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3118 chars)
+2025-12-19 00:56:24 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [LLM] User prompt: 6342 chars (~1585 tokens)
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [API] Total request: ~3816 tokens (system: ~2231, user: ~1585)
+2025-12-19 00:56:24 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [API] Received response: 4525 chars
+2025-12-19 00:56:37 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4525 chars)
+2025-12-19 00:56:37 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [LLM] User prompt: 2524 chars (~631 tokens)
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [API] Total request: ~2862 tokens (system: ~2231, user: ~631)
+2025-12-19 00:56:37 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [API] Received response: 3753 chars
+2025-12-19 00:56:49 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3753 chars)
+2025-12-19 00:56:49 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [LLM] User prompt: 1048 chars (~262 tokens)
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Wisconsin
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Wisconsin
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4038 chars
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1009
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Wisconsin
+
+ECONOMIC PROFILE:
+  Industries: Manufacturing (machinery, paper, food processing), Agriculture (dairy, cheese, cranberries, ginseng), Tourism, Healthcare, Brewing and food processing
+  Trends: Manufacturing sector resilient but transformed. Dairy consolidation but output stable. Tourism steady growth ($20.9B in 2021). Slower growth than Sun Belt but steady. Manufacturing (~500,000 jobs similar to 1970)
+  Income: Near national median ($61,475 in 2022). Milwaukee area mixed. Madison above median. Rural areas below. Cost of living moderate
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow growth ~0.3% annually, among slowest in Midwest. Urban areas (Madison) growing, rural declining. Out-migration of young people. Aging population
+  Migration: Limited in-migration except Madison (university, government). Chicago area spillover to southeast. Rural out-migration to urban areas and out of state
+  Education: Near national average. University of Wisconsin system strong. Technical college system excellent. Milwaukee-rural education gap
+
+HOUSING MARKET:
+  Market: Generally affordable. Milwaukee mixed (cheap to moderate). Madison tight and appreciating. Rural areas very affordable. Northeast vacation properties
+  Affordability: Affordable 2011-2019. Madison appreciation accelerating. Milwaukee neighborhoods gentrifying. Rural stable. 2020-2023 appreciation but still moderate nationally
+  Challenges: Milwaukee segregation legacy, Madison affordability pressures, Rural housing stock aging, Property taxes high (fund schools/local services)
+
+POLITY:
+  Policy: Historically progressive, shifted conservative 2011-2023 under Walker. Swing state. Business-friendly reforms. Labor battles
+  Housing: Local control dominant. Minimal state intervention. Milwaukee addressing segregation legacy. Madison growth management
+  Labor: Right-to-work since 2015, $7.25 federal minimum wage, union power declined after Act 10, business-friendly environment
+
+REGIONAL:
+  Geography: Lake Michigan shoreline, Driftless Area (southwest), Northwoods (forests, lakes), Central plains (agriculture)
+  Urban/Rural: 70% urban (Milwaukee, Madison, Green Bay, smaller cities), 30% rural. Strong rural identity. Dairy farming landscape
+  Infrastructure: Good highway system. Milwaukee and Madison airports adequate. Great Lakes shipping (Milwaukee, Green Bay ports). Aging infrastructure in cities
+
+HISTORICAL:
+  Events: 2011-2013: Act 10 collective bargaining restrictions, massive protests, Walker recall election (survived), progressive to conservative shift; 2014-2016: Right-to-work passed, prevailing wage repealed, manufacturing steady, dairy farm consolidation accelerates; 2017-2019: Foxconn deal announced ($10B promised, largely failed), Tony Evers elected governor (Democrat), divided government; 2021-2023: Pandemic recovery uneven, Foxconn deal collapse, agriculture sector strong 2021-2022 then weakening, political battles intensify, Supreme Court flip 2023
+  Shocks: 2011 Act 10 political/labor upheaval. Foxconn deal failure. Periodic agricultural commodity price crashes
+  Transitions: Dairy farm consolidation (70% decline in farm numbers since 1997, but production stable/growing). Manufacturing evolved from heavy industry to precision/machinery. Paper mills declining. Food processing growing
+
+COMPARATIVE:
+  Benchmarks: Near median income. Moderate cost of living. Manufacturing strong. Dairy dominance unique. Slow population growth. Near average educational attainment. Political swing state. High alcohol consumption
+  Peer States: Minnesota (similar economy, demographics), Michigan (manufacturing, Great Lakes), Iowa (agriculture, Midwest)
+  Unique: 'America's Dairyland' - dairy industry dominance ($52.8B, 25% of US cheese production). 600+ cheese varieties. Act 10 labor battles nationally significant. Progressive history (Fighting Bob La Follette). Brewing culture (Milwaukee beer). Packers fan ownership unique. Political battles (recalls, Supreme Court) intense
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Wisconsin
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [PROMPT] State context injected (4038 chars)
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8926 chars (~2231 tokens)
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [API] Total request: ~2493 tokens (system: ~2231, user: ~262)
+2025-12-19 00:56:49 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:57:02 [DEBUG] census_eda.ml: [API] Received response: 4093 chars
+2025-12-19 00:57:02 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4093 chars)
+2025-12-19 00:57:02 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-19 00:57:02 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-19 00:57:02 [INFO] census_eda.main: [REPORT] Generated: report_Wisconsin_housing_20251219_005702.txt
+2025-12-19 00:57:02 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for Wisconsin!
+2025-12-19 00:57:03 [INFO] census_eda.memory: process_Wisconsin_housing_1-year:EXIT: 12888.3MB (delta: -1103.7MB)
+2025-12-19 00:57:05 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-19 00:57:07 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-19 00:57:10 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-19 00:57:12 [INFO] census_eda.memory: Cleared all caches

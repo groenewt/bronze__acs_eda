@@ -1,0 +1,1310 @@
+2025-12-18 14:42:44 [INFO] census_eda: Logging context set: state=South Carolina, survey=population, scope=1-year
+2025-12-18 14:42:44 [INFO] census_eda: Log file: ./logs/South Carolina/1-year/population/1-year_population_25_12_18_1442.log
+2025-12-18 14:42:44 [INFO] census_eda.main: ======================================================================
+2025-12-18 14:42:44 [INFO] census_eda.main: [POPULATION] Processing South Carolina (1-year)...
+2025-12-18 14:42:44 [INFO] census_eda.main: ======================================================================
+2025-12-18 14:42:44 [INFO] census_eda.memory: process_South Carolina_population_1-year:ENTER: 12932.8MB (delta: +0.0MB)
+2025-12-18 14:42:44 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 14:42:44 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/45/*/*.csv
+2025-12-18 14:42:44 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 14:42:44 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12psc.csv
+2025-12-18 14:42:45 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 14:42:45 [VERBOSE] census_eda.processing.loader:   -> Loaded 47,344 rows, 260 columns
+2025-12-18 14:42:45 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p45.csv
+2025-12-18 14:42:46 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 14:42:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 49,438 rows, 260 columns
+2025-12-18 14:42:46 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14psc.csv
+2025-12-18 14:42:47 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 14:42:47 [VERBOSE] census_eda.processing.loader:   -> Loaded 47,361 rows, 260 columns
+2025-12-18 14:42:47 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13psc.csv
+2025-12-18 14:42:48 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 14:42:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 47,205 rows, 260 columns
+2025-12-18 14:42:48 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07psc.csv
+2025-12-18 14:42:49 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 14:42:49 [VERBOSE] census_eda.processing.loader:   -> Loaded 44,409 rows, 260 columns
+2025-12-18 14:42:49 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09psc.csv
+2025-12-18 14:42:50 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 14:42:50 [VERBOSE] census_eda.processing.loader:   -> Loaded 45,877 rows, 260 columns
+2025-12-18 14:42:50 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p45.csv
+2025-12-18 14:42:51 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 14:42:51 [VERBOSE] census_eda.processing.loader:   -> Loaded 49,818 rows, 260 columns
+2025-12-18 14:42:51 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08psc.csv
+2025-12-18 14:42:52 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 14:42:52 [VERBOSE] census_eda.processing.loader:   -> Loaded 45,088 rows, 260 columns
+2025-12-18 14:42:52 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16psc.csv
+2025-12-18 14:42:53 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 14:42:53 [VERBOSE] census_eda.processing.loader:   -> Loaded 48,405 rows, 260 columns
+2025-12-18 14:42:53 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p45.csv
+2025-12-18 14:42:54 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 14:42:54 [VERBOSE] census_eda.processing.loader:   -> Loaded 50,893 rows, 260 columns
+2025-12-18 14:42:54 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p45.csv
+2025-12-18 14:42:55 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 14:42:55 [VERBOSE] census_eda.processing.loader:   -> Loaded 54,651 rows, 260 columns
+2025-12-18 14:42:55 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p45.csv
+2025-12-18 14:42:56 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 14:42:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 51,580 rows, 260 columns
+2025-12-18 14:42:56 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p45.csv
+2025-12-18 14:42:57 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 14:42:57 [VERBOSE] census_eda.processing.loader:   -> Loaded 56,198 rows, 260 columns
+2025-12-18 14:42:57 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15psc.csv
+2025-12-18 14:42:58 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 14:42:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 48,023 rows, 260 columns
+2025-12-18 14:42:58 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10psc.csv
+2025-12-18 14:42:59 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 14:42:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 46,825 rows, 260 columns
+2025-12-18 14:42:59 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11psc.csv
+2025-12-18 14:43:00 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 14:43:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 47,367 rows, 260 columns
+2025-12-18 14:43:00 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 14:43:06 [VERBOSE] census_eda.processing.loader: Combined into 780,482 total rows, 260 columns
+2025-12-18 14:43:06 [INFO] census_eda.main: Loaded 780,482 records
+2025-12-18 14:43:06 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 780482 valid, 16 unique
+2025-12-18 14:43:06 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 14:43:08 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 14:43:08 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 14:43:08 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 14:43:09 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 14:43:09 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 14:43:10 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 14:43:10 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 14:43:10 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 14:43:10 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 14:43:11 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 14:43:11 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 14:43:11 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 14:43:11 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 14:43:12 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 14:43:12 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 14:43:12 [DEBUG] census_eda.main: Feature engineering complete: (780482, 292)
+2025-12-18 14:43:13 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 14:43:13 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 14:45:27 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 14:45:27 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 14:45:27 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(780482, 292)
+2025-12-18 14:45:27 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 14:45:27 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 780482
+2025-12-18 14:45:27 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 14:45:29 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(780482, 292)
+2025-12-18 14:45:29 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(44409), np.int64(2008): np.int64(45088), np.int64(2009): np.int64(45877), np.int64(2010): np.int64(46825), np.int64(2011): np.int64(47367), np.int64(2012): np.int64(47344), np.int64(2013): np.int64(47205), np.int64(2014): np.int64(47361), np.int64(2015): np.int64(48023), np.int64(2016): np.int64(48405), np.int64(2017): np.int64(49438), np.int64(2018): np.int64(49818), np.int64(2019): np.int64(50893), np.int64(2021): np.int64(51580), np.int64(2022): np.int64(54651), np.int64(2023): np.int64(56198)}
+2025-12-18 14:45:30 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(780482, 292)
+2025-12-18 14:45:30 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 14:45:30 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 14:45:30 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 14:45:30 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 14:45:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 14:45:31 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 780482 non-null values (zeros excluded if needed)
+2025-12-18 14:45:31 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 14:45:31 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 14:45:31 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 780482 non-null values (zeros excluded if needed)
+2025-12-18 14:45:31 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1905.00
+2025-12-18 14:45:31 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 14:45:32 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 780482 non-null values (zeros excluded if needed)
+2025-12-18 14:45:32 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 94.00
+2025-12-18 14:45:32 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 14:45:32 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 315785 non-null values (zeros excluded if needed)
+2025-12-18 14:45:32 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 186.00
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 77300 non-null values (zeros excluded if needed)
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 355000.00
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 46249 non-null values (zeros excluded if needed)
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 78000.00
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 5453 non-null values (zeros excluded if needed)
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 14:45:35 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 14:45:36 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 99237 non-null values (zeros excluded if needed)
+2025-12-18 14:45:36 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 157000.00
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 32243 non-null values (zeros excluded if needed)
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 387000.00
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 18967 non-null values (zeros excluded if needed)
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: Value range: 60.00 to 30000.00
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 178348 non-null values (zeros excluded if needed)
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 14:45:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 14:45:40 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 365073 non-null values (zeros excluded if needed)
+2025-12-18 14:45:40 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 528000.00
+2025-12-18 14:45:44 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 14:46:05 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 14:46:05 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 14:46:06 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 14:46:07 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 14:46:07 [DEBUG] census_eda.memory: Skipping sampling: 32271MB available (>16GB)
+2025-12-18 14:46:07 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 780482 rows
+2025-12-18 14:48:38 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 14:48:38 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(780482, 292)
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 780482 non-null values
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 780482 non-null values
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1905.00
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 780482 non-null values
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 94.00
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 315785 non-null values
+2025-12-18 14:48:39 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 186.00
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 77300 non-null values
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 355000.00
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 46249 non-null values
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 78000.00
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 5453 non-null values
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 99237 non-null values
+2025-12-18 14:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 157000.00
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 32243 non-null values
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 387000.00
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 18967 non-null values
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Data range: 60.00 to 30000.00
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 178348 non-null values
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 365073 non-null values
+2025-12-18 14:48:45 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 528000.00
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 386273 non-null values
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 309254 non-null values
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 143586 non-null values
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 644527 non-null values
+2025-12-18 14:48:48 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 14:49:05 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 14:49:25 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 14:49:43 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 14:50:16 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 14:50:16 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 14:50:16 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 14:50:18 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 14:50:19 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 14:50:21 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 14:50:23 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 14:50:23 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 14:50:23 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 14:50:25 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 14:50:26 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 14:50:29 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 14:50:29 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 14:50:29 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 14:50:31 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 14:50:34 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 14:50:34 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 14:50:34 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 14:50:36 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 14:50:37 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 14:50:40 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 14:50:40 [DEBUG] census_eda.memory: Skipping sampling: 31949MB available (>16GB)
+2025-12-18 14:50:54 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 14:50:54 [DEBUG] census_eda.memory: Skipping sampling: 31962MB available (>16GB)
+2025-12-18 14:51:20 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 14:51:20 [DEBUG] census_eda.memory: Skipping sampling: 32204MB available (>16GB)
+2025-12-18 14:51:27 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 14:51:43 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 14:51:43 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 14:51:43 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 14:51:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 14:51:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 14:51:48 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 14:51:49 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 14:51:50 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 14:51:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 14:51:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 14:51:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 14:51:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 14:51:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 14:51:54 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 14:51:54 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 14:51:54 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 14:51:55 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 14:51:56 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 14:51:58 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 14:52:01 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 14:52:03 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 14:52:05 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 14:52:09 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 14:52:09 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 14:52:09 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 14:52:10 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 14:52:11 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 14:52:14 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 14:52:16 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 14:52:17 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 14:52:19 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 14:52:21 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 14:52:24 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 14:52:30 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 14:52:31 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 14:52:33 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/South_Carolina/population/1-year/figures
+2025-12-18 14:52:34 [DEBUG] census_eda.memory: Skipping sampling: 32027MB available (>16GB)
+2025-12-18 14:52:34 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 14:52:34 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 14:52:34 [INFO] census_eda.memory: [ML-START]: 18369.6MB (delta: +5436.8MB)
+2025-12-18 14:52:34 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 14:52:34 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 14:52:34 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 6255 samples (was 6259)
+2025-12-18 14:52:34 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 14:52:34 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 14:52:34 [INFO] census_eda.ml.regression: [TUNE] Data: 6,255 samples, 10 features
+2025-12-18 14:52:34 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:52:34 [INFO] census_eda.memory: tune_ridge:ENTER: 18369.6MB (delta: +0.0MB)
+2025-12-18 14:52:35 [WARNING] census_eda.memory: Memory usage (18370.1MB) exceeded threshold (16000MB)
+2025-12-18 14:52:37 [INFO] census_eda.memory: tune_ridge:EXIT: 18370.1MB (delta: +0.5MB)
+2025-12-18 14:52:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 14:52:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0880
+2025-12-18 14:52:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:52:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 14:52:37 [INFO] census_eda.ml.regression: [TUNE] Data: 6,255 samples, 10 features
+2025-12-18 14:52:37 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:52:37 [INFO] census_eda.memory: tune_lasso:ENTER: 18370.1MB (delta: +0.0MB)
+2025-12-18 14:52:37 [WARNING] census_eda.memory: Memory usage (18370.2MB) exceeded threshold (16000MB)
+2025-12-18 14:52:38 [INFO] census_eda.memory: tune_lasso:EXIT: 18370.2MB (delta: +0.0MB)
+2025-12-18 14:52:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 14:52:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0884
+2025-12-18 14:52:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:52:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 14:52:38 [INFO] census_eda.ml.regression: [TUNE] Data: 6,255 samples, 10 features
+2025-12-18 14:52:38 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:52:38 [INFO] census_eda.memory: tune_random_forest:ENTER: 18370.2MB (delta: +0.0MB)
+2025-12-18 14:52:45 [WARNING] census_eda.memory: Memory usage (18372.6MB) exceeded threshold (16000MB)
+2025-12-18 14:52:46 [INFO] census_eda.memory: tune_random_forest:EXIT: 18372.6MB (delta: +2.4MB)
+2025-12-18 14:52:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 14:52:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0532
+2025-12-18 14:52:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:52:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 14:52:48 [INFO] census_eda.ml.regression: [TUNE] Data: 6,255 samples, 10 features
+2025-12-18 14:52:48 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:52:48 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18373.8MB (delta: +1.2MB)
+2025-12-18 14:52:52 [WARNING] census_eda.memory: Memory usage (18373.8MB) exceeded threshold (16000MB)
+2025-12-18 14:52:53 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18373.8MB (delta: +0.0MB)
+2025-12-18 14:52:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 14:52:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0552
+2025-12-18 14:52:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:52:54 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 14:52:54 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 5936 samples (was 6259)
+2025-12-18 14:52:54 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 14:52:54 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 14:52:54 [INFO] census_eda.ml.regression: [TUNE] Data: 5,936 samples, 10 features
+2025-12-18 14:52:54 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:52:54 [INFO] census_eda.memory: tune_ridge:ENTER: 18373.8MB (delta: +0.0MB)
+2025-12-18 14:52:55 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:52:56 [INFO] census_eda.memory: tune_ridge:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:52:56 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 14:52:56 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0946
+2025-12-18 14:52:56 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:52:56 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 14:52:56 [INFO] census_eda.ml.regression: [TUNE] Data: 5,936 samples, 10 features
+2025-12-18 14:52:56 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:52:56 [INFO] census_eda.memory: tune_lasso:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:52:56 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:52:57 [INFO] census_eda.memory: tune_lasso:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:52:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 14:52:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0953
+2025-12-18 14:52:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:52:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 14:52:57 [INFO] census_eda.ml.regression: [TUNE] Data: 5,936 samples, 10 features
+2025-12-18 14:52:57 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:52:57 [INFO] census_eda.memory: tune_random_forest:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:04 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:05 [INFO] census_eda.memory: tune_random_forest:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 14:53:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0504
+2025-12-18 14:53:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:53:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 14:53:06 [INFO] census_eda.ml.regression: [TUNE] Data: 5,936 samples, 10 features
+2025-12-18 14:53:06 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:53:06 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:09 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:10 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:10 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 14:53:10 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0637
+2025-12-18 14:53:10 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:53:12 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 14:53:12 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 6254 samples (was 6259)
+2025-12-18 14:53:12 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 14:53:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 14:53:12 [INFO] census_eda.ml.regression: [TUNE] Data: 6,254 samples, 10 features
+2025-12-18 14:53:12 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:53:12 [INFO] census_eda.memory: tune_ridge:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:12 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:13 [INFO] census_eda.memory: tune_ridge:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:13 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 14:53:13 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0881
+2025-12-18 14:53:13 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:53:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 14:53:13 [INFO] census_eda.ml.regression: [TUNE] Data: 6,254 samples, 10 features
+2025-12-18 14:53:13 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:53:13 [INFO] census_eda.memory: tune_lasso:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:13 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:14 [INFO] census_eda.memory: tune_lasso:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 14:53:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0886
+2025-12-18 14:53:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:53:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 14:53:14 [INFO] census_eda.ml.regression: [TUNE] Data: 6,254 samples, 10 features
+2025-12-18 14:53:14 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:53:14 [INFO] census_eda.memory: tune_random_forest:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:21 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:22 [INFO] census_eda.memory: tune_random_forest:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:22 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 14:53:22 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0431
+2025-12-18 14:53:22 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:53:24 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 14:53:24 [INFO] census_eda.ml.regression: [TUNE] Data: 6,254 samples, 10 features
+2025-12-18 14:53:24 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:53:24 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:28 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:29 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 14:53:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0574
+2025-12-18 14:53:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:53:30 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 14:53:30 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 14:53:30 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 14:53:30 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:30 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:53:30 [INFO] census_eda.memory: tune_ridge:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:30 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:32 [INFO] census_eda.memory: tune_ridge:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:32 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 14:53:32 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 14:53:32 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:53:32 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 14:53:32 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:32 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:53:32 [INFO] census_eda.memory: tune_lasso:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:32 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:33 [INFO] census_eda.memory: tune_lasso:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 14:53:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 14:53:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:53:33 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 14:53:33 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:33 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:53:33 [INFO] census_eda.memory: tune_random_forest:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:36 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:37 [INFO] census_eda.memory: tune_random_forest:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 14:53:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 14:53:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:53:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 14:53:38 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:38 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:53:38 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:41 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:42 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 14:53:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 14:53:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:53:44 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 14:53:44 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 14:53:44 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 14:53:44 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:44 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:53:44 [INFO] census_eda.memory: tune_ridge:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:44 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:46 [INFO] census_eda.memory: tune_ridge:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 14:53:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0413
+2025-12-18 14:53:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:53:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 14:53:46 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:53:46 [INFO] census_eda.memory: tune_lasso:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:46 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:47 [INFO] census_eda.memory: tune_lasso:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 14:53:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0426
+2025-12-18 14:53:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:53:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 14:53:47 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:53:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:54 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:53:55 [INFO] census_eda.memory: tune_random_forest:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:53:55 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 14:53:55 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0549
+2025-12-18 14:53:55 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:53:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 14:53:57 [INFO] census_eda.ml.regression: [TUNE] Data: 6,259 samples, 10 features
+2025-12-18 14:53:57 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:53:57 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:54:01 [WARNING] census_eda.memory: Memory usage (18373.9MB) exceeded threshold (16000MB)
+2025-12-18 14:54:02 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:54:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 14:54:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0851
+2025-12-18 14:54:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:54:03 [INFO] census_eda.memory: [SHAP] Safe sample size: 1,252 -> 1,000
+2025-12-18 14:54:03 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 1,252 -> 1,000
+2025-12-18 14:54:03 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:54:03 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 14:54:45 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:54:45 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 14:54:45 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-18 14:54:45 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 14:54:45 [INFO] census_eda.memory: [PRE-CLUSTERING]: 18373.9MB (delta: +0.0MB)
+2025-12-18 14:54:45 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 14:54:45 [INFO] census_eda.main: [CLUSTERING] KMeans on 6,259 samples...
+2025-12-18 14:54:45 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 14:54:45 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 6,259 samples (will sample if needed)...
+2025-12-18 14:54:46 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 14:54:46 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 14:54:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 52223.89238739014, 2025: 53658.06090545654, 2026: 54931.23703765869}, Values: [52223.89238739014, 53658.06090545654, 54931.23703765869]
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 14:54:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 56719.13681602478, 2025: 59197.97498130798, 2026: 61743.94292259216}, Values: [56719.13681602478, 59197.97498130798, 61743.94292259216]
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 14:54:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 57042.701541900635, 2025: 59288.98746109009, 2026: 61524.21022415161}, Values: [57042.701541900635, 59288.98746109009, 61524.21022415161]
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 14:54:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 44.62950101704337, 2025: 44.79648310481571, 2026: 44.94691496086307}, Values: [44.62950101704337, 44.79648310481571, 44.94691496086307]
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 14:54:46 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.15238342806697, 2025: 36.54307020828128, 2026: 35.76336970552802}, Values: [37.15238342806697, 36.54307020828128, 35.76336970552802]
+2025-12-18 14:54:46 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 14:55:10 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 14:55:13 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 14:55:13 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 14:55:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 49335.27776969317, 2025: 50448.93878672505, 2026: 51562.59980375692}, values=[49335.27776969317, 50448.93878672505, 51562.59980375692], CI_lower=[45373.29299653058, 46486.954013562456, 47600.61503059433], CI_upper=[53297.262542855766, 54410.92355988764, 55524.584576919515]
+2025-12-18 14:55:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49335.27776969317, 50448.93878672505, 51562.59980375692], CI_lower: [45373.29299653058, 46486.954013562456, 47600.61503059433], CI_upper: [53297.262542855766, 54410.92355988764, 55524.584576919515]
+2025-12-18 14:55:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 45373.29299653058, 46486.954013562456, 47600.61503059433], upper=[np.float64(45722.50146982174), 53297.262542855766, 54410.92355988764, 55524.584576919515]
+2025-12-18 14:55:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 53968.89195126295, 2025: 56623.02883082628, 2026: 59439.20228654146}, values=[53968.89195126295, 56623.02883082628, 59439.20228654146], CI_lower=[52102.905837678205, 54757.04271724154, 57573.216172956716], CI_upper=[55834.8780648477, 58489.01494441103, 61305.18840012621]
+2025-12-18 14:55:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53968.89195126295, 56623.02883082628, 59439.20228654146], CI_lower: [52102.905837678205, 54757.04271724154, 57573.216172956716], CI_upper: [55834.8780648477, 58489.01494441103, 61305.18840012621]
+2025-12-18 14:55:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 52102.905837678205, 54757.04271724154, 57573.216172956716], upper=[np.float64(45722.50146982174), 55834.8780648477, 58489.01494441103, 61305.18840012621]
+2025-12-18 14:55:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 52223.89238739014, 2025: 53658.06090545654, 2026: 54931.23703765869}, values=[52223.89238739014, 53658.06090545654, 54931.23703765869], CI_lower=[50619.52343566944, 52053.69195373585, 53326.868085938], CI_upper=[53828.26133911083, 55262.42985717724, 56535.605989379386]
+2025-12-18 14:55:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52223.89238739014, 53658.06090545654, 54931.23703765869], CI_lower: [50619.52343566944, 52053.69195373585, 53326.868085938], CI_upper: [53828.26133911083, 55262.42985717724, 56535.605989379386]
+2025-12-18 14:55:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 50619.52343566944, 52053.69195373585, 53326.868085938], upper=[np.float64(45722.50146982174), 53828.26133911083, 55262.42985717724, 56535.605989379386]
+2025-12-18 14:55:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 48657.247633544495, 2025: 48657.247633544495, 2026: 48657.247633544495}, values=[48657.247633544495, 48657.247633544495, 48657.247633544495], CI_lower=[46396.03938294553, 46396.03938294553, 46396.03938294553], CI_upper=[50918.45588414346, 50918.45588414346, 50918.45588414346]
+2025-12-18 14:55:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48657.247633544495, 48657.247633544495, 48657.247633544495], CI_lower: [46396.03938294553, 46396.03938294553, 46396.03938294553], CI_upper: [50918.45588414346, 50918.45588414346, 50918.45588414346]
+2025-12-18 14:55:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 46396.03938294553, 46396.03938294553, 46396.03938294553], upper=[np.float64(45722.50146982174), 50918.45588414346, 50918.45588414346, 50918.45588414346]
+2025-12-18 14:55:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 46369.02482729376, 2025: 46369.02482729376, 2026: 46369.02482729376}, values=[46369.02482729376, 46369.02482729376, 46369.02482729376], CI_lower=[42775.78317874345, 42775.78317874345, 42775.78317874345], CI_upper=[49962.26647584407, 49962.26647584407, 49962.26647584407]
+2025-12-18 14:55:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46369.02482729376, 46369.02482729376, 46369.02482729376], CI_lower: [42775.78317874345, 42775.78317874345, 42775.78317874345], CI_upper: [49962.26647584407, 49962.26647584407, 49962.26647584407]
+2025-12-18 14:55:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 42775.78317874345, 42775.78317874345, 42775.78317874345], upper=[np.float64(45722.50146982174), 49962.26647584407, 49962.26647584407, 49962.26647584407]
+2025-12-18 14:55:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 49597.483324799396, 2025: 49597.483324799396, 2026: 49597.483324799396}, values=[49597.483324799396, 49597.483324799396, 49597.483324799396], CI_lower=[47993.05726598603, 47993.05726598603, 47993.05726598603], CI_upper=[51201.90938361276, 51201.90938361276, 51201.90938361276]
+2025-12-18 14:55:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49597.483324799396, 49597.483324799396, 49597.483324799396], CI_lower: [47993.05726598603, 47993.05726598603, 47993.05726598603], CI_upper: [51201.90938361276, 51201.90938361276, 51201.90938361276]
+2025-12-18 14:55:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 47993.05726598603, 47993.05726598603, 47993.05726598603], upper=[np.float64(45722.50146982174), 51201.90938361276, 51201.90938361276, 51201.90938361276]
+2025-12-18 14:55:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 51895.55875108937, 2025: 51895.50680187566, 2026: 51895.50681134004}, values=[51895.55875108937, 51895.50680187566, 51895.50681134004], CI_lower=[36153.44930213998, 36153.39735292627, 36153.39736239066], CI_upper=[67637.66820003875, 67637.61625082504, 67637.61626028943]
+2025-12-18 14:55:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51895.55875108937, 51895.50680187566, 51895.50681134004], CI_lower: [36153.44930213998, 36153.39735292627, 36153.39736239066], CI_upper: [67637.66820003875, 67637.61625082504, 67637.61626028943]
+2025-12-18 14:55:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 36153.44930213998, 36153.39735292627, 36153.39736239066], upper=[np.float64(45722.50146982174), 67637.66820003875, 67637.61625082504, 67637.61626028943]
+2025-12-18 14:55:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 54070.672837703634, 2025: 56530.93193747438, 2026: 58991.19103724512}, values=[54070.672837703634, 56530.93193747438, 58991.19103724512], CI_lower=[51830.565080209875, 54290.82417998062, 56751.08327975136], CI_upper=[56310.78059519739, 58771.03969496814, 61231.298794738876]
+2025-12-18 14:55:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54070.672837703634, 56530.93193747438, 58991.19103724512], CI_lower: [51830.565080209875, 54290.82417998062, 56751.08327975136], CI_upper: [56310.78059519739, 58771.03969496814, 61231.298794738876]
+2025-12-18 14:55:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45722.50146982174), 51830.565080209875, 54290.82417998062, 56751.08327975136], upper=[np.float64(45722.50146982174), 56310.78059519739, 58771.03969496814, 61231.298794738876]
+2025-12-18 14:55:19 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 14:55:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 52232.92180830939, 2025: 53439.47706837393, 2026: 54646.03232843848}, values=[52232.92180830939, 53439.47706837393, 54646.03232843848], CI_lower=[48198.47253510426, 49405.027795168804, 50611.58305523335], CI_upper=[56267.37108151452, 57473.92634157906, 58680.48160164361]
+2025-12-18 14:55:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52232.92180830939, 53439.47706837393, 54646.03232843848], CI_lower: [48198.47253510426, 49405.027795168804, 50611.58305523335], CI_upper: [56267.37108151452, 57473.92634157906, 58680.48160164361]
+2025-12-18 14:55:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 48198.47253510426, 49405.027795168804, 50611.58305523335], upper=[np.float64(30144.52534139477), 56267.37108151452, 57473.92634157906, 58680.48160164361]
+2025-12-18 14:55:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 57316.80914002657, 2025: 60213.53656685352, 2026: 63288.046533346176}, values=[57316.80914002657, 60213.53656685352, 63288.046533346176], CI_lower=[56063.04069794885, 58959.7681247758, 62034.278091268454], CI_upper=[58570.57758210429, 61467.305008931246, 64541.8149754239]
+2025-12-18 14:55:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57316.80914002657, 60213.53656685352, 63288.046533346176], CI_lower: [56063.04069794885, 58959.7681247758, 62034.278091268454], CI_upper: [58570.57758210429, 61467.305008931246, 64541.8149754239]
+2025-12-18 14:55:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 56063.04069794885, 58959.7681247758, 62034.278091268454], upper=[np.float64(30144.52534139477), 58570.57758210429, 61467.305008931246, 64541.8149754239]
+2025-12-18 14:55:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 56719.13681602478, 2025: 59197.97498130798, 2026: 61743.94292259216}, values=[56719.13681602478, 59197.97498130798, 61743.94292259216], CI_lower=[55508.60122149884, 57987.43938678204, 60533.40732806622], CI_upper=[57929.672410550724, 60408.51057583393, 62954.47851711811]
+2025-12-18 14:55:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56719.13681602478, 59197.97498130798, 61743.94292259216], CI_lower: [55508.60122149884, 57987.43938678204, 60533.40732806622], CI_upper: [57929.672410550724, 60408.51057583393, 62954.47851711811]
+2025-12-18 14:55:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 55508.60122149884, 57987.43938678204, 60533.40732806622], upper=[np.float64(30144.52534139477), 57929.672410550724, 60408.51057583393, 62954.47851711811]
+2025-12-18 14:55:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 51792.25883793712, 2025: 51792.25883793712, 2026: 51792.25883793712}, values=[51792.25883793712, 51792.25883793712, 51792.25883793712], CI_lower=[49518.529578343594, 49518.529578343594, 49518.529578343594], CI_upper=[54065.98809753065, 54065.98809753065, 54065.98809753065]
+2025-12-18 14:55:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51792.25883793712, 51792.25883793712, 51792.25883793712], CI_lower: [49518.529578343594, 49518.529578343594, 49518.529578343594], CI_upper: [54065.98809753065, 54065.98809753065, 54065.98809753065]
+2025-12-18 14:55:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 49518.529578343594, 49518.529578343594, 49518.529578343594], upper=[np.float64(30144.52534139477), 54065.98809753065, 54065.98809753065, 54065.98809753065]
+2025-12-18 14:55:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 49091.51830505629, 2025: 49091.51830505629, 2026: 49091.51830505629}, values=[49091.51830505629, 49091.51830505629, 49091.51830505629], CI_lower=[45352.451761638455, 45352.451761638455, 45352.451761638455], CI_upper=[52830.58484847413, 52830.58484847413, 52830.58484847413]
+2025-12-18 14:55:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49091.51830505629, 49091.51830505629, 49091.51830505629], CI_lower: [45352.451761638455, 45352.451761638455, 45352.451761638455], CI_upper: [52830.58484847413, 52830.58484847413, 52830.58484847413]
+2025-12-18 14:55:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 45352.451761638455, 45352.451761638455, 45352.451761638455], upper=[np.float64(30144.52534139477), 52830.58484847413, 52830.58484847413, 52830.58484847413]
+2025-12-18 14:55:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 52859.3045533546, 2025: 52859.3045533546, 2026: 52859.3045533546}, values=[52859.3045533546, 52859.3045533546, 52859.3045533546], CI_lower=[51245.90921376893, 51245.90921376893, 51245.90921376893], CI_upper=[54472.699892940276, 54472.699892940276, 54472.699892940276]
+2025-12-18 14:55:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52859.3045533546, 52859.3045533546, 52859.3045533546], CI_lower: [51245.90921376893, 51245.90921376893, 51245.90921376893], CI_upper: [54472.699892940276, 54472.699892940276, 54472.699892940276]
+2025-12-18 14:55:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 51245.90921376893, 51245.90921376893, 51245.90921376893], upper=[np.float64(30144.52534139477), 54472.699892940276, 54472.699892940276, 54472.699892940276]
+2025-12-18 14:55:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 56327.805845085095, 2025: 57645.63574457721, 2026: 58963.46375113466}, values=[56327.805845085095, 57645.63574457721, 58963.46375113466], CI_lower=[39672.99862166315, 40990.82852115526, 42308.65652771271], CI_upper=[72982.61306850704, 74300.44296799916, 75618.27097455661]
+2025-12-18 14:55:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56327.805845085095, 57645.63574457721, 58963.46375113466], CI_lower: [39672.99862166315, 40990.82852115526, 42308.65652771271], CI_upper: [72982.61306850704, 74300.44296799916, 75618.27097455661]
+2025-12-18 14:55:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 39672.99862166315, 40990.82852115526, 42308.65652771271], upper=[np.float64(30144.52534139477), 72982.61306850704, 74300.44296799916, 75618.27097455661]
+2025-12-18 14:55:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 58082.53608573459, 2025: 61155.09812543805, 2026: 64227.66016514151}, values=[58082.53608573459, 61155.09812543805, 64227.66016514151], CI_lower=[56399.75470236193, 59472.3167420654, 62544.87878176886], CI_upper=[59765.31746910724, 62837.87950881071, 65910.44154851417]
+2025-12-18 14:55:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58082.53608573459, 61155.09812543805, 64227.66016514151], CI_lower: [56399.75470236193, 59472.3167420654, 62544.87878176886], CI_upper: [59765.31746910724, 62837.87950881071, 65910.44154851417]
+2025-12-18 14:55:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30144.52534139477), 56399.75470236193, 59472.3167420654, 62544.87878176886], upper=[np.float64(30144.52534139477), 59765.31746910724, 62837.87950881071, 65910.44154851417]
+2025-12-18 14:55:25 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 14:55:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 52815.743287018966, 2025: 54044.64024435077, 2026: 55273.53720168257}, values=[52815.743287018966, 54044.64024435077, 55273.53720168257], CI_lower=[48590.62829289364, 49819.525250225444, 51048.42220755725], CI_upper=[57040.85828114429, 58269.75523847609, 59498.652195807896]
+2025-12-18 14:55:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52815.743287018966, 54044.64024435077, 55273.53720168257], CI_lower: [48590.62829289364, 49819.525250225444, 51048.42220755725], CI_upper: [57040.85828114429, 58269.75523847609, 59498.652195807896]
+2025-12-18 14:55:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 48590.62829289364, 49819.525250225444, 51048.42220755725], upper=[np.float64(32597.29073651277), 57040.85828114429, 58269.75523847609, 59498.652195807896]
+2025-12-18 14:55:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 58101.72462338209, 2025: 61087.981243908405, 2026: 64259.0875916481}, values=[58101.72462338209, 61087.981243908405, 64259.0875916481], CI_lower=[56703.71738465721, 59689.974005183525, 62861.08035292322], CI_upper=[59499.73186210697, 62485.988482633285, 65657.09483037298]
+2025-12-18 14:55:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58101.72462338209, 61087.981243908405, 64259.0875916481], CI_lower: [56703.71738465721, 59689.974005183525, 62861.08035292322], CI_upper: [59499.73186210697, 62485.988482633285, 65657.09483037298]
+2025-12-18 14:55:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 56703.71738465721, 59689.974005183525, 62861.08035292322], upper=[np.float64(32597.29073651277), 59499.73186210697, 62485.988482633285, 65657.09483037298]
+2025-12-18 14:55:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 57042.701541900635, 2025: 59288.98746109009, 2026: 61524.21022415161}, values=[57042.701541900635, 59288.98746109009, 61524.21022415161], CI_lower=[55769.727742322764, 58016.01366151222, 60251.23642457374], CI_upper=[58315.675341478505, 60561.96126066796, 62797.18402372948]
+2025-12-18 14:55:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57042.701541900635, 59288.98746109009, 61524.21022415161], CI_lower: [55769.727742322764, 58016.01366151222, 60251.23642457374], CI_upper: [58315.675341478505, 60561.96126066796, 62797.18402372948]
+2025-12-18 14:55:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 55769.727742322764, 58016.01366151222, 60251.23642457374], upper=[np.float64(32597.29073651277), 58315.675341478505, 60561.96126066796, 62797.18402372948]
+2025-12-18 14:55:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 52352.90982179981, 2025: 52352.90982179981, 2026: 52352.90982179981}, values=[52352.90982179981, 52352.90982179981, 52352.90982179981], CI_lower=[50047.71332109245, 50047.71332109245, 50047.71332109245], CI_upper=[54658.10632250717, 54658.10632250717, 54658.10632250717]
+2025-12-18 14:55:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52352.90982179981, 52352.90982179981, 52352.90982179981], CI_lower: [50047.71332109245, 50047.71332109245, 50047.71332109245], CI_upper: [54658.10632250717, 54658.10632250717, 54658.10632250717]
+2025-12-18 14:55:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 50047.71332109245, 50047.71332109245, 50047.71332109245], upper=[np.float64(32597.29073651277), 54658.10632250717, 54658.10632250717, 54658.10632250717]
+2025-12-18 14:55:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 49612.94569486828, 2025: 49612.94569486828, 2026: 49612.94569486828}, values=[49612.94569486828, 49612.94569486828, 49612.94569486828], CI_lower=[45766.21232494975, 45766.21232494975, 45766.21232494975], CI_upper=[53459.679064786804, 53459.679064786804, 53459.679064786804]
+2025-12-18 14:55:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49612.94569486828, 49612.94569486828, 49612.94569486828], CI_lower: [45766.21232494975, 45766.21232494975, 45766.21232494975], CI_upper: [53459.679064786804, 53459.679064786804, 53459.679064786804]
+2025-12-18 14:55:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 45766.21232494975, 45766.21232494975, 45766.21232494975], upper=[np.float64(32597.29073651277), 53459.679064786804, 53459.679064786804, 53459.679064786804]
+2025-12-18 14:55:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 53379.61925738831, 2025: 53379.61925738831, 2026: 53379.61925738831}, values=[53379.61925738831, 53379.61925738831, 53379.61925738831], CI_lower=[51749.3064492857, 51749.3064492857, 51749.3064492857], CI_upper=[55009.93206549092, 55009.93206549092, 55009.93206549092]
+2025-12-18 14:55:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53379.61925738831, 53379.61925738831, 53379.61925738831], CI_lower: [51749.3064492857, 51749.3064492857, 51749.3064492857], CI_upper: [55009.93206549092, 55009.93206549092, 55009.93206549092]
+2025-12-18 14:55:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 51749.3064492857, 51749.3064492857, 51749.3064492857], upper=[np.float64(32597.29073651277), 55009.93206549092, 55009.93206549092, 55009.93206549092]
+2025-12-18 14:55:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 55762.26273126855, 2025: 55783.38526697474, 2026: 55784.817669477925}, values=[55762.26273126855, 55783.38526697474, 55784.817669477925], CI_lower=[39313.02169393875, 39334.14422964494, 39335.57663214812], CI_upper=[72211.50376859836, 72232.62630430455, 72234.05870680773]
+2025-12-18 14:55:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55762.26273126855, 55783.38526697474, 55784.817669477925], CI_lower: [39313.02169393875, 39334.14422964494, 39335.57663214812], CI_upper: [72211.50376859836, 72232.62630430455, 72234.05870680773]
+2025-12-18 14:55:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 39313.02169393875, 39334.14422964494, 39335.57663214812], upper=[np.float64(32597.29073651277), 72211.50376859836, 72232.62630430455, 72234.05870680773]
+2025-12-18 14:55:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 58390.82803361055, 2025: 61332.2259130604, 2026: 64273.62379251025}, values=[58390.82803361055, 61332.2259130604, 64273.62379251025], CI_lower=[56554.531791075846, 59495.92967052569, 62437.32754997554], CI_upper=[60227.12427614526, 63168.52215559511, 66109.92003504495]
+2025-12-18 14:55:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58390.82803361055, 61332.2259130604, 64273.62379251025], CI_lower: [56554.531791075846, 59495.92967052569, 62437.32754997554], CI_upper: [60227.12427614526, 63168.52215559511, 66109.92003504495]
+2025-12-18 14:55:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(32597.29073651277), 56554.531791075846, 59495.92967052569, 62437.32754997554], upper=[np.float64(32597.29073651277), 60227.12427614526, 63168.52215559511, 66109.92003504495]
+2025-12-18 14:55:31 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 14:55:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44.903772982885584, 2025: 45.17893385258128, 2026: 45.45409472227698}, values=[44.903772982885584, 45.17893385258128, 45.45409472227698], CI_lower=[44.47630129182418, 44.751462161519875, 45.02662303121557], CI_upper=[45.33124467394699, 45.60640554364269, 45.88156641333838]
+2025-12-18 14:55:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.903772982885584, 45.17893385258128, 45.45409472227698], CI_lower: [44.47630129182418, 44.751462161519875, 45.02662303121557], CI_upper: [45.33124467394699, 45.60640554364269, 45.88156641333838]
+2025-12-18 14:55:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 44.47630129182418, 44.751462161519875, 45.02662303121557], upper=[np.float64(44.11996868215951), 45.33124467394699, 45.60640554364269, 45.88156641333838]
+2025-12-18 14:55:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44.6758392931406, 2025: 44.87522209119925, 2026: 45.06663409297107}, values=[44.6758392931406, 44.87522209119925, 45.06663409297107], CI_lower=[44.28446565709106, 44.48384845514971, 44.675260456921535], CI_upper=[45.067212929190134, 45.266595727248784, 45.45800772902061]
+2025-12-18 14:55:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.6758392931406, 44.87522209119925, 45.06663409297107], CI_lower: [44.28446565709106, 44.48384845514971, 44.675260456921535], CI_upper: [45.067212929190134, 45.266595727248784, 45.45800772902061]
+2025-12-18 14:55:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 44.28446565709106, 44.48384845514971, 44.675260456921535], upper=[np.float64(44.11996868215951), 45.067212929190134, 45.266595727248784, 45.45800772902061]
+2025-12-18 14:55:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 44.62950101704337, 2025: 44.79648310481571, 2026: 44.94691496086307}, values=[44.62950101704337, 44.79648310481571, 44.94691496086307], CI_lower=[44.23894597702966, 44.405928064802, 44.55635992084936], CI_upper=[45.020056057057076, 45.187038144829415, 45.33747000087678]
+2025-12-18 14:55:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.62950101704337, 44.79648310481571, 44.94691496086307], CI_lower: [44.23894597702966, 44.405928064802, 44.55635992084936], CI_upper: [45.020056057057076, 45.187038144829415, 45.33747000087678]
+2025-12-18 14:55:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 44.23894597702966, 44.405928064802, 44.55635992084936], upper=[np.float64(44.11996868215951), 45.020056057057076, 45.187038144829415, 45.33747000087678]
+2025-12-18 14:55:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 44.22876266739895, 2025: 44.22876266739895, 2026: 44.22876266739895}, values=[44.22876266739895, 44.22876266739895, 44.22876266739895], CI_lower=[43.86080361207547, 43.86080361207547, 43.86080361207547], CI_upper=[44.59672172272242, 44.59672172272242, 44.59672172272242]
+2025-12-18 14:55:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.22876266739895, 44.22876266739895, 44.22876266739895], CI_lower: [43.86080361207547, 43.86080361207547, 43.86080361207547], CI_upper: [44.59672172272242, 44.59672172272242, 44.59672172272242]
+2025-12-18 14:55:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 43.86080361207547, 43.86080361207547, 43.86080361207547], upper=[np.float64(44.11996868215951), 44.59672172272242, 44.59672172272242, 44.59672172272242]
+2025-12-18 14:55:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43.84477023105911, 2025: 43.84477023105911, 2026: 43.84477023105911}, values=[43.84477023105911, 43.84477023105911, 43.84477023105911], CI_lower=[43.31461418885385, 43.31461418885385, 43.31461418885385], CI_upper=[44.374926273264364, 44.374926273264364, 44.374926273264364]
+2025-12-18 14:55:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.84477023105911, 43.84477023105911, 43.84477023105911], CI_lower: [43.31461418885385, 43.31461418885385, 43.31461418885385], CI_upper: [44.374926273264364, 44.374926273264364, 44.374926273264364]
+2025-12-18 14:55:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 43.31461418885385, 43.31461418885385, 43.31461418885385], upper=[np.float64(44.11996868215951), 44.374926273264364, 44.374926273264364, 44.374926273264364]
+2025-12-18 14:55:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 44.342197553169306, 2025: 44.342197553169306, 2026: 44.342197553169306}, values=[44.342197553169306, 44.342197553169306, 44.342197553169306], CI_lower=[44.07181215516575, 44.07181215516575, 44.07181215516575], CI_upper=[44.61258295117286, 44.61258295117286, 44.61258295117286]
+2025-12-18 14:55:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.342197553169306, 44.342197553169306, 44.342197553169306], CI_lower: [44.07181215516575, 44.07181215516575, 44.07181215516575], CI_upper: [44.61258295117286, 44.61258295117286, 44.61258295117286]
+2025-12-18 14:55:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 44.07181215516575, 44.07181215516575, 44.07181215516575], upper=[np.float64(44.11996868215951), 44.61258295117286, 44.61258295117286, 44.61258295117286]
+2025-12-18 14:55:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 44.76811386639377, 2025: 45.03374957097449, 2026: 45.29935708532429}, values=[44.76811386639377, 45.03374957097449, 45.29935708532429], CI_lower=[25.679609757812727, 25.94524546239345, 26.210852976743247], CI_upper=[63.85661797497481, 64.12225367955554, 64.38786119390534]
+2025-12-18 14:55:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.76811386639377, 45.03374957097449, 45.29935708532429], CI_lower: [25.679609757812727, 25.94524546239345, 26.210852976743247], CI_upper: [63.85661797497481, 64.12225367955554, 64.38786119390534]
+2025-12-18 14:55:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 25.679609757812727, 25.94524546239345, 26.210852976743247], upper=[np.float64(44.11996868215951), 63.85661797497481, 64.12225367955554, 64.38786119390534]
+2025-12-18 14:55:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 44.82369695276384, 2025: 45.11573924314785, 2026: 45.40778153353185}, values=[44.82369695276384, 45.11573924314785, 45.40778153353185], CI_lower=[44.430819938618846, 44.72286222900286, 45.01490451938686], CI_upper=[45.21657396690883, 45.50861625729284, 45.800658547676846]
+2025-12-18 14:55:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.82369695276384, 45.11573924314785, 45.40778153353185], CI_lower: [44.430819938618846, 44.72286222900286, 45.01490451938686], CI_upper: [45.21657396690883, 45.50861625729284, 45.800658547676846]
+2025-12-18 14:55:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44.11996868215951), 44.430819938618846, 44.72286222900286, 45.01490451938686], upper=[np.float64(44.11996868215951), 45.21657396690883, 45.50861625729284, 45.800658547676846]
+2025-12-18 14:55:37 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 14:55:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.845344466822674, 2025: 37.82328484083032, 2026: 37.80122521483796}, values=[37.845344466822674, 37.82328484083032, 37.80122521483796], CI_lower=[37.22856710570847, 37.206507479716116, 37.18444785372376], CI_upper=[38.462121827936876, 38.44006220194452, 38.418002575952166]
+2025-12-18 14:55:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.845344466822674, 37.82328484083032, 37.80122521483796], CI_lower: [37.22856710570847, 37.206507479716116, 37.18444785372376], CI_upper: [38.462121827936876, 38.44006220194452, 38.418002575952166]
+2025-12-18 14:55:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 37.22856710570847, 37.206507479716116, 37.18444785372376], upper=[np.float64(37.78777869529315), 38.462121827936876, 38.44006220194452, 38.418002575952166]
+2025-12-18 14:55:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.12616130243623, 2025: 38.197461101739464, 2026: 38.27858101053425}, values=[38.12616130243623, 38.197461101739464, 38.27858101053425], CI_lower=[37.54689576344427, 37.6181955627475, 37.69931547154229], CI_upper=[38.70542684142819, 38.776726640731425, 38.857846549526215]
+2025-12-18 14:55:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.12616130243623, 38.197461101739464, 38.27858101053425], CI_lower: [37.54689576344427, 37.6181955627475, 37.69931547154229], CI_upper: [38.70542684142819, 38.776726640731425, 38.857846549526215]
+2025-12-18 14:55:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 37.54689576344427, 37.6181955627475, 37.69931547154229], upper=[np.float64(37.78777869529315), 38.70542684142819, 38.776726640731425, 38.857846549526215]
+2025-12-18 14:55:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 37.15238342806697, 2025: 36.54307020828128, 2026: 35.76336970552802}, values=[37.15238342806697, 36.54307020828128, 35.76336970552802], CI_lower=[36.92214106714432, 36.312827847358626, 35.53312734460537], CI_upper=[37.38262578898962, 36.77331256920393, 35.99361206645067]
+2025-12-18 14:55:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.15238342806697, 36.54307020828128, 35.76336970552802], CI_lower: [36.92214106714432, 36.312827847358626, 35.53312734460537], CI_upper: [37.38262578898962, 36.77331256920393, 35.99361206645067]
+2025-12-18 14:55:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 36.92214106714432, 36.312827847358626, 35.53312734460537], upper=[np.float64(37.78777869529315), 37.38262578898962, 36.77331256920393, 35.99361206645067]
+2025-12-18 14:55:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.86227464485771, 2025: 37.86227464485771, 2026: 37.86227464485771}, values=[37.86227464485771, 37.86227464485771, 37.86227464485771], CI_lower=[37.435308409326055, 37.435308409326055, 37.435308409326055], CI_upper=[38.28924088038937, 38.28924088038937, 38.28924088038937]
+2025-12-18 14:55:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.86227464485771, 37.86227464485771, 37.86227464485771], CI_lower: [37.435308409326055, 37.435308409326055, 37.435308409326055], CI_upper: [38.28924088038937, 38.28924088038937, 38.28924088038937]
+2025-12-18 14:55:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 37.435308409326055, 37.435308409326055, 37.435308409326055], upper=[np.float64(37.78777869529315), 38.28924088038937, 38.28924088038937, 38.28924088038937]
+2025-12-18 14:55:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.94933262395055, 2025: 37.94933262395055, 2026: 37.94933262395055}, values=[37.94933262395055, 37.94933262395055, 37.94933262395055], CI_lower=[37.47894271436951, 37.47894271436951, 37.47894271436951], CI_upper=[38.4197225335316, 38.4197225335316, 38.4197225335316]
+2025-12-18 14:55:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.94933262395055, 37.94933262395055, 37.94933262395055], CI_lower: [37.47894271436951, 37.47894271436951, 37.47894271436951], CI_upper: [38.4197225335316, 38.4197225335316, 38.4197225335316]
+2025-12-18 14:55:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 37.47894271436951, 37.47894271436951, 37.47894271436951], upper=[np.float64(37.78777869529315), 38.4197225335316, 38.4197225335316, 38.4197225335316]
+2025-12-18 14:55:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.83375051814081, 2025: 37.83375051814081, 2026: 37.83375051814081}, values=[37.83375051814081, 37.83375051814081, 37.83375051814081], CI_lower=[37.4255757465812, 37.4255757465812, 37.4255757465812], CI_upper=[38.24192528970042, 38.24192528970042, 38.24192528970042]
+2025-12-18 14:55:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.83375051814081, 37.83375051814081, 37.83375051814081], CI_lower: [37.4255757465812, 37.4255757465812, 37.4255757465812], CI_upper: [38.24192528970042, 38.24192528970042, 38.24192528970042]
+2025-12-18 14:55:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 37.4255757465812, 37.4255757465812, 37.4255757465812], upper=[np.float64(37.78777869529315), 38.24192528970042, 38.24192528970042, 38.24192528970042]
+2025-12-18 14:55:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.73883139933534, 2025: 37.7025069682072, 2026: 37.675550130838296}, values=[37.73883139933534, 37.7025069682072, 37.675550130838296], CI_lower=[19.218622804520486, 19.18229837339235, 19.155341536023442], CI_upper=[56.25903999415019, 56.22271556302206, 56.19575872565315]
+2025-12-18 14:55:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.73883139933534, 37.7025069682072, 37.675550130838296], CI_lower: [19.218622804520486, 19.18229837339235, 19.155341536023442], CI_upper: [56.25903999415019, 56.22271556302206, 56.19575872565315]
+2025-12-18 14:55:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 19.218622804520486, 19.18229837339235, 19.155341536023442], upper=[np.float64(37.78777869529315), 56.25903999415019, 56.22271556302206, 56.19575872565315]
+2025-12-18 14:55:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.707616661910315, 2025: 37.62745462894202, 2026: 37.54729259597372}, values=[37.707616661910315, 37.62745462894202, 37.54729259597372], CI_lower=[37.25457649131565, 37.17441445834736, 37.09425242537906], CI_upper=[38.160656832504976, 38.08049479953668, 38.000332766568384]
+2025-12-18 14:55:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.707616661910315, 37.62745462894202, 37.54729259597372], CI_lower: [37.25457649131565, 37.17441445834736, 37.09425242537906], CI_upper: [38.160656832504976, 38.08049479953668, 38.000332766568384]
+2025-12-18 14:55:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.78777869529315), 37.25457649131565, 37.17441445834736, 37.09425242537906], upper=[np.float64(37.78777869529315), 38.160656832504976, 38.08049479953668, 38.000332766568384]
+2025-12-18 14:55:47 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 14:55:47 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 14:59:41 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 17245.630859375, 'mse': 1461951488.0, 'rmse': 38235.474209168635, 'r2': 0.22166043519973755}
+2025-12-18 14:59:42 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 15:02:15 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.4251346588134766, 'mse': 65.04653930664062, 'rmse': 8.065143477126778, 'r2': 0.3143717050552368}
+2025-12-18 15:02:16 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 15:05:01 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.281902313232422, 'mse': 634.9241943359375, 'rmse': 25.197702163807268, 'r2': -5.649282455444336}
+2025-12-18 15:05:02 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 15:05:38 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 15:05:40 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 15:05:40 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 15:05:40 [DEBUG] census_eda.main:  Running LLM analysis for state: South Carolina
+2025-12-18 15:05:40 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 15:05:40 [INFO] census_eda.ml: [LLM] State context loaded: South Carolina
+2025-12-18 15:05:40 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [API] Total request: ~2401 tokens (system: ~2219, user: ~182)
+2025-12-18 15:05:40 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [API] Received response: 4496 chars
+2025-12-18 15:06:05 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4496 chars)
+2025-12-18 15:06:05 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [API] Total request: ~2540 tokens (system: ~2219, user: ~321)
+2025-12-18 15:06:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:06:13 [DEBUG] census_eda.ml: [API] Received response: 3069 chars
+2025-12-18 15:06:13 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3069 chars)
+2025-12-18 15:06:14 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [API] Total request: ~2767 tokens (system: ~2219, user: ~548)
+2025-12-18 15:06:14 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [API] Received response: 4351 chars
+2025-12-18 15:06:27 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4351 chars)
+2025-12-18 15:06:27 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [API] Total request: ~2559 tokens (system: ~2219, user: ~340)
+2025-12-18 15:06:27 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [API] Received response: 3536 chars
+2025-12-18 15:06:39 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3536 chars)
+2025-12-18 15:06:39 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [API] Total request: ~2409 tokens (system: ~2219, user: ~190)
+2025-12-18 15:06:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [API] Received response: 4274 chars
+2025-12-18 15:06:52 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4274 chars)
+2025-12-18 15:06:52 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [LLM] User prompt: 8719 chars (~2179 tokens)
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [API] Total request: ~4398 tokens (system: ~2219, user: ~2179)
+2025-12-18 15:06:52 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [API] Received response: 3491 chars
+2025-12-18 15:07:05 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3491 chars)
+2025-12-18 15:07:05 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [LLM] User prompt: 5376 chars (~1344 tokens)
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [API] Total request: ~3563 tokens (system: ~2219, user: ~1344)
+2025-12-18 15:07:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [API] Received response: 3379 chars
+2025-12-18 15:07:15 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3379 chars)
+2025-12-18 15:07:15 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [API] Total request: ~2371 tokens (system: ~2219, user: ~152)
+2025-12-18 15:07:15 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [API] Received response: 5128 chars
+2025-12-18 15:07:31 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (5128 chars)
+2025-12-18 15:07:31 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [LLM] User prompt: 5664 chars (~1416 tokens)
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [API] Total request: ~3635 tokens (system: ~2219, user: ~1416)
+2025-12-18 15:07:31 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [API] Received response: 4449 chars
+2025-12-18 15:07:44 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4449 chars)
+2025-12-18 15:07:44 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [LLM] User prompt: 1828 chars (~457 tokens)
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [API] Total request: ~2676 tokens (system: ~2219, user: ~457)
+2025-12-18 15:07:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [API] Received response: 5201 chars
+2025-12-18 15:07:59 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (5201 chars)
+2025-12-18 15:07:59 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: South Carolina
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: South Carolina
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3989 chars
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~997
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: South Carolina
+
+ECONOMIC PROFILE:
+  Industries: Advanced manufacturing (automotive, aerospace), Tourism and hospitality, Agriculture (poultry, cotton, soybeans), Textile and chemical manufacturing, Port operations and logistics
+  Trends: Strong growth 2011-2019 driven by automotive manufacturing boom (BMW expansion, Mercedes, Volvo plants). Port of Charleston expansion. Tourism steady growth. Post-pandemic: rapid manufacturing recovery 2021-2023, supply chain investments
+  Income: Below national median. Significant rural-urban income disparity. Coastal areas and Greenville-Spartanburg corridor higher income. Persistent poverty in rural counties
+  Dominant Sector: Manufacturing
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~1.1% annually. Driven by domestic migration (retirees to coast, workers to Upstate manufacturing) and some international immigration
+  Migration: In-migration from Northeast and Midwest seeking lower costs and warmer climate. Retirees to coastal areas (Hilton Head, Myrtle Beach, Charleston). Workers to Upstate manufacturing corridor
+  Education: Below national average in bachelor's attainment. Improving in metro areas (Charleston, Greenville, Columbia). Strong technical college system. Educational disparities by region and race
+
+HOUSING MARKET:
+  Market: Generally affordable relative to national average. Coastal areas expensive and appreciating rapidly. Charleston housing crisis. Upstate more affordable
+  Affordability: Affordable 2011-2019 except coastal tourist areas. Rapid appreciation 2020-2023, especially Charleston, Greenville, coastal markets. Retiree in-migration pressure
+  Challenges: Coastal appreciation pricing out locals, Charleston affordability crisis, Hurricane/flood insurance costs, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: right-to-work state, low taxes, light regulation. Conservative on social issues. Economic development prioritized
+  Housing: Minimal state intervention. Local control of zoning. Rapid coastal development. Charleston addressing affordability pressures
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections, business-friendly environment
+
+REGIONAL:
+  Geography: Coastal Lowcountry (tourism, ports), Midlands (capital, military), Upstate (manufacturing belt), rural Pee Dee (agriculture)
+  Urban/Rural: 66% urban in major metros, 34% rural. Urban growth in Upstate corridor (I-85) and Charleston. Rural decline in interior counties
+  Infrastructure: Expanding Port of Charleston (major East Coast port). I-85 manufacturing corridor. Growing Charleston airport. Improving but aging roads
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Boeing expansion announced, Port deepening project begins; 2014-2016: BMW major expansion, Volvo plant announced ($500M), Charleston real estate boom, gas tax controversy; 2017-2019: Mercedes Sprinter plant, Scout Motors announced ($2B), record tourism, Charleston flooding increases, Port expansion; 2021-2023: Pandemic manufacturing recovery, Scout Motors construction begins, Charleston housing spike, port container record volumes
+  Shocks: 2015 Charleston flooding. 2016 Hurricane Matthew. 2018 Hurricane Florence. 2020 pandemic heavily impacted coastal tourism
+  Transitions: Textile industry collapse complete by 2011. Transformation to advanced manufacturing (automotive, aerospace). Tourism shift from family beach to boutique Charleston
+
+COMPARATIVE:
+  Benchmarks: GDP rank mid-pack. Below national median income. Below average educational attainment. Above average poverty rate. Moderate cost of living. Business-friendly climate
+  Peer States: North Carolina (economy, growth), Georgia (manufacturing, ports), Tennessee (automotive, right-to-work)
+  Unique: Major automotive manufacturing hub in Southeast. Historic Charleston tourism draw. Port of Charleston critical East Coast gateway. Strong foreign direct investment (BMW, Volvo, Mercedes, Michelin)
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: South Carolina
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [PROMPT] State context injected (3989 chars)
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8877 chars (~2219 tokens)
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [API] Total request: ~2628 tokens (system: ~2219, user: ~409)
+2025-12-18 15:07:59 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 15:08:42 [DEBUG] census_eda.ml: [API] Received response: 14962 chars
+2025-12-18 15:08:42 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (14962 chars)
+2025-12-18 15:08:42 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 15:08:42 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 15:08:42 [INFO] census_eda.main: [REPORT] Generated: report_South_Carolina_population_20251218_150842.txt
+2025-12-18 15:08:42 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for South Carolina!
+2025-12-18 15:08:44 [INFO] census_eda.memory: process_South Carolina_population_1-year:EXIT: 15534.7MB (delta: -2839.2MB)
+2025-12-18 15:08:45 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 15:08:46 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 15:08:49 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 15:08:50 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 15:08:53 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 15:08:55 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 15:08:57 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 15:08:59 [INFO] census_eda.memory: Cleared all caches

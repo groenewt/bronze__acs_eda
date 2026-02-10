@@ -1,0 +1,1337 @@
+2025-12-18 08:11:45 [INFO] census_eda: Logging context set: state=North Carolina, survey=population, scope=1-year
+2025-12-18 08:11:45 [INFO] census_eda: Log file: ./logs/North Carolina/1-year/population/1-year_population_25_12_18_0811.log
+2025-12-18 08:11:45 [INFO] census_eda.main: ======================================================================
+2025-12-18 08:11:45 [INFO] census_eda.main: [POPULATION] Processing North Carolina (1-year)...
+2025-12-18 08:11:45 [INFO] census_eda.main: ======================================================================
+2025-12-18 08:11:45 [INFO] census_eda.memory: process_North Carolina_population_1-year:ENTER: 13582.2MB (delta: -1.0MB)
+2025-12-18 08:11:45 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 08:11:45 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/37/*/*.csv
+2025-12-18 08:11:45 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 08:11:45 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pnc.csv
+2025-12-18 08:11:46 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 08:11:46 [VERBOSE] census_eda.processing.loader:   -> Loaded 97,420 rows, 260 columns
+2025-12-18 08:11:47 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p37.csv
+2025-12-18 08:11:48 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 08:11:48 [VERBOSE] census_eda.processing.loader:   -> Loaded 101,233 rows, 260 columns
+2025-12-18 08:11:48 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pnc.csv
+2025-12-18 08:11:51 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 08:11:51 [VERBOSE] census_eda.processing.loader:   -> Loaded 97,830 rows, 260 columns
+2025-12-18 08:11:51 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pnc.csv
+2025-12-18 08:11:52 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 08:11:52 [VERBOSE] census_eda.processing.loader:   -> Loaded 97,310 rows, 260 columns
+2025-12-18 08:11:52 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pnc.csv
+2025-12-18 08:11:54 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 08:11:54 [VERBOSE] census_eda.processing.loader:   -> Loaded 91,320 rows, 260 columns
+2025-12-18 08:11:54 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pnc.csv
+2025-12-18 08:11:56 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 08:11:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 94,278 rows, 260 columns
+2025-12-18 08:11:56 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p37.csv
+2025-12-18 08:11:58 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 08:11:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 102,523 rows, 260 columns
+2025-12-18 08:11:58 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pnc.csv
+2025-12-18 08:12:00 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 08:12:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 92,599 rows, 260 columns
+2025-12-18 08:12:00 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pnc.csv
+2025-12-18 08:12:02 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 08:12:02 [VERBOSE] census_eda.processing.loader:   -> Loaded 99,596 rows, 260 columns
+2025-12-18 08:12:02 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p37.csv
+2025-12-18 08:12:04 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 08:12:04 [VERBOSE] census_eda.processing.loader:   -> Loaded 103,516 rows, 260 columns
+2025-12-18 08:12:04 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p37.csv
+2025-12-18 08:12:06 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 08:12:06 [VERBOSE] census_eda.processing.loader:   -> Loaded 109,230 rows, 260 columns
+2025-12-18 08:12:06 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p37.csv
+2025-12-18 08:12:08 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 08:12:08 [VERBOSE] census_eda.processing.loader:   -> Loaded 104,337 rows, 260 columns
+2025-12-18 08:12:08 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p37.csv
+2025-12-18 08:12:10 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 08:12:10 [VERBOSE] census_eda.processing.loader:   -> Loaded 111,920 rows, 260 columns
+2025-12-18 08:12:10 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pnc.csv
+2025-12-18 08:12:12 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 08:12:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 98,184 rows, 260 columns
+2025-12-18 08:12:12 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pnc.csv
+2025-12-18 08:12:14 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 08:12:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 95,531 rows, 260 columns
+2025-12-18 08:12:14 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pnc.csv
+2025-12-18 08:12:16 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 08:12:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 96,160 rows, 260 columns
+2025-12-18 08:12:16 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 08:12:27 [VERBOSE] census_eda.processing.loader: Combined into 1,592,987 total rows, 260 columns
+2025-12-18 08:12:27 [INFO] census_eda.main: Loaded 1,592,987 records
+2025-12-18 08:12:27 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 1592987 valid, 16 unique
+2025-12-18 08:12:28 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 08:12:30 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 08:12:31 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 08:12:31 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 08:12:32 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 08:12:33 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 08:12:34 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 08:12:35 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 08:12:35 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 08:12:35 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 08:12:36 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 08:12:37 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 08:12:37 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 08:12:38 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 08:12:39 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 08:12:39 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 08:12:39 [DEBUG] census_eda.main: Feature engineering complete: (1592987, 292)
+2025-12-18 08:12:40 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 08:12:40 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 08:16:46 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 08:16:46 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 08:16:46 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(1592987, 292)
+2025-12-18 08:16:46 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 08:16:46 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 1592987
+2025-12-18 08:16:46 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 08:16:47 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(1592987, 292)
+2025-12-18 08:16:47 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(91320), np.int64(2008): np.int64(92599), np.int64(2009): np.int64(94278), np.int64(2010): np.int64(95531), np.int64(2011): np.int64(96160), np.int64(2012): np.int64(97420), np.int64(2013): np.int64(97310), np.int64(2014): np.int64(97830), np.int64(2015): np.int64(98184), np.int64(2016): np.int64(99596), np.int64(2017): np.int64(101233), np.int64(2018): np.int64(102523), np.int64(2019): np.int64(103516), np.int64(2021): np.int64(104337), np.int64(2022): np.int64(109230), np.int64(2023): np.int64(111920)}
+2025-12-18 08:16:48 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(1592987, 292)
+2025-12-18 08:16:48 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 08:16:48 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 08:16:48 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 08:16:48 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 08:16:48 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 08:16:49 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 1592987 non-null values (zeros excluded if needed)
+2025-12-18 08:16:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 08:16:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 08:16:49 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 1592987 non-null values (zeros excluded if needed)
+2025-12-18 08:16:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1950.00
+2025-12-18 08:16:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 08:16:50 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 1592987 non-null values (zeros excluded if needed)
+2025-12-18 08:16:50 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 94.00
+2025-12-18 08:16:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 08:16:51 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 648601 non-null values (zeros excluded if needed)
+2025-12-18 08:16:51 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 185.00
+2025-12-18 08:16:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 175814 non-null values (zeros excluded if needed)
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 327000.00
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 87649 non-null values (zeros excluded if needed)
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 74000.00
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 13077 non-null values (zeros excluded if needed)
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 187780 non-null values (zeros excluded if needed)
+2025-12-18 08:16:54 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 149000.00
+2025-12-18 08:16:57 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 08:16:57 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 71023 non-null values (zeros excluded if needed)
+2025-12-18 08:16:57 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 369000.00
+2025-12-18 08:16:57 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 08:16:57 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 38766 non-null values (zeros excluded if needed)
+2025-12-18 08:16:57 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 08:16:57 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 08:16:58 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 339165 non-null values (zeros excluded if needed)
+2025-12-18 08:16:58 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 08:16:58 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 08:16:59 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 759603 non-null values (zeros excluded if needed)
+2025-12-18 08:16:59 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 543000.00
+2025-12-18 08:17:02 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 08:17:25 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 08:17:25 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 08:17:25 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 08:17:27 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 08:17:27 [DEBUG] census_eda.memory: Skipping sampling: 27881MB available (>16GB)
+2025-12-18 08:17:27 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 1592987 rows
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(1592987, 292)
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 1592987 non-null values
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 1592987 non-null values
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1950.00
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 1592987 non-null values
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 94.00
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 648601 non-null values
+2025-12-18 08:22:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 185.00
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 175814 non-null values
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 327000.00
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 87649 non-null values
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 74000.00
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 13077 non-null values
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 187780 non-null values
+2025-12-18 08:22:15 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 149000.00
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 71023 non-null values
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 369000.00
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 38766 non-null values
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 339165 non-null values
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 759603 non-null values
+2025-12-18 08:22:17 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 543000.00
+2025-12-18 08:22:19 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 805841 non-null values
+2025-12-18 08:22:19 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 08:22:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 646715 non-null values
+2025-12-18 08:22:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 08:22:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 305063 non-null values
+2025-12-18 08:22:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 08:22:20 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 1307483 non-null values
+2025-12-18 08:22:20 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 08:22:33 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 08:22:53 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 08:23:14 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 08:23:54 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 08:23:54 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 08:23:54 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 08:23:56 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 08:23:57 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 08:23:58 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 08:24:00 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 08:24:00 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 08:24:00 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 08:24:01 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 08:24:02 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 08:24:05 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 08:24:05 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 08:24:05 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 08:24:07 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 08:24:09 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 08:24:09 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 08:24:09 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 08:24:10 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 08:24:11 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 08:24:13 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 08:24:13 [DEBUG] census_eda.memory: Skipping sampling: 28171MB available (>16GB)
+2025-12-18 08:24:37 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 08:24:37 [DEBUG] census_eda.memory: Skipping sampling: 28152MB available (>16GB)
+2025-12-18 08:25:20 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 08:25:20 [DEBUG] census_eda.memory: Skipping sampling: 28133MB available (>16GB)
+2025-12-18 08:25:27 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 08:25:47 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 08:25:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 08:25:47 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 08:25:49 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 08:25:50 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 08:25:51 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 08:25:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 08:25:53 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 08:25:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 08:25:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 08:25:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 08:25:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 08:25:56 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 08:25:57 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 08:25:57 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 08:25:57 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 08:25:58 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 08:25:59 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 08:26:01 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 08:26:04 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 08:26:07 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 08:26:10 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 08:26:14 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 08:26:14 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 08:26:14 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 08:26:15 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 08:26:16 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 08:26:19 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 08:26:21 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 08:26:23 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 08:26:24 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 08:26:26 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 08:26:30 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 08:26:36 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 08:26:37 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 08:26:39 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/North_Carolina/population/1-year/figures
+2025-12-18 08:26:40 [DEBUG] census_eda.memory: Skipping sampling: 28164MB available (>16GB)
+2025-12-18 08:26:40 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 08:26:40 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 08:26:40 [INFO] census_eda.memory: [ML-START]: 24829.7MB (delta: +11247.6MB)
+2025-12-18 08:26:40 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 08:26:40 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 08:26:40 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 20598 samples (was 20605)
+2025-12-18 08:26:40 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 08:26:40 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 08:26:40 [INFO] census_eda.ml.regression: [TUNE] Data: 20,598 samples, 10 features
+2025-12-18 08:26:40 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:26:40 [INFO] census_eda.memory: tune_ridge:ENTER: 24829.7MB (delta: +0.0MB)
+2025-12-18 08:26:42 [WARNING] census_eda.memory: Memory usage (24830.3MB) exceeded threshold (16000MB)
+2025-12-18 08:26:43 [INFO] census_eda.memory: tune_ridge:EXIT: 24830.3MB (delta: +0.6MB)
+2025-12-18 08:26:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 08:26:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1170
+2025-12-18 08:26:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:26:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 08:26:43 [INFO] census_eda.ml.regression: [TUNE] Data: 20,598 samples, 10 features
+2025-12-18 08:26:43 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:26:43 [INFO] census_eda.memory: tune_lasso:ENTER: 24830.3MB (delta: +0.0MB)
+2025-12-18 08:26:43 [WARNING] census_eda.memory: Memory usage (24830.4MB) exceeded threshold (16000MB)
+2025-12-18 08:26:44 [INFO] census_eda.memory: tune_lasso:EXIT: 24830.4MB (delta: +0.0MB)
+2025-12-18 08:26:44 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 08:26:44 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1172
+2025-12-18 08:26:44 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:26:44 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 08:26:44 [INFO] census_eda.ml.regression: [TUNE] Data: 20,598 samples, 10 features
+2025-12-18 08:26:44 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:26:44 [INFO] census_eda.memory: tune_random_forest:ENTER: 24830.4MB (delta: +0.0MB)
+2025-12-18 08:27:03 [WARNING] census_eda.memory: Memory usage (24835.0MB) exceeded threshold (16000MB)
+2025-12-18 08:27:04 [INFO] census_eda.memory: tune_random_forest:EXIT: 24835.0MB (delta: +4.6MB)
+2025-12-18 08:27:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 08:27:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0708
+2025-12-18 08:27:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:27:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 08:27:06 [INFO] census_eda.ml.regression: [TUNE] Data: 20,598 samples, 10 features
+2025-12-18 08:27:06 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:27:06 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 24835.0MB (delta: +0.1MB)
+2025-12-18 08:27:17 [WARNING] census_eda.memory: Memory usage (24835.0MB) exceeded threshold (16000MB)
+2025-12-18 08:27:18 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 08:27:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1480
+2025-12-18 08:27:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:27:23 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,120 -> 1,000
+2025-12-18 08:27:23 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,120 -> 1,000
+2025-12-18 08:27:23 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:23 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 08:27:24 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:24 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 08:27:24 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 08:27:24 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 08:27:24 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 19769 samples (was 20605)
+2025-12-18 08:27:24 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 08:27:24 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 08:27:24 [INFO] census_eda.ml.regression: [TUNE] Data: 19,769 samples, 10 features
+2025-12-18 08:27:24 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:27:24 [INFO] census_eda.memory: tune_ridge:ENTER: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:24 [WARNING] census_eda.memory: Memory usage (24835.0MB) exceeded threshold (16000MB)
+2025-12-18 08:27:25 [INFO] census_eda.memory: tune_ridge:EXIT: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:25 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 08:27:25 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1242
+2025-12-18 08:27:25 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:27:25 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 08:27:25 [INFO] census_eda.ml.regression: [TUNE] Data: 19,769 samples, 10 features
+2025-12-18 08:27:25 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:27:25 [INFO] census_eda.memory: tune_lasso:ENTER: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:25 [WARNING] census_eda.memory: Memory usage (24835.0MB) exceeded threshold (16000MB)
+2025-12-18 08:27:26 [INFO] census_eda.memory: tune_lasso:EXIT: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 08:27:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1243
+2025-12-18 08:27:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:27:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 08:27:26 [INFO] census_eda.ml.regression: [TUNE] Data: 19,769 samples, 10 features
+2025-12-18 08:27:26 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:27:26 [INFO] census_eda.memory: tune_random_forest:ENTER: 24835.0MB (delta: +0.0MB)
+2025-12-18 08:27:44 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:27:45 [INFO] census_eda.memory: tune_random_forest:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:27:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 08:27:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0699
+2025-12-18 08:27:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:27:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 08:27:47 [INFO] census_eda.ml.regression: [TUNE] Data: 19,769 samples, 10 features
+2025-12-18 08:27:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:27:47 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:27:57 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:27:58 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:27:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 08:27:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1537
+2025-12-18 08:27:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:28:03 [INFO] census_eda.memory: [SHAP] Safe sample size: 3,954 -> 1,000
+2025-12-18 08:28:03 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 3,954 -> 1,000
+2025-12-18 08:28:03 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:03 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 08:28:04 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:04 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 08:28:04 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 08:28:04 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 08:28:04 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 20597 samples (was 20605)
+2025-12-18 08:28:04 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 08:28:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 08:28:04 [INFO] census_eda.ml.regression: [TUNE] Data: 20,597 samples, 10 features
+2025-12-18 08:28:04 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:28:04 [INFO] census_eda.memory: tune_ridge:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:04 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:28:05 [INFO] census_eda.memory: tune_ridge:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 08:28:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1149
+2025-12-18 08:28:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:28:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 08:28:05 [INFO] census_eda.ml.regression: [TUNE] Data: 20,597 samples, 10 features
+2025-12-18 08:28:05 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:28:05 [INFO] census_eda.memory: tune_lasso:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:05 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:28:06 [INFO] census_eda.memory: tune_lasso:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 08:28:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1152
+2025-12-18 08:28:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:28:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 08:28:06 [INFO] census_eda.ml.regression: [TUNE] Data: 20,597 samples, 10 features
+2025-12-18 08:28:06 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:28:06 [INFO] census_eda.memory: tune_random_forest:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:25 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:28:26 [INFO] census_eda.memory: tune_random_forest:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 08:28:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0699
+2025-12-18 08:28:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:28:28 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 08:28:28 [INFO] census_eda.ml.regression: [TUNE] Data: 20,597 samples, 10 features
+2025-12-18 08:28:28 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:28:28 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:40 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:28:41 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 08:28:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1508
+2025-12-18 08:28:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:28:45 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,120 -> 1,000
+2025-12-18 08:28:45 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,120 -> 1,000
+2025-12-18 08:28:45 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:45 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 08:28:46 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:46 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 08:28:46 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 08:28:46 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 08:28:46 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 08:28:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 08:28:46 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:28:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:28:46 [INFO] census_eda.memory: tune_ridge:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:46 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:28:47 [INFO] census_eda.memory: tune_ridge:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 08:28:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 08:28:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:28:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 08:28:47 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:28:47 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:28:47 [INFO] census_eda.memory: tune_lasso:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:47 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:28:48 [INFO] census_eda.memory: tune_lasso:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:48 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 08:28:48 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 08:28:48 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:28:48 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 08:28:48 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:28:48 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:28:48 [INFO] census_eda.memory: tune_random_forest:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:55 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:28:56 [INFO] census_eda.memory: tune_random_forest:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:28:56 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 08:28:56 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 08:28:56 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:28:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 08:28:57 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:28:57 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:28:57 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:05 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:29:06 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 08:29:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 08:29:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:29:13 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 08:29:13 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 08:29:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 08:29:13 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:29:13 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:29:13 [INFO] census_eda.memory: tune_ridge:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:13 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:29:14 [INFO] census_eda.memory: tune_ridge:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 08:29:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0450
+2025-12-18 08:29:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:29:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 08:29:14 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:29:14 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 08:29:14 [INFO] census_eda.memory: tune_lasso:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:15 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:29:15 [INFO] census_eda.memory: tune_lasso:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 08:29:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0455
+2025-12-18 08:29:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 08:29:16 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 08:29:16 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:29:16 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:29:16 [INFO] census_eda.memory: tune_random_forest:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:37 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:29:37 [INFO] census_eda.memory: tune_random_forest:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 08:29:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0561
+2025-12-18 08:29:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:29:39 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 08:29:39 [INFO] census_eda.ml.regression: [TUNE] Data: 20,605 samples, 10 features
+2025-12-18 08:29:39 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 08:29:39 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:51 [WARNING] census_eda.memory: Memory usage (24835.1MB) exceeded threshold (16000MB)
+2025-12-18 08:29:52 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 08:29:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1123
+2025-12-18 08:29:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 08:29:56 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,121 -> 1,000
+2025-12-18 08:29:56 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,121 -> 1,000
+2025-12-18 08:29:56 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:56 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 08:29:57 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:57 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 08:29:57 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 08:29:57 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 08:29:57 [INFO] census_eda.memory: [PRE-CLUSTERING]: 24835.1MB (delta: +0.0MB)
+2025-12-18 08:29:57 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 08:29:57 [INFO] census_eda.main: [CLUSTERING] KMeans on 20,605 samples...
+2025-12-18 08:30:00 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 08:30:00 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 20,605 samples (will sample if needed)...
+2025-12-18 08:30:00 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 20,605 -> 15,000 (distance matrix would be 3.2GB)
+2025-12-18 08:30:00 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 20,605 -> 15,000 for O(n²) distance matrix
+2025-12-18 08:30:05 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 08:30:05 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 08:30:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 56399.63893890381, 2025: 58546.02199554443, 2026: 60675.92177581787}, Values: [56399.63893890381, 58546.02199554443, 60675.92177581787]
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 08:30:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 61639.62731361389, 2025: 64563.59751558304, 2026: 67647.96747589111}, Values: [61639.62731361389, 64563.59751558304, 67647.96747589111]
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 08:30:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 61990.36267566681, 2025: 64940.721318244934, 2026: 68039.47739124298}, Values: [61990.36267566681, 64940.721318244934, 68039.47739124298]
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 08:30:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 43.93977331276983, 2025: 44.07069703284651, 2026: 44.16833315137774}, Values: [43.93977331276983, 44.07069703284651, 44.16833315137774]
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 08:30:05 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.36344614997506, 2025: 36.804018672555685, 2026: 36.093679774552584}, Values: [37.36344614997506, 36.804018672555685, 36.093679774552584]
+2025-12-18 08:30:05 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 08:30:10 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-18 08:30:16 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-18 08:30:22 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-18 08:30:33 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 08:30:35 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 20605.
+2025-12-18 08:30:35 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 08:30:35 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 08:30:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 52422.55564318551, 2025: 53626.621058239136, 2026: 54830.68647329323}, values=[52422.55564318551, 53626.621058239136, 54830.68647329323], CI_lower=[48341.26320383148, 49545.328618885105, 50749.3940339392], CI_upper=[56503.84808253954, 57707.91349759317, 58911.97891264726]
+2025-12-18 08:30:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52422.55564318551, 53626.621058239136, 54830.68647329323], CI_lower: [48341.26320383148, 49545.328618885105, 50749.3940339392], CI_upper: [56503.84808253954, 57707.91349759317, 58911.97891264726]
+2025-12-18 08:30:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 48341.26320383148, 49545.328618885105, 50749.3940339392], upper=[np.float64(48454.37512572291), 56503.84808253954, 57707.91349759317, 58911.97891264726]
+2025-12-18 08:30:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 57435.66775727272, 2025: 60306.37564724684, 2026: 63352.39108133316}, values=[57435.66775727272, 60306.37564724684, 63352.39108133316], CI_lower=[55899.86869626748, 58770.576586241594, 61816.59202032792], CI_upper=[58971.466818277964, 61842.17470825208, 64888.190142338404]
+2025-12-18 08:30:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57435.66775727272, 60306.37564724684, 63352.39108133316], CI_lower: [55899.86869626748, 58770.576586241594, 61816.59202032792], CI_upper: [58971.466818277964, 61842.17470825208, 64888.190142338404]
+2025-12-18 08:30:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 55899.86869626748, 58770.576586241594, 61816.59202032792], upper=[np.float64(48454.37512572291), 58971.466818277964, 61842.17470825208, 64888.190142338404]
+2025-12-18 08:30:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 56399.63893890381, 2025: 58546.02199554443, 2026: 60675.92177581787}, values=[56399.63893890381, 58546.02199554443, 60675.92177581787], CI_lower=[54971.833625173225, 57118.21668181385, 59248.11646208729], CI_upper=[57827.44425263439, 59973.82730927502, 62103.727089548454]
+2025-12-18 08:30:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56399.63893890381, 58546.02199554443, 60675.92177581787], CI_lower: [54971.833625173225, 57118.21668181385, 59248.11646208729], CI_upper: [57827.44425263439, 59973.82730927502, 62103.727089548454]
+2025-12-18 08:30:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 54971.833625173225, 57118.21668181385, 59248.11646208729], upper=[np.float64(48454.37512572291), 57827.44425263439, 59973.82730927502, 62103.727089548454]
+2025-12-18 08:30:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 51892.95647790089, 2025: 51892.95647790089, 2026: 51892.95647790089}, values=[51892.95647790089, 51892.95647790089, 51892.95647790089], CI_lower=[49571.89840230908, 49571.89840230908, 49571.89840230908], CI_upper=[54214.01455349269, 54214.01455349269, 54214.01455349269]
+2025-12-18 08:30:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51892.95647790089, 51892.95647790089, 51892.95647790089], CI_lower: [49571.89840230908, 49571.89840230908, 49571.89840230908], CI_upper: [54214.01455349269, 54214.01455349269, 54214.01455349269]
+2025-12-18 08:30:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 49571.89840230908, 49571.89840230908, 49571.89840230908], upper=[np.float64(48454.37512572291), 54214.01455349269, 54214.01455349269, 54214.01455349269]
+2025-12-18 08:30:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 49253.8532547911, 2025: 49253.8532547911, 2026: 49253.8532547911}, values=[49253.8532547911, 49253.8532547911, 49253.8532547911], CI_lower=[45458.25979653091, 45458.25979653091, 45458.25979653091], CI_upper=[53049.44671305129, 53049.44671305129, 53049.44671305129]
+2025-12-18 08:30:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49253.8532547911, 49253.8532547911, 49253.8532547911], CI_lower: [45458.25979653091, 45458.25979653091, 45458.25979653091], CI_upper: [53049.44671305129, 53049.44671305129, 53049.44671305129]
+2025-12-18 08:30:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 45458.25979653091, 45458.25979653091, 45458.25979653091], upper=[np.float64(48454.37512572291), 53049.44671305129, 53049.44671305129, 53049.44671305129]
+2025-12-18 08:30:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 52943.28377027387, 2025: 52943.28377027387, 2026: 52943.28377027387}, values=[52943.28377027387, 52943.28377027387, 52943.28377027387], CI_lower=[51317.48140188239, 51317.48140188239, 51317.48140188239], CI_upper=[54569.08613866535, 54569.08613866535, 54569.08613866535]
+2025-12-18 08:30:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52943.28377027387, 52943.28377027387, 52943.28377027387], CI_lower: [51317.48140188239, 51317.48140188239, 51317.48140188239], CI_upper: [54569.08613866535, 54569.08613866535, 54569.08613866535]
+2025-12-18 08:30:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 51317.48140188239, 51317.48140188239, 51317.48140188239], upper=[np.float64(48454.37512572291), 54569.08613866535, 54569.08613866535, 54569.08613866535]
+2025-12-18 08:30:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 55345.13435028487, 2025: 55334.5728510843, 2026: 55334.98539228938}, values=[55345.13435028487, 55334.5728510843, 55334.98539228938], CI_lower=[38875.87977187152, 38865.31827267095, 38865.73081387604], CI_upper=[71814.38892869822, 71803.82742949764, 71804.23997070272]
+2025-12-18 08:30:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55345.13435028487, 55334.5728510843, 55334.98539228938], CI_lower: [38875.87977187152, 38865.31827267095, 38865.73081387604], CI_upper: [71814.38892869822, 71803.82742949764, 71804.23997070272]
+2025-12-18 08:30:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 38875.87977187152, 38865.31827267095, 38865.73081387604], upper=[np.float64(48454.37512572291), 71814.38892869822, 71803.82742949764, 71804.23997070272]
+2025-12-18 08:30:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 58006.92326645923, 2025: 60939.09794760162, 2026: 63871.27262874401}, values=[58006.92326645923, 60939.09794760162, 63871.27262874401], CI_lower=[55953.62897648429, 58885.80365762668, 61817.97833876907], CI_upper=[60060.21755643417, 62992.39223757656, 65924.56691871895]
+2025-12-18 08:30:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58006.92326645923, 60939.09794760162, 63871.27262874401], CI_lower: [55953.62897648429, 58885.80365762668, 61817.97833876907], CI_upper: [60060.21755643417, 62992.39223757656, 65924.56691871895]
+2025-12-18 08:30:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48454.37512572291), 55953.62897648429, 58885.80365762668, 61817.97833876907], upper=[np.float64(48454.37512572291), 60060.21755643417, 62992.39223757656, 65924.56691871895]
+2025-12-18 08:30:41 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 08:30:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 56909.89314625505, 2025: 58273.63973127166, 2026: 59637.38631628873}, values=[56909.89314625505, 58273.63973127166, 59637.38631628873], CI_lower=[53056.506874117375, 54420.25345913398, 55784.00004415105], CI_upper=[60763.27941839273, 62127.02600340934, 63490.77258842641]
+2025-12-18 08:30:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56909.89314625505, 58273.63973127166, 59637.38631628873], CI_lower: [53056.506874117375, 54420.25345913398, 55784.00004415105], CI_upper: [60763.27941839273, 62127.02600340934, 63490.77258842641]
+2025-12-18 08:30:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 53056.506874117375, 54420.25345913398, 55784.00004415105], upper=[np.float64(33553.7013452351), 60763.27941839273, 62127.02600340934, 63490.77258842641]
+2025-12-18 08:30:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 61672.894694805145, 2025: 64620.13283294439, 2026: 67733.93219804764}, values=[61672.894694805145, 64620.13283294439, 67733.93219804764], CI_lower=[60279.53760377595, 63226.7757419152, 66340.57510701843], CI_upper=[63066.25178583434, 66013.4899239736, 69127.28928907684]
+2025-12-18 08:30:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61672.894694805145, 64620.13283294439, 67733.93219804764], CI_lower: [60279.53760377595, 63226.7757419152, 66340.57510701843], CI_upper: [63066.25178583434, 66013.4899239736, 69127.28928907684]
+2025-12-18 08:30:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 60279.53760377595, 63226.7757419152, 66340.57510701843], upper=[np.float64(33553.7013452351), 63066.25178583434, 66013.4899239736, 69127.28928907684]
+2025-12-18 08:30:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 61639.62731361389, 2025: 64563.59751558304, 2026: 67647.96747589111}, values=[61639.62731361389, 64563.59751558304, 67647.96747589111], CI_lower=[60246.38894240699, 63170.35914437614, 66254.72910468421], CI_upper=[63032.86568482079, 65956.83588678994, 69041.20584709801]
+2025-12-18 08:30:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61639.62731361389, 64563.59751558304, 67647.96747589111], CI_lower: [60246.38894240699, 63170.35914437614, 66254.72910468421], CI_upper: [63032.86568482079, 65956.83588678994, 69041.20584709801]
+2025-12-18 08:30:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 60246.38894240699, 63170.35914437614, 66254.72910468421], upper=[np.float64(33553.7013452351), 63032.86568482079, 65956.83588678994, 69041.20584709801]
+2025-12-18 08:30:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 56236.661584721296, 2025: 56236.661584721296, 2026: 56236.661584721296}, values=[56236.661584721296, 56236.661584721296, 56236.661584721296], CI_lower=[53700.11118671799, 53700.11118671799, 53700.11118671799], CI_upper=[58773.2119827246, 58773.2119827246, 58773.2119827246]
+2025-12-18 08:30:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56236.661584721296, 56236.661584721296, 56236.661584721296], CI_lower: [53700.11118671799, 53700.11118671799, 53700.11118671799], CI_upper: [58773.2119827246, 58773.2119827246, 58773.2119827246]
+2025-12-18 08:30:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 53700.11118671799, 53700.11118671799, 53700.11118671799], upper=[np.float64(33553.7013452351), 58773.2119827246, 58773.2119827246, 58773.2119827246]
+2025-12-18 08:30:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 53128.61221626032, 2025: 53128.61221626032, 2026: 53128.61221626032}, values=[53128.61221626032, 53128.61221626032, 53128.61221626032], CI_lower=[49285.66339406794, 49285.66339406794, 49285.66339406794], CI_upper=[56971.5610384527, 56971.5610384527, 56971.5610384527]
+2025-12-18 08:30:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53128.61221626032, 53128.61221626032, 53128.61221626032], CI_lower: [49285.66339406794, 49285.66339406794, 49285.66339406794], CI_upper: [56971.5610384527, 56971.5610384527, 56971.5610384527]
+2025-12-18 08:30:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 49285.66339406794, 49285.66339406794, 49285.66339406794], upper=[np.float64(33553.7013452351), 56971.5610384527, 56971.5610384527, 56971.5610384527]
+2025-12-18 08:30:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 57275.12100714933, 2025: 57275.12100714933, 2026: 57275.12100714933}, values=[57275.12100714933, 57275.12100714933, 57275.12100714933], CI_lower=[55395.4056912075, 55395.4056912075, 55395.4056912075], CI_upper=[59154.836323091164, 59154.836323091164, 59154.836323091164]
+2025-12-18 08:30:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57275.12100714933, 57275.12100714933, 57275.12100714933], CI_lower: [55395.4056912075, 55395.4056912075, 55395.4056912075], CI_upper: [59154.836323091164, 59154.836323091164, 59154.836323091164]
+2025-12-18 08:30:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 55395.4056912075, 55395.4056912075, 55395.4056912075], upper=[np.float64(33553.7013452351), 59154.836323091164, 59154.836323091164, 59154.836323091164]
+2025-12-18 08:30:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 60972.76995875372, 2025: 62476.688135563905, 2026: 63980.5718149891}, values=[60972.76995875372, 62476.688135563905, 63980.5718149891], CI_lower=[43501.580761937475, 45005.49893874766, 46509.38261817286], CI_upper=[78443.95915556996, 79947.87733238016, 81451.76101180536]
+2025-12-18 08:30:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60972.76995875372, 62476.688135563905, 63980.5718149891], CI_lower: [43501.580761937475, 45005.49893874766, 46509.38261817286], CI_upper: [78443.95915556996, 79947.87733238016, 81451.76101180536]
+2025-12-18 08:30:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 43501.580761937475, 45005.49893874766, 46509.38261817286], upper=[np.float64(33553.7013452351), 78443.95915556996, 79947.87733238016, 81451.76101180536]
+2025-12-18 08:30:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 62404.53685582802, 2025: 65340.25644067911, 2026: 68275.97602553021}, values=[62404.53685582802, 65340.25644067911, 68275.97602553021], CI_lower=[60037.7247996705, 62973.444384521594, 65909.16396937269], CI_upper=[64771.34891198554, 67707.06849683663, 70642.78808168773]
+2025-12-18 08:30:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62404.53685582802, 65340.25644067911, 68275.97602553021], CI_lower: [60037.7247996705, 62973.444384521594, 65909.16396937269], CI_upper: [64771.34891198554, 67707.06849683663, 70642.78808168773]
+2025-12-18 08:30:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33553.7013452351), 60037.7247996705, 62973.444384521594, 65909.16396937269], upper=[np.float64(33553.7013452351), 64771.34891198554, 67707.06849683663, 70642.78808168773]
+2025-12-18 08:30:48 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 08:30:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 57005.26458277507, 2025: 58361.62187626539, 2026: 59717.979169756174}, values=[57005.26458277507, 58361.62187626539, 59717.979169756174], CI_lower=[52895.51824536346, 54251.87553885378, 55608.23283234457], CI_upper=[61115.01092018667, 62471.36821367699, 63827.72550716778]
+2025-12-18 08:30:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57005.26458277507, 58361.62187626539, 59717.979169756174], CI_lower: [52895.51824536346, 54251.87553885378, 55608.23283234457], CI_upper: [61115.01092018667, 62471.36821367699, 63827.72550716778]
+2025-12-18 08:30:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 52895.51824536346, 54251.87553885378, 55608.23283234457], upper=[np.float64(36150.68194468049), 61115.01092018667, 62471.36821367699, 63827.72550716778]
+2025-12-18 08:30:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 62163.02469998598, 2025: 65234.11365920305, 2026: 68485.5684749484}, values=[62163.02469998598, 65234.11365920305, 68485.5684749484], CI_lower=[60838.36659028062, 63909.45554949769, 67160.91036524303], CI_upper=[63487.682809691345, 66558.77176890842, 69810.22658465378]
+2025-12-18 08:30:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62163.02469998598, 65234.11365920305, 68485.5684749484], CI_lower: [60838.36659028062, 63909.45554949769, 67160.91036524303], CI_upper: [63487.682809691345, 66558.77176890842, 69810.22658465378]
+2025-12-18 08:30:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 60838.36659028062, 63909.45554949769, 67160.91036524303], upper=[np.float64(36150.68194468049), 63487.682809691345, 66558.77176890842, 69810.22658465378]
+2025-12-18 08:30:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 61990.36267566681, 2025: 64940.721318244934, 2026: 68039.47739124298}, values=[61990.36267566681, 64940.721318244934, 68039.47739124298], CI_lower=[60669.06589295056, 63619.424535528684, 66718.18060852673], CI_upper=[63311.65945838306, 66262.01810096118, 69360.77417395923]
+2025-12-18 08:30:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61990.36267566681, 64940.721318244934, 68039.47739124298], CI_lower: [60669.06589295056, 63619.424535528684, 66718.18060852673], CI_upper: [63311.65945838306, 66262.01810096118, 69360.77417395923]
+2025-12-18 08:30:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 60669.06589295056, 63619.424535528684, 66718.18060852673], upper=[np.float64(36150.68194468049), 63311.65945838306, 66262.01810096118, 69360.77417395923]
+2025-12-18 08:30:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 56471.25709570964, 2025: 56471.25709570964, 2026: 56471.25709570964}, values=[56471.25709570964, 56471.25709570964, 56471.25709570964], CI_lower=[53948.59630544666, 53948.59630544666, 53948.59630544666], CI_upper=[58993.917885972616, 58993.917885972616, 58993.917885972616]
+2025-12-18 08:30:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56471.25709570964, 56471.25709570964, 56471.25709570964], CI_lower: [53948.59630544666, 53948.59630544666, 53948.59630544666], CI_upper: [58993.917885972616, 58993.917885972616, 58993.917885972616]
+2025-12-18 08:30:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 53948.59630544666, 53948.59630544666, 53948.59630544666], upper=[np.float64(36150.68194468049), 58993.917885972616, 58993.917885972616, 58993.917885972616]
+2025-12-18 08:30:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 53348.56626372918, 2025: 53348.56626372918, 2026: 53348.56626372918}, values=[53348.56626372918, 53348.56626372918, 53348.56626372918], CI_lower=[49336.994409821324, 49336.994409821324, 49336.994409821324], CI_upper=[57360.13811763704, 57360.13811763704, 57360.13811763704]
+2025-12-18 08:30:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53348.56626372918, 53348.56626372918, 53348.56626372918], CI_lower: [49336.994409821324, 49336.994409821324, 49336.994409821324], CI_upper: [57360.13811763704, 57360.13811763704, 57360.13811763704]
+2025-12-18 08:30:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 49336.994409821324, 49336.994409821324, 49336.994409821324], upper=[np.float64(36150.68194468049), 57360.13811763704, 57360.13811763704, 57360.13811763704]
+2025-12-18 08:30:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 57577.66743573808, 2025: 57577.66743573808, 2026: 57577.66743573808}, values=[57577.66743573808, 57577.66743573808, 57577.66743573808], CI_lower=[55779.16549805688, 55779.16549805688, 55779.16549805688], CI_upper=[59376.16937341929, 59376.16937341929, 59376.16937341929]
+2025-12-18 08:30:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57577.66743573808, 57577.66743573808, 57577.66743573808], CI_lower: [55779.16549805688, 55779.16549805688, 55779.16549805688], CI_upper: [59376.16937341929, 59376.16937341929, 59376.16937341929]
+2025-12-18 08:30:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 55779.16549805688, 55779.16549805688, 55779.16549805688], upper=[np.float64(36150.68194468049), 59376.16937341929, 59376.16937341929, 59376.16937341929]
+2025-12-18 08:30:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 61280.06444337307, 2025: 62764.54941512126, 2026: 64249.020513912576}, values=[61280.06444337307, 62764.54941512126, 64249.020513912576], CI_lower=[43527.20043376215, 45011.68540551035, 46496.15650430166], CI_upper=[79032.928452984, 80517.41342473218, 82001.88452352349]
+2025-12-18 08:30:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61280.06444337307, 62764.54941512126, 64249.020513912576], CI_lower: [43527.20043376215, 45011.68540551035, 46496.15650430166], CI_upper: [79032.928452984, 80517.41342473218, 82001.88452352349]
+2025-12-18 08:30:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 43527.20043376215, 45011.68540551035, 46496.15650430166], upper=[np.float64(36150.68194468049), 79032.928452984, 80517.41342473218, 82001.88452352349]
+2025-12-18 08:30:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 62961.69834734041, 2025: 66127.83110106611, 2026: 69293.96385479183}, values=[62961.69834734041, 66127.83110106611, 69293.96385479183], CI_lower=[60867.19110505181, 64033.32385877751, 67199.45661250323], CI_upper=[65056.20558962901, 68222.33834335471, 71388.47109708043]
+2025-12-18 08:30:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62961.69834734041, 66127.83110106611, 69293.96385479183], CI_lower: [60867.19110505181, 64033.32385877751, 67199.45661250323], CI_upper: [65056.20558962901, 68222.33834335471, 71388.47109708043]
+2025-12-18 08:30:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36150.68194468049), 60867.19110505181, 64033.32385877751, 67199.45661250323], upper=[np.float64(36150.68194468049), 65056.20558962901, 68222.33834335471, 71388.47109708043]
+2025-12-18 08:30:55 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 08:30:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44.10861545908995, 2025: 44.36252459098864, 2026: 44.61643372288722}, values=[44.10861545908995, 44.36252459098864, 44.61643372288722], CI_lower=[43.82443627713644, 44.07834540903514, 44.33225454093372], CI_upper=[44.39279464104345, 44.646703772942146, 44.90061290484073]
+2025-12-18 08:30:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.10861545908995, 44.36252459098864, 44.61643372288722], CI_lower: [43.82443627713644, 44.07834540903514, 44.33225454093372], CI_upper: [44.39279464104345, 44.646703772942146, 44.90061290484073]
+2025-12-18 08:30:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 43.82443627713644, 44.07834540903514, 44.33225454093372], upper=[np.float64(43.32382952108649), 44.39279464104345, 44.646703772942146, 44.90061290484073]
+2025-12-18 08:30:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44.12231116169551, 2025: 44.38077352104352, 2026: 44.63971481641704}, values=[44.12231116169551, 44.38077352104352, 44.63971481641704], CI_lower=[43.83831980697475, 44.09678216632277, 44.355723461696286], CI_upper=[44.40630251641626, 44.66476487576428, 44.923706171137795]
+2025-12-18 08:30:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.12231116169551, 44.38077352104352, 44.63971481641704], CI_lower: [43.83831980697475, 44.09678216632277, 44.355723461696286], CI_upper: [44.40630251641626, 44.66476487576428, 44.923706171137795]
+2025-12-18 08:30:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 43.83831980697475, 44.09678216632277, 44.355723461696286], upper=[np.float64(43.32382952108649), 44.40630251641626, 44.66476487576428, 44.923706171137795]
+2025-12-18 08:30:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 43.93977331276983, 2025: 44.07069703284651, 2026: 44.16833315137774}, values=[43.93977331276983, 44.07069703284651, 44.16833315137774], CI_lower=[43.67382017793398, 43.80474389801066, 43.90238001654189], CI_upper=[44.20572644760568, 44.33665016768236, 44.434286286213585]
+2025-12-18 08:30:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.93977331276983, 44.07069703284651, 44.16833315137774], CI_lower: [43.67382017793398, 43.80474389801066, 43.90238001654189], CI_upper: [44.20572644760568, 44.33665016768236, 44.434286286213585]
+2025-12-18 08:30:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 43.67382017793398, 43.80474389801066, 43.90238001654189], upper=[np.float64(43.32382952108649), 44.20572644760568, 44.33665016768236, 44.434286286213585]
+2025-12-18 08:30:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43.61655684954862, 2025: 43.61655684954862, 2026: 43.61655684954862}, values=[43.61655684954862, 43.61655684954862, 43.61655684954862], CI_lower=[43.248876478250125, 43.248876478250125, 43.248876478250125], CI_upper=[43.98423722084712, 43.98423722084712, 43.98423722084712]
+2025-12-18 08:30:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.61655684954862, 43.61655684954862, 43.61655684954862], CI_lower: [43.248876478250125, 43.248876478250125, 43.248876478250125], CI_upper: [43.98423722084712, 43.98423722084712, 43.98423722084712]
+2025-12-18 08:30:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 43.248876478250125, 43.248876478250125, 43.248876478250125], upper=[np.float64(43.32382952108649), 43.98423722084712, 43.98423722084712, 43.98423722084712]
+2025-12-18 08:30:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43.16567132241768, 2025: 43.16567132241768, 2026: 43.16567132241768}, values=[43.16567132241768, 43.16567132241768, 43.16567132241768], CI_lower=[42.711160442298066, 42.711160442298066, 42.711160442298066], CI_upper=[43.62018220253729, 43.62018220253729, 43.62018220253729]
+2025-12-18 08:30:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.16567132241768, 43.16567132241768, 43.16567132241768], CI_lower: [42.711160442298066, 42.711160442298066, 42.711160442298066], CI_upper: [43.62018220253729, 43.62018220253729, 43.62018220253729]
+2025-12-18 08:30:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 42.711160442298066, 42.711160442298066, 42.711160442298066], upper=[np.float64(43.32382952108649), 43.62018220253729, 43.62018220253729, 43.62018220253729]
+2025-12-18 08:30:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 43.643937377276266, 2025: 43.643937377276266, 2026: 43.643937377276266}, values=[43.643937377276266, 43.643937377276266, 43.643937377276266], CI_lower=[43.34222419577617, 43.34222419577617, 43.34222419577617], CI_upper=[43.945650558776364, 43.945650558776364, 43.945650558776364]
+2025-12-18 08:30:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.643937377276266, 43.643937377276266, 43.643937377276266], CI_lower: [43.34222419577617, 43.34222419577617, 43.34222419577617], CI_upper: [43.945650558776364, 43.945650558776364, 43.945650558776364]
+2025-12-18 08:30:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 43.34222419577617, 43.34222419577617, 43.34222419577617], upper=[np.float64(43.32382952108649), 43.945650558776364, 43.945650558776364, 43.945650558776364]
+2025-12-18 08:31:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 43.93664417179136, 2025: 44.17855190239614, 2026: 44.42044248653252}, values=[43.93664417179136, 44.17855190239614, 44.42044248653252], CI_lower=[25.04379374228439, 25.28570147288917, 25.527592057025554], CI_upper=[62.82949460129832, 63.0714023319031, 63.31329291603949]
+2025-12-18 08:31:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.93664417179136, 44.17855190239614, 44.42044248653252], CI_lower: [25.04379374228439, 25.28570147288917, 25.527592057025554], CI_upper: [62.82949460129832, 63.0714023319031, 63.31329291603949]
+2025-12-18 08:31:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 25.04379374228439, 25.28570147288917, 25.527592057025554], upper=[np.float64(43.32382952108649), 62.82949460129832, 63.0714023319031, 63.31329291603949]
+2025-12-18 08:31:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 44.02491299953054, 2025: 44.2932455112024, 2026: 44.561578022874265}, values=[44.02491299953054, 44.2932455112024, 44.561578022874265], CI_lower=[43.697391494695026, 43.965724006366884, 44.23405651803875], CI_upper=[44.35243450436606, 44.62076701603792, 44.88909952770978]
+2025-12-18 08:31:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.02491299953054, 44.2932455112024, 44.561578022874265], CI_lower: [43.697391494695026, 43.965724006366884, 44.23405651803875], CI_upper: [44.35243450436606, 44.62076701603792, 44.88909952770978]
+2025-12-18 08:31:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32382952108649), 43.697391494695026, 43.965724006366884, 44.23405651803875], upper=[np.float64(43.32382952108649), 44.35243450436606, 44.62076701603792, 44.88909952770978]
+2025-12-18 08:31:02 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 08:31:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.990259117480235, 2025: 37.954208562433266, 2026: 37.918158007386296}, values=[37.990259117480235, 37.954208562433266, 37.918158007386296], CI_lower=[37.45486354272191, 37.41881298767494, 37.38276243262797], CI_upper=[38.52565469223856, 38.48960413719159, 38.45355358214462]
+2025-12-18 08:31:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.990259117480235, 37.954208562433266, 37.918158007386296], CI_lower: [37.45486354272191, 37.41881298767494, 37.38276243262797], CI_upper: [38.52565469223856, 38.48960413719159, 38.45355358214462]
+2025-12-18 08:31:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 37.45486354272191, 37.41881298767494, 37.38276243262797], upper=[np.float64(37.8522196876645), 38.52565469223856, 38.48960413719159, 38.45355358214462]
+2025-12-18 08:31:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.22268204791908, 2025: 38.26390204242489, 2026: 38.31324982107253}, values=[38.22268204791908, 38.26390204242489, 38.31324982107253], CI_lower=[37.716802723209646, 37.758022717715455, 37.8073704963631], CI_upper=[38.72856137262851, 38.76978136713432, 38.819129145781964]
+2025-12-18 08:31:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.22268204791908, 38.26390204242489, 38.31324982107253], CI_lower: [37.716802723209646, 37.758022717715455, 37.8073704963631], CI_upper: [38.72856137262851, 38.76978136713432, 38.819129145781964]
+2025-12-18 08:31:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 37.716802723209646, 37.758022717715455, 37.8073704963631], upper=[np.float64(37.8522196876645), 38.72856137262851, 38.76978136713432, 38.819129145781964]
+2025-12-18 08:31:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 37.36344614997506, 2025: 36.804018672555685, 2026: 36.093679774552584}, values=[37.36344614997506, 36.804018672555685, 36.093679774552584], CI_lower=[37.174093783940165, 36.61466630652079, 35.90432740851769], CI_upper=[37.55279851600996, 36.99337103859058, 36.28303214058748]
+2025-12-18 08:31:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.36344614997506, 36.804018672555685, 36.093679774552584], CI_lower: [37.174093783940165, 36.61466630652079, 35.90432740851769], CI_upper: [37.55279851600996, 36.99337103859058, 36.28303214058748]
+2025-12-18 08:31:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 37.174093783940165, 36.61466630652079, 35.90432740851769], upper=[np.float64(37.8522196876645), 37.55279851600996, 36.99337103859058, 36.28303214058748]
+2025-12-18 08:31:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 38.07234787510275, 2025: 38.07234787510275, 2026: 38.07234787510275}, values=[38.07234787510275, 38.07234787510275, 38.07234787510275], CI_lower=[37.68929111756308, 37.68929111756308, 37.68929111756308], CI_upper=[38.45540463264242, 38.45540463264242, 38.45540463264242]
+2025-12-18 08:31:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.07234787510275, 38.07234787510275, 38.07234787510275], CI_lower: [37.68929111756308, 37.68929111756308, 37.68929111756308], CI_upper: [38.45540463264242, 38.45540463264242, 38.45540463264242]
+2025-12-18 08:31:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 37.68929111756308, 37.68929111756308, 37.68929111756308], upper=[np.float64(37.8522196876645), 38.45540463264242, 38.45540463264242, 38.45540463264242]
+2025-12-18 08:31:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 38.131858432404414, 2025: 38.131858432404414, 2026: 38.131858432404414}, values=[38.131858432404414, 38.131858432404414, 38.131858432404414], CI_lower=[37.73472407372113, 37.73472407372113, 37.73472407372113], CI_upper=[38.528992791087695, 38.528992791087695, 38.528992791087695]
+2025-12-18 08:31:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.131858432404414, 38.131858432404414, 38.131858432404414], CI_lower: [37.73472407372113, 37.73472407372113, 37.73472407372113], CI_upper: [38.528992791087695, 38.528992791087695, 38.528992791087695]
+2025-12-18 08:31:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 37.73472407372113, 37.73472407372113, 37.73472407372113], upper=[np.float64(37.8522196876645), 38.528992791087695, 38.528992791087695, 38.528992791087695]
+2025-12-18 08:31:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 38.002445123885614, 2025: 38.002445123885614, 2026: 38.002445123885614}, values=[38.002445123885614, 38.002445123885614, 38.002445123885614], CI_lower=[37.63295612955637, 37.63295612955637, 37.63295612955637], CI_upper=[38.37193411821486, 38.37193411821486, 38.37193411821486]
+2025-12-18 08:31:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.002445123885614, 38.002445123885614, 38.002445123885614], CI_lower: [37.63295612955637, 37.63295612955637, 37.63295612955637], CI_upper: [38.37193411821486, 38.37193411821486, 38.37193411821486]
+2025-12-18 08:31:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 37.63295612955637, 37.63295612955637, 37.63295612955637], upper=[np.float64(37.8522196876645), 38.37193411821486, 38.37193411821486, 38.37193411821486]
+2025-12-18 08:31:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.70330988221703, 2025: 37.583873102726805, 2026: 37.4880758900978}, values=[37.70330988221703, 37.583873102726805, 37.4880758900978], CI_lower=[19.06314787322827, 18.94371109373805, 18.84791388110904], CI_upper=[56.34347189120578, 56.224035111715565, 56.12823789908656]
+2025-12-18 08:31:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.70330988221703, 37.583873102726805, 37.4880758900978], CI_lower: [19.06314787322827, 18.94371109373805, 18.84791388110904], CI_upper: [56.34347189120578, 56.224035111715565, 56.12823789908656]
+2025-12-18 08:31:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 19.06314787322827, 18.94371109373805, 18.84791388110904], upper=[np.float64(37.8522196876645), 56.34347189120578, 56.224035111715565, 56.12823789908656]
+2025-12-18 08:31:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.75933061937954, 2025: 37.66644154888803, 2026: 37.57355247839652}, values=[37.75933061937954, 37.66644154888803, 37.57355247839652], CI_lower=[37.386839266207424, 37.293950195715915, 37.201061125224406], CI_upper=[38.131821972551656, 38.03893290206015, 37.94604383156864]
+2025-12-18 08:31:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.75933061937954, 37.66644154888803, 37.57355247839652], CI_lower: [37.386839266207424, 37.293950195715915, 37.201061125224406], CI_upper: [38.131821972551656, 38.03893290206015, 37.94604383156864]
+2025-12-18 08:31:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.8522196876645), 37.386839266207424, 37.293950195715915, 37.201061125224406], upper=[np.float64(37.8522196876645), 38.131821972551656, 38.03893290206015, 37.94604383156864]
+2025-12-18 08:31:09 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 08:31:09 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 08:38:38 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 18843.767578125, 'mse': 1698741120.0, 'rmse': 41215.78726653174, 'r2': 0.21561388671398163}
+2025-12-18 08:38:39 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 08:43:48 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.4354541301727295, 'mse': 66.409423828125, 'rmse': 8.149197741380743, 'r2': 0.3147376775741577}
+2025-12-18 08:43:49 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 08:49:18 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.140698432922363, 'mse': 621.1565551757812, 'rmse': 24.923012562204057, 'r2': -5.564023017883301}
+2025-12-18 08:49:19 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 08:50:03 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 08:50:04 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 08:50:04 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 08:50:04 [DEBUG] census_eda.main:  Running LLM analysis for state: North Carolina
+2025-12-18 08:50:04 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 08:50:04 [INFO] census_eda.ml: [LLM] State context loaded: North Carolina
+2025-12-18 08:50:04 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [API] Total request: ~2476 tokens (system: ~2295, user: ~181)
+2025-12-18 08:50:04 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:50:23 [DEBUG] census_eda.ml: [API] Received response: 5437 chars
+2025-12-18 08:50:23 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (5437 chars)
+2025-12-18 08:50:25 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [LLM] User prompt: 1286 chars (~321 tokens)
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [API] Total request: ~2616 tokens (system: ~2295, user: ~321)
+2025-12-18 08:50:25 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:50:32 [DEBUG] census_eda.ml: [API] Received response: 3131 chars
+2025-12-18 08:50:32 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3131 chars)
+2025-12-18 08:50:33 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [LLM] User prompt: 2194 chars (~548 tokens)
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [API] Total request: ~2843 tokens (system: ~2295, user: ~548)
+2025-12-18 08:50:33 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [API] Received response: 4375 chars
+2025-12-18 08:50:46 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4375 chars)
+2025-12-18 08:50:46 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [API] Total request: ~2635 tokens (system: ~2295, user: ~340)
+2025-12-18 08:50:46 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [API] Received response: 4667 chars
+2025-12-18 08:51:02 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4667 chars)
+2025-12-18 08:51:02 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [API] Total request: ~2485 tokens (system: ~2295, user: ~190)
+2025-12-18 08:51:02 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [API] Received response: 4332 chars
+2025-12-18 08:51:15 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4332 chars)
+2025-12-18 08:51:15 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [LLM] User prompt: 8756 chars (~2189 tokens)
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [API] Total request: ~4484 tokens (system: ~2295, user: ~2189)
+2025-12-18 08:51:15 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [API] Received response: 3348 chars
+2025-12-18 08:51:27 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3348 chars)
+2025-12-18 08:51:27 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [LLM] User prompt: 5454 chars (~1363 tokens)
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [API] Total request: ~3658 tokens (system: ~2295, user: ~1363)
+2025-12-18 08:51:27 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [API] Received response: 3893 chars
+2025-12-18 08:51:38 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3893 chars)
+2025-12-18 08:51:38 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [API] Total request: ~2447 tokens (system: ~2295, user: ~152)
+2025-12-18 08:51:38 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [API] Received response: 3259 chars
+2025-12-18 08:51:49 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3259 chars)
+2025-12-18 08:51:49 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [LLM] User prompt: 5639 chars (~1409 tokens)
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [API] Total request: ~3704 tokens (system: ~2295, user: ~1409)
+2025-12-18 08:51:49 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [API] Received response: 3526 chars
+2025-12-18 08:52:00 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3526 chars)
+2025-12-18 08:52:00 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [LLM] User prompt: 1828 chars (~457 tokens)
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [API] Total request: ~2752 tokens (system: ~2295, user: ~457)
+2025-12-18 08:52:00 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [API] Received response: 4767 chars
+2025-12-18 08:52:14 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4767 chars)
+2025-12-18 08:52:14 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [LLM] User prompt: 1642 chars (~410 tokens)
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: North Carolina
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: North Carolina
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4293 chars
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1073
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: North Carolina
+
+ECONOMIC PROFILE:
+  Industries: Banking and financial services (Charlotte), Technology and research (Research Triangle), Manufacturing (pharmaceuticals, furniture, textiles declining), Agriculture (tobacco, hogs, poultry), Tourism (beaches, mountains)
+  Trends: Strong growth 2011-2023 (top 10 nationally). Banking boom in Charlotte. Research Triangle tech/pharma explosion. Traditional manufacturing (textiles, furniture) declined. Post-pandemic: rapid growth, migration surge
+  Income: Median income near national average ($60k). Lower income in rural areas, higher in metros. Growing middle class in metros, persistent rural poverty
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Rapid growth 2011-2023 (~1.3% annually). Among fastest-growing large states. Strong domestic in-migration and births. Continued acceleration 2020-2023
+  Migration: Major destination for domestic migrants from Northeast (NY, NJ), Midwest (OH, MI), California. Retirees to coast, professionals to metros. Limited international immigration compared to peers
+  Education: Above average and improving: strong university system (UNC, Duke, NC State). 32% bachelor's or higher. Research Triangle drives high educational attainment. Rural education gaps
+
+HOUSING MARKET:
+  Market: Rapid appreciation 2011-2023. Median home ~$350k (2023), but varies widely (Charlotte ~$400k, rural areas ~$200k). Affordable relative to coastal states attracting migration
+  Affordability: Affordable 2011-2019, rapid appreciation 2020-2023 (40-50% in metros). Still affordable vs. Northeast/West Coast. First-time buyers challenged. Rural areas remain affordable
+  Challenges: Rapid price appreciation straining longtime residents, Sprawl and traffic congestion in Charlotte, Hurricane/flood risk on coast, Rural housing quality issues, Gentrification in urban cores
+
+POLITY:
+  Policy: Swing state, Republican-controlled legislature 2011-2023 but competitive. Business-friendly, low taxes. Moderate on social issues but conservative lean. Purple state dynamics
+  Housing: Limited state intervention. Local zoning control. Charlotte loosening restrictions. Affordable housing incentives in metros. Generally pro-development
+  Labor: Right-to-work state, $7.25 federal minimum wage, limited worker protections. Business-friendly labor environment attracts employers
+
+REGIONAL:
+  Geography: Three distinct regions: Atlantic coast (Outer Banks), Piedmont (central metros), Appalachian mountains (west). Wide variety of climates and landscapes
+  Urban/Rural: 66% urban in major metros (Charlotte, Research Triangle, Greensboro-Winston-Salem). 34% rural (agriculture, small towns). Rapid suburban expansion
+  Infrastructure: Expanding highway network, Charlotte light rail, RDU and CLT airports growing. Broadband expansion ongoing. Research Triangle Park. Military bases (Fort Bragg, Camp Lejeune)
+
+HISTORICAL:
+  Events: 2011-2013: Recovery from recession, banking sector stabilizes, Amazon distribution centers arrive, HB2 bathroom bill; 2014-2016: Panthers Super Bowl run, Research Triangle tech boom, teacher pay protests, Hurricane Matthew (2016); 2017-2019: HB2 repealed, Apple data center, Amazon fulfillment centers, continued rapid growth, housing prices rising; 2020-2023: COVID-19 managed well, migration surge, housing spike, Medicaid expansion passed 2023, semiconductor plant announcements
+  Shocks: 2008 banking crisis hit Charlotte hard, Hurricane Florence 2018, Hurricane Matthew 2016
+  Transitions: Textiles collapsed, furniture offshored, tobacco declining. Banking, tech, pharma boomed. Economic transformation from 'Old Economy' to 'New Economy' mostly successful in metros
+
+COMPARATIVE:
+  Benchmarks: #9 GDP, 9th most populous. Median income near national average. Housing more affordable than coastal states. Educational attainment improving. Among fastest-growing states
+  Peer States: Texas (growth, business climate), Georgia (banking, rapid growth), Virginia (similar demographics, swing state)
+  Unique: Three distinct economic regions (coast, Piedmont, mountains). Research Triangle phenomenon. Banking capital (Charlotte). Successful economic transition from textiles to tech/finance. Swing state attracting both parties' attention
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: North Carolina
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [PROMPT] State context injected (4293 chars)
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9181 chars (~2295 tokens)
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [API] Total request: ~2705 tokens (system: ~2295, user: ~410)
+2025-12-18 08:52:14 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 08:52:31 [DEBUG] census_eda.ml: [API] Received response: 5665 chars
+2025-12-18 08:52:31 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5665 chars)
+2025-12-18 08:52:31 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 08:52:31 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 08:52:31 [INFO] census_eda.main: [REPORT] Generated: report_North_Carolina_population_20251218_085231.txt
+2025-12-18 08:52:31 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for North Carolina!
+2025-12-18 08:52:32 [INFO] census_eda.memory: process_North Carolina_population_1-year:EXIT: 18973.2MB (delta: -5861.9MB)
+2025-12-18 08:52:33 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 08:52:34 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 08:52:36 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 08:52:37 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 08:52:39 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 08:52:40 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 08:52:41 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 08:52:42 [INFO] census_eda.memory: Cleared all caches

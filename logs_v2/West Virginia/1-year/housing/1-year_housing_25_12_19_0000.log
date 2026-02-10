@@ -1,0 +1,1096 @@
+2025-12-19 00:00:11 [INFO] census_eda: Logging context set: state=West Virginia, survey=housing, scope=1-year
+2025-12-19 00:00:11 [INFO] census_eda: Log file: ./logs/West Virginia/1-year/housing/1-year_housing_25_12_19_0000.log
+2025-12-19 00:00:11 [INFO] census_eda.main: ======================================================================
+2025-12-19 00:00:11 [INFO] census_eda.main: [HOUSING] Processing West Virginia (1-year)...
+2025-12-19 00:00:11 [INFO] census_eda.main: ======================================================================
+2025-12-19 00:00:11 [INFO] census_eda.memory: process_West Virginia_housing_1-year:ENTER: 17157.9MB (delta: +0.0MB)
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/54/*/*.csv
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hwv.csv
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,759 rows, 235 columns
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h54.csv
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,834 rows, 235 columns
+2025-12-19 00:00:11 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hwv.csv
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,713 rows, 235 columns
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hwv.csv
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,690 rows, 235 columns
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hwv.csv
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,283 rows, 235 columns
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hwv.csv
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,396 rows, 235 columns
+2025-12-19 00:00:12 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h54.csv
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,845 rows, 235 columns
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hwv.csv
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,321 rows, 235 columns
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hwv.csv
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,733 rows, 235 columns
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h54.csv
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,844 rows, 235 columns
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h54.csv
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,545 rows, 235 columns
+2025-12-19 00:00:13 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h54.csv
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,420 rows, 235 columns
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h54.csv
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,486 rows, 235 columns
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hwv.csv
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,767 rows, 235 columns
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hwv.csv
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,316 rows, 235 columns
+2025-12-19 00:00:14 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hwv.csv
+2025-12-19 00:00:15 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-19 00:00:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 9,820 rows, 235 columns
+2025-12-19 00:00:15 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-19 00:00:16 [VERBOSE] census_eda.processing.loader: Combined into 153,772 total rows, 235 columns
+2025-12-19 00:00:16 [INFO] census_eda.main: Loaded 153,772 records
+2025-12-19 00:00:16 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 153772 valid, 16 unique
+2025-12-19 00:00:16 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-19 00:00:16 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-19 00:00:16 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-19 00:00:16 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-19 00:00:16 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-19 00:00:16 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-19 00:00:16 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-19 00:00:16 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-19 00:00:16 [DEBUG] census_eda.main: Feature engineering complete: (153772, 254)
+2025-12-19 00:00:18 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-19 00:00:18 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-19 00:00:42 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-19 00:00:42 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-19 00:00:42 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(153772, 254)
+2025-12-19 00:00:42 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-19 00:00:42 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 153772
+2025-12-19 00:00:42 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-19 00:00:44 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(153772, 254)
+2025-12-19 00:00:44 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(9283), np.int64(2008): np.int64(9321), np.int64(2009): np.int64(9396), np.int64(2010): np.int64(9316), np.int64(2011): np.int64(9820), np.int64(2012): np.int64(9759), np.int64(2013): np.int64(9690), np.int64(2014): np.int64(9713), np.int64(2015): np.int64(9767), np.int64(2016): np.int64(9733), np.int64(2017): np.int64(9834), np.int64(2018): np.int64(9845), np.int64(2019): np.int64(9844), np.int64(2021): np.int64(9420), np.int64(2022): np.int64(9545), np.int64(2023): np.int64(9486)}
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(153772, 254)
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 153772 non-null values (zeros excluded if needed)
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 20.00
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 132287 non-null values (zeros excluded if needed)
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 88015 non-null values (zeros excluded if needed)
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-19 00:00:45 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-19 00:00:46 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 71445 non-null values (zeros excluded if needed)
+2025-12-19 00:00:46 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2473000.00
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 121873 non-null values (zeros excluded if needed)
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3600.00
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 89300 non-null values (zeros excluded if needed)
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 5600.00
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 105681 non-null values (zeros excluded if needed)
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2200.00
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 123168 non-null values (zeros excluded if needed)
+2025-12-19 00:00:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 76359 non-null values (zeros excluded if needed)
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 7000.00
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 115154 non-null values (zeros excluded if needed)
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 5600.00
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 7289 non-null values (zeros excluded if needed)
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 19600.00
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 42766 non-null values (zeros excluded if needed)
+2025-12-19 00:00:53 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-19 00:00:58 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-19 00:01:29 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-19 00:01:29 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-19 00:01:29 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-19 00:01:30 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-19 00:01:31 [DEBUG] census_eda.memory: Skipping sampling: 32900MB available (>16GB)
+2025-12-19 00:01:31 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 153772 rows
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(153772, 254)
+2025-12-19 00:01:54 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 153772 non-null values
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 20.00
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 105671 non-null values
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 8.00
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 105671 non-null values
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 19.00
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 132287 non-null values
+2025-12-19 00:01:54 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 88015 non-null values
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 71445 non-null values
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2473000.00
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 123168 non-null values
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 641 non-null values
+2025-12-19 00:01:57 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 1700.00
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 121873 non-null values
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3600.00
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 89300 non-null values
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 5600.00
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 105681 non-null values
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2200.00
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 123168 non-null values
+2025-12-19 00:02:01 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 76359 non-null values
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 7000.00
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 115154 non-null values
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 5600.00
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 7289 non-null values
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 19600.00
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 42766 non-null values
+2025-12-19 00:02:04 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-19 00:02:07 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-19 00:02:23 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-19 00:02:38 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-19 00:02:53 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-19 00:03:20 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-19 00:03:20 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-19 00:03:20 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-19 00:03:22 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-19 00:03:24 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-19 00:03:25 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-19 00:03:29 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-19 00:03:29 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-19 00:03:29 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-19 00:03:30 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-19 00:03:32 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-19 00:03:34 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-19 00:03:35 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-19 00:03:37 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-19 00:03:39 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-19 00:03:41 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-19 00:03:44 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-19 00:03:44 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-19 00:03:44 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-19 00:03:46 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-19 00:03:48 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-19 00:03:50 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-19 00:03:51 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-19 00:03:53 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-19 00:03:56 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-19 00:03:56 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-19 00:03:56 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-19 00:03:58 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-19 00:04:01 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-19 00:04:01 [DEBUG] census_eda.memory: Skipping sampling: 31902MB available (>16GB)
+2025-12-19 00:04:08 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-19 00:04:08 [DEBUG] census_eda.memory: Skipping sampling: 31854MB available (>16GB)
+2025-12-19 00:04:18 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-19 00:04:18 [DEBUG] census_eda.memory: Skipping sampling: 32179MB available (>16GB)
+2025-12-19 00:04:27 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-19 00:04:36 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-19 00:04:37 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-19 00:04:39 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/West_Virginia/housing/1-year/figures
+2025-12-19 00:04:40 [DEBUG] census_eda.memory: Skipping sampling: 32366MB available (>16GB)
+2025-12-19 00:04:40 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-19 00:04:40 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-19 00:04:40 [INFO] census_eda.memory: [ML-START]: 17190.4MB (delta: +32.5MB)
+2025-12-19 00:04:40 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-19 00:04:40 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-19 00:04:40 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 53354 samples (was 53354)
+2025-12-19 00:04:40 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-19 00:04:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-19 00:04:41 [INFO] census_eda.ml.regression: [TUNE] Data: 53,354 samples, 10 features
+2025-12-19 00:04:41 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:04:41 [INFO] census_eda.memory: tune_ridge:ENTER: 17190.4MB (delta: +0.0MB)
+2025-12-19 00:04:41 [WARNING] census_eda.memory: Memory usage (17190.8MB) exceeded threshold (16000MB)
+2025-12-19 00:04:43 [INFO] census_eda.memory: tune_ridge:EXIT: 17190.8MB (delta: +0.4MB)
+2025-12-19 00:04:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-19 00:04:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0969
+2025-12-19 00:04:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:04:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-19 00:04:43 [INFO] census_eda.ml.regression: [TUNE] Data: 53,354 samples, 10 features
+2025-12-19 00:04:43 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:04:43 [INFO] census_eda.memory: tune_lasso:ENTER: 17190.8MB (delta: +0.0MB)
+2025-12-19 00:04:43 [WARNING] census_eda.memory: Memory usage (17190.8MB) exceeded threshold (16000MB)
+2025-12-19 00:04:45 [INFO] census_eda.memory: tune_lasso:EXIT: 17190.8MB (delta: +0.0MB)
+2025-12-19 00:04:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-19 00:04:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0969
+2025-12-19 00:04:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:04:45 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-19 00:04:45 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 53,354 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 00:04:45 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 00:04:45 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:04:45 [INFO] census_eda.memory: tune_random_forest:ENTER: 17190.8MB (delta: +0.0MB)
+2025-12-19 00:05:10 [WARNING] census_eda.memory: Memory usage (17212.0MB) exceeded threshold (16000MB)
+2025-12-19 00:05:11 [INFO] census_eda.memory: tune_random_forest:EXIT: 17212.0MB (delta: +21.2MB)
+2025-12-19 00:05:11 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-19 00:05:11 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1020
+2025-12-19 00:05:11 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:05:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-19 00:05:15 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 53,354 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-19 00:05:15 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-19 00:05:15 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:05:15 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 17251.1MB (delta: +39.1MB)
+2025-12-19 00:05:28 [WARNING] census_eda.memory: Memory usage (17251.1MB) exceeded threshold (16000MB)
+2025-12-19 00:05:30 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:05:30 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-19 00:05:30 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1508
+2025-12-19 00:05:30 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:05:41 [INFO] census_eda.memory: [SHAP] Safe sample size: 10,671 -> 1,000
+2025-12-19 00:05:41 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 10,671 -> 1,000
+2025-12-19 00:05:41 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:05:41 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-19 00:05:43 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:05:43 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-19 00:05:43 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-19 00:05:43 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-19 00:05:43 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 13970 samples (was 13970)
+2025-12-19 00:05:43 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-19 00:05:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-19 00:05:43 [INFO] census_eda.ml.regression: [TUNE] Data: 13,970 samples, 10 features
+2025-12-19 00:05:43 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:05:43 [INFO] census_eda.memory: tune_ridge:ENTER: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:05:43 [WARNING] census_eda.memory: Memory usage (17251.1MB) exceeded threshold (16000MB)
+2025-12-19 00:05:45 [INFO] census_eda.memory: tune_ridge:EXIT: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:05:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-19 00:05:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1870
+2025-12-19 00:05:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:05:45 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-19 00:05:45 [INFO] census_eda.ml.regression: [TUNE] Data: 13,970 samples, 10 features
+2025-12-19 00:05:45 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-19 00:05:45 [INFO] census_eda.memory: tune_lasso:ENTER: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:05:46 [WARNING] census_eda.memory: Memory usage (17251.1MB) exceeded threshold (16000MB)
+2025-12-19 00:05:47 [INFO] census_eda.memory: tune_lasso:EXIT: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:05:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-19 00:05:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1869
+2025-12-19 00:05:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-19 00:05:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-19 00:05:47 [INFO] census_eda.ml.regression: [TUNE] Data: 13,970 samples, 10 features
+2025-12-19 00:05:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:05:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 17251.1MB (delta: +0.0MB)
+2025-12-19 00:06:01 [WARNING] census_eda.memory: Memory usage (17251.2MB) exceeded threshold (16000MB)
+2025-12-19 00:06:03 [INFO] census_eda.memory: tune_random_forest:EXIT: 17251.2MB (delta: +0.1MB)
+2025-12-19 00:06:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-19 00:06:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2390
+2025-12-19 00:06:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:06:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-19 00:06:04 [INFO] census_eda.ml.regression: [TUNE] Data: 13,970 samples, 10 features
+2025-12-19 00:06:04 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-19 00:06:04 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 17251.3MB (delta: +0.1MB)
+2025-12-19 00:06:13 [WARNING] census_eda.memory: Memory usage (17251.3MB) exceeded threshold (16000MB)
+2025-12-19 00:06:14 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 17251.3MB (delta: +0.0MB)
+2025-12-19 00:06:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-19 00:06:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2766
+2025-12-19 00:06:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-19 00:06:17 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,794 -> 1,000
+2025-12-19 00:06:17 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,794 -> 1,000
+2025-12-19 00:06:17 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 17251.3MB (delta: +0.0MB)
+2025-12-19 00:06:17 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-19 00:06:19 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 17251.3MB (delta: +0.0MB)
+2025-12-19 00:06:19 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Year_Structure_Built
+2025-12-19 00:06:19 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-19 00:06:19 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-19 00:06:19 [INFO] census_eda.memory: [PRE-CLUSTERING]: 17251.3MB (delta: +0.0MB)
+2025-12-19 00:06:19 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-19 00:06:19 [INFO] census_eda.main: [CLUSTERING] KMeans on 79,642 samples...
+2025-12-19 00:06:50 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-19 00:06:50 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 79,642 samples (will sample if needed)...
+2025-12-19 00:06:50 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 79,642 -> 15,000 (distance matrix would be 47.3GB)
+2025-12-19 00:06:50 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 79,642 -> 15,000 for O(n²) distance matrix
+2025-12-19 00:06:54 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-19 00:06:54 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-19 00:06:54 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-19 00:06:54 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-19 00:06:54 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-19 00:06:54 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 219843.17834472656, 2025: 246464.2139892578, 2026: 279452.11975097656}, Values: [219843.17834472656, 246464.2139892578, 279452.11975097656]
+2025-12-19 00:06:54 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-19 00:06:54 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 922.6819165945053, 2025: 978.284710764885, 2026: 1041.9670222997665}, Values: [922.6819165945053, 978.284710764885, 1041.9670222997665]
+2025-12-19 00:06:54 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-19 00:07:00 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Property_Value
+2025-12-19 00:07:05 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-19 00:07:08 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 79642.
+2025-12-19 00:07:08 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-19 00:07:08 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-19 00:07:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 213829.88565905392, 2025: 223630.15016592667, 2026: 233430.41467280313}, values=[213829.88565905392, 223630.15016592667, 233430.41467280313], CI_lower=[175723.58813830742, 185523.85264518016, 195324.11715205663], CI_upper=[251936.18317980043, 261736.44768667317, 271536.7121935496]
+2025-12-19 00:07:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [213829.88565905392, 223630.15016592667, 233430.41467280313], CI_lower: [175723.58813830742, 185523.85264518016, 195324.11715205663], CI_upper: [251936.18317980043, 261736.44768667317, 271536.7121935496]
+2025-12-19 00:07:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 175723.58813830742, 185523.85264518016, 195324.11715205663], upper=[np.float64(197589.81676666127), 251936.18317980043, 261736.44768667317, 271536.7121935496]
+2025-12-19 00:07:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 180630.7608795166, 2025: 178821.29326343536, 2026: 175713.80567598343}, values=[180630.7608795166, 178821.29326343536, 175713.80567598343], CI_lower=[156777.47472658107, 154968.00711049984, 151860.5195230479], CI_upper=[204484.04703245213, 202674.5794163709, 199567.09182891896]
+2025-12-19 00:07:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [180630.7608795166, 178821.29326343536, 175713.80567598343], CI_lower: [156777.47472658107, 154968.00711049984, 151860.5195230479], CI_upper: [204484.04703245213, 202674.5794163709, 199567.09182891896]
+2025-12-19 00:07:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 156777.47472658107, 154968.00711049984, 151860.5195230479], upper=[np.float64(197589.81676666127), 204484.04703245213, 202674.5794163709, 199567.09182891896]
+2025-12-19 00:07:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 219843.17834472656, 2025: 246464.2139892578, 2026: 279452.11975097656}, values=[219843.17834472656, 246464.2139892578, 279452.11975097656], CI_lower=[212193.12981825034, 238814.1654627816, 271802.07122450037], CI_upper=[227493.2268712028, 254114.26251573404, 287102.16827745276]
+2025-12-19 00:07:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [219843.17834472656, 246464.2139892578, 279452.11975097656], CI_lower: [212193.12981825034, 238814.1654627816, 271802.07122450037], CI_upper: [227493.2268712028, 254114.26251573404, 287102.16827745276]
+2025-12-19 00:07:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 212193.12981825034, 238814.1654627816, 271802.07122450037], upper=[np.float64(197589.81676666127), 227493.2268712028, 254114.26251573404, 287102.16827745276]
+2025-12-19 00:07:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 184150.88772551916, 2025: 184150.88772551916, 2026: 184150.88772551916}, values=[184150.88772551916, 184150.88772551916, 184150.88772551916], CI_lower=[125022.42509690102, 125022.42509690102, 125022.42509690102], CI_upper=[243279.3503541373, 243279.3503541373, 243279.3503541373]
+2025-12-19 00:07:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [184150.88772551916, 184150.88772551916, 184150.88772551916], CI_lower: [125022.42509690102, 125022.42509690102, 125022.42509690102], CI_upper: [243279.3503541373, 243279.3503541373, 243279.3503541373]
+2025-12-19 00:07:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 125022.42509690102, 125022.42509690102, 125022.42509690102], upper=[np.float64(197589.81676666127), 243279.3503541373, 243279.3503541373, 243279.3503541373]
+2025-12-19 00:07:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 170802.23551657904, 2025: 170802.23551657904, 2026: 170802.23551657904}, values=[170802.23551657904, 170802.23551657904, 170802.23551657904], CI_lower=[127063.50120873278, 127063.50120873278, 127063.50120873278], CI_upper=[214540.9698244253, 214540.9698244253, 214540.9698244253]
+2025-12-19 00:07:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [170802.23551657904, 170802.23551657904, 170802.23551657904], CI_lower: [127063.50120873278, 127063.50120873278, 127063.50120873278], CI_upper: [214540.9698244253, 214540.9698244253, 214540.9698244253]
+2025-12-19 00:07:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 127063.50120873278, 127063.50120873278, 127063.50120873278], upper=[np.float64(197589.81676666127), 214540.9698244253, 214540.9698244253, 214540.9698244253]
+2025-12-19 00:07:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 188692.47128787497, 2025: 188692.47128787497, 2026: 188692.47128787497}, values=[188692.47128787497, 188692.47128787497, 188692.47128787497], CI_lower=[126208.55664188306, 126208.55664188306, 126208.55664188306], CI_upper=[251176.3859338669, 251176.3859338669, 251176.3859338669]
+2025-12-19 00:07:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [188692.47128787497, 188692.47128787497, 188692.47128787497], CI_lower: [126208.55664188306, 126208.55664188306, 126208.55664188306], CI_upper: [251176.3859338669, 251176.3859338669, 251176.3859338669]
+2025-12-19 00:07:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 126208.55664188306, 126208.55664188306, 126208.55664188306], upper=[np.float64(197589.81676666127), 251176.3859338669, 251176.3859338669, 251176.3859338669]
+2025-12-19 00:07:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 208871.04552628816, 2025: 220152.27424294705, 2026: 231433.50291663795}, values=[208871.04552628816, 220152.27424294705, 231433.50291663795], CI_lower=[137317.6249258808, 148598.8536425397, 159880.08231623063], CI_upper=[280424.4661266955, 291705.6948433544, 302986.9235170453]
+2025-12-19 00:07:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [208871.04552628816, 220152.27424294705, 231433.50291663795], CI_lower: [137317.6249258808, 148598.8536425397, 159880.08231623063], CI_upper: [280424.4661266955, 291705.6948433544, 302986.9235170453]
+2025-12-19 00:07:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 137317.6249258808, 148598.8536425397, 159880.08231623063], upper=[np.float64(197589.81676666127), 280424.4661266955, 291705.6948433544, 302986.9235170453]
+2025-12-19 00:07:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 213175.45888007403, 2025: 224588.95099472368, 2026: 236002.44310937333}, values=[213175.45888007403, 224588.95099472368, 236002.44310937333], CI_lower=[158837.29903727825, 170250.7911519279, 181664.28326657755], CI_upper=[267513.6187228698, 278927.11083751946, 290340.6029521691]
+2025-12-19 00:07:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [213175.45888007403, 224588.95099472368, 236002.44310937333], CI_lower: [158837.29903727825, 170250.7911519279, 181664.28326657755], CI_upper: [267513.6187228698, 278927.11083751946, 290340.6029521691]
+2025-12-19 00:07:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(197589.81676666127), 158837.29903727825, 170250.7911519279, 181664.28326657755], upper=[np.float64(197589.81676666127), 267513.6187228698, 278927.11083751946, 290340.6029521691]
+2025-12-19 00:07:14 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-19 00:07:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 857.0437112377476, 2025: 876.7008891759033, 2026: 896.3580671140662}, values=[857.0437112377476, 876.7008891759033, 896.3580671140662], CI_lower=[820.9106242763802, 840.5678022145358, 860.2249801526988], CI_upper=[893.1767981991151, 912.8339761372707, 932.4911540754337]
+2025-12-19 00:07:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [857.0437112377476, 876.7008891759033, 896.3580671140662], CI_lower: [820.9106242763802, 840.5678022145358, 860.2249801526988], CI_upper: [893.1767981991151, 912.8339761372707, 932.4911540754337]
+2025-12-19 00:07:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 820.9106242763802, 840.5678022145358, 860.2249801526988], upper=[np.float64(885.0731543624161), 893.1767981991151, 912.8339761372707, 932.4911540754337]
+2025-12-19 00:07:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 884.1461187310051, 2025: 912.813672354212, 2026: 942.4289918353315}, values=[884.1461187310051, 912.813672354212, 942.4289918353315], CI_lower=[854.3520182973618, 883.0195719205688, 912.6348914016883], CI_upper=[913.9402191646484, 942.6077727878553, 972.2230922689748]
+2025-12-19 00:07:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [884.1461187310051, 912.813672354212, 942.4289918353315], CI_lower: [854.3520182973618, 883.0195719205688, 912.6348914016883], CI_upper: [913.9402191646484, 942.6077727878553, 972.2230922689748]
+2025-12-19 00:07:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 854.3520182973618, 883.0195719205688, 912.6348914016883], upper=[np.float64(885.0731543624161), 913.9402191646484, 942.6077727878553, 972.2230922689748]
+2025-12-19 00:07:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 922.6819165945053, 2025: 978.284710764885, 2026: 1041.9670222997665}, values=[922.6819165945053, 978.284710764885, 1041.9670222997665], CI_lower=[901.5829965633296, 957.1857907337093, 1020.8681022685909], CI_upper=[943.780836625681, 999.3836307960606, 1063.0659423309423]
+2025-12-19 00:07:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [922.6819165945053, 978.284710764885, 1041.9670222997665], CI_lower: [901.5829965633296, 957.1857907337093, 1020.8681022685909], CI_upper: [943.780836625681, 999.3836307960606, 1063.0659423309423]
+2025-12-19 00:07:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 901.5829965633296, 957.1857907337093, 1020.8681022685909], upper=[np.float64(885.0731543624161), 943.780836625681, 999.3836307960606, 1063.0659423309423]
+2025-12-19 00:07:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 831.717339531855, 2025: 831.717339531855, 2026: 831.717339531855}, values=[831.717339531855, 831.717339531855, 831.717339531855], CI_lower=[795.6339540647139, 795.6339540647139, 795.6339540647139], CI_upper=[867.8007249989962, 867.8007249989962, 867.8007249989962]
+2025-12-19 00:07:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [831.717339531855, 831.717339531855, 831.717339531855], CI_lower: [795.6339540647139, 795.6339540647139, 795.6339540647139], CI_upper: [867.8007249989962, 867.8007249989962, 867.8007249989962]
+2025-12-19 00:07:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 795.6339540647139, 795.6339540647139, 795.6339540647139], upper=[np.float64(885.0731543624161), 867.8007249989962, 867.8007249989962, 867.8007249989962]
+2025-12-19 00:07:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 794.8477345470408, 2025: 794.8477345470408, 2026: 794.8477345470408}, values=[794.8477345470408, 794.8477345470408, 794.8477345470408], CI_lower=[751.6856411753466, 751.6856411753466, 751.6856411753466], CI_upper=[838.0098279187349, 838.0098279187349, 838.0098279187349]
+2025-12-19 00:07:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [794.8477345470408, 794.8477345470408, 794.8477345470408], CI_lower: [751.6856411753466, 751.6856411753466, 751.6856411753466], CI_upper: [838.0098279187349, 838.0098279187349, 838.0098279187349]
+2025-12-19 00:07:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 751.6856411753466, 751.6856411753466, 751.6856411753466], upper=[np.float64(885.0731543624161), 838.0098279187349, 838.0098279187349, 838.0098279187349]
+2025-12-19 00:07:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 850.6127321192488, 2025: 850.6127321192488, 2026: 850.6127321192488}, values=[850.6127321192488, 850.6127321192488, 850.6127321192488], CI_lower=[820.9208020379157, 820.9208020379157, 820.9208020379157], CI_upper=[880.3046622005819, 880.3046622005819, 880.3046622005819]
+2025-12-19 00:07:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [850.6127321192488, 850.6127321192488, 850.6127321192488], CI_lower: [820.9208020379157, 820.9208020379157, 820.9208020379157], CI_upper: [880.3046622005819, 880.3046622005819, 880.3046622005819]
+2025-12-19 00:07:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 820.9208020379157, 820.9208020379157, 820.9208020379157], upper=[np.float64(885.0731543624161), 880.3046622005819, 880.3046622005819, 880.3046622005819]
+2025-12-19 00:07:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 923.7478131642334, 2025: 961.3473931185138, 2026: 997.9017792860237}, values=[923.7478131642334, 961.3473931185138, 997.9017792860237], CI_lower=[673.0939625582553, 710.6935425125355, 747.2479286800456], CI_upper=[1174.4016637702116, 1212.001243724492, 1248.555629892002]
+2025-12-19 00:07:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [923.7478131642334, 961.3473931185138, 997.9017792860237], CI_lower: [673.0939625582553, 710.6935425125355, 747.2479286800456], CI_upper: [1174.4016637702116, 1212.001243724492, 1248.555629892002]
+2025-12-19 00:07:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 673.0939625582553, 710.6935425125355, 747.2479286800456], upper=[np.float64(885.0731543624161), 1174.4016637702116, 1212.001243724492, 1248.555629892002]
+2025-12-19 00:07:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 923.0129679873835, 2025: 960.952781794706, 2026: 998.8925956020283}, values=[923.0129679873835, 960.952781794706, 998.8925956020283], CI_lower=[888.1911138169775, 926.1309276242999, 964.0707414316223], CI_upper=[957.8348221577895, 995.774635965112, 1033.7144497724344]
+2025-12-19 00:07:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [923.0129679873835, 960.952781794706, 998.8925956020283], CI_lower: [888.1911138169775, 926.1309276242999, 964.0707414316223], CI_upper: [957.8348221577895, 995.774635965112, 1033.7144497724344]
+2025-12-19 00:07:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(885.0731543624161), 888.1911138169775, 926.1309276242999, 964.0707414316223], upper=[np.float64(885.0731543624161), 957.8348221577895, 995.774635965112, 1033.7144497724344]
+2025-12-19 00:07:21 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-19 00:07:21 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-19 00:08:07 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 22711.779296875, 'mse': 6282948096.0, 'rmse': 79265.04964989299, 'r2': -0.5566806793212891}
+2025-12-19 00:08:09 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-19 00:08:41 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 5.714483737945557, 'mse': 165.56411743164062, 'rmse': 12.867172083703576, 'r2': 0.04523018002510071}
+2025-12-19 00:08:43 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-19 00:09:14 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 1.1735352277755737, 'mse': 14.07143783569336, 'rmse': 3.7511915221291168, 'r2': 0.9047315716743469}
+2025-12-19 00:09:16 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-19 00:09:47 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 148.12867736816406, 'mse': 131027.4453125, 'rmse': 361.9771336873367, 'r2': 0.2394075095653534}
+2025-12-19 00:09:49 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-19 00:10:20 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.32205188274383545, 'mse': 0.41493356227874756, 'rmse': 0.6441533686000156, 'r2': 0.183296799659729}
+2025-12-19 00:10:22 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-19 00:10:40 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/West_Virginia/housing/1-year/figures/ml/deep_learning
+2025-12-19 00:10:42 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-19 00:10:42 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-19 00:10:42 [DEBUG] census_eda.main:  Running LLM analysis for state: West Virginia
+2025-12-19 00:10:42 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-19 00:10:42 [INFO] census_eda.ml: [LLM] State context loaded: West Virginia
+2025-12-19 00:10:42 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [API] Total request: ~2375 tokens (system: ~2193, user: ~182)
+2025-12-19 00:10:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [API] Received response: 4204 chars
+2025-12-19 00:11:00 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4204 chars)
+2025-12-19 00:11:00 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [LLM] User prompt: 1263 chars (~315 tokens)
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [API] Total request: ~2508 tokens (system: ~2193, user: ~315)
+2025-12-19 00:11:00 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [API] Received response: 2962 chars
+2025-12-19 00:11:08 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (2962 chars)
+2025-12-19 00:11:08 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [LLM] User prompt: 1690 chars (~422 tokens)
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [API] Total request: ~2615 tokens (system: ~2193, user: ~422)
+2025-12-19 00:11:08 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [API] Received response: 4525 chars
+2025-12-19 00:11:21 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4525 chars)
+2025-12-19 00:11:21 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [LLM] User prompt: 1461 chars (~365 tokens)
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [API] Total request: ~2558 tokens (system: ~2193, user: ~365)
+2025-12-19 00:11:21 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [API] Received response: 4824 chars
+2025-12-19 00:11:35 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4824 chars)
+2025-12-19 00:11:35 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [API] Total request: ~2204 tokens (system: ~2193, user: ~11)
+2025-12-19 00:11:35 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [API] Received response: 4723 chars
+2025-12-19 00:11:49 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4723 chars)
+2025-12-19 00:11:49 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [LLM] User prompt: 11113 chars (~2778 tokens)
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [API] Total request: ~4971 tokens (system: ~2193, user: ~2778)
+2025-12-19 00:11:49 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [API] Received response: 2528 chars
+2025-12-19 00:11:58 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (2528 chars)
+2025-12-19 00:11:58 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [LLM] User prompt: 6667 chars (~1666 tokens)
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [API] Total request: ~3859 tokens (system: ~2193, user: ~1666)
+2025-12-19 00:11:58 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [API] Received response: 2631 chars
+2025-12-19 00:12:07 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (2631 chars)
+2025-12-19 00:12:07 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [API] Total request: ~2345 tokens (system: ~2193, user: ~152)
+2025-12-19 00:12:07 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [API] Received response: 3379 chars
+2025-12-19 00:12:17 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3379 chars)
+2025-12-19 00:12:17 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [LLM] User prompt: 6421 chars (~1605 tokens)
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [API] Total request: ~3798 tokens (system: ~2193, user: ~1605)
+2025-12-19 00:12:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [API] Received response: 3668 chars
+2025-12-19 00:12:29 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3668 chars)
+2025-12-19 00:12:29 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [LLM] User prompt: 2522 chars (~630 tokens)
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [API] Total request: ~2823 tokens (system: ~2193, user: ~630)
+2025-12-19 00:12:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [API] Received response: 4341 chars
+2025-12-19 00:12:42 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4341 chars)
+2025-12-19 00:12:42 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [LLM] User prompt: 1048 chars (~262 tokens)
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: West Virginia
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: West Virginia
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3887 chars
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~971
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: West Virginia
+
+ECONOMIC PROFILE:
+  Industries: Natural gas extraction (Marcellus Shale), Coal mining (declining), Chemical manufacturing, Healthcare, Tourism
+  Trends: Coal decline devastating 2011-2023. Natural gas boom post-2010 partially offset but fewer jobs. Persistent economic struggles. Manufacturing pockets. GDP growth lagged nation every year since 2011
+  Income: Second lowest per capita income in nation (~$49,000). Rural poverty severe. Some areas in persistent poverty (20%+ for decades). Low cost of living helps but incomes very low
+  Dominant Sector: Services (healthcare, government)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Continuous decline, accelerating post-2015. Out-migration of young people. Aging in place. Only state losing population consistently
+  Migration: Out-migration to neighboring states (Virginia, Ohio, North Carolina) for jobs. Brain drain severe. Almost no in-migration except retirees to Eastern Panhandle
+  Education: Lowest bachelor's attainment in nation. Low high school graduation rates. Brain drain of educated. Rural school consolidation
+
+HOUSING MARKET:
+  Market: Very affordable. Oversupply in declining areas. Aging housing stock. Eastern Panhandle (D.C. exurbs) only growth area
+  Affordability: Extremely affordable throughout 2011-2023. Prices stable to declining except Eastern Panhandle. Lowest home prices in nation in many counties
+  Challenges: Aging, deteriorating housing stock, Abandonment in declining counties, Lack of new construction, Quality/condition issues, Limited market outside Eastern Panhandle
+
+POLITY:
+  Policy: Historically labor-friendly (mining unions), now business-friendly Republican control. Low taxes. Pro-coal despite decline. Minimal regulation
+  Housing: Minimal state intervention. Local control. Not major issue except Morgantown. Abundance of aging housing stock
+  Labor: Right-to-work (since 2016), $8.75 minimum wage, declining union power, business-friendly shift
+
+REGIONAL:
+  Geography: Entirely Appalachian Mountains. Southern coal counties, Northern natural gas region, Eastern Panhandle (D.C. suburbs), Mountainous, rugged terrain
+  Urban/Rural: 48% urban (small cities), 52% rural. Very mountainous. Dispersed small towns. Charleston (capital) only 47,000
+  Infrastructure: Aging infrastructure. Limited highways (mountainous). Broadband deficit in rural areas. Crumbling roads
+
+HISTORICAL:
+  Events: 2011-2013: Coal decline accelerates, natural gas (fracking) boom begins, persistent unemployment, out-migration; 2014-2016: Coal price crash 2015-2016, severe job losses, budget crisis, governor's race (Justice); 2017-2019: Justice switches to GOP, right-to-work passed, teacher strikes 2018, opioid epidemic peak, natural gas production grows; 2021-2023: Coal brief rebound (Ukraine war), natural gas production records, population decline continues, modest budget recovery, federal infrastructure funds
+  Shocks: 2015-2016 coal industry collapse. 2018 Justice coal company bankruptcies. Opioid epidemic economic costs. Continuous out-migration
+  Transitions: Coal dominated for century, now rapid decline (130,000 miners in 1940 to <12,000 in 2023). Natural gas grew but capital-intensive (few jobs). Healthcare becoming largest employer. Manufacturing pockets remain
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Second lowest per capita income. Oldest population. Least educated. Highest disability rate. Only state consistently losing population. Most homogeneous. Very affordable housing
+  Peer States: Kentucky (Appalachia, coal), Mississippi (poorest state), Arkansas (rural, low income)
+  Unique: Only state formed by seceding from Confederacy (1863). Coal industry decline most severe. Natural gas boom insufficient replacement. Opioid epidemic epicenter. Population loss unique among Eastern states. Second-largest coal producer despite decline
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: West Virginia
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (3887 chars)
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8775 chars (~2193 tokens)
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [API] Total request: ~2455 tokens (system: ~2193, user: ~262)
+2025-12-19 00:12:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-19 00:13:03 [DEBUG] census_eda.ml: [API] Received response: 6991 chars
+2025-12-19 00:13:03 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (6991 chars)
+2025-12-19 00:13:03 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-19 00:13:03 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-19 00:13:03 [INFO] census_eda.main: [REPORT] Generated: report_West_Virginia_housing_20251219_001303.txt
+2025-12-19 00:13:03 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for West Virginia!
+2025-12-19 00:13:04 [INFO] census_eda.memory: process_West Virginia_housing_1-year:EXIT: 11414.5MB (delta: -5836.8MB)
+2025-12-19 00:13:06 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-19 00:13:07 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-19 00:13:11 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-19 00:13:13 [INFO] census_eda.memory: Cleared all caches

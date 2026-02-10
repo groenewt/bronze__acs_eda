@@ -1,0 +1,1302 @@
+2025-12-18 15:59:25 [INFO] census_eda: Logging context set: state=Tennessee, survey=population, scope=1-year
+2025-12-18 15:59:25 [INFO] census_eda: Log file: ./logs/Tennessee/1-year/population/1-year_population_25_12_18_1559.log
+2025-12-18 15:59:25 [INFO] census_eda.main: ======================================================================
+2025-12-18 15:59:25 [INFO] census_eda.main: [POPULATION] Processing Tennessee (1-year)...
+2025-12-18 15:59:25 [INFO] census_eda.main: ======================================================================
+2025-12-18 15:59:25 [INFO] census_eda.memory: process_Tennessee_population_1-year:ENTER: 13577.2MB (delta: +0.0MB)
+2025-12-18 15:59:25 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 15:59:25 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/47/*/*.csv
+2025-12-18 15:59:25 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 15:59:25 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12ptn.csv
+2025-12-18 15:59:26 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 15:59:26 [VERBOSE] census_eda.processing.loader:   -> Loaded 64,276 rows, 260 columns
+2025-12-18 15:59:26 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p47.csv
+2025-12-18 15:59:27 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 15:59:27 [VERBOSE] census_eda.processing.loader:   -> Loaded 66,575 rows, 260 columns
+2025-12-18 15:59:27 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14ptn.csv
+2025-12-18 15:59:29 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 15:59:29 [VERBOSE] census_eda.processing.loader:   -> Loaded 65,554 rows, 260 columns
+2025-12-18 15:59:29 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13ptn.csv
+2025-12-18 15:59:30 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 15:59:30 [VERBOSE] census_eda.processing.loader:   -> Loaded 65,148 rows, 260 columns
+2025-12-18 15:59:30 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07ptn.csv
+2025-12-18 15:59:31 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 15:59:31 [VERBOSE] census_eda.processing.loader:   -> Loaded 61,704 rows, 260 columns
+2025-12-18 15:59:31 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09ptn.csv
+2025-12-18 15:59:32 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 15:59:32 [VERBOSE] census_eda.processing.loader:   -> Loaded 63,282 rows, 260 columns
+2025-12-18 15:59:32 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p47.csv
+2025-12-18 15:59:33 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 15:59:33 [VERBOSE] census_eda.processing.loader:   -> Loaded 67,950 rows, 260 columns
+2025-12-18 15:59:33 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08ptn.csv
+2025-12-18 15:59:35 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 15:59:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 62,934 rows, 260 columns
+2025-12-18 15:59:35 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16ptn.csv
+2025-12-18 15:59:36 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 15:59:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 65,757 rows, 260 columns
+2025-12-18 15:59:36 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p47.csv
+2025-12-18 15:59:37 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 15:59:37 [VERBOSE] census_eda.processing.loader:   -> Loaded 68,415 rows, 260 columns
+2025-12-18 15:59:37 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p47.csv
+2025-12-18 15:59:38 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 15:59:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 72,374 rows, 260 columns
+2025-12-18 15:59:38 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p47.csv
+2025-12-18 15:59:39 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 15:59:39 [VERBOSE] census_eda.processing.loader:   -> Loaded 69,853 rows, 260 columns
+2025-12-18 15:59:39 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p47.csv
+2025-12-18 15:59:41 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 15:59:41 [VERBOSE] census_eda.processing.loader:   -> Loaded 73,025 rows, 260 columns
+2025-12-18 15:59:41 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15ptn.csv
+2025-12-18 15:59:42 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 15:59:42 [VERBOSE] census_eda.processing.loader:   -> Loaded 65,549 rows, 260 columns
+2025-12-18 15:59:42 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10ptn.csv
+2025-12-18 15:59:43 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 15:59:43 [VERBOSE] census_eda.processing.loader:   -> Loaded 63,511 rows, 260 columns
+2025-12-18 15:59:43 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11ptn.csv
+2025-12-18 15:59:44 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 15:59:44 [VERBOSE] census_eda.processing.loader:   -> Loaded 63,592 rows, 260 columns
+2025-12-18 15:59:44 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 15:59:52 [VERBOSE] census_eda.processing.loader: Combined into 1,059,499 total rows, 260 columns
+2025-12-18 15:59:52 [INFO] census_eda.main: Loaded 1,059,499 records
+2025-12-18 15:59:52 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 1059499 valid, 16 unique
+2025-12-18 15:59:52 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 15:59:54 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 15:59:54 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 15:59:54 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 15:59:55 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 15:59:55 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 15:59:56 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 15:59:56 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 15:59:57 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 15:59:57 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 15:59:57 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 15:59:58 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 15:59:58 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 15:59:58 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 15:59:59 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 15:59:59 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 15:59:59 [DEBUG] census_eda.main: Feature engineering complete: (1059499, 292)
+2025-12-18 16:00:00 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 16:00:00 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 16:02:44 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 16:02:44 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 16:02:44 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(1059499, 292)
+2025-12-18 16:02:44 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 16:02:44 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 1059499
+2025-12-18 16:02:44 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 16:02:46 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(1059499, 292)
+2025-12-18 16:02:46 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(61704), np.int64(2008): np.int64(62934), np.int64(2009): np.int64(63282), np.int64(2010): np.int64(63511), np.int64(2011): np.int64(63592), np.int64(2012): np.int64(64276), np.int64(2013): np.int64(65148), np.int64(2014): np.int64(65554), np.int64(2015): np.int64(65549), np.int64(2016): np.int64(65757), np.int64(2017): np.int64(66575), np.int64(2018): np.int64(67950), np.int64(2019): np.int64(68415), np.int64(2021): np.int64(69853), np.int64(2022): np.int64(72374), np.int64(2023): np.int64(73025)}
+2025-12-18 16:02:47 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(1059499, 292)
+2025-12-18 16:02:47 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 16:02:47 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 16:02:47 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 16:02:47 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 16:02:47 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 16:02:48 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 1059499 non-null values (zeros excluded if needed)
+2025-12-18 16:02:48 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 16:02:48 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 16:02:48 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 1059499 non-null values (zeros excluded if needed)
+2025-12-18 16:02:48 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1977.00
+2025-12-18 16:02:48 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 16:02:49 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 1059499 non-null values (zeros excluded if needed)
+2025-12-18 16:02:49 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 93.00
+2025-12-18 16:02:49 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 16:02:49 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 433289 non-null values (zeros excluded if needed)
+2025-12-18 16:02:49 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 185.00
+2025-12-18 16:02:52 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 16:02:52 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 105759 non-null values (zeros excluded if needed)
+2025-12-18 16:02:52 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 364000.00
+2025-12-18 16:02:52 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 57105 non-null values (zeros excluded if needed)
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 78000.00
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 11576 non-null values (zeros excluded if needed)
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 119889 non-null values (zeros excluded if needed)
+2025-12-18 16:02:53 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 174000.00
+2025-12-18 16:02:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 16:02:56 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 53254 non-null values (zeros excluded if needed)
+2025-12-18 16:02:56 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 370000.00
+2025-12-18 16:02:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 16:02:56 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 29233 non-null values (zeros excluded if needed)
+2025-12-18 16:02:56 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 16:02:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 16:02:57 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 229942 non-null values (zeros excluded if needed)
+2025-12-18 16:02:57 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 16:02:57 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 16:02:57 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 493088 non-null values (zeros excluded if needed)
+2025-12-18 16:02:57 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 527000.00
+2025-12-18 16:03:01 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 16:03:25 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 16:03:25 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 16:03:25 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 16:03:27 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 16:03:27 [DEBUG] census_eda.memory: Skipping sampling: 30470MB available (>16GB)
+2025-12-18 16:03:27 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 1059499 rows
+2025-12-18 16:06:39 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 16:06:39 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(1059499, 292)
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 1059499 non-null values
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 1059499 non-null values
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1977.00
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 1059499 non-null values
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 93.00
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 433289 non-null values
+2025-12-18 16:06:40 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 185.00
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 105759 non-null values
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 364000.00
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 57105 non-null values
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 78000.00
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 11576 non-null values
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 119889 non-null values
+2025-12-18 16:06:43 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 174000.00
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 53254 non-null values
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 370000.00
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 29233 non-null values
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 229942 non-null values
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 493088 non-null values
+2025-12-18 16:06:46 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 527000.00
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 529808 non-null values
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 424216 non-null values
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 202425 non-null values
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 868145 non-null values
+2025-12-18 16:06:49 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 16:07:06 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 16:07:37 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 16:07:58 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 16:08:33 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 16:08:33 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 16:08:33 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 16:08:35 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 16:08:37 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 16:08:38 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 16:08:41 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 16:08:41 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 16:08:41 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 16:08:42 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 16:08:44 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 16:08:47 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 16:08:47 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 16:08:47 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 16:08:49 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 16:08:52 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 16:08:52 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 16:08:52 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 16:08:54 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 16:08:55 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 16:08:58 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 16:08:58 [DEBUG] census_eda.memory: Skipping sampling: 29497MB available (>16GB)
+2025-12-18 16:09:16 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 16:09:16 [DEBUG] census_eda.memory: Skipping sampling: 29422MB available (>16GB)
+2025-12-18 16:09:48 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 16:09:48 [DEBUG] census_eda.memory: Skipping sampling: 29766MB available (>16GB)
+2025-12-18 16:09:55 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 16:10:14 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 16:10:14 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 16:10:14 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 16:10:15 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 16:10:17 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 16:10:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 16:10:20 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 16:10:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 16:10:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 16:10:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 16:10:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 16:10:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 16:10:24 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 16:10:25 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 16:10:25 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 16:10:25 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 16:10:27 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 16:10:28 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 16:10:30 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 16:10:33 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 16:10:36 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 16:10:39 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 16:10:43 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 16:10:43 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 16:10:43 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 16:10:44 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 16:10:46 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 16:10:49 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 16:10:51 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 16:10:53 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 16:10:55 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 16:10:57 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 16:11:01 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 16:11:07 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 16:11:09 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 16:11:11 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Tennessee/population/1-year/figures
+2025-12-18 16:11:12 [DEBUG] census_eda.memory: Skipping sampling: 29593MB available (>16GB)
+2025-12-18 16:11:12 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 16:11:12 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 16:11:13 [INFO] census_eda.memory: [ML-START]: 21156.1MB (delta: +7578.8MB)
+2025-12-18 16:11:13 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 16:11:13 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 16:11:13 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 8289 samples (was 8294)
+2025-12-18 16:11:13 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 16:11:13 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 16:11:13 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:11:13 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:11:13 [INFO] census_eda.memory: tune_ridge:ENTER: 21156.1MB (delta: +0.0MB)
+2025-12-18 16:11:14 [WARNING] census_eda.memory: Memory usage (21157.0MB) exceeded threshold (16000MB)
+2025-12-18 16:11:16 [INFO] census_eda.memory: tune_ridge:EXIT: 21157.0MB (delta: +0.9MB)
+2025-12-18 16:11:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 16:11:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0900
+2025-12-18 16:11:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:11:16 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 16:11:16 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:11:16 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:11:16 [INFO] census_eda.memory: tune_lasso:ENTER: 21157.0MB (delta: +0.0MB)
+2025-12-18 16:11:16 [WARNING] census_eda.memory: Memory usage (21157.0MB) exceeded threshold (16000MB)
+2025-12-18 16:11:17 [INFO] census_eda.memory: tune_lasso:EXIT: 21157.0MB (delta: +0.0MB)
+2025-12-18 16:11:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 16:11:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0901
+2025-12-18 16:11:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:11:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 16:11:17 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:11:17 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:11:17 [INFO] census_eda.memory: tune_random_forest:ENTER: 21157.0MB (delta: +0.0MB)
+2025-12-18 16:11:28 [WARNING] census_eda.memory: Memory usage (21161.0MB) exceeded threshold (16000MB)
+2025-12-18 16:11:29 [INFO] census_eda.memory: tune_random_forest:EXIT: 21161.0MB (delta: +4.0MB)
+2025-12-18 16:11:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 16:11:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0201
+2025-12-18 16:11:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:11:31 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 16:11:31 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:11:31 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:11:31 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21165.0MB (delta: +4.0MB)
+2025-12-18 16:11:36 [WARNING] census_eda.memory: Memory usage (21165.0MB) exceeded threshold (16000MB)
+2025-12-18 16:11:37 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21165.0MB (delta: +0.0MB)
+2025-12-18 16:11:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 16:11:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0706
+2025-12-18 16:11:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:11:39 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 16:11:39 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 7863 samples (was 8294)
+2025-12-18 16:11:39 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 16:11:39 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 16:11:39 [INFO] census_eda.ml.regression: [TUNE] Data: 7,863 samples, 10 features
+2025-12-18 16:11:39 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:11:39 [INFO] census_eda.memory: tune_ridge:ENTER: 21165.0MB (delta: +0.0MB)
+2025-12-18 16:11:39 [WARNING] census_eda.memory: Memory usage (21165.0MB) exceeded threshold (16000MB)
+2025-12-18 16:11:41 [INFO] census_eda.memory: tune_ridge:EXIT: 21165.0MB (delta: +0.0MB)
+2025-12-18 16:11:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 16:11:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0922
+2025-12-18 16:11:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:11:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 16:11:41 [INFO] census_eda.ml.regression: [TUNE] Data: 7,863 samples, 10 features
+2025-12-18 16:11:41 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:11:41 [INFO] census_eda.memory: tune_lasso:ENTER: 21165.0MB (delta: +0.0MB)
+2025-12-18 16:11:41 [WARNING] census_eda.memory: Memory usage (21165.0MB) exceeded threshold (16000MB)
+2025-12-18 16:11:42 [INFO] census_eda.memory: tune_lasso:EXIT: 21165.0MB (delta: +0.0MB)
+2025-12-18 16:11:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 16:11:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0923
+2025-12-18 16:11:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:11:42 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 16:11:42 [INFO] census_eda.ml.regression: [TUNE] Data: 7,863 samples, 10 features
+2025-12-18 16:11:42 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:11:42 [INFO] census_eda.memory: tune_random_forest:ENTER: 21165.0MB (delta: +0.0MB)
+2025-12-18 16:11:51 [WARNING] census_eda.memory: Memory usage (21165.0MB) exceeded threshold (16000MB)
+2025-12-18 16:11:53 [INFO] census_eda.memory: tune_random_forest:EXIT: 21165.0MB (delta: +0.0MB)
+2025-12-18 16:11:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 16:11:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0255
+2025-12-18 16:11:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:11:55 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 16:11:55 [INFO] census_eda.ml.regression: [TUNE] Data: 7,863 samples, 10 features
+2025-12-18 16:11:55 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:11:55 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:00 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:02 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 16:12:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0667
+2025-12-18 16:12:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:12:03 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 16:12:03 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 8289 samples (was 8294)
+2025-12-18 16:12:03 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 16:12:03 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 16:12:03 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:12:03 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:12:03 [INFO] census_eda.memory: tune_ridge:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:03 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:05 [INFO] census_eda.memory: tune_ridge:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:05 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 16:12:05 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0863
+2025-12-18 16:12:05 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:12:05 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 16:12:05 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:12:05 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:12:05 [INFO] census_eda.memory: tune_lasso:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:05 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:06 [INFO] census_eda.memory: tune_lasso:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:06 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 16:12:06 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0864
+2025-12-18 16:12:06 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:12:06 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 16:12:06 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:12:06 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:12:06 [INFO] census_eda.memory: tune_random_forest:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:15 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:17 [INFO] census_eda.memory: tune_random_forest:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 16:12:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0189
+2025-12-18 16:12:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:12:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 16:12:18 [INFO] census_eda.ml.regression: [TUNE] Data: 8,289 samples, 10 features
+2025-12-18 16:12:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:12:18 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:23 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:25 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:25 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 16:12:25 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0656
+2025-12-18 16:12:25 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:12:26 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 16:12:26 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 16:12:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 16:12:26 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:12:26 [INFO] census_eda.memory: tune_ridge:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:26 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:28 [INFO] census_eda.memory: tune_ridge:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 16:12:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 16:12:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:12:28 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 16:12:28 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:28 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:12:28 [INFO] census_eda.memory: tune_lasso:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:28 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:29 [INFO] census_eda.memory: tune_lasso:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 16:12:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 16:12:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:12:29 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 16:12:29 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:29 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:12:29 [INFO] census_eda.memory: tune_random_forest:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:33 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:34 [INFO] census_eda.memory: tune_random_forest:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:34 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 16:12:34 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 16:12:34 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:12:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 16:12:35 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:35 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:12:35 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:38 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:40 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:40 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 16:12:40 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 16:12:40 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:12:43 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 16:12:43 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 16:12:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 16:12:43 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:43 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:12:43 [INFO] census_eda.memory: tune_ridge:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:43 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:45 [INFO] census_eda.memory: tune_ridge:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 16:12:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0649
+2025-12-18 16:12:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:12:45 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 16:12:45 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:45 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 16:12:45 [INFO] census_eda.memory: tune_lasso:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:45 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:46 [INFO] census_eda.memory: tune_lasso:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 16:12:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0651
+2025-12-18 16:12:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 16:12:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 16:12:46 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:46 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:12:46 [INFO] census_eda.memory: tune_random_forest:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:55 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:12:57 [INFO] census_eda.memory: tune_random_forest:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:12:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 16:12:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0414
+2025-12-18 16:12:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:12:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 16:12:58 [INFO] census_eda.ml.regression: [TUNE] Data: 8,294 samples, 10 features
+2025-12-18 16:12:58 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 16:12:58 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:13:03 [WARNING] census_eda.memory: Memory usage (21165.1MB) exceeded threshold (16000MB)
+2025-12-18 16:13:04 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:13:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 16:13:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0932
+2025-12-18 16:13:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 16:13:06 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 16:13:06 [INFO] census_eda.memory: [PRE-CLUSTERING]: 21165.1MB (delta: +0.0MB)
+2025-12-18 16:13:06 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 16:13:06 [INFO] census_eda.main: [CLUSTERING] KMeans on 8,294 samples...
+2025-12-18 16:13:07 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 16:13:07 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 8,294 samples (will sample if needed)...
+2025-12-18 16:13:08 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 16:13:08 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 16:13:08 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 52381.05721282959, 2025: 53812.6996383667, 2026: 55100.809089660645}, Values: [52381.05721282959, 53812.6996383667, 55100.809089660645]
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 16:13:08 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 57101.440088272095, 2025: 59285.35644721985, 2026: 61514.67295265198}, Values: [57101.440088272095, 59285.35644721985, 61514.67295265198]
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 16:13:08 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 57582.376373291016, 2025: 59624.20491027832, 2026: 61655.50714111328}, Values: [57582.376373291016, 59624.20491027832, 61655.50714111328]
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 16:13:08 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 43.9671719763428, 2025: 44.376147935166955, 2026: 44.84485745988786}, Values: [43.9671719763428, 44.376147935166955, 44.84485745988786]
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 16:13:08 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 37.43763482943177, 2025: 36.81971490755677, 2026: 36.03159727528691}, Values: [37.43763482943177, 36.81971490755677, 36.03159727528691]
+2025-12-18 16:13:08 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 16:13:38 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 16:13:38 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 16:13:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 49737.23411910562, 2025: 50866.212778957095, 2026: 51995.19143880904}, values=[49737.23411910562, 50866.212778957095, 51995.19143880904], CI_lower=[46154.669077488084, 47283.64773733956, 48412.6263971915], CI_upper=[53319.79916072315, 54448.77782057463, 55577.75648042657]
+2025-12-18 16:13:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49737.23411910562, 50866.212778957095, 51995.19143880904], CI_lower: [46154.669077488084, 47283.64773733956, 48412.6263971915], CI_upper: [53319.79916072315, 54448.77782057463, 55577.75648042657]
+2025-12-18 16:13:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 46154.669077488084, 47283.64773733956, 48412.6263971915], upper=[np.float64(45839.0714516546), 53319.79916072315, 54448.77782057463, 55577.75648042657]
+2025-12-18 16:13:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 53952.73908352852, 2025: 56483.190414726734, 2026: 59161.05712515116}, values=[53952.73908352852, 56483.190414726734, 59161.05712515116], CI_lower=[52302.16835053303, 54832.619681731245, 57510.48639215567], CI_upper=[55603.30981652401, 58133.76114772222, 60811.62785814665]
+2025-12-18 16:13:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53952.73908352852, 56483.190414726734, 59161.05712515116], CI_lower: [52302.16835053303, 54832.619681731245, 57510.48639215567], CI_upper: [55603.30981652401, 58133.76114772222, 60811.62785814665]
+2025-12-18 16:13:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 52302.16835053303, 54832.619681731245, 57510.48639215567], upper=[np.float64(45839.0714516546), 55603.30981652401, 58133.76114772222, 60811.62785814665]
+2025-12-18 16:13:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 52381.05721282959, 2025: 53812.6996383667, 2026: 55100.809089660645}, values=[52381.05721282959, 53812.6996383667, 55100.809089660645], CI_lower=[50971.1375091488, 52402.77993468591, 53690.889385979855], CI_upper=[53790.97691651038, 55222.61934204749, 56510.72879334143]
+2025-12-18 16:13:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52381.05721282959, 53812.6996383667, 55100.809089660645], CI_lower: [50971.1375091488, 52402.77993468591, 53690.889385979855], CI_upper: [53790.97691651038, 55222.61934204749, 56510.72879334143]
+2025-12-18 16:13:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 50971.1375091488, 52402.77993468591, 53690.889385979855], upper=[np.float64(45839.0714516546), 53790.97691651038, 55222.61934204749, 56510.72879334143]
+2025-12-18 16:13:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 48865.37802866598, 2025: 48865.37802866598, 2026: 48865.37802866598}, values=[48865.37802866598, 48865.37802866598, 48865.37802866598], CI_lower=[46827.7269834546, 46827.7269834546, 46827.7269834546], CI_upper=[50903.02907387736, 50903.02907387736, 50903.02907387736]
+2025-12-18 16:13:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48865.37802866598, 48865.37802866598, 48865.37802866598], CI_lower: [46827.7269834546, 46827.7269834546, 46827.7269834546], CI_upper: [50903.02907387736, 50903.02907387736, 50903.02907387736]
+2025-12-18 16:13:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 46827.7269834546, 46827.7269834546, 46827.7269834546], upper=[np.float64(45839.0714516546), 50903.02907387736, 50903.02907387736, 50903.02907387736]
+2025-12-18 16:13:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 46627.21286331408, 2025: 46627.21286331408, 2026: 46627.21286331408}, values=[46627.21286331408, 46627.21286331408, 46627.21286331408], CI_lower=[43156.716025195085, 43156.716025195085, 43156.716025195085], CI_upper=[50097.70970143308, 50097.70970143308, 50097.70970143308]
+2025-12-18 16:13:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46627.21286331408, 46627.21286331408, 46627.21286331408], CI_lower: [43156.716025195085, 43156.716025195085, 43156.716025195085], CI_upper: [50097.70970143308, 50097.70970143308, 50097.70970143308]
+2025-12-18 16:13:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 43156.716025195085, 43156.716025195085, 43156.716025195085], upper=[np.float64(45839.0714516546), 50097.70970143308, 50097.70970143308, 50097.70970143308]
+2025-12-18 16:13:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 49856.94869322869, 2025: 49856.94869322869, 2026: 49856.94869322869}, values=[49856.94869322869, 49856.94869322869, 49856.94869322869], CI_lower=[48457.22922888267, 48457.22922888267, 48457.22922888267], CI_upper=[51256.668157574706, 51256.668157574706, 51256.668157574706]
+2025-12-18 16:13:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49856.94869322869, 49856.94869322869, 49856.94869322869], CI_lower: [48457.22922888267, 48457.22922888267, 48457.22922888267], CI_upper: [51256.668157574706, 51256.668157574706, 51256.668157574706]
+2025-12-18 16:13:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 48457.22922888267, 48457.22922888267, 48457.22922888267], upper=[np.float64(45839.0714516546), 51256.668157574706, 51256.668157574706, 51256.668157574706]
+2025-12-18 16:13:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 52983.11989401361, 2025: 54159.200656908804, 2026: 55335.27121394123}, values=[52983.11989401361, 54159.200656908804, 55335.27121394123], CI_lower=[36836.197882099674, 38012.278644994876, 39188.3492020273], CI_upper=[69130.04190592754, 70306.12266882273, 71482.19322585517]
+2025-12-18 16:13:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52983.11989401361, 54159.200656908804, 55335.27121394123], CI_lower: [36836.197882099674, 38012.278644994876, 39188.3492020273], CI_upper: [69130.04190592754, 70306.12266882273, 71482.19322585517]
+2025-12-18 16:13:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 36836.197882099674, 38012.278644994876, 39188.3492020273], upper=[np.float64(45839.0714516546), 69130.04190592754, 70306.12266882273, 71482.19322585517]
+2025-12-18 16:13:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 54387.45101161657, 2025: 57087.29408587123, 2026: 59787.13716012589}, values=[54387.45101161657, 57087.29408587123, 59787.13716012589], CI_lower=[52562.96950855892, 55262.81258281358, 57962.65565706824], CI_upper=[56211.93251467422, 58911.77558892888, 61611.61866318354]
+2025-12-18 16:13:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54387.45101161657, 57087.29408587123, 59787.13716012589], CI_lower: [52562.96950855892, 55262.81258281358, 57962.65565706824], CI_upper: [56211.93251467422, 58911.77558892888, 61611.61866318354]
+2025-12-18 16:13:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(45839.0714516546), 52562.96950855892, 55262.81258281358, 57962.65565706824], upper=[np.float64(45839.0714516546), 56211.93251467422, 58911.77558892888, 61611.61866318354]
+2025-12-18 16:13:44 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 16:13:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 53639.26220233319, 2025: 54856.9226093851, 2026: 56074.58301643655}, values=[53639.26220233319, 54856.9226093851, 56074.58301643655], CI_lower=[50434.28421618507, 51651.94462323698, 52869.605030288425], CI_upper=[56844.240188481315, 58061.900595533225, 59279.56100258467]
+2025-12-18 16:13:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53639.26220233319, 54856.9226093851, 56074.58301643655], CI_lower: [50434.28421618507, 51651.94462323698, 52869.605030288425], CI_upper: [56844.240188481315, 58061.900595533225, 59279.56100258467]
+2025-12-18 16:13:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 50434.28421618507, 51651.94462323698, 52869.605030288425], upper=[np.float64(30817.608809462254), 56844.240188481315, 58061.900595533225, 59279.56100258467]
+2025-12-18 16:13:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 57605.644328057766, 2025: 60141.95486134291, 2026: 62816.96899700165}, values=[57605.644328057766, 60141.95486134291, 62816.96899700165], CI_lower=[56456.22331388401, 58992.53384716915, 61667.54798282789], CI_upper=[58755.06534223152, 61291.375875516664, 63966.390011175405]
+2025-12-18 16:13:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57605.644328057766, 60141.95486134291, 62816.96899700165], CI_lower: [56456.22331388401, 58992.53384716915, 61667.54798282789], CI_upper: [58755.06534223152, 61291.375875516664, 63966.390011175405]
+2025-12-18 16:13:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 56456.22331388401, 58992.53384716915, 61667.54798282789], upper=[np.float64(30817.608809462254), 58755.06534223152, 61291.375875516664, 63966.390011175405]
+2025-12-18 16:13:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 57101.440088272095, 2025: 59285.35644721985, 2026: 61514.67295265198}, values=[57101.440088272095, 59285.35644721985, 61514.67295265198], CI_lower=[55985.45446946339, 58169.37082841114, 60398.68733384327], CI_upper=[58217.4257070808, 60401.342066028556, 62630.658571460684]
+2025-12-18 16:13:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57101.440088272095, 59285.35644721985, 61514.67295265198], CI_lower: [55985.45446946339, 58169.37082841114, 60398.68733384327], CI_upper: [58217.4257070808, 60401.342066028556, 62630.658571460684]
+2025-12-18 16:13:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 55985.45446946339, 58169.37082841114, 60398.68733384327], upper=[np.float64(30817.608809462254), 58217.4257070808, 60401.342066028556, 62630.658571460684]
+2025-12-18 16:13:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 52659.21785419387, 2025: 52659.21785419387, 2026: 52659.21785419387}, values=[52659.21785419387, 52659.21785419387, 52659.21785419387], CI_lower=[50685.52080790144, 50685.52080790144, 50685.52080790144], CI_upper=[54632.9149004863, 54632.9149004863, 54632.9149004863]
+2025-12-18 16:13:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52659.21785419387, 52659.21785419387, 52659.21785419387], CI_lower: [50685.52080790144, 50685.52080790144, 50685.52080790144], CI_upper: [54632.9149004863, 54632.9149004863, 54632.9149004863]
+2025-12-18 16:13:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 50685.52080790144, 50685.52080790144, 50685.52080790144], upper=[np.float64(30817.608809462254), 54632.9149004863, 54632.9149004863, 54632.9149004863]
+2025-12-18 16:13:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 50190.96413584647, 2025: 50190.96413584647, 2026: 50190.96413584647}, values=[50190.96413584647, 50190.96413584647, 50190.96413584647], CI_lower=[46865.34747541397, 46865.34747541397, 46865.34747541397], CI_upper=[53516.58079627898, 53516.58079627898, 53516.58079627898]
+2025-12-18 16:13:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50190.96413584647, 50190.96413584647, 50190.96413584647], CI_lower: [46865.34747541397, 46865.34747541397, 46865.34747541397], CI_upper: [53516.58079627898, 53516.58079627898, 53516.58079627898]
+2025-12-18 16:13:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 46865.34747541397, 46865.34747541397, 46865.34747541397], upper=[np.float64(30817.608809462254), 53516.58079627898, 53516.58079627898, 53516.58079627898]
+2025-12-18 16:13:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 53690.86139800955, 2025: 53690.86139800955, 2026: 53690.86139800955}, values=[53690.86139800955, 53690.86139800955, 53690.86139800955], CI_lower=[52282.803833673956, 52282.803833673956, 52282.803833673956], CI_upper=[55098.91896234514, 55098.91896234514, 55098.91896234514]
+2025-12-18 16:13:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53690.86139800955, 53690.86139800955, 53690.86139800955], CI_lower: [52282.803833673956, 52282.803833673956, 52282.803833673956], CI_upper: [55098.91896234514, 55098.91896234514, 55098.91896234514]
+2025-12-18 16:13:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 52282.803833673956, 52282.803833673956, 52282.803833673956], upper=[np.float64(30817.608809462254), 55098.91896234514, 55098.91896234514, 55098.91896234514]
+2025-12-18 16:13:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 56924.03655666437, 2025: 58235.26577365283, 2026: 59546.46426635218}, values=[56924.03655666437, 58235.26577365283, 59546.46426635218], CI_lower=[39945.55296229135, 41256.78217927981, 42567.98067197917], CI_upper=[73902.52015103737, 75213.74936802583, 76524.9478607252]
+2025-12-18 16:13:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56924.03655666437, 58235.26577365283, 59546.46426635218], CI_lower: [39945.55296229135, 41256.78217927981, 42567.98067197917], CI_upper: [73902.52015103737, 75213.74936802583, 76524.9478607252]
+2025-12-18 16:13:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 39945.55296229135, 41256.78217927981, 42567.98067197917], upper=[np.float64(30817.608809462254), 73902.52015103737, 75213.74936802583, 76524.9478607252]
+2025-12-18 16:13:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 58385.05784393174, 2025: 61178.31291996015, 2026: 63971.56799598856}, values=[58385.05784393174, 61178.31291996015, 63971.56799598856], CI_lower=[56894.82551859002, 59688.080594618434, 62481.33567064684], CI_upper=[59875.29016927346, 62668.54524530187, 65461.80032133028]
+2025-12-18 16:13:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58385.05784393174, 61178.31291996015, 63971.56799598856], CI_lower: [56894.82551859002, 59688.080594618434, 62481.33567064684], CI_upper: [59875.29016927346, 62668.54524530187, 65461.80032133028]
+2025-12-18 16:13:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(30817.608809462254), 56894.82551859002, 59688.080594618434, 62481.33567064684], upper=[np.float64(30817.608809462254), 59875.29016927346, 62668.54524530187, 65461.80032133028]
+2025-12-18 16:13:51 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 16:13:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 54164.97202609014, 2025: 55388.172411471605, 2026: 56611.37279685307}, values=[54164.97202609014, 55388.172411471605, 56611.37279685307], CI_lower=[50673.73797336538, 51896.93835874685, 53120.138744128315], CI_upper=[57656.206078814896, 58879.40646419636, 60102.60684957783]
+2025-12-18 16:13:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54164.97202609014, 55388.172411471605, 56611.37279685307], CI_lower: [50673.73797336538, 51896.93835874685, 53120.138744128315], CI_upper: [57656.206078814896, 58879.40646419636, 60102.60684957783]
+2025-12-18 16:13:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 50673.73797336538, 51896.93835874685, 53120.138744128315], upper=[np.float64(33770.853494315386), 57656.206078814896, 58879.40646419636, 60102.60684957783]
+2025-12-18 16:13:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 58448.70770442486, 2025: 61096.06451612711, 2026: 63893.22272157669}, values=[58448.70770442486, 61096.06451612711, 63893.22272157669], CI_lower=[57126.44016121337, 59773.796972915625, 62570.955178365206], CI_upper=[59770.97524763634, 62418.332059338594, 65215.490264788175]
+2025-12-18 16:13:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58448.70770442486, 61096.06451612711, 63893.22272157669], CI_lower: [57126.44016121337, 59773.796972915625, 62570.955178365206], CI_upper: [59770.97524763634, 62418.332059338594, 65215.490264788175]
+2025-12-18 16:13:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 57126.44016121337, 59773.796972915625, 62570.955178365206], upper=[np.float64(33770.853494315386), 59770.97524763634, 62418.332059338594, 65215.490264788175]
+2025-12-18 16:13:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 57582.376373291016, 2025: 59624.20491027832, 2026: 61655.50714111328}, values=[57582.376373291016, 59624.20491027832, 61655.50714111328], CI_lower=[56347.57247246764, 58389.401009454945, 60420.703240289906], CI_upper=[58817.18027411439, 60859.008811101696, 62890.31104193666]
+2025-12-18 16:13:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57582.376373291016, 59624.20491027832, 61655.50714111328], CI_lower: [56347.57247246764, 58389.401009454945, 60420.703240289906], CI_upper: [58817.18027411439, 60859.008811101696, 62890.31104193666]
+2025-12-18 16:13:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 56347.57247246764, 58389.401009454945, 60420.703240289906], upper=[np.float64(33770.853494315386), 58817.18027411439, 60859.008811101696, 62890.31104193666]
+2025-12-18 16:13:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 53257.87015483508, 2025: 53257.87015483508, 2026: 53257.87015483508}, values=[53257.87015483508, 53257.87015483508, 53257.87015483508], CI_lower=[51196.87968284131, 51196.87968284131, 51196.87968284131], CI_upper=[55318.86062682885, 55318.86062682885, 55318.86062682885]
+2025-12-18 16:13:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53257.87015483508, 53257.87015483508, 53257.87015483508], CI_lower: [51196.87968284131, 51196.87968284131, 51196.87968284131], CI_upper: [55318.86062682885, 55318.86062682885, 55318.86062682885]
+2025-12-18 16:13:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 51196.87968284131, 51196.87968284131, 51196.87968284131], upper=[np.float64(33770.853494315386), 55318.86062682885, 55318.86062682885, 55318.86062682885]
+2025-12-18 16:13:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 50758.494947405205, 2025: 50758.494947405205, 2026: 50758.494947405205}, values=[50758.494947405205, 50758.494947405205, 50758.494947405205], CI_lower=[47256.52713230671, 47256.52713230671, 47256.52713230671], CI_upper=[54260.462762503696, 54260.462762503696, 54260.462762503696]
+2025-12-18 16:13:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50758.494947405205, 50758.494947405205, 50758.494947405205], CI_lower: [47256.52713230671, 47256.52713230671, 47256.52713230671], CI_upper: [54260.462762503696, 54260.462762503696, 54260.462762503696]
+2025-12-18 16:13:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 47256.52713230671, 47256.52713230671, 47256.52713230671], upper=[np.float64(33770.853494315386), 54260.462762503696, 54260.462762503696, 54260.462762503696]
+2025-12-18 16:13:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 54295.29321024416, 2025: 54295.29321024416, 2026: 54295.29321024416}, values=[54295.29321024416, 54295.29321024416, 54295.29321024416], CI_lower=[52853.3900561725, 52853.3900561725, 52853.3900561725], CI_upper=[55737.19636431582, 55737.19636431582, 55737.19636431582]
+2025-12-18 16:13:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54295.29321024416, 54295.29321024416, 54295.29321024416], CI_lower: [52853.3900561725, 52853.3900561725, 52853.3900561725], CI_upper: [55737.19636431582, 55737.19636431582, 55737.19636431582]
+2025-12-18 16:13:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 52853.3900561725, 52853.3900561725, 52853.3900561725], upper=[np.float64(33770.853494315386), 55737.19636431582, 55737.19636431582, 55737.19636431582]
+2025-12-18 16:13:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 57599.26336405692, 2025: 58904.49408532474, 2026: 60209.70944867644}, values=[57599.26336405692, 58904.49408532474, 60209.70944867644], CI_lower=[40254.57575660825, 41559.806477876074, 42865.021841227775], CI_upper=[74943.95097150559, 76249.1816927734, 77554.3970561251]
+2025-12-18 16:13:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57599.26336405692, 58904.49408532474, 60209.70944867644], CI_lower: [40254.57575660825, 41559.806477876074, 42865.021841227775], CI_upper: [74943.95097150559, 76249.1816927734, 77554.3970561251]
+2025-12-18 16:13:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 40254.57575660825, 41559.806477876074, 42865.021841227775], upper=[np.float64(33770.853494315386), 74943.95097150559, 76249.1816927734, 77554.3970561251]
+2025-12-18 16:13:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 59070.01648671566, 2025: 61901.5171278373, 2026: 64733.01776895895}, values=[59070.01648671566, 61901.5171278373, 64733.01776895895], CI_lower=[57411.001684954164, 60242.5023260758, 63074.00296719745], CI_upper=[60729.03128847716, 63560.5319295988, 66392.03257072045]
+2025-12-18 16:13:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59070.01648671566, 61901.5171278373, 64733.01776895895], CI_lower: [57411.001684954164, 60242.5023260758, 63074.00296719745], CI_upper: [60729.03128847716, 63560.5319295988, 66392.03257072045]
+2025-12-18 16:13:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(33770.853494315386), 57411.001684954164, 60242.5023260758, 63074.00296719745], upper=[np.float64(33770.853494315386), 60729.03128847716, 63560.5319295988, 66392.03257072045]
+2025-12-18 16:13:57 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 16:13:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 43.74005753356482, 2025: 43.94707034933765, 2026: 44.15408316511048}, values=[43.74005753356482, 43.94707034933765, 44.15408316511048], CI_lower=[43.28110054742008, 43.48811336319291, 43.69512617896574], CI_upper=[44.199014519709564, 44.40602733548239, 44.61304015125522]
+2025-12-18 16:13:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.74005753356482, 43.94707034933765, 44.15408316511048], CI_lower: [43.28110054742008, 43.48811336319291, 43.69512617896574], CI_upper: [44.199014519709564, 44.40602733548239, 44.61304015125522]
+2025-12-18 16:13:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 43.28110054742008, 43.48811336319291, 43.69512617896574], upper=[np.float64(43.32251968503937), 44.199014519709564, 44.40602733548239, 44.61304015125522]
+2025-12-18 16:13:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 43.62206252983742, 2025: 43.78984712159945, 2026: 43.953505451292585}, values=[43.62206252983742, 43.78984712159945, 43.953505451292585], CI_lower=[43.17181790090307, 43.3396024926651, 43.503260822358236], CI_upper=[44.07230715877177, 44.2400917505338, 44.403750080226935]
+2025-12-18 16:13:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.62206252983742, 43.78984712159945, 43.953505451292585], CI_lower: [43.17181790090307, 43.3396024926651, 43.503260822358236], CI_upper: [44.07230715877177, 44.2400917505338, 44.403750080226935]
+2025-12-18 16:13:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 43.17181790090307, 43.3396024926651, 43.503260822358236], upper=[np.float64(43.32251968503937), 44.07230715877177, 44.2400917505338, 44.403750080226935]
+2025-12-18 16:13:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 43.9671719763428, 2025: 44.376147935166955, 2026: 44.84485745988786}, values=[43.9671719763428, 44.376147935166955, 44.84485745988786], CI_lower=[43.55822552061263, 43.96720147943679, 44.435911004157695], CI_upper=[44.376118432072964, 44.78509439089712, 45.25380391561803]
+2025-12-18 16:13:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.9671719763428, 44.376147935166955, 44.84485745988786], CI_lower: [43.55822552061263, 43.96720147943679, 44.435911004157695], CI_upper: [44.376118432072964, 44.78509439089712, 45.25380391561803]
+2025-12-18 16:13:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 43.55822552061263, 43.96720147943679, 44.435911004157695], upper=[np.float64(43.32251968503937), 44.376118432072964, 44.78509439089712, 45.25380391561803]
+2025-12-18 16:14:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43.287099256419076, 2025: 43.287099256419076, 2026: 43.287099256419076}, values=[43.287099256419076, 43.287099256419076, 43.287099256419076], CI_lower=[42.84407600101822, 42.84407600101822, 42.84407600101822], CI_upper=[43.73012251181993, 43.73012251181993, 43.73012251181993]
+2025-12-18 16:14:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.287099256419076, 43.287099256419076, 43.287099256419076], CI_lower: [42.84407600101822, 42.84407600101822, 42.84407600101822], CI_upper: [43.73012251181993, 43.73012251181993, 43.73012251181993]
+2025-12-18 16:14:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 42.84407600101822, 42.84407600101822, 42.84407600101822], upper=[np.float64(43.32251968503937), 43.73012251181993, 43.73012251181993, 43.73012251181993]
+2025-12-18 16:14:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42.98159947563431, 2025: 42.98159947563431, 2026: 42.98159947563431}, values=[42.98159947563431, 42.98159947563431, 42.98159947563431], CI_lower=[42.505220315729616, 42.505220315729616, 42.505220315729616], CI_upper=[43.45797863553901, 43.45797863553901, 43.45797863553901]
+2025-12-18 16:14:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.98159947563431, 42.98159947563431, 42.98159947563431], CI_lower: [42.505220315729616, 42.505220315729616, 42.505220315729616], CI_upper: [43.45797863553901, 43.45797863553901, 43.45797863553901]
+2025-12-18 16:14:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 42.505220315729616, 42.505220315729616, 42.505220315729616], upper=[np.float64(43.32251968503937), 43.45797863553901, 43.45797863553901, 43.45797863553901]
+2025-12-18 16:14:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 43.43500848147585, 2025: 43.43500848147585, 2026: 43.43500848147585}, values=[43.43500848147585, 43.43500848147585, 43.43500848147585], CI_lower=[43.092351330567254, 43.092351330567254, 43.092351330567254], CI_upper=[43.77766563238444, 43.77766563238444, 43.77766563238444]
+2025-12-18 16:14:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.43500848147585, 43.43500848147585, 43.43500848147585], CI_lower: [43.092351330567254, 43.092351330567254, 43.092351330567254], CI_upper: [43.77766563238444, 43.77766563238444, 43.77766563238444]
+2025-12-18 16:14:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 43.092351330567254, 43.092351330567254, 43.092351330567254], upper=[np.float64(43.32251968503937), 43.77766563238444, 43.77766563238444, 43.77766563238444]
+2025-12-18 16:14:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 43.918705400126235, 2025: 44.1251952963766, 2026: 44.33167296689506}, values=[43.918705400126235, 44.1251952963766, 44.33167296689506], CI_lower=[24.88540812134778, 25.091898017598147, 25.298375688116607], CI_upper=[62.95200267890469, 63.15849257515506, 63.36497024567352]
+2025-12-18 16:14:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.918705400126235, 44.1251952963766, 44.33167296689506], CI_lower: [24.88540812134778, 25.091898017598147, 25.298375688116607], CI_upper: [62.95200267890469, 63.15849257515506, 63.36497024567352]
+2025-12-18 16:14:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 24.88540812134778, 25.091898017598147, 25.298375688116607], upper=[np.float64(43.32251968503937), 62.95200267890469, 63.15849257515506, 63.36497024567352]
+2025-12-18 16:14:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 43.67569817255825, 2025: 43.894927288731154, 2026: 44.114156404904065}, values=[43.67569817255825, 43.894927288731154, 44.114156404904065], CI_lower=[43.215341563242696, 43.4345706794156, 43.65379979558851], CI_upper=[44.1360547818738, 44.35528389804671, 44.57451301421962]
+2025-12-18 16:14:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.67569817255825, 43.894927288731154, 44.114156404904065], CI_lower: [43.215341563242696, 43.4345706794156, 43.65379979558851], CI_upper: [44.1360547818738, 44.35528389804671, 44.57451301421962]
+2025-12-18 16:14:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.32251968503937), 43.215341563242696, 43.4345706794156, 43.65379979558851], upper=[np.float64(43.32251968503937), 44.1360547818738, 44.35528389804671, 44.57451301421962]
+2025-12-18 16:14:04 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 16:14:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 38.21726484546551, 2025: 38.20754319927138, 2026: 38.19782155307725}, values=[38.21726484546551, 38.20754319927138, 38.19782155307725], CI_lower=[37.64915663847526, 37.63943499228113, 37.629713346087], CI_upper=[38.78537305245575, 38.77565140626162, 38.76592976006749]
+2025-12-18 16:14:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.21726484546551, 38.20754319927138, 38.19782155307725], CI_lower: [37.64915663847526, 37.63943499228113, 37.629713346087], CI_upper: [38.78537305245575, 38.77565140626162, 38.76592976006749]
+2025-12-18 16:14:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 37.64915663847526, 37.63943499228113, 37.629713346087], upper=[np.float64(37.96471229888192), 38.78537305245575, 38.77565140626162, 38.76592976006749]
+2025-12-18 16:14:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.390005915771326, 2025: 38.43771318765539, 2026: 38.49146118078352}, values=[38.390005915771326, 38.43771318765539, 38.49146118078352], CI_lower=[37.83704119908978, 37.88474847097385, 37.93849646410197], CI_upper=[38.94297063245287, 38.990677904336934, 39.04442589746506]
+2025-12-18 16:14:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.390005915771326, 38.43771318765539, 38.49146118078352], CI_lower: [37.83704119908978, 37.88474847097385, 37.93849646410197], CI_upper: [38.94297063245287, 38.990677904336934, 39.04442589746506]
+2025-12-18 16:14:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 37.83704119908978, 37.88474847097385, 37.93849646410197], upper=[np.float64(37.96471229888192), 38.94297063245287, 38.990677904336934, 39.04442589746506]
+2025-12-18 16:14:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 37.43763482943177, 2025: 36.81971490755677, 2026: 36.03159727528691}, values=[37.43763482943177, 36.81971490755677, 36.03159727528691], CI_lower=[37.24910632235545, 36.63118640048045, 35.84306876821059], CI_upper=[37.62616333650809, 37.00824341463309, 36.22012578236323]
+2025-12-18 16:14:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.43763482943177, 36.81971490755677, 36.03159727528691], CI_lower: [37.24910632235545, 36.63118640048045, 35.84306876821059], CI_upper: [37.62616333650809, 37.00824341463309, 36.22012578236323]
+2025-12-18 16:14:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 37.24910632235545, 36.63118640048045, 35.84306876821059], upper=[np.float64(37.96471229888192), 37.62616333650809, 37.00824341463309, 36.22012578236323]
+2025-12-18 16:14:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 38.198467947078164, 2025: 38.198467947078164, 2026: 38.198467947078164}, values=[38.198467947078164, 38.198467947078164, 38.198467947078164], CI_lower=[37.7768722038568, 37.7768722038568, 37.7768722038568], CI_upper=[38.62006369029953, 38.62006369029953, 38.62006369029953]
+2025-12-18 16:14:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.198467947078164, 38.198467947078164, 38.198467947078164], CI_lower: [37.7768722038568, 37.7768722038568, 37.7768722038568], CI_upper: [38.62006369029953, 38.62006369029953, 38.62006369029953]
+2025-12-18 16:14:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 37.7768722038568, 37.7768722038568, 37.7768722038568], upper=[np.float64(37.96471229888192), 38.62006369029953, 38.62006369029953, 38.62006369029953]
+2025-12-18 16:14:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 38.24397910212881, 2025: 38.24397910212881, 2026: 38.24397910212881}, values=[38.24397910212881, 38.24397910212881, 38.24397910212881], CI_lower=[37.79443693623862, 37.79443693623862, 37.79443693623862], CI_upper=[38.693521268019005, 38.693521268019005, 38.693521268019005]
+2025-12-18 16:14:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.24397910212881, 38.24397910212881, 38.24397910212881], CI_lower: [37.79443693623862, 37.79443693623862, 37.79443693623862], CI_upper: [38.693521268019005, 38.693521268019005, 38.693521268019005]
+2025-12-18 16:14:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 37.79443693623862, 37.79443693623862, 37.79443693623862], upper=[np.float64(37.96471229888192), 38.693521268019005, 38.693521268019005, 38.693521268019005]
+2025-12-18 16:14:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 38.13300167000686, 2025: 38.13300167000686, 2026: 38.13300167000686}, values=[38.13300167000686, 38.13300167000686, 38.13300167000686], CI_lower=[37.71821509775175, 37.71821509775175, 37.71821509775175], CI_upper=[38.54778824226197, 38.54778824226197, 38.54778824226197]
+2025-12-18 16:14:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.13300167000686, 38.13300167000686, 38.13300167000686], CI_lower: [37.71821509775175, 37.71821509775175, 37.71821509775175], CI_upper: [38.54778824226197, 38.54778824226197, 38.54778824226197]
+2025-12-18 16:14:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 37.71821509775175, 37.71821509775175, 37.71821509775175], upper=[np.float64(37.96471229888192), 38.54778824226197, 38.54778824226197, 38.54778824226197]
+2025-12-18 16:14:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.735289647091754, 2025: 37.5637088025153, 2026: 37.43538674714784}, values=[37.735289647091754, 37.5637088025153, 37.43538674714784], CI_lower=[19.157116117628046, 18.985535273051592, 18.85721321768413], CI_upper=[56.31346317655546, 56.141882331979005, 56.01356027661154]
+2025-12-18 16:14:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.735289647091754, 37.5637088025153, 37.43538674714784], CI_lower: [19.157116117628046, 18.985535273051592, 18.85721321768413], CI_upper: [56.31346317655546, 56.141882331979005, 56.01356027661154]
+2025-12-18 16:14:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 19.157116117628046, 18.985535273051592, 18.85721321768413], upper=[np.float64(37.96471229888192), 56.31346317655546, 56.141882331979005, 56.01356027661154]
+2025-12-18 16:14:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.888030077881254, 2025: 37.81134785342668, 2026: 37.73466562897212}, values=[37.888030077881254, 37.81134785342668, 37.73466562897212], CI_lower=[37.47732426567257, 37.400642041218, 37.323959816763434], CI_upper=[38.29873589008994, 38.222053665635364, 38.1453714411808]
+2025-12-18 16:14:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.888030077881254, 37.81134785342668, 37.73466562897212], CI_lower: [37.47732426567257, 37.400642041218, 37.323959816763434], CI_upper: [38.29873589008994, 38.222053665635364, 38.1453714411808]
+2025-12-18 16:14:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.96471229888192), 37.47732426567257, 37.400642041218, 37.323959816763434], upper=[np.float64(37.96471229888192), 38.29873589008994, 38.222053665635364, 38.1453714411808]
+2025-12-18 16:14:12 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 16:14:13 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 16:19:47 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 18052.966796875, 'mse': 1630352768.0, 'rmse': 40377.62707242712, 'r2': 0.20283733308315277}
+2025-12-18 16:19:49 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 16:23:40 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.3689982891082764, 'mse': 64.84113311767578, 'rmse': 8.052399214996472, 'r2': 0.31356433033943176}
+2025-12-18 16:23:41 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 16:27:46 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.05610179901123, 'mse': 618.05126953125, 'rmse': 24.860636949427704, 'r2': -5.556746959686279}
+2025-12-18 16:27:48 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 16:28:34 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Tennessee/population/1-year/figures/ml/deep_learning
+2025-12-18 16:28:36 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 16:28:36 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 16:28:36 [DEBUG] census_eda.main:  Running LLM analysis for state: Tennessee
+2025-12-18 16:28:36 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 16:28:36 [INFO] census_eda.ml: [LLM] State context loaded: Tennessee
+2025-12-18 16:28:36 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [API] Total request: ~2377 tokens (system: ~2195, user: ~182)
+2025-12-18 16:28:36 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:28:53 [DEBUG] census_eda.ml: [API] Received response: 3669 chars
+2025-12-18 16:28:53 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3669 chars)
+2025-12-18 16:28:54 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [LLM] User prompt: 1286 chars (~321 tokens)
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [API] Total request: ~2516 tokens (system: ~2195, user: ~321)
+2025-12-18 16:28:54 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [API] Received response: 3413 chars
+2025-12-18 16:29:03 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3413 chars)
+2025-12-18 16:29:03 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [LLM] User prompt: 2194 chars (~548 tokens)
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [API] Total request: ~2743 tokens (system: ~2195, user: ~548)
+2025-12-18 16:29:03 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [API] Received response: 4554 chars
+2025-12-18 16:29:17 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4554 chars)
+2025-12-18 16:29:17 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [API] Total request: ~2535 tokens (system: ~2195, user: ~340)
+2025-12-18 16:29:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [API] Received response: 4841 chars
+2025-12-18 16:29:32 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4841 chars)
+2025-12-18 16:29:32 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [API] Total request: ~2385 tokens (system: ~2195, user: ~190)
+2025-12-18 16:29:32 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [API] Received response: 3776 chars
+2025-12-18 16:29:44 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3776 chars)
+2025-12-18 16:29:44 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [LLM] User prompt: 8745 chars (~2186 tokens)
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [API] Total request: ~4381 tokens (system: ~2195, user: ~2186)
+2025-12-18 16:29:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [API] Received response: 3222 chars
+2025-12-18 16:29:56 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3222 chars)
+2025-12-18 16:29:56 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [LLM] User prompt: 5405 chars (~1351 tokens)
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [API] Total request: ~3546 tokens (system: ~2195, user: ~1351)
+2025-12-18 16:29:56 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [API] Received response: 4243 chars
+2025-12-18 16:30:09 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (4243 chars)
+2025-12-18 16:30:09 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [API] Total request: ~2347 tokens (system: ~2195, user: ~152)
+2025-12-18 16:30:09 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [API] Received response: 4516 chars
+2025-12-18 16:30:24 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (4516 chars)
+2025-12-18 16:30:24 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [LLM] User prompt: 5604 chars (~1401 tokens)
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [API] Total request: ~3596 tokens (system: ~2195, user: ~1401)
+2025-12-18 16:30:24 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [API] Received response: 3709 chars
+2025-12-18 16:30:35 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3709 chars)
+2025-12-18 16:30:35 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [LLM] User prompt: 1832 chars (~458 tokens)
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [API] Total request: ~2653 tokens (system: ~2195, user: ~458)
+2025-12-18 16:30:35 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [API] Received response: 3886 chars
+2025-12-18 16:30:46 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3886 chars)
+2025-12-18 16:30:46 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [LLM] User prompt: 1642 chars (~410 tokens)
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Tennessee
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Tennessee
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3893 chars
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~973
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Tennessee
+
+ECONOMIC PROFILE:
+  Industries: Healthcare management (Nashville), Automotive manufacturing, Music and entertainment (Nashville), Tourism (Smoky Mountains, Memphis, Nashville), Logistics and distribution (FedEx)
+  Trends: Strong growth 2011-2023. Nashville boom (healthcare, music, tech). Automotive expansion (Nissan, GM, VW). Memphis logistics hub. Tourism record growth through 2023
+  Income: Slightly below national median. Nashville and suburbs well above average. Memphis mixed. Rural areas significantly below median. Growing inequality between metros and rural areas
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~0.9% annually, accelerating post-2015. Driven by domestic migration to Nashville/suburbs. Memphis stable. Rural decline
+  Migration: Major destination from California, Northeast, Midwest seeking affordability and jobs. Nashville explosive growth. 50% business formation growth 2021-2022 from new residents
+  Education: Below national average but improving in metros. Vanderbilt, University of Tennessee strong. Growing education sector in Nashville
+
+HOUSING MARKET:
+  Market: Nashville severe affordability crisis. Memphis moderate and mixed. Knoxville and Chattanooga appreciating. Rural areas affordable
+  Affordability: Affordable 2011-2015. Nashville appreciation accelerating 2016-2019, explosive 2020-2023. Now among least affordable Southern metros
+  Challenges: Nashville affordability crisis, Rapid appreciation pricing out longtime residents, Infrastructure strain from growth, Rural housing stock deterioration
+
+POLITY:
+  Policy: Business-friendly: no state income tax, right-to-work, light regulation. Conservative on social issues. Focus on economic development and low taxes
+  Housing: Minimal state intervention. Local zoning control. Nashville addressing affordability crisis with modest reforms. No rent control
+  Labor: Right-to-work state, $7.25 federal minimum wage, business-friendly, limited worker protections
+
+REGIONAL:
+  Geography: East (mountains, tourism), Middle (Nashville, agriculture), West (Memphis, Mississippi River, Delta agriculture). Diverse topography
+  Urban/Rural: 67% urban in four major metros, 33% rural. Urban concentration increasing. Rural areas in Appalachia struggling
+  Infrastructure: Good highway system, I-40 and I-24 critical. Nashville and Memphis major airports. Memphis port on Mississippi. Infrastructure strained by growth
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery, healthcare sector steady growth, tourism rebuilding, VW Chattanooga plant operational; 2014-2016: Nashville boom accelerates, Amazon Web Services expansion, record tourism, GM Spring Hill investment; 2017-2019: Amazon HQ2 East Coast operations announced (5,000 jobs), Nashville real estate surge, tourism records, healthcare sector dominance; 2021-2023: Pandemic rapid recovery, tourism breaks records ($30.6B in 2023), Nashville population surge continues, new Nissan Stadium announced
+  Shocks: 2010 Nashville floods ($2B damage). 2020 Nashville tornado. Pandemic briefly impacted tourism
+  Transitions: Healthcare management sector consolidated Nashville position. Music industry evolved (streaming). Manufacturing diversified to automotive. Tourism professionalized
+
+COMPARATIVE:
+  Benchmarks: Above average GDP growth. Below median income but low cost of living (except Nashville). Growing inequality. Strong employment growth. Nashville housing unaffordable, rest of state moderate
+  Peer States: North Carolina (growth, manufacturing), Georgia (growth, Atlanta comparison to Nashville), Texas (no income tax, business-friendly)
+  Unique: No state income tax unusual for non-resource state. Nashville healthcare management capital of nation (HCA, CHS, Lifepoint). Music City tourism/culture unique. Great Smoky Mountains most visited national park
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Tennessee
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [PROMPT] State context injected (3893 chars)
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8781 chars (~2195 tokens)
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [API] Total request: ~2605 tokens (system: ~2195, user: ~410)
+2025-12-18 16:30:46 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 16:30:59 [DEBUG] census_eda.ml: [API] Received response: 4571 chars
+2025-12-18 16:30:59 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4571 chars)
+2025-12-18 16:30:59 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 16:30:59 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 16:30:59 [INFO] census_eda.main: [REPORT] Generated: report_Tennessee_population_20251218_163059.txt
+2025-12-18 16:30:59 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Tennessee!
+2025-12-18 16:31:01 [INFO] census_eda.memory: process_Tennessee_population_1-year:EXIT: 17294.9MB (delta: -3870.1MB)
+2025-12-18 16:31:02 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 16:31:03 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 16:31:06 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 16:31:08 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 16:31:10 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 16:31:12 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 16:31:14 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 16:31:16 [INFO] census_eda.memory: Cleared all caches

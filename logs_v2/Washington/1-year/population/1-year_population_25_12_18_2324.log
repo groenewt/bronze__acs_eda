@@ -1,0 +1,1337 @@
+2025-12-18 23:24:17 [INFO] census_eda: Logging context set: state=Washington, survey=population, scope=1-year
+2025-12-18 23:24:17 [INFO] census_eda: Log file: ./logs/Washington/1-year/population/1-year_population_25_12_18_2324.log
+2025-12-18 23:24:17 [INFO] census_eda.main: ======================================================================
+2025-12-18 23:24:17 [INFO] census_eda.main: [POPULATION] Processing Washington (1-year)...
+2025-12-18 23:24:17 [INFO] census_eda.main: ======================================================================
+2025-12-18 23:24:17 [INFO] census_eda.memory: process_Washington_population_1-year:ENTER: 12985.1MB (delta: +0.0MB)
+2025-12-18 23:24:17 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 23:24:17 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/53/*/*.csv
+2025-12-18 23:24:17 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 23:24:17 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pwa.csv
+2025-12-18 23:24:18 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 23:24:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 69,301 rows, 260 columns
+2025-12-18 23:24:18 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p53.csv
+2025-12-18 23:24:20 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 23:24:20 [VERBOSE] census_eda.processing.loader:   -> Loaded 74,695 rows, 260 columns
+2025-12-18 23:24:20 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pwa.csv
+2025-12-18 23:24:21 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 23:24:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 70,600 rows, 260 columns
+2025-12-18 23:24:21 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pwa.csv
+2025-12-18 23:24:22 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 23:24:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 69,593 rows, 260 columns
+2025-12-18 23:24:22 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pwa.csv
+2025-12-18 23:24:24 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 23:24:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 64,414 rows, 260 columns
+2025-12-18 23:24:24 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pwa.csv
+2025-12-18 23:24:25 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 23:24:25 [VERBOSE] census_eda.processing.loader:   -> Loaded 66,407 rows, 260 columns
+2025-12-18 23:24:25 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p53.csv
+2025-12-18 23:24:26 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 23:24:26 [VERBOSE] census_eda.processing.loader:   -> Loaded 76,225 rows, 260 columns
+2025-12-18 23:24:26 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pwa.csv
+2025-12-18 23:24:28 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 23:24:28 [VERBOSE] census_eda.processing.loader:   -> Loaded 65,386 rows, 260 columns
+2025-12-18 23:24:28 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pwa.csv
+2025-12-18 23:24:29 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 23:24:29 [VERBOSE] census_eda.processing.loader:   -> Loaded 72,383 rows, 260 columns
+2025-12-18 23:24:29 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p53.csv
+2025-12-18 23:24:31 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 23:24:31 [VERBOSE] census_eda.processing.loader:   -> Loaded 77,879 rows, 260 columns
+2025-12-18 23:24:31 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p53.csv
+2025-12-18 23:24:32 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 23:24:32 [VERBOSE] census_eda.processing.loader:   -> Loaded 80,818 rows, 260 columns
+2025-12-18 23:24:32 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p53.csv
+2025-12-18 23:24:34 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 23:24:34 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,528 rows, 260 columns
+2025-12-18 23:24:34 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p53.csv
+2025-12-18 23:24:35 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 23:24:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 81,826 rows, 260 columns
+2025-12-18 23:24:35 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pwa.csv
+2025-12-18 23:24:36 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 23:24:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 71,804 rows, 260 columns
+2025-12-18 23:24:36 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pwa.csv
+2025-12-18 23:24:38 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 23:24:38 [VERBOSE] census_eda.processing.loader:   -> Loaded 67,388 rows, 260 columns
+2025-12-18 23:24:38 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pwa.csv
+2025-12-18 23:24:39 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 23:24:39 [VERBOSE] census_eda.processing.loader:   -> Loaded 69,762 rows, 260 columns
+2025-12-18 23:24:39 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 23:24:47 [VERBOSE] census_eda.processing.loader: Combined into 1,157,009 total rows, 260 columns
+2025-12-18 23:24:47 [INFO] census_eda.main: Loaded 1,157,009 records
+2025-12-18 23:24:47 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 1157009 valid, 16 unique
+2025-12-18 23:24:48 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 23:24:50 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 23:24:50 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 23:24:50 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 23:24:51 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 23:24:51 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 23:24:52 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 23:24:53 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 23:24:53 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 23:24:53 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 23:24:54 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 23:24:54 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 23:24:54 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 23:24:55 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 23:24:55 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 23:24:56 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 23:24:56 [DEBUG] census_eda.main: Feature engineering complete: (1157009, 292)
+2025-12-18 23:24:57 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 23:24:57 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 23:28:03 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 23:28:03 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 23:28:03 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(1157009, 292)
+2025-12-18 23:28:03 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 23:28:03 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 1157009
+2025-12-18 23:28:03 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 23:28:05 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(1157009, 292)
+2025-12-18 23:28:05 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(64414), np.int64(2008): np.int64(65386), np.int64(2009): np.int64(66407), np.int64(2010): np.int64(67388), np.int64(2011): np.int64(69762), np.int64(2012): np.int64(69301), np.int64(2013): np.int64(69593), np.int64(2014): np.int64(70600), np.int64(2015): np.int64(71804), np.int64(2016): np.int64(72383), np.int64(2017): np.int64(74695), np.int64(2018): np.int64(76225), np.int64(2019): np.int64(77879), np.int64(2021): np.int64(78528), np.int64(2022): np.int64(80818), np.int64(2023): np.int64(81826)}
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(1157009, 292)
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 1157009 non-null values (zeros excluded if needed)
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 23:28:07 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 23:28:08 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 1157009 non-null values (zeros excluded if needed)
+2025-12-18 23:28:08 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1853.00
+2025-12-18 23:28:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 23:28:08 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 1157009 non-null values (zeros excluded if needed)
+2025-12-18 23:28:08 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 94.00
+2025-12-18 23:28:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 23:28:09 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 478304 non-null values (zeros excluded if needed)
+2025-12-18 23:28:09 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 184.00
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 158930 non-null values (zeros excluded if needed)
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 392000.00
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 71758 non-null values (zeros excluded if needed)
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 79000.00
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 19619 non-null values (zeros excluded if needed)
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 23:28:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 23:28:14 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 129831 non-null values (zeros excluded if needed)
+2025-12-18 23:28:14 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 157000.00
+2025-12-18 23:28:17 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 23:28:17 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 58874 non-null values (zeros excluded if needed)
+2025-12-18 23:28:17 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 449000.00
+2025-12-18 23:28:17 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 23:28:17 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 25373 non-null values (zeros excluded if needed)
+2025-12-18 23:28:17 [VERBOSE] census_eda.visualization.temporal: Value range: 10.00 to 30000.00
+2025-12-18 23:28:17 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 23:28:18 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 215214 non-null values (zeros excluded if needed)
+2025-12-18 23:28:18 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 23:28:18 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 23:28:18 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 571376 non-null values (zeros excluded if needed)
+2025-12-18 23:28:18 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 673000.00
+2025-12-18 23:28:23 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 23:28:51 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 23:28:51 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 23:28:51 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 23:28:53 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 23:28:53 [DEBUG] census_eda.memory: Skipping sampling: 29635MB available (>16GB)
+2025-12-18 23:28:53 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 1157009 rows
+2025-12-18 23:32:23 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 23:32:23 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(1157009, 292)
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 1157009 non-null values
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 1157009 non-null values
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1853.00
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 1157009 non-null values
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 94.00
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 478304 non-null values
+2025-12-18 23:32:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 184.00
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 158930 non-null values
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 392000.00
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 71758 non-null values
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 79000.00
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 19619 non-null values
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 129831 non-null values
+2025-12-18 23:32:27 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 157000.00
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 58874 non-null values
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 449000.00
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 25373 non-null values
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 30000.00
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 215214 non-null values
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 571376 non-null values
+2025-12-18 23:32:31 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 673000.00
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 608023 non-null values
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 484339 non-null values
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 232447 non-null values
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 941334 non-null values
+2025-12-18 23:32:35 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 23:32:55 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 23:33:32 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 23:33:56 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 23:34:38 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 23:34:38 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 23:34:38 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 23:34:40 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 23:34:42 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 23:34:44 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 23:34:47 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 23:34:47 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 23:34:47 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 23:34:49 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 23:34:50 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 23:34:54 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 23:34:54 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 23:34:54 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 23:34:57 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 23:35:00 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 23:35:00 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 23:35:00 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 23:35:02 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 23:35:04 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 23:35:07 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 23:35:07 [DEBUG] census_eda.memory: Skipping sampling: 29013MB available (>16GB)
+2025-12-18 23:35:27 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 23:35:27 [DEBUG] census_eda.memory: Skipping sampling: 28460MB available (>16GB)
+2025-12-18 23:36:16 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 23:36:16 [DEBUG] census_eda.memory: Skipping sampling: 28800MB available (>16GB)
+2025-12-18 23:36:25 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 23:36:48 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 23:36:48 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 23:36:48 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 23:36:50 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 23:36:52 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 23:36:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 23:36:56 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 23:36:57 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 23:36:59 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 23:36:59 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 23:36:59 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 23:36:59 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 23:37:00 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 23:37:02 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 23:37:02 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 23:37:02 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 23:37:04 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 23:37:05 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 23:37:08 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 23:37:11 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 23:37:14 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 23:37:17 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 23:37:22 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 23:37:22 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 23:37:22 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 23:37:24 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 23:37:25 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 23:37:29 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 23:37:31 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 23:37:33 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 23:37:35 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 23:37:38 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 23:37:42 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 23:37:49 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 23:37:51 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 23:37:53 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Washington/population/1-year/figures
+2025-12-18 23:37:55 [DEBUG] census_eda.memory: Skipping sampling: 28963MB available (>16GB)
+2025-12-18 23:37:55 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 23:37:55 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 23:37:55 [INFO] census_eda.memory: [ML-START]: 21370.3MB (delta: +8385.2MB)
+2025-12-18 23:37:55 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 23:37:55 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 23:37:55 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 24075 samples (was 24090)
+2025-12-18 23:37:55 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 23:37:55 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 23:37:55 [INFO] census_eda.ml.regression: [TUNE] Data: 24,075 samples, 10 features
+2025-12-18 23:37:55 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:37:55 [INFO] census_eda.memory: tune_ridge:ENTER: 21370.3MB (delta: +0.0MB)
+2025-12-18 23:37:57 [WARNING] census_eda.memory: Memory usage (21370.9MB) exceeded threshold (16000MB)
+2025-12-18 23:37:59 [INFO] census_eda.memory: tune_ridge:EXIT: 21370.9MB (delta: +0.5MB)
+2025-12-18 23:37:59 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 23:37:59 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0912
+2025-12-18 23:37:59 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:37:59 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 23:37:59 [INFO] census_eda.ml.regression: [TUNE] Data: 24,075 samples, 10 features
+2025-12-18 23:37:59 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:37:59 [INFO] census_eda.memory: tune_lasso:ENTER: 21370.9MB (delta: +0.0MB)
+2025-12-18 23:38:00 [WARNING] census_eda.memory: Memory usage (21370.9MB) exceeded threshold (16000MB)
+2025-12-18 23:38:01 [INFO] census_eda.memory: tune_lasso:EXIT: 21370.9MB (delta: +0.0MB)
+2025-12-18 23:38:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 23:38:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0912
+2025-12-18 23:38:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:38:02 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 23:38:02 [INFO] census_eda.ml.regression: [TUNE] Data: 24,075 samples, 10 features
+2025-12-18 23:38:02 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:38:02 [INFO] census_eda.memory: tune_random_forest:ENTER: 21370.9MB (delta: +0.0MB)
+2025-12-18 23:38:25 [WARNING] census_eda.memory: Memory usage (21380.1MB) exceeded threshold (16000MB)
+2025-12-18 23:38:27 [INFO] census_eda.memory: tune_random_forest:EXIT: 21380.1MB (delta: +9.2MB)
+2025-12-18 23:38:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 23:38:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0309
+2025-12-18 23:38:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:38:29 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 23:38:29 [INFO] census_eda.ml.regression: [TUNE] Data: 24,075 samples, 10 features
+2025-12-18 23:38:29 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:38:29 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21385.4MB (delta: +5.3MB)
+2025-12-18 23:38:42 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:38:43 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:38:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 23:38:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1185
+2025-12-18 23:38:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:38:49 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,815 -> 1,000
+2025-12-18 23:38:49 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,815 -> 1,000
+2025-12-18 23:38:49 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:38:49 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 23:38:51 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:38:51 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 23:38:51 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 23:38:51 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 23:38:51 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 23171 samples (was 24090)
+2025-12-18 23:38:51 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 23:38:51 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 23:38:51 [INFO] census_eda.ml.regression: [TUNE] Data: 23,171 samples, 10 features
+2025-12-18 23:38:51 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:38:51 [INFO] census_eda.memory: tune_ridge:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:38:51 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:38:53 [INFO] census_eda.memory: tune_ridge:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:38:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 23:38:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0958
+2025-12-18 23:38:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:38:53 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 23:38:53 [INFO] census_eda.ml.regression: [TUNE] Data: 23,171 samples, 10 features
+2025-12-18 23:38:53 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:38:53 [INFO] census_eda.memory: tune_lasso:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:38:54 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:38:55 [INFO] census_eda.memory: tune_lasso:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:38:55 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 23:38:55 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0958
+2025-12-18 23:38:55 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:38:56 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 23:38:56 [INFO] census_eda.ml.regression: [TUNE] Data: 23,171 samples, 10 features
+2025-12-18 23:38:56 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:38:56 [INFO] census_eda.memory: tune_random_forest:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:18 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:39:20 [INFO] census_eda.memory: tune_random_forest:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:20 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 23:39:20 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0395
+2025-12-18 23:39:20 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:39:21 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 23:39:21 [INFO] census_eda.ml.regression: [TUNE] Data: 23,171 samples, 10 features
+2025-12-18 23:39:21 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:39:21 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:34 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:39:36 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:36 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 23:39:36 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1248
+2025-12-18 23:39:36 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:39:41 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,635 -> 1,000
+2025-12-18 23:39:41 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,635 -> 1,000
+2025-12-18 23:39:41 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:41 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 23:39:43 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:43 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 23:39:43 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 23:39:43 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 23:39:43 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 24077 samples (was 24090)
+2025-12-18 23:39:43 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 23:39:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 23:39:43 [INFO] census_eda.ml.regression: [TUNE] Data: 24,077 samples, 10 features
+2025-12-18 23:39:43 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:39:43 [INFO] census_eda.memory: tune_ridge:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:43 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:39:45 [INFO] census_eda.memory: tune_ridge:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 23:39:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0914
+2025-12-18 23:39:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:39:45 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 23:39:45 [INFO] census_eda.ml.regression: [TUNE] Data: 24,077 samples, 10 features
+2025-12-18 23:39:45 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:39:45 [INFO] census_eda.memory: tune_lasso:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:45 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:39:47 [INFO] census_eda.memory: tune_lasso:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:39:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 23:39:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0914
+2025-12-18 23:39:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:39:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 23:39:47 [INFO] census_eda.ml.regression: [TUNE] Data: 24,077 samples, 10 features
+2025-12-18 23:39:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:39:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:40:11 [WARNING] census_eda.memory: Memory usage (21385.4MB) exceeded threshold (16000MB)
+2025-12-18 23:40:12 [INFO] census_eda.memory: tune_random_forest:EXIT: 21385.4MB (delta: +0.0MB)
+2025-12-18 23:40:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 23:40:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0335
+2025-12-18 23:40:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:40:15 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 23:40:15 [INFO] census_eda.ml.regression: [TUNE] Data: 24,077 samples, 10 features
+2025-12-18 23:40:15 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:40:15 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21388.1MB (delta: +2.6MB)
+2025-12-18 23:40:28 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:40:29 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 23:40:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1251
+2025-12-18 23:40:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:40:34 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,816 -> 1,000
+2025-12-18 23:40:34 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,816 -> 1,000
+2025-12-18 23:40:34 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:34 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 23:40:36 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:36 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 23:40:36 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 23:40:36 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 23:40:36 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 23:40:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 23:40:36 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:40:36 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:40:36 [INFO] census_eda.memory: tune_ridge:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:36 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:40:38 [INFO] census_eda.memory: tune_ridge:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:38 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 23:40:38 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 23:40:38 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:40:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 23:40:38 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:40:38 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:40:38 [INFO] census_eda.memory: tune_lasso:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:38 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:40:40 [INFO] census_eda.memory: tune_lasso:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:40 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 23:40:40 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 23:40:40 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:40:40 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 23:40:40 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:40:40 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:40:40 [INFO] census_eda.memory: tune_random_forest:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:48 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:40:50 [INFO] census_eda.memory: tune_random_forest:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 23:40:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 23:40:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:40:50 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 23:40:50 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:40:50 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:40:50 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:40:59 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:41:01 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 23:41:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 23:41:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:41:10 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 23:41:10 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 23:41:10 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 23:41:10 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:41:10 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:41:10 [INFO] census_eda.memory: tune_ridge:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:10 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:41:12 [INFO] census_eda.memory: tune_ridge:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 23:41:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0386
+2025-12-18 23:41:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:41:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 23:41:12 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:41:12 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 23:41:12 [INFO] census_eda.memory: tune_lasso:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:12 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:41:14 [INFO] census_eda.memory: tune_lasso:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 23:41:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0385
+2025-12-18 23:41:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 23:41:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 23:41:14 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:41:14 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:41:14 [INFO] census_eda.memory: tune_random_forest:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:39 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:41:41 [INFO] census_eda.memory: tune_random_forest:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:41 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 23:41:41 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0422
+2025-12-18 23:41:41 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:41:43 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 23:41:43 [INFO] census_eda.ml.regression: [TUNE] Data: 24,090 samples, 10 features
+2025-12-18 23:41:43 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 23:41:43 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:56 [WARNING] census_eda.memory: Memory usage (21388.1MB) exceeded threshold (16000MB)
+2025-12-18 23:41:57 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:41:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 23:41:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0917
+2025-12-18 23:41:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 23:42:03 [INFO] census_eda.memory: [SHAP] Safe sample size: 4,818 -> 1,000
+2025-12-18 23:42:03 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 4,818 -> 1,000
+2025-12-18 23:42:03 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:42:03 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 23:42:04 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:42:04 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 23:42:04 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 23:42:04 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 23:42:04 [INFO] census_eda.memory: [PRE-CLUSTERING]: 21388.1MB (delta: +0.0MB)
+2025-12-18 23:42:04 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 23:42:04 [INFO] census_eda.main: [CLUSTERING] KMeans on 24,090 samples...
+2025-12-18 23:42:08 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 23:42:08 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 24,090 samples (will sample if needed)...
+2025-12-18 23:42:08 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 24,090 -> 15,000 (distance matrix would be 4.3GB)
+2025-12-18 23:42:08 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 24,090 -> 15,000 for O(n²) distance matrix
+2025-12-18 23:42:13 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 23:42:13 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 23:42:13 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 73556.22117614746, 2025: 77382.04319763184, 2026: 81335.29249572754}, Values: [73556.22117614746, 77382.04319763184, 81335.29249572754]
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 23:42:13 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 81205.61185073853, 2025: 86430.20198440552, 2026: 92071.01503372192}, Values: [81205.61185073853, 86430.20198440552, 92071.01503372192]
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 23:42:13 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 81447.62852478027, 2025: 86562.18089675903, 2026: 92043.35443115234}, Values: [81447.62852478027, 86562.18089675903, 92043.35443115234]
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 23:42:13 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 42.88709855731577, 2025: 43.15069860313088, 2026: 43.44351810310036}, Values: [42.88709855731577, 43.15069860313088, 43.44351810310036]
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 23:42:13 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.77636055648327, 2025: 36.11781333386898, 2026: 35.27711749076843}, Values: [36.77636055648327, 36.11781333386898, 35.27711749076843]
+2025-12-18 23:42:13 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 23:42:18 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-18 23:42:24 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-18 23:42:30 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-18 23:42:41 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-18 23:42:43 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 24090.
+2025-12-18 23:42:43 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 23:42:43 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 23:42:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 66618.29660726804, 2025: 68418.87075340655, 2026: 70219.44489954505}, values=[66618.29660726804, 68418.87075340655, 70219.44489954505], CI_lower=[60668.695470402425, 62469.26961654093, 64269.84376267943], CI_upper=[72567.89774413366, 74368.47189027217, 76169.04603641067]
+2025-12-18 23:42:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66618.29660726804, 68418.87075340655, 70219.44489954505], CI_lower: [60668.695470402425, 62469.26961654093, 64269.84376267943], CI_upper: [72567.89774413366, 74368.47189027217, 76169.04603641067]
+2025-12-18 23:42:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 60668.695470402425, 62469.26961654093, 64269.84376267943], upper=[np.float64(61908.87301771374), 72567.89774413366, 74368.47189027217, 76169.04603641067]
+2025-12-18 23:42:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 74323.31002056599, 2025: 78685.46713769436, 2026: 83317.06705760956}, values=[74323.31002056599, 78685.46713769436, 83317.06705760956], CI_lower=[73050.04949432386, 77412.20661145223, 82043.80653136743], CI_upper=[75596.57054680811, 79958.72766393649, 84590.32758385169]
+2025-12-18 23:42:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [74323.31002056599, 78685.46713769436, 83317.06705760956], CI_lower: [73050.04949432386, 77412.20661145223, 82043.80653136743], CI_upper: [75596.57054680811, 79958.72766393649, 84590.32758385169]
+2025-12-18 23:42:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 73050.04949432386, 77412.20661145223, 82043.80653136743], upper=[np.float64(61908.87301771374), 75596.57054680811, 79958.72766393649, 84590.32758385169]
+2025-12-18 23:42:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 73556.22117614746, 2025: 77382.04319763184, 2026: 81335.29249572754}, values=[73556.22117614746, 77382.04319763184, 81335.29249572754], CI_lower=[72353.8507166657, 76179.67273815007, 80132.92203624577], CI_upper=[74758.59163562923, 78584.4136571136, 82537.6629552093]
+2025-12-18 23:42:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73556.22117614746, 77382.04319763184, 81335.29249572754], CI_lower: [72353.8507166657, 76179.67273815007, 80132.92203624577], CI_upper: [74758.59163562923, 78584.4136571136, 82537.6629552093]
+2025-12-18 23:42:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 72353.8507166657, 76179.67273815007, 80132.92203624577], upper=[np.float64(61908.87301771374), 74758.59163562923, 78584.4136571136, 82537.6629552093]
+2025-12-18 23:42:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 66246.80749085957, 2025: 66246.80749085957, 2026: 66246.80749085957}, values=[66246.80749085957, 66246.80749085957, 66246.80749085957], CI_lower=[63029.42465308384, 63029.42465308384, 63029.42465308384], CI_upper=[69464.1903286353, 69464.1903286353, 69464.1903286353]
+2025-12-18 23:42:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66246.80749085957, 66246.80749085957, 66246.80749085957], CI_lower: [63029.42465308384, 63029.42465308384, 63029.42465308384], CI_upper: [69464.1903286353, 69464.1903286353, 69464.1903286353]
+2025-12-18 23:42:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 63029.42465308384, 63029.42465308384, 63029.42465308384], upper=[np.float64(61908.87301771374), 69464.1903286353, 69464.1903286353, 69464.1903286353]
+2025-12-18 23:42:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 61914.2729821352, 2025: 61914.2729821352, 2026: 61914.2729821352}, values=[61914.2729821352, 61914.2729821352, 61914.2729821352], CI_lower=[56414.295096008296, 56414.295096008296, 56414.295096008296], CI_upper=[67414.2508682621, 67414.2508682621, 67414.2508682621]
+2025-12-18 23:42:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61914.2729821352, 61914.2729821352, 61914.2729821352], CI_lower: [56414.295096008296, 56414.295096008296, 56414.295096008296], CI_upper: [67414.2508682621, 67414.2508682621, 67414.2508682621]
+2025-12-18 23:42:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 56414.295096008296, 56414.295096008296, 56414.295096008296], upper=[np.float64(61908.87301771374), 67414.2508682621, 67414.2508682621, 67414.2508682621]
+2025-12-18 23:42:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 67529.92471174292, 2025: 67529.92471174292, 2026: 67529.92471174292}, values=[67529.92471174292, 67529.92471174292, 67529.92471174292], CI_lower=[65260.22869242517, 65260.22869242517, 65260.22869242517], CI_upper=[69799.62073106067, 69799.62073106067, 69799.62073106067]
+2025-12-18 23:42:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [67529.92471174292, 67529.92471174292, 67529.92471174292], CI_lower: [65260.22869242517, 65260.22869242517, 65260.22869242517], CI_upper: [69799.62073106067, 69799.62073106067, 69799.62073106067]
+2025-12-18 23:42:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 65260.22869242517, 65260.22869242517, 65260.22869242517], upper=[np.float64(61908.87301771374), 69799.62073106067, 69799.62073106067, 69799.62073106067]
+2025-12-18 23:42:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 69603.01796309925, 2025: 69890.81065030559, 2026: 69609.14900409109}, values=[69603.01796309925, 69890.81065030559, 69609.14900409109], CI_lower=[50917.32322900415, 51205.11591621049, 50923.454269995986], CI_upper=[88288.71269719435, 88576.50538440069, 88294.84373818619]
+2025-12-18 23:42:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [69603.01796309925, 69890.81065030559, 69609.14900409109], CI_lower: [50917.32322900415, 51205.11591621049, 50923.454269995986], CI_upper: [88288.71269719435, 88576.50538440069, 88294.84373818619]
+2025-12-18 23:42:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 50917.32322900415, 51205.11591621049, 50923.454269995986], upper=[np.float64(61908.87301771374), 88288.71269719435, 88576.50538440069, 88294.84373818619]
+2025-12-18 23:42:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 73369.15737579779, 2025: 76841.23958572367, 2026: 80313.32179564954}, values=[73369.15737579779, 76841.23958572367, 80313.32179564954], CI_lower=[71219.57424104873, 74691.65645097461, 78163.73866090048], CI_upper=[75518.74051054685, 78990.82272047273, 82462.9049303986]
+2025-12-18 23:42:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73369.15737579779, 76841.23958572367, 80313.32179564954], CI_lower: [71219.57424104873, 74691.65645097461, 78163.73866090048], CI_upper: [75518.74051054685, 78990.82272047273, 82462.9049303986]
+2025-12-18 23:42:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(61908.87301771374), 71219.57424104873, 74691.65645097461, 78163.73866090048], upper=[np.float64(61908.87301771374), 75518.74051054685, 78990.82272047273, 82462.9049303986]
+2025-12-18 23:42:49 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 23:42:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 72600.31257638149, 2025: 74682.46695040818, 2026: 76764.62132443581}, values=[72600.31257638149, 74682.46695040818, 76764.62132443581], CI_lower=[66603.86404428205, 68686.01841830874, 70768.17279233637], CI_upper=[78596.76110848093, 80678.91548250763, 82761.06985653525]
+2025-12-18 23:42:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72600.31257638149, 74682.46695040818, 76764.62132443581], CI_lower: [66603.86404428205, 68686.01841830874, 70768.17279233637], CI_upper: [78596.76110848093, 80678.91548250763, 82761.06985653525]
+2025-12-18 23:42:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 66603.86404428205, 68686.01841830874, 70768.17279233637], upper=[np.float64(44983.30933812658), 78596.76110848093, 80678.91548250763, 82761.06985653525]
+2025-12-18 23:42:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 80437.59133911133, 2025: 85125.3011803627, 2026: 90087.07911789417}, values=[80437.59133911133, 85125.3011803627, 90087.07911789417], CI_lower=[79431.98006549473, 84119.6899067461, 89081.46784427758], CI_upper=[81443.20261272792, 86130.9124539793, 91092.69039151077]
+2025-12-18 23:42:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [80437.59133911133, 85125.3011803627, 90087.07911789417], CI_lower: [79431.98006549473, 84119.6899067461, 89081.46784427758], CI_upper: [81443.20261272792, 86130.9124539793, 91092.69039151077]
+2025-12-18 23:42:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 79431.98006549473, 84119.6899067461, 89081.46784427758], upper=[np.float64(44983.30933812658), 81443.20261272792, 86130.9124539793, 91092.69039151077]
+2025-12-18 23:42:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 81205.61185073853, 2025: 86430.20198440552, 2026: 92071.01503372192}, values=[81205.61185073853, 86430.20198440552, 92071.01503372192], CI_lower=[80291.57969165404, 85516.16982532103, 91156.98287463744], CI_upper=[82119.64400982301, 87344.23414349, 92985.0471928064]
+2025-12-18 23:42:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81205.61185073853, 86430.20198440552, 92071.01503372192], CI_lower: [80291.57969165404, 85516.16982532103, 91156.98287463744], CI_upper: [82119.64400982301, 87344.23414349, 92985.0471928064]
+2025-12-18 23:42:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 80291.57969165404, 85516.16982532103, 91156.98287463744], upper=[np.float64(44983.30933812658), 82119.64400982301, 87344.23414349, 92985.0471928064]
+2025-12-18 23:42:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 72043.02936777934, 2025: 72043.02936777934, 2026: 72043.02936777934}, values=[72043.02936777934, 72043.02936777934, 72043.02936777934], CI_lower=[68467.57147885811, 68467.57147885811, 68467.57147885811], CI_upper=[75618.48725670057, 75618.48725670057, 75618.48725670057]
+2025-12-18 23:42:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72043.02936777934, 72043.02936777934, 72043.02936777934], CI_lower: [68467.57147885811, 68467.57147885811, 68467.57147885811], CI_upper: [75618.48725670057, 75618.48725670057, 75618.48725670057]
+2025-12-18 23:42:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 68467.57147885811, 68467.57147885811, 68467.57147885811], upper=[np.float64(44983.30933812658), 75618.48725670057, 75618.48725670057, 75618.48725670057]
+2025-12-18 23:42:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 66975.01552176029, 2025: 66975.01552176029, 2026: 66975.01552176029}, values=[66975.01552176029, 66975.01552176029, 66975.01552176029], CI_lower=[61087.69656117498, 61087.69656117498, 61087.69656117498], CI_upper=[72862.3344823456, 72862.3344823456, 72862.3344823456]
+2025-12-18 23:42:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [66975.01552176029, 66975.01552176029, 66975.01552176029], CI_lower: [61087.69656117498, 61087.69656117498, 61087.69656117498], CI_upper: [72862.3344823456, 72862.3344823456, 72862.3344823456]
+2025-12-18 23:42:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 61087.69656117498, 61087.69656117498, 61087.69656117498], upper=[np.float64(44983.30933812658), 72862.3344823456, 72862.3344823456, 72862.3344823456]
+2025-12-18 23:42:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 73498.97227440693, 2025: 73498.97227440693, 2026: 73498.97227440693}, values=[73498.97227440693, 73498.97227440693, 73498.97227440693], CI_lower=[70890.4905335485, 70890.4905335485, 70890.4905335485], CI_upper=[76107.45401526536, 76107.45401526536, 76107.45401526536]
+2025-12-18 23:42:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73498.97227440693, 73498.97227440693, 73498.97227440693], CI_lower: [70890.4905335485, 70890.4905335485, 70890.4905335485], CI_upper: [76107.45401526536, 76107.45401526536, 76107.45401526536]
+2025-12-18 23:42:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 70890.4905335485, 70890.4905335485, 70890.4905335485], upper=[np.float64(44983.30933812658), 76107.45401526536, 76107.45401526536, 76107.45401526536]
+2025-12-18 23:42:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 78661.54590021218, 2025: 80951.16847799558, 2026: 83240.7471917743}, values=[78661.54590021218, 80951.16847799558, 83240.7471917743], CI_lower=[58750.594126467855, 61040.21670425126, 63329.79541802997], CI_upper=[98572.4976739565, 100862.1202517399, 103151.69896551862]
+2025-12-18 23:42:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [78661.54590021218, 80951.16847799558, 83240.7471917743], CI_lower: [58750.594126467855, 61040.21670425126, 63329.79541802997], CI_upper: [98572.4976739565, 100862.1202517399, 103151.69896551862]
+2025-12-18 23:42:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 58750.594126467855, 61040.21670425126, 63329.79541802997], upper=[np.float64(44983.30933812658), 98572.4976739565, 100862.1202517399, 103151.69896551862]
+2025-12-18 23:42:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 81002.7792761114, 2025: 85564.36366123194, 2026: 90125.94804635247}, values=[81002.7792761114, 85564.36366123194, 90125.94804635247], CI_lower=[78432.24507407218, 82993.82945919273, 87555.41384431325], CI_upper=[83573.31347815061, 88134.89786327115, 92696.48224839168]
+2025-12-18 23:42:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81002.7792761114, 85564.36366123194, 90125.94804635247], CI_lower: [78432.24507407218, 82993.82945919273, 87555.41384431325], CI_upper: [83573.31347815061, 88134.89786327115, 92696.48224839168]
+2025-12-18 23:42:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(44983.30933812658), 78432.24507407218, 82993.82945919273, 87555.41384431325], upper=[np.float64(44983.30933812658), 83573.31347815061, 88134.89786327115, 92696.48224839168]
+2025-12-18 23:42:55 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 23:42:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 72776.86082039867, 2025: 74853.92230908666, 2026: 76930.98379777465}, values=[72776.86082039867, 74853.92230908666, 76930.98379777465], CI_lower=[66479.1874501505, 68556.24893883849, 70633.31042752648], CI_upper=[79074.53419064684, 81151.59567933483, 83228.65716802282]
+2025-12-18 23:42:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72776.86082039867, 74853.92230908666, 76930.98379777465], CI_lower: [66479.1874501505, 68556.24893883849, 70633.31042752648], CI_upper: [79074.53419064684, 81151.59567933483, 83228.65716802282]
+2025-12-18 23:42:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 66479.1874501505, 68556.24893883849, 70633.31042752648], upper=[np.float64(48333.12006346967), 79074.53419064684, 81151.59567933483, 83228.65716802282]
+2025-12-18 23:42:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 81025.30024075508, 2025: 85844.61029112339, 2026: 90952.36664497852}, values=[81025.30024075508, 85844.61029112339, 90952.36664497852], CI_lower=[80049.76623075166, 84869.07628111997, 89976.8326349751], CI_upper=[82000.8342507585, 86820.14430112681, 91927.90065498195]
+2025-12-18 23:42:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81025.30024075508, 85844.61029112339, 90952.36664497852], CI_lower: [80049.76623075166, 84869.07628111997, 89976.8326349751], CI_upper: [82000.8342507585, 86820.14430112681, 91927.90065498195]
+2025-12-18 23:42:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 80049.76623075166, 84869.07628111997, 89976.8326349751], upper=[np.float64(48333.12006346967), 82000.8342507585, 86820.14430112681, 91927.90065498195]
+2025-12-18 23:42:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 81447.62852478027, 2025: 86562.18089675903, 2026: 92043.35443115234}, values=[81447.62852478027, 86562.18089675903, 92043.35443115234], CI_lower=[80499.73351141396, 85614.28588339272, 91095.45941778603], CI_upper=[82395.52353814659, 87510.07591012535, 92991.24944451866]
+2025-12-18 23:42:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81447.62852478027, 86562.18089675903, 92043.35443115234], CI_lower: [80499.73351141396, 85614.28588339272, 91095.45941778603], CI_upper: [82395.52353814659, 87510.07591012535, 92991.24944451866]
+2025-12-18 23:42:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 80499.73351141396, 85614.28588339272, 91095.45941778603], upper=[np.float64(48333.12006346967), 82395.52353814659, 87510.07591012535, 92991.24944451866]
+2025-12-18 23:42:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 72355.69551566399, 2025: 72355.69551566399, 2026: 72355.69551566399}, values=[72355.69551566399, 72355.69551566399, 72355.69551566399], CI_lower=[68730.78729756516, 68730.78729756516, 68730.78729756516], CI_upper=[75980.60373376282, 75980.60373376282, 75980.60373376282]
+2025-12-18 23:42:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [72355.69551566399, 72355.69551566399, 72355.69551566399], CI_lower: [68730.78729756516, 68730.78729756516, 68730.78729756516], CI_upper: [75980.60373376282, 75980.60373376282, 75980.60373376282]
+2025-12-18 23:42:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 68730.78729756516, 68730.78729756516, 68730.78729756516], upper=[np.float64(48333.12006346967), 75980.60373376282, 75980.60373376282, 75980.60373376282]
+2025-12-18 23:42:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 67257.82412108568, 2025: 67257.82412108568, 2026: 67257.82412108568}, values=[67257.82412108568, 67257.82412108568, 67257.82412108568], CI_lower=[61161.62168132203, 61161.62168132203, 61161.62168132203], CI_upper=[73354.02656084934, 73354.02656084934, 73354.02656084934]
+2025-12-18 23:42:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [67257.82412108568, 67257.82412108568, 67257.82412108568], CI_lower: [61161.62168132203, 61161.62168132203, 61161.62168132203], CI_upper: [73354.02656084934, 73354.02656084934, 73354.02656084934]
+2025-12-18 23:42:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 61161.62168132203, 61161.62168132203, 61161.62168132203], upper=[np.float64(48333.12006346967), 73354.02656084934, 73354.02656084934, 73354.02656084934]
+2025-12-18 23:42:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 73841.83679791667, 2025: 73841.83679791667, 2026: 73841.83679791667}, values=[73841.83679791667, 73841.83679791667, 73841.83679791667], CI_lower=[71261.61923158503, 71261.61923158503, 71261.61923158503], CI_upper=[76422.0543642483, 76422.0543642483, 76422.0543642483]
+2025-12-18 23:42:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [73841.83679791667, 73841.83679791667, 73841.83679791667], CI_lower: [71261.61923158503, 71261.61923158503, 71261.61923158503], CI_upper: [76422.0543642483, 76422.0543642483, 76422.0543642483]
+2025-12-18 23:42:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 71261.61923158503, 71261.61923158503, 71261.61923158503], upper=[np.float64(48333.12006346967), 76422.0543642483, 76422.0543642483, 76422.0543642483]
+2025-12-18 23:42:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 79013.8604399569, 2025: 81276.8950068966, 2026: 83539.83827269198}, values=[79013.8604399569, 81276.8950068966, 83539.83827269198], CI_lower=[58739.24468176151, 61002.279248701205, 63265.22251449659], CI_upper=[99288.47619815229, 101551.51076509198, 103814.45403088737]
+2025-12-18 23:42:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [79013.8604399569, 81276.8950068966, 83539.83827269198], CI_lower: [58739.24468176151, 61002.279248701205, 63265.22251449659], CI_upper: [99288.47619815229, 101551.51076509198, 103814.45403088737]
+2025-12-18 23:42:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 58739.24468176151, 61002.279248701205, 63265.22251449659], upper=[np.float64(48333.12006346967), 99288.47619815229, 101551.51076509198, 103814.45403088737]
+2025-12-18 23:43:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 81259.52543123925, 2025: 85768.3162859941, 2026: 90277.10714074894}, values=[81259.52543123925, 85768.3162859941, 90277.10714074894], CI_lower=[78671.19820680527, 83179.98906156012, 87688.77991631496], CI_upper=[83847.85265567322, 88356.64351042807, 92865.43436518291]
+2025-12-18 23:43:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [81259.52543123925, 85768.3162859941, 90277.10714074894], CI_lower: [78671.19820680527, 83179.98906156012, 87688.77991631496], CI_upper: [83847.85265567322, 88356.64351042807, 92865.43436518291]
+2025-12-18 23:43:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(48333.12006346967), 78671.19820680527, 83179.98906156012, 87688.77991631496], upper=[np.float64(48333.12006346967), 83847.85265567322, 88356.64351042807, 92865.43436518291]
+2025-12-18 23:43:01 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 23:43:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 42.91958640695822, 2025: 43.11984273096431, 2026: 43.320099054970456}, values=[42.91958640695822, 43.11984273096431, 43.320099054970456], CI_lower=[42.62935658085938, 42.82961290486547, 43.02986922887162], CI_upper=[43.209816233057055, 43.410072557063145, 43.61032888106929]
+2025-12-18 23:43:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.91958640695822, 43.11984273096431, 43.320099054970456], CI_lower: [42.62935658085938, 42.82961290486547, 43.02986922887162], CI_upper: [43.209816233057055, 43.410072557063145, 43.61032888106929]
+2025-12-18 23:43:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 42.62935658085938, 42.82961290486547, 43.02986922887162], upper=[np.float64(42.2740082614328), 43.209816233057055, 43.410072557063145, 43.61032888106929]
+2025-12-18 23:43:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 42.6850591866787, 2025: 42.807345375989826, 2026: 42.9214301945467}, values=[42.6850591866787, 42.807345375989826, 42.9214301945467], CI_lower=[42.45497272617718, 42.57725891548831, 42.691343734045184], CI_upper=[42.91514564718022, 43.03743183649134, 43.15151665504822]
+2025-12-18 23:43:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.6850591866787, 42.807345375989826, 42.9214301945467], CI_lower: [42.45497272617718, 42.57725891548831, 42.691343734045184], CI_upper: [42.91514564718022, 43.03743183649134, 43.15151665504822]
+2025-12-18 23:43:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 42.45497272617718, 42.57725891548831, 42.691343734045184], upper=[np.float64(42.2740082614328), 42.91514564718022, 43.03743183649134, 43.15151665504822]
+2025-12-18 23:43:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 42.88709855731577, 2025: 43.15069860313088, 2026: 43.44351810310036}, values=[42.88709855731577, 43.15069860313088, 43.44351810310036], CI_lower=[42.6852174309941, 42.94881747680921, 43.24163697677869], CI_upper=[43.08897968363743, 43.35257972945254, 43.645399229422026]
+2025-12-18 23:43:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.88709855731577, 43.15069860313088, 43.44351810310036], CI_lower: [42.6852174309941, 42.94881747680921, 43.24163697677869], CI_upper: [43.08897968363743, 43.35257972945254, 43.645399229422026]
+2025-12-18 23:43:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 42.6852174309941, 42.94881747680921, 43.24163697677869], upper=[np.float64(42.2740082614328), 43.08897968363743, 43.35257972945254, 43.645399229422026]
+2025-12-18 23:43:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 42.447593357675096, 2025: 42.447593357675096, 2026: 42.447593357675096}, values=[42.447593357675096, 42.447593357675096, 42.447593357675096], CI_lower=[42.16338838129656, 42.16338838129656, 42.16338838129656], CI_upper=[42.73179833405363, 42.73179833405363, 42.73179833405363]
+2025-12-18 23:43:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.447593357675096, 42.447593357675096, 42.447593357675096], CI_lower: [42.16338838129656, 42.16338838129656, 42.16338838129656], CI_upper: [42.73179833405363, 42.73179833405363, 42.73179833405363]
+2025-12-18 23:43:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 42.16338838129656, 42.16338838129656, 42.16338838129656], upper=[np.float64(42.2740082614328), 42.73179833405363, 42.73179833405363, 42.73179833405363]
+2025-12-18 23:43:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42.1398559456058, 2025: 42.1398559456058, 2026: 42.1398559456058}, values=[42.1398559456058, 42.1398559456058, 42.1398559456058], CI_lower=[41.81721998175785, 41.81721998175785, 41.81721998175785], CI_upper=[42.46249190945375, 42.46249190945375, 42.46249190945375]
+2025-12-18 23:43:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.1398559456058, 42.1398559456058, 42.1398559456058], CI_lower: [41.81721998175785, 41.81721998175785, 41.81721998175785], CI_upper: [42.46249190945375, 42.46249190945375, 42.46249190945375]
+2025-12-18 23:43:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 41.81721998175785, 41.81721998175785, 41.81721998175785], upper=[np.float64(42.2740082614328), 42.46249190945375, 42.46249190945375, 42.46249190945375]
+2025-12-18 23:43:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 42.50947106993527, 2025: 42.50947106993527, 2026: 42.50947106993527}, values=[42.50947106993527, 42.50947106993527, 42.50947106993527], CI_lower=[42.26697542306898, 42.26697542306898, 42.26697542306898], CI_upper=[42.75196671680157, 42.75196671680157, 42.75196671680157]
+2025-12-18 23:43:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.50947106993527, 42.50947106993527, 42.50947106993527], CI_lower: [42.26697542306898, 42.26697542306898, 42.26697542306898], CI_upper: [42.75196671680157, 42.75196671680157, 42.75196671680157]
+2025-12-18 23:43:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 42.26697542306898, 42.26697542306898, 42.26697542306898], upper=[np.float64(42.2740082614328), 42.75196671680157, 42.75196671680157, 42.75196671680157]
+2025-12-18 23:43:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 42.88397856733921, 2025: 43.09972776606632, 2026: 43.315472587018895}, values=[42.88397856733921, 43.09972776606632, 43.315472587018895], CI_lower=[24.22671257250863, 24.44246177123574, 24.658206592188314], CI_upper=[61.541244562169794, 61.756993760896904, 61.97273858184948]
+2025-12-18 23:43:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.88397856733921, 43.09972776606632, 43.315472587018895], CI_lower: [24.22671257250863, 24.44246177123574, 24.658206592188314], CI_upper: [61.541244562169794, 61.756993760896904, 61.97273858184948]
+2025-12-18 23:43:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 24.22671257250863, 24.44246177123574, 24.658206592188314], upper=[np.float64(42.2740082614328), 61.541244562169794, 61.756993760896904, 61.97273858184948]
+2025-12-18 23:43:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 42.88927202565862, 2025: 43.11110669883613, 2026: 43.33294137201364}, values=[42.88927202565862, 43.11110669883613, 43.33294137201364], CI_lower=[42.6283081848628, 42.850142858040314, 43.071977531217826], CI_upper=[43.15023586645444, 43.37207053963195, 43.59390521280946]
+2025-12-18 23:43:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42.88927202565862, 43.11110669883613, 43.33294137201364], CI_lower: [42.6283081848628, 42.850142858040314, 43.071977531217826], CI_upper: [43.15023586645444, 43.37207053963195, 43.59390521280946]
+2025-12-18 23:43:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(42.2740082614328), 42.6283081848628, 42.850142858040314, 43.071977531217826], upper=[np.float64(42.2740082614328), 43.15023586645444, 43.37207053963195, 43.59390521280946]
+2025-12-18 23:43:07 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 23:43:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.60899658082046, 2025: 37.60085348365062, 2026: 37.592710386480775}, values=[37.60899658082046, 37.60085348365062, 37.592710386480775], CI_lower=[36.97594772408723, 36.967804626917385, 36.95966152974754], CI_upper=[38.24204543755369, 38.23390234038385, 38.22575924321401]
+2025-12-18 23:43:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.60899658082046, 37.60085348365062, 37.592710386480775], CI_lower: [36.97594772408723, 36.967804626917385, 36.95966152974754], CI_upper: [38.24204543755369, 38.23390234038385, 38.22575924321401]
+2025-12-18 23:43:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 36.97594772408723, 36.967804626917385, 36.95966152974754], upper=[np.float64(37.374510899944106), 38.24204543755369, 38.23390234038385, 38.22575924321401]
+2025-12-18 23:43:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.7966388372497, 2025: 37.85087865663809, 2026: 37.91168028881293}, values=[37.7966388372497, 37.85087865663809, 37.91168028881293], CI_lower=[37.17961485400485, 37.23385467339324, 37.29465630556808], CI_upper=[38.41366282049455, 38.46790263988294, 38.52870427205778]
+2025-12-18 23:43:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.7966388372497, 37.85087865663809, 37.91168028881293], CI_lower: [37.17961485400485, 37.23385467339324, 37.29465630556808], CI_upper: [38.41366282049455, 38.46790263988294, 38.52870427205778]
+2025-12-18 23:43:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 37.17961485400485, 37.23385467339324, 37.29465630556808], upper=[np.float64(37.374510899944106), 38.41366282049455, 38.46790263988294, 38.52870427205778]
+2025-12-18 23:43:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.77636055648327, 2025: 36.11781333386898, 2026: 35.27711749076843}, values=[36.77636055648327, 36.11781333386898, 35.27711749076843], CI_lower=[36.510110364458626, 35.85156314184434, 35.01086729874379], CI_upper=[37.04261074850791, 36.38406352589362, 35.543367682793075]
+2025-12-18 23:43:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.77636055648327, 36.11781333386898, 35.27711749076843], CI_lower: [36.510110364458626, 35.85156314184434, 35.01086729874379], CI_upper: [37.04261074850791, 36.38406352589362, 35.543367682793075]
+2025-12-18 23:43:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 36.510110364458626, 35.85156314184434, 35.01086729874379], upper=[np.float64(37.374510899944106), 37.04261074850791, 36.38406352589362, 35.543367682793075]
+2025-12-18 23:43:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.565126705554036, 2025: 37.565126705554036, 2026: 37.565126705554036}, values=[37.565126705554036, 37.565126705554036, 37.565126705554036], CI_lower=[37.13936787417806, 37.13936787417806, 37.13936787417806], CI_upper=[37.99088553693001, 37.99088553693001, 37.99088553693001]
+2025-12-18 23:43:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.565126705554036, 37.565126705554036, 37.565126705554036], CI_lower: [37.13936787417806, 37.13936787417806, 37.13936787417806], CI_upper: [37.99088553693001, 37.99088553693001, 37.99088553693001]
+2025-12-18 23:43:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 37.13936787417806, 37.13936787417806, 37.13936787417806], upper=[np.float64(37.374510899944106), 37.99088553693001, 37.99088553693001, 37.99088553693001]
+2025-12-18 23:43:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.63348370582124, 2025: 37.63348370582124, 2026: 37.63348370582124}, values=[37.63348370582124, 37.63348370582124, 37.63348370582124], CI_lower=[37.15163530204369, 37.15163530204369, 37.15163530204369], CI_upper=[38.115332109598796, 38.115332109598796, 38.115332109598796]
+2025-12-18 23:43:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.63348370582124, 37.63348370582124, 37.63348370582124], CI_lower: [37.15163530204369, 37.15163530204369, 37.15163530204369], CI_upper: [38.115332109598796, 38.115332109598796, 38.115332109598796]
+2025-12-18 23:43:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 37.15163530204369, 37.15163530204369, 37.15163530204369], upper=[np.float64(37.374510899944106), 38.115332109598796, 38.115332109598796, 38.115332109598796]
+2025-12-18 23:43:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.52776059006276, 2025: 37.52776059006276, 2026: 37.52776059006276}, values=[37.52776059006276, 37.52776059006276, 37.52776059006276], CI_lower=[37.14234979356709, 37.14234979356709, 37.14234979356709], CI_upper=[37.91317138655843, 37.91317138655843, 37.91317138655843]
+2025-12-18 23:43:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.52776059006276, 37.52776059006276, 37.52776059006276], CI_lower: [37.14234979356709, 37.14234979356709, 37.14234979356709], CI_upper: [37.91317138655843, 37.91317138655843, 37.91317138655843]
+2025-12-18 23:43:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 37.14234979356709, 37.14234979356709, 37.14234979356709], upper=[np.float64(37.374510899944106), 37.91317138655843, 37.91317138655843, 37.91317138655843]
+2025-12-18 23:43:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.176065571530835, 2025: 37.05910980399334, 2026: 36.99018073587338}, values=[37.176065571530835, 37.05910980399334, 36.99018073587338], CI_lower=[18.917462815892467, 18.80050704835497, 18.731577980235013], CI_upper=[55.434668327169206, 55.3177125596317, 55.248783491511745]
+2025-12-18 23:43:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.176065571530835, 37.05910980399334, 36.99018073587338], CI_lower: [18.917462815892467, 18.80050704835497, 18.731577980235013], CI_upper: [55.434668327169206, 55.3177125596317, 55.248783491511745]
+2025-12-18 23:43:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 18.917462815892467, 18.80050704835497, 18.731577980235013], upper=[np.float64(37.374510899944106), 55.434668327169206, 55.3177125596317, 55.248783491511745]
+2025-12-18 23:43:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.30393429223522, 2025: 37.23335768039761, 2026: 37.162781068559994}, values=[37.30393429223522, 37.23335768039761, 37.162781068559994], CI_lower=[36.870073384433894, 36.799496772596285, 36.72892016075867], CI_upper=[37.737795200036544, 37.667218588198935, 37.59664197636132]
+2025-12-18 23:43:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.30393429223522, 37.23335768039761, 37.162781068559994], CI_lower: [36.870073384433894, 36.799496772596285, 36.72892016075867], CI_upper: [37.737795200036544, 37.667218588198935, 37.59664197636132]
+2025-12-18 23:43:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.374510899944106), 36.870073384433894, 36.799496772596285, 36.72892016075867], upper=[np.float64(37.374510899944106), 37.737795200036544, 37.667218588198935, 37.59664197636132]
+2025-12-18 23:43:15 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 23:43:15 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 23:48:54 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 23100.0, 'mse': 2417818112.0, 'rmse': 49171.313913703794, 'r2': 0.2177942544221878}
+2025-12-18 23:48:55 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 23:52:47 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.5510170459747314, 'mse': 69.84947967529297, 'rmse': 8.357600114583908, 'r2': 0.3065800368785858}
+2025-12-18 23:52:49 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 23:56:53 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.042143821716309, 'mse': 607.585693359375, 'rmse': 24.649253403691056, 'r2': -5.539869785308838}
+2025-12-18 23:56:54 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 23:57:28 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 23:57:30 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 23:57:30 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 23:57:30 [DEBUG] census_eda.main:  Running LLM analysis for state: Washington
+2025-12-18 23:57:30 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 23:57:30 [INFO] census_eda.ml: [LLM] State context loaded: Washington
+2025-12-18 23:57:30 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [API] Total request: ~2380 tokens (system: ~2199, user: ~181)
+2025-12-18 23:57:30 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:57:46 [DEBUG] census_eda.ml: [API] Received response: 3275 chars
+2025-12-18 23:57:46 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3275 chars)
+2025-12-18 23:57:47 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [LLM] User prompt: 1286 chars (~321 tokens)
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [API] Total request: ~2520 tokens (system: ~2199, user: ~321)
+2025-12-18 23:57:47 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [API] Received response: 3516 chars
+2025-12-18 23:57:57 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3516 chars)
+2025-12-18 23:57:57 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [LLM] User prompt: 2194 chars (~548 tokens)
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [API] Total request: ~2747 tokens (system: ~2199, user: ~548)
+2025-12-18 23:57:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [API] Received response: 3648 chars
+2025-12-18 23:58:08 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3648 chars)
+2025-12-18 23:58:08 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [API] Total request: ~2539 tokens (system: ~2199, user: ~340)
+2025-12-18 23:58:08 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [API] Received response: 3914 chars
+2025-12-18 23:58:21 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (3914 chars)
+2025-12-18 23:58:21 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [API] Total request: ~2389 tokens (system: ~2199, user: ~190)
+2025-12-18 23:58:21 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [API] Received response: 3654 chars
+2025-12-18 23:58:32 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3654 chars)
+2025-12-18 23:58:32 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [LLM] User prompt: 8768 chars (~2192 tokens)
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [API] Total request: ~4391 tokens (system: ~2199, user: ~2192)
+2025-12-18 23:58:32 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [API] Received response: 3070 chars
+2025-12-18 23:58:44 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3070 chars)
+2025-12-18 23:58:44 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [LLM] User prompt: 5397 chars (~1349 tokens)
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [API] Total request: ~3548 tokens (system: ~2199, user: ~1349)
+2025-12-18 23:58:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [API] Received response: 3400 chars
+2025-12-18 23:58:57 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3400 chars)
+2025-12-18 23:58:57 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [API] Total request: ~2351 tokens (system: ~2199, user: ~152)
+2025-12-18 23:58:57 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [API] Received response: 3348 chars
+2025-12-18 23:59:08 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3348 chars)
+2025-12-18 23:59:08 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [LLM] User prompt: 5665 chars (~1416 tokens)
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [API] Total request: ~3615 tokens (system: ~2199, user: ~1416)
+2025-12-18 23:59:08 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [API] Received response: 3842 chars
+2025-12-18 23:59:19 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3842 chars)
+2025-12-18 23:59:19 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [LLM] User prompt: 1832 chars (~458 tokens)
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [API] Total request: ~2657 tokens (system: ~2199, user: ~458)
+2025-12-18 23:59:19 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [API] Received response: 4845 chars
+2025-12-18 23:59:34 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4845 chars)
+2025-12-18 23:59:34 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [LLM] User prompt: 1642 chars (~410 tokens)
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Washington
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Washington
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3908 chars
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~977
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Washington
+
+ECONOMIC PROFILE:
+  Industries: Technology (Microsoft, Amazon, tech startups), Aerospace (Boeing, suppliers), Agriculture (apples, wheat, hops, wine), International trade (Port of Seattle, Port of Tacoma), Biotechnology and life sciences
+  Trends: Strong growth 2011-2019 driven by tech boom (Amazon, Microsoft). Boeing volatility throughout. Pandemic accelerated tech. 2022-2023 tech layoffs but resilient. Aerospace challenges
+  Income: Above national median. Seattle area very high. Eastern Washington significantly lower. No state income tax benefits high earners. Growing inequality
+  Dominant Sector: Professional and business services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Strong growth ~1.1% annually. Concentrated in Puget Sound region. Tech workers driving in-migration. Eastern Washington slower growth
+  Migration: Major destination from California (tech workers, affordability compared to Bay Area), other states. International immigration (Asia, Latin America). Seattle/Bellevue boom
+  Education: High bachelor's attainment, especially Puget Sound. University of Washington major research university. Growing education sector
+
+HOUSING MARKET:
+  Market: Seattle severe crisis. Median home ~$800k+ Seattle, $600k+ Bellevue. Tacoma/suburbs more moderate. Eastern Washington affordable
+  Affordability: Seattle expensive 2011-2019, explosive 2020-2023. Now among least affordable metros. Spillover to Tacoma, Olympia, even Spokane
+  Challenges: Seattle severe affordability crisis, Homelessness epidemic, Geographic constraints (water, mountains), NIMBYism in single-family neighborhoods, Tech worker competition drives prices
+
+POLITY:
+  Policy: Progressive on West side, conservative East side. No state income tax. High sales tax. Environmental leadership. Pro-worker regulations
+  Housing: Seattle addressing crisis with zoning reforms, density increases. Statewide growth management act. Recent state pressure for more housing. Tenant protections strong
+  Labor: $16.28 minimum wage (2024, indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Puget Sound (urban, tech, ports), Cascade Mountains divide, Eastern Washington (agriculture, conservative), Pacific coast
+  Urban/Rural: 84% urban in Puget Sound, 16% rural in Eastern WA. Extreme urban concentration
+  Infrastructure: Good in Puget Sound. Seattle-Tacoma airport major hub. Ports critical for Asia trade. I-5 corridor congested. Light rail expanding. Eastern WA infrastructure adequate
+
+HISTORICAL:
+  Events: 2011-2013: Tech sector accelerating, Boeing 737 MAX development, Amazon growth explodes, Microsoft resurgence; 2014-2016: Amazon HQ expansion, $15 minimum wage, Boeing labor disputes, Seattle construction boom; 2017-2019: Amazon HQ2 search, Boeing 737 MAX crashes and grounding (2018-2019 devastating), tech boom continues, homelessness crisis; 2021-2023: Boeing recovery struggles, tech boom then 2022-2023 layoffs (Amazon, Microsoft), housing crisis peaks, machinists strike 2024
+  Shocks: 2018-2019 Boeing 737 MAX grounding (346 deaths, production halt). 2020 pandemic (aviation collapse). 2022-2023 tech layoffs. 2024 Boeing strike
+  Transitions: Microsoft resurgence (cloud, Azure). Amazon evolved from retail to AWS dominance. Boeing crisis and recovery challenges. Aerospace workforce declining
+
+COMPARATIVE:
+  Benchmarks: High GDP. Above median income. No income tax. Housing severely unaffordable in Seattle. High educational attainment. Strong innovation metrics. Homeless rate high
+  Peer States: California (tech, high cost), Massachusetts (tech, education), Colorado (educated, growing)
+  Unique: No state income tax (sales tax only). Boeing aerospace dominance (despite issues). Amazon and Microsoft headquarters. Asia trade gateway. Most named mountains in lower 48. Hydroelectric power advantage. Strong coffee culture (Starbucks)
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Washington
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [PROMPT] State context injected (3908 chars)
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8796 chars (~2199 tokens)
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [API] Total request: ~2609 tokens (system: ~2199, user: ~410)
+2025-12-18 23:59:34 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 23:59:49 [DEBUG] census_eda.ml: [API] Received response: 4801 chars
+2025-12-18 23:59:49 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4801 chars)
+2025-12-18 23:59:49 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 23:59:49 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 23:59:49 [INFO] census_eda.main: [REPORT] Generated: report_Washington_population_20251218_235949.txt
+2025-12-18 23:59:49 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Washington!
+2025-12-18 23:59:51 [INFO] census_eda.memory: process_Washington_population_1-year:EXIT: 17157.9MB (delta: -4230.2MB)
+2025-12-18 23:59:52 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 23:59:54 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 23:59:57 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 23:59:59 [INFO] census_eda.memory: Cleared all caches
+2025-12-19 00:00:02 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-19 00:00:03 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-19 00:00:06 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-19 00:00:08 [INFO] census_eda.memory: Cleared all caches

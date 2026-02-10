@@ -1,0 +1,1310 @@
+2025-12-17 23:39:19 [INFO] census_eda: Logging context set: state=Minnesota, survey=population, scope=1-year
+2025-12-17 23:39:19 [INFO] census_eda: Log file: ./logs/Minnesota/1-year/population/1-year_population_25_12_17_2339.log
+2025-12-17 23:39:19 [INFO] census_eda.main: ======================================================================
+2025-12-17 23:39:19 [INFO] census_eda.main: [POPULATION] Processing Minnesota (1-year)...
+2025-12-17 23:39:19 [INFO] census_eda.main: ======================================================================
+2025-12-17 23:39:19 [INFO] census_eda.memory: process_Minnesota_population_1-year:ENTER: 9831.3MB (delta: +0.0MB)
+2025-12-17 23:39:19 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-17 23:39:19 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/27/*/*.csv
+2025-12-17 23:39:19 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-17 23:39:19 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pmn.csv
+2025-12-17 23:39:20 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-17 23:39:20 [VERBOSE] census_eda.processing.loader:   -> Loaded 54,354 rows, 260 columns
+2025-12-17 23:39:20 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p27.csv
+2025-12-17 23:39:21 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-17 23:39:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 55,161 rows, 260 columns
+2025-12-17 23:39:21 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pmn.csv
+2025-12-17 23:39:22 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-17 23:39:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 54,297 rows, 260 columns
+2025-12-17 23:39:22 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pmn.csv
+2025-12-17 23:39:23 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-17 23:39:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 54,988 rows, 260 columns
+2025-12-17 23:39:23 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pmn.csv
+2025-12-17 23:39:24 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-17 23:39:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 52,854 rows, 260 columns
+2025-12-17 23:39:24 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pmn.csv
+2025-12-17 23:39:25 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-17 23:39:25 [VERBOSE] census_eda.processing.loader:   -> Loaded 53,140 rows, 260 columns
+2025-12-17 23:39:25 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p27.csv
+2025-12-17 23:39:26 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-17 23:39:26 [VERBOSE] census_eda.processing.loader:   -> Loaded 55,783 rows, 260 columns
+2025-12-17 23:39:26 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pmn.csv
+2025-12-17 23:39:27 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-17 23:39:27 [VERBOSE] census_eda.processing.loader:   -> Loaded 52,965 rows, 260 columns
+2025-12-17 23:39:27 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pmn.csv
+2025-12-17 23:39:28 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-17 23:39:28 [VERBOSE] census_eda.processing.loader:   -> Loaded 54,115 rows, 260 columns
+2025-12-17 23:39:28 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p27.csv
+2025-12-17 23:39:29 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-17 23:39:29 [VERBOSE] census_eda.processing.loader:   -> Loaded 56,670 rows, 260 columns
+2025-12-17 23:39:29 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p27.csv
+2025-12-17 23:39:30 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-17 23:39:30 [VERBOSE] census_eda.processing.loader:   -> Loaded 58,984 rows, 260 columns
+2025-12-17 23:39:30 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p27.csv
+2025-12-17 23:39:31 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-17 23:39:31 [VERBOSE] census_eda.processing.loader:   -> Loaded 56,636 rows, 260 columns
+2025-12-17 23:39:31 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p27.csv
+2025-12-17 23:39:33 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-17 23:39:33 [VERBOSE] census_eda.processing.loader:   -> Loaded 59,389 rows, 260 columns
+2025-12-17 23:39:33 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pmn.csv
+2025-12-17 23:39:34 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-17 23:39:34 [VERBOSE] census_eda.processing.loader:   -> Loaded 54,811 rows, 260 columns
+2025-12-17 23:39:34 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pmn.csv
+2025-12-17 23:39:35 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-17 23:39:35 [VERBOSE] census_eda.processing.loader:   -> Loaded 53,295 rows, 260 columns
+2025-12-17 23:39:35 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pmn.csv
+2025-12-17 23:39:36 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-17 23:39:36 [VERBOSE] census_eda.processing.loader:   -> Loaded 54,817 rows, 260 columns
+2025-12-17 23:39:36 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-17 23:39:42 [VERBOSE] census_eda.processing.loader: Combined into 882,259 total rows, 260 columns
+2025-12-17 23:39:42 [INFO] census_eda.main: Loaded 882,259 records
+2025-12-17 23:39:42 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 882259 valid, 16 unique
+2025-12-17 23:39:42 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-17 23:39:44 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-17 23:39:44 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-17 23:39:44 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-17 23:39:45 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-17 23:39:45 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-17 23:39:46 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-17 23:39:46 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-17 23:39:46 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-17 23:39:46 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-17 23:39:47 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-17 23:39:47 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-17 23:39:47 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-17 23:39:48 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-17 23:39:48 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-17 23:39:48 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-17 23:39:48 [DEBUG] census_eda.main: Feature engineering complete: (882259, 292)
+2025-12-17 23:39:49 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-17 23:39:49 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-17 23:42:07 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-17 23:42:07 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-17 23:42:07 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(882259, 292)
+2025-12-17 23:42:07 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-17 23:42:07 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 882259
+2025-12-17 23:42:07 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-17 23:42:07 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(882259, 292)
+2025-12-17 23:42:07 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(52854), np.int64(2008): np.int64(52965), np.int64(2009): np.int64(53140), np.int64(2010): np.int64(53295), np.int64(2011): np.int64(54817), np.int64(2012): np.int64(54354), np.int64(2013): np.int64(54988), np.int64(2014): np.int64(54297), np.int64(2015): np.int64(54811), np.int64(2016): np.int64(54115), np.int64(2017): np.int64(55161), np.int64(2018): np.int64(55783), np.int64(2019): np.int64(56670), np.int64(2021): np.int64(56636), np.int64(2022): np.int64(58984), np.int64(2023): np.int64(59389)}
+2025-12-17 23:42:08 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(882259, 292)
+2025-12-17 23:42:08 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-17 23:42:08 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-17 23:42:08 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-17 23:42:08 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-17 23:42:08 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 882259 non-null values (zeros excluded if needed)
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 882259 non-null values (zeros excluded if needed)
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 3223.00
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 882259 non-null values (zeros excluded if needed)
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-17 23:42:09 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-17 23:42:10 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 399721 non-null values (zeros excluded if needed)
+2025-12-17 23:42:10 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 184.00
+2025-12-17 23:42:11 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 121037 non-null values (zeros excluded if needed)
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 355000.00
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 54842 non-null values (zeros excluded if needed)
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 75000.00
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 12776 non-null values (zeros excluded if needed)
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 90623 non-null values (zeros excluded if needed)
+2025-12-17 23:42:12 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 166000.00
+2025-12-17 23:42:13 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 59330 non-null values (zeros excluded if needed)
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 401000.00
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 17060 non-null values (zeros excluded if needed)
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: Value range: 10.00 to 30000.00
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 178879 non-null values (zeros excluded if needed)
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-17 23:42:14 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-17 23:42:15 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 461772 non-null values (zeros excluded if needed)
+2025-12-17 23:42:15 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 603000.00
+2025-12-17 23:42:16 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-17 23:42:30 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-17 23:42:30 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-17 23:42:30 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-17 23:42:31 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-17 23:42:31 [DEBUG] census_eda.memory: Skipping sampling: 36916MB available (>16GB)
+2025-12-17 23:42:31 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 882259 rows
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(882259, 292)
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 882259 non-null values
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 882259 non-null values
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 3223.00
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 882259 non-null values
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 399721 non-null values
+2025-12-17 23:45:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 184.00
+2025-12-17 23:45:11 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 121037 non-null values
+2025-12-17 23:45:11 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 355000.00
+2025-12-17 23:45:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 54842 non-null values
+2025-12-17 23:45:12 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 75000.00
+2025-12-17 23:45:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 12776 non-null values
+2025-12-17 23:45:12 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-17 23:45:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 90623 non-null values
+2025-12-17 23:45:12 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 166000.00
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 59330 non-null values
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 401000.00
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 17060 non-null values
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 30000.00
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 178879 non-null values
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 461772 non-null values
+2025-12-17 23:45:13 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 603000.00
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 498112 non-null values
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 403530 non-null values
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 185166 non-null values
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 712758 non-null values
+2025-12-17 23:45:14 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-17 23:45:23 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-17 23:45:35 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-17 23:45:48 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-17 23:46:12 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-17 23:46:12 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-17 23:46:12 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-17 23:46:13 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-17 23:46:13 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-17 23:46:14 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-17 23:46:15 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-17 23:46:15 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-17 23:46:15 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-17 23:46:16 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-17 23:46:16 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-17 23:46:18 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-17 23:46:18 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-17 23:46:18 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-17 23:46:19 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-17 23:46:21 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-17 23:46:21 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-17 23:46:21 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-17 23:46:21 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-17 23:46:22 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-17 23:46:23 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-17 23:46:23 [DEBUG] census_eda.memory: Skipping sampling: 36483MB available (>16GB)
+2025-12-17 23:46:38 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-17 23:46:38 [DEBUG] census_eda.memory: Skipping sampling: 36517MB available (>16GB)
+2025-12-17 23:47:02 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-17 23:47:02 [DEBUG] census_eda.memory: Skipping sampling: 36670MB available (>16GB)
+2025-12-17 23:47:06 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-17 23:47:18 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-17 23:47:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-17 23:47:18 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-17 23:47:19 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-17 23:47:20 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-17 23:47:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-17 23:47:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-17 23:47:22 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-17 23:47:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-17 23:47:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-17 23:47:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-17 23:47:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-17 23:47:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-17 23:47:24 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-17 23:47:24 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-17 23:47:24 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-17 23:47:24 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-17 23:47:25 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-17 23:47:26 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-17 23:47:28 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-17 23:47:30 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-17 23:47:31 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-17 23:47:33 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-17 23:47:33 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-17 23:47:33 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-17 23:47:34 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-17 23:47:35 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-17 23:47:36 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-17 23:47:38 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-17 23:47:38 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-17 23:47:39 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-17 23:47:41 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-17 23:47:43 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-17 23:47:46 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-17 23:47:47 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-17 23:47:48 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Minnesota/population/1-year/figures
+2025-12-17 23:47:48 [DEBUG] census_eda.memory: Skipping sampling: 36368MB available (>16GB)
+2025-12-17 23:47:48 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-17 23:47:48 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-17 23:47:48 [INFO] census_eda.memory: [ML-START]: 16130.5MB (delta: +6299.2MB)
+2025-12-17 23:47:48 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-17 23:47:48 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-17 23:47:49 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 8344 samples (was 8348)
+2025-12-17 23:47:49 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 23:47:49 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 23:47:49 [INFO] census_eda.ml.regression: [TUNE] Data: 8,344 samples, 10 features
+2025-12-17 23:47:49 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:47:49 [INFO] census_eda.memory: tune_ridge:ENTER: 16130.5MB (delta: +0.0MB)
+2025-12-17 23:47:50 [WARNING] census_eda.memory: Memory usage (16131.2MB) exceeded threshold (16000MB)
+2025-12-17 23:47:50 [INFO] census_eda.memory: tune_ridge:EXIT: 16131.2MB (delta: +0.7MB)
+2025-12-17 23:47:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 23:47:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1091
+2025-12-17 23:47:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:47:50 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 23:47:50 [INFO] census_eda.ml.regression: [TUNE] Data: 8,344 samples, 10 features
+2025-12-17 23:47:50 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:47:50 [INFO] census_eda.memory: tune_lasso:ENTER: 16131.2MB (delta: +0.0MB)
+2025-12-17 23:47:50 [WARNING] census_eda.memory: Memory usage (16131.2MB) exceeded threshold (16000MB)
+2025-12-17 23:47:51 [INFO] census_eda.memory: tune_lasso:EXIT: 16131.2MB (delta: +0.0MB)
+2025-12-17 23:47:51 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-17 23:47:51 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1091
+2025-12-17 23:47:51 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:47:51 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 23:47:51 [INFO] census_eda.ml.regression: [TUNE] Data: 8,344 samples, 10 features
+2025-12-17 23:47:51 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:47:51 [INFO] census_eda.memory: tune_random_forest:ENTER: 16131.2MB (delta: +0.0MB)
+2025-12-17 23:47:59 [WARNING] census_eda.memory: Memory usage (16133.3MB) exceeded threshold (16000MB)
+2025-12-17 23:48:00 [INFO] census_eda.memory: tune_random_forest:EXIT: 16133.3MB (delta: +2.1MB)
+2025-12-17 23:48:00 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 23:48:00 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0452
+2025-12-17 23:48:00 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 23:48:01 [INFO] census_eda.ml.regression: [TUNE] Data: 8,344 samples, 10 features
+2025-12-17 23:48:01 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:01 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16135.7MB (delta: +2.4MB)
+2025-12-17 23:48:06 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:07 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:07 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-17 23:48:07 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0801
+2025-12-17 23:48:07 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:08 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-17 23:48:08 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 8146 samples (was 8348)
+2025-12-17 23:48:08 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 23:48:08 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 23:48:08 [INFO] census_eda.ml.regression: [TUNE] Data: 8,146 samples, 10 features
+2025-12-17 23:48:08 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:08 [INFO] census_eda.memory: tune_ridge:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:08 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:09 [INFO] census_eda.memory: tune_ridge:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1157
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 23:48:09 [INFO] census_eda.ml.regression: [TUNE] Data: 8,146 samples, 10 features
+2025-12-17 23:48:09 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:09 [INFO] census_eda.memory: tune_lasso:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:09 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:09 [INFO] census_eda.memory: tune_lasso:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1156
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 23:48:09 [INFO] census_eda.ml.regression: [TUNE] Data: 8,146 samples, 10 features
+2025-12-17 23:48:09 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:09 [INFO] census_eda.memory: tune_random_forest:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:17 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:18 [INFO] census_eda.memory: tune_random_forest:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 23:48:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0513
+2025-12-17 23:48:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:19 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 23:48:19 [INFO] census_eda.ml.regression: [TUNE] Data: 8,146 samples, 10 features
+2025-12-17 23:48:19 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:19 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:24 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:24 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 23:48:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0889
+2025-12-17 23:48:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:26 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-17 23:48:26 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 8342 samples (was 8348)
+2025-12-17 23:48:26 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 23:48:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 23:48:26 [INFO] census_eda.ml.regression: [TUNE] Data: 8,342 samples, 10 features
+2025-12-17 23:48:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:26 [INFO] census_eda.memory: tune_ridge:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:26 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:27 [INFO] census_eda.memory: tune_ridge:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1102
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 23:48:27 [INFO] census_eda.ml.regression: [TUNE] Data: 8,342 samples, 10 features
+2025-12-17 23:48:27 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:27 [INFO] census_eda.memory: tune_lasso:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:27 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:27 [INFO] census_eda.memory: tune_lasso:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1101
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 23:48:27 [INFO] census_eda.ml.regression: [TUNE] Data: 8,342 samples, 10 features
+2025-12-17 23:48:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:27 [INFO] census_eda.memory: tune_random_forest:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:35 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:36 [INFO] census_eda.memory: tune_random_forest:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:36 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 23:48:36 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0385
+2025-12-17 23:48:36 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:37 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 23:48:37 [INFO] census_eda.ml.regression: [TUNE] Data: 8,342 samples, 10 features
+2025-12-17 23:48:37 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:37 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:42 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:43 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:43 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 23:48:43 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0748
+2025-12-17 23:48:43 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:44 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-17 23:48:44 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 23:48:44 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 23:48:44 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:48:44 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:44 [INFO] census_eda.memory: tune_ridge:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:45 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:45 [INFO] census_eda.memory: tune_ridge:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:45 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-17 23:48:45 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 23:48:45 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:45 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 23:48:45 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:48:45 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:45 [INFO] census_eda.memory: tune_lasso:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:45 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:46 [INFO] census_eda.memory: tune_lasso:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 23:48:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 23:48:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 23:48:46 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:48:46 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:46 [INFO] census_eda.memory: tune_random_forest:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:49 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:50 [INFO] census_eda.memory: tune_random_forest:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-17 23:48:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 23:48:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:50 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 23:48:50 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:48:50 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:50 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:54 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:54 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:54 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-17 23:48:54 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 23:48:54 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:48:57 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-17 23:48:57 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 23:48:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 23:48:57 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:48:57 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:57 [INFO] census_eda.memory: tune_ridge:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:57 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:58 [INFO] census_eda.memory: tune_ridge:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0861
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 23:48:58 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:48:58 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 23:48:58 [INFO] census_eda.memory: tune_lasso:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:58 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:48:58 [INFO] census_eda.memory: tune_lasso:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0865
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 23:48:58 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 23:48:58 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:48:58 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:48:58 [INFO] census_eda.memory: tune_random_forest:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:49:07 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:49:08 [INFO] census_eda.memory: tune_random_forest:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:49:08 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-17 23:49:08 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1207
+2025-12-17 23:49:08 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:49:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 23:49:09 [INFO] census_eda.ml.regression: [TUNE] Data: 8,348 samples, 10 features
+2025-12-17 23:49:09 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 23:49:09 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:49:14 [WARNING] census_eda.memory: Memory usage (16135.7MB) exceeded threshold (16000MB)
+2025-12-17 23:49:15 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:49:15 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-17 23:49:15 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1515
+2025-12-17 23:49:15 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 23:49:17 [INFO] census_eda.memory: [SHAP] Safe sample size: 1,670 -> 1,000
+2025-12-17 23:49:17 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 1,670 -> 1,000
+2025-12-17 23:49:17 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:49:17 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 23:49:17 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:49:17 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 23:49:17 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-17 23:49:17 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-17 23:49:17 [INFO] census_eda.memory: [PRE-CLUSTERING]: 16135.7MB (delta: +0.0MB)
+2025-12-17 23:49:17 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-17 23:49:17 [INFO] census_eda.main: [CLUSTERING] KMeans on 8,348 samples...
+2025-12-17 23:49:18 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-17 23:49:18 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 8,348 samples (will sample if needed)...
+2025-12-17 23:49:19 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-17 23:49:19 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-17 23:49:19 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 58296.24171066284, 2025: 60029.71361923218, 2026: 61700.27854537964}, Values: [58296.24171066284, 60029.71361923218, 61700.27854537964]
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-17 23:49:19 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 60908.51929855347, 2025: 62882.04420089722, 2026: 64803.08549118042}, Values: [60908.51929855347, 62882.04420089722, 64803.08549118042]
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-17 23:49:19 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 62473.47717475891, 2025: 64841.485582351685, 2026: 67262.040391922}, Values: [62473.47717475891, 64841.485582351685, 67262.040391922]
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-17 23:49:19 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 44.26197661459446, 2025: 44.75180144608021, 2026: 45.32272304594517}, Values: [44.26197661459446, 44.75180144608021, 45.32272304594517]
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-17 23:49:19 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.84281641617417, 2025: 36.295367289334536, 2026: 35.604063373059034}, Values: [36.84281641617417, 36.295367289334536, 35.604063373059034]
+2025-12-17 23:49:19 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-17 23:49:45 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-17 23:49:47 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-17 23:49:47 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-17 23:49:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 55683.51154432865, 2025: 56925.04539850773, 2026: 58166.57925268682}, values=[55683.51154432865, 56925.04539850773, 58166.57925268682], CI_lower=[52662.00152831152, 53903.535382490605, 55145.06923666969], CI_upper=[58705.02156034578, 59946.55541452486, 61188.089268703945]
+2025-12-17 23:49:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55683.51154432865, 56925.04539850773, 58166.57925268682], CI_lower: [52662.00152831152, 53903.535382490605, 55145.06923666969], CI_upper: [58705.02156034578, 59946.55541452486, 61188.089268703945]
+2025-12-17 23:49:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 52662.00152831152, 53903.535382490605, 55145.06923666969], upper=[np.float64(52596.15472947065), 58705.02156034578, 59946.55541452486, 61188.089268703945]
+2025-12-17 23:49:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 59324.2680233717, 2025: 61776.19559121132, 2026: 64355.43969678879}, values=[59324.2680233717, 61776.19559121132, 64355.43969678879], CI_lower=[58064.06004396313, 60515.98761180275, 63095.23171738022], CI_upper=[60584.47600278026, 63036.403570619885, 65615.64767619736]
+2025-12-17 23:49:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59324.2680233717, 61776.19559121132, 64355.43969678879], CI_lower: [58064.06004396313, 60515.98761180275, 63095.23171738022], CI_upper: [60584.47600278026, 63036.403570619885, 65615.64767619736]
+2025-12-17 23:49:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 58064.06004396313, 60515.98761180275, 63095.23171738022], upper=[np.float64(52596.15472947065), 60584.47600278026, 63036.403570619885, 65615.64767619736]
+2025-12-17 23:49:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 58296.24171066284, 2025: 60029.71361923218, 2026: 61700.27854537964}, values=[58296.24171066284, 60029.71361923218, 61700.27854537964], CI_lower=[57167.841186002544, 58901.31309457188, 60571.87802071934], CI_upper=[59424.64223532314, 61158.114143892475, 62828.679070039936]
+2025-12-17 23:49:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58296.24171066284, 60029.71361923218, 61700.27854537964], CI_lower: [57167.841186002544, 58901.31309457188, 60571.87802071934], CI_upper: [59424.64223532314, 61158.114143892475, 62828.679070039936]
+2025-12-17 23:49:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 57167.841186002544, 58901.31309457188, 60571.87802071934], upper=[np.float64(52596.15472947065), 59424.64223532314, 61158.114143892475, 62828.679070039936]
+2025-12-17 23:49:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 54611.473612018155, 2025: 54611.473612018155, 2026: 54611.473612018155}, values=[54611.473612018155, 54611.473612018155, 54611.473612018155], CI_lower=[52651.975110319254, 52651.975110319254, 52651.975110319254], CI_upper=[56570.972113717056, 56570.972113717056, 56570.972113717056]
+2025-12-17 23:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54611.473612018155, 54611.473612018155, 54611.473612018155], CI_lower: [52651.975110319254, 52651.975110319254, 52651.975110319254], CI_upper: [56570.972113717056, 56570.972113717056, 56570.972113717056]
+2025-12-17 23:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 52651.975110319254, 52651.975110319254, 52651.975110319254], upper=[np.float64(52596.15472947065), 56570.972113717056, 56570.972113717056, 56570.972113717056]
+2025-12-17 23:49:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 52010.40098701842, 2025: 52010.40098701842, 2026: 52010.40098701842}, values=[52010.40098701842, 52010.40098701842, 52010.40098701842], CI_lower=[48775.481439984804, 48775.481439984804, 48775.481439984804], CI_upper=[55245.32053405204, 55245.32053405204, 55245.32053405204]
+2025-12-17 23:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52010.40098701842, 52010.40098701842, 52010.40098701842], CI_lower: [48775.481439984804, 48775.481439984804, 48775.481439984804], CI_upper: [55245.32053405204, 55245.32053405204, 55245.32053405204]
+2025-12-17 23:49:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 48775.481439984804, 48775.481439984804, 48775.481439984804], upper=[np.float64(52596.15472947065), 55245.32053405204, 55245.32053405204, 55245.32053405204]
+2025-12-17 23:49:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 55399.602912929025, 2025: 55399.602912929025, 2026: 55399.602912929025}, values=[55399.602912929025, 55399.602912929025, 55399.602912929025], CI_lower=[53984.926760155984, 53984.926760155984, 53984.926760155984], CI_upper=[56814.27906570207, 56814.27906570207, 56814.27906570207]
+2025-12-17 23:49:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55399.602912929025, 55399.602912929025, 55399.602912929025], CI_lower: [53984.926760155984, 53984.926760155984, 53984.926760155984], CI_upper: [56814.27906570207, 56814.27906570207, 56814.27906570207]
+2025-12-17 23:49:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 53984.926760155984, 53984.926760155984, 53984.926760155984], upper=[np.float64(52596.15472947065), 56814.27906570207, 56814.27906570207, 56814.27906570207]
+2025-12-17 23:49:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 57435.02200097635, 2025: 57510.974019647605, 2026: 57524.3809080744}, values=[57435.02200097635, 57510.974019647605, 57524.3809080744], CI_lower=[40107.94641481295, 40183.8984334842, 40197.305321911], CI_upper=[74762.09758713975, 74838.04960581101, 74851.4564942378]
+2025-12-17 23:49:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57435.02200097635, 57510.974019647605, 57524.3809080744], CI_lower: [40107.94641481295, 40183.8984334842, 40197.305321911], CI_upper: [74762.09758713975, 74838.04960581101, 74851.4564942378]
+2025-12-17 23:49:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 40107.94641481295, 40183.8984334842, 40197.305321911], upper=[np.float64(52596.15472947065), 74762.09758713975, 74838.04960581101, 74851.4564942378]
+2025-12-17 23:49:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 59314.39327640767, 2025: 61624.0440474066, 2026: 63933.69481840552}, values=[59314.39327640767, 61624.0440474066, 63933.69481840552], CI_lower=[57637.436542879645, 59947.087313878576, 62256.7380848775], CI_upper=[60991.35000993569, 63301.00078093462, 65610.65155193355]
+2025-12-17 23:49:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [59314.39327640767, 61624.0440474066, 63933.69481840552], CI_lower: [57637.436542879645, 59947.087313878576, 62256.7380848775], CI_upper: [60991.35000993569, 63301.00078093462, 65610.65155193355]
+2025-12-17 23:49:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(52596.15472947065), 57637.436542879645, 59947.087313878576, 62256.7380848775], upper=[np.float64(52596.15472947065), 60991.35000993569, 63301.00078093462, 65610.65155193355]
+2025-12-17 23:49:53 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-17 23:49:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 57885.681983173825, 2025: 59240.58555242419, 2026: 60595.489121675026}, values=[57885.681983173825, 59240.58555242419, 60595.489121675026], CI_lower=[54536.98183687808, 55891.88540612845, 57246.788975379284], CI_upper=[61234.382129469566, 62589.285698719934, 63944.18926797077]
+2025-12-17 23:49:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57885.681983173825, 59240.58555242419, 60595.489121675026], CI_lower: [54536.98183687808, 55891.88540612845, 57246.788975379284], CI_upper: [61234.382129469566, 62589.285698719934, 63944.18926797077]
+2025-12-17 23:49:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 54536.98183687808, 55891.88540612845, 57246.788975379284], upper=[np.float64(36115.67891667171), 61234.382129469566, 62589.285698719934, 63944.18926797077]
+2025-12-17 23:49:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 61961.82930469513, 2025: 64671.87516975403, 2026: 67524.46310448647}, values=[61961.82930469513, 64671.87516975403, 67524.46310448647], CI_lower=[60634.87018692103, 63344.916051979926, 66197.50398671237], CI_upper=[63288.78842246923, 65998.83428752812, 68851.42222226056]
+2025-12-17 23:49:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61961.82930469513, 64671.87516975403, 67524.46310448647], CI_lower: [60634.87018692103, 63344.916051979926, 66197.50398671237], CI_upper: [63288.78842246923, 65998.83428752812, 68851.42222226056]
+2025-12-17 23:49:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 60634.87018692103, 63344.916051979926, 66197.50398671237], upper=[np.float64(36115.67891667171), 63288.78842246923, 65998.83428752812, 68851.42222226056]
+2025-12-17 23:49:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 60908.51929855347, 2025: 62882.04420089722, 2026: 64803.08549118042}, values=[60908.51929855347, 62882.04420089722, 64803.08549118042], CI_lower=[59712.74316723248, 61686.26806957623, 63607.309359859435], CI_upper=[62104.29542987445, 64077.8203322182, 65998.8616225014]
+2025-12-17 23:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60908.51929855347, 62882.04420089722, 64803.08549118042], CI_lower: [59712.74316723248, 61686.26806957623, 63607.309359859435], CI_upper: [62104.29542987445, 64077.8203322182, 65998.8616225014]
+2025-12-17 23:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 59712.74316723248, 61686.26806957623, 63607.309359859435], upper=[np.float64(36115.67891667171), 62104.29542987445, 64077.8203322182, 65998.8616225014]
+2025-12-17 23:49:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 56846.23292544036, 2025: 56846.23292544036, 2026: 56846.23292544036}, values=[56846.23292544036, 56846.23292544036, 56846.23292544036], CI_lower=[54639.878633560205, 54639.878633560205, 54639.878633560205], CI_upper=[59052.58721732051, 59052.58721732051, 59052.58721732051]
+2025-12-17 23:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56846.23292544036, 56846.23292544036, 56846.23292544036], CI_lower: [54639.878633560205, 54639.878633560205, 54639.878633560205], CI_upper: [59052.58721732051, 59052.58721732051, 59052.58721732051]
+2025-12-17 23:49:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 54639.878633560205, 54639.878633560205, 54639.878633560205], upper=[np.float64(36115.67891667171), 59052.58721732051, 59052.58721732051, 59052.58721732051]
+2025-12-17 23:49:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 53890.89001196959, 2025: 53890.89001196959, 2026: 53890.89001196959}, values=[53890.89001196959, 53890.89001196959, 53890.89001196959], CI_lower=[50362.29133225926, 50362.29133225926, 50362.29133225926], CI_upper=[57419.48869167992, 57419.48869167992, 57419.48869167992]
+2025-12-17 23:49:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [53890.89001196959, 53890.89001196959, 53890.89001196959], CI_lower: [50362.29133225926, 50362.29133225926, 50362.29133225926], CI_upper: [57419.48869167992, 57419.48869167992, 57419.48869167992]
+2025-12-17 23:49:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 50362.29133225926, 50362.29133225926, 50362.29133225926], upper=[np.float64(36115.67891667171), 57419.48869167992, 57419.48869167992, 57419.48869167992]
+2025-12-17 23:49:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 57641.46433468623, 2025: 57641.46433468623, 2026: 57641.46433468623}, values=[57641.46433468623, 57641.46433468623, 57641.46433468623], CI_lower=[56013.1550901044, 56013.1550901044, 56013.1550901044], CI_upper=[59269.773579268054, 59269.773579268054, 59269.773579268054]
+2025-12-17 23:49:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57641.46433468623, 57641.46433468623, 57641.46433468623], CI_lower: [56013.1550901044, 56013.1550901044, 56013.1550901044], CI_upper: [59269.773579268054, 59269.773579268054, 59269.773579268054]
+2025-12-17 23:49:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 56013.1550901044, 56013.1550901044, 56013.1550901044], upper=[np.float64(36115.67891667171), 59269.773579268054, 59269.773579268054, 59269.773579268054]
+2025-12-17 23:49:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 60767.67011054878, 2025: 62203.44474908868, 2026: 63639.19865897313}, values=[60767.67011054878, 62203.44474908868, 63639.19865897313], CI_lower=[42893.73959823292, 44329.51423677282, 45765.26814665727], CI_upper=[78641.60062286464, 80077.37526140455, 81513.129171289]
+2025-12-17 23:49:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [60767.67011054878, 62203.44474908868, 63639.19865897313], CI_lower: [42893.73959823292, 44329.51423677282, 45765.26814665727], CI_upper: [78641.60062286464, 80077.37526140455, 81513.129171289]
+2025-12-17 23:49:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 42893.73959823292, 44329.51423677282, 45765.26814665727], upper=[np.float64(36115.67891667171), 78641.60062286464, 80077.37526140455, 81513.129171289]
+2025-12-17 23:49:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 61829.5703001266, 2025: 64327.26586197347, 2026: 66824.96142382034}, values=[61829.5703001266, 64327.26586197347, 66824.96142382034], CI_lower=[59848.764193706425, 62346.4597555533, 64844.15531740016], CI_upper=[63810.37640654678, 66308.07196839365, 68805.76753024051]
+2025-12-17 23:49:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [61829.5703001266, 64327.26586197347, 66824.96142382034], CI_lower: [59848.764193706425, 62346.4597555533, 64844.15531740016], CI_upper: [63810.37640654678, 66308.07196839365, 68805.76753024051]
+2025-12-17 23:49:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36115.67891667171), 59848.764193706425, 62346.4597555533, 64844.15531740016], upper=[np.float64(36115.67891667171), 63810.37640654678, 66308.07196839365, 68805.76753024051]
+2025-12-17 23:49:59 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-17 23:49:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 58930.897034249734, 2025: 60295.37844174914, 2026: 61659.85984924901}, values=[58930.897034249734, 60295.37844174914, 61659.85984924901], CI_lower=[55665.421510639295, 57029.9029181387, 58394.38432563857], CI_upper=[62196.37255786017, 63560.85396535958, 64925.33537285945]
+2025-12-17 23:49:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58930.897034249734, 60295.37844174914, 61659.85984924901], CI_lower: [55665.421510639295, 57029.9029181387, 58394.38432563857], CI_upper: [62196.37255786017, 63560.85396535958, 64925.33537285945]
+2025-12-17 23:49:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 55665.421510639295, 57029.9029181387, 58394.38432563857], upper=[np.float64(40039.51680095127), 62196.37255786017, 63560.85396535958, 64925.33537285945]
+2025-12-17 23:50:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 62948.41827470064, 2025: 65648.5513471961, 2026: 68489.1763471365}, values=[62948.41827470064, 65648.5513471961, 68489.1763471365], CI_lower=[61731.73358215178, 64431.86665464724, 67272.49165458763], CI_upper=[64165.102967249506, 66865.23603974497, 69705.86103968536]
+2025-12-17 23:50:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62948.41827470064, 65648.5513471961, 68489.1763471365], CI_lower: [61731.73358215178, 64431.86665464724, 67272.49165458763], CI_upper: [64165.102967249506, 66865.23603974497, 69705.86103968536]
+2025-12-17 23:50:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 61731.73358215178, 64431.86665464724, 67272.49165458763], upper=[np.float64(40039.51680095127), 64165.102967249506, 66865.23603974497, 69705.86103968536]
+2025-12-17 23:50:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 62473.47717475891, 2025: 64841.485582351685, 2026: 67262.040391922}, values=[62473.47717475891, 64841.485582351685, 67262.040391922], CI_lower=[61284.77072347023, 63652.779131063005, 66073.33394063331], CI_upper=[63662.18362604759, 66030.19203364037, 68450.74684321068]
+2025-12-17 23:50:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62473.47717475891, 64841.485582351685, 67262.040391922], CI_lower: [61284.77072347023, 63652.779131063005, 66073.33394063331], CI_upper: [63662.18362604759, 66030.19203364037, 68450.74684321068]
+2025-12-17 23:50:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 61284.77072347023, 63652.779131063005, 66073.33394063331], upper=[np.float64(40039.51680095127), 63662.18362604759, 66030.19203364037, 68450.74684321068]
+2025-12-17 23:50:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 57927.33574291875, 2025: 57927.33574291875, 2026: 57927.33574291875}, values=[57927.33574291875, 57927.33574291875, 57927.33574291875], CI_lower=[55678.47621273782, 55678.47621273782, 55678.47621273782], CI_upper=[60176.195273099685, 60176.195273099685, 60176.195273099685]
+2025-12-17 23:50:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57927.33574291875, 57927.33574291875, 57927.33574291875], CI_lower: [55678.47621273782, 55678.47621273782, 55678.47621273782], CI_upper: [60176.195273099685, 60176.195273099685, 60176.195273099685]
+2025-12-17 23:50:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 55678.47621273782, 55678.47621273782, 55678.47621273782], upper=[np.float64(40039.51680095127), 60176.195273099685, 60176.195273099685, 60176.195273099685]
+2025-12-17 23:50:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 54924.63731889616, 2025: 54924.63731889616, 2026: 54924.63731889616}, values=[54924.63731889616, 54924.63731889616, 54924.63731889616], CI_lower=[51393.95424649735, 51393.95424649735, 51393.95424649735], CI_upper=[58455.32039129497, 58455.32039129497, 58455.32039129497]
+2025-12-17 23:50:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [54924.63731889616, 54924.63731889616, 54924.63731889616], CI_lower: [51393.95424649735, 51393.95424649735, 51393.95424649735], CI_upper: [58455.32039129497, 58455.32039129497, 58455.32039129497]
+2025-12-17 23:50:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 51393.95424649735, 51393.95424649735, 51393.95424649735], upper=[np.float64(40039.51680095127), 58455.32039129497, 58455.32039129497, 58455.32039129497]
+2025-12-17 23:50:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 58805.94940359865, 2025: 58805.94940359865, 2026: 58805.94940359865}, values=[58805.94940359865, 58805.94940359865, 58805.94940359865], CI_lower=[57152.14180032514, 57152.14180032514, 57152.14180032514], CI_upper=[60459.75700687216, 60459.75700687216, 60459.75700687216]
+2025-12-17 23:50:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58805.94940359865, 58805.94940359865, 58805.94940359865], CI_lower: [57152.14180032514, 57152.14180032514, 57152.14180032514], CI_upper: [60459.75700687216, 60459.75700687216, 60459.75700687216]
+2025-12-17 23:50:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 57152.14180032514, 57152.14180032514, 57152.14180032514], upper=[np.float64(40039.51680095127), 60459.75700687216, 60459.75700687216, 60459.75700687216]
+2025-12-17 23:50:04 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 62052.10725149998, 2025: 63518.196422333574, 2026: 64984.271576036255}, values=[62052.10725149998, 63518.196422333574, 64984.271576036255], CI_lower=[43806.911149935935, 45273.000320769526, 46739.07547447221], CI_upper=[80297.30335306402, 81763.39252389762, 83229.4676776003]
+2025-12-17 23:50:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [62052.10725149998, 63518.196422333574, 64984.271576036255], CI_lower: [43806.911149935935, 45273.000320769526, 46739.07547447221], CI_upper: [80297.30335306402, 81763.39252389762, 83229.4676776003]
+2025-12-17 23:50:04 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 43806.911149935935, 45273.000320769526, 46739.07547447221], upper=[np.float64(40039.51680095127), 80297.30335306402, 81763.39252389762, 83229.4676776003]
+2025-12-17 23:50:05 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 63264.64399299369, 2025: 65943.28392332481, 2026: 68621.92385365593}, values=[63264.64399299369, 65943.28392332481, 68621.92385365593], CI_lower=[61311.87693554848, 63990.516865879596, 66669.15679621071], CI_upper=[65217.4110504389, 67896.05098077003, 70574.69091110115]
+2025-12-17 23:50:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [63264.64399299369, 65943.28392332481, 68621.92385365593], CI_lower: [61311.87693554848, 63990.516865879596, 66669.15679621071], CI_upper: [65217.4110504389, 67896.05098077003, 70574.69091110115]
+2025-12-17 23:50:05 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40039.51680095127), 61311.87693554848, 63990.516865879596, 66669.15679621071], upper=[np.float64(40039.51680095127), 65217.4110504389, 67896.05098077003, 70574.69091110115]
+2025-12-17 23:50:06 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-17 23:50:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44.01736078443082, 2025: 44.248752247399466, 2026: 44.480143710368054}, values=[44.01736078443082, 44.248752247399466, 44.480143710368054], CI_lower=[43.492318613112865, 43.72371007608151, 43.9551015390501], CI_upper=[44.54240295574878, 44.77379441871742, 45.00518588168601]
+2025-12-17 23:50:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.01736078443082, 44.248752247399466, 44.480143710368054], CI_lower: [43.492318613112865, 43.72371007608151, 43.9551015390501], CI_upper: [44.54240295574878, 44.77379441871742, 45.00518588168601]
+2025-12-17 23:50:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 43.492318613112865, 43.72371007608151, 43.9551015390501], upper=[np.float64(43.410816817929245), 44.54240295574878, 44.77379441871742, 45.00518588168601]
+2025-12-17 23:50:06 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 43.778453290822654, 2025: 43.930418368086976, 2026: 44.07402889730656}, values=[43.778453290822654, 43.930418368086976, 44.07402889730656], CI_lower=[43.285304377754095, 43.437269455018416, 43.580879984238], CI_upper=[44.27160220389121, 44.423567281155535, 44.56717781037512]
+2025-12-17 23:50:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.778453290822654, 43.930418368086976, 44.07402889730656], CI_lower: [43.285304377754095, 43.437269455018416, 43.580879984238], CI_upper: [44.27160220389121, 44.423567281155535, 44.56717781037512]
+2025-12-17 23:50:06 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 43.285304377754095, 43.437269455018416, 43.580879984238], upper=[np.float64(43.410816817929245), 44.27160220389121, 44.423567281155535, 44.56717781037512]
+2025-12-17 23:50:07 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 44.26197661459446, 2025: 44.75180144608021, 2026: 45.32272304594517}, values=[44.26197661459446, 44.75180144608021, 45.32272304594517], CI_lower=[43.84534777462976, 44.335172606115506, 44.906094205980466], CI_upper=[44.67860545455916, 45.16843028604491, 45.73935188590987]
+2025-12-17 23:50:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.26197661459446, 44.75180144608021, 45.32272304594517], CI_lower: [43.84534777462976, 44.335172606115506, 44.906094205980466], CI_upper: [44.67860545455916, 45.16843028604491, 45.73935188590987]
+2025-12-17 23:50:07 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 43.84534777462976, 44.335172606115506, 44.906094205980466], upper=[np.float64(43.410816817929245), 44.67860545455916, 45.16843028604491, 45.73935188590987]
+2025-12-17 23:50:08 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43.50685299496383, 2025: 43.50685299496383, 2026: 43.50685299496383}, values=[43.50685299496383, 43.50685299496383, 43.50685299496383], CI_lower=[42.99367990147687, 42.99367990147687, 42.99367990147687], CI_upper=[44.02002608845079, 44.02002608845079, 44.02002608845079]
+2025-12-17 23:50:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.50685299496383, 43.50685299496383, 43.50685299496383], CI_lower: [42.99367990147687, 42.99367990147687, 42.99367990147687], CI_upper: [44.02002608845079, 44.02002608845079, 44.02002608845079]
+2025-12-17 23:50:08 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 42.99367990147687, 42.99367990147687, 42.99367990147687], upper=[np.float64(43.410816817929245), 44.02002608845079, 44.02002608845079, 44.02002608845079]
+2025-12-17 23:50:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43.13801141585414, 2025: 43.13801141585414, 2026: 43.13801141585414}, values=[43.13801141585414, 43.13801141585414, 43.13801141585414], CI_lower=[42.67146348874957, 42.67146348874957, 42.67146348874957], CI_upper=[43.6045593429587, 43.6045593429587, 43.6045593429587]
+2025-12-17 23:50:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.13801141585414, 43.13801141585414, 43.13801141585414], CI_lower: [42.67146348874957, 42.67146348874957, 42.67146348874957], CI_upper: [43.6045593429587, 43.6045593429587, 43.6045593429587]
+2025-12-17 23:50:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 42.67146348874957, 42.67146348874957, 42.67146348874957], upper=[np.float64(43.410816817929245), 43.6045593429587, 43.6045593429587, 43.6045593429587]
+2025-12-17 23:50:09 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 43.596254958155555, 2025: 43.596254958155555, 2026: 43.596254958155555}, values=[43.596254958155555, 43.596254958155555, 43.596254958155555], CI_lower=[43.150215566415255, 43.150215566415255, 43.150215566415255], CI_upper=[44.042294349895855, 44.042294349895855, 44.042294349895855]
+2025-12-17 23:50:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.596254958155555, 43.596254958155555, 43.596254958155555], CI_lower: [43.150215566415255, 43.150215566415255, 43.150215566415255], CI_upper: [44.042294349895855, 44.042294349895855, 44.042294349895855]
+2025-12-17 23:50:09 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 43.150215566415255, 43.150215566415255, 43.150215566415255], upper=[np.float64(43.410816817929245), 44.042294349895855, 44.042294349895855, 44.042294349895855]
+2025-12-17 23:50:10 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 44.061100276424746, 2025: 44.30633269020115, 2026: 44.55155380201327}, values=[44.061100276424746, 44.30633269020115, 44.55155380201327], CI_lower=[25.2350401827061, 25.480272596482507, 25.72549370829462], CI_upper=[62.88716037014339, 63.1323927839198, 63.37761389573191]
+2025-12-17 23:50:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.061100276424746, 44.30633269020115, 44.55155380201327], CI_lower: [25.2350401827061, 25.480272596482507, 25.72549370829462], CI_upper: [62.88716037014339, 63.1323927839198, 63.37761389573191]
+2025-12-17 23:50:10 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 25.2350401827061, 25.480272596482507, 25.72549370829462], upper=[np.float64(43.410816817929245), 62.88716037014339, 63.1323927839198, 63.37761389573191]
+2025-12-17 23:50:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 43.9457376293277, 2025: 44.19082113564031, 2026: 44.435904641952924}, values=[43.9457376293277, 44.19082113564031, 44.435904641952924], CI_lower=[43.420579078709075, 43.665662585021686, 43.910746091334296], CI_upper=[44.47089617994633, 44.71597968625894, 44.96106319257155]
+2025-12-17 23:50:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.9457376293277, 44.19082113564031, 44.435904641952924], CI_lower: [43.420579078709075, 43.665662585021686, 43.910746091334296], CI_upper: [44.47089617994633, 44.71597968625894, 44.96106319257155]
+2025-12-17 23:50:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.410816817929245), 43.420579078709075, 43.665662585021686, 43.910746091334296], upper=[np.float64(43.410816817929245), 44.47089617994633, 44.71597968625894, 44.96106319257155]
+2025-12-17 23:50:11 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-17 23:50:11 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.57068836241705, 2025: 37.55438767803021, 2026: 37.53808699364336}, values=[37.57068836241705, 37.55438767803021, 37.53808699364336], CI_lower=[37.065798945547414, 37.04949826116057, 37.03319757677372], CI_upper=[38.07557777928669, 38.05927709489985, 38.042976410513]
+2025-12-17 23:50:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.57068836241705, 37.55438767803021, 37.53808699364336], CI_lower: [37.065798945547414, 37.04949826116057, 37.03319757677372], CI_upper: [38.07557777928669, 38.05927709489985, 38.042976410513]
+2025-12-17 23:50:11 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 37.065798945547414, 37.04949826116057, 37.03319757677372], upper=[np.float64(37.311284528675834), 38.07557777928669, 38.05927709489985, 38.042976410513]
+2025-12-17 23:50:12 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.63119284067034, 2025: 37.63500727261817, 2026: 37.640937534265504}, values=[37.63119284067034, 37.63500727261817, 37.640937534265504], CI_lower=[37.12837026566093, 37.13218469760876, 37.13811495925609], CI_upper=[38.13401541567975, 38.13782984762758, 38.143760109274915]
+2025-12-17 23:50:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.63119284067034, 37.63500727261817, 37.640937534265504], CI_lower: [37.12837026566093, 37.13218469760876, 37.13811495925609], CI_upper: [38.13401541567975, 38.13782984762758, 38.143760109274915]
+2025-12-17 23:50:12 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 37.12837026566093, 37.13218469760876, 37.13811495925609], upper=[np.float64(37.311284528675834), 38.13401541567975, 38.13782984762758, 38.143760109274915]
+2025-12-17 23:50:13 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.84281641617417, 2025: 36.295367289334536, 2026: 35.604063373059034}, values=[36.84281641617417, 36.295367289334536, 35.604063373059034], CI_lower=[36.58309924119258, 36.03565011435294, 35.34434619807744], CI_upper=[37.10253359115577, 36.55508446431613, 35.86378054804063]
+2025-12-17 23:50:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.84281641617417, 36.295367289334536, 35.604063373059034], CI_lower: [36.58309924119258, 36.03565011435294, 35.34434619807744], CI_upper: [37.10253359115577, 36.55508446431613, 35.86378054804063]
+2025-12-17 23:50:13 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 36.58309924119258, 36.03565011435294, 35.34434619807744], upper=[np.float64(37.311284528675834), 37.10253359115577, 36.55508446431613, 35.86378054804063]
+2025-12-17 23:50:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.566819179968995, 2025: 37.566819179968995, 2026: 37.566819179968995}, values=[37.566819179968995, 37.566819179968995, 37.566819179968995], CI_lower=[37.17864249093791, 37.17864249093791, 37.17864249093791], CI_upper=[37.95499586900008, 37.95499586900008, 37.95499586900008]
+2025-12-17 23:50:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.566819179968995, 37.566819179968995, 37.566819179968995], CI_lower: [37.17864249093791, 37.17864249093791, 37.17864249093791], CI_upper: [37.95499586900008, 37.95499586900008, 37.95499586900008]
+2025-12-17 23:50:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 37.17864249093791, 37.17864249093791, 37.17864249093791], upper=[np.float64(37.311284528675834), 37.95499586900008, 37.95499586900008, 37.95499586900008]
+2025-12-17 23:50:14 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.59992035661327, 2025: 37.59992035661327, 2026: 37.59992035661327}, values=[37.59992035661327, 37.59992035661327, 37.59992035661327], CI_lower=[37.20577264538336, 37.20577264538336, 37.20577264538336], CI_upper=[37.99406806784317, 37.99406806784317, 37.99406806784317]
+2025-12-17 23:50:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.59992035661327, 37.59992035661327, 37.59992035661327], CI_lower: [37.20577264538336, 37.20577264538336, 37.20577264538336], CI_upper: [37.99406806784317, 37.99406806784317, 37.99406806784317]
+2025-12-17 23:50:14 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 37.20577264538336, 37.20577264538336, 37.20577264538336], upper=[np.float64(37.311284528675834), 37.99406806784317, 37.99406806784317, 37.99406806784317]
+2025-12-17 23:50:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.48530617389023, 2025: 37.48530617389023, 2026: 37.48530617389023}, values=[37.48530617389023, 37.48530617389023, 37.48530617389023], CI_lower=[37.110448257198385, 37.110448257198385, 37.110448257198385], CI_upper=[37.860164090582074, 37.860164090582074, 37.860164090582074]
+2025-12-17 23:50:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.48530617389023, 37.48530617389023, 37.48530617389023], CI_lower: [37.110448257198385, 37.110448257198385, 37.110448257198385], CI_upper: [37.860164090582074, 37.860164090582074, 37.860164090582074]
+2025-12-17 23:50:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 37.110448257198385, 37.110448257198385, 37.110448257198385], upper=[np.float64(37.311284528675834), 37.860164090582074, 37.860164090582074, 37.860164090582074]
+2025-12-17 23:50:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.15399128642458, 2025: 37.050563066380505, 2026: 36.98255380833242}, values=[37.15399128642458, 37.050563066380505, 36.98255380833242], CI_lower=[18.90031337849471, 18.79688515845064, 18.728875900402553], CI_upper=[55.40766919435444, 55.304240974310375, 55.23623171626228]
+2025-12-17 23:50:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.15399128642458, 37.050563066380505, 36.98255380833242], CI_lower: [18.90031337849471, 18.79688515845064, 18.728875900402553], CI_upper: [55.40766919435444, 55.304240974310375, 55.23623171626228]
+2025-12-17 23:50:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 18.90031337849471, 18.79688515845064, 18.728875900402553], upper=[np.float64(37.311284528675834), 55.40766919435444, 55.304240974310375, 55.23623171626228]
+2025-12-17 23:50:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.2369885600914, 2025: 37.1626925884786, 2026: 37.0883966168658}, values=[37.2369885600914, 37.1626925884786, 37.0883966168658], CI_lower=[36.849134856585586, 36.77483888497279, 36.70054291335999], CI_upper=[37.62484226359721, 37.55054629198441, 37.47625032037161]
+2025-12-17 23:50:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.2369885600914, 37.1626925884786, 37.0883966168658], CI_lower: [36.849134856585586, 36.77483888497279, 36.70054291335999], CI_upper: [37.62484226359721, 37.55054629198441, 37.47625032037161]
+2025-12-17 23:50:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.311284528675834), 36.849134856585586, 36.77483888497279, 36.70054291335999], upper=[np.float64(37.311284528675834), 37.62484226359721, 37.55054629198441, 37.47625032037161]
+2025-12-17 23:50:18 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-17 23:50:18 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-17 23:54:27 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 19401.05078125, 'mse': 1779137920.0, 'rmse': 42179.82835432122, 'r2': 0.20913799107074738}
+2025-12-17 23:54:27 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-17 23:57:13 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.8097445964813232, 'mse': 74.77423858642578, 'rmse': 8.64720987292582, 'r2': 0.32279524207115173}
+2025-12-17 23:57:14 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 00:01:06 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.129817008972168, 'mse': 625.1825561523438, 'rmse': 25.003650856471815, 'r2': -5.481877326965332}
+2025-12-18 00:01:06 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 00:01:34 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 00:01:35 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 00:01:35 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 00:01:35 [DEBUG] census_eda.main:  Running LLM analysis for state: Minnesota
+2025-12-18 00:01:35 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 00:01:35 [INFO] census_eda.ml: [LLM] State context loaded: Minnesota
+2025-12-18 00:01:35 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [API] Total request: ~2381 tokens (system: ~2200, user: ~181)
+2025-12-18 00:01:35 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:02:05 [DEBUG] census_eda.ml: [API] Received response: 4307 chars
+2025-12-18 00:02:05 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (4307 chars)
+2025-12-18 00:02:06 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [API] Total request: ~2521 tokens (system: ~2200, user: ~321)
+2025-12-18 00:02:06 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [API] Received response: 3601 chars
+2025-12-18 00:02:15 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3601 chars)
+2025-12-18 00:02:15 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [API] Total request: ~2748 tokens (system: ~2200, user: ~548)
+2025-12-18 00:02:15 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [API] Received response: 4571 chars
+2025-12-18 00:02:29 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4571 chars)
+2025-12-18 00:02:29 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [API] Total request: ~2540 tokens (system: ~2200, user: ~340)
+2025-12-18 00:02:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [API] Received response: 4187 chars
+2025-12-18 00:02:44 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4187 chars)
+2025-12-18 00:02:44 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [API] Total request: ~2390 tokens (system: ~2200, user: ~190)
+2025-12-18 00:02:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [API] Received response: 3362 chars
+2025-12-18 00:02:54 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3362 chars)
+2025-12-18 00:02:54 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [LLM] User prompt: 8773 chars (~2193 tokens)
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [API] Total request: ~4393 tokens (system: ~2200, user: ~2193)
+2025-12-18 00:02:54 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [API] Received response: 3369 chars
+2025-12-18 00:03:07 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3369 chars)
+2025-12-18 00:03:07 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [LLM] User prompt: 5298 chars (~1324 tokens)
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [API] Total request: ~3524 tokens (system: ~2200, user: ~1324)
+2025-12-18 00:03:07 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [API] Received response: 3568 chars
+2025-12-18 00:03:17 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3568 chars)
+2025-12-18 00:03:17 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [API] Total request: ~2352 tokens (system: ~2200, user: ~152)
+2025-12-18 00:03:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [API] Received response: 3257 chars
+2025-12-18 00:03:28 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3257 chars)
+2025-12-18 00:03:28 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [LLM] User prompt: 5597 chars (~1399 tokens)
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [API] Total request: ~3599 tokens (system: ~2200, user: ~1399)
+2025-12-18 00:03:28 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [API] Received response: 3795 chars
+2025-12-18 00:03:39 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3795 chars)
+2025-12-18 00:03:39 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [LLM] User prompt: 1827 chars (~456 tokens)
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [API] Total request: ~2656 tokens (system: ~2200, user: ~456)
+2025-12-18 00:03:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [API] Received response: 3915 chars
+2025-12-18 00:03:51 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3915 chars)
+2025-12-18 00:03:51 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Minnesota
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Minnesota
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3914 chars
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~978
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Minnesota
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and medical devices, Financial services and insurance, Advanced manufacturing, Agriculture and food processing, Retail (headquarters)
+  Trends: Steady diversified growth 2011-2023. Healthcare dominance (UnitedHealth). Strong corporate headquarters presence. Innovation economy in Twin Cities. Agriculture remains important. Post-pandemic: strong recovery, remote work benefiting exurbs
+  Income: Above national median (~$84k). Low unemployment historically. High quality of life. Gap between Twin Cities prosperity and rural/Iron Range challenges
+  Dominant Sector: Healthcare and social assistance
+
+DEMOGRAPHIC PROFILE:
+  Trends: Steady growth ~0.6% annually 2011-2023. Slower than national average but consistent. Immigration driving growth in recent years
+  Migration: Modest net domestic migration - attracting from Chicago, coasts; losing some to warmer climates. Strong international immigration (Hmong, Somali, Latino communities). Internal: exurban Twin Cities growth
+  Education: High educational attainment - 4th nationally in bachelor's degrees (~38%). Strong public school system. University of Minnesota anchor
+
+HOUSING MARKET:
+  Market: Moderate cost - Twin Cities median ~$375k (2023), affordable by coastal standards but rising. Rochester expensive due to Mayo. Rural affordable
+  Affordability: Steady increases 2011-2019, pandemic spike 2020-2022. Twin Cities becoming less affordable but still reasonable compared to coasts
+  Challenges: Growing affordability pressure in Twin Cities, Suburban sprawl vs. density debates, Homelessness increasing, Rural housing stock aging
+
+POLITY:
+  Policy: Democratic-Farmer-Labor (DFL) strength in cities, Republican strength in rural areas. Moderate progressive policies. High civic engagement. 'Minnesota nice' consensus-building tradition
+  Housing: Modest state intervention. Affordable housing programs. Recent reforms to allow more density near transit. Rent stabilization in St. Paul (2021)
+  Labor: Worker-friendly - minimum wage $10.85 (2024), paid sick leave in cities, paid family leave (2023), strong union presence in public sector
+
+REGIONAL:
+  Geography: Northern forest and lakes (10,000+ lakes), agricultural south and west, Iron Range (northeast), prairie (southwest). Headwaters of Mississippi River
+  Urban/Rural: 73% urban in Twin Cities and regional centers. 27% rural - agriculture, tourism, declining mining towns
+  Infrastructure: Excellent in Twin Cities (MSP airport, transit). Good road network. Rural broadband expansion ongoing. Aging bridges
+
+HISTORICAL:
+  Events: 2011-2013: Government shutdown (2011), Vikings stadium approved, marriage equality legalized (2013), recovery from recession; 2014-2016: Strong economic growth, Target data breach (2013), Prince death (2016); 2017-2019: #MeToo impacts (Al Franken), strong economy, Minneapolis zoning reform (2019); 2021-2023: George Floyd murder and aftermath (2020), COVID-19, DFL trifecta (2023), progressive legislation wave, paid family leave, legal marijuana
+  Shocks: Target data breach (2013). 3M PFAS litigation. COVID impact on retail headquarters
+  Transitions: Retail headquarters consolidation (mall decline). 3M spinning off healthcare (Solventum 2024). Medical device innovation continuing. Agriculture consolidation
+
+COMPARATIVE:
+  Benchmarks: Top 10 median income. Top 5 educational attainment. Best healthcare outcomes. High quality of life rankings. 17 Fortune 500 companies (5th highest per capita)
+  Peer States: Wisconsin (Great Lakes, manufacturing), Iowa (agriculture, quality of life), Colorado (quality of life, educated workforce)
+  Unique: Fortune 500 concentration exceptional for state size. Healthcare industry dominance (UnitedHealth). Scandinavian heritage. Lake culture. Progressive urban/conservative rural divide. High civic engagement. Strong cooperatives tradition
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Minnesota
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [PROMPT] State context injected (3914 chars)
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8802 chars (~2200 tokens)
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [API] Total request: ~2609 tokens (system: ~2200, user: ~409)
+2025-12-18 00:03:51 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:04:02 [DEBUG] census_eda.ml: [API] Received response: 3976 chars
+2025-12-18 00:04:02 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (3976 chars)
+2025-12-18 00:04:02 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 00:04:02 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 00:04:02 [INFO] census_eda.main: [REPORT] Generated: report_Minnesota_population_20251218_000402.txt
+2025-12-18 00:04:02 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Minnesota!
+2025-12-18 00:04:03 [INFO] census_eda.memory: process_Minnesota_population_1-year:EXIT: 12888.5MB (delta: -3247.2MB)
+2025-12-18 00:04:03 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 00:04:04 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 00:04:05 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 00:04:05 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 00:04:06 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 00:04:07 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 00:04:08 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 00:04:08 [INFO] census_eda.memory: Cleared all caches

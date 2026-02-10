@@ -1,0 +1,1088 @@
+2025-12-18 13:58:14 [INFO] census_eda: Logging context set: state=Rhode Island, survey=housing, scope=1-year
+2025-12-18 13:58:14 [INFO] census_eda: Log file: ./logs/Rhode Island/1-year/housing/1-year_housing_25_12_18_1358.log
+2025-12-18 13:58:14 [INFO] census_eda.main: ======================================================================
+2025-12-18 13:58:14 [INFO] census_eda.main: [HOUSING] Processing Rhode Island (1-year)...
+2025-12-18 13:58:14 [INFO] census_eda.main: ======================================================================
+2025-12-18 13:58:14 [INFO] census_eda.memory: process_Rhode Island_housing_1-year:ENTER: 22541.8MB (delta: -21.9MB)
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Searching for housing files with scope 1-year...
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/housing/1-Year/44/*/*.csv
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12hri.csv
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Housing1Year_2012_2016)
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,385 rows, 235 columns
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_h44.csv
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Housing1Year_2017_2022)
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,395 rows, 235 columns
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14hri.csv
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Housing1Year_2012_2016)
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,348 rows, 235 columns
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13hri.csv
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Housing1Year_2012_2016)
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,328 rows, 235 columns
+2025-12-18 13:58:14 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07hri.csv
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Housing1Year_2007_2011)
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,909 rows, 235 columns
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09hri.csv
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Housing1Year_2007_2011)
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,905 rows, 235 columns
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_h44.csv
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Housing1Year_2017_2022)
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,424 rows, 235 columns
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08hri.csv
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Housing1Year_2007_2011)
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 4,902 rows, 235 columns
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16hri.csv
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Housing1Year_2012_2016)
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,353 rows, 235 columns
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_h44.csv
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Housing1Year_2017_2022)
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,486 rows, 235 columns
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_h44.csv
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Housing1Year_2017_2022)
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,334 rows, 235 columns
+2025-12-18 13:58:15 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_h44.csv
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Housing1Year_2017_2022)
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,597 rows, 235 columns
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_h44.csv
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Housing1Year_2023_Plus)
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,236 rows, 235 columns
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15hri.csv
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Housing1Year_2012_2016)
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,411 rows, 235 columns
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10hri.csv
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Housing1Year_2007_2011)
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,061 rows, 235 columns
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11hri.csv
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Housing1Year_2007_2011)
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,429 rows, 235 columns
+2025-12-18 13:58:16 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 13:58:17 [VERBOSE] census_eda.processing.loader: Combined into 84,503 total rows, 235 columns
+2025-12-18 13:58:17 [INFO] census_eda.main: Loaded 84,503 records
+2025-12-18 13:58:17 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 84503 valid, 16 unique
+2025-12-18 13:58:17 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 13:58:17 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 13:58:17 [DEBUG] census_eda.feature_engineering: Poverty intensity: Skipped for non-population survey
+2025-12-18 13:58:17 [DEBUG] census_eda.feature_engineering: Created housing quality index from 3 components
+2025-12-18 13:58:17 [DEBUG] census_eda.feature_engineering: Created dependency ratio features
+2025-12-18 13:58:17 [DEBUG] census_eda.feature_engineering: Created SNAP eligibility proxy features
+2025-12-18 13:58:17 [DEBUG] census_eda.feature_engineering: Created workers ratio features
+2025-12-18 13:58:17 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 14 features.
+2025-12-18 13:58:17 [DEBUG] census_eda.main: Feature engineering complete: (84503, 254)
+2025-12-18 13:58:18 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 13:58:18 [DEBUG] census_eda.main: Using sample weights from 'Housing_Unit_Weight' column
+2025-12-18 13:58:34 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for HOUSING...
+2025-12-18 13:58:34 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 13:58:34 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(84503, 254)
+2025-12-18 13:58:34 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 13:58:34 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 84503
+2025-12-18 13:58:34 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 13:58:35 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(84503, 254)
+2025-12-18 13:58:35 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(4909), np.int64(2008): np.int64(4902), np.int64(2009): np.int64(4905), np.int64(2010): np.int64(5061), np.int64(2011): np.int64(5429), np.int64(2012): np.int64(5385), np.int64(2013): np.int64(5328), np.int64(2014): np.int64(5348), np.int64(2015): np.int64(5411), np.int64(2016): np.int64(5353), np.int64(2017): np.int64(5395), np.int64(2018): np.int64(5424), np.int64(2019): np.int64(5486), np.int64(2021): np.int64(5597), np.int64(2022): np.int64(5334), np.int64(2023): np.int64(5236)}
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(84503, 254)
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 250 numeric columns total
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Census_Division', 'Public_Use_Microdata_Area', 'Census_Region', 'State_Code', 'Housing_Adjustment_Factor', 'Income_Adjustment_Factor', 'Housing_Unit_Weight', 'Number_of_Persons', 'Housing_Unit_Type', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Building_Type', 'Year_Structure_Built', 'Bathtub_or_Shower', 'Refrigerator', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Sink_with_Faucet', 'Stove_or_Range']...
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Number_of_Persons', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Taxes']
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Number_of_Persons'
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Column 'Number_of_Persons': 84503 non-null values (zeros excluded if needed)
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 13.00
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Hot_and_Cold_Running_Water'
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Column 'Hot_and_Cold_Running_Water': 69377 non-null values (zeros excluded if needed)
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Running_Water'
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Column 'Running_Water': 46429 non-null values (zeros excluded if needed)
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Value range: 9.00 to 9.00
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Property_Value'
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Column 'Property_Value': 35001 non-null values (zeros excluded if needed)
+2025-12-18 13:58:36 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 4314000.00
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Electricity_Cost_Monthly'
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Column 'Electricity_Cost_Monthly': 66452 non-null values (zeros excluded if needed)
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2900.00
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Fuel_Cost_Monthly'
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Column 'Fuel_Cost_Monthly': 52556 non-null values (zeros excluded if needed)
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 6400.00
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Gas_Cost_Monthly'
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Column 'Gas_Cost_Monthly': 58768 non-null values (zeros excluded if needed)
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1500.00
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'House_Heating_Fuel'
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Column 'House_Heating_Fuel': 68160 non-null values (zeros excluded if needed)
+2025-12-18 13:58:39 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 9.00
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Insurance_Cost_Yearly'
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Column 'Insurance_Cost_Yearly': 41674 non-null values (zeros excluded if needed)
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 9700.00
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Water_Cost_Yearly'
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Column 'Water_Cost_Yearly': 59676 non-null values (zeros excluded if needed)
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 4200.00
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Mobile_Home_Costs_Monthly'
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Column 'Mobile_Home_Costs_Monthly': 509 non-null values (zeros excluded if needed)
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Value range: 40.00 to 9800.00
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'First_Mortgage_Includes_Taxes'
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Column 'First_Mortgage_Includes_Taxes': 30366 non-null values (zeros excluded if needed)
+2025-12-18 13:58:42 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 2.00
+2025-12-18 13:58:46 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 13:59:09 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 13:59:09 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 13:59:09 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 13:59:11 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 13:59:11 [DEBUG] census_eda.memory: Skipping sampling: 28672MB available (>16GB)
+2025-12-18 13:59:11 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 84503 rows
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(84503, 254)
+2025-12-18 13:59:24 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Number_of_Persons', 'Number_of_Bedrooms', 'Number_of_Rooms', 'Hot_and_Cold_Running_Water', 'Running_Water', 'Property_Value', 'Vehicles_Available', 'Condo_Fee_Monthly', 'Electricity_Cost_Monthly', 'Fuel_Cost_Monthly', 'Gas_Cost_Monthly', 'House_Heating_Fuel', 'Insurance_Cost_Yearly', 'Water_Cost_Yearly', 'Mobile_Home_Costs_Monthly', 'First_Mortgage_Includes_Insurance']
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Persons': 84503 non-null values
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 13.00
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Bedrooms': 55564 non-null values
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 9.00
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Number_of_Rooms': 55564 non-null values
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 19.00
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hot_and_Cold_Running_Water': 69377 non-null values
+2025-12-18 13:59:24 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Running_Water': 46429 non-null values
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Data range: 9.00 to 9.00
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Property_Value': 35001 non-null values
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 4314000.00
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Vehicles_Available': 68160 non-null values
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 6.00
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Condo_Fee_Monthly': 3107 non-null values
+2025-12-18 13:59:27 [VERBOSE] census_eda.visualization.statistical: Data range: 20.00 to 1700.00
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Electricity_Cost_Monthly': 66452 non-null values
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2900.00
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Fuel_Cost_Monthly': 52556 non-null values
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6400.00
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Gas_Cost_Monthly': 58768 non-null values
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1500.00
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Box plot for 'House_Heating_Fuel': 68160 non-null values
+2025-12-18 13:59:29 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 9.00
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Insurance_Cost_Yearly': 41674 non-null values
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 9700.00
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Water_Cost_Yearly': 59676 non-null values
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 4200.00
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Mobile_Home_Costs_Monthly': 509 non-null values
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Data range: 40.00 to 9800.00
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Box plot for 'First_Mortgage_Includes_Insurance': 30366 non-null values
+2025-12-18 13:59:32 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 2.00
+2025-12-18 13:59:35 [INFO] census_eda.visualization.statistical: [MEMORY] Housing: 16/250 columns (excluded flags/binary)
+2025-12-18 13:59:47 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 13:59:58 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 14:00:09 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 14:00:29 [VERBOSE] census_eda.visualization.orchestrator: Creating housing characteristics visualizations...
+2025-12-18 14:00:29 [VERBOSE] census_eda.visualization.housing: Creating housing characteristics visualizations...
+2025-12-18 14:00:29 [VERBOSE] census_eda.visualization.housing: Creating bedrooms/rooms distribution visualization...
+2025-12-18 14:00:30 [VERBOSE] census_eda.visualization.housing: Creating building type trends visualization...
+2025-12-18 14:00:32 [VERBOSE] census_eda.visualization.housing: Creating year built distribution visualization...
+2025-12-18 14:00:33 [VERBOSE] census_eda.visualization.housing: Creating vehicles available visualization...
+2025-12-18 14:00:35 [VERBOSE] census_eda.visualization.orchestrator: Creating household composition visualizations...
+2025-12-18 14:00:35 [VERBOSE] census_eda.visualization.housing: Creating household composition visualizations...
+2025-12-18 14:00:35 [VERBOSE] census_eda.visualization.housing: Creating family type distribution visualization...
+2025-12-18 14:00:37 [VERBOSE] census_eda.visualization.housing: Creating household size visualization...
+2025-12-18 14:00:38 [VERBOSE] census_eda.visualization.housing: Creating children presence visualization...
+2025-12-18 14:00:39 [VERBOSE] census_eda.visualization.housing: Creating multigenerational trends visualization...
+2025-12-18 14:00:41 [VERBOSE] census_eda.visualization.housing: Creating household age composition visualization...
+2025-12-18 14:00:42 [VERBOSE] census_eda.visualization.housing: Creating SNAP participation visualization...
+2025-12-18 14:00:44 [VERBOSE] census_eda.visualization.housing: Creating workers distribution visualization...
+2025-12-18 14:00:45 [VERBOSE] census_eda.visualization.housing: Creating household diversity visualization...
+2025-12-18 14:00:48 [VERBOSE] census_eda.visualization.orchestrator: Creating cost burden visualizations...
+2025-12-18 14:00:48 [VERBOSE] census_eda.visualization.housing: Creating cost burden visualizations...
+2025-12-18 14:00:48 [VERBOSE] census_eda.visualization.housing: Creating rent burden visualization...
+2025-12-18 14:00:49 [VERBOSE] census_eda.visualization.housing: Creating owner cost burden visualization...
+2025-12-18 14:00:50 [VERBOSE] census_eda.visualization.housing: Creating utility costs comparison visualization...
+2025-12-18 14:00:52 [VERBOSE] census_eda.visualization.housing: Creating affordability ECDF visualization...
+2025-12-18 14:00:53 [VERBOSE] census_eda.visualization.housing: Creating burden concentration visualization...
+2025-12-18 14:00:55 [VERBOSE] census_eda.visualization.housing: Creating burden by demographic visualization...
+2025-12-18 14:00:57 [VERBOSE] census_eda.visualization.orchestrator: Creating technology adoption visualizations...
+2025-12-18 14:00:57 [VERBOSE] census_eda.visualization.technology: Creating technology adoption visualizations...
+2025-12-18 14:00:57 [VERBOSE] census_eda.visualization.technology: Creating technology adoption trends for 3 tech columns...
+2025-12-18 14:00:59 [VERBOSE] census_eda.visualization.technology: Creating device ownership pie charts for 2 devices...
+2025-12-18 14:01:01 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 14:01:01 [DEBUG] census_eda.memory: Skipping sampling: 28736MB available (>16GB)
+2025-12-18 14:01:06 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 14:01:06 [DEBUG] census_eda.memory: Skipping sampling: 28523MB available (>16GB)
+2025-12-18 14:01:13 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 14:01:13 [DEBUG] census_eda.memory: Skipping sampling: 28586MB available (>16GB)
+2025-12-18 14:01:20 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 14:01:27 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 14:01:28 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 14:01:29 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Rhode_Island/housing/1-year/figures
+2025-12-18 14:01:31 [DEBUG] census_eda.memory: Skipping sampling: 28619MB available (>16GB)
+2025-12-18 14:01:31 [INFO] census_eda.main: [ML] Running ML pipeline for HOUSING...
+2025-12-18 14:01:31 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 14:01:31 [INFO] census_eda.memory: [ML-START]: 22577.2MB (delta: +35.4MB)
+2025-12-18 14:01:31 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 14:01:31 [INFO] census_eda.main: [ML] Training regression models for target: Property_Value
+2025-12-18 14:01:31 [DEBUG] census_eda.main: [REGRESSION] Property_Value: After zero-filter on target: 25905 samples (was 25905)
+2025-12-18 14:01:31 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-18 14:01:31 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 14:01:31 [INFO] census_eda.ml.regression: [TUNE] Data: 25,905 samples, 10 features
+2025-12-18 14:01:31 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:01:31 [INFO] census_eda.memory: tune_ridge:ENTER: 22577.2MB (delta: +0.0MB)
+2025-12-18 14:01:32 [WARNING] census_eda.memory: Memory usage (22577.9MB) exceeded threshold (16000MB)
+2025-12-18 14:01:33 [INFO] census_eda.memory: tune_ridge:EXIT: 22577.9MB (delta: +0.7MB)
+2025-12-18 14:01:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 14:01:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1102
+2025-12-18 14:01:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:01:33 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 14:01:33 [INFO] census_eda.ml.regression: [TUNE] Data: 25,905 samples, 10 features
+2025-12-18 14:01:33 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:01:33 [INFO] census_eda.memory: tune_lasso:ENTER: 22577.9MB (delta: +0.0MB)
+2025-12-18 14:01:33 [WARNING] census_eda.memory: Memory usage (22577.9MB) exceeded threshold (16000MB)
+2025-12-18 14:01:34 [INFO] census_eda.memory: tune_lasso:EXIT: 22577.9MB (delta: +0.1MB)
+2025-12-18 14:01:34 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 14:01:34 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1102
+2025-12-18 14:01:34 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:01:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 14:01:35 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,905 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 14:01:35 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 14:01:35 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:01:35 [INFO] census_eda.memory: tune_random_forest:ENTER: 22577.9MB (delta: +0.0MB)
+2025-12-18 14:01:59 [WARNING] census_eda.memory: Memory usage (22578.4MB) exceeded threshold (16000MB)
+2025-12-18 14:02:01 [INFO] census_eda.memory: tune_random_forest:EXIT: 22578.4MB (delta: +0.5MB)
+2025-12-18 14:02:01 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 14:02:01 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0778
+2025-12-18 14:02:01 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:02:03 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 14:02:03 [INFO] census_eda.memory: [ML-TUNE] Limiting samples: 25,905 -> 25,000 (120 total fits from 24 combos × 5 folds)
+2025-12-18 14:02:03 [INFO] census_eda.ml.regression: [TUNE] Data: 25,000 samples, 10 features
+2025-12-18 14:02:03 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:02:03 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 22578.5MB (delta: +0.0MB)
+2025-12-18 14:02:16 [WARNING] census_eda.memory: Memory usage (22578.5MB) exceeded threshold (16000MB)
+2025-12-18 14:02:17 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 22578.5MB (delta: +0.0MB)
+2025-12-18 14:02:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 14:02:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1340
+2025-12-18 14:02:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:02:23 [INFO] census_eda.main: [ML] Training regression models for target: Gross_Rent
+2025-12-18 14:02:23 [DEBUG] census_eda.main: [REGRESSION] Gross_Rent: After zero-filter on target: 12155 samples (was 12155)
+2025-12-18 14:02:23 [DEBUG] census_eda.main: [ML] Using sample weights from 'Housing_Unit_Weight'
+2025-12-18 14:02:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 14:02:23 [INFO] census_eda.ml.regression: [TUNE] Data: 12,155 samples, 10 features
+2025-12-18 14:02:23 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:02:23 [INFO] census_eda.memory: tune_ridge:ENTER: 22578.5MB (delta: +0.0MB)
+2025-12-18 14:02:23 [WARNING] census_eda.memory: Memory usage (22578.5MB) exceeded threshold (16000MB)
+2025-12-18 14:02:24 [INFO] census_eda.memory: tune_ridge:EXIT: 22578.5MB (delta: +0.0MB)
+2025-12-18 14:02:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 14:02:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1951
+2025-12-18 14:02:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:02:24 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 14:02:24 [INFO] census_eda.ml.regression: [TUNE] Data: 12,155 samples, 10 features
+2025-12-18 14:02:24 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 14:02:24 [INFO] census_eda.memory: tune_lasso:ENTER: 22578.5MB (delta: +0.0MB)
+2025-12-18 14:02:24 [WARNING] census_eda.memory: Memory usage (22578.5MB) exceeded threshold (16000MB)
+2025-12-18 14:02:25 [INFO] census_eda.memory: tune_lasso:EXIT: 22578.5MB (delta: +0.0MB)
+2025-12-18 14:02:25 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 1.0}
+2025-12-18 14:02:25 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1950
+2025-12-18 14:02:25 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 14:02:25 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 14:02:25 [INFO] census_eda.ml.regression: [TUNE] Data: 12,155 samples, 10 features
+2025-12-18 14:02:25 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:02:25 [INFO] census_eda.memory: tune_random_forest:ENTER: 22578.5MB (delta: +0.0MB)
+2025-12-18 14:02:38 [WARNING] census_eda.memory: Memory usage (22578.6MB) exceeded threshold (16000MB)
+2025-12-18 14:02:39 [INFO] census_eda.memory: tune_random_forest:EXIT: 22578.6MB (delta: +0.1MB)
+2025-12-18 14:02:39 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 14:02:39 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2219
+2025-12-18 14:02:39 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:02:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 14:02:41 [INFO] census_eda.ml.regression: [TUNE] Data: 12,155 samples, 10 features
+2025-12-18 14:02:41 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 14:02:41 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 22578.6MB (delta: +0.0MB)
+2025-12-18 14:02:48 [WARNING] census_eda.memory: Memory usage (22578.6MB) exceeded threshold (16000MB)
+2025-12-18 14:02:49 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 22578.6MB (delta: +0.0MB)
+2025-12-18 14:02:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 14:02:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.2741
+2025-12-18 14:02:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 14:02:52 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,431 -> 1,000
+2025-12-18 14:02:52 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,431 -> 1,000
+2025-12-18 14:02:52 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 22578.6MB (delta: +0.0MB)
+2025-12-18 14:02:52 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-18 14:02:53 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 22578.6MB (delta: +0.0MB)
+2025-12-18 14:02:53 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Number_of_Bedrooms
+2025-12-18 14:02:53 [INFO] census_eda.main: [SHAP] Generated explanation for gradient_boosting
+2025-12-18 14:02:53 [INFO] census_eda.main: [ML] Regression complete. 2 models trained.
+2025-12-18 14:02:53 [INFO] census_eda.memory: [PRE-CLUSTERING]: 22578.6MB (delta: +0.0MB)
+2025-12-18 14:02:53 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 14:02:53 [INFO] census_eda.main: [CLUSTERING] KMeans on 41,645 samples...
+2025-12-18 14:03:02 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 14:03:02 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 41,645 samples (will sample if needed)...
+2025-12-18 14:03:02 [INFO] census_eda.memory: [MEMORY] O(n²) safe sample: 41,645 -> 15,000 (distance matrix would be 12.9GB)
+2025-12-18 14:03:02 [INFO] census_eda.ml.clustering: [HIERARCHICAL] Sampled 41,645 -> 15,000 for O(n²) distance matrix
+2025-12-18 14:03:07 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 14:03:07 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 14:03:07 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 14:03:07 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 2 targets: ['Property_Value', 'Gross_Rent']
+2025-12-18 14:03:07 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Property_Value
+2025-12-18 14:03:07 [DEBUG] census_eda.main: [DEBUG-TS] Target: Property_Value, Forecasts: {2024: 612175.9399414062, 2025: 716669.5825195312, 2026: 844445.2622070312}, Values: [612175.9399414062, 716669.5825195312, 844445.2622070312]
+2025-12-18 14:03:07 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Gross_Rent
+2025-12-18 14:03:07 [DEBUG] census_eda.main: [DEBUG-TS] Target: Gross_Rent, Forecasts: {2024: 1497.319090604782, 2025: 1620.758868932724, 2026: 1761.6446120738983}, Values: [1497.319090604782, 1620.758868932724, 1761.6446120738983]
+2025-12-18 14:03:07 [INFO] census_eda.main: [ML] All ML models complete. Total: 5 result keys.
+2025-12-18 14:03:17 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Gross_Rent
+2025-12-18 14:03:20 [WARNING] census_eda.main:  Clustering viz failed for hierarchical: 'c' argument has 15000 elements, which is inconsistent with 'x' and 'y' with size 41645.
+2025-12-18 14:03:20 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 2 time series results: ['Property_Value_timeseries', 'Gross_Rent_timeseries']
+2025-12-18 14:03:20 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Property_Value
+2025-12-18 14:03:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 523534.9453902617, 2025: 549473.7707199454, 2026: 575412.5960496217}, values=[523534.9453902617, 549473.7707199454, 575412.5960496217], CI_lower=[440053.581376172, 465992.40670585574, 491931.232035532], CI_upper=[607016.3094043514, 632955.1347340351, 658893.9600637114]
+2025-12-18 14:03:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [523534.9453902617, 549473.7707199454, 575412.5960496217], CI_lower: [440053.581376172, 465992.40670585574, 491931.232035532], CI_upper: [607016.3094043514, 632955.1347340351, 658893.9600637114]
+2025-12-18 14:03:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 440053.581376172, 465992.40670585574, 491931.232035532], upper=[np.float64(511094.48183041724), 607016.3094043514, 632955.1347340351, 658893.9600637114]
+2025-12-18 14:03:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 485373.666018486, 2025: 497967.49403619766, 2026: 509069.29167175293}, values=[485373.666018486, 497967.49403619766, 509069.29167175293], CI_lower=[409200.7848995572, 421794.6129172688, 432896.4105528241], CI_upper=[561546.5471374148, 574140.3751551264, 585242.1727906817]
+2025-12-18 14:03:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [485373.666018486, 497967.49403619766, 509069.29167175293], CI_lower: [409200.7848995572, 421794.6129172688, 432896.4105528241], CI_upper: [561546.5471374148, 574140.3751551264, 585242.1727906817]
+2025-12-18 14:03:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 409200.7848995572, 421794.6129172688, 432896.4105528241], upper=[np.float64(511094.48183041724), 561546.5471374148, 574140.3751551264, 585242.1727906817]
+2025-12-18 14:03:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 612175.9399414062, 2025: 716669.5825195312, 2026: 844445.2622070312}, values=[612175.9399414062, 716669.5825195312, 844445.2622070312], CI_lower=[590505.2174031773, 694998.8599813023, 822774.5396688023], CI_upper=[633846.6624796352, 738340.3050577602, 866115.9847452602]
+2025-12-18 14:03:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [612175.9399414062, 716669.5825195312, 844445.2622070312], CI_lower: [590505.2174031773, 694998.8599813023, 822774.5396688023], CI_upper: [633846.6624796352, 738340.3050577602, 866115.9847452602]
+2025-12-18 14:03:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 590505.2174031773, 694998.8599813023, 822774.5396688023], upper=[np.float64(511094.48183041724), 633846.6624796352, 738340.3050577602, 866115.9847452602]
+2025-12-18 14:03:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 472364.1205213883, 2025: 472364.1205213883, 2026: 472364.1205213883}, values=[472364.1205213883, 472364.1205213883, 472364.1205213883], CI_lower=[331019.58962144225, 331019.58962144225, 331019.58962144225], CI_upper=[613708.6514213344, 613708.6514213344, 613708.6514213344]
+2025-12-18 14:03:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [472364.1205213883, 472364.1205213883, 472364.1205213883], CI_lower: [331019.58962144225, 331019.58962144225, 331019.58962144225], CI_upper: [613708.6514213344, 613708.6514213344, 613708.6514213344]
+2025-12-18 14:03:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 331019.58962144225, 331019.58962144225, 331019.58962144225], upper=[np.float64(511094.48183041724), 613708.6514213344, 613708.6514213344, 613708.6514213344]
+2025-12-18 14:03:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 422514.5318455916, 2025: 422514.5318455916, 2026: 422514.5318455916}, values=[422514.5318455916, 422514.5318455916, 422514.5318455916], CI_lower=[322403.3197162871, 322403.3197162871, 322403.3197162871], CI_upper=[522625.74397489615, 522625.74397489615, 522625.74397489615]
+2025-12-18 14:03:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [422514.5318455916, 422514.5318455916, 422514.5318455916], CI_lower: [322403.3197162871, 322403.3197162871, 322403.3197162871], CI_upper: [522625.74397489615, 522625.74397489615, 522625.74397489615]
+2025-12-18 14:03:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 322403.3197162871, 322403.3197162871, 322403.3197162871], upper=[np.float64(511094.48183041724), 522625.74397489615, 522625.74397489615, 522625.74397489615]
+2025-12-18 14:03:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 486229.89385608985, 2025: 486229.89385608985, 2026: 486229.89385608985}, values=[486229.89385608985, 486229.89385608985, 486229.89385608985], CI_lower=[338623.8180995938, 338623.8180995938, 338623.8180995938], CI_upper=[633835.9696125858, 633835.9696125858, 633835.9696125858]
+2025-12-18 14:03:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [486229.89385608985, 486229.89385608985, 486229.89385608985], CI_lower: [338623.8180995938, 338623.8180995938, 338623.8180995938], CI_upper: [633835.9696125858, 633835.9696125858, 633835.9696125858]
+2025-12-18 14:03:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 338623.8180995938, 338623.8180995938, 338623.8180995938], upper=[np.float64(511094.48183041724), 633835.9696125858, 633835.9696125858, 633835.9696125858]
+2025-12-18 14:03:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 511266.5401825189, 2025: 511438.5985346188, 2026: 511610.65688671696}, values=[511266.5401825189, 511438.5985346188, 511610.65688671696], CI_lower=[355065.0874895884, 355237.1458416884, 355409.2041937865], CI_upper=[667467.9928754494, 667640.0512275492, 667812.1095796474]
+2025-12-18 14:03:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [511266.5401825189, 511438.5985346188, 511610.65688671696], CI_lower: [355065.0874895884, 355237.1458416884, 355409.2041937865], CI_upper: [667467.9928754494, 667640.0512275492, 667812.1095796474]
+2025-12-18 14:03:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 355065.0874895884, 355237.1458416884, 355409.2041937865], upper=[np.float64(511094.48183041724), 667467.9928754494, 667640.0512275492, 667812.1095796474]
+2025-12-18 14:03:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 516142.31518350914, 2025: 544908.3986751196, 2026: 573674.4821667301}, values=[516142.31518350914, 544908.3986751196, 573674.4821667301], CI_lower=[390190.7709659663, 418956.85445757676, 447722.93794918724], CI_upper=[642093.859401052, 670859.9428926625, 699626.026384273]
+2025-12-18 14:03:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [516142.31518350914, 544908.3986751196, 573674.4821667301], CI_lower: [390190.7709659663, 418956.85445757676, 447722.93794918724], CI_upper: [642093.859401052, 670859.9428926625, 699626.026384273]
+2025-12-18 14:03:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(511094.48183041724), 390190.7709659663, 418956.85445757676, 447722.93794918724], upper=[np.float64(511094.48183041724), 642093.859401052, 670859.9428926625, 699626.026384273]
+2025-12-18 14:03:26 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Gross_Rent
+2025-12-18 14:03:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 1291.132688923186, 2025: 1321.0237875698513, 2026: 1350.9148862165166}, values=[1291.132688923186, 1321.0237875698513, 1350.9148862165166], CI_lower=[1174.589093193375, 1204.4801918400403, 1234.3712904867057], CI_upper=[1407.6762846529969, 1437.5673832996622, 1467.4584819463275]
+2025-12-18 14:03:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1291.132688923186, 1321.0237875698513, 1350.9148862165166], CI_lower: [1174.589093193375, 1204.4801918400403, 1234.3712904867057], CI_upper: [1407.6762846529969, 1437.5673832996622, 1467.4584819463275]
+2025-12-18 14:03:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1174.589093193375, 1204.4801918400403, 1234.3712904867057], upper=[np.float64(1399.8788410886743), 1407.6762846529969, 1437.5673832996622, 1467.4584819463275]
+2025-12-18 14:03:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 1429.1898256801069, 2025: 1504.9789379443973, 2026: 1585.595881121233}, values=[1429.1898256801069, 1504.9789379443973, 1585.595881121233], CI_lower=[1376.8592577256557, 1452.648369989946, 1533.2653131667819], CI_upper=[1481.520393634558, 1557.3095058988486, 1637.9264490756843]
+2025-12-18 14:03:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1429.1898256801069, 1504.9789379443973, 1585.595881121233], CI_lower: [1376.8592577256557, 1452.648369989946, 1533.2653131667819], CI_upper: [1481.520393634558, 1557.3095058988486, 1637.9264490756843]
+2025-12-18 14:03:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1376.8592577256557, 1452.648369989946, 1533.2653131667819], upper=[np.float64(1399.8788410886743), 1481.520393634558, 1557.3095058988486, 1637.9264490756843]
+2025-12-18 14:03:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 1497.319090604782, 2025: 1620.758868932724, 2026: 1761.6446120738983}, values=[1497.319090604782, 1620.758868932724, 1761.6446120738983], CI_lower=[1460.532562212663, 1583.9723405406048, 1724.8580836817791], CI_upper=[1534.1056189969013, 1657.5453973248432, 1798.4311404660175]
+2025-12-18 14:03:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1497.319090604782, 1620.758868932724, 1761.6446120738983], CI_lower: [1460.532562212663, 1583.9723405406048, 1724.8580836817791], CI_upper: [1534.1056189969013, 1657.5453973248432, 1798.4311404660175]
+2025-12-18 14:03:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1460.532562212663, 1583.9723405406048, 1724.8580836817791], upper=[np.float64(1399.8788410886743), 1534.1056189969013, 1657.5453973248432, 1798.4311404660175]
+2025-12-18 14:03:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 1295.8321512230598, 2025: 1295.8321512230598, 2026: 1295.8321512230598}, values=[1295.8321512230598, 1295.8321512230598, 1295.8321512230598], CI_lower=[1223.103031941667, 1223.103031941667, 1223.103031941667], CI_upper=[1368.5612705044525, 1368.5612705044525, 1368.5612705044525]
+2025-12-18 14:03:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1295.8321512230598, 1295.8321512230598, 1295.8321512230598], CI_lower: [1223.103031941667, 1223.103031941667, 1223.103031941667], CI_upper: [1368.5612705044525, 1368.5612705044525, 1368.5612705044525]
+2025-12-18 14:03:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1223.103031941667, 1223.103031941667, 1223.103031941667], upper=[np.float64(1399.8788410886743), 1368.5612705044525, 1368.5612705044525, 1368.5612705044525]
+2025-12-18 14:03:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 1221.32769914823, 2025: 1221.32769914823, 2026: 1221.32769914823}, values=[1221.32769914823, 1221.32769914823, 1221.32769914823], CI_lower=[1119.328609230334, 1119.328609230334, 1119.328609230334], CI_upper=[1323.3267890661261, 1323.3267890661261, 1323.3267890661261]
+2025-12-18 14:03:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1221.32769914823, 1221.32769914823, 1221.32769914823], CI_lower: [1119.328609230334, 1119.328609230334, 1119.328609230334], CI_upper: [1323.3267890661261, 1323.3267890661261, 1323.3267890661261]
+2025-12-18 14:03:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1119.328609230334, 1119.328609230334, 1119.328609230334], upper=[np.float64(1399.8788410886743), 1323.3267890661261, 1323.3267890661261, 1323.3267890661261]
+2025-12-18 14:03:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 1332.4992024474504, 2025: 1332.4992024474504, 2026: 1332.4992024474504}, values=[1332.4992024474504, 1332.4992024474504, 1332.4992024474504], CI_lower=[1278.4792553460516, 1278.4792553460516, 1278.4792553460516], CI_upper=[1386.5191495488493, 1386.5191495488493, 1386.5191495488493]
+2025-12-18 14:03:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1332.4992024474504, 1332.4992024474504, 1332.4992024474504], CI_lower: [1278.4792553460516, 1278.4792553460516, 1278.4792553460516], CI_upper: [1386.5191495488493, 1386.5191495488493, 1386.5191495488493]
+2025-12-18 14:03:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1278.4792553460516, 1278.4792553460516, 1278.4792553460516], upper=[np.float64(1399.8788410886743), 1386.5191495488493, 1386.5191495488493, 1386.5191495488493]
+2025-12-18 14:03:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 1485.777255447644, 2025: 1565.6471399347683, 2026: 1639.9115893497242}, values=[1485.777255447644, 1565.6471399347683, 1639.9115893497242], CI_lower=[1085.8980332310543, 1165.767917718179, 1240.0323671331348], CI_upper=[1885.6564776642335, 1965.5263621513577, 2039.7908115663136]
+2025-12-18 14:03:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1485.777255447644, 1565.6471399347683, 1639.9115893497242], CI_lower: [1085.8980332310543, 1165.767917718179, 1240.0323671331348], CI_upper: [1885.6564776642335, 1965.5263621513577, 2039.7908115663136]
+2025-12-18 14:03:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1085.8980332310543, 1165.767917718179, 1240.0323671331348], upper=[np.float64(1399.8788410886743), 1885.6564776642335, 1965.5263621513577, 2039.7908115663136]
+2025-12-18 14:03:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 1494.1154318713911, 2025: 1588.3520225831994, 2026: 1682.5886132950075}, values=[1494.1154318713911, 1588.3520225831994, 1682.5886132950075], CI_lower=[1434.2374162841168, 1528.474006995925, 1622.710597707733], CI_upper=[1553.9934474586655, 1648.2300381704738, 1742.4666288822818]
+2025-12-18 14:03:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [1494.1154318713911, 1588.3520225831994, 1682.5886132950075], CI_lower: [1434.2374162841168, 1528.474006995925, 1622.710597707733], CI_upper: [1553.9934474586655, 1648.2300381704738, 1742.4666288822818]
+2025-12-18 14:03:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(1399.8788410886743), 1434.2374162841168, 1528.474006995925, 1622.710597707733], upper=[np.float64(1399.8788410886743), 1553.9934474586655, 1648.2300381704738, 1742.4666288822818]
+2025-12-18 14:03:33 [INFO] census_eda.main: [DL] Running deep learning pipeline for HOUSING...
+2025-12-18 14:03:33 [INFO] census_eda.main: [DL] Training property_valuation...
+2025-12-18 14:04:00 [INFO] census_eda.main: [DL] ✓ property_valuation complete: multi_output, Test metrics: {'mae': 40787.953125, 'mse': 27114631168.0, 'rmse': 164665.2093430789, 'r2': -0.15847596526145935}
+2025-12-18 14:04:02 [INFO] census_eda.main: [DL] Training affordability_analysis...
+2025-12-18 14:04:21 [INFO] census_eda.main: [DL] ✓ affordability_analysis complete: multi_output, Test metrics: {'mae': 7.210233688354492, 'mse': 220.35203552246094, 'rmse': 14.844259345701992, 'r2': 0.05822727084159851}
+2025-12-18 14:04:23 [INFO] census_eda.main: [DL] Training housing_quality...
+2025-12-18 14:04:42 [INFO] census_eda.main: [DL] ✓ housing_quality complete: multi_output, Test metrics: {'mae': 1.9895519018173218, 'mse': 44.10003662109375, 'rmse': 6.640785843640326, 'r2': 0.8404787182807922}
+2025-12-18 14:04:43 [INFO] census_eda.main: [DL] Training cost_prediction...
+2025-12-18 14:05:03 [INFO] census_eda.main: [DL] ✓ cost_prediction complete: multi_output, Test metrics: {'mae': 275.7067565917969, 'mse': 640651.875, 'rmse': 800.4073181824364, 'r2': 0.31560614705085754}
+2025-12-18 14:05:04 [INFO] census_eda.main: [DL] Training occupancy_prediction...
+2025-12-18 14:05:24 [INFO] census_eda.main: [DL] ✓ occupancy_prediction complete: multi_output, Test metrics: {'mae': 0.2897147536277771, 'mse': 0.32723382115364075, 'rmse': 0.5720435483017362, 'r2': 0.2426297962665558}
+2025-12-18 14:05:25 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 5 tasks...
+2025-12-18 14:05:40 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Rhode_Island/housing/1-year/figures/ml/deep_learning
+2025-12-18 14:05:42 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 14:05:42 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 14:05:42 [DEBUG] census_eda.main:  Running LLM analysis for state: Rhode Island
+2025-12-18 14:05:42 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 14:05:42 [INFO] census_eda.ml: [LLM] State context loaded: Rhode Island
+2025-12-18 14:05:42 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [LLM] User prompt: 726 chars (~181 tokens)
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [API] Total request: ~2544 tokens (system: ~2363, user: ~181)
+2025-12-18 14:05:42 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [API] Received response: 3568 chars
+2025-12-18 14:05:54 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3568 chars)
+2025-12-18 14:05:54 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [LLM] User prompt: 1268 chars (~317 tokens)
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [API] Total request: ~2680 tokens (system: ~2363, user: ~317)
+2025-12-18 14:05:54 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [API] Received response: 3424 chars
+2025-12-18 14:06:03 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3424 chars)
+2025-12-18 14:06:03 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [LLM] User prompt: 1689 chars (~422 tokens)
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [API] Total request: ~2785 tokens (system: ~2363, user: ~422)
+2025-12-18 14:06:03 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [API] Received response: 4759 chars
+2025-12-18 14:06:17 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4759 chars)
+2025-12-18 14:06:17 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [LLM] User prompt: 1469 chars (~367 tokens)
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [API] Total request: ~2730 tokens (system: ~2363, user: ~367)
+2025-12-18 14:06:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [API] Received response: 4068 chars
+2025-12-18 14:06:29 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (4068 chars)
+2025-12-18 14:06:29 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [LLM] User prompt: 47 chars (~11 tokens)
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [API] Total request: ~2374 tokens (system: ~2363, user: ~11)
+2025-12-18 14:06:29 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [API] Received response: 5357 chars
+2025-12-18 14:06:45 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (5357 chars)
+2025-12-18 14:06:45 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [LLM] User prompt: 11110 chars (~2777 tokens)
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [API] Total request: ~5140 tokens (system: ~2363, user: ~2777)
+2025-12-18 14:06:45 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [API] Received response: 3053 chars
+2025-12-18 14:06:56 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3053 chars)
+2025-12-18 14:06:56 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [LLM] User prompt: 6696 chars (~1674 tokens)
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [API] Total request: ~4037 tokens (system: ~2363, user: ~1674)
+2025-12-18 14:06:56 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [API] Received response: 3632 chars
+2025-12-18 14:07:07 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3632 chars)
+2025-12-18 14:07:07 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [API] Total request: ~2515 tokens (system: ~2363, user: ~152)
+2025-12-18 14:07:07 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [API] Received response: 4249 chars
+2025-12-18 14:07:20 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (4249 chars)
+2025-12-18 14:07:20 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [LLM] User prompt: 6399 chars (~1599 tokens)
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [API] Total request: ~3962 tokens (system: ~2363, user: ~1599)
+2025-12-18 14:07:20 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [API] Received response: 3457 chars
+2025-12-18 14:07:31 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3457 chars)
+2025-12-18 14:07:31 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [LLM] User prompt: 2522 chars (~630 tokens)
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [API] Total request: ~2993 tokens (system: ~2363, user: ~630)
+2025-12-18 14:07:31 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [API] Received response: 4213 chars
+2025-12-18 14:07:44 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4213 chars)
+2025-12-18 14:07:44 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [LLM] User prompt: 1046 chars (~261 tokens)
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Rhode Island
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Rhode Island
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 4567 chars
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1141
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Rhode Island
+
+ECONOMIC PROFILE:
+  Industries: Healthcare and life sciences, Education and research (Brown, RISD), Financial services and insurance, Tourism and hospitality, Defense manufacturing (Electric Boat, Raytheon)
+  Trends: Slow recovery from 2008 recession. Jewelry/textile manufacturing long dead. Healthcare and education growth. Defense sector stable. Post-pandemic: gradual recovery, remote work from Boston boosting housing demand
+  Income: Median household income slightly above national average ($74k). Income inequality present. Providence lower income, wealthy coastal towns (Newport) very high income
+  Dominant Sector: Education and healthcare services
+
+DEMOGRAPHIC PROFILE:
+  Trends: Very slow growth 2011-2023 (~0.4% annually). Growth primarily from international immigration, offsetting modest domestic outmigration. Smallest state by area, second-densest (after NJ)
+  Migration: Modest outmigration to Sun Belt (FL, NC). Some in-migration from Boston metro (lower costs, remote work). Strong international immigration from Central/South America, Asia. Internal concentration in Providence
+  Education: High educational attainment (36% bachelor's or higher). World-class universities (Brown, RISD, Providence College). Providence-rural education gap less extreme due to small geography
+
+HOUSING MARKET:
+  Market: Expensive for size. Median home ~$440k (2023). Coastal areas very expensive (Newport $600k+), Providence more affordable ($350k). Limited land constrains supply
+  Affordability: Chronic affordability challenges. Rapid appreciation 2011-2019 (40%), accelerated 2020-2023 (30%+). Remote work from Boston driving demand. Housing burden high for lower-income residents
+  Challenges: Severe affordability crisis, Limited land for new construction, Coastal flood risk and climate change, Aging housing stock, Historic preservation vs. development tensions, Student housing pressures in Providence
+
+POLITY:
+  Policy: Solidly Democratic, progressive. High taxes for social programs. Pro-labor (strong union presence). Fiscal challenges due to pension obligations. Progressive social policies
+  Housing: Limited state intervention. Some affordable housing mandates. Providence inclusionary zoning attempts. Coastal zoning restrictions. Housing production act debated
+  Labor: $14 minimum wage (rising to $15), strong worker protections, prevailing wage requirements, very strong public sector unions, paid family leave
+
+REGIONAL:
+  Geography: Smallest state (1,214 sq mi). Narragansett Bay dominates. Coastal (Atlantic Ocean), rolling hills. 400+ miles coastline (bays, inlets). No significant mountains
+  Urban/Rural: 91% urban, essentially no rural. Providence metro (60%), other cities (Newport, Warwick, Pawtucket, Cranston), coastal towns. Most densely developed state after NJ
+  Infrastructure: Limited highway network due to size. T.F. Green Airport. Port of Providence. RIPTA public transit (limited). Aging infrastructure (bridges). High-speed internet widely available
+
+HISTORICAL:
+  Events: 2011-2013: Pension crisis and Raimondo reforms, slow recovery from 2008, 38 Studios bankruptcy scandal, Central Falls bankruptcy; 2014-2016: Medicaid expansion, free community college launched, economic recovery gradual, tourism sector rebounds; 2017-2019: I-195 redevelopment corridor (Providence), marijuana debates, housing costs rising, McKee becomes governor; 2020-2023: COVID-19 hits hard (density), tourism collapsed then recovered, remote work influx from Boston, housing spike, marijuana legalization, abortion protections enacted
+  Shocks: 38 Studios video game company bankruptcy 2012 (major scandal), COVID-19 tourism collapse 2020
+  Transitions: Jewelry/textile manufacturing long gone. Shift to healthcare, education, tourism, defense. I-195 land opening new development. CVS Health headquarters remains
+
+COMPARATIVE:
+  Benchmarks: Small GDP (#45) due to tiny size. Median income slightly above national average. Very expensive housing for size. High population density (#2). Above-average educational attainment. Moderate poverty rate
+  Peer States: Delaware (small size, corporate headquarters), Connecticut (New England, wealth pockets), Massachusetts (regional economy integration)
+  Unique: Smallest state geography. Ocean State identity (coastal economy). Second-densest state. Catholic/Portuguese cultural heritage strong. Essentially part of greater Boston economy. Kennedy family history. RISD art school prominence. No significant rural areas. Historic preservation vs. development tensions
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Rhode Island
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (4567 chars)
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 9455 chars (~2363 tokens)
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [API] Total request: ~2624 tokens (system: ~2363, user: ~261)
+2025-12-18 14:07:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 14:07:58 [DEBUG] census_eda.ml: [API] Received response: 4743 chars
+2025-12-18 14:07:58 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4743 chars)
+2025-12-18 14:07:58 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 14:07:58 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 14:07:59 [INFO] census_eda.main: [REPORT] Generated: report_Rhode_Island_housing_20251218_140758.txt
+2025-12-18 14:07:59 [INFO] census_eda.main: SUCCESS: HOUSING (1-year) pipeline complete for Rhode Island!
+2025-12-18 14:08:00 [INFO] census_eda.memory: process_Rhode Island_housing_1-year:EXIT: 11644.3MB (delta: -10934.3MB)
+2025-12-18 14:08:01 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 14:08:02 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 14:08:05 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 14:08:06 [INFO] census_eda.memory: Cleared all caches

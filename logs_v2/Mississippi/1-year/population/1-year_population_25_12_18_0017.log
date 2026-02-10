@@ -1,0 +1,1282 @@
+2025-12-18 00:17:53 [INFO] census_eda: Logging context set: state=Mississippi, survey=population, scope=1-year
+2025-12-18 00:17:53 [INFO] census_eda: Log file: ./logs/Mississippi/1-year/population/1-year_population_25_12_18_0017.log
+2025-12-18 00:17:53 [INFO] census_eda.main: ======================================================================
+2025-12-18 00:17:53 [INFO] census_eda.main: [POPULATION] Processing Mississippi (1-year)...
+2025-12-18 00:17:53 [INFO] census_eda.main: ======================================================================
+2025-12-18 00:17:53 [INFO] census_eda.memory: process_Mississippi_population_1-year:ENTER: 9039.8MB (delta: +0.0MB)
+2025-12-18 00:17:53 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 00:17:53 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/28/*/*.csv
+2025-12-18 00:17:53 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 00:17:53 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pms.csv
+2025-12-18 00:17:53 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 00:17:53 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,486 rows, 260 columns
+2025-12-18 00:17:53 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p28.csv
+2025-12-18 00:17:54 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 00:17:54 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,096 rows, 260 columns
+2025-12-18 00:17:54 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pms.csv
+2025-12-18 00:17:54 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 00:17:54 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,255 rows, 260 columns
+2025-12-18 00:17:54 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pms.csv
+2025-12-18 00:17:55 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 00:17:55 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,648 rows, 260 columns
+2025-12-18 00:17:55 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pms.csv
+2025-12-18 00:17:56 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 00:17:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,066 rows, 260 columns
+2025-12-18 00:17:56 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pms.csv
+2025-12-18 00:17:56 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 00:17:56 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,958 rows, 260 columns
+2025-12-18 00:17:56 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p28.csv
+2025-12-18 00:17:57 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 00:17:57 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,124 rows, 260 columns
+2025-12-18 00:17:57 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pms.csv
+2025-12-18 00:17:57 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 00:17:57 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,048 rows, 260 columns
+2025-12-18 00:17:57 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pms.csv
+2025-12-18 00:17:58 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 00:17:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,986 rows, 260 columns
+2025-12-18 00:17:58 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p28.csv
+2025-12-18 00:17:58 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 00:17:58 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,217 rows, 260 columns
+2025-12-18 00:17:58 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p28.csv
+2025-12-18 00:17:59 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 00:17:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,796 rows, 260 columns
+2025-12-18 00:17:59 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p28.csv
+2025-12-18 00:17:59 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 00:17:59 [VERBOSE] census_eda.processing.loader:   -> Loaded 28,572 rows, 260 columns
+2025-12-18 00:17:59 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p28.csv
+2025-12-18 00:18:00 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 00:18:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,846 rows, 260 columns
+2025-12-18 00:18:00 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pms.csv
+2025-12-18 00:18:00 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 00:18:00 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,600 rows, 260 columns
+2025-12-18 00:18:00 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pms.csv
+2025-12-18 00:18:01 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 00:18:01 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,187 rows, 260 columns
+2025-12-18 00:18:01 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pms.csv
+2025-12-18 00:18:02 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 00:18:02 [VERBOSE] census_eda.processing.loader:   -> Loaded 29,454 rows, 260 columns
+2025-12-18 00:18:02 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 00:18:05 [VERBOSE] census_eda.processing.loader: Combined into 468,339 total rows, 260 columns
+2025-12-18 00:18:05 [INFO] census_eda.main: Loaded 468,339 records
+2025-12-18 00:18:05 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 468339 valid, 16 unique
+2025-12-18 00:18:05 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 00:18:06 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 00:18:06 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 00:18:07 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 00:18:07 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 00:18:07 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 00:18:07 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 00:18:08 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 00:18:08 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 00:18:08 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 00:18:08 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 00:18:08 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 00:18:08 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 00:18:08 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 00:18:09 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 00:18:09 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 00:18:09 [DEBUG] census_eda.main: Feature engineering complete: (468339, 292)
+2025-12-18 00:18:09 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 00:18:09 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 00:19:24 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 00:19:24 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 00:19:24 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(468339, 292)
+2025-12-18 00:19:24 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 00:19:24 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 468339
+2025-12-18 00:19:24 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 00:19:25 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(468339, 292)
+2025-12-18 00:19:25 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(29066), np.int64(2008): np.int64(29048), np.int64(2009): np.int64(28958), np.int64(2010): np.int64(29187), np.int64(2011): np.int64(29454), np.int64(2012): np.int64(29486), np.int64(2013): np.int64(29648), np.int64(2014): np.int64(29255), np.int64(2015): np.int64(29600), np.int64(2016): np.int64(28986), np.int64(2017): np.int64(29096), np.int64(2018): np.int64(29124), np.int64(2019): np.int64(29217), np.int64(2021): np.int64(28572), np.int64(2022): np.int64(29796), np.int64(2023): np.int64(29846)}
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(468339, 292)
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 468339 non-null values (zeros excluded if needed)
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 468339 non-null values (zeros excluded if needed)
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1749.00
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 468339 non-null values (zeros excluded if needed)
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 94.00
+2025-12-18 00:19:26 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 00:19:27 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 177737 non-null values (zeros excluded if needed)
+2025-12-18 00:19:27 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 200.00
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 33577 non-null values (zeros excluded if needed)
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 336000.00
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 24861 non-null values (zeros excluded if needed)
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 70000.00
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 4773 non-null values (zeros excluded if needed)
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-18 00:19:28 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 00:19:29 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 50650 non-null values (zeros excluded if needed)
+2025-12-18 00:19:29 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 149000.00
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 17501 non-null values (zeros excluded if needed)
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 378000.00
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 18534 non-null values (zeros excluded if needed)
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: Value range: 1000.00 to 30000.00
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 103981 non-null values (zeros excluded if needed)
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 00:19:30 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 00:19:31 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 199830 non-null values (zeros excluded if needed)
+2025-12-18 00:19:31 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 418000.00
+2025-12-18 00:19:33 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 00:19:44 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 00:19:44 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 00:19:44 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 00:19:45 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 00:19:45 [DEBUG] census_eda.memory: Skipping sampling: 47560MB available (>16GB)
+2025-12-18 00:19:45 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 468339 rows
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(468339, 292)
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 468339 non-null values
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 468339 non-null values
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1749.00
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 468339 non-null values
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 94.00
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 177737 non-null values
+2025-12-18 00:21:07 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 200.00
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 33577 non-null values
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 336000.00
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 24861 non-null values
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 70000.00
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 4773 non-null values
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 50650 non-null values
+2025-12-18 00:21:09 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 149000.00
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 17501 non-null values
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 378000.00
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 18534 non-null values
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Data range: 1000.00 to 30000.00
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 103981 non-null values
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 199830 non-null values
+2025-12-18 00:21:10 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 418000.00
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 212070 non-null values
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 172657 non-null values
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 93061 non-null values
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 379538 non-null values
+2025-12-18 00:21:12 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 00:21:20 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 00:21:29 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 00:21:39 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 00:21:55 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 00:21:55 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 00:21:55 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 00:21:56 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 00:21:57 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 00:21:58 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 00:21:59 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 00:21:59 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 00:21:59 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 00:21:59 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 00:22:00 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 00:22:02 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 00:22:02 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 00:22:02 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 00:22:03 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 00:22:04 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 00:22:04 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 00:22:04 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 00:22:05 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 00:22:05 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 00:22:07 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 00:22:07 [DEBUG] census_eda.memory: Skipping sampling: 47105MB available (>16GB)
+2025-12-18 00:22:14 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 00:22:14 [DEBUG] census_eda.memory: Skipping sampling: 47108MB available (>16GB)
+2025-12-18 00:22:29 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 00:22:29 [DEBUG] census_eda.memory: Skipping sampling: 47095MB available (>16GB)
+2025-12-18 00:22:33 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 00:22:42 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 00:22:42 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 00:22:42 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 00:22:42 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 00:22:43 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 00:22:44 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 00:22:44 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 00:22:45 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 00:22:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 00:22:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 00:22:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 00:22:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 00:22:46 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 00:22:47 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 00:22:47 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 00:22:47 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 00:22:47 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 00:22:48 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 00:22:49 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 00:22:50 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 00:22:51 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 00:22:52 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 00:22:54 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 00:22:54 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 00:22:54 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 00:22:55 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 00:22:56 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 00:22:57 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 00:22:58 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 00:22:58 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 00:22:59 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 00:23:00 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 00:23:02 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 00:23:05 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 00:23:05 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 00:23:06 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Mississippi/population/1-year/figures
+2025-12-18 00:23:07 [DEBUG] census_eda.memory: Skipping sampling: 46919MB available (>16GB)
+2025-12-18 00:23:07 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 00:23:07 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 00:23:07 [INFO] census_eda.memory: [ML-START]: 12279.6MB (delta: +3239.8MB)
+2025-12-18 00:23:07 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 00:23:07 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 00:23:07 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 2074 samples (was 2075)
+2025-12-18 00:23:07 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 00:23:07 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 00:23:07 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:07 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:07 [INFO] census_eda.memory: tune_ridge:ENTER: 12279.6MB (delta: +0.0MB)
+2025-12-18 00:23:09 [INFO] census_eda.memory: tune_ridge:EXIT: 12280.3MB (delta: +0.8MB)
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0881
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 00:23:09 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:09 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:09 [INFO] census_eda.memory: tune_lasso:ENTER: 12280.3MB (delta: +0.0MB)
+2025-12-18 00:23:09 [INFO] census_eda.memory: tune_lasso:EXIT: 12280.4MB (delta: +0.0MB)
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0878
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:09 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 00:23:09 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:09 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:09 [INFO] census_eda.memory: tune_random_forest:ENTER: 12280.4MB (delta: +0.0MB)
+2025-12-18 00:23:13 [INFO] census_eda.memory: tune_random_forest:EXIT: 12285.3MB (delta: +4.9MB)
+2025-12-18 00:23:13 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 00:23:13 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0054
+2025-12-18 00:23:13 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 00:23:14 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:14 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:14 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12289.4MB (delta: +4.1MB)
+2025-12-18 00:23:17 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12289.4MB (delta: +0.0MB)
+2025-12-18 00:23:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 00:23:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0606
+2025-12-18 00:23:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:17 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 00:23:17 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 1971 samples (was 2075)
+2025-12-18 00:23:17 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 00:23:17 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 00:23:17 [INFO] census_eda.ml.regression: [TUNE] Data: 1,971 samples, 10 features
+2025-12-18 00:23:17 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:17 [INFO] census_eda.memory: tune_ridge:ENTER: 12289.4MB (delta: +0.0MB)
+2025-12-18 00:23:18 [INFO] census_eda.memory: tune_ridge:EXIT: 12289.5MB (delta: +0.0MB)
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0898
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 00:23:18 [INFO] census_eda.ml.regression: [TUNE] Data: 1,971 samples, 10 features
+2025-12-18 00:23:18 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:18 [INFO] census_eda.memory: tune_lasso:ENTER: 12289.5MB (delta: +0.0MB)
+2025-12-18 00:23:18 [INFO] census_eda.memory: tune_lasso:EXIT: 12289.5MB (delta: +0.0MB)
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0900
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 00:23:18 [INFO] census_eda.ml.regression: [TUNE] Data: 1,971 samples, 10 features
+2025-12-18 00:23:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:18 [INFO] census_eda.memory: tune_random_forest:ENTER: 12289.5MB (delta: +0.0MB)
+2025-12-18 00:23:22 [INFO] census_eda.memory: tune_random_forest:EXIT: 12289.5MB (delta: +0.0MB)
+2025-12-18 00:23:22 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 00:23:22 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0053
+2025-12-18 00:23:22 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 00:23:23 [INFO] census_eda.ml.regression: [TUNE] Data: 1,971 samples, 10 features
+2025-12-18 00:23:23 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:23 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12289.9MB (delta: +0.5MB)
+2025-12-18 00:23:25 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12289.9MB (delta: +0.0MB)
+2025-12-18 00:23:25 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 00:23:25 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0630
+2025-12-18 00:23:25 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:26 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 00:23:26 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 2074 samples (was 2075)
+2025-12-18 00:23:26 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 00:23:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 00:23:26 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:26 [INFO] census_eda.memory: tune_ridge:ENTER: 12289.9MB (delta: +0.0MB)
+2025-12-18 00:23:26 [INFO] census_eda.memory: tune_ridge:EXIT: 12289.9MB (delta: +0.0MB)
+2025-12-18 00:23:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 00:23:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0806
+2025-12-18 00:23:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 00:23:26 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:26 [INFO] census_eda.memory: tune_lasso:ENTER: 12289.9MB (delta: +0.0MB)
+2025-12-18 00:23:27 [INFO] census_eda.memory: tune_lasso:EXIT: 12289.9MB (delta: +0.0MB)
+2025-12-18 00:23:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 00:23:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0804
+2025-12-18 00:23:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 00:23:27 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:27 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:27 [INFO] census_eda.memory: tune_random_forest:ENTER: 12289.9MB (delta: +0.0MB)
+2025-12-18 00:23:30 [INFO] census_eda.memory: tune_random_forest:EXIT: 12289.9MB (delta: +0.0MB)
+2025-12-18 00:23:30 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 00:23:30 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0014
+2025-12-18 00:23:30 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:31 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 00:23:31 [INFO] census_eda.ml.regression: [TUNE] Data: 2,074 samples, 10 features
+2025-12-18 00:23:31 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:31 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:33 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:33 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 00:23:33 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0865
+2025-12-18 00:23:33 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:34 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 00:23:34 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 00:23:34 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 00:23:34 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:34 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:34 [INFO] census_eda.memory: tune_ridge:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:35 [INFO] census_eda.memory: tune_ridge:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 00:23:35 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:35 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:35 [INFO] census_eda.memory: tune_lasso:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:35 [INFO] census_eda.memory: tune_lasso:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:35 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 00:23:35 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:35 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:35 [INFO] census_eda.memory: tune_random_forest:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:37 [INFO] census_eda.memory: tune_random_forest:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:37 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-18 00:23:37 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 00:23:37 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:38 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 00:23:38 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:38 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:38 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:40 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:40 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-18 00:23:40 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 00:23:40 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:41 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 00:23:41 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 00:23:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 00:23:41 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:41 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:41 [INFO] census_eda.memory: tune_ridge:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:42 [INFO] census_eda.memory: tune_ridge:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0455
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 00:23:42 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:42 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 00:23:42 [INFO] census_eda.memory: tune_lasso:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:42 [INFO] census_eda.memory: tune_lasso:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0489
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 00:23:42 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 00:23:42 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:42 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:42 [INFO] census_eda.memory: tune_random_forest:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:46 [INFO] census_eda.memory: tune_random_forest:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 00:23:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0254
+2025-12-18 00:23:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 00:23:47 [INFO] census_eda.ml.regression: [TUNE] Data: 2,075 samples, 10 features
+2025-12-18 00:23:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 00:23:47 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:49 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.9}
+2025-12-18 00:23:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0131
+2025-12-18 00:23:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 00:23:50 [INFO] census_eda.memory: [PRE-CLUSTERING]: 12290.0MB (delta: +0.0MB)
+2025-12-18 00:23:50 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 00:23:50 [INFO] census_eda.main: [CLUSTERING] KMeans on 2,075 samples...
+2025-12-18 00:23:50 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 00:23:50 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 2,075 samples (will sample if needed)...
+2025-12-18 00:23:50 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 00:23:50 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 00:23:50 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 43751.19950866699, 2025: 44884.69430541992, 2026: 45920.34005737305}, Values: [43751.19950866699, 44884.69430541992, 45920.34005737305]
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 00:23:50 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 48039.838748931885, 2025: 49614.147705078125, 2026: 51212.25898361206}, Values: [48039.838748931885, 49614.147705078125, 51212.25898361206]
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 00:23:50 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 48754.251262664795, 2025: 50383.450481414795, 2026: 52036.05774307251}, Values: [48754.251262664795, 50383.450481414795, 52036.05774307251]
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 00:23:50 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 44.67570257978514, 2025: 45.18722658092156, 2026: 45.73306278185919}, Values: [44.67570257978514, 45.18722658092156, 45.73306278185919]
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 00:23:50 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 38.19944134540856, 2025: 37.884198585525155, 2026: 37.47282710112631}, Values: [38.19944134540856, 37.884198585525155, 37.47282710112631]
+2025-12-18 00:23:50 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 00:24:15 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 00:24:15 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 00:24:15 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 41610.7248460562, 2025: 42454.31762178196, 2026: 43297.910397507716}, values=[41610.7248460562, 42454.31762178196, 43297.910397507716], CI_lower=[38572.11766380661, 39415.71043953237, 40259.30321525813], CI_upper=[44649.332028305784, 45492.92480403154, 46336.5175797573]
+2025-12-18 00:24:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41610.7248460562, 42454.31762178196, 43297.910397507716], CI_lower: [38572.11766380661, 39415.71043953237, 40259.30321525813], CI_upper: [44649.332028305784, 45492.92480403154, 46336.5175797573]
+2025-12-18 00:24:15 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 38572.11766380661, 39415.71043953237, 40259.30321525813], upper=[np.float64(37193.32649056011), 44649.332028305784, 45492.92480403154, 46336.5175797573]
+2025-12-18 00:24:16 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44901.67947277427, 2025: 46839.3720087409, 2026: 48892.14858034253}, values=[44901.67947277427, 46839.3720087409, 48892.14858034253], CI_lower=[43149.17693877157, 45086.8694747382, 47139.64604633983], CI_upper=[46654.182006776966, 48591.8745427436, 50644.65111434523]
+2025-12-18 00:24:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44901.67947277427, 46839.3720087409, 48892.14858034253], CI_lower: [43149.17693877157, 45086.8694747382, 47139.64604633983], CI_upper: [46654.182006776966, 48591.8745427436, 50644.65111434523]
+2025-12-18 00:24:16 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 43149.17693877157, 45086.8694747382, 47139.64604633983], upper=[np.float64(37193.32649056011), 46654.182006776966, 48591.8745427436, 50644.65111434523]
+2025-12-18 00:24:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 43751.19950866699, 2025: 44884.69430541992, 2026: 45920.34005737305}, values=[43751.19950866699, 44884.69430541992, 45920.34005737305], CI_lower=[42115.1207098854, 43248.61550663833, 44284.261258591454], CI_upper=[45387.278307448585, 46520.773104201515, 47556.41885615464]
+2025-12-18 00:24:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43751.19950866699, 44884.69430541992, 45920.34005737305], CI_lower: [42115.1207098854, 43248.61550663833, 44284.261258591454], CI_upper: [45387.278307448585, 46520.773104201515, 47556.41885615464]
+2025-12-18 00:24:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 42115.1207098854, 43248.61550663833, 44284.261258591454], upper=[np.float64(37193.32649056011), 45387.278307448585, 46520.773104201515, 47556.41885615464]
+2025-12-18 00:24:17 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 40850.03782325412, 2025: 40850.03782325412, 2026: 40850.03782325412}, values=[40850.03782325412, 40850.03782325412, 40850.03782325412], CI_lower=[38961.191298571975, 38961.191298571975, 38961.191298571975], CI_upper=[42738.88434793626, 42738.88434793626, 42738.88434793626]
+2025-12-18 00:24:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [40850.03782325412, 40850.03782325412, 40850.03782325412], CI_lower: [38961.191298571975, 38961.191298571975, 38961.191298571975], CI_upper: [42738.88434793626, 42738.88434793626, 42738.88434793626]
+2025-12-18 00:24:17 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 38961.191298571975, 38961.191298571975, 38961.191298571975], upper=[np.float64(37193.32649056011), 42738.88434793626, 42738.88434793626, 42738.88434793626]
+2025-12-18 00:24:18 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 39344.11930201698, 2025: 39344.11930201698, 2026: 39344.11930201698}, values=[39344.11930201698, 39344.11930201698, 39344.11930201698], CI_lower=[36699.68572548274, 36699.68572548274, 36699.68572548274], CI_upper=[41988.55287855122, 41988.55287855122, 41988.55287855122]
+2025-12-18 00:24:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [39344.11930201698, 39344.11930201698, 39344.11930201698], CI_lower: [36699.68572548274, 36699.68572548274, 36699.68572548274], CI_upper: [41988.55287855122, 41988.55287855122, 41988.55287855122]
+2025-12-18 00:24:18 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 36699.68572548274, 36699.68572548274, 36699.68572548274], upper=[np.float64(37193.32649056011), 41988.55287855122, 41988.55287855122, 41988.55287855122]
+2025-12-18 00:24:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 41760.83265804331, 2025: 41760.83265804331, 2026: 41760.83265804331}, values=[41760.83265804331, 41760.83265804331, 41760.83265804331], CI_lower=[40345.89483984242, 40345.89483984242, 40345.89483984242], CI_upper=[43175.77047624421, 43175.77047624421, 43175.77047624421]
+2025-12-18 00:24:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41760.83265804331, 41760.83265804331, 41760.83265804331], CI_lower: [40345.89483984242, 40345.89483984242, 40345.89483984242], CI_upper: [43175.77047624421, 43175.77047624421, 43175.77047624421]
+2025-12-18 00:24:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 40345.89483984242, 40345.89483984242, 40345.89483984242], upper=[np.float64(37193.32649056011), 43175.77047624421, 43175.77047624421, 43175.77047624421]
+2025-12-18 00:24:19 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 43861.400105064175, 2025: 43785.264177633886, 2026: 43809.49553002172}, values=[43861.400105064175, 43785.264177633886, 43809.49553002172], CI_lower=[30212.210782382594, 30136.074854952305, 30160.306207340138], CI_upper=[57510.589427745756, 57434.45350031547, 57458.6848527033]
+2025-12-18 00:24:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43861.400105064175, 43785.264177633886, 43809.49553002172], CI_lower: [30212.210782382594, 30136.074854952305, 30160.306207340138], CI_upper: [57510.589427745756, 57434.45350031547, 57458.6848527033]
+2025-12-18 00:24:19 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 30212.210782382594, 30136.074854952305, 30160.306207340138], upper=[np.float64(37193.32649056011), 57510.589427745756, 57434.45350031547, 57458.6848527033]
+2025-12-18 00:24:20 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 45470.52625489204, 2025: 47318.874709529904, 2026: 49167.22316416778}, values=[45470.52625489204, 47318.874709529904, 49167.22316416778], CI_lower=[43467.16175755132, 45315.51021218919, 47163.858666827065], CI_upper=[47473.89075223275, 49322.23920687062, 51170.58766150849]
+2025-12-18 00:24:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45470.52625489204, 47318.874709529904, 49167.22316416778], CI_lower: [43467.16175755132, 45315.51021218919, 47163.858666827065], CI_upper: [47473.89075223275, 49322.23920687062, 51170.58766150849]
+2025-12-18 00:24:20 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37193.32649056011), 43467.16175755132, 45315.51021218919, 47163.858666827065], upper=[np.float64(37193.32649056011), 47473.89075223275, 49322.23920687062, 51170.58766150849]
+2025-12-18 00:24:21 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 00:24:21 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 45484.40636075963, 2025: 46369.26270426065, 2026: 47254.11904776166}, values=[45484.40636075963, 46369.26270426065, 47254.11904776166], CI_lower=[42780.087602217616, 43664.94394571863, 44549.800289219645], CI_upper=[48188.72511930165, 49073.581462802664, 49958.43780630368]
+2025-12-18 00:24:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45484.40636075963, 46369.26270426065, 47254.11904776166], CI_lower: [42780.087602217616, 43664.94394571863, 44549.800289219645], CI_upper: [48188.72511930165, 49073.581462802664, 49958.43780630368]
+2025-12-18 00:24:21 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 42780.087602217616, 43664.94394571863, 44549.800289219645], upper=[np.float64(23798.315500255132), 48188.72511930165, 49073.581462802664, 49958.43780630368]
+2025-12-18 00:24:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 48476.339727431536, 2025: 50355.884224087, 2026: 52340.05604183674}, values=[48476.339727431536, 50355.884224087, 52340.05604183674], CI_lower=[46986.25446182755, 48865.798958483014, 50849.97077623275], CI_upper=[49966.42499303552, 51845.969489690986, 53830.141307440725]
+2025-12-18 00:24:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48476.339727431536, 50355.884224087, 52340.05604183674], CI_lower: [46986.25446182755, 48865.798958483014, 50849.97077623275], CI_upper: [49966.42499303552, 51845.969489690986, 53830.141307440725]
+2025-12-18 00:24:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 46986.25446182755, 48865.798958483014, 50849.97077623275], upper=[np.float64(23798.315500255132), 49966.42499303552, 51845.969489690986, 53830.141307440725]
+2025-12-18 00:24:22 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 48039.838748931885, 2025: 49614.147705078125, 2026: 51212.25898361206}, values=[48039.838748931885, 49614.147705078125, 51212.25898361206], CI_lower=[46568.952296894924, 48143.261253041164, 49741.3725315751], CI_upper=[49510.725200968845, 51085.034157115086, 52683.14543564902]
+2025-12-18 00:24:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48039.838748931885, 49614.147705078125, 51212.25898361206], CI_lower: [46568.952296894924, 48143.261253041164, 49741.3725315751], CI_upper: [49510.725200968845, 51085.034157115086, 52683.14543564902]
+2025-12-18 00:24:22 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 46568.952296894924, 48143.261253041164, 49741.3725315751], upper=[np.float64(23798.315500255132), 49510.725200968845, 51085.034157115086, 52683.14543564902]
+2025-12-18 00:24:23 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 44658.837642555016, 2025: 44658.837642555016, 2026: 44658.837642555016}, values=[44658.837642555016, 44658.837642555016, 44658.837642555016], CI_lower=[42852.64986039112, 42852.64986039112, 42852.64986039112], CI_upper=[46465.025424718915, 46465.025424718915, 46465.025424718915]
+2025-12-18 00:24:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44658.837642555016, 44658.837642555016, 44658.837642555016], CI_lower: [42852.64986039112, 42852.64986039112, 42852.64986039112], CI_upper: [46465.025424718915, 46465.025424718915, 46465.025424718915]
+2025-12-18 00:24:23 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 42852.64986039112, 42852.64986039112, 42852.64986039112], upper=[np.float64(23798.315500255132), 46465.025424718915, 46465.025424718915, 46465.025424718915]
+2025-12-18 00:24:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43022.831025148706, 2025: 43022.831025148706, 2026: 43022.831025148706}, values=[43022.831025148706, 43022.831025148706, 43022.831025148706], CI_lower=[40537.88876544237, 40537.88876544237, 40537.88876544237], CI_upper=[45507.773284855044, 45507.773284855044, 45507.773284855044]
+2025-12-18 00:24:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43022.831025148706, 43022.831025148706, 43022.831025148706], CI_lower: [40537.88876544237, 40537.88876544237, 40537.88876544237], CI_upper: [45507.773284855044, 45507.773284855044, 45507.773284855044]
+2025-12-18 00:24:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 40537.88876544237, 40537.88876544237, 40537.88876544237], upper=[np.float64(23798.315500255132), 45507.773284855044, 45507.773284855044, 45507.773284855044]
+2025-12-18 00:24:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 45573.815300331335, 2025: 45573.815300331335, 2026: 45573.815300331335}, values=[45573.815300331335, 45573.815300331335, 45573.815300331335], CI_lower=[44167.83299729985, 44167.83299729985, 44167.83299729985], CI_upper=[46979.79760336282, 46979.79760336282, 46979.79760336282]
+2025-12-18 00:24:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45573.815300331335, 45573.815300331335, 45573.815300331335], CI_lower: [44167.83299729985, 44167.83299729985, 44167.83299729985], CI_upper: [46979.79760336282, 46979.79760336282, 46979.79760336282]
+2025-12-18 00:24:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 44167.83299729985, 44167.83299729985, 44167.83299729985], upper=[np.float64(23798.315500255132), 46979.79760336282, 46979.79760336282, 46979.79760336282]
+2025-12-18 00:24:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 48307.8834117116, 2025: 49310.63516312507, 2026: 50313.3722085015}, values=[48307.8834117116, 49310.63516312507, 50313.3722085015], CI_lower=[33048.490295389274, 34051.24204680275, 35053.97909217918], CI_upper=[63567.27652803392, 64570.0282794474, 65572.76532482382]
+2025-12-18 00:24:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48307.8834117116, 49310.63516312507, 50313.3722085015], CI_lower: [33048.490295389274, 34051.24204680275, 35053.97909217918], CI_upper: [63567.27652803392, 64570.0282794474, 65572.76532482382]
+2025-12-18 00:24:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 33048.490295389274, 34051.24204680275, 35053.97909217918], upper=[np.float64(23798.315500255132), 63567.27652803392, 64570.0282794474, 65572.76532482382]
+2025-12-18 00:24:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 49119.59866961504, 2025: 51046.732149318406, 2026: 52973.86562902177}, values=[49119.59866961504, 51046.732149318406, 52973.86562902177], CI_lower=[47192.160889531726, 49119.29436923509, 51046.42784893845], CI_upper=[51047.03644969836, 52974.16992940172, 54901.30340910509]
+2025-12-18 00:24:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49119.59866961504, 51046.732149318406, 52973.86562902177], CI_lower: [47192.160889531726, 49119.29436923509, 51046.42784893845], CI_upper: [51047.03644969836, 52974.16992940172, 54901.30340910509]
+2025-12-18 00:24:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(23798.315500255132), 47192.160889531726, 49119.29436923509, 51046.42784893845], upper=[np.float64(23798.315500255132), 51047.03644969836, 52974.16992940172, 54901.30340910509]
+2025-12-18 00:24:27 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 00:24:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 46000.58371166419, 2025: 46892.331337970216, 2026: 47784.07896427624}, values=[46000.58371166419, 46892.331337970216, 47784.07896427624], CI_lower=[43112.81356024512, 44004.561186551146, 44896.30881285717], CI_upper=[48888.35386308326, 49780.101489389286, 50671.84911569531]
+2025-12-18 00:24:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46000.58371166419, 46892.331337970216, 47784.07896427624], CI_lower: [43112.81356024512, 44004.561186551146, 44896.30881285717], CI_upper: [48888.35386308326, 49780.101489389286, 50671.84911569531]
+2025-12-18 00:24:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 43112.81356024512, 44004.561186551146, 44896.30881285717], upper=[np.float64(26077.06178699641), 48888.35386308326, 49780.101489389286, 50671.84911569531]
+2025-12-18 00:24:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 49239.425432920456, 2025: 51207.94753742218, 2026: 53289.73129957914}, values=[49239.425432920456, 51207.94753742218, 53289.73129957914], CI_lower=[47699.63595755998, 49668.1580620617, 51749.941824218666], CI_upper=[50779.214908280934, 52747.73701278266, 54829.52077493962]
+2025-12-18 00:24:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49239.425432920456, 51207.94753742218, 53289.73129957914], CI_lower: [47699.63595755998, 49668.1580620617, 51749.941824218666], CI_upper: [50779.214908280934, 52747.73701278266, 54829.52077493962]
+2025-12-18 00:24:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 47699.63595755998, 49668.1580620617, 51749.941824218666], upper=[np.float64(26077.06178699641), 50779.214908280934, 52747.73701278266, 54829.52077493962]
+2025-12-18 00:24:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 48754.251262664795, 2025: 50383.450481414795, 2026: 52036.05774307251}, values=[48754.251262664795, 50383.450481414795, 52036.05774307251], CI_lower=[47237.446241719714, 48866.645460469714, 50519.25272212743], CI_upper=[50271.056283609876, 51900.255502359876, 53552.86276401759]
+2025-12-18 00:24:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48754.251262664795, 50383.450481414795, 52036.05774307251], CI_lower: [47237.446241719714, 48866.645460469714, 50519.25272212743], CI_upper: [50271.056283609876, 51900.255502359876, 53552.86276401759]
+2025-12-18 00:24:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 47237.446241719714, 48866.645460469714, 50519.25272212743], upper=[np.float64(26077.06178699641), 50271.056283609876, 51900.255502359876, 53552.86276401759]
+2025-12-18 00:24:29 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 45252.50593675588, 2025: 45252.50593675588, 2026: 45252.50593675588}, values=[45252.50593675588, 45252.50593675588, 45252.50593675588], CI_lower=[43360.1906115072, 43360.1906115072, 43360.1906115072], CI_upper=[47144.82126200456, 47144.82126200456, 47144.82126200456]
+2025-12-18 00:24:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45252.50593675588, 45252.50593675588, 45252.50593675588], CI_lower: [43360.1906115072, 43360.1906115072, 43360.1906115072], CI_upper: [47144.82126200456, 47144.82126200456, 47144.82126200456]
+2025-12-18 00:24:29 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 43360.1906115072, 43360.1906115072, 43360.1906115072], upper=[np.float64(26077.06178699641), 47144.82126200456, 47144.82126200456, 47144.82126200456]
+2025-12-18 00:24:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43580.65794540213, 2025: 43580.65794540213, 2026: 43580.65794540213}, values=[43580.65794540213, 43580.65794540213, 43580.65794540213], CI_lower=[40944.022276092626, 40944.022276092626, 40944.022276092626], CI_upper=[46217.29361471163, 46217.29361471163, 46217.29361471163]
+2025-12-18 00:24:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43580.65794540213, 43580.65794540213, 43580.65794540213], CI_lower: [40944.022276092626, 40944.022276092626, 40944.022276092626], CI_upper: [46217.29361471163, 46217.29361471163, 46217.29361471163]
+2025-12-18 00:24:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 40944.022276092626, 40944.022276092626, 40944.022276092626], upper=[np.float64(26077.06178699641), 46217.29361471163, 46217.29361471163, 46217.29361471163]
+2025-12-18 00:24:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 46225.17817357116, 2025: 46225.17817357116, 2026: 46225.17817357116}, values=[46225.17817357116, 46225.17817357116, 46225.17817357116], CI_lower=[44789.52351490829, 44789.52351490829, 44789.52351490829], CI_upper=[47660.83283223404, 47660.83283223404, 47660.83283223404]
+2025-12-18 00:24:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46225.17817357116, 46225.17817357116, 46225.17817357116], CI_lower: [44789.52351490829, 44789.52351490829, 44789.52351490829], CI_upper: [47660.83283223404, 47660.83283223404, 47660.83283223404]
+2025-12-18 00:24:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 44789.52351490829, 44789.52351490829, 44789.52351490829], upper=[np.float64(26077.06178699641), 47660.83283223404, 47660.83283223404, 47660.83283223404]
+2025-12-18 00:24:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 48471.05484561671, 2025: 48519.12496357683, 2026: 48526.35430840932}, values=[48471.05484561671, 48519.12496357683, 48526.35430840932], CI_lower=[33193.587517608816, 33241.65763556894, 33248.886980401425], CI_upper=[63748.5221736246, 63796.592291584726, 63803.82163641721]
+2025-12-18 00:24:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48471.05484561671, 48519.12496357683, 48526.35430840932], CI_lower: [33193.587517608816, 33241.65763556894, 33248.886980401425], CI_upper: [63748.5221736246, 63796.592291584726, 63803.82163641721]
+2025-12-18 00:24:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 33193.587517608816, 33241.65763556894, 33248.886980401425], upper=[np.float64(26077.06178699641), 63748.5221736246, 63796.592291584726, 63803.82163641721]
+2025-12-18 00:24:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 50386.770592654095, 2025: 52622.11922604029, 2026: 54857.467859426484}, values=[50386.770592654095, 52622.11922604029, 54857.467859426484], CI_lower=[48535.6941454415, 50771.042778827694, 53006.39141221389], CI_upper=[52237.84703986669, 54473.195673252885, 56708.54430663908]
+2025-12-18 00:24:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [50386.770592654095, 52622.11922604029, 54857.467859426484], CI_lower: [48535.6941454415, 50771.042778827694, 53006.39141221389], CI_upper: [52237.84703986669, 54473.195673252885, 56708.54430663908]
+2025-12-18 00:24:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26077.06178699641), 48535.6941454415, 50771.042778827694, 53006.39141221389], upper=[np.float64(26077.06178699641), 52237.84703986669, 54473.195673252885, 56708.54430663908]
+2025-12-18 00:24:32 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 00:24:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44.11660642546292, 2025: 44.40620923555707, 2026: 44.69581204565111}, values=[44.11660642546292, 44.40620923555707, 44.69581204565111], CI_lower=[43.56329691674454, 43.85289972683869, 44.14250253693273], CI_upper=[44.6699159341813, 44.95951874427545, 45.24912155436949]
+2025-12-18 00:24:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.11660642546292, 44.40620923555707, 44.69581204565111], CI_lower: [43.56329691674454, 43.85289972683869, 44.14250253693273], CI_upper: [44.6699159341813, 44.95951874427545, 45.24912155436949]
+2025-12-18 00:24:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 43.56329691674454, 43.85289972683869, 44.14250253693273], upper=[np.float64(43.968806540239896), 44.6699159341813, 44.95951874427545, 45.24912155436949]
+2025-12-18 00:24:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 44.57739103274071, 2025: 45.02018475113073, 2026: 45.47909201656512}, values=[44.57739103274071, 45.02018475113073, 45.47909201656512], CI_lower=[44.146865687832104, 44.589659406222125, 45.048566671656516], CI_upper=[45.00791637764931, 45.45071009603933, 45.90961736147372]
+2025-12-18 00:24:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.57739103274071, 45.02018475113073, 45.47909201656512], CI_lower: [44.146865687832104, 44.589659406222125, 45.048566671656516], CI_upper: [45.00791637764931, 45.45071009603933, 45.90961736147372]
+2025-12-18 00:24:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 44.146865687832104, 44.589659406222125, 45.048566671656516], upper=[np.float64(43.968806540239896), 45.00791637764931, 45.45071009603933, 45.90961736147372]
+2025-12-18 00:24:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 44.67570257978514, 2025: 45.18722658092156, 2026: 45.73306278185919}, values=[44.67570257978514, 45.18722658092156, 45.73306278185919], CI_lower=[44.24853610842371, 44.76006010956013, 45.30589631049776], CI_upper=[45.10286905114657, 45.61439305228299, 46.16022925322062]
+2025-12-18 00:24:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.67570257978514, 45.18722658092156, 45.73306278185919], CI_lower: [44.24853610842371, 44.76006010956013, 45.30589631049776], CI_upper: [45.10286905114657, 45.61439305228299, 46.16022925322062]
+2025-12-18 00:24:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 44.24853610842371, 44.76006010956013, 45.30589631049776], upper=[np.float64(43.968806540239896), 45.10286905114657, 45.61439305228299, 46.16022925322062]
+2025-12-18 00:24:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43.707781408233735, 2025: 43.707781408233735, 2026: 43.707781408233735}, values=[43.707781408233735, 43.707781408233735, 43.707781408233735], CI_lower=[43.09810300896221, 43.09810300896221, 43.09810300896221], CI_upper=[44.31745980750526, 44.31745980750526, 44.31745980750526]
+2025-12-18 00:24:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.707781408233735, 43.707781408233735, 43.707781408233735], CI_lower: [43.09810300896221, 43.09810300896221, 43.09810300896221], CI_upper: [44.31745980750526, 44.31745980750526, 44.31745980750526]
+2025-12-18 00:24:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 43.09810300896221, 43.09810300896221, 43.09810300896221], upper=[np.float64(43.968806540239896), 44.31745980750526, 44.31745980750526, 44.31745980750526]
+2025-12-18 00:24:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43.18170293085288, 2025: 43.18170293085288, 2026: 43.18170293085288}, values=[43.18170293085288, 43.18170293085288, 43.18170293085288], CI_lower=[42.57515159288567, 42.57515159288567, 42.57515159288567], CI_upper=[43.78825426882009, 43.78825426882009, 43.78825426882009]
+2025-12-18 00:24:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.18170293085288, 43.18170293085288, 43.18170293085288], CI_lower: [42.57515159288567, 42.57515159288567, 42.57515159288567], CI_upper: [43.78825426882009, 43.78825426882009, 43.78825426882009]
+2025-12-18 00:24:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 42.57515159288567, 42.57515159288567, 42.57515159288567], upper=[np.float64(43.968806540239896), 43.78825426882009, 43.78825426882009, 43.78825426882009]
+2025-12-18 00:24:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 43.87696078002923, 2025: 43.87696078002923, 2026: 43.87696078002923}, values=[43.87696078002923, 43.87696078002923, 43.87696078002923], CI_lower=[43.28575161975349, 43.28575161975349, 43.28575161975349], CI_upper=[44.46816994030497, 44.46816994030497, 44.46816994030497]
+2025-12-18 00:24:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43.87696078002923, 43.87696078002923, 43.87696078002923], CI_lower: [43.28575161975349, 43.28575161975349, 43.28575161975349], CI_upper: [44.46816994030497, 44.46816994030497, 44.46816994030497]
+2025-12-18 00:24:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 43.28575161975349, 43.28575161975349, 43.28575161975349], upper=[np.float64(43.968806540239896), 44.46816994030497, 44.46816994030497, 44.46816994030497]
+2025-12-18 00:24:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 44.61061716074791, 2025: 44.918413921788726, 2026: 45.226182223905994}, values=[44.61061716074791, 44.918413921788726, 45.226182223905994], CI_lower=[26.016071527871844, 26.323868288912664, 26.63163659102993], CI_upper=[63.20516279362397, 63.51295955466479, 63.82072785678206]
+2025-12-18 00:24:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.61061716074791, 44.918413921788726, 45.226182223905994], CI_lower: [26.016071527871844, 26.323868288912664, 26.63163659102993], CI_upper: [63.20516279362397, 63.51295955466479, 63.82072785678206]
+2025-12-18 00:24:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 26.016071527871844, 26.323868288912664, 26.63163659102993], upper=[np.float64(43.968806540239896), 63.20516279362397, 63.51295955466479, 63.82072785678206]
+2025-12-18 00:24:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 44.60230156521643, 2025: 45.09052265496893, 2026: 45.57874374472142}, values=[44.60230156521643, 45.09052265496893, 45.57874374472142], CI_lower=[44.018958282232504, 44.507179371985, 44.995400461737496], CI_upper=[45.185644848200354, 45.673865937952854, 46.16208702770535]
+2025-12-18 00:24:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44.60230156521643, 45.09052265496893, 45.57874374472142], CI_lower: [44.018958282232504, 44.507179371985, 44.995400461737496], CI_upper: [45.185644848200354, 45.673865937952854, 46.16208702770535]
+2025-12-18 00:24:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(43.968806540239896), 44.018958282232504, 44.507179371985, 44.995400461737496], upper=[np.float64(43.968806540239896), 45.185644848200354, 45.673865937952854, 46.16208702770535]
+2025-12-18 00:24:38 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 00:24:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 38.41290239837523, 2025: 38.385163487406125, 2026: 38.35742457643702}, values=[38.41290239837523, 38.385163487406125, 38.35742457643702], CI_lower=[37.916600288122666, 37.88886137715356, 37.861122466184455], CI_upper=[38.909204508627795, 38.88146559765869, 38.85372668668958]
+2025-12-18 00:24:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.41290239837523, 38.385163487406125, 38.35742457643702], CI_lower: [37.916600288122666, 37.88886137715356, 37.861122466184455], CI_upper: [38.909204508627795, 38.88146559765869, 38.85372668668958]
+2025-12-18 00:24:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 37.916600288122666, 37.88886137715356, 37.861122466184455], upper=[np.float64(38.455441176470586), 38.909204508627795, 38.88146559765869, 38.85372668668958]
+2025-12-18 00:24:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 38.7898148061322, 2025: 38.88738293270944, 2026: 38.998131612024736}, values=[38.7898148061322, 38.88738293270944, 38.998131612024736], CI_lower=[38.383010087401054, 38.4805782139783, 38.59132689329359], CI_upper=[39.196619524863344, 39.29418765144059, 39.40493633075588]
+2025-12-18 00:24:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.7898148061322, 38.88738293270944, 38.998131612024736], CI_lower: [38.383010087401054, 38.4805782139783, 38.59132689329359], CI_upper: [39.196619524863344, 39.29418765144059, 39.40493633075588]
+2025-12-18 00:24:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 38.383010087401054, 38.4805782139783, 38.59132689329359], upper=[np.float64(38.455441176470586), 39.196619524863344, 39.29418765144059, 39.40493633075588]
+2025-12-18 00:24:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 38.19944134540856, 2025: 37.884198585525155, 2026: 37.47282710112631}, values=[38.19944134540856, 37.884198585525155, 37.47282710112631], CI_lower=[37.95138363568594, 37.63614087580254, 37.2247693914037], CI_upper=[38.447499055131175, 38.13225629524777, 37.72088481084893]
+2025-12-18 00:24:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.19944134540856, 37.884198585525155, 37.47282710112631], CI_lower: [37.95138363568594, 37.63614087580254, 37.2247693914037], CI_upper: [38.447499055131175, 38.13225629524777, 37.72088481084893]
+2025-12-18 00:24:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 37.95138363568594, 37.63614087580254, 37.2247693914037], upper=[np.float64(38.455441176470586), 38.447499055131175, 38.13225629524777, 37.72088481084893]
+2025-12-18 00:24:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 38.54577822293388, 2025: 38.54577822293388, 2026: 38.54577822293388}, values=[38.54577822293388, 38.54577822293388, 38.54577822293388], CI_lower=[38.1954204166394, 38.1954204166394, 38.1954204166394], CI_upper=[38.896136029228366, 38.896136029228366, 38.896136029228366]
+2025-12-18 00:24:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.54577822293388, 38.54577822293388, 38.54577822293388], CI_lower: [38.1954204166394, 38.1954204166394, 38.1954204166394], CI_upper: [38.896136029228366, 38.896136029228366, 38.896136029228366]
+2025-12-18 00:24:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 38.1954204166394, 38.1954204166394, 38.1954204166394], upper=[np.float64(38.455441176470586), 38.896136029228366, 38.896136029228366, 38.896136029228366]
+2025-12-18 00:24:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 38.57679830197999, 2025: 38.57679830197999, 2026: 38.57679830197999}, values=[38.57679830197999, 38.57679830197999, 38.57679830197999], CI_lower=[38.22428540398894, 38.22428540398894, 38.22428540398894], CI_upper=[38.929311199971046, 38.929311199971046, 38.929311199971046]
+2025-12-18 00:24:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.57679830197999, 38.57679830197999, 38.57679830197999], CI_lower: [38.22428540398894, 38.22428540398894, 38.22428540398894], CI_upper: [38.929311199971046, 38.929311199971046, 38.929311199971046]
+2025-12-18 00:24:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 38.22428540398894, 38.22428540398894, 38.22428540398894], upper=[np.float64(38.455441176470586), 38.929311199971046, 38.929311199971046, 38.929311199971046]
+2025-12-18 00:24:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 38.53485644792442, 2025: 38.53485644792442, 2026: 38.53485644792442}, values=[38.53485644792442, 38.53485644792442, 38.53485644792442], CI_lower=[38.20444049804847, 38.20444049804847, 38.20444049804847], CI_upper=[38.86527239780037, 38.86527239780037, 38.86527239780037]
+2025-12-18 00:24:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.53485644792442, 38.53485644792442, 38.53485644792442], CI_lower: [38.20444049804847, 38.20444049804847, 38.20444049804847], CI_upper: [38.86527239780037, 38.86527239780037, 38.86527239780037]
+2025-12-18 00:24:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 38.20444049804847, 38.20444049804847, 38.20444049804847], upper=[np.float64(38.455441176470586), 38.86527239780037, 38.86527239780037, 38.86527239780037]
+2025-12-18 00:24:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 38.49698028624844, 2025: 38.48541684630953, 2026: 38.48863581618962}, values=[38.49698028624844, 38.48541684630953, 38.48863581618962], CI_lower=[19.78529455294616, 19.773731113007255, 19.776950082887343], CI_upper=[57.20866601955072, 57.19710257961181, 57.2003215494919]
+2025-12-18 00:24:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.49698028624844, 38.48541684630953, 38.48863581618962], CI_lower: [19.78529455294616, 19.773731113007255, 19.776950082887343], CI_upper: [57.20866601955072, 57.19710257961181, 57.2003215494919]
+2025-12-18 00:24:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 19.78529455294616, 19.773731113007255, 19.776950082887343], upper=[np.float64(38.455441176470586), 57.20866601955072, 57.19710257961181, 57.2003215494919]
+2025-12-18 00:24:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 38.42283282343443, 2025: 38.36602984178818, 2026: 38.309226860141926}, values=[38.42283282343443, 38.36602984178818, 38.309226860141926], CI_lower=[37.986008472621876, 37.929205490975626, 37.87240250932937], CI_upper=[38.85965717424699, 38.80285419260074, 38.746051210954484]
+2025-12-18 00:24:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [38.42283282343443, 38.36602984178818, 38.309226860141926], CI_lower: [37.986008472621876, 37.929205490975626, 37.87240250932937], CI_upper: [38.85965717424699, 38.80285419260074, 38.746051210954484]
+2025-12-18 00:24:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(38.455441176470586), 37.986008472621876, 37.929205490975626, 37.87240250932937], upper=[np.float64(38.455441176470586), 38.85965717424699, 38.80285419260074, 38.746051210954484]
+2025-12-18 00:24:45 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 00:24:45 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 00:26:49 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 13970.8935546875, 'mse': 945952960.0, 'rmse': 30756.348287792556, 'r2': 0.26072075963020325}
+2025-12-18 00:26:49 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 00:28:17 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 3.090705156326294, 'mse': 59.80546569824219, 'rmse': 7.733399362391818, 'r2': 0.3064538538455963}
+2025-12-18 00:28:18 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 00:30:25 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 14.88005256652832, 'mse': 609.4959716796875, 'rmse': 24.687972206718143, 'r2': -5.4673848152160645}
+2025-12-18 00:30:26 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 00:30:46 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-18 00:30:47 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 00:30:47 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 00:30:47 [DEBUG] census_eda.main:  Running LLM analysis for state: Mississippi
+2025-12-18 00:30:47 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 00:30:47 [INFO] census_eda.ml: [LLM] State context loaded: Mississippi
+2025-12-18 00:30:47 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [LLM] User prompt: 727 chars (~181 tokens)
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [API] Total request: ~2402 tokens (system: ~2221, user: ~181)
+2025-12-18 00:30:47 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [API] Received response: 3319 chars
+2025-12-18 00:31:17 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3319 chars)
+2025-12-18 00:31:17 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [API] Total request: ~2542 tokens (system: ~2221, user: ~321)
+2025-12-18 00:31:17 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [API] Received response: 3379 chars
+2025-12-18 00:31:26 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3379 chars)
+2025-12-18 00:31:26 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [API] Total request: ~2769 tokens (system: ~2221, user: ~548)
+2025-12-18 00:31:26 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [API] Received response: 4482 chars
+2025-12-18 00:31:39 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (4482 chars)
+2025-12-18 00:31:39 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [API] Total request: ~2561 tokens (system: ~2221, user: ~340)
+2025-12-18 00:31:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [API] Received response: 5256 chars
+2025-12-18 00:31:55 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (5256 chars)
+2025-12-18 00:31:55 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [API] Total request: ~2411 tokens (system: ~2221, user: ~190)
+2025-12-18 00:31:55 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [API] Received response: 3512 chars
+2025-12-18 00:32:05 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (3512 chars)
+2025-12-18 00:32:05 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [LLM] User prompt: 8733 chars (~2183 tokens)
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [API] Total request: ~4404 tokens (system: ~2221, user: ~2183)
+2025-12-18 00:32:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [API] Received response: 3679 chars
+2025-12-18 00:32:19 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3679 chars)
+2025-12-18 00:32:19 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [LLM] User prompt: 5333 chars (~1333 tokens)
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [API] Total request: ~3554 tokens (system: ~2221, user: ~1333)
+2025-12-18 00:32:19 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [API] Received response: 2862 chars
+2025-12-18 00:32:27 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (2862 chars)
+2025-12-18 00:32:27 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [API] Total request: ~2373 tokens (system: ~2221, user: ~152)
+2025-12-18 00:32:27 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [API] Received response: 3571 chars
+2025-12-18 00:32:39 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3571 chars)
+2025-12-18 00:32:39 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [LLM] User prompt: 5602 chars (~1400 tokens)
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [API] Total request: ~3621 tokens (system: ~2221, user: ~1400)
+2025-12-18 00:32:39 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [API] Received response: 3333 chars
+2025-12-18 00:32:51 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (3333 chars)
+2025-12-18 00:32:51 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [LLM] User prompt: 1824 chars (~456 tokens)
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [API] Total request: ~2677 tokens (system: ~2221, user: ~456)
+2025-12-18 00:32:51 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [API] Received response: 4874 chars
+2025-12-18 00:33:05 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (4874 chars)
+2025-12-18 00:33:05 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Mississippi
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Mississippi
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3996 chars
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~999
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Mississippi
+
+ECONOMIC PROFILE:
+  Industries: Gaming and casino operations, Agriculture (poultry, catfish, cotton, soybeans), Manufacturing (automotive, aerospace), Healthcare, Forestry and wood products
+  Trends: Persistent economic challenges. Casino gaming growth 1990s-2010s provided revenue but declining post-2020 due to regional competition. Manufacturing investments (Toyota, Nissan) helped but limited. Slow growth overall 2011-2023
+  Income: Lowest median household income nationally ($44,966). Highest poverty rate (18.8%). Significant racial wealth gap. Cost of living also lowest helps offset
+  Dominant Sector: Government and healthcare
+
+DEMOGRAPHIC PROFILE:
+  Trends: Slow decline 2011-2023 (~-0.1% annually). Only state losing population consistently in this period. Outmigration exceeds births minus deaths
+  Migration: Net domestic outmigration to Texas, Georgia, Tennessee, Alabama. Young educated residents leaving. Minimal international immigration. Rural to urban (Jackson) migration within state
+  Education: Lowest educational attainment - only 86.8% with high school diploma (3rd lowest nationally). 23% with bachelor's degree. Significant achievement gaps
+
+HOUSING MARKET:
+  Market: Most affordable state - median home ~$150k-$170k. Jackson market struggling. Gulf Coast recovering from Katrina. Low home values reflect low incomes
+  Affordability: Generally affordable 2011-2023 but incomes also very low. Pandemic had modest price impact compared to national trends
+  Challenges: Substandard housing conditions, Jackson infrastructure failures (water), Hurricane vulnerability on coast, Poverty limiting homeownership, Rural housing deterioration
+
+POLITY:
+  Policy: Conservative Republican governance. Right-to-work state. Low taxes, limited government services. Business-friendly but infrastructure/education investments limited
+  Housing: Minimal state intervention. Local control. No rent control. Limited affordable housing programs. Post-Katrina rebuilding on Gulf Coast
+  Labor: Right-to-work state. Federal minimum wage $7.25. Limited worker protections. At-will employment standard
+
+REGIONAL:
+  Geography: Mississippi River Delta (northwest), Gulf Coast, Pine Belt (southeast), Hill Country (northeast). Flat to gently rolling
+  Urban/Rural: ~49% urban (Jackson, Gulfport-Biloxi, Tupelo, Southaven). 51% rural - agriculture and forestry. High rural poverty
+  Infrastructure: Underfunded infrastructure. Roads and bridges need repair. Rural broadband limited. Stennis Space Center federal facility
+
+HISTORICAL:
+  Events: 2011-2013: Tornado outbreaks, slow recovery from Katrina and recession, education reforms, voter ID implementation; 2014-2016: Religious freedom debates, economic development efforts (auto manufacturing), teacher shortage crisis; 2017-2019: Lottery approved (2018), teacher pay raises, infrastructure investments, economic development focus; 2021-2023: COVID-19 impact severe, state flag change (2020), abortion restrictions post-Dobbs, Jackson water crisis (2022), casino revenue declining
+  Shocks: Hurricane Katrina legacy continues. Tunica casino decline from Arkansas competition. COVID severely impacted healthcare and economy. Jackson water crisis 2022
+  Transitions: Agriculture mechanization reducing employment. Casino gaming peaked. Automotive manufacturing (Nissan, Toyota suppliers) limited impact. Catfish farming declining
+
+COMPARATIVE:
+  Benchmarks: Lowest median income. Highest poverty rate. Lowest educational attainment. Worst health outcomes. Most affordable housing. Highest rural population percentage among larger states
+  Peer States: Alabama (Deep South, similar challenges), Arkansas (rural, poverty), Louisiana (Gulf Coast, poverty)
+  Unique: Highest Black population percentage (37%). Deepest poverty. Legacy of slavery and Jim Crow affecting current economics. Casino gaming industry significant. Catfish farming leader. Most rural large state. Persistent outmigration of educated youth
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Mississippi
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (3996 chars)
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8884 chars (~2221 tokens)
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [API] Total request: ~2630 tokens (system: ~2221, user: ~409)
+2025-12-18 00:33:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 00:33:20 [DEBUG] census_eda.ml: [API] Received response: 5035 chars
+2025-12-18 00:33:20 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5035 chars)
+2025-12-18 00:33:20 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 00:33:20 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 00:33:20 [INFO] census_eda.main: [REPORT] Generated: report_Mississippi_population_20251218_003320.txt
+2025-12-18 00:33:20 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Mississippi!
+2025-12-18 00:33:21 [INFO] census_eda.memory: process_Mississippi_population_1-year:EXIT: 10649.2MB (delta: -1640.8MB)
+2025-12-18 00:33:22 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 00:33:22 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 00:33:23 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 00:33:24 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 00:33:25 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 00:33:26 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 00:33:27 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 00:33:28 [INFO] census_eda.memory: Cleared all caches

@@ -1,0 +1,1294 @@
+2025-12-18 21:23:22 [INFO] census_eda: Logging context set: state=Vermont, survey=population, scope=1-year
+2025-12-18 21:23:22 [INFO] census_eda: Log file: ./logs/Vermont/1-year/population/1-year_population_25_12_18_2123.log
+2025-12-18 21:23:22 [INFO] census_eda.main: ======================================================================
+2025-12-18 21:23:22 [INFO] census_eda.main: [POPULATION] Processing Vermont (1-year)...
+2025-12-18 21:23:22 [INFO] census_eda.main: ======================================================================
+2025-12-18 21:23:22 [INFO] census_eda.memory: process_Vermont_population_1-year:ENTER: 10602.3MB (delta: +0.0MB)
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 1-year...
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/1-Year/50/*/*.csv
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Found 16 file(s) to load
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Loading file 1/16: ss12pvt.csv
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population1Year_2012_2016)
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,553 rows, 260 columns
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Loading file 2/16: psam_p50.csv
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population1Year_2017_2022)
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,340 rows, 260 columns
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Loading file 3/16: ss14pvt.csv
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population1Year_2012_2016)
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,370 rows, 260 columns
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Loading file 4/16: ss13pvt.csv
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population1Year_2012_2016)
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,388 rows, 260 columns
+2025-12-18 21:23:22 [VERBOSE] census_eda.processing.loader: Loading file 5/16: ss07pvt.csv
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   Applied 2007 era schema (Population1Year_2007_2011)
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,164 rows, 260 columns
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader: Loading file 6/16: ss09pvt.csv
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population1Year_2007_2011)
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,148 rows, 260 columns
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader: Loading file 7/16: psam_p50.csv
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population1Year_2017_2022)
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,436 rows, 260 columns
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader: Loading file 8/16: ss08pvt.csv
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   Applied 2008 era schema (Population1Year_2007_2011)
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 5,997 rows, 260 columns
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader: Loading file 9/16: ss16pvt.csv
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population1Year_2012_2016)
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,411 rows, 260 columns
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader: Loading file 10/16: psam_p50.csv
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population1Year_2017_2022)
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,543 rows, 260 columns
+2025-12-18 21:23:23 [VERBOSE] census_eda.processing.loader: Loading file 11/16: psam_p50.csv
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population1Year_2017_2022)
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,860 rows, 260 columns
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader: Loading file 12/16: psam_p50.csv
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population1Year_2017_2022)
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,678 rows, 260 columns
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader: Loading file 13/16: psam_p50.csv
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population1Year_2023_Plus)
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,810 rows, 260 columns
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader: Loading file 14/16: ss15pvt.csv
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population1Year_2012_2016)
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,326 rows, 260 columns
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader: Loading file 15/16: ss10pvt.csv
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population1Year_2007_2011)
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,381 rows, 260 columns
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader: Loading file 16/16: ss11pvt.csv
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population1Year_2007_2011)
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 6,608 rows, 260 columns
+2025-12-18 21:23:24 [VERBOSE] census_eda.processing.loader: Successfully loaded 16 dataframe(s)
+2025-12-18 21:23:25 [VERBOSE] census_eda.processing.loader: Combined into 103,013 total rows, 260 columns
+2025-12-18 21:23:25 [INFO] census_eda.main: Loaded 103,013 records
+2025-12-18 21:23:25 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 103013 valid, 16 unique
+2025-12-18 21:23:25 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-18 21:23:25 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-18 21:23:25 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-18 21:23:25 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-18 21:23:26 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-18 21:23:26 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-18 21:23:26 [DEBUG] census_eda.main: Feature engineering complete: (103013, 292)
+2025-12-18 21:23:27 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-18 21:23:27 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-18 21:23:53 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-18 21:23:53 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-18 21:23:53 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(103013, 292)
+2025-12-18 21:23:53 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-18 21:23:53 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 16 unique years, total records: 103013
+2025-12-18 21:23:53 [VERBOSE] census_eda.visualization.temporal: Year range: 2007 to 2023
+2025-12-18 21:23:54 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(103013, 292)
+2025-12-18 21:23:54 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2007): np.int64(6164), np.int64(2008): np.int64(5997), np.int64(2009): np.int64(6148), np.int64(2010): np.int64(6381), np.int64(2011): np.int64(6608), np.int64(2012): np.int64(6553), np.int64(2013): np.int64(6388), np.int64(2014): np.int64(6370), np.int64(2015): np.int64(6326), np.int64(2016): np.int64(6411), np.int64(2017): np.int64(6340), np.int64(2018): np.int64(6436), np.int64(2019): np.int64(6543), np.int64(2021): np.int64(6678), np.int64(2022): np.int64(6860), np.int64(2023): np.int64(6810)}
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(103013, 292)
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 266 numeric columns total
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 103013 non-null values (zeros excluded if needed)
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 12.00
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 103013 non-null values (zeros excluded if needed)
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1531.00
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 103013 non-null values (zeros excluded if needed)
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 95.00
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 46359 non-null values (zeros excluded if needed)
+2025-12-18 21:23:56 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 185.00
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 17420 non-null values (zeros excluded if needed)
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 371000.00
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 5979 non-null values (zeros excluded if needed)
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 90000.00
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 1576 non-null values (zeros excluded if needed)
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Value range: 10.00 to 30000.00
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 11737 non-null values (zeros excluded if needed)
+2025-12-18 21:24:00 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 165000.00
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 8901 non-null values (zeros excluded if needed)
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 292000.00
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 2584 non-null values (zeros excluded if needed)
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Value range: 1100.00 to 30000.00
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 23378 non-null values (zeros excluded if needed)
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 54377 non-null values (zeros excluded if needed)
+2025-12-18 21:24:03 [VERBOSE] census_eda.visualization.temporal: Value range: 10.00 to 496000.00
+2025-12-18 21:24:08 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-18 21:24:26 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-18 21:24:26 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-18 21:24:26 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-18 21:24:28 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-18 21:24:28 [DEBUG] census_eda.memory: Skipping sampling: 39907MB available (>16GB)
+2025-12-18 21:24:28 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 103013 rows
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(103013, 292)
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 103013 non-null values
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 12.00
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 103013 non-null values
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1531.00
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 103013 non-null values
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 95.00
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 46359 non-null values
+2025-12-18 21:24:52 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 185.00
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 17420 non-null values
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 371000.00
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 5979 non-null values
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 90000.00
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 1576 non-null values
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 30000.00
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 11737 non-null values
+2025-12-18 21:24:55 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 165000.00
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 8901 non-null values
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 292000.00
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 2584 non-null values
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Data range: 1100.00 to 30000.00
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 23378 non-null values
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 54377 non-null values
+2025-12-18 21:24:59 [VERBOSE] census_eda.visualization.statistical: Data range: 10.00 to 496000.00
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 60207 non-null values
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 48936 non-null values
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 52.00
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 17480 non-null values
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 87015 non-null values
+2025-12-18 21:25:02 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-18 21:25:21 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-18 21:25:37 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-18 21:25:51 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-18 21:26:14 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-18 21:26:14 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-18 21:26:14 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-18 21:26:16 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-18 21:26:17 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-18 21:26:19 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-18 21:26:22 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-18 21:26:22 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-18 21:26:22 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-18 21:26:24 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-18 21:26:25 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-18 21:26:28 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-18 21:26:28 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-18 21:26:28 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-18 21:26:30 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-18 21:26:33 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-18 21:26:33 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-18 21:26:33 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-18 21:26:35 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-18 21:26:36 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-18 21:26:39 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-18 21:26:39 [DEBUG] census_eda.memory: Skipping sampling: 40090MB available (>16GB)
+2025-12-18 21:26:46 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-18 21:26:46 [DEBUG] census_eda.memory: Skipping sampling: 39996MB available (>16GB)
+2025-12-18 21:27:01 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-18 21:27:01 [DEBUG] census_eda.memory: Skipping sampling: 39813MB available (>16GB)
+2025-12-18 21:27:08 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-18 21:27:21 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-18 21:27:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-18 21:27:21 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-18 21:27:23 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-18 21:27:24 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-18 21:27:26 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-18 21:27:27 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-18 21:27:29 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-18 21:27:31 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-18 21:27:31 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-18 21:27:31 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-18 21:27:31 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-18 21:27:31 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-18 21:27:32 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-18 21:27:32 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-18 21:27:32 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-18 21:27:34 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-18 21:27:35 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-18 21:27:37 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-18 21:27:39 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-18 21:27:41 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-18 21:27:42 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-18 21:27:45 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-18 21:27:45 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-18 21:27:45 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-18 21:27:47 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-18 21:27:49 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-18 21:27:50 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-18 21:27:52 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-18 21:27:54 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-18 21:27:55 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-18 21:27:57 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-18 21:28:00 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-18 21:28:05 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-18 21:28:06 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-18 21:28:08 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Vermont/population/1-year/figures
+2025-12-18 21:28:10 [DEBUG] census_eda.memory: Skipping sampling: 40005MB available (>16GB)
+2025-12-18 21:28:10 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-18 21:28:10 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-18 21:28:10 [INFO] census_eda.memory: [ML-START]: 11098.0MB (delta: +495.6MB)
+2025-12-18 21:28:10 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-18 21:28:10 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-18 21:28:10 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 573 samples (was 573)
+2025-12-18 21:28:10 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 21:28:10 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 21:28:10 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:10 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:10 [INFO] census_eda.memory: tune_ridge:ENTER: 11098.0MB (delta: +0.0MB)
+2025-12-18 21:28:12 [INFO] census_eda.memory: tune_ridge:EXIT: 11098.3MB (delta: +0.4MB)
+2025-12-18 21:28:12 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 21:28:12 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0045
+2025-12-18 21:28:12 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:12 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 21:28:12 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:12 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:12 [INFO] census_eda.memory: tune_lasso:ENTER: 11098.3MB (delta: +0.0MB)
+2025-12-18 21:28:14 [INFO] census_eda.memory: tune_lasso:EXIT: 11098.3MB (delta: +0.0MB)
+2025-12-18 21:28:14 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 21:28:14 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0130
+2025-12-18 21:28:14 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:14 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 21:28:14 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:14 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:14 [INFO] census_eda.memory: tune_random_forest:ENTER: 11098.3MB (delta: +0.0MB)
+2025-12-18 21:28:17 [INFO] census_eda.memory: tune_random_forest:EXIT: 11098.6MB (delta: +0.3MB)
+2025-12-18 21:28:17 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 21:28:17 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1064
+2025-12-18 21:28:17 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 21:28:18 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:18 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11099.6MB (delta: +1.0MB)
+2025-12-18 21:28:21 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11099.6MB (delta: +0.0MB)
+2025-12-18 21:28:21 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 21:28:21 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.5614
+2025-12-18 21:28:21 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:21 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 11099.6MB (delta: +0.0MB)
+2025-12-18 21:28:21 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 115 samples...
+2025-12-18 21:28:23 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 11099.6MB (delta: +0.0MB)
+2025-12-18 21:28:23 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 21:28:23 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-18 21:28:23 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-18 21:28:23 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 545 samples (was 573)
+2025-12-18 21:28:23 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 21:28:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 21:28:23 [INFO] census_eda.ml.regression: [TUNE] Data: 545 samples, 10 features
+2025-12-18 21:28:23 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:23 [INFO] census_eda.memory: tune_ridge:ENTER: 11099.6MB (delta: +0.0MB)
+2025-12-18 21:28:24 [INFO] census_eda.memory: tune_ridge:EXIT: 11099.7MB (delta: +0.0MB)
+2025-12-18 21:28:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 21:28:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0061
+2025-12-18 21:28:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:24 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 21:28:24 [INFO] census_eda.ml.regression: [TUNE] Data: 545 samples, 10 features
+2025-12-18 21:28:24 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:24 [INFO] census_eda.memory: tune_lasso:ENTER: 11099.7MB (delta: +0.0MB)
+2025-12-18 21:28:26 [INFO] census_eda.memory: tune_lasso:EXIT: 11099.7MB (delta: +0.0MB)
+2025-12-18 21:28:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 21:28:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0093
+2025-12-18 21:28:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 21:28:26 [INFO] census_eda.ml.regression: [TUNE] Data: 545 samples, 10 features
+2025-12-18 21:28:26 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:26 [INFO] census_eda.memory: tune_random_forest:ENTER: 11099.7MB (delta: +0.0MB)
+2025-12-18 21:28:29 [INFO] census_eda.memory: tune_random_forest:EXIT: 11099.7MB (delta: +0.0MB)
+2025-12-18 21:28:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 21:28:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1629
+2025-12-18 21:28:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:30 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 21:28:30 [INFO] census_eda.ml.regression: [TUNE] Data: 545 samples, 10 features
+2025-12-18 21:28:30 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:30 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11099.8MB (delta: +0.1MB)
+2025-12-18 21:28:32 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:32 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 21:28:32 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.6684
+2025-12-18 21:28:32 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:33 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-18 21:28:33 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 573 samples (was 573)
+2025-12-18 21:28:33 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 21:28:33 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 21:28:33 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:33 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:33 [INFO] census_eda.memory: tune_ridge:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:34 [INFO] census_eda.memory: tune_ridge:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:34 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-18 21:28:34 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0169
+2025-12-18 21:28:34 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:34 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 21:28:34 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:34 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:34 [INFO] census_eda.memory: tune_lasso:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:36 [INFO] census_eda.memory: tune_lasso:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:36 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 100.0}
+2025-12-18 21:28:36 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0015
+2025-12-18 21:28:36 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:36 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 21:28:36 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:36 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:36 [INFO] census_eda.memory: tune_random_forest:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:39 [INFO] census_eda.memory: tune_random_forest:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:39 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 21:28:39 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.0858
+2025-12-18 21:28:39 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:39 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 21:28:39 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:39 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:39 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:42 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:42 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 100, 'subsample': 0.8}
+2025-12-18 21:28:42 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.6281
+2025-12-18 21:28:42 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:42 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:42 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 115 samples...
+2025-12-18 21:28:44 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:44 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-18 21:28:44 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-18 21:28:44 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-18 21:28:44 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 21:28:44 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 21:28:44 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:44 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:44 [INFO] census_eda.memory: tune_ridge:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:46 [INFO] census_eda.memory: tune_ridge:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:46 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-18 21:28:46 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 21:28:46 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 21:28:46 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:46 [INFO] census_eda.memory: tune_lasso:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:47 [INFO] census_eda.memory: tune_lasso:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-18 21:28:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 21:28:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 21:28:47 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:50 [INFO] census_eda.memory: tune_random_forest:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:50 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 200}
+2025-12-18 21:28:50 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 21:28:50 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:51 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 21:28:51 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:51 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:51 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:53 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:53 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.9}
+2025-12-18 21:28:53 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-18 21:28:53 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:28:54 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-18 21:28:54 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-18 21:28:54 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-18 21:28:54 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:54 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:54 [INFO] census_eda.memory: tune_ridge:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:55 [INFO] census_eda.memory: tune_ridge:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:55 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 10.0}
+2025-12-18 21:28:55 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0877
+2025-12-18 21:28:55 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:55 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-18 21:28:55 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:55 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-18 21:28:55 [INFO] census_eda.memory: tune_lasso:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:57 [INFO] census_eda.memory: tune_lasso:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:28:57 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.1}
+2025-12-18 21:28:57 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0947
+2025-12-18 21:28:57 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-18 21:28:57 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-18 21:28:57 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:28:57 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:28:57 [INFO] census_eda.memory: tune_random_forest:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:29:00 [INFO] census_eda.memory: tune_random_forest:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:29:00 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 5, 'n_estimators': 100}
+2025-12-18 21:29:00 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0132
+2025-12-18 21:29:00 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:29:01 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-18 21:29:01 [INFO] census_eda.ml.regression: [TUNE] Data: 573 samples, 10 features
+2025-12-18 21:29:01 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-18 21:29:01 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:29:03 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:29:03 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 100, 'subsample': 1.0}
+2025-12-18 21:29:03 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: -0.1891
+2025-12-18 21:29:03 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-18 21:29:03 [INFO] census_eda.memory: [PRE-CLUSTERING]: 11099.8MB (delta: +0.0MB)
+2025-12-18 21:29:03 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-18 21:29:03 [INFO] census_eda.main: [CLUSTERING] KMeans on 573 samples...
+2025-12-18 21:29:03 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-18 21:29:03 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 573 samples (will sample if needed)...
+2025-12-18 21:29:03 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-18 21:29:03 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-18 21:29:03 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 56081.52442741394, 2025: 58790.83982658386, 2026: 61690.51372718811}, Values: [56081.52442741394, 58790.83982658386, 61690.51372718811]
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-18 21:29:03 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 57543.27931976318, 2025: 61154.86177825928, 2026: 65189.959129333496}, Values: [57543.27931976318, 61154.86177825928, 65189.959129333496]
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-18 21:29:03 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 57879.221672058105, 2025: 61548.37621307373, 2026: 65639.57546234131}, Values: [57879.221672058105, 61548.37621307373, 65639.57546234131]
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-18 21:29:03 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 47.12782656960189, 2025: 47.39258732646704, 2026: 47.62668304145336}, Values: [47.12782656960189, 47.39258732646704, 47.62668304145336]
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-18 21:29:03 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.2246254542021, 2025: 36.2246254542021, 2026: 36.2246254542021}, Values: [36.2246254542021, 36.2246254542021, 36.2246254542021]
+2025-12-18 21:29:03 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-18 21:29:08 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-18 21:29:18 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-18 21:29:32 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-18 21:29:32 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-18 21:29:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 51833.20245831134, 2025: 53028.08703845553, 2026: 54222.97161859926}, values=[51833.20245831134, 53028.08703845553, 54222.97161859926], CI_lower=[48565.34994801838, 49760.234528162575, 50955.1191083063], CI_upper=[55101.054968604294, 56295.93954874849, 57490.824128892215]
+2025-12-18 21:29:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51833.20245831134, 53028.08703845553, 54222.97161859926], CI_lower: [48565.34994801838, 49760.234528162575, 50955.1191083063], CI_upper: [55101.054968604294, 56295.93954874849, 57490.824128892215]
+2025-12-18 21:29:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 48565.34994801838, 49760.234528162575, 50955.1191083063], upper=[np.float64(50249.01724721001), 55101.054968604294, 56295.93954874849, 57490.824128892215]
+2025-12-18 21:29:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 55802.9968996644, 2025: 58317.666052758694, 2026: 60971.15813630819}, values=[55802.9968996644, 58317.666052758694, 60971.15813630819], CI_lower=[54494.28095723469, 57008.95011032898, 59662.44219387848], CI_upper=[57111.712842094115, 59626.38199518841, 62279.87407873791]
+2025-12-18 21:29:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55802.9968996644, 58317.666052758694, 60971.15813630819], CI_lower: [54494.28095723469, 57008.95011032898, 59662.44219387848], CI_upper: [57111.712842094115, 59626.38199518841, 62279.87407873791]
+2025-12-18 21:29:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 54494.28095723469, 57008.95011032898, 59662.44219387848], upper=[np.float64(50249.01724721001), 57111.712842094115, 59626.38199518841, 62279.87407873791]
+2025-12-18 21:29:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 56081.52442741394, 2025: 58790.83982658386, 2026: 61690.51372718811}, values=[56081.52442741394, 58790.83982658386, 61690.51372718811], CI_lower=[54781.664055274516, 57490.97945444444, 60390.653355048686], CI_upper=[57381.384799553365, 60090.70019872329, 62990.374099327535]
+2025-12-18 21:29:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56081.52442741394, 58790.83982658386, 61690.51372718811], CI_lower: [54781.664055274516, 57490.97945444444, 60390.653355048686], CI_upper: [57381.384799553365, 60090.70019872329, 62990.374099327535]
+2025-12-18 21:29:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 54781.664055274516, 57490.97945444444, 60390.653355048686], upper=[np.float64(50249.01724721001), 57381.384799553365, 60090.70019872329, 62990.374099327535]
+2025-12-18 21:29:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 51069.76476283454, 2025: 51069.76476283454, 2026: 51069.76476283454}, values=[51069.76476283454, 51069.76476283454, 51069.76476283454], CI_lower=[48869.355027082966, 48869.355027082966, 48869.355027082966], CI_upper=[53270.17449858611, 53270.17449858611, 53270.17449858611]
+2025-12-18 21:29:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51069.76476283454, 51069.76476283454, 51069.76476283454], CI_lower: [48869.355027082966, 48869.355027082966, 48869.355027082966], CI_upper: [53270.17449858611, 53270.17449858611, 53270.17449858611]
+2025-12-18 21:29:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 48869.355027082966, 48869.355027082966, 48869.355027082966], upper=[np.float64(50249.01724721001), 53270.17449858611, 53270.17449858611, 53270.17449858611]
+2025-12-18 21:29:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 48501.944000081916, 2025: 48501.944000081916, 2026: 48501.944000081916}, values=[48501.944000081916, 48501.944000081916, 48501.944000081916], CI_lower=[45325.949867282616, 45325.949867282616, 45325.949867282616], CI_upper=[51677.938132881216, 51677.938132881216, 51677.938132881216]
+2025-12-18 21:29:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48501.944000081916, 48501.944000081916, 48501.944000081916], CI_lower: [45325.949867282616, 45325.949867282616, 45325.949867282616], CI_upper: [51677.938132881216, 51677.938132881216, 51677.938132881216]
+2025-12-18 21:29:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 45325.949867282616, 45325.949867282616, 45325.949867282616], upper=[np.float64(50249.01724721001), 51677.938132881216, 51677.938132881216, 51677.938132881216]
+2025-12-18 21:29:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 52068.49639732486, 2025: 52068.49639732486, 2026: 52068.49639732486}, values=[52068.49639732486, 52068.49639732486, 52068.49639732486], CI_lower=[50349.63656878603, 50349.63656878603, 50349.63656878603], CI_upper=[53787.35622586369, 53787.35622586369, 53787.35622586369]
+2025-12-18 21:29:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52068.49639732486, 52068.49639732486, 52068.49639732486], CI_lower: [50349.63656878603, 50349.63656878603, 50349.63656878603], CI_upper: [53787.35622586369, 53787.35622586369, 53787.35622586369]
+2025-12-18 21:29:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 50349.63656878603, 50349.63656878603, 50349.63656878603], upper=[np.float64(50249.01724721001), 53787.35622586369, 53787.35622586369, 53787.35622586369]
+2025-12-18 21:29:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 55681.665193578665, 2025: 57055.641908711994, 2026: 58429.600162092414}, values=[55681.665193578665, 57055.641908711994, 58429.600162092414], CI_lower=[39735.24915953139, 41109.22587466471, 42483.18412804513], CI_upper=[71628.08122762594, 73002.05794275927, 74376.0161961397]
+2025-12-18 21:29:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55681.665193578665, 57055.641908711994, 58429.600162092414], CI_lower: [39735.24915953139, 41109.22587466471, 42483.18412804513], CI_upper: [71628.08122762594, 73002.05794275927, 74376.0161961397]
+2025-12-18 21:29:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 39735.24915953139, 41109.22587466471, 42483.18412804513], upper=[np.float64(50249.01724721001), 71628.08122762594, 73002.05794275927, 74376.0161961397]
+2025-12-18 21:29:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 56974.226768463006, 2025: 59952.963363715804, 2026: 62931.699958968595}, values=[56974.226768463006, 59952.963363715804, 62931.699958968595], CI_lower=[54876.57500861514, 57855.31160386793, 60834.04819912072], CI_upper=[59071.878528310874, 62050.61512356368, 65029.35171881647]
+2025-12-18 21:29:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56974.226768463006, 59952.963363715804, 62931.699958968595], CI_lower: [54876.57500861514, 57855.31160386793, 60834.04819912072], CI_upper: [59071.878528310874, 62050.61512356368, 65029.35171881647]
+2025-12-18 21:29:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(50249.01724721001), 54876.57500861514, 57855.31160386793, 60834.04819912072], upper=[np.float64(50249.01724721001), 59071.878528310874, 62050.61512356368, 65029.35171881647]
+2025-12-18 21:29:39 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-18 21:29:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 52184.23326190142, 2025: 53437.652759139426, 2026: 54691.07225637743}, values=[52184.23326190142, 53437.652759139426, 54691.07225637743], CI_lower=[48889.972139985126, 50143.39163722313, 51396.81113446114], CI_upper=[55478.49438381771, 56731.91388105572, 57985.333378293726]
+2025-12-18 21:29:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52184.23326190142, 53437.652759139426, 54691.07225637743], CI_lower: [48889.972139985126, 50143.39163722313, 51396.81113446114], CI_upper: [55478.49438381771, 56731.91388105572, 57985.333378293726]
+2025-12-18 21:29:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 48889.972139985126, 50143.39163722313, 51396.81113446114], upper=[np.float64(31717.005410889415), 55478.49438381771, 56731.91388105572, 57985.333378293726]
+2025-12-18 21:29:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 55970.05960354209, 2025: 58482.10225555301, 2026: 61126.53450998664}, values=[55970.05960354209, 58482.10225555301, 61126.53450998664], CI_lower=[54327.56337598593, 56839.606027996844, 59484.038282430476], CI_upper=[57612.55583109825, 60124.59848310917, 62769.0307375428]
+2025-12-18 21:29:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [55970.05960354209, 58482.10225555301, 61126.53450998664], CI_lower: [54327.56337598593, 56839.606027996844, 59484.038282430476], CI_upper: [57612.55583109825, 60124.59848310917, 62769.0307375428]
+2025-12-18 21:29:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 54327.56337598593, 56839.606027996844, 59484.038282430476], upper=[np.float64(31717.005410889415), 57612.55583109825, 60124.59848310917, 62769.0307375428]
+2025-12-18 21:29:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 57543.27931976318, 2025: 61154.86177825928, 2026: 65189.959129333496}, values=[57543.27931976318, 61154.86177825928, 65189.959129333496], CI_lower=[56143.120463789644, 59754.70292228574, 63789.80027335996], CI_upper=[58943.43817573672, 62555.02063423282, 66590.11798530704]
+2025-12-18 21:29:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57543.27931976318, 61154.86177825928, 65189.959129333496], CI_lower: [56143.120463789644, 59754.70292228574, 63789.80027335996], CI_upper: [58943.43817573672, 62555.02063423282, 66590.11798530704]
+2025-12-18 21:29:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 56143.120463789644, 59754.70292228574, 63789.80027335996], upper=[np.float64(31717.005410889415), 58943.43817573672, 62555.02063423282, 66590.11798530704]
+2025-12-18 21:29:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 51458.46643015848, 2025: 51458.46643015848, 2026: 51458.46643015848}, values=[51458.46643015848, 51458.46643015848, 51458.46643015848], CI_lower=[48877.58239977992, 48877.58239977992, 48877.58239977992], CI_upper=[54039.35046053703, 54039.35046053703, 54039.35046053703]
+2025-12-18 21:29:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51458.46643015848, 51458.46643015848, 51458.46643015848], CI_lower: [48877.58239977992, 48877.58239977992, 48877.58239977992], CI_upper: [54039.35046053703, 54039.35046053703, 54039.35046053703]
+2025-12-18 21:29:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 48877.58239977992, 48877.58239977992, 48877.58239977992], upper=[np.float64(31717.005410889415), 54039.35046053703, 54039.35046053703, 54039.35046053703]
+2025-12-18 21:29:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 48659.05362943355, 2025: 48659.05362943355, 2026: 48659.05362943355}, values=[48659.05362943355, 48659.05362943355, 48659.05362943355], CI_lower=[45441.93258757785, 45441.93258757785, 45441.93258757785], CI_upper=[51876.17467128924, 51876.17467128924, 51876.17467128924]
+2025-12-18 21:29:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48659.05362943355, 48659.05362943355, 48659.05362943355], CI_lower: [45441.93258757785, 45441.93258757785, 45441.93258757785], CI_upper: [51876.17467128924, 51876.17467128924, 51876.17467128924]
+2025-12-18 21:29:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 45441.93258757785, 45441.93258757785, 45441.93258757785], upper=[np.float64(31717.005410889415), 51876.17467128924, 51876.17467128924, 51876.17467128924]
+2025-12-18 21:29:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 52519.92784097716, 2025: 52519.92784097716, 2026: 52519.92784097716}, values=[52519.92784097716, 52519.92784097716, 52519.92784097716], CI_lower=[50281.908621332186, 50281.908621332186, 50281.908621332186], CI_upper=[54757.94706062213, 54757.94706062213, 54757.94706062213]
+2025-12-18 21:29:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52519.92784097716, 52519.92784097716, 52519.92784097716], CI_lower: [50281.908621332186, 50281.908621332186, 50281.908621332186], CI_upper: [54757.94706062213, 54757.94706062213, 54757.94706062213]
+2025-12-18 21:29:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 50281.908621332186, 50281.908621332186, 50281.908621332186], upper=[np.float64(31717.005410889415), 54757.94706062213, 54757.94706062213, 54757.94706062213]
+2025-12-18 21:29:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 56800.532041010956, 2025: 58318.25719690786, 2026: 59835.92524879601}, values=[56800.532041010956, 58318.25719690786, 59835.92524879601], CI_lower=[41398.41494384937, 42916.14009974628, 44433.808151634425], CI_upper=[72202.64913817254, 73720.37429406945, 75238.0423459576]
+2025-12-18 21:29:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56800.532041010956, 58318.25719690786, 59835.92524879601], CI_lower: [41398.41494384937, 42916.14009974628, 44433.808151634425], CI_upper: [72202.64913817254, 73720.37429406945, 75238.0423459576]
+2025-12-18 21:29:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 41398.41494384937, 42916.14009974628, 44433.808151634425], upper=[np.float64(31717.005410889415), 72202.64913817254, 73720.37429406945, 75238.0423459576]
+2025-12-18 21:29:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 57625.49148295071, 2025: 61037.59328934102, 2026: 64449.695095731324}, values=[57625.49148295071, 61037.59328934102, 64449.695095731324], CI_lower=[55042.47819029418, 58454.57999668449, 61866.681803074796], CI_upper=[60208.50477560724, 63620.60658199755, 67032.70838838785]
+2025-12-18 21:29:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57625.49148295071, 61037.59328934102, 64449.695095731324], CI_lower: [55042.47819029418, 58454.57999668449, 61866.681803074796], CI_upper: [60208.50477560724, 63620.60658199755, 67032.70838838785]
+2025-12-18 21:29:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(31717.005410889415), 55042.47819029418, 58454.57999668449, 61866.681803074796], upper=[np.float64(31717.005410889415), 60208.50477560724, 63620.60658199755, 67032.70838838785]
+2025-12-18 21:29:46 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-18 21:29:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 52286.00740683079, 2025: 53542.726391237695, 2026: 54799.4453756446}, values=[52286.00740683079, 53542.726391237695, 54799.4453756446], CI_lower=[48844.91778144844, 50101.63676585535, 51358.35575026226], CI_upper=[55727.09703221313, 56983.81601662004, 58240.53500102695]
+2025-12-18 21:29:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52286.00740683079, 53542.726391237695, 54799.4453756446], CI_lower: [48844.91778144844, 50101.63676585535, 51358.35575026226], CI_upper: [55727.09703221313, 56983.81601662004, 58240.53500102695]
+2025-12-18 21:29:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 48844.91778144844, 50101.63676585535, 51358.35575026226], upper=[np.float64(35065.837153609304), 55727.09703221313, 56983.81601662004, 58240.53500102695]
+2025-12-18 21:29:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 56370.41629242897, 2025: 58985.024184942245, 2026: 61742.463052392006}, values=[56370.41629242897, 58985.024184942245, 61742.463052392006], CI_lower=[54837.52095996262, 57452.12885247589, 60209.56771992565], CI_upper=[57903.31162489532, 60517.9195174086, 63275.35838485836]
+2025-12-18 21:29:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [56370.41629242897, 58985.024184942245, 61742.463052392006], CI_lower: [54837.52095996262, 57452.12885247589, 60209.56771992565], CI_upper: [57903.31162489532, 60517.9195174086, 63275.35838485836]
+2025-12-18 21:29:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 54837.52095996262, 57452.12885247589, 60209.56771992565], upper=[np.float64(35065.837153609304), 57903.31162489532, 60517.9195174086, 63275.35838485836]
+2025-12-18 21:29:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 57879.221672058105, 2025: 61548.37621307373, 2026: 65639.57546234131}, values=[57879.221672058105, 61548.37621307373, 65639.57546234131], CI_lower=[56586.35069591465, 60255.50523693027, 64346.70448619785], CI_upper=[59172.092648201564, 62841.24718921719, 66932.44643848477]
+2025-12-18 21:29:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57879.221672058105, 61548.37621307373, 65639.57546234131], CI_lower: [56586.35069591465, 60255.50523693027, 64346.70448619785], CI_upper: [59172.092648201564, 62841.24718921719, 66932.44643848477]
+2025-12-18 21:29:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 56586.35069591465, 60255.50523693027, 64346.70448619785], upper=[np.float64(35065.837153609304), 59172.092648201564, 62841.24718921719, 66932.44643848477]
+2025-12-18 21:29:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 51700.94111957879, 2025: 51700.94111957879, 2026: 51700.94111957879}, values=[51700.94111957879, 51700.94111957879, 51700.94111957879], CI_lower=[49214.68539036005, 49214.68539036005, 49214.68539036005], CI_upper=[54187.19684879753, 54187.19684879753, 54187.19684879753]
+2025-12-18 21:29:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [51700.94111957879, 51700.94111957879, 51700.94111957879], CI_lower: [49214.68539036005, 49214.68539036005, 49214.68539036005], CI_upper: [54187.19684879753, 54187.19684879753, 54187.19684879753]
+2025-12-18 21:29:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 49214.68539036005, 49214.68539036005, 49214.68539036005], upper=[np.float64(35065.837153609304), 54187.19684879753, 54187.19684879753, 54187.19684879753]
+2025-12-18 21:29:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 48822.902684250286, 2025: 48822.902684250286, 2026: 48822.902684250286}, values=[48822.902684250286, 48822.902684250286, 48822.902684250286], CI_lower=[45455.50551927112, 45455.50551927112, 45455.50551927112], CI_upper=[52190.29984922945, 52190.29984922945, 52190.29984922945]
+2025-12-18 21:29:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48822.902684250286, 48822.902684250286, 48822.902684250286], CI_lower: [45455.50551927112, 45455.50551927112, 45455.50551927112], CI_upper: [52190.29984922945, 52190.29984922945, 52190.29984922945]
+2025-12-18 21:29:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 45455.50551927112, 45455.50551927112, 45455.50551927112], upper=[np.float64(35065.837153609304), 52190.29984922945, 52190.29984922945, 52190.29984922945]
+2025-12-18 21:29:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 52797.51990710271, 2025: 52797.51990710271, 2026: 52797.51990710271}, values=[52797.51990710271, 52797.51990710271, 52797.51990710271], CI_lower=[50753.91263813758, 50753.91263813758, 50753.91263813758], CI_upper=[54841.127176067836, 54841.127176067836, 54841.127176067836]
+2025-12-18 21:29:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [52797.51990710271, 52797.51990710271, 52797.51990710271], CI_lower: [50753.91263813758, 50753.91263813758, 50753.91263813758], CI_upper: [54841.127176067836, 54841.127176067836, 54841.127176067836]
+2025-12-18 21:29:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 50753.91263813758, 50753.91263813758, 50753.91263813758], upper=[np.float64(35065.837153609304), 54841.127176067836, 54841.127176067836, 54841.127176067836]
+2025-12-18 21:29:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 57130.10144871499, 2025: 58643.50988921039, 2026: 60156.84696846394}, values=[57130.10144871499, 58643.50988921039, 60156.84696846394], CI_lower=[41527.90694714787, 43041.31538764328, 44554.65246689682], CI_upper=[72732.2959502821, 74245.70439077751, 75759.04147003106]
+2025-12-18 21:29:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [57130.10144871499, 58643.50988921039, 60156.84696846394], CI_lower: [41527.90694714787, 43041.31538764328, 44554.65246689682], CI_upper: [72732.2959502821, 74245.70439077751, 75759.04147003106]
+2025-12-18 21:29:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 41527.90694714787, 43041.31538764328, 44554.65246689682], upper=[np.float64(35065.837153609304), 72732.2959502821, 74245.70439077751, 75759.04147003106]
+2025-12-18 21:29:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 58585.41576318759, 2025: 62345.64206170275, 2026: 66105.8683602179}, values=[58585.41576318759, 62345.64206170275, 66105.8683602179], CI_lower=[56110.602372163834, 59870.82867067899, 63631.054969194134], CI_upper=[61060.22915421135, 64820.455452726506, 68580.68175124166]
+2025-12-18 21:29:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [58585.41576318759, 62345.64206170275, 66105.8683602179], CI_lower: [56110.602372163834, 59870.82867067899, 63631.054969194134], CI_upper: [61060.22915421135, 64820.455452726506, 68580.68175124166]
+2025-12-18 21:29:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(35065.837153609304), 56110.602372163834, 59870.82867067899, 63631.054969194134], upper=[np.float64(35065.837153609304), 61060.22915421135, 64820.455452726506, 68580.68175124166]
+2025-12-18 21:29:52 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-18 21:29:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 47.08901592438326, 2025: 47.41906557713412, 2026: 47.74911522988498}, values=[47.08901592438326, 47.41906557713412, 47.74911522988498], CI_lower=[46.60209317817082, 46.93214283092168, 47.262192483672536], CI_upper=[47.575938670595704, 47.90598832334656, 48.23603797609742]
+2025-12-18 21:29:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47.08901592438326, 47.41906557713412, 47.74911522988498], CI_lower: [46.60209317817082, 46.93214283092168, 47.262192483672536], CI_upper: [47.575938670595704, 47.90598832334656, 48.23603797609742]
+2025-12-18 21:29:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 46.60209317817082, 46.93214283092168, 47.262192483672536], upper=[np.float64(46.52393538913363), 47.575938670595704, 47.90598832334656, 48.23603797609742]
+2025-12-18 21:29:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 47.34116931870449, 2025: 47.75504904495756, 2026: 48.177746525798284}, values=[47.34116931870449, 47.75504904495756, 48.177746525798284], CI_lower=[46.892928740437675, 47.30680846669075, 47.72950594753147], CI_upper=[47.7894098969713, 48.20328962322437, 48.625987104065096]
+2025-12-18 21:29:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47.34116931870449, 47.75504904495756, 48.177746525798284], CI_lower: [46.892928740437675, 47.30680846669075, 47.72950594753147], CI_upper: [47.7894098969713, 48.20328962322437, 48.625987104065096]
+2025-12-18 21:29:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 46.892928740437675, 47.30680846669075, 47.72950594753147], upper=[np.float64(46.52393538913363), 47.7894098969713, 48.20328962322437, 48.625987104065096]
+2025-12-18 21:29:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 47.12782656960189, 2025: 47.39258732646704, 2026: 47.62668304145336}, values=[47.12782656960189, 47.39258732646704, 47.62668304145336], CI_lower=[46.694981636145314, 46.95974239301046, 47.19383810799678], CI_upper=[47.56067150305847, 47.825432259923616, 48.05952797490994]
+2025-12-18 21:29:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47.12782656960189, 47.39258732646704, 47.62668304145336], CI_lower: [46.694981636145314, 46.95974239301046, 47.19383810799678], CI_upper: [47.56067150305847, 47.825432259923616, 48.05952797490994]
+2025-12-18 21:29:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 46.694981636145314, 46.95974239301046, 47.19383810799678], upper=[np.float64(46.52393538913363), 47.56067150305847, 47.825432259923616, 48.05952797490994]
+2025-12-18 21:29:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 46.49367432351213, 2025: 46.49367432351213, 2026: 46.49367432351213}, values=[46.49367432351213, 46.49367432351213, 46.49367432351213], CI_lower=[45.95796302417065, 45.95796302417065, 45.95796302417065], CI_upper=[47.02938562285361, 47.02938562285361, 47.02938562285361]
+2025-12-18 21:29:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46.49367432351213, 46.49367432351213, 46.49367432351213], CI_lower: [45.95796302417065, 45.95796302417065, 45.95796302417065], CI_upper: [47.02938562285361, 47.02938562285361, 47.02938562285361]
+2025-12-18 21:29:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 45.95796302417065, 45.95796302417065, 45.95796302417065], upper=[np.float64(46.52393538913363), 47.02938562285361, 47.02938562285361, 47.02938562285361]
+2025-12-18 21:29:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 45.92818882772693, 2025: 45.92818882772693, 2026: 45.92818882772693}, values=[45.92818882772693, 45.92818882772693, 45.92818882772693], CI_lower=[45.341089006191496, 45.341089006191496, 45.341089006191496], CI_upper=[46.51528864926236, 46.51528864926236, 46.51528864926236]
+2025-12-18 21:29:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45.92818882772693, 45.92818882772693, 45.92818882772693], CI_lower: [45.341089006191496, 45.341089006191496, 45.341089006191496], CI_upper: [46.51528864926236, 46.51528864926236, 46.51528864926236]
+2025-12-18 21:29:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 45.341089006191496, 45.341089006191496, 45.341089006191496], upper=[np.float64(46.52393538913363), 46.51528864926236, 46.51528864926236, 46.51528864926236]
+2025-12-18 21:29:55 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 46.58211842803373, 2025: 46.58211842803373, 2026: 46.58211842803373}, values=[46.58211842803373, 46.58211842803373, 46.58211842803373], CI_lower=[46.09557365297701, 46.09557365297701, 46.09557365297701], CI_upper=[47.06866320309045, 47.06866320309045, 47.06866320309045]
+2025-12-18 21:29:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46.58211842803373, 46.58211842803373, 46.58211842803373], CI_lower: [46.09557365297701, 46.09557365297701, 46.09557365297701], CI_upper: [47.06866320309045, 47.06866320309045, 47.06866320309045]
+2025-12-18 21:29:55 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 46.09557365297701, 46.09557365297701, 46.09557365297701], upper=[np.float64(46.52393538913363), 47.06866320309045, 47.06866320309045, 47.06866320309045]
+2025-12-18 21:29:56 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 47.168571028415684, 2025: 47.50371880903554, 2026: 47.83885058578716}, values=[47.168571028415684, 47.50371880903554, 47.83885058578716], CI_lower=[27.521103485795084, 27.85625126641494, 28.191383043166564], CI_upper=[66.81603857103629, 67.15118635165614, 67.48631812840776]
+2025-12-18 21:29:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47.168571028415684, 47.50371880903554, 47.83885058578716], CI_lower: [27.521103485795084, 27.85625126641494, 28.191383043166564], CI_upper: [66.81603857103629, 67.15118635165614, 67.48631812840776]
+2025-12-18 21:29:56 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 27.521103485795084, 27.85625126641494, 28.191383043166564], upper=[np.float64(46.52393538913363), 66.81603857103629, 67.15118635165614, 67.48631812840776]
+2025-12-18 21:29:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 47.1337211393818, 2025: 47.481855564376275, 2026: 47.82998998937075}, values=[47.1337211393818, 47.481855564376275, 47.82998998937075], CI_lower=[46.568275281482514, 46.91640970647699, 47.26454413147147], CI_upper=[47.69916699728108, 48.04730142227556, 48.395435847270036]
+2025-12-18 21:29:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47.1337211393818, 47.481855564376275, 47.82998998937075], CI_lower: [46.568275281482514, 46.91640970647699, 47.26454413147147], CI_upper: [47.69916699728108, 48.04730142227556, 48.395435847270036]
+2025-12-18 21:29:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(46.52393538913363), 46.568275281482514, 46.91640970647699, 47.26454413147147], upper=[np.float64(46.52393538913363), 47.69916699728108, 48.04730142227556, 48.395435847270036]
+2025-12-18 21:29:57 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-18 21:29:57 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 36.03123494271799, 2025: 35.96408568937329, 2026: 35.8969364360286}, values=[36.03123494271799, 35.96408568937329, 35.8969364360286], CI_lower=[35.241884177049045, 35.17473492370435, 35.107585670359654], CI_upper=[36.82058570838693, 36.753436455042234, 36.68628720169754]
+2025-12-18 21:29:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.03123494271799, 35.96408568937329, 35.8969364360286], CI_lower: [35.241884177049045, 35.17473492370435, 35.107585670359654], CI_upper: [36.82058570838693, 36.753436455042234, 36.68628720169754]
+2025-12-18 21:29:57 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 35.241884177049045, 35.17473492370435, 35.107585670359654], upper=[np.float64(36.403565640194486), 36.82058570838693, 36.753436455042234, 36.68628720169754]
+2025-12-18 21:29:58 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 36.33867065051891, 2025: 36.37373044358537, 2026: 36.41954120286391}, values=[36.33867065051891, 36.37373044358537, 36.41954120286391], CI_lower=[35.584150920157136, 35.6192107132236, 35.66502147250214], CI_upper=[37.09319038088068, 37.128250173947144, 37.17406093322568]
+2025-12-18 21:29:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.33867065051891, 36.37373044358537, 36.41954120286391], CI_lower: [35.584150920157136, 35.6192107132236, 35.66502147250214], CI_upper: [37.09319038088068, 37.128250173947144, 37.17406093322568]
+2025-12-18 21:29:58 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 35.584150920157136, 35.6192107132236, 35.66502147250214], upper=[np.float64(36.403565640194486), 37.09319038088068, 37.128250173947144, 37.17406093322568]
+2025-12-18 21:29:59 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 35.55451538041234, 2025: 35.0414241887629, 2026: 34.393945310264826}, values=[35.55451538041234, 35.0414241887629, 34.393945310264826], CI_lower=[34.93320410442511, 34.42011291277567, 33.772634034277594], CI_upper=[36.17582665639957, 35.662735464750135, 35.01525658625206]
+2025-12-18 21:29:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [35.55451538041234, 35.0414241887629, 34.393945310264826], CI_lower: [34.93320410442511, 34.42011291277567, 33.772634034277594], CI_upper: [36.17582665639957, 35.662735464750135, 35.01525658625206]
+2025-12-18 21:29:59 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 34.93320410442511, 34.42011291277567, 33.772634034277594], upper=[np.float64(36.403565640194486), 36.17582665639957, 35.662735464750135, 35.01525658625206]
+2025-12-18 21:30:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 36.18098982502904, 2025: 36.18098982502904, 2026: 36.18098982502904}, values=[36.18098982502904, 36.18098982502904, 36.18098982502904], CI_lower=[35.59570094246305, 35.59570094246305, 35.59570094246305], CI_upper=[36.76627870759503, 36.76627870759503, 36.76627870759503]
+2025-12-18 21:30:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.18098982502904, 36.18098982502904, 36.18098982502904], CI_lower: [35.59570094246305, 35.59570094246305, 35.59570094246305], CI_upper: [36.76627870759503, 36.76627870759503, 36.76627870759503]
+2025-12-18 21:30:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 35.59570094246305, 35.59570094246305, 35.59570094246305], upper=[np.float64(36.403565640194486), 36.76627870759503, 36.76627870759503, 36.76627870759503]
+2025-12-18 21:30:00 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 36.32688871809982, 2025: 36.32688871809982, 2026: 36.32688871809982}, values=[36.32688871809982, 36.32688871809982, 36.32688871809982], CI_lower=[35.740942571164524, 35.740942571164524, 35.740942571164524], CI_upper=[36.91283486503512, 36.91283486503512, 36.91283486503512]
+2025-12-18 21:30:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.32688871809982, 36.32688871809982, 36.32688871809982], CI_lower: [35.740942571164524, 35.740942571164524, 35.740942571164524], CI_upper: [36.91283486503512, 36.91283486503512, 36.91283486503512]
+2025-12-18 21:30:00 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 35.740942571164524, 35.740942571164524, 35.740942571164524], upper=[np.float64(36.403565640194486), 36.91283486503512, 36.91283486503512, 36.91283486503512]
+2025-12-18 21:30:01 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 36.2246254542021, 2025: 36.2246254542021, 2026: 36.2246254542021}, values=[36.2246254542021, 36.2246254542021, 36.2246254542021], CI_lower=[35.71540813740971, 35.71540813740971, 35.71540813740971], CI_upper=[36.733842770994485, 36.733842770994485, 36.733842770994485]
+2025-12-18 21:30:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.2246254542021, 36.2246254542021, 36.2246254542021], CI_lower: [35.71540813740971, 35.71540813740971, 35.71540813740971], CI_upper: [36.733842770994485, 36.733842770994485, 36.733842770994485]
+2025-12-18 21:30:01 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 35.71540813740971, 35.71540813740971, 35.71540813740971], upper=[np.float64(36.403565640194486), 36.733842770994485, 36.733842770994485, 36.733842770994485]
+2025-12-18 21:30:02 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 36.50040804537906, 2025: 36.540081688124104, 2026: 36.55633487726848}, values=[36.50040804537906, 36.540081688124104, 36.55633487726848], CI_lower=[18.505665749863187, 18.54533939260823, 18.56159258175261], CI_upper=[54.49515034089494, 54.53482398363998, 54.55107717278436]
+2025-12-18 21:30:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.50040804537906, 36.540081688124104, 36.55633487726848], CI_lower: [18.505665749863187, 18.54533939260823, 18.56159258175261], CI_upper: [54.49515034089494, 54.53482398363998, 54.55107717278436]
+2025-12-18 21:30:02 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 18.505665749863187, 18.54533939260823, 18.56159258175261], upper=[np.float64(36.403565640194486), 54.49515034089494, 54.53482398363998, 54.55107717278436]
+2025-12-18 21:30:03 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 36.30752467766614, 2025: 36.2114837226175, 2026: 36.11544276756886}, values=[36.30752467766614, 36.2114837226175, 36.11544276756886], CI_lower=[35.64812693238222, 35.55208597733358, 35.45604502228494], CI_upper=[36.966922422950056, 36.87088146790142, 36.774840512852776]
+2025-12-18 21:30:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.30752467766614, 36.2114837226175, 36.11544276756886], CI_lower: [35.64812693238222, 35.55208597733358, 35.45604502228494], CI_upper: [36.966922422950056, 36.87088146790142, 36.774840512852776]
+2025-12-18 21:30:03 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(36.403565640194486), 35.64812693238222, 35.55208597733358, 35.45604502228494], upper=[np.float64(36.403565640194486), 36.966922422950056, 36.87088146790142, 36.774840512852776]
+2025-12-18 21:30:06 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-18 21:30:06 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-18 21:30:41 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 18926.939453125, 'mse': 1373088384.0, 'rmse': 37055.20724540614, 'r2': 0.1937922239303589}
+2025-12-18 21:30:43 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-18 21:31:06 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 4.153568744659424, 'mse': 79.27050018310547, 'rmse': 8.903398237926094, 'r2': 0.30387070775032043}
+2025-12-18 21:31:08 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-18 21:31:33 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 15.750389099121094, 'mse': 667.0819702148438, 'rmse': 25.82793004123334, 'r2': -5.851722240447998}
+2025-12-18 21:31:35 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-18 21:31:51 [INFO] census_eda.main: [DL-VIZ] All visualizations saved to ./output/Vermont/population/1-year/figures/ml/deep_learning
+2025-12-18 21:31:53 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-18 21:31:53 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-18 21:31:53 [DEBUG] census_eda.main:  Running LLM analysis for state: Vermont
+2025-12-18 21:31:53 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-18 21:31:53 [INFO] census_eda.ml: [LLM] State context loaded: Vermont
+2025-12-18 21:31:53 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [LLM] User prompt: 728 chars (~182 tokens)
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [API] Total request: ~2370 tokens (system: ~2188, user: ~182)
+2025-12-18 21:31:53 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [API] Received response: 2765 chars
+2025-12-18 21:32:03 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (2765 chars)
+2025-12-18 21:32:03 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [LLM] User prompt: 1284 chars (~321 tokens)
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [API] Total request: ~2509 tokens (system: ~2188, user: ~321)
+2025-12-18 21:32:03 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [API] Received response: 3306 chars
+2025-12-18 21:32:12 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3306 chars)
+2025-12-18 21:32:12 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [LLM] User prompt: 2192 chars (~548 tokens)
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [API] Total request: ~2736 tokens (system: ~2188, user: ~548)
+2025-12-18 21:32:12 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [API] Received response: 3770 chars
+2025-12-18 21:32:23 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3770 chars)
+2025-12-18 21:32:23 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [LLM] User prompt: 1363 chars (~340 tokens)
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [API] Total request: ~2528 tokens (system: ~2188, user: ~340)
+2025-12-18 21:32:23 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [API] Received response: 5316 chars
+2025-12-18 21:32:40 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (5316 chars)
+2025-12-18 21:32:40 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [API] Total request: ~2378 tokens (system: ~2188, user: ~190)
+2025-12-18 21:32:40 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [API] Received response: 4167 chars
+2025-12-18 21:32:53 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4167 chars)
+2025-12-18 21:32:53 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [LLM] User prompt: 8742 chars (~2185 tokens)
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [API] Total request: ~4373 tokens (system: ~2188, user: ~2185)
+2025-12-18 21:32:53 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [API] Received response: 3425 chars
+2025-12-18 21:33:05 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3425 chars)
+2025-12-18 21:33:05 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [LLM] User prompt: 5209 chars (~1302 tokens)
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [API] Total request: ~3490 tokens (system: ~2188, user: ~1302)
+2025-12-18 21:33:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [API] Received response: 3208 chars
+2025-12-18 21:33:15 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (3208 chars)
+2025-12-18 21:33:15 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [LLM] User prompt: 685 chars (~171 tokens)
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [API] Total request: ~2359 tokens (system: ~2188, user: ~171)
+2025-12-18 21:33:15 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [API] Received response: 3500 chars
+2025-12-18 21:33:27 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3500 chars)
+2025-12-18 21:33:27 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [LLM] User prompt: 5460 chars (~1365 tokens)
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [API] Total request: ~3553 tokens (system: ~2188, user: ~1365)
+2025-12-18 21:33:27 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [API] Received response: 5311 chars
+2025-12-18 21:33:44 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (5311 chars)
+2025-12-18 21:33:44 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [LLM] User prompt: 1833 chars (~458 tokens)
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [API] Total request: ~2646 tokens (system: ~2188, user: ~458)
+2025-12-18 21:33:44 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [API] Received response: 3989 chars
+2025-12-18 21:33:56 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (3989 chars)
+2025-12-18 21:33:56 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [LLM] User prompt: 1638 chars (~409 tokens)
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Vermont
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Vermont
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 3867 chars
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~966
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Vermont
+
+ECONOMIC PROFILE:
+  Industries: Tourism (skiing, fall foliage, rural charm), Agriculture (dairy, maple syrup, specialty foods), Manufacturing (precision manufacturing, wood products), Healthcare and education, Small business/artisanal economy
+  Trends: Slow, steady growth 2011-2023. Tourism remains critical (9.3% of GDP). Agriculture declining in farms but stable in output. Manufacturing niche products. Remote work influx 2020-2023
+  Income: Near national median. High cost of living reduces purchasing power. Income inequality moderate. Significant second-home wealth (non-resident)
+  Dominant Sector: Services (tourism, healthcare, education)
+
+DEMOGRAPHIC PROFILE:
+  Trends: Minimal growth, ~0.3% annually. Aging population. Out-migration of young people. Remote worker in-migration 2020-2023 stabilized
+  Migration: Out-migration of young people for jobs/education. In-migration of retirees and second-home owners. Post-2020: remote workers from cities (Boston, NYC)
+  Education: High bachelor's degree attainment. Strong public schools. University of Vermont, Middlebury, other liberal arts colleges. Education sector important employer
+
+HOUSING MARKET:
+  Market: Expensive relative to income. Second-home market inflates prices. Burlington area tight. Rural areas mixed - some gentrifying, some declining
+  Affordability: Expensive 2011-2019. Surge 2020-2023 from remote workers and second-home buyers. Now severe shortage and affordability crisis
+  Challenges: Severe shortage, Second homes (84% of Ludlow) price out locals, Act 250 limits development, Aging housing stock, Short-term rentals reduce supply, Remote worker competition
+
+POLITY:
+  Policy: Progressive on social/environmental issues. Pragmatic on business. Strong local control tradition. Environmental protection prioritized
+  Housing: Local control strong. Recent state intervention on housing shortage. Incentives for housing construction. Act 250 environmental review affects development
+  Labor: $13.67 minimum wage (indexed), strong worker protections, paid family leave, progressive labor laws
+
+REGIONAL:
+  Geography: Green Mountains, Lake Champlain, rural valleys, small cities. Mountainous, forested. Very rural character
+  Urban/Rural: 39% urban (Burlington area), 61% rural/small town. Most rural New England state
+  Infrastructure: Limited highways, rural roads. Small Burlington airport. No major transit. Broadband expansion priority. Aging infrastructure
+
+HISTORICAL:
+  Events: 2011-2013: Hurricane Irene damage (2011), recovery, single-payer healthcare attempt, agriculture struggles; 2014-2016: GMO labeling law, Bernie Sanders 2016 campaign, tourism steady, dairy farm consolidation; 2017-2019: Housing shortage emerges, worker shortage critical, opioid crisis, climate change affecting seasons; 2021-2023: Remote worker influx, housing crisis severe, tourism records ($4B in 2023), worker shortage worsens, climate impacts (shorter winters, maple syrup)
+  Shocks: 2011 Hurricane Irene ($750M damage). 2020 pandemic tourism collapse then surge. Climate change affecting winter tourism and agriculture
+  Transitions: Dairy farms consolidating (70% decline since 1997 in farm numbers). Ski industry evolving to year-round recreation. Artisanal/specialty food growth. Manufacturing to precision/niche
+
+COMPARATIVE:
+  Benchmarks: Smallest/second smallest economy. Near median income. High cost of living. Oldest population. Least diverse. Highest rural. Strong education. Low unemployment but worker shortage
+  Peer States: New Hampshire (rural New England), Maine (rural, tourism, aging), Montana (rural, recreational tourism)
+  Unique: Smallest state capital (Montpelier). No billboards (banned). Strong local food movement. Bernie Sanders political brand. Highest % second homes. Most rural New England. Maple syrup capital. Craft beer density
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Vermont
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [PROMPT] State context injected (3867 chars)
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 8755 chars (~2188 tokens)
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [API] Total request: ~2597 tokens (system: ~2188, user: ~409)
+2025-12-18 21:33:56 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-18 21:34:08 [DEBUG] census_eda.ml: [API] Received response: 4131 chars
+2025-12-18 21:34:08 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (4131 chars)
+2025-12-18 21:34:08 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-18 21:34:08 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-18 21:34:08 [INFO] census_eda.main: [REPORT] Generated: report_Vermont_population_20251218_213408.txt
+2025-12-18 21:34:08 [INFO] census_eda.main: SUCCESS: POPULATION (1-year) pipeline complete for Vermont!
+2025-12-18 21:34:10 [INFO] census_eda.memory: process_Vermont_population_1-year:EXIT: 10803.6MB (delta: -296.2MB)
+2025-12-18 21:34:11 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 21:34:13 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 21:34:16 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 21:34:17 [INFO] census_eda.memory: Cleared all caches
+2025-12-18 21:34:20 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-18 21:34:22 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-18 21:34:24 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-18 21:34:26 [INFO] census_eda.memory: Cleared all caches

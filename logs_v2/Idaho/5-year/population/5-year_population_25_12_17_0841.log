@@ -1,0 +1,1331 @@
+2025-12-17 08:41:11 [INFO] census_eda: Logging context set: state=Idaho, survey=population, scope=5-year
+2025-12-17 08:41:11 [INFO] census_eda: Log file: ./logs/Idaho/5-year/population/5-year_population_25_12_17_0841.log
+2025-12-17 08:41:11 [INFO] census_eda.main: ======================================================================
+2025-12-17 08:41:11 [INFO] census_eda.main: [POPULATION] Processing Idaho (5-year)...
+2025-12-17 08:41:11 [INFO] census_eda.main: ======================================================================
+2025-12-17 08:41:11 [INFO] census_eda.memory: process_Idaho_population_5-year:ENTER: 8900.9MB (delta: +0.0MB)
+2025-12-17 08:41:11 [VERBOSE] census_eda.processing.loader: Searching for population files with scope 5-year...
+2025-12-17 08:41:11 [VERBOSE] census_eda.processing.loader: Pattern: /data/temp/census/raw/acs/population/5-Year/16/*/*.csv
+2025-12-17 08:41:11 [VERBOSE] census_eda.processing.loader: Found 15 file(s) to load
+2025-12-17 08:41:11 [VERBOSE] census_eda.processing.loader: Loading file 1/15: ss12pid.csv
+2025-12-17 08:41:12 [VERBOSE] census_eda.processing.loader:   Applied 2012 era schema (Population5Year)
+2025-12-17 08:41:12 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,245 rows, 260 columns
+2025-12-17 08:41:12 [VERBOSE] census_eda.processing.loader: Loading file 2/15: psam_p16.csv
+2025-12-17 08:41:14 [VERBOSE] census_eda.processing.loader:   Applied 2017 era schema (Population5Year)
+2025-12-17 08:41:14 [VERBOSE] census_eda.processing.loader:   -> Loaded 79,604 rows, 260 columns
+2025-12-17 08:41:14 [VERBOSE] census_eda.processing.loader: Loading file 3/15: ss14pid.csv
+2025-12-17 08:41:15 [VERBOSE] census_eda.processing.loader:   Applied 2014 era schema (Population5Year)
+2025-12-17 08:41:15 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,363 rows, 260 columns
+2025-12-17 08:41:15 [VERBOSE] census_eda.processing.loader: Loading file 4/15: ss13pid.csv
+2025-12-17 08:41:17 [VERBOSE] census_eda.processing.loader:   Applied 2013 era schema (Population5Year)
+2025-12-17 08:41:17 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,516 rows, 260 columns
+2025-12-17 08:41:17 [VERBOSE] census_eda.processing.loader: Loading file 5/15: ss09pid.csv
+2025-12-17 08:41:18 [VERBOSE] census_eda.processing.loader:   Applied 2009 era schema (Population5Year)
+2025-12-17 08:41:18 [VERBOSE] census_eda.processing.loader:   -> Loaded 75,719 rows, 260 columns
+2025-12-17 08:41:18 [VERBOSE] census_eda.processing.loader: Loading file 6/15: psam_p16.csv
+2025-12-17 08:41:20 [VERBOSE] census_eda.processing.loader:   Applied 2018 era schema (Population5Year)
+2025-12-17 08:41:20 [VERBOSE] census_eda.processing.loader:   -> Loaded 80,529 rows, 260 columns
+2025-12-17 08:41:20 [VERBOSE] census_eda.processing.loader: Loading file 7/15: ss16pid.csv
+2025-12-17 08:41:21 [VERBOSE] census_eda.processing.loader:   Applied 2016 era schema (Population5Year)
+2025-12-17 08:41:21 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,361 rows, 260 columns
+2025-12-17 08:41:21 [VERBOSE] census_eda.processing.loader: Loading file 8/15: psam_p16.csv
+2025-12-17 08:41:22 [VERBOSE] census_eda.processing.loader:   Applied 2019 era schema (Population5Year)
+2025-12-17 08:41:22 [VERBOSE] census_eda.processing.loader:   -> Loaded 82,287 rows, 260 columns
+2025-12-17 08:41:22 [VERBOSE] census_eda.processing.loader: Loading file 9/15: psam_p16.csv
+2025-12-17 08:41:24 [VERBOSE] census_eda.processing.loader:   Applied 2022 era schema (Population5Year)
+2025-12-17 08:41:24 [VERBOSE] census_eda.processing.loader:   -> Loaded 87,377 rows, 260 columns
+2025-12-17 08:41:24 [VERBOSE] census_eda.processing.loader: Loading file 10/15: psam_p16.csv
+2025-12-17 08:41:26 [VERBOSE] census_eda.processing.loader:   Applied 2021 era schema (Population5Year)
+2025-12-17 08:41:26 [VERBOSE] census_eda.processing.loader:   -> Loaded 84,029 rows, 260 columns
+2025-12-17 08:41:26 [VERBOSE] census_eda.processing.loader: Loading file 11/15: psam_p16.csv
+2025-12-17 08:41:27 [VERBOSE] census_eda.processing.loader:   Applied 2020 era schema (Population5Year)
+2025-12-17 08:41:27 [VERBOSE] census_eda.processing.loader:   -> Loaded 82,048 rows, 260 columns
+2025-12-17 08:41:27 [VERBOSE] census_eda.processing.loader: Loading file 12/15: psam_p16.csv
+2025-12-17 08:41:29 [VERBOSE] census_eda.processing.loader:   Applied 2023 era schema (Population5Year)
+2025-12-17 08:41:29 [VERBOSE] census_eda.processing.loader:   -> Loaded 91,113 rows, 260 columns
+2025-12-17 08:41:29 [VERBOSE] census_eda.processing.loader: Loading file 13/15: ss15pid.csv
+2025-12-17 08:41:30 [VERBOSE] census_eda.processing.loader:   Applied 2015 era schema (Population5Year)
+2025-12-17 08:41:30 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,188 rows, 260 columns
+2025-12-17 08:41:30 [VERBOSE] census_eda.processing.loader: Loading file 14/15: ss10pid.csv
+2025-12-17 08:41:32 [VERBOSE] census_eda.processing.loader:   Applied 2010 era schema (Population5Year)
+2025-12-17 08:41:32 [VERBOSE] census_eda.processing.loader:   -> Loaded 77,266 rows, 260 columns
+2025-12-17 08:41:32 [VERBOSE] census_eda.processing.loader: Loading file 15/15: ss11pid.csv
+2025-12-17 08:41:33 [VERBOSE] census_eda.processing.loader:   Applied 2011 era schema (Population5Year)
+2025-12-17 08:41:33 [VERBOSE] census_eda.processing.loader:   -> Loaded 78,117 rows, 260 columns
+2025-12-17 08:41:33 [VERBOSE] census_eda.processing.loader: Successfully loaded 15 dataframe(s)
+2025-12-17 08:41:41 [VERBOSE] census_eda.processing.loader: Combined into 1,209,762 total rows, 260 columns
+2025-12-17 08:41:41 [INFO] census_eda.main: Loaded 1,209,762 records
+2025-12-17 08:41:41 [DEBUG] census_eda.main: CENSUS_YEAR_TRACK After schema application: 1209762 valid, 15 unique
+2025-12-17 08:41:42 [INFO] census_eda.feature_engineering: [FE] Creating all engineered features...
+2025-12-17 08:41:43 [DEBUG] census_eda.feature_engineering: Created affordability indices: []
+2025-12-17 08:41:44 [DEBUG] census_eda.feature_engineering: Created poverty indices with poverty line $15,000
+2025-12-17 08:41:44 [DEBUG] census_eda.feature_engineering: Housing quality index: Skipped for non-housing survey
+2025-12-17 08:41:45 [DEBUG] census_eda.feature_engineering: Created disability severity features: ['Disability_Count', 'Disability_Severity', 'Has_Multiple_Disabilities']
+2025-12-17 08:41:45 [DEBUG] census_eda.feature_engineering: Created disability-employment features: ['Has_Disability', 'Is_Employed', 'Disability_Employment_Interaction']
+2025-12-17 08:41:46 [DEBUG] census_eda.feature_engineering: Created insurance coverage features: ['Insurance_Coverage_Count', 'Private_Insurance_Count', 'Public_Insurance_Count']
+2025-12-17 08:41:46 [DEBUG] census_eda.feature_engineering: Created uninsured features: ['Is_Uninsured', 'Vulnerable_Uninsured']
+2025-12-17 08:41:47 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2007 from Industry_Code_2007
+2025-12-17 08:41:47 [DEBUG] census_eda.feature_engineering: Created Industry_Sector_2002 from Industry_Code_2002
+2025-12-17 08:41:48 [DEBUG] census_eda.feature_engineering: Created Industry_Sector from Industry_Code
+2025-12-17 08:41:48 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2010 from Occupation_Code_2010
+2025-12-17 08:41:48 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level_2002 from Occupation_Code_2002
+2025-12-17 08:41:49 [DEBUG] census_eda.feature_engineering: Created Occupation_Skill_Level from Occupation_Code
+2025-12-17 08:41:49 [DEBUG] census_eda.feature_engineering: Created STEM category features from Field_Of_Degree_1
+2025-12-17 08:41:49 [INFO] census_eda.feature_engineering: [FE] Feature engineering complete. Created 29 features.
+2025-12-17 08:41:49 [DEBUG] census_eda.main: Feature engineering complete: (1209762, 292)
+2025-12-17 08:41:50 [DEBUG] census_eda.main: Running comprehensive analysis suite...
+2025-12-17 08:41:50 [DEBUG] census_eda.main: Using sample weights from 'Person_Weight' column
+2025-12-17 08:44:49 [INFO] census_eda.main: [VISUALS] Creating comprehensive visualization suite for POPULATION...
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.orchestrator: Creating temporal visualizations...
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.temporal: _plot_sample_counts: df.shape=(1209762, 292)
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.temporal: 'Census_Year' in columns: True
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.temporal: Census_Year counts: 15 unique years, total records: 1209762
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.temporal: Year range: 2009 to 2023
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.temporal: _year_distribution: df.shape=(1209762, 292)
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.temporal: Year distribution: {np.int64(2009): np.int64(75719), np.int64(2010): np.int64(77266), np.int64(2011): np.int64(78117), np.int64(2012): np.int64(78245), np.int64(2013): np.int64(78516), np.int64(2014): np.int64(78363), np.int64(2015): np.int64(78188), np.int64(2016): np.int64(78361), np.int64(2017): np.int64(79604), np.int64(2018): np.int64(80529), np.int64(2019): np.int64(82287), np.int64(2020): np.int64(82048), np.int64(2021): np.int64(84029), np.int64(2022): np.int64(87377), np.int64(2023): np.int64(91113)}
+2025-12-17 08:44:49 [VERBOSE] census_eda.visualization.temporal: _temporal_comparison: df.shape=(1209762, 292)
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: _get_key_numeric_cols: 270 numeric columns total
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: Numeric columns: ['Census_Year', 'Person_Number', 'Public_Use_Microdata_Area', 'State_Code', 'Income_Adjustment_Factor', 'Person_Weight', 'Age', 'Citizenship_Status', 'Class_of_Worker', 'English_Speaking_Ability', 'Fertility_Status', 'Marital_Status', 'Mobility_Status', 'Military_Service', 'Travel_Time_To_Work_Minutes', 'Vehicle_Occupancy', 'Transportation_To_Work', 'Language_Other_Than_English', 'Grandparents_Living_With_Grandchildren', 'Months_Responsible_For_Grandchildren']...
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: Matched key columns: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: Key numeric columns found: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income']
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Number'
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Number': 1209762 non-null values (zeros excluded if needed)
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 20.00
+2025-12-17 08:44:50 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Person_Weight'
+2025-12-17 08:44:51 [VERBOSE] census_eda.visualization.temporal: Column 'Person_Weight': 1209762 non-null values (zeros excluded if needed)
+2025-12-17 08:44:51 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 1093.00
+2025-12-17 08:44:51 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Age'
+2025-12-17 08:44:51 [VERBOSE] census_eda.visualization.temporal: Column 'Age': 1209762 non-null values (zeros excluded if needed)
+2025-12-17 08:44:51 [VERBOSE] census_eda.visualization.temporal: Value range: 0.00 to 94.00
+2025-12-17 08:44:51 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Travel_Time_To_Work_Minutes'
+2025-12-17 08:44:52 [VERBOSE] census_eda.visualization.temporal: Column 'Travel_Time_To_Work_Minutes': 481697 non-null values (zeros excluded if needed)
+2025-12-17 08:44:52 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 188.00
+2025-12-17 08:44:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Interest_Dividend_Rental_Income'
+2025-12-17 08:44:53 [VERBOSE] census_eda.visualization.temporal: Column 'Interest_Dividend_Rental_Income': 127725 non-null values (zeros excluded if needed)
+2025-12-17 08:44:53 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 447000.00
+2025-12-17 08:44:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Other_Income'
+2025-12-17 08:44:53 [VERBOSE] census_eda.visualization.temporal: Column 'Other_Income': 74956 non-null values (zeros excluded if needed)
+2025-12-17 08:44:53 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 72000.00
+2025-12-17 08:44:53 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Public_Assistance_Income'
+2025-12-17 08:44:54 [VERBOSE] census_eda.visualization.temporal: Column 'Public_Assistance_Income': 15878 non-null values (zeros excluded if needed)
+2025-12-17 08:44:54 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 30000.00
+2025-12-17 08:44:54 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Retirement_Income'
+2025-12-17 08:44:54 [VERBOSE] census_eda.visualization.temporal: Column 'Retirement_Income': 122466 non-null values (zeros excluded if needed)
+2025-12-17 08:44:54 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 146000.00
+2025-12-17 08:44:55 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Self_Employment_Income'
+2025-12-17 08:44:55 [VERBOSE] census_eda.visualization.temporal: Column 'Self_Employment_Income': 72518 non-null values (zeros excluded if needed)
+2025-12-17 08:44:55 [VERBOSE] census_eda.visualization.temporal: Value range: 1.00 to 435000.00
+2025-12-17 08:44:55 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Supplemental_Security_Income'
+2025-12-17 08:44:55 [VERBOSE] census_eda.visualization.temporal: Column 'Supplemental_Security_Income': 26169 non-null values (zeros excluded if needed)
+2025-12-17 08:44:55 [VERBOSE] census_eda.visualization.temporal: Value range: 40.00 to 30000.00
+2025-12-17 08:44:55 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Social_Security_Income'
+2025-12-17 08:44:56 [VERBOSE] census_eda.visualization.temporal: Column 'Social_Security_Income': 238417 non-null values (zeros excluded if needed)
+2025-12-17 08:44:56 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 50000.00
+2025-12-17 08:44:56 [VERBOSE] census_eda.visualization.temporal: _plot_metric_trend for column 'Wage_Income'
+2025-12-17 08:44:56 [VERBOSE] census_eda.visualization.temporal: Column 'Wage_Income': 562681 non-null values (zeros excluded if needed)
+2025-12-17 08:44:56 [VERBOSE] census_eda.visualization.temporal: Value range: 4.00 to 478000.00
+2025-12-17 08:44:58 [VERBOSE] census_eda.visualization.orchestrator: Creating economic visualizations...
+2025-12-17 08:45:11 [VERBOSE] census_eda.visualization.orchestrator: Creating correlation visualizations...
+2025-12-17 08:45:11 [VERBOSE] census_eda.visualization.correlation: Creating correlation heatmap...
+2025-12-17 08:45:11 [VERBOSE] census_eda.visualization.correlation: Creating heatmap with 10 columns
+2025-12-17 08:45:12 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix...
+2025-12-17 08:45:12 [DEBUG] census_eda.memory: Skipping sampling: 53034MB available (>16GB)
+2025-12-17 08:45:12 [VERBOSE] census_eda.visualization.correlation: Creating scatter matrix with 8 columns, 1209762 rows
+2025-12-17 08:48:39 [VERBOSE] census_eda.visualization.orchestrator: Creating statistical distribution visualizations...
+2025-12-17 08:48:39 [VERBOSE] census_eda.visualization.statistical: _box_plots: df.shape=(1209762, 292)
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Key columns for box plots: ['Person_Number', 'Person_Weight', 'Age', 'Travel_Time_To_Work_Minutes', 'Interest_Dividend_Rental_Income', 'Other_Income', 'Public_Assistance_Income', 'Retirement_Income', 'Self_Employment_Income', 'Supplemental_Security_Income', 'Social_Security_Income', 'Wage_Income', 'Hours_Worked_Per_Week', 'Weeks_Worked_Past_Year', 'Employment_Status_Parents', 'Employment_Status_Recode']
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Number': 1209762 non-null values
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 20.00
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Person_Weight': 1209762 non-null values
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 1093.00
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Age': 1209762 non-null values
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Data range: 0.00 to 94.00
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Travel_Time_To_Work_Minutes': 481697 non-null values
+2025-12-17 08:48:40 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 188.00
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Interest_Dividend_Rental_Income': 127725 non-null values
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 447000.00
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Other_Income': 74956 non-null values
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 72000.00
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Public_Assistance_Income': 15878 non-null values
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 30000.00
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Retirement_Income': 122466 non-null values
+2025-12-17 08:48:41 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 146000.00
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Self_Employment_Income': 72518 non-null values
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 435000.00
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Supplemental_Security_Income': 26169 non-null values
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 40.00 to 30000.00
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Social_Security_Income': 238417 non-null values
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 50000.00
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Wage_Income': 562681 non-null values
+2025-12-17 08:48:42 [VERBOSE] census_eda.visualization.statistical: Data range: 4.00 to 478000.00
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Hours_Worked_Per_Week': 609278 non-null values
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 99.00
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Weeks_Worked_Past_Year': 563818 non-null values
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Parents': 290144 non-null values
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 8.00
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Box plot for 'Employment_Status_Recode': 940314 non-null values
+2025-12-17 08:48:43 [VERBOSE] census_eda.visualization.statistical: Data range: 1.00 to 6.00
+2025-12-17 08:48:50 [VERBOSE] census_eda.visualization.orchestrator: Creating advanced visualizations (violin, ridge, radar)...
+2025-12-17 08:49:00 [VERBOSE] census_eda.visualization.orchestrator: Creating year-over-year change visualizations...
+2025-12-17 08:49:14 [VERBOSE] census_eda.visualization.orchestrator: Creating outlier and anomaly detection visualizations...
+2025-12-17 08:49:39 [VERBOSE] census_eda.visualization.orchestrator: Creating demographics visualizations...
+2025-12-17 08:49:39 [VERBOSE] census_eda.visualization.demographics: Creating demographics visualizations...
+2025-12-17 08:49:39 [VERBOSE] census_eda.visualization.demographics: Creating age pyramid visualization...
+2025-12-17 08:49:41 [VERBOSE] census_eda.visualization.demographics: Creating education distribution visualization...
+2025-12-17 08:49:41 [VERBOSE] census_eda.visualization.demographics: Creating marital status trends visualization...
+2025-12-17 08:49:41 [VERBOSE] census_eda.visualization.demographics: Creating citizenship patterns visualization...
+2025-12-17 08:49:42 [VERBOSE] census_eda.visualization.orchestrator: Creating transportation visualizations...
+2025-12-17 08:49:42 [VERBOSE] census_eda.visualization.transport: Creating transportation visualizations...
+2025-12-17 08:49:42 [VERBOSE] census_eda.visualization.transport: Creating travel time distribution histogram...
+2025-12-17 08:49:43 [VERBOSE] census_eda.visualization.transport: Creating transportation mode bar chart...
+2025-12-17 08:49:43 [VERBOSE] census_eda.visualization.transport: Creating commute trends over time...
+2025-12-17 08:49:45 [VERBOSE] census_eda.visualization.orchestrator: Creating income composition visualizations...
+2025-12-17 08:49:45 [VERBOSE] census_eda.visualization.income: Creating income visualizations...
+2025-12-17 08:49:45 [VERBOSE] census_eda.visualization.income: Creating income sources stacked area chart...
+2025-12-17 08:49:46 [VERBOSE] census_eda.visualization.income: Creating income by source histograms for 5 sources...
+2025-12-17 08:49:47 [VERBOSE] census_eda.visualization.orchestrator: Creating race & ethnicity visualizations...
+2025-12-17 08:49:47 [VERBOSE] census_eda.visualization.demographics: Creating race/ethnicity visualizations...
+2025-12-17 08:49:47 [VERBOSE] census_eda.visualization.demographics: Creating race distribution visualization...
+2025-12-17 08:49:47 [VERBOSE] census_eda.visualization.demographics: Creating Hispanic origin trends visualization...
+2025-12-17 08:49:48 [VERBOSE] census_eda.visualization.demographics: Creating diversity trends visualization...
+2025-12-17 08:49:49 [VERBOSE] census_eda.visualization.orchestrator: Creating multi-variable interaction visualizations...
+2025-12-17 08:49:49 [DEBUG] census_eda.memory: Skipping sampling: 52656MB available (>16GB)
+2025-12-17 08:50:05 [VERBOSE] census_eda.visualization.orchestrator: Creating distribution comparison visualizations...
+2025-12-17 08:50:05 [DEBUG] census_eda.memory: Skipping sampling: 52658MB available (>16GB)
+2025-12-17 08:50:37 [VERBOSE] census_eda.visualization.orchestrator: Creating enhanced feature interaction visualizations...
+2025-12-17 08:50:37 [DEBUG] census_eda.memory: Skipping sampling: 52608MB available (>16GB)
+2025-12-17 08:50:41 [VERBOSE] census_eda.visualization.orchestrator: Creating inequality visualizations...
+2025-12-17 08:50:54 [VERBOSE] census_eda.visualization.orchestrator: Creating occupation/industry visualizations...
+2025-12-17 08:50:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation and industry visualizations...
+2025-12-17 08:50:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2007...
+2025-12-17 08:50:54 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector_2002...
+2025-12-17 08:50:55 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry sector distribution for Industry_Sector...
+2025-12-17 08:50:56 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2010...
+2025-12-17 08:50:56 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level_2002...
+2025-12-17 08:50:57 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation skill distribution for Occupation_Skill_Level...
+2025-12-17 08:50:57 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry income relationship box plot...
+2025-12-17 08:50:58 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry trends over time...
+2025-12-17 08:50:58 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation by sex distribution...
+2025-12-17 08:50:59 [VERBOSE] census_eda.visualization.occupation_industry: Creating industry wage premium analysis...
+2025-12-17 08:51:00 [VERBOSE] census_eda.visualization.occupation_industry: Creating occupation-education matrix heatmap...
+2025-12-17 08:51:01 [VERBOSE] census_eda.visualization.orchestrator: Creating health insurance visualizations...
+2025-12-17 08:51:01 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance visualizations...
+2025-12-17 08:51:01 [VERBOSE] census_eda.visualization.health_insurance: Creating health insurance coverage overview...
+2025-12-17 08:51:02 [VERBOSE] census_eda.visualization.health_insurance: Creating insurance type breakdown visualization...
+2025-12-17 08:51:02 [VERBOSE] census_eda.visualization.health_insurance: Creating uninsured trends visualization...
+2025-12-17 08:51:03 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by age visualization...
+2025-12-17 08:51:05 [VERBOSE] census_eda.visualization.health_insurance: Creating public vs private insurance visualization...
+2025-12-17 08:51:07 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by employment visualization...
+2025-12-17 08:51:09 [VERBOSE] census_eda.visualization.health_insurance: Creating coverage by income quartile visualization...
+2025-12-17 08:51:11 [VERBOSE] census_eda.visualization.orchestrator: Creating disability visualizations...
+2025-12-17 08:51:11 [VERBOSE] census_eda.visualization.disability: Creating disability visualizations...
+2025-12-17 08:51:11 [VERBOSE] census_eda.visualization.disability: Creating disability prevalence visualization...
+2025-12-17 08:51:12 [VERBOSE] census_eda.visualization.disability: Creating disability types visualization...
+2025-12-17 08:51:12 [VERBOSE] census_eda.visualization.disability: Creating disability by age visualization...
+2025-12-17 08:51:14 [VERBOSE] census_eda.visualization.disability: Creating disability trends visualization...
+2025-12-17 08:51:15 [VERBOSE] census_eda.visualization.disability: Creating multiple disabilities co-occurrence visualization...
+2025-12-17 08:51:16 [VERBOSE] census_eda.visualization.disability: Creating disability employment visualization...
+2025-12-17 08:51:17 [VERBOSE] census_eda.visualization.disability: Creating disability income gap visualization...
+2025-12-17 08:51:18 [VERBOSE] census_eda.visualization.disability: Creating disability by education visualization...
+2025-12-17 08:51:20 [VERBOSE] census_eda.visualization.orchestrator: Creating education field visualizations...
+2025-12-17 08:51:24 [VERBOSE] census_eda.visualization.orchestrator: All visualizations complete!
+2025-12-17 08:51:24 [VERBOSE] census_eda.visualization.orchestrator: Creating missing data analysis...
+2025-12-17 08:51:25 [INFO] census_eda.main: SUCCESS: Visualizations saved to ./output/Idaho/population/5-year/figures
+2025-12-17 08:51:25 [DEBUG] census_eda.memory: Skipping sampling: 52867MB available (>16GB)
+2025-12-17 08:51:25 [INFO] census_eda.main: [ML] Running ML pipeline for POPULATION...
+2025-12-17 08:51:25 [INFO] census_eda.main: [ML] Hyperparameter tuning ENABLED (this may take longer)
+2025-12-17 08:51:26 [INFO] census_eda.memory: [ML-START]: 18810.4MB (delta: +9909.5MB)
+2025-12-17 08:51:26 [INFO] census_eda.main: [ML] Starting regression training...
+2025-12-17 08:51:26 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Income
+2025-12-17 08:51:26 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Income: After zero-filter on target: 13729 samples (was 13748)
+2025-12-17 08:51:26 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 08:51:26 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 08:51:26 [INFO] census_eda.ml.regression: [TUNE] Data: 13,729 samples, 10 features
+2025-12-17 08:51:26 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:51:26 [INFO] census_eda.memory: tune_ridge:ENTER: 18809.4MB (delta: -1.0MB)
+2025-12-17 08:51:27 [WARNING] census_eda.memory: Memory usage (18810.1MB) exceeded threshold (16000MB)
+2025-12-17 08:51:27 [INFO] census_eda.memory: tune_ridge:EXIT: 18810.1MB (delta: +0.6MB)
+2025-12-17 08:51:27 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 08:51:27 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1010
+2025-12-17 08:51:27 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:51:27 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 08:51:27 [INFO] census_eda.ml.regression: [TUNE] Data: 13,729 samples, 10 features
+2025-12-17 08:51:27 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:51:27 [INFO] census_eda.memory: tune_lasso:ENTER: 18810.1MB (delta: +0.0MB)
+2025-12-17 08:51:27 [WARNING] census_eda.memory: Memory usage (18810.1MB) exceeded threshold (16000MB)
+2025-12-17 08:51:28 [INFO] census_eda.memory: tune_lasso:EXIT: 18810.1MB (delta: +0.0MB)
+2025-12-17 08:51:28 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 08:51:28 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1009
+2025-12-17 08:51:28 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:51:28 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 08:51:28 [INFO] census_eda.ml.regression: [TUNE] Data: 13,729 samples, 10 features
+2025-12-17 08:51:28 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:51:28 [INFO] census_eda.memory: tune_random_forest:ENTER: 18810.1MB (delta: +0.0MB)
+2025-12-17 08:51:39 [WARNING] census_eda.memory: Memory usage (18817.8MB) exceeded threshold (16000MB)
+2025-12-17 08:51:39 [INFO] census_eda.memory: tune_random_forest:EXIT: 18817.8MB (delta: +7.7MB)
+2025-12-17 08:51:39 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-12-17 08:51:39 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8608
+2025-12-17 08:51:39 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:51:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 08:51:41 [INFO] census_eda.ml.regression: [TUNE] Data: 13,729 samples, 10 features
+2025-12-17 08:51:41 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:51:41 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18824.2MB (delta: +6.4MB)
+2025-12-17 08:51:49 [WARNING] census_eda.memory: Memory usage (18824.2MB) exceeded threshold (16000MB)
+2025-12-17 08:51:49 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:51:49 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 200, 'subsample': 0.9}
+2025-12-17 08:51:49 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8586
+2025-12-17 08:51:49 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:51:57 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,746 -> 1,000
+2025-12-17 08:51:57 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,746 -> 1,000
+2025-12-17 08:51:57 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:51:57 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 08:52:46 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:52:46 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 08:52:46 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-17 08:52:46 [INFO] census_eda.main: [ML] Training regression models for target: Wage_Income
+2025-12-17 08:52:46 [DEBUG] census_eda.main: [REGRESSION] Wage_Income: After zero-filter on target: 13249 samples (was 13748)
+2025-12-17 08:52:46 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 08:52:46 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 08:52:46 [INFO] census_eda.ml.regression: [TUNE] Data: 13,249 samples, 10 features
+2025-12-17 08:52:46 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:52:46 [INFO] census_eda.memory: tune_ridge:ENTER: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:52:47 [WARNING] census_eda.memory: Memory usage (18824.2MB) exceeded threshold (16000MB)
+2025-12-17 08:52:47 [INFO] census_eda.memory: tune_ridge:EXIT: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1050
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 08:52:47 [INFO] census_eda.ml.regression: [TUNE] Data: 13,249 samples, 10 features
+2025-12-17 08:52:47 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:52:47 [INFO] census_eda.memory: tune_lasso:ENTER: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:52:47 [WARNING] census_eda.memory: Memory usage (18824.2MB) exceeded threshold (16000MB)
+2025-12-17 08:52:47 [INFO] census_eda.memory: tune_lasso:EXIT: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.1048
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:52:47 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 08:52:47 [INFO] census_eda.ml.regression: [TUNE] Data: 13,249 samples, 10 features
+2025-12-17 08:52:47 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:52:47 [INFO] census_eda.memory: tune_random_forest:ENTER: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:52:58 [WARNING] census_eda.memory: Memory usage (18824.2MB) exceeded threshold (16000MB)
+2025-12-17 08:52:59 [INFO] census_eda.memory: tune_random_forest:EXIT: 18824.2MB (delta: +0.0MB)
+2025-12-17 08:52:59 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-12-17 08:52:59 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8851
+2025-12-17 08:52:59 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:53:00 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 08:53:00 [INFO] census_eda.ml.regression: [TUNE] Data: 13,249 samples, 10 features
+2025-12-17 08:53:00 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:53:00 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18826.8MB (delta: +2.6MB)
+2025-12-17 08:53:08 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:53:08 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:53:08 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 200, 'subsample': 0.9}
+2025-12-17 08:53:08 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8741
+2025-12-17 08:53:08 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:53:15 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,650 -> 1,000
+2025-12-17 08:53:15 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,650 -> 1,000
+2025-12-17 08:53:15 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:53:15 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 08:54:03 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:03 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 08:54:03 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-17 08:54:03 [INFO] census_eda.main: [ML] Training regression models for target: Total_Person_Earnings
+2025-12-17 08:54:03 [DEBUG] census_eda.main: [REGRESSION] Total_Person_Earnings: After zero-filter on target: 13724 samples (was 13748)
+2025-12-17 08:54:03 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 08:54:03 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 08:54:03 [INFO] census_eda.ml.regression: [TUNE] Data: 13,724 samples, 10 features
+2025-12-17 08:54:03 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:54:03 [INFO] census_eda.memory: tune_ridge:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:04 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:54:04 [INFO] census_eda.memory: tune_ridge:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 100.0}
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0978
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 08:54:04 [INFO] census_eda.ml.regression: [TUNE] Data: 13,724 samples, 10 features
+2025-12-17 08:54:04 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:54:04 [INFO] census_eda.memory: tune_lasso:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:04 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:54:04 [INFO] census_eda.memory: tune_lasso:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0977
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:54:04 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 08:54:04 [INFO] census_eda.ml.regression: [TUNE] Data: 13,724 samples, 10 features
+2025-12-17 08:54:04 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:54:04 [INFO] census_eda.memory: tune_random_forest:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:16 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:54:16 [INFO] census_eda.memory: tune_random_forest:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:16 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 30, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-12-17 08:54:16 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8741
+2025-12-17 08:54:16 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:54:18 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 08:54:18 [INFO] census_eda.ml.regression: [TUNE] Data: 13,724 samples, 10 features
+2025-12-17 08:54:18 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:54:18 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:26 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:54:26 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:26 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 200, 'subsample': 0.9}
+2025-12-17 08:54:26 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8794
+2025-12-17 08:54:26 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:54:33 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,745 -> 1,000
+2025-12-17 08:54:33 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,745 -> 1,000
+2025-12-17 08:54:33 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:54:33 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 08:55:23 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:23 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 08:55:23 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-17 08:55:23 [INFO] census_eda.main: [ML] Training regression models for target: Age
+2025-12-17 08:55:23 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 08:55:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 08:55:23 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:23 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:55:23 [INFO] census_eda.memory: tune_ridge:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:23 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:55:23 [INFO] census_eda.memory: tune_ridge:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:23 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 0.01}
+2025-12-17 08:55:23 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 08:55:23 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:55:23 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 08:55:23 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:23 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:55:23 [INFO] census_eda.memory: tune_lasso:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:23 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:55:24 [INFO] census_eda.memory: tune_lasso:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:24 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 08:55:24 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 08:55:24 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:55:24 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 08:55:24 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:24 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:55:24 [INFO] census_eda.memory: tune_random_forest:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:28 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:55:29 [INFO] census_eda.memory: tune_random_forest:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:29 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': 20, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 100}
+2025-12-17 08:55:29 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 08:55:29 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:55:29 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 08:55:29 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:29 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:55:29 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:34 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:55:35 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:35 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200, 'subsample': 0.8}
+2025-12-17 08:55:35 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 1.0000
+2025-12-17 08:55:35 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:55:39 [INFO] census_eda.main: [ML] Training regression models for target: Hours_Worked_Per_Week
+2025-12-17 08:55:39 [DEBUG] census_eda.main: [ML] Using sample weights from 'Person_Weight'
+2025-12-17 08:55:39 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for ridge...
+2025-12-17 08:55:39 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:39 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:55:39 [INFO] census_eda.memory: tune_ridge:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:40 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:55:40 [INFO] census_eda.memory: tune_ridge:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:40 [INFO] census_eda.ml.comparison: [TUNE] Best params for ridge: {'alpha': 10.0}
+2025-12-17 08:55:40 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0613
+2025-12-17 08:55:40 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:55:40 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for lasso...
+2025-12-17 08:55:40 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:40 [INFO] census_eda.ml.regression: [TUNE] Searching 5 combinations (5-fold CV = 25 fits)
+2025-12-17 08:55:40 [INFO] census_eda.memory: tune_lasso:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:40 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:55:40 [INFO] census_eda.memory: tune_lasso:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:40 [INFO] census_eda.ml.comparison: [TUNE] Best params for lasso: {'alpha': 0.01}
+2025-12-17 08:55:40 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.0615
+2025-12-17 08:55:40 [INFO] census_eda.ml.comparison: [TUNE] Searched 5 parameter combinations
+2025-12-17 08:55:41 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for random_forest...
+2025-12-17 08:55:41 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:41 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:55:41 [INFO] census_eda.memory: tune_random_forest:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:52 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:55:52 [INFO] census_eda.memory: tune_random_forest:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:55:52 [INFO] census_eda.ml.comparison: [TUNE] Best params for random_forest: {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 200}
+2025-12-17 08:55:52 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8608
+2025-12-17 08:55:52 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:55:54 [INFO] census_eda.ml.comparison: [TUNE] Tuning hyperparameters for gradient_boosting...
+2025-12-17 08:55:54 [INFO] census_eda.ml.regression: [TUNE] Data: 13,748 samples, 10 features
+2025-12-17 08:55:54 [INFO] census_eda.ml.regression: [TUNE] Searching 24 combinations (5-fold CV = 120 fits)
+2025-12-17 08:55:54 [INFO] census_eda.memory: tune_gradient_boosting:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:56:02 [WARNING] census_eda.memory: Memory usage (18826.8MB) exceeded threshold (16000MB)
+2025-12-17 08:56:02 [INFO] census_eda.memory: tune_gradient_boosting:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:56:02 [INFO] census_eda.ml.comparison: [TUNE] Best params for gradient_boosting: {'learning_rate': 0.3, 'max_depth': 7, 'n_estimators': 200, 'subsample': 0.9}
+2025-12-17 08:56:02 [INFO] census_eda.ml.comparison: [TUNE] Best CV R² score: 0.8343
+2025-12-17 08:56:02 [INFO] census_eda.ml.comparison: [TUNE] Searched 24 parameter combinations
+2025-12-17 08:56:09 [INFO] census_eda.memory: [SHAP] Safe sample size: 2,750 -> 1,000
+2025-12-17 08:56:09 [INFO] census_eda.ml.explainability: [SHAP] Sampled test data: 2,750 -> 1,000
+2025-12-17 08:56:09 [INFO] census_eda.memory: SHAP_TreeExplainer:ENTER: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:56:09 [INFO] census_eda.ml.explainability: [SHAP] Computing TreeExplainer for 1,000 samples...
+2025-12-17 08:56:48 [INFO] census_eda.memory: SHAP_TreeExplainer:EXIT: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:56:48 [INFO] census_eda.ml.explainability: [SHAP] TreeExplainer complete. Top feature: Age
+2025-12-17 08:56:48 [INFO] census_eda.main: [SHAP] Generated explanation for random_forest
+2025-12-17 08:56:48 [INFO] census_eda.main: [ML] Regression complete. 5 models trained.
+2025-12-17 08:56:48 [INFO] census_eda.memory: [PRE-CLUSTERING]: 18826.8MB (delta: +0.0MB)
+2025-12-17 08:56:48 [INFO] census_eda.main: [CLUSTERING] Starting clustering model training...
+2025-12-17 08:56:48 [INFO] census_eda.main: [CLUSTERING] KMeans on 13,748 samples...
+2025-12-17 08:56:50 [INFO] census_eda.main: [CLUSTERING] KMeans complete.
+2025-12-17 08:56:50 [INFO] census_eda.main: [CLUSTERING] Hierarchical on 13,748 samples (will sample if needed)...
+2025-12-17 08:56:53 [INFO] census_eda.main: [CLUSTERING] Hierarchical complete.
+2025-12-17 08:56:53 [INFO] census_eda.main: [CLUSTERING] Clustering complete.
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML] Starting time series training...
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for 5 targets: ['Total_Person_Income', 'Wage_Income', 'Total_Person_Earnings', 'Age', 'Hours_Worked_Per_Week']
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Income
+2025-12-17 08:56:53 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Income, Forecasts: {2024: 48006.18475008011, 2025: 50550.98854494095, 2026: 53291.79979944229}, Values: [48006.18475008011, 50550.98854494095, 53291.79979944229]
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Wage_Income
+2025-12-17 08:56:53 [DEBUG] census_eda.main: [DEBUG-TS] Target: Wage_Income, Forecasts: {2024: 48756.97056388855, 2025: 51265.045463085175, 2026: 53950.06776428223}, Values: [48756.97056388855, 51265.045463085175, 53950.06776428223]
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Total_Person_Earnings
+2025-12-17 08:56:53 [DEBUG] census_eda.main: [DEBUG-TS] Target: Total_Person_Earnings, Forecasts: {2024: 49793.626991033554, 2025: 52346.66058754921, 2026: 55075.524112463}, Values: [49793.626991033554, 52346.66058754921, 55075.524112463]
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Age
+2025-12-17 08:56:53 [DEBUG] census_eda.main: [DEBUG-TS] Target: Age, Forecasts: {2024: 41.3000936023891, 2025: 41.402573104947805, 2026: 41.49181680008769}, Values: [41.3000936023891, 41.402573104947805, 41.49181680008769]
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML-TIMESERIES] Training time series for target: Hours_Worked_Per_Week
+2025-12-17 08:56:53 [DEBUG] census_eda.main: [DEBUG-TS] Target: Hours_Worked_Per_Week, Forecasts: {2024: 36.8856640085578, 2025: 36.33618050068617, 2026: 35.623739160597324}, Values: [36.8856640085578, 36.33618050068617, 35.623739160597324]
+2025-12-17 08:56:53 [INFO] census_eda.main: [ML] All ML models complete. Total: 11 result keys.
+2025-12-17 08:56:58 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Income
+2025-12-17 08:57:04 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Wage_Income
+2025-12-17 08:57:10 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Total_Person_Earnings
+2025-12-17 08:57:21 [INFO] census_eda.main: [SHAP-VIZ] Creating SHAP visualizations for Hours_Worked_Per_Week
+2025-12-17 08:57:24 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Found 5 time series results: ['Total_Person_Income_timeseries', 'Wage_Income_timeseries', 'Total_Person_Earnings_timeseries', 'Age_timeseries', 'Hours_Worked_Per_Week_timeseries']
+2025-12-17 08:57:24 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Income
+2025-12-17 08:57:24 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44078.04112058249, 2025: 45101.528137298534, 2026: 46125.015154014574}, values=[44078.04112058249, 45101.528137298534, 46125.015154014574], CI_lower=[41313.329984433665, 42336.817001149706, 43360.30401786575], CI_upper=[46842.75225673132, 47866.23927344736, 48889.7262901634]
+2025-12-17 08:57:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44078.04112058249, 45101.528137298534, 46125.015154014574], CI_lower: [41313.329984433665, 42336.817001149706, 43360.30401786575], CI_upper: [46842.75225673132, 47866.23927344736, 48889.7262901634]
+2025-12-17 08:57:24 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 41313.329984433665, 42336.817001149706, 43360.30401786575], upper=[np.float64(40672.623942992876), 46842.75225673132, 47866.23927344736, 48889.7262901634]
+2025-12-17 08:57:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 47877.68427658081, 2025: 50326.037476718426, 2026: 52942.021992623806}, values=[47877.68427658081, 50326.037476718426, 52942.021992623806], CI_lower=[47407.0795585513, 49855.43275868891, 52471.41727459429], CI_upper=[48348.288994610324, 50796.64219474794, 53412.62671065332]
+2025-12-17 08:57:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47877.68427658081, 50326.037476718426, 52942.021992623806], CI_lower: [47407.0795585513, 49855.43275868891, 52471.41727459429], CI_upper: [48348.288994610324, 50796.64219474794, 53412.62671065332]
+2025-12-17 08:57:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 47407.0795585513, 49855.43275868891, 52471.41727459429], upper=[np.float64(40672.623942992876), 48348.288994610324, 50796.64219474794, 53412.62671065332]
+2025-12-17 08:57:25 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 48006.18475008011, 2025: 50550.98854494095, 2026: 53291.79979944229}, values=[48006.18475008011, 50550.98854494095, 53291.79979944229], CI_lower=[47539.94942218156, 50084.7532170424, 52825.564471543745], CI_upper=[48472.420077978655, 51017.223872839495, 53758.03512734084]
+2025-12-17 08:57:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48006.18475008011, 50550.98854494095, 53291.79979944229], CI_lower: [47539.94942218156, 50084.7532170424, 52825.564471543745], CI_upper: [48472.420077978655, 51017.223872839495, 53758.03512734084]
+2025-12-17 08:57:25 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 47539.94942218156, 50084.7532170424, 52825.564471543745], upper=[np.float64(40672.623942992876), 48472.420077978655, 51017.223872839495, 53758.03512734084]
+2025-12-17 08:57:26 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 43505.43128012461, 2025: 43505.43128012461, 2026: 43505.43128012461}, values=[43505.43128012461, 43505.43128012461, 43505.43128012461], CI_lower=[42008.5221426671, 42008.5221426671, 42008.5221426671], CI_upper=[45002.34041758213, 45002.34041758213, 45002.34041758213]
+2025-12-17 08:57:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43505.43128012461, 43505.43128012461, 43505.43128012461], CI_lower: [42008.5221426671, 42008.5221426671, 42008.5221426671], CI_upper: [45002.34041758213, 45002.34041758213, 45002.34041758213]
+2025-12-17 08:57:26 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 42008.5221426671, 42008.5221426671, 42008.5221426671], upper=[np.float64(40672.623942992876), 45002.34041758213, 45002.34041758213, 45002.34041758213]
+2025-12-17 08:57:27 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 41574.52050854248, 2025: 41574.52050854248, 2026: 41574.52050854248}, values=[41574.52050854248, 41574.52050854248, 41574.52050854248], CI_lower=[39005.925008513965, 39005.925008513965, 39005.925008513965], CI_upper=[44143.116008571, 44143.116008571, 44143.116008571]
+2025-12-17 08:57:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41574.52050854248, 41574.52050854248, 41574.52050854248], CI_lower: [39005.925008513965, 39005.925008513965, 39005.925008513965], CI_upper: [44143.116008571, 44143.116008571, 44143.116008571]
+2025-12-17 08:57:27 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 39005.925008513965, 39005.925008513965, 39005.925008513965], upper=[np.float64(40672.623942992876), 44143.116008571, 44143.116008571, 44143.116008571]
+2025-12-17 08:57:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 44238.48660549772, 2025: 44238.48660549772, 2026: 44238.48660549772}, values=[44238.48660549772, 44238.48660549772, 44238.48660549772], CI_lower=[43131.666077688, 43131.666077688, 43131.666077688], CI_upper=[45345.30713330743, 45345.30713330743, 45345.30713330743]
+2025-12-17 08:57:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44238.48660549772, 44238.48660549772, 44238.48660549772], CI_lower: [43131.666077688, 43131.666077688, 43131.666077688], CI_upper: [45345.30713330743, 45345.30713330743, 45345.30713330743]
+2025-12-17 08:57:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 43131.666077688, 43131.666077688, 43131.666077688], upper=[np.float64(40672.623942992876), 45345.30713330743, 45345.30713330743, 45345.30713330743]
+2025-12-17 08:57:28 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 46763.39293768929, 2025: 47811.440797030875, 2026: 48859.3174447602}, values=[46763.39293768929, 47811.440797030875, 48859.3174447602], CI_lower=[31698.16537270695, 32746.213232048533, 33794.08987977786], CI_upper=[61828.620502671634, 62876.66836201322, 63924.54500974254]
+2025-12-17 08:57:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [46763.39293768929, 47811.440797030875, 48859.3174447602], CI_lower: [31698.16537270695, 32746.213232048533, 33794.08987977786], CI_upper: [61828.620502671634, 62876.66836201322, 63924.54500974254]
+2025-12-17 08:57:28 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 31698.16537270695, 32746.213232048533, 33794.08987977786], upper=[np.float64(40672.623942992876), 61828.620502671634, 62876.66836201322, 63924.54500974254]
+2025-12-17 08:57:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 47946.06956583068, 2025: 50176.965293845635, 2026: 52407.86102186059}, values=[47946.06956583068, 50176.965293845635, 52407.86102186059], CI_lower=[47391.790660362916, 49622.68638837787, 51853.58211639283], CI_upper=[48500.34847129844, 50731.2441993134, 52962.13992732835]
+2025-12-17 08:57:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47946.06956583068, 50176.965293845635, 52407.86102186059], CI_lower: [47391.790660362916, 49622.68638837787, 51853.58211639283], CI_upper: [48500.34847129844, 50731.2441993134, 52962.13992732835]
+2025-12-17 08:57:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40672.623942992876), 47391.790660362916, 49622.68638837787, 51853.58211639283], upper=[np.float64(40672.623942992876), 48500.34847129844, 50731.2441993134, 52962.13992732835]
+2025-12-17 08:57:30 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Wage_Income
+2025-12-17 08:57:30 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 44921.2872992293, 2025: 45974.56187582156, 2026: 47027.836452413816}, values=[44921.2872992293, 45974.56187582156, 47027.836452413816], CI_lower=[42156.40212247045, 43209.67669906271, 44262.95127565497], CI_upper=[47686.17247598815, 48739.447052580406, 49792.721629172665]
+2025-12-17 08:57:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44921.2872992293, 45974.56187582156, 47027.836452413816], CI_lower: [42156.40212247045, 43209.67669906271, 44262.95127565497], CI_upper: [47686.17247598815, 48739.447052580406, 49792.721629172665]
+2025-12-17 08:57:30 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 42156.40212247045, 43209.67669906271, 44262.95127565497], upper=[np.float64(26549.599484221242), 47686.17247598815, 48739.447052580406, 49792.721629172665]
+2025-12-17 08:57:31 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 48713.22503012419, 2025: 51188.4762558341, 2026: 53831.01885193586}, values=[48713.22503012419, 51188.4762558341, 53831.01885193586], CI_lower=[48210.72732244514, 50685.97854815506, 53328.52114425682], CI_upper=[49215.72273780323, 51690.97396351315, 54333.51655961491]
+2025-12-17 08:57:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48713.22503012419, 51188.4762558341, 53831.01885193586], CI_lower: [48210.72732244514, 50685.97854815506, 53328.52114425682], CI_upper: [49215.72273780323, 51690.97396351315, 54333.51655961491]
+2025-12-17 08:57:31 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 48210.72732244514, 50685.97854815506, 53328.52114425682], upper=[np.float64(26549.599484221242), 49215.72273780323, 51690.97396351315, 54333.51655961491]
+2025-12-17 08:57:32 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 48756.97056388855, 2025: 51265.045463085175, 2026: 53950.06776428223}, values=[48756.97056388855, 51265.045463085175, 53950.06776428223], CI_lower=[48254.95928166326, 50763.03418085988, 53448.056482056934], CI_upper=[49258.98184611384, 51767.05674531047, 54452.07904650752]
+2025-12-17 08:57:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48756.97056388855, 51265.045463085175, 53950.06776428223], CI_lower: [48254.95928166326, 50763.03418085988, 53448.056482056934], CI_upper: [49258.98184611384, 51767.05674531047, 54452.07904650752]
+2025-12-17 08:57:32 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 48254.95928166326, 50763.03418085988, 53448.056482056934], upper=[np.float64(26549.599484221242), 49258.98184611384, 51767.05674531047, 54452.07904650752]
+2025-12-17 08:57:33 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 44269.49947293233, 2025: 44269.49947293233, 2026: 44269.49947293233}, values=[44269.49947293233, 44269.49947293233, 44269.49947293233], CI_lower=[42767.23584877338, 42767.23584877338, 42767.23584877338], CI_upper=[45771.76309709128, 45771.76309709128, 45771.76309709128]
+2025-12-17 08:57:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44269.49947293233, 44269.49947293233, 44269.49947293233], CI_lower: [42767.23584877338, 42767.23584877338, 42767.23584877338], CI_upper: [45771.76309709128, 45771.76309709128, 45771.76309709128]
+2025-12-17 08:57:33 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 42767.23584877338, 42767.23584877338, 42767.23584877338], upper=[np.float64(26549.599484221242), 45771.76309709128, 45771.76309709128, 45771.76309709128]
+2025-12-17 08:57:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 42305.275816168694, 2025: 42305.275816168694, 2026: 42305.275816168694}, values=[42305.275816168694, 42305.275816168694, 42305.275816168694], CI_lower=[39728.73181908165, 39728.73181908165, 39728.73181908165], CI_upper=[44881.81981325574, 44881.81981325574, 44881.81981325574]
+2025-12-17 08:57:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [42305.275816168694, 42305.275816168694, 42305.275816168694], CI_lower: [39728.73181908165, 39728.73181908165, 39728.73181908165], CI_upper: [44881.81981325574, 44881.81981325574, 44881.81981325574]
+2025-12-17 08:57:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 39728.73181908165, 39728.73181908165, 39728.73181908165], upper=[np.float64(26549.599484221242), 44881.81981325574, 44881.81981325574, 44881.81981325574]
+2025-12-17 08:57:34 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 44973.552477602534, 2025: 44973.552477602534, 2026: 44973.552477602534}, values=[44973.552477602534, 44973.552477602534, 44973.552477602534], CI_lower=[43836.59723992013, 43836.59723992013, 43836.59723992013], CI_upper=[46110.50771528494, 46110.50771528494, 46110.50771528494]
+2025-12-17 08:57:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [44973.552477602534, 44973.552477602534, 44973.552477602534], CI_lower: [43836.59723992013, 43836.59723992013, 43836.59723992013], CI_upper: [46110.50771528494, 46110.50771528494, 46110.50771528494]
+2025-12-17 08:57:34 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 43836.59723992013, 43836.59723992013, 43836.59723992013], upper=[np.float64(26549.599484221242), 46110.50771528494, 46110.50771528494, 46110.50771528494]
+2025-12-17 08:57:35 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 47457.843889250624, 2025: 48529.48832850349, 2026: 49600.708391616514}, values=[47457.843889250624, 48529.48832850349, 49600.708391616514], CI_lower=[32221.56599128456, 33293.21043053742, 34364.43049365045], CI_upper=[62694.12178721669, 63765.766226469554, 64836.98628958258]
+2025-12-17 08:57:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [47457.843889250624, 48529.48832850349, 49600.708391616514], CI_lower: [32221.56599128456, 33293.21043053742, 34364.43049365045], CI_upper: [62694.12178721669, 63765.766226469554, 64836.98628958258]
+2025-12-17 08:57:35 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 32221.56599128456, 33293.21043053742, 34364.43049365045], upper=[np.float64(26549.599484221242), 62694.12178721669, 63765.766226469554, 64836.98628958258]
+2025-12-17 08:57:36 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 48510.283181210085, 2025: 50634.791457051775, 2026: 52759.29973289346}, values=[48510.283181210085, 50634.791457051775, 52759.29973289346], CI_lower=[47992.483090837304, 50116.991366678994, 52241.49964252068], CI_upper=[49028.083271582866, 51152.591547424556, 53277.09982326624]
+2025-12-17 08:57:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48510.283181210085, 50634.791457051775, 52759.29973289346], CI_lower: [47992.483090837304, 50116.991366678994, 52241.49964252068], CI_upper: [49028.083271582866, 51152.591547424556, 53277.09982326624]
+2025-12-17 08:57:36 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(26549.599484221242), 47992.483090837304, 50116.991366678994, 52241.49964252068], upper=[np.float64(26549.599484221242), 49028.083271582866, 51152.591547424556, 53277.09982326624]
+2025-12-17 08:57:37 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Total_Person_Earnings
+2025-12-17 08:57:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 45919.19415190676, 2025: 47008.90333858365, 2026: 48098.61252526101}, values=[45919.19415190676, 47008.90333858365, 48098.61252526101], CI_lower=[43122.38491269144, 44212.09409936833, 45301.80328604569], CI_upper=[48716.00339112208, 49805.71257779897, 50895.42176447633]
+2025-12-17 08:57:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45919.19415190676, 47008.90333858365, 48098.61252526101], CI_lower: [43122.38491269144, 44212.09409936833, 45301.80328604569], CI_upper: [48716.00339112208, 49805.71257779897, 50895.42176447633]
+2025-12-17 08:57:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 43122.38491269144, 44212.09409936833, 45301.80328604569], upper=[np.float64(29777.761372749646), 48716.00339112208, 49805.71257779897, 50895.42176447633]
+2025-12-17 08:57:37 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 49765.892794430256, 2025: 52298.11397206783, 2026: 55000.04244273901}, values=[49765.892794430256, 52298.11397206783, 55000.04244273901], CI_lower=[49302.2011466349, 51834.42232427248, 54536.35079494365], CI_upper=[50229.58444222561, 52761.80561986319, 55463.734090534366]
+2025-12-17 08:57:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49765.892794430256, 52298.11397206783, 55000.04244273901], CI_lower: [49302.2011466349, 51834.42232427248, 54536.35079494365], CI_upper: [50229.58444222561, 52761.80561986319, 55463.734090534366]
+2025-12-17 08:57:37 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 49302.2011466349, 51834.42232427248, 54536.35079494365], upper=[np.float64(29777.761372749646), 50229.58444222561, 52761.80561986319, 55463.734090534366]
+2025-12-17 08:57:38 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 49793.626991033554, 2025: 52346.66058754921, 2026: 55075.524112463}, values=[49793.626991033554, 52346.66058754921, 55075.524112463], CI_lower=[49330.14974074048, 51883.18333725614, 54612.046862169926], CI_upper=[50257.104241326626, 52810.13783784228, 55539.00136275607]
+2025-12-17 08:57:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49793.626991033554, 52346.66058754921, 55075.524112463], CI_lower: [49330.14974074048, 51883.18333725614, 54612.046862169926], CI_upper: [50257.104241326626, 52810.13783784228, 55539.00136275607]
+2025-12-17 08:57:38 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 49330.14974074048, 51883.18333725614, 54612.046862169926], upper=[np.float64(29777.761372749646), 50257.104241326626, 52810.13783784228, 55539.00136275607]
+2025-12-17 08:57:39 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 45201.20967695123, 2025: 45201.20967695123, 2026: 45201.20967695123}, values=[45201.20967695123, 45201.20967695123, 45201.20967695123], CI_lower=[43667.87589322404, 43667.87589322404, 43667.87589322404], CI_upper=[46734.54346067842, 46734.54346067842, 46734.54346067842]
+2025-12-17 08:57:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45201.20967695123, 45201.20967695123, 45201.20967695123], CI_lower: [43667.87589322404, 43667.87589322404, 43667.87589322404], CI_upper: [46734.54346067842, 46734.54346067842, 46734.54346067842]
+2025-12-17 08:57:39 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 43667.87589322404, 43667.87589322404, 43667.87589322404], upper=[np.float64(29777.761372749646), 46734.54346067842, 46734.54346067842, 46734.54346067842]
+2025-12-17 08:57:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 43200.64549345207, 2025: 43200.64549345207, 2026: 43200.64549345207}, values=[43200.64549345207, 43200.64549345207, 43200.64549345207], CI_lower=[40539.48579321619, 40539.48579321619, 40539.48579321619], CI_upper=[45861.80519368796, 45861.80519368796, 45861.80519368796]
+2025-12-17 08:57:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [43200.64549345207, 43200.64549345207, 43200.64549345207], CI_lower: [40539.48579321619, 40539.48579321619, 40539.48579321619], CI_upper: [45861.80519368796, 45861.80519368796, 45861.80519368796]
+2025-12-17 08:57:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 40539.48579321619, 40539.48579321619, 40539.48579321619], upper=[np.float64(29777.761372749646), 45861.80519368796, 45861.80519368796, 45861.80519368796]
+2025-12-17 08:57:40 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 45962.94419077064, 2025: 45962.94419077064, 2026: 45962.94419077064}, values=[45962.94419077064, 45962.94419077064, 45962.94419077064], CI_lower=[44825.05412514152, 44825.05412514152, 44825.05412514152], CI_upper=[47100.834256399765, 47100.834256399765, 47100.834256399765]
+2025-12-17 08:57:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [45962.94419077064, 45962.94419077064, 45962.94419077064], CI_lower: [44825.05412514152, 44825.05412514152, 44825.05412514152], CI_upper: [47100.834256399765, 47100.834256399765, 47100.834256399765]
+2025-12-17 08:57:40 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 44825.05412514152, 44825.05412514152, 44825.05412514152], upper=[np.float64(29777.761372749646), 47100.834256399765, 47100.834256399765, 47100.834256399765]
+2025-12-17 08:57:41 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 48587.25316539956, 2025: 49697.29530510624, 2026: 50807.306987756834}, values=[48587.25316539956, 49697.29530510624, 50807.306987756834], CI_lower=[33068.777560469025, 34178.81970017571, 35288.83138282629], CI_upper=[64105.7287703301, 65215.77091003678, 66325.78259268738]
+2025-12-17 08:57:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [48587.25316539956, 49697.29530510624, 50807.306987756834], CI_lower: [33068.777560469025, 34178.81970017571, 35288.83138282629], CI_upper: [64105.7287703301, 65215.77091003678, 66325.78259268738]
+2025-12-17 08:57:41 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 33068.777560469025, 34178.81970017571, 35288.83138282629], upper=[np.float64(29777.761372749646), 64105.7287703301, 65215.77091003678, 66325.78259268738]
+2025-12-17 08:57:42 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 49734.68616985392, 2025: 51992.191771081285, 2026: 54249.69737230864}, values=[49734.68616985392, 51992.191771081285, 54249.69737230864], CI_lower=[49135.914198063925, 51393.41979929129, 53650.925400518645], CI_upper=[50333.45814164392, 52590.96374287128, 54848.46934409864]
+2025-12-17 08:57:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [49734.68616985392, 51992.191771081285, 54249.69737230864], CI_lower: [49135.914198063925, 51393.41979929129, 53650.925400518645], CI_upper: [50333.45814164392, 52590.96374287128, 54848.46934409864]
+2025-12-17 08:57:42 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(29777.761372749646), 49135.914198063925, 51393.41979929129, 53650.925400518645], upper=[np.float64(29777.761372749646), 50333.45814164392, 52590.96374287128, 54848.46934409864]
+2025-12-17 08:57:43 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Age
+2025-12-17 08:57:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 41.73024729778109, 2025: 41.98183235065079, 2026: 42.23341740352049}, values=[41.73024729778109, 41.98183235065079, 42.23341740352049], CI_lower=[41.358694213540645, 41.610279266410345, 41.861864319280045], CI_upper=[42.10180038202154, 42.35338543489124, 42.60497048776094]
+2025-12-17 08:57:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41.73024729778109, 41.98183235065079, 42.23341740352049], CI_lower: [41.358694213540645, 41.610279266410345, 41.861864319280045], CI_upper: [42.10180038202154, 42.35338543489124, 42.60497048776094]
+2025-12-17 08:57:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 41.358694213540645, 41.610279266410345, 41.861864319280045], upper=[np.float64(40.720917980968686), 42.10180038202154, 42.35338543489124, 42.60497048776094]
+2025-12-17 08:57:43 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 41.26759269391914, 2025: 41.34568227026466, 2026: 41.403360614065605}, values=[41.26759269391914, 41.34568227026466, 41.403360614065605], CI_lower=[41.10023166634551, 41.17832124269103, 41.23599958649197], CI_upper=[41.434953721492775, 41.513043297838294, 41.57072164163924]
+2025-12-17 08:57:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41.26759269391914, 41.34568227026466, 41.403360614065605], CI_lower: [41.10023166634551, 41.17832124269103, 41.23599958649197], CI_upper: [41.434953721492775, 41.513043297838294, 41.57072164163924]
+2025-12-17 08:57:43 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 41.10023166634551, 41.17832124269103, 41.23599958649197], upper=[np.float64(40.720917980968686), 41.434953721492775, 41.513043297838294, 41.57072164163924]
+2025-12-17 08:57:44 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 41.3000936023891, 2025: 41.402573104947805, 2026: 41.49181680008769}, values=[41.3000936023891, 41.402573104947805, 41.49181680008769], CI_lower=[41.133496540268766, 41.235976042827474, 41.32521973796736], CI_upper=[41.46669066450943, 41.56917016706814, 41.65841386220802]
+2025-12-17 08:57:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41.3000936023891, 41.402573104947805, 41.49181680008769], CI_lower: [41.133496540268766, 41.235976042827474, 41.32521973796736], CI_upper: [41.46669066450943, 41.56917016706814, 41.65841386220802]
+2025-12-17 08:57:44 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 41.133496540268766, 41.235976042827474, 41.32521973796736], upper=[np.float64(40.720917980968686), 41.46669066450943, 41.56917016706814, 41.65841386220802]
+2025-12-17 08:57:45 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 41.073008270299226, 2025: 41.073008270299226, 2026: 41.073008270299226}, values=[41.073008270299226, 41.073008270299226, 41.073008270299226], CI_lower=[40.73434276251693, 40.73434276251693, 40.73434276251693], CI_upper=[41.41167377808152, 41.41167377808152, 41.41167377808152]
+2025-12-17 08:57:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41.073008270299226, 41.073008270299226, 41.073008270299226], CI_lower: [40.73434276251693, 40.73434276251693, 40.73434276251693], CI_upper: [41.41167377808152, 41.41167377808152, 41.41167377808152]
+2025-12-17 08:57:45 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 40.73434276251693, 40.73434276251693, 40.73434276251693], upper=[np.float64(40.720917980968686), 41.41167377808152, 41.41167377808152, 41.41167377808152]
+2025-12-17 08:57:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 40.790634338382375, 2025: 40.790634338382375, 2026: 40.790634338382375}, values=[40.790634338382375, 40.790634338382375, 40.790634338382375], CI_lower=[40.41620775915623, 40.41620775915623, 40.41620775915623], CI_upper=[41.16506091760852, 41.16506091760852, 41.16506091760852]
+2025-12-17 08:57:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [40.790634338382375, 40.790634338382375, 40.790634338382375], CI_lower: [40.41620775915623, 40.41620775915623, 40.41620775915623], CI_upper: [41.16506091760852, 41.16506091760852, 41.16506091760852]
+2025-12-17 08:57:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 40.41620775915623, 40.41620775915623, 40.41620775915623], upper=[np.float64(40.720917980968686), 41.16506091760852, 41.16506091760852, 41.16506091760852]
+2025-12-17 08:57:46 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 41.10177067458102, 2025: 41.10177067458102, 2026: 41.10177067458102}, values=[41.10177067458102, 41.10177067458102, 41.10177067458102], CI_lower=[40.78635246989537, 40.78635246989537, 40.78635246989537], CI_upper=[41.41718887926667, 41.41718887926667, 41.41718887926667]
+2025-12-17 08:57:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41.10177067458102, 41.10177067458102, 41.10177067458102], CI_lower: [40.78635246989537, 40.78635246989537, 40.78635246989537], CI_upper: [41.41718887926667, 41.41718887926667, 41.41718887926667]
+2025-12-17 08:57:46 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 40.78635246989537, 40.78635246989537, 40.78635246989537], upper=[np.float64(40.720917980968686), 41.41718887926667, 41.41718887926667, 41.41718887926667]
+2025-12-17 08:57:47 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 41.22756260743381, 2025: 41.30430442228299, 2026: 41.37679655988004}, values=[41.22756260743381, 41.30430442228299, 41.37679655988004], CI_lower=[22.791621726501074, 22.868363541350252, 22.940855678947305], CI_upper=[59.663503488366544, 59.74024530321573, 59.81273744081278]
+2025-12-17 08:57:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41.22756260743381, 41.30430442228299, 41.37679655988004], CI_lower: [22.791621726501074, 22.868363541350252, 22.940855678947305], CI_upper: [59.663503488366544, 59.74024530321573, 59.81273744081278]
+2025-12-17 08:57:47 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 22.791621726501074, 22.868363541350252, 22.940855678947305], upper=[np.float64(40.720917980968686), 59.663503488366544, 59.74024530321573, 59.81273744081278]
+2025-12-17 08:57:48 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 41.27477011860756, 2025: 41.40321824692837, 2026: 41.53166637524917}, values=[41.27477011860756, 41.40321824692837, 41.53166637524917], CI_lower=[41.05975903429813, 41.18820716261894, 41.31665529093974], CI_upper=[41.489781202916994, 41.6182293312378, 41.746677459558605]
+2025-12-17 08:57:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [41.27477011860756, 41.40321824692837, 41.53166637524917], CI_lower: [41.05975903429813, 41.18820716261894, 41.31665529093974], CI_upper: [41.489781202916994, 41.6182293312378, 41.746677459558605]
+2025-12-17 08:57:48 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(40.720917980968686), 41.05975903429813, 41.18820716261894, 41.31665529093974], upper=[np.float64(40.720917980968686), 41.489781202916994, 41.6182293312378, 41.746677459558605]
+2025-12-17 08:57:49 [DEBUG] census_eda.main: [VIZ-TIMESERIES] Visualizing time series for target: Hours_Worked_Per_Week
+2025-12-17 08:57:49 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_1: forecasts={2024: 37.514245879791794, 2025: 37.48784693590794, 2026: 37.46144799202409}, values=[37.514245879791794, 37.48784693590794, 37.46144799202409], CI_lower=[37.108891798546004, 37.08249285466215, 37.0560939107783], CI_upper=[37.919599961037584, 37.89320101715373, 37.86680207326988]
+2025-12-17 08:57:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.514245879791794, 37.48784693590794, 37.46144799202409], CI_lower: [37.108891798546004, 37.08249285466215, 37.0560939107783], CI_upper: [37.919599961037584, 37.89320101715373, 37.86680207326988]
+2025-12-17 08:57:49 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 37.108891798546004, 37.08249285466215, 37.0560939107783], upper=[np.float64(37.343378794544655), 37.919599961037584, 37.89320101715373, 37.86680207326988]
+2025-12-17 08:57:50 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_2: forecasts={2024: 37.65130500170744, 2025: 37.676303228545294, 2026: 37.707348181349516}, values=[37.65130500170744, 37.676303228545294, 37.707348181349516], CI_lower=[37.258043606858834, 37.283041833696686, 37.31408678650091], CI_upper=[38.04456639655605, 38.0695646233939, 38.100609576198124]
+2025-12-17 08:57:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.65130500170744, 37.676303228545294, 37.707348181349516], CI_lower: [37.258043606858834, 37.283041833696686, 37.31408678650091], CI_upper: [38.04456639655605, 38.0695646233939, 38.100609576198124]
+2025-12-17 08:57:50 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 37.258043606858834, 37.283041833696686, 37.31408678650091], upper=[np.float64(37.343378794544655), 38.04456639655605, 38.0695646233939, 38.100609576198124]
+2025-12-17 08:57:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] polynomial_degree_3: forecasts={2024: 36.8856640085578, 2025: 36.33618050068617, 2026: 35.623739160597324}, values=[36.8856640085578, 36.33618050068617, 35.623739160597324], CI_lower=[36.77972434794532, 36.23024084007369, 35.51779949998485], CI_upper=[36.991603669170274, 36.44212016129865, 35.7296788212098]
+2025-12-17 08:57:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [36.8856640085578, 36.33618050068617, 35.623739160597324], CI_lower: [36.77972434794532, 36.23024084007369, 35.51779949998485], CI_upper: [36.991603669170274, 36.44212016129865, 35.7296788212098]
+2025-12-17 08:57:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 36.77972434794532, 36.23024084007369, 35.51779949998485], upper=[np.float64(37.343378794544655), 36.991603669170274, 36.44212016129865, 35.7296788212098]
+2025-12-17 08:57:51 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] sma: forecasts={2024: 37.530228803777234, 2025: 37.530228803777234, 2026: 37.530228803777234}, values=[37.530228803777234, 37.530228803777234, 37.530228803777234], CI_lower=[37.24750390342792, 37.24750390342792, 37.24750390342792], CI_upper=[37.81295370412655, 37.81295370412655, 37.81295370412655]
+2025-12-17 08:57:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.530228803777234, 37.530228803777234, 37.530228803777234], CI_lower: [37.24750390342792, 37.24750390342792, 37.24750390342792], CI_upper: [37.81295370412655, 37.81295370412655, 37.81295370412655]
+2025-12-17 08:57:51 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 37.24750390342792, 37.24750390342792, 37.24750390342792], upper=[np.float64(37.343378794544655), 37.81295370412655, 37.81295370412655, 37.81295370412655]
+2025-12-17 08:57:52 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] ewma: forecasts={2024: 37.58901146217801, 2025: 37.58901146217801, 2026: 37.58901146217801}, values=[37.58901146217801, 37.58901146217801, 37.58901146217801], CI_lower=[37.288026471836325, 37.288026471836325, 37.288026471836325], CI_upper=[37.88999645251969, 37.88999645251969, 37.88999645251969]
+2025-12-17 08:57:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.58901146217801, 37.58901146217801, 37.58901146217801], CI_lower: [37.288026471836325, 37.288026471836325, 37.288026471836325], CI_upper: [37.88999645251969, 37.88999645251969, 37.88999645251969]
+2025-12-17 08:57:52 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 37.288026471836325, 37.288026471836325, 37.288026471836325], upper=[np.float64(37.343378794544655), 37.88999645251969, 37.88999645251969, 37.88999645251969]
+2025-12-17 08:57:53 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] wma: forecasts={2024: 37.46927996110446, 2025: 37.46927996110446, 2026: 37.46927996110446}, values=[37.46927996110446, 37.46927996110446, 37.46927996110446], CI_lower=[37.215095567513025, 37.215095567513025, 37.215095567513025], CI_upper=[37.7234643546959, 37.7234643546959, 37.7234643546959]
+2025-12-17 08:57:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.46927996110446, 37.46927996110446, 37.46927996110446], CI_lower: [37.215095567513025, 37.215095567513025, 37.215095567513025], CI_upper: [37.7234643546959, 37.7234643546959, 37.7234643546959]
+2025-12-17 08:57:53 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 37.215095567513025, 37.215095567513025, 37.215095567513025], upper=[np.float64(37.343378794544655), 37.7234643546959, 37.7234643546959, 37.7234643546959]
+2025-12-17 08:57:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] arima: forecasts={2024: 37.24781631726871, 2025: 37.20227515938071, 2026: 37.180572111061956}, values=[37.24781631726871, 37.20227515938071, 37.180572111061956], CI_lower=[18.496520450072573, 18.450979292184577, 18.42927624386582], CI_upper=[55.99911218446484, 55.953571026576846, 55.93186797825809]
+2025-12-17 08:57:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.24781631726871, 37.20227515938071, 37.180572111061956], CI_lower: [18.496520450072573, 18.450979292184577, 18.42927624386582], CI_upper: [55.99911218446484, 55.953571026576846, 55.93186797825809]
+2025-12-17 08:57:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 18.496520450072573, 18.450979292184577, 18.42927624386582], upper=[np.float64(37.343378794544655), 55.99911218446484, 55.953571026576846, 55.93186797825809]
+2025-12-17 08:57:54 [DEBUG] census_eda.main: [DEBUG-TS-MODEL] holt_winters: forecasts={2024: 37.27352600834211, 2025: 37.20367322027686, 2026: 37.13382043221162}, values=[37.27352600834211, 37.20367322027686, 37.13382043221162], CI_lower=[37.00934863831385, 36.939495850248605, 36.869643062183364], CI_upper=[37.53770337837037, 37.46785059030512, 37.39799780223988]
+2025-12-17 08:57:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Forecast values: [37.27352600834211, 37.20367322027686, 37.13382043221162], CI_lower: [37.00934863831385, 36.939495850248605, 36.869643062183364], CI_upper: [37.53770337837037, 37.46785059030512, 37.39799780223988]
+2025-12-17 08:57:54 [DEBUG] census_eda.visualizations.ml.timeseries: [VIZ] Plotted CI bands: lower=[np.float64(37.343378794544655), 37.00934863831385, 36.939495850248605, 36.869643062183364], upper=[np.float64(37.343378794544655), 37.53770337837037, 37.46785059030512, 37.39799780223988]
+2025-12-17 08:57:56 [INFO] census_eda.main: [DL] Running deep learning pipeline for POPULATION...
+2025-12-17 08:57:56 [INFO] census_eda.main: [DL] Training income_prediction...
+2025-12-17 09:04:13 [INFO] census_eda.main: [DL] ✓ income_prediction complete: multi_output, Test metrics: {'mae': 15215.671875, 'mse': 1079668736.0, 'rmse': 32858.31304251635, 'r2': 0.22231332957744598}
+2025-12-17 09:04:14 [INFO] census_eda.main: [DL] Training employment_analysis...
+2025-12-17 09:08:14 [INFO] census_eda.main: [DL] ✓ employment_analysis complete: multi_output, Test metrics: {'mae': 2.1523449420928955, 'mse': 32.018001556396484, 'rmse': 5.658445153608585, 'r2': 0.33394336700439453}
+2025-12-17 09:08:14 [INFO] census_eda.main: [DL] Training demographic_profile...
+2025-12-17 09:12:33 [INFO] census_eda.main: [DL] ✓ demographic_profile complete: multi_output, Test metrics: {'mae': 14.241238594055176, 'mse': 574.5845947265625, 'rmse': 23.97049425286351, 'r2': -4.907800674438477}
+2025-12-17 09:12:34 [INFO] census_eda.main: [DL-VIZ] Creating visualizations for 3 tasks...
+2025-12-17 09:13:09 [WARNING] census_eda.main:  DL visualization failed: Plot creation failed for target_specific_analysis: SVD did not converge in Linear Least Squares [plot_type=target_specific_analysis, reason=SVD did not converge in Linear Least Squares]
+2025-12-17 09:13:10 [DEBUG] census_eda.main: Starting LLM analysis with fallback handler...
+2025-12-17 09:13:10 [DEBUG] census_eda.main: Initializing LLM client and analyzer...
+2025-12-17 09:13:10 [DEBUG] census_eda.main:  Running LLM analysis for state: Idaho
+2025-12-17 09:13:10 [INFO] census_eda.ml: [LLM] Starting LLM analysis suite...
+2025-12-17 09:13:10 [INFO] census_eda.ml: [LLM] State context loaded: Idaho
+2025-12-17 09:13:10 [INFO] census_eda.ml: [LLM] Running analysis: Temporal Trends
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [LLM] User prompt: 726 chars (~181 tokens)
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [API] Total request: ~2743 tokens (system: ~2562, user: ~181)
+2025-12-17 09:13:10 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:13:25 [DEBUG] census_eda.ml: [API] Received response: 3543 chars
+2025-12-17 09:13:25 [INFO] census_eda.ml: [LLM] Temporal Trends analysis complete (3543 chars)
+2025-12-17 09:13:26 [INFO] census_eda.ml: [LLM] Running analysis: Data Quality
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [LLM] User prompt: 1312 chars (~328 tokens)
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [API] Total request: ~2890 tokens (system: ~2562, user: ~328)
+2025-12-17 09:13:26 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [API] Received response: 3669 chars
+2025-12-17 09:13:36 [INFO] census_eda.ml: [LLM] Data Quality analysis complete (3669 chars)
+2025-12-17 09:13:36 [INFO] census_eda.ml: [LLM] Running analysis: Research Recommendations
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [LLM] User prompt: 2194 chars (~548 tokens)
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [API] Total request: ~3110 tokens (system: ~2562, user: ~548)
+2025-12-17 09:13:36 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [API] Received response: 3601 chars
+2025-12-17 09:13:47 [INFO] census_eda.ml: [LLM] Research Recommendations analysis complete (3601 chars)
+2025-12-17 09:13:47 [INFO] census_eda.ml: [LLM] Running analysis: Economic Analysis
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [LLM] User prompt: 1327 chars (~331 tokens)
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [API] Total request: ~2893 tokens (system: ~2562, user: ~331)
+2025-12-17 09:13:47 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [API] Received response: 5634 chars
+2025-12-17 09:14:05 [INFO] census_eda.ml: [LLM] Economic Analysis analysis complete (5634 chars)
+2025-12-17 09:14:05 [INFO] census_eda.ml: [LLM] Running analysis: Correlation Analysis
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [LLM] User prompt: 760 chars (~190 tokens)
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [API] Total request: ~2752 tokens (system: ~2562, user: ~190)
+2025-12-17 09:14:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [API] Received response: 4562 chars
+2025-12-17 09:14:19 [INFO] census_eda.ml: [LLM] Correlation Analysis analysis complete (4562 chars)
+2025-12-17 09:14:19 [INFO] census_eda.ml: [LLM] Running analysis: Statistical Analysis
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [LLM] User prompt: 8719 chars (~2179 tokens)
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [API] Total request: ~4741 tokens (system: ~2562, user: ~2179)
+2025-12-17 09:14:19 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [API] Received response: 3432 chars
+2025-12-17 09:14:32 [INFO] census_eda.ml: [LLM] Statistical Analysis analysis complete (3432 chars)
+2025-12-17 09:14:32 [INFO] census_eda.ml: [LLM] Running analysis: Outlier Detection
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [LLM] User prompt: 5276 chars (~1319 tokens)
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [API] Total request: ~3881 tokens (system: ~2562, user: ~1319)
+2025-12-17 09:14:32 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [API] Received response: 2869 chars
+2025-12-17 09:14:40 [INFO] census_eda.ml: [LLM] Outlier Detection analysis complete (2869 chars)
+2025-12-17 09:14:40 [INFO] census_eda.ml: [LLM] Running analysis: Anomaly Detection
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [LLM] User prompt: 610 chars (~152 tokens)
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [API] Total request: ~2714 tokens (system: ~2562, user: ~152)
+2025-12-17 09:14:40 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [API] Received response: 3764 chars
+2025-12-17 09:14:53 [INFO] census_eda.ml: [LLM] Anomaly Detection analysis complete (3764 chars)
+2025-12-17 09:14:53 [INFO] census_eda.ml: [LLM] Running analysis: Trend Analysis
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [LLM] User prompt: 5803 chars (~1450 tokens)
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [API] Total request: ~4012 tokens (system: ~2562, user: ~1450)
+2025-12-17 09:14:53 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [API] Received response: 4312 chars
+2025-12-17 09:15:05 [INFO] census_eda.ml: [LLM] Trend Analysis analysis complete (4312 chars)
+2025-12-17 09:15:05 [INFO] census_eda.ml: [LLM] Running analysis: Deep Learning Analysis
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [LLM] User prompt: 1826 chars (~456 tokens)
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [API] Total request: ~3018 tokens (system: ~2562, user: ~456)
+2025-12-17 09:15:05 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [API] Received response: 5990 chars
+2025-12-17 09:15:23 [INFO] census_eda.ml: [LLM] Deep Learning Analysis analysis complete (5990 chars)
+2025-12-17 09:15:23 [INFO] census_eda.ml: [LLM] Running analysis: Feature Engineering
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [LLM] User prompt: 1642 chars (~410 tokens)
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [PROMPT] Building system prompt...
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [PROMPT] Injecting state context for: Idaho
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT] Loading context for state: Idaho
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT] Formatted context length: 5363 chars
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT] Estimated tokens: ~1340
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT] Context preview:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: 
+STATE-SPECIFIC CONTEXT: Idaho
+
+ECONOMIC PROFILE:
+  Industries: Agriculture (potatoes, dairy, cattle), Technology and semiconductors (Micron), Tourism and outdoor recreation, Food processing, Timber and forest products
+  Trends: Rapid transformation 2011-2023 from agricultural/resource to diversified economy. Boise tech sector boom. Explosive population growth (fastest in nation 2016-2022) driving construction, services. Strong post-pandemic growth from California migration. Agriculture remains important but declining share
+  Income: Median household income near national average but rising. Lower cost of living (pre-2020) meant good purchasing power. Income growth strong 2020-2023. Tech sector wages high, agricultural wages low. Growing inequality between Boise metro and rural areas
+  Dominant Sector: Trade, transportation, and utilities; Agriculture
+
+DEMOGRAPHIC PROFILE:
+  Trends: Explosive growth: fastest in nation 2016-2022 (~2.0-2.5% annually, double national average). Growth from domestic migration (88% of growth 2021-2022) especially California exodus. Natural increase positive. Growth concentrated in Treasure Valley (Boise metro)
+  Migration: Massive net in-migration from California, Washington, Oregon seeking affordability and lifestyle. For every Idaho family moving to California, Idaho gets 3 back. Also attracting from Texas, Colorado. Remote workers/retirees. Growth in Boise, Meridian, Nampa, Idaho Falls, Coeur d'Alene
+  Education: Educational attainment below national average historically but improving. Boise State, University of Idaho, Idaho State system growing. Tech sector attracting educated workers. Rural areas lag. Focus on technical/trade education
+
+HOUSING MARKET:
+  Market: Transformed from affordable to expensive 2016-2023. Boise median home: ~$300k (2016) to ~$500-550k (2023). Still cheaper than California/Seattle attracting migrants. Rural areas remain affordable
+  Affordability: Very affordable 2011-2017, then rapid price increases 2018-2023 (among fastest appreciation in nation, +50-80% in Boise). Rent growth extreme. Longtime residents struggling. Still cheaper than origin states for migrants
+  Challenges: Rapid price appreciation pricing out locals, Inventory shortage despite building, Infrastructure strain (schools, roads, water), Farmland loss to development, Homelessness emerging in Boise, Resentment from longtime residents toward Californians
+
+POLITY:
+  Policy: Strong conservative/libertarian, deep red Republican dominance. Pro-business, low taxes, minimal regulation. Social conservatism on education, healthcare. Growth management debates emerging
+  Housing: Minimal state intervention, local control. Growth debates in Boise area. Some cities addressing affordability via developer incentives. No rent control. Increasing focus on growth management 2021-2023
+  Labor: Right-to-work state, $7.25 federal minimum wage. Minimal worker protections. Business-friendly environment. Workforce development programs expanding to support growth industries
+
+REGIONAL:
+  Geography: Diverse: mountains (central/north), high desert (south), agricultural valleys. Outdoor recreation major asset. Remote areas. Affects development patterns
+  Urban/Rural: 70% urban (Boise dominates), 30% rural (agriculture, ranching, timber, resort towns). Urban/rural divide less severe than other states politically (both conservative)
+  Infrastructure: Boise airport expanding rapidly. Highway system good but strained by growth. Broadband expanding. Water infrastructure critical (irrigation, municipal). Traffic congestion new problem in Boise. Micron expansion driving infrastructure needs
+
+HISTORICAL:
+  Events: 2011-2013: Slow recovery from recession, Luna education laws controversy, conservative governance consolidates; 2014-2016: Economy strengthens, fastest growth begins, Micron expansion, outdoor recreation boom, first waves of California migration; 2017-2019: Growth accelerates to fastest in nation, housing crisis emerges, Medicaid expansion ballot initiative (2018), traffic/school strain, political tensions over growth; 2021-2023: Pandemic migration surge, housing prices spike, record growth continues, infrastructure strain, political focus on growth management, Micron $15B expansion (CHIPS Act), Californian resentment peaks
+  Shocks: 2008 recession hit hard (construction, real estate). Pandemic minimal negative impact, accelerated migration. 2022-2023 tech sector adjustments but Micron growth offsets
+  Transitions: Agriculture declining share but absolute growth. Tech sector massive expansion (Micron plus software/startups). Tourism/recreation booming. Construction transformed to major sector. Timber reduced but stable
+
+COMPARATIVE:
+  Benchmarks: Fastest population growth 2016-2022. Housing appreciation among fastest. Median income near average but improving. Cost of living was low, now moderate (Boise). Unemployment typically low. Education spending below average
+  Peer States: Utah (growth, conservatism, tech), Montana (migration, outdoor recreation, cost increases), Arizona (growth destination)
+  Unique: Fastest sustained growth in nation. California migration dynamics dominant story. Micron as major employer unique. Potato State branding. Outdoor recreation culture. Small population base means migration has outsized impact. Boise punching above weight as destination
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: ----------------------------------------------------------------------
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT] Full context sections loaded:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ STATE-SPECIFIC CONTEXT: Idaho
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ ECONOMIC PROFILE:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ DEMOGRAPHIC PROFILE:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HOUSING MARKET:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ POLITY:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ REGIONAL:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ HISTORICAL:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [CONTEXT]   ✓ COMPARATIVE:
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [PROMPT] State context injected (5363 chars)
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [PROMPT] Final system prompt: 10251 chars (~2562 tokens)
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [API] Total request: ~2972 tokens (system: ~2562, user: ~410)
+2025-12-17 09:15:23 [DEBUG] census_eda.ml: [API] Sending request to http://localhost:11434/v1/chat/completions
+2025-12-17 09:15:39 [DEBUG] census_eda.ml: [API] Received response: 5178 chars
+2025-12-17 09:15:39 [INFO] census_eda.ml: [LLM] Feature Engineering analysis complete (5178 chars)
+2025-12-17 09:15:39 [INFO] census_eda.ml: [LLM] LLM analysis suite complete: 11/11 analyses succeeded
+2025-12-17 09:15:39 [DEBUG] census_eda.main: LLM analysis completed successfully
+2025-12-17 09:15:39 [INFO] census_eda.main: [REPORT] Generated: report_Idaho_population_20251217_091539.txt
+2025-12-17 09:15:39 [INFO] census_eda.main: SUCCESS: POPULATION (5-year) pipeline complete for Idaho!
+2025-12-17 09:15:39 [INFO] census_eda.memory: process_Idaho_population_5-year:EXIT: 13986.4MB (delta: -4840.3MB)
+2025-12-17 09:15:39 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-17 09:15:40 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-17 09:15:41 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-17 09:15:41 [INFO] census_eda.memory: Cleared all caches
+2025-12-17 09:15:42 [DEBUG] census_eda.memory: Cleared matplotlib caches
+2025-12-17 09:15:42 [DEBUG] census_eda.memory: Reset seaborn defaults
+2025-12-17 09:15:43 [DEBUG] census_eda.memory: Cleared TensorFlow session
+2025-12-17 09:15:43 [INFO] census_eda.memory: Cleared all caches
