@@ -1,0 +1,16 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. Mean vs Median: The mean is a measure of central tendency that considers all values in the dataset, while the median is a more robust measure that only considers the middle value(s) when the dataset has an odd or even number of observations. This difference can be significant for skewed distributions. For instance, if many income levels are present (as suggested by high means and standard deviations), the mean might overestimate the typical income due to outliers, whereas the median represents a more stable central value that isn't heavily influenced by extreme values.
+
+2. SKEWNESS: SKEWNESS is a measure of asymmetry around the mean. A high positive skewness (as in many variables here) suggests a distribution with more right-skew, meaning there are outliers or extreme values on the right side of the data distribution. This implies that while most individuals' incomes fall within certain ranges, there are significantly higher earnings at the upper end. Conversely, if skewness is negative, it suggests a left-skewed distribution with high numbers on the left side.
+
+3. KURTOSIS: Kurtosis measures the "tailedness" of the probability distribution; extreme values are more likely to occur in distributions with heavy tails (high kurtosis). Here, if the kurtosis is significantly higher than 3 for a variable, it suggests that the data has heavier tails and more outliers compared to a normal distribution. For example, income might have high kurtosis due to unusually high earnings at the top end of the scale.
+
+4. VARIANCE/STD DEV: Variables with high variance or standard deviation show greater dispersion or spread among data points. This means that there is considerable variability in these variables—data points can be far apart from each other. For instance, income per hour and total annual hours both have significant variability due to the wide range of wage levels and working hours people can engage in.
+
+5. Key Insights:
+   - The high mean vs median differences for many variables suggest that while most individuals fall within a certain range, there are considerable gaps between these groups—a characteristic often observed in income distributions.
+   - Many variables exhibit positive skewness, indicating that extreme values (like very high earnings or long working hours) significantly influence the dataset's central tendency. This implies an asymmetrical distribution with a longer right tail, which is typical for many types of data, including income and wealth distributions.
+   - High kurtosis across multiple variables indicates that these distributions are heavy-tailed, meaning there are more extreme values compared to what would be expected in a normal distribution. This implies the presence of outliers or unusually high incomes/working hours.
+
+Overall, this analysis highlights significant disparities and asymmetries in wealth distribution across various segments of society, emphasizing stark differences that are often attributed to the nature of work and earning capacity. The skewness and kurtosis suggest a need for more nuanced approaches when studying income or other similarly distributed variables, considering potential outliers and heavy tails in data analysis.

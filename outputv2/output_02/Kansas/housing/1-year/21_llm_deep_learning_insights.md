@@ -1,0 +1,21 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Deep Learning Analysis
+
+**DEEP LEARNING INSIGHTS: ANALYSIS OF THE FOUR-MODEL TRAINING RESULTS**
+
+1. **Neural Network Performance Comparison to Traditional ML**: Deep learning models, such as those outlined in this analysis, stand out for their ability to model complex, non-linear relationships and high-dimensional data, providing superior performance compared to traditional machine learning algorithms under specific conditions. However, they require substantial computational resources and can be prone to overfitting if not properly managed. On the other hand, traditional ML models are simpler in structure, computationally less intensive, and more interpretable but may struggle with complex non-linear relationships and high-dimensional data without feature engineering or dimensionality reduction techniques.
+
+2. **Strongest Performing Target Predictions**: The housing affordability analysis model shows the strongest performance among all four models (MAE of 6.0588), indicating its ability to capture complex relationships between multiple variables and predict specific financial metrics like owner costs as a percentage of income accurately. This could be due to its multi-output nature, allowing it to learn intricate interactions across various factors contributing to housing affordability.
+
+3. **Overfitting Risk Analysis**: The overfit gaps for the affordability analysis model (1.6688) are higher than those for property valuation and cost prediction models (-0.5533, -0.3144), suggesting a greater risk of overfitting in this model given its complexity and smaller dataset size compared to other models trained on larger datasets like the one provided. The high overfit gap indicates that the model has learned unique patterns specific only to this training set rather than generalizable ones applicable across different data sets.
+
+4. **Interpreting R² Scores**: The relatively low but positive R² values (0.3144 for cost prediction) indicate that while these models can explain a substantial portion of the variance in their target variables, they still leave room for improvement to capture all relevant relationships between input features and output targets accurately.
+
+5. **Architectural Recommendations**: Given the strengths and overfitting risks identified, consider modifying or enhancing the architecture of the affordability analysis model by increasing its depth (more layers) or introducing convolutional neural network (CNN)-like structures to capture spatial dependencies in the data if available. For models with fewer parameters like housing quality and occupancy prediction, further optimization could involve regularization techniques like dropout or early stopping to prevent overfitting.
+
+6. **Computational Efficiency vs Accuracy Tradeoffs**: Deep learning models generally require more computational resources compared to traditional ML algorithms due to their complexity and larger parameter spaces. The tradeoff between computational efficiency and model accuracy should be carefully considered, especially when dealing with limited data or time constraints. Strategies such as using simpler architectures for less complex tasks, employing transfer learning where possible, or leveraging cloud-based computing can help balance these competing demands.
+
+**ACTIONABLE INSIGHTS:**
+1. Investigate the impact of incorporating domain knowledge into affordability analysis to improve model interpretability and potentially reduce overfitting risks.
+2. Employ dimensionality reduction techniques like PCA (Principal Component Analysis) on input features before feeding them to the models, especially for models with high-dimensional data, such as housing quality prediction.
+3. Consider using ensemble methods that combine multiple weak models to improve predictive performance and reduce overfitting risks by combining the strengths of several simpler models.
+4. Regularly reassess model performance on unseen data (validation set) and adjust training procedures if necessary, such as increasing regularization or early stopping criteria, to maintain a balance between model complexity and generalizability.
