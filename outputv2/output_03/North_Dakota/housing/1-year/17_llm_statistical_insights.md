@@ -1,0 +1,17 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. MEAN vs MEDIAN: The difference between mean and median suggests that while some distributions may lean towards one side (mean being higher than median), many are relatively balanced around their central tendency. For instance, in total monthly utility cost, the mean is 200.19 but the median is only 162.00, indicating a more skewed distribution with a significant portion of costs at lower values compared to the overall average. Similarly, for structure age score (0-1), the mean is almost zero despite a high standard deviation, suggesting an extremely small spread around this value.
+
+2. SKEWNESS: This measures the degree of asymmetry in a distribution. Higher absolute skewness values indicate more skewed distributions - either positively skewed (tail extends towards higher values) or negatively skewed (tail extends towards lower values). For instance, income to FPL ratio shows extreme positive skewness with a value of 36.220, implying that the majority of data points are clustered around zero but there are significantly more outliers at high positive values.
+
+3. KURTOSIS: This measures the "tailedness" or the heaviness of tails in a distribution, which can indicate whether there are extreme values (outliers) present. Higher absolute kurtosis values suggest heavier tails (more outliers), while lower values mean lighter tails (less outliers). For instance, property tax rate shows high positive kurtosis with 31.132, indicating a distribution heavily skewed towards higher rates due to fewer extremely low rates.
+
+4. VARIANCE/STD DEV: These measures the spread of data around the mean or median. High variance indicates that there's significant variability in the dataset and high standard deviation means these deviations are large. For example, total monthly utility cost (200.19) has a relatively high variance due to its wide range of values, while structure age score (0-1) is extremely narrow with only one value being recorded, indicating low dispersion around the mean or median.
+
+5. Key insights about overall data characteristics and quality:
+   - Several variables have skewed distributions, particularly income to FPL ratio, property tax rate, and total monthly utility cost, suggesting potential issues in data collection, processing, or interpretation. For instance, extreme values in these areas could affect decision-making processes significantly if not appropriately managed.
+   
+- Variance is high for many of the variables, indicating a wide range of values. While this might be expected in some cases (like utility costs), it can also imply that individual observations are far from the mean or median, suggesting potential variability issues in data collection methods or interpretation processes.
+   - There's significant variation in income to FPL ratio across individuals, with several outliers at high values. This could indicate disparities in financial situations among the populations being studied, which should be considered when interpreting these statistics as a whole.
+
+- Structure age score shows extremely low variability (variance of 0 and standard deviation of 0) due to only one value recorded across all individuals. It suggests that there's little variation or uncertainty in structure age within the population being studied, which might be an artifact of data collection methods or a specific characteristic of this particular dataset.

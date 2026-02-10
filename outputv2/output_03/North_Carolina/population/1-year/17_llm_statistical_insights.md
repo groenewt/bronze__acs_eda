@@ -1,0 +1,17 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. MEAN vs MEDIAN: The mean (average) of a dataset is calculated by adding all values together and then dividing by the count of numbers. In contrast, the median (middle value) splits an ordered list into two equal parts. For most variables in this data set, there's a noticeable difference between the mean and median. This indicates that while the mean is influenced by extreme high or low values, the median represents the typical middle value without being significantly affected by these extremes. 
+
+2. SKEWNESS: Skewness quantifies the degree of asymmetry in a distribution around its mean. A skewness of zero indicates a symmetrical distribution, while positive skewness suggests an extended right tail (more high values than low), and negative skewness implies a left-tailed extension (more low values than high). The skewness for most variables ranges between -1 to 1, indicating moderate asymmetry. A positive or negative value in excess of 1 or less than -1 suggests an extremely asymmetric distribution, which could be problematic for statistical analysis if not properly accounted for.
+
+3. KURTOSIS: Kurtosis measures the "tailedness" of a distribution—how heavily it is weighted towards extreme values (either high or low). A kurtosis value greater than 3 indicates heavy tails and peakedness, which are characteristics often associated with outliers in data. In this dataset, most variables have kurtosis close to zero, suggesting they are relatively light-tailed distributions without many extreme values. However, Flag_Income (Wage), Flag_Interest Dividend Income, Flag_Other Income, and Flag_Retirement Income show slightly higher kurtosis which could imply some outliers in these income categories.
+
+4. VARIANCE/STD DEV: Variance is the square of standard deviation; it measures how spread out a set of values are from their mean. A high variance or standard deviation indicates that the data points deviate significantly from the mean, often indicating heavy tails (as seen in positive kurtosis variables). The variables with higher dispersion include Income_Per_Hour, Flag_Wage_Income, and Flag_Interest Dividend Income. These high values suggest significant income variances across different categories of employment and income types.
+
+3 Key Insights:
+
+1. Data Quality: This dataset shows a good balance between mean and median for most variables, indicating that the data is not heavily influenced by outliers or extreme values which could skew results. However, there are few exceptions like Flag_Income (Wage) and Flag_Interest Dividend Income where slightly higher kurtosis suggests potential presence of some unusual high-income individuals in these categories.
+
+2. Symmetry: Most distributions appear to be moderately symmetrical as indicated by their skewness values, suggesting that most data points tend towards the mean and are roughly evenly distributed around it. However, Flag_Interest Dividend Income stands out with higher kurtosis indicating potential presence of unusually high incomes in this category.
+
+3. Dispersion: The variables with highest dispersion, such as Income_Per_Hour and Flag_Wage_Income, suggest considerable variation across different employment categories. This could be due to differences in wages across various sectors or types of work which is an important factor for economic analysis.

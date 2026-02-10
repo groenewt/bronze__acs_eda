@@ -1,0 +1,18 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. MEAN vs MEDIAN: The mean is the average of all values, while the median represents the middle value in an ordered list of data points. In many cases, distributions tend to have a higher mean than the median, especially for skewed distributions (like exponential or lognormal). For instance, consider 'Total Annual Hours'. The high mean suggests that individuals typically work more hours per year on average compared to their middle point, indicating an overall trend of greater workload.
+
+2. SKEWNESS values: Skewness measures the degree and direction of skewness (asymmetry) in a distribution about its mean. Values closer to zero indicate a symmetrical distribution; higher positive or negative values suggest increasing left-skewed distributions, while decreasing right-skewed ones. In our dataset, most variables have high positive skewness, indicating an overrepresentation of extreme values on the right (right-skewed). This suggests that data points in these distributions are more spread out towards higher end than the mean, which might indicate a potential outlier issue or significant variability.
+
+3. KURTOSIS: Kurtosis measures the "tailedness" of the probability distribution of a real-valued random variable. High kurtosis suggests heavy tails or outliers in the data, while low kurtosis indicates lighter tails. From our analysis, we see that most variables have high positive kurtosis values (indicating leptokurtic distributions). This implies there are more extreme values than what would be expected from a normal distribution, which could suggest the presence of outliers or heavier-tailed data distribution in these areas.
+
+4. Variance/STD DEV: High variance and standard deviation indicate high dispersion among data points, i.e., significant variability within the dataset. This is seen across most variables (income per hour, income per week worked, total annual hours), particularly those with skewed distributions like 'Total Annual Hours' and 'Poverty Gap'. High variance suggests that a larger portion of individuals are far from their central tendency, which could imply considerable variability in earnings or poverty levels across the population.
+
+5. Key insights:
+   - The dataset shows substantial skewness across most variables, indicating an overall trend towards greater extremes (either significantly higher or lower values) compared to the mean. This could be due to a few outliers or unique patterns in individual data points that deviate greatly from the general population's profile.
+   
+- High kurtosis suggests that there are more extreme outcomes than what would normally occur in a normal distribution, indicating potential for greater variability and higher concentration of values around the mean compared to other distributions (like Gaussian). This could imply an increased risk or uncertainty associated with these variables.
+
+- The high dispersion observed across most variables, particularly those that are skewed, suggests considerable variability in earnings, hours worked, poverty status, and other factors within the dataset. This variability might be attributed to a combination of individual differences (like skills, experience) and broader economic or societal factors influencing these variables.
+
+These insights provide a preliminary understanding of the data's characteristics, helping researchers identify potential outliers, assess normality assumptions in statistical analyses, and understand variability trends that could inform further exploratory or predictive analysis.

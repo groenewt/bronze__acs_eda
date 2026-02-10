@@ -1,0 +1,65 @@
+# Census ACS Analysis Report - Montana
+
+*Generated: 2025-12-18 01:31:29*
+
+> Comprehensive analysis of American Community Survey (ACS) data for Montana - housing survey, 1-year estimates.
+
+
+## Dataset Information
+
+| Property | Value |
+| :--- | :--- |
+| State | Montana |
+| Survey Type | Housing |
+| Survey Scope | 1-year |
+| Output Directory | `./output/Montana/housing/1-year` |
+
+## Processing Statistics
+
+| Metric | Value | Description |
+| :--- | :--- | :--- |
+| Files Found | 16 | Total ACS data files discovered |
+| Files Loaded | 16 | Files successfully loaded into memory |
+| Total Records | 85,541 | Total observations in dataset |
+| Total Columns | 235 | Number of variables/features |
+
+
+- **Load Success Rate**: 100.0 %
+
+- **Estimated Memory**: 153.4 MB
+
+## Data Quality Summary
+
+- Total Records: 85,541
+
+- Total Variables: 235
+
+
+
+> *Detailed data quality metrics will be available in the Statistical Analysis section.*
+
+
+## Variable Types
+
+- Total Variables: 235
+
+
+
+> *Variable type breakdown available in schema documentation.*
+
+
+## Temporal Coverage
+
+_Temporal coverage information not available._
+## Key Highlights
+
+- Dataset contains 85,541 records across 235 variables
+
+- Data consolidated from 16 source files
+
+- Survey type: Housing (1-year estimates)
+
+
+
+> *For detailed analysis, see the Statistical Analysis and Economic Analysis sections.*
+
