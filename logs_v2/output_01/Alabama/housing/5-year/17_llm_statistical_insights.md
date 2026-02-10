@@ -1,0 +1,14 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. **MEAN vs MEDIAN Interpretation:** The mean (average) of a dataset is calculated by summing all values and then dividing by the count of values. It's sensitive to extreme values or outliers, which can skew the results significantly. On the other hand, the median is the middle value in an ordered dataset; it's not affected by outliers as strongly. When the mean and median differ greatly (as seen here), it suggests that the data has a non-normal distribution with potential presence of extreme values or skewness.
+
+2. **SKEWNESS Interpretation:** SKEWNESS measures the degree of asymmetry in a dataset, ranging from -1 to 1. A value close to zero indicates a symmetric distribution, while values closer to -1 or +1 indicate increasingly right-skewed (positively skewed) or left-skewed (negatively skewed) distributions respectively. If SKEWNESS is significantly greater than zero, the dataset has a heavy tail towards higher/lower values and might be skewed.
+
+3. **KURTOSIS Interpretation:** KURTOSIS measures the "tailedness" of the probability distribution; it indicates if a distribution has heavier or lighter tails compared to a normal distribution (which has kurtosis close to 0). A high positive kurtosis implies heavy tails and more frequency of extreme values, while negative kurtosis means lighter tails. In general, distributions with kurtosis greater than three are considered "leptokurtic" or "platykurtic", whereas those between -1 and +1 are considered mesokurtic (nearly normal).
+
+4. **VARIANCE/STD DEV Interpretation:** Variance is the square of standard deviation, which measures dispersion in a dataset. A larger variance indicates higher variability among data points; therefore, variables with high dispersion tend to have values spread out widely from the mean. Standard deviation (std dev), being directly interpretable, provides an easier-to-understand measure of how much the individual data points deviate from the mean.
+
+5. **Key Insights:** 
+    - The distribution of most variables appears to be skewed or have heavy tails, suggesting potential outliers and non-normal distributions. This could imply that extreme values significantly influence many aspects of this dataset.
+    - Variance/std dev values are relatively high for some variables (e.g., Total_Monthly_Utility_Cost), indicating a lot of dispersion in these datasets. These high variabilities might reflect the wide range of costs or behaviors observed across different units and properties.
+    - The presence of numerous zeroes in many variables could suggest that certain categories or aspects of the data are sparsely populated, leading to potential information loss if not accounted for appropriately during analysis.

@@ -1,0 +1,15 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. MEAN vs MEDIAN: The difference between mean and median for each variable suggests varying levels of central tendency in the datasets. For instance, some distributions display a higher concentration around zero (median), indicating less skewness or symmetry than others, while others show an extended tail towards higher or lower values with a significant gap between median and mean. This implies that not all variables are perfectly symmetric about their central value; it's important to look beyond means for a comprehensive understanding of the data distribution.
+
+2. SKEWNESS: The skewness value indicates whether a distribution is symmetric (skewness = 0) or skewed (positive values indicate right-skew, negative values indicate left-skew). For example, variables with positive skewness suggest that there are more extreme high (or low) values compared to what would be expected from a perfectly symmetrical distribution. This implies potential outliers or non-normal distributions in these cases.
+
+3. KURTOSIS: The kurtosis value measures the "tailedness" of the probability distribution, indicating how heavy or light the tails are relative to a normal distribution. Higher kurtosis suggests heavier tails (more extreme values) and possibly more outliers compared to a normal distribution. Variables with positive kurtosis could have distributions that are less common but not impossible (like freak weather events), while negative kurtosis indicates light-tailed distributions, meaning the data is relatively common across its range.
+
+4. VARIANCE/STD DEV: High variance or standard deviation values indicate a high level of dispersion in the dataset - this means there's a wide spread between individual data points and their average (mean). Variables showing high variability may have more extreme values, which could be due to outliers, unusual patterns, or asymmetry in the distribution.
+
+5. Key Insights:
+   - The overall robustness of the dataset seems well-distributed across variables with a mix of symmetric and skewed distributions (mean vs median differences), indicating that many factors contribute to the incomes and expenses of individuals analyzed here.
+   - High skewness values suggest the presence of outliers or potentially non-normal distributions in some datasets, which could influence statistical analyses if not properly accounted for.
+   - The high kurtosis across several variables implies potential heavier tails, indicating that extreme outcomes are more frequent than would be expected from a normal distribution. This calls for careful consideration when interpreting results or conducting predictive modeling in these areas.
+   - High standard deviations indicate that the incomes and expenses of individuals vary significantly around their average, which could highlight varying levels of financial stability or volatility.

@@ -1,0 +1,19 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. **Interpretation of MEAN vs MEDIAN:**
+   The mean (average) provides a more robust measure for symmetric distributions, while median is less affected by outliers or skewed values. For instance, in "Total_Monthly_Utility_Cost", the high variance suggests that there are substantial differences between utility costs across different individuals. However, even though these differences are quite large, they still follow a similar pattern (higher for older structures), so both mean and median provide valuable insights about this variable. On the other hand, "Structure_Age" has a more pronounced difference between mean and median, indicating that while most properties age from around 1860s to 2020's, there are significant outliers (older structures).
+
+2. **SKEWNESS values interpretation:**
+   SKEWNESS measures the degree of asymmetry in a distribution. Positive skewness indicates an extended tail towards higher values while negative skewness implies an extended tail towards lower values. In "Total_Monthly_Utility_Cost", high positive skewness suggests that utility bills are generally low but there's a significant portion of extremely high costs, indicating potential outliers or unusual circumstances affecting these individuals' utility expenses. For "Income_to_FPL_Ratio," the negative skewness implies an extended tail towards lower income values compared to Federal Poverty Line (FPL).
+
+3. **Interpretation of KURTOSIS:**
+   KURTOSIS measures the 'tailedness' or 'peakedness' of a distribution. A high kurtosis value indicates heavy tails and higher probability of extreme outcomes, while low kurtosis implies lighter tails with fewer extreme values. For "Total_Monthly_Utility_Cost", high positive kurtosis suggests that utility costs are unusually prone to larger fluctuations compared to typical distributions, indicating potential risk or volatility in these expenses. Conversely, for income-to-FPL ratio, the low negative kurtosis indicates fewer extreme values (lower than expected) and lighter tails, suggesting a more stable financial situation relative to poverty line among individuals.
+
+4. **Key Insights about Data Characteristics:**
+   - **High Dispersion:** The variance and standard deviation of "Total_Monthly_Utility_Cost" are significantly high, indicating that there's substantial variation in utility costs across different households. This could be due to varying consumption patterns or costly repair works for some properties.
+   - **Outliers and Asymmetry:** There are many outliers in the income-to-FPL ratio data, implying a considerable disparity between average financial situation and poverty line among individuals. The skewness of this distribution indicates that these extreme values significantly influence the overall mean.
+
+5. **Three Key Insights about Data Quality:**
+   - **Data Completeness:** A large portion (46,277 out of 49,820) of the variables have a 'flag' value indicating missing data. This suggests that while there's substantial information provided across all other variables, some crucial aspects might be overlooked or under-reported due to incomplete records.
+   - **Data Normality:** Most distributions show positive skewness and high kurtosis, which indicates non-normal distribution patterns with potential outliers. Data preprocessing techniques like box plots or kernel density estimation could help better understand these unusual characteristics.
+   - **Reliability of Indicators:** Some variables (e.g., "Total_Monthly_Utility_Cost") have a large variance and high kurtosis, suggesting that they might not be entirely reliable indicators due to their susceptibility to outliers or non-normal distribution patterns. Further analysis using robust statistical methods might be beneficial in such cases.

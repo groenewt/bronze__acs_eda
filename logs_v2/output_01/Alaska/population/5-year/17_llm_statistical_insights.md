@@ -1,0 +1,17 @@
+# model: granite3.1-moe:3b-instruct-fp16, Engine: ROCm llama.cpp, GPU: AMD RX 9060 XT -- AI-Generated Insights: Statistical Analysis
+
+1. The MEAN vs MEDIAN for each variable provides an insight into how closely the values in a dataset align with one another. Generally, if the mean is significantly higher than the median, it suggests that there are more extreme outliers or skewed distributions where a few high-value observations pull the data towards the right (positive skew). Conversely, when the mean and median are close, indicating that most values cluster around the middle with fewer extreme values on either end, we typically describe such distributions as symmetric. 
+
+2. The SKEWNESS value indicates how far a distribution is from symmetry. A positive skewness suggests skewed right (more data points to the right of the mean), while negative skewness implies a skewed left (more data towards the left). In this analysis, all variables have skewness values greater than 0 or less than 0, indicating that they are indeed skewed. This means there are many more extreme values in these distributions, which could be due to outliers or an underlying pattern of positive or negative trends influencing income levels.
+
+3. The KURTOSIS value indicates the heaviness of the tails and the peakedness of a distribution compared to a normal distribution. A KURTOSIS greater than 0 suggests heavy-tailed distributions (more extreme values), while a kurtosis less than 0 implies light-tailed distributions with fewer outliers. Given all variables have positive or negative kurtosis, it indicates there are potential for substantial influences from outliers or unusual events that affect these income levels.
+
+4. Variance and Standard Deviation (STD DEV) provide an indication of the spread or dispersion in a dataset. High variance implies large differences between individual values; high standard deviation suggests values are widely scattered around the mean. The variables with higher variance and STD DEV include Income Per Hour, Total Annual Hours, Poverty Gap, and Poverty Severity, which indicates these metrics cover more extreme values compared to other variables like Mean Income or Median Income. This high dispersion might reflect unusual days of work hours, income levels that vary significantly between individuals, or higher variability in poverty status across the population.
+
+3 Key Insights:
+
+   a) The presence of skewness and heavy tails in most variables suggests significant influences from outliers or exceptional events on these income-related metrics. This implies that the data may not be perfectly representative or normal, which could affect certain analyses such as trend estimation, predictive modeling, or poverty measurement.
+
+   b) The high variance and STD DEV values across most variables indicate substantial variability in individual incomes, work hours, and poverty status within this population. This highlights the need for robust statistical methods to accurately measure these concepts and account for their varying distributions when making inferences or predictions.
+
+   c) Despite some skewness and high dispersion, the overall mean and median values provide a better representation of central tendencies compared to raw data, as they are less influenced by outliers. This suggests that averaging income levels or poverty statuses gives an accurate sense of the typical or 'average' experiences within this population, albeit with some significant exceptions.
