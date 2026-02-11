@@ -2,6 +2,15 @@
 Early exploration using Context Augmented Generation (CAG) to bridge the gap between statistical metrics and lived reality
 
 
+
+
+https://github.com/user-attachments/assets/1cd76bd0-af1e-4142-a40a-47678c7c3f03
+
+
+*This repository is large so this is recommend method to clone repo for local reproduction*  
+
+**Follow Along ./docs/quick_start.md to run yourself**
+
 **Educational Use Disclaimer**
 
 *EDUCATIONAL AND RESEARCH PURPOSES ONLY*: ***This repository and its contents are provided solely for educational, academic research, and learning purposes. The data, scripts, analyses, and any outputs are intended to demonstrate data analysis techniques and Census data exploration methods. Users are responsible for ensuring their use of Census data complies with all applicable terms of service, usage restrictions, and legal requirements. This project is not affiliated with, endorsed by, or representative of the U.S. Census Bureau. Always refer to official Census Bureau sources for authoritative data and interpretations.***
